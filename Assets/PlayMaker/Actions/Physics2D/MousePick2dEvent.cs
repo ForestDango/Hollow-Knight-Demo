@@ -1,19 +1,6 @@
-﻿// (c) Copyright HutongGames, LLC 2010-2021. All rights reserved.
-
-// NOTE: The new Input System and legacy Input Manager can both be enabled in a project.
-// This action was developed for the old input manager, so we will use it if its available. 
-// If only the new input system is available we will try to use that instead,
-// but there might be subtle differences in the behaviour in the new system!
-
-#if ENABLE_INPUT_SYSTEM && !ENABLE_LEGACY_INPUT_MANAGER
-#define NEW_INPUT_SYSTEM_ONLY
-#endif
+﻿// (c) Copyright HutongGames, LLC 2010-2013. All rights reserved.
 
 using UnityEngine;
-
-#if NEW_INPUT_SYSTEM_ONLY
-using UnityEngine.InputSystem;
-#endif
 
 namespace HutongGames.PlayMaker.Actions
 {
@@ -22,7 +9,6 @@ namespace HutongGames.PlayMaker.Actions
 	public class MousePick2dEvent : FsmStateAction
 	{
 		[CheckForComponent(typeof(Collider2D))]
-		[Tooltip("The GameObject with a Collider2D attached.")]
 		public FsmOwnerDefault GameObject;
 		
 		[Tooltip("Event to send when the mouse is over the GameObject.")]
@@ -61,7 +47,7 @@ namespace HutongGames.PlayMaker.Actions
 		
 		public override void OnEnter()
 		{
-            DoMousePickEvent();
+			DoMousePickEvent();
 			
 			if (!everyFrame)
 			{
@@ -73,39 +59,32 @@ namespace HutongGames.PlayMaker.Actions
 		{
 			DoMousePickEvent();
 		}
-
-        private void DoMousePickEvent()
+		
+		void DoMousePickEvent()
 		{
 			// Do the raycast
 			
-			var isMouseOver = DoRaycast();
+			bool isMouseOver = DoRaycast();
+			
+
 			
 			// Send events based on the raycast and mouse buttons
 			
 			if (isMouseOver)
 			{
-#if NEW_INPUT_SYSTEM_ONLY
-                if (Mouse.current == null) return;
-                if (mouseDown != null && Mouse.current.leftButton.wasPressedThisFrame)
-#else
-                if (mouseDown != null && Input.GetMouseButtonDown(0))
-#endif
-                {
-                    Fsm.Event(mouseDown);
+				if (mouseDown != null && Input.GetMouseButtonDown(0))
+				{
+					Fsm.Event(mouseDown);
 				}
 				
 				if (mouseOver != null)
 				{
 					Fsm.Event(mouseOver);
 				}
-
-#if NEW_INPUT_SYSTEM_ONLY
-                if (mouseUp != null && Mouse.current.leftButton.wasReleasedThisFrame)
-#else
-				if (mouseUp != null && Input.GetMouseButtonUp(0))
-#endif
-                {
-                    Fsm.Event(mouseUp);
+				
+				if (mouseUp != null &&Input.GetMouseButtonUp(0))
+				{
+					Fsm.Event(mouseUp);
 				}
 			}
 			else
@@ -116,17 +95,16 @@ namespace HutongGames.PlayMaker.Actions
 				}
 			}
 		}
-
-        private bool DoRaycast()
+		
+		bool DoRaycast()
 		{
-			var testObject = GameObject.OwnerOption == OwnerDefaultOption.UseOwner ? Owner : GameObject.GameObject.Value;
+			GameObject testObject = GameObject.OwnerOption == OwnerDefaultOption.UseOwner ? Owner : GameObject.GameObject.Value;
 			
 			// ActionHelpers uses a cache to try and minimize Raycasts
-            var hitInfo = Physics2D.GetRayIntersection(Camera.main.ScreenPointToRay(ActionHelpers.GetMousePosition()),
-                Mathf.Infinity, ActionHelpers.LayerArrayToLayerMask(layerMask, invertMask.Value));
+			RaycastHit2D hitInfo = Physics2D.GetRayIntersection(Camera.main.ScreenPointToRay(Input.mousePosition),Mathf.Infinity,ActionHelpers.LayerArrayToLayerMask(layerMask, invertMask.Value));
 
 			// Store mouse pick info so it can be seen by Get Raycast Hit Info action
-			Fsm.RecordLastRaycastHit2DInfo(Fsm,hitInfo);
+			PlayMakerUnity2d.RecordLastRaycastHitInfo(this.Fsm,hitInfo);
 
 			if (hitInfo.transform != null)
 			{

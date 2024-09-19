@@ -1,10 +1,10 @@
-﻿// (c) Copyright HutongGames, LLC 2010-2016. All rights reserved.
+﻿// (c) Copyright HutongGames, LLC 2010-2013. All rights reserved.
 
 using UnityEngine;
 
 namespace HutongGames.PlayMaker.Actions
 {
-	[ActionCategory(ActionCategory.Physics2D)]
+	[ActionCategory("Physics 2d")]
 	[Tooltip("Iterate through a list of all colliders that fall within a circular area." +
 	         "The colliders iterated are sorted in order of increasing Z coordinate. No iteration will take place if there are no colliders within the area.")]
 	public class GetNextOverlapCircle2d: FsmStateAction
@@ -26,11 +26,7 @@ namespace HutongGames.PlayMaker.Actions
 		[Tooltip("Only include objects with a Z coordinate (depth) less than this value. leave to none")]
 		public FsmInt maxDepth;
 
-        [Tooltip("If you want to reset the iteration, raise this flag to true when you enter the state, it will indicate you want to start from the beginning again")]
-        [UIHint(UIHint.Variable)]
-        public FsmBool resetFlag;
-
-        [ActionSection("Filter")] 
+		[ActionSection("Filter")] 
 		
 		[UIHint(UIHint.Layer)]
 		[Tooltip("Pick only from these layers.")]
@@ -77,8 +73,8 @@ namespace HutongGames.PlayMaker.Actions
 
 			layerMask = new FsmInt[0];
 			invertMask = false;
-            resetFlag = null;
-            collidersCount = null;
+
+			collidersCount = null;
 			storeNextCollider = null;
 			loopEvent = null;
 			finishedEvent = null;
@@ -86,14 +82,12 @@ namespace HutongGames.PlayMaker.Actions
 		
 		public override void OnEnter()
 		{
-			if (colliders == null || resetFlag.Value)
+			if (colliders == null)
 			{
-                nextColliderIndex = 0;
-                colliders = GetOverlapCircleAll();
+				colliders = GetOverlapCircleAll();
 				colliderCount = colliders.Length;
 				collidersCount.Value = colliderCount;
-                resetFlag.Value = false;
-            }
+			}
 
 			DoGetNextCollider();
 
@@ -101,7 +95,7 @@ namespace HutongGames.PlayMaker.Actions
 
 		}
 
-	    private void DoGetNextCollider()
+		void DoGetNextCollider()
 		{
 
 			// no more colliders?
@@ -126,8 +120,7 @@ namespace HutongGames.PlayMaker.Actions
 			
 			if (nextColliderIndex >= colliderCount)
 			{
-                colliders = null;
-                nextColliderIndex = 0;
+				nextColliderIndex = 0;
 				Fsm.Event(finishedEvent);
 				return;
 			}
@@ -141,12 +134,12 @@ namespace HutongGames.PlayMaker.Actions
 			}
 		}
 
-
-	    private Collider2D[] GetOverlapCircleAll()
+		
+		Collider2D[] GetOverlapCircleAll()
 		{
-			var fromGo = Fsm.GetOwnerDefaultTarget(fromGameObject);
+			GameObject fromGo = Fsm.GetOwnerDefaultTarget(fromGameObject);
 
-			var fromPos = fromPosition.Value;
+			Vector2 fromPos = fromPosition.Value;
 			
 			if (fromGo!=null)
 			{
@@ -158,12 +151,13 @@ namespace HutongGames.PlayMaker.Actions
 			if (minDepth.IsNone && maxDepth.IsNone)
 			{
 				return Physics2D.OverlapCircleAll(fromPos,radius.Value,ActionHelpers.LayerArrayToLayerMask(layerMask, invertMask.Value));
+			}else{
+				float _minDepth = minDepth.IsNone? Mathf.NegativeInfinity:minDepth.Value;
+				float _maxDepth = maxDepth.IsNone? Mathf.Infinity:maxDepth.Value;
+				return Physics2D.OverlapCircleAll(fromPos,radius.Value,ActionHelpers.LayerArrayToLayerMask(layerMask, invertMask.Value),_minDepth,_maxDepth);
 			}
-
-	        var _minDepth = minDepth.IsNone? Mathf.NegativeInfinity:minDepth.Value;
-	        var _maxDepth = maxDepth.IsNone? Mathf.Infinity:maxDepth.Value;
-	        return Physics2D.OverlapCircleAll(fromPos,radius.Value,ActionHelpers.LayerArrayToLayerMask(layerMask, invertMask.Value),_minDepth,_maxDepth);
 		}
 
 	}
 }
+

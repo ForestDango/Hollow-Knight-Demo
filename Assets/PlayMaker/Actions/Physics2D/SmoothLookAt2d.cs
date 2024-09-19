@@ -1,4 +1,5 @@
-﻿// (c) Copyright HutongGames, LLC 2010-2020. All rights reserved.
+﻿// (c) Copyright HutongGames, LLC 2010-2014. All rights reserved.
+//--- __ECO__ __ACTION__ ---//
 
 using UnityEngine;
 
@@ -12,8 +13,6 @@ namespace HutongGames.PlayMaker.Actions
 		[Tooltip("The GameObject to rotate to face a target.")]
 		public FsmOwnerDefault gameObject;
 		
-        [ActionSection("Target")]
-
 		[Tooltip("A target GameObject.")]
 		public FsmGameObject targetObject;
 
@@ -23,75 +22,41 @@ namespace HutongGames.PlayMaker.Actions
 		[Tooltip("A target position. If a Target Object is defined, this is used as a local offset.")]
 		public FsmVector3 targetPosition;
 
-        [ActionSection("Rotation")]
-
 		[Tooltip("Set the GameObject starting offset. In degrees. 0 if your object is facing right, 180 if facing left etc...")]
 		public FsmFloat rotationOffset;
 
 		[HasFloatSlider(0.5f,15)]
-		[Tooltip("How fast to rotate to look at the target. Higher numbers are faster. Note, you can enter numbers outside the slider range.")]
+		[Tooltip("How fast the look at moves.")]
 		public FsmFloat speed;
-
-        [Tooltip("Set min/max angle limits for the look at rotation. Note, you can use a scene gizmo to set the angles.")]
-        public FsmBool useLimits;
-        
-        [HideIf("HideLimits")]
-        [Tooltip("Min angle limit.")]
-        public FsmFloat minAngle;
-
-        [HideIf("HideLimits")]
-        [Tooltip("Max angle limit.")]
-        public FsmFloat maxAngle;
-
+		
 		[Tooltip("Draw a line in the Scene View to the look at position.")]
 		public FsmBool debug;
 		
-        [ActionSection("Finished")]
-
 		[Tooltip("If the angle to the target is less than this, send the Finish Event below. Measured in degrees.")]
 		public FsmFloat finishTolerance;
 		
 		[Tooltip("Event to send if the angle to target is less than the Finish Tolerance.")]
 		public FsmEvent finishEvent;
-
-        [Tooltip("Should the event stop running when it succeeds.")]
-        public FsmBool finish;
-
+		
 		private GameObject previousGo; // track game object so we can re-initialize when it changes.
 		private Quaternion lastRotation;
 		private Quaternion desiredRotation;
+		public FsmBool useLimits;
+		public FsmFloat minAngle;
+		public FsmFloat maxAngle;
 
-        private Vector3 lookAtPos;
-
-		public override void Reset()
+	public override void Reset()
 		{
 			gameObject = null;
 			targetObject = null;
 			targetPosition2d = new FsmVector2 { UseVariable = true};
 			targetPosition = new FsmVector3 { UseVariable = true};
-			rotationOffset = null;
-            useLimits = null;
-            minAngle = null;
-            maxAngle = null;
+			rotationOffset = 0;
 			debug = false;
 			speed = 5;
 			finishTolerance = 1;
 			finishEvent = null;
-            finish = null;
-        }
-
-        /// <summary>
-        /// Used by HideIf attributes
-        /// </summary>
-        public bool HideLimits()
-        {
-            return !useLimits.Value;
-        }
-
-        public override void OnPreprocess()
-        {
-            Fsm.HandleLateUpdate = true;
-        }
+		}
 		
 		public override void OnEnter()
 		{
@@ -102,139 +67,86 @@ namespace HutongGames.PlayMaker.Actions
 		{
 			DoSmoothLookAt();
 		}
-
-        private void DoSmoothLookAt()
+		
+		void DoSmoothLookAt()
 		{
 			var go = Fsm.GetOwnerDefaultTarget(gameObject);
-            if (go == null) return;
-
-            var transform = go.transform;
-			var target = targetObject.Value;
+			if (go == null)
+			{
+				return;
+			}
+			
+			var goTarget = targetObject.Value;
 
 			// re-initialize if game object has changed
 			
 			if (previousGo != go)
 			{
-				lastRotation = transform.rotation;
+				lastRotation = go.transform.rotation;
 				desiredRotation = lastRotation;
 				previousGo = go;
 			}
 			
 			// desired look at position
 
-            if (target != null)
+			Vector3 lookAtPos = new Vector3(targetPosition2d.Value.x,targetPosition2d.Value.y,0f);
+			if (!targetPosition.IsNone)
 			{
-				lookAtPos = target.transform.position;
-				var lookAtOffset = Vector3.zero;
+				lookAtPos += targetPosition.Value;
+			}
+
+			if (goTarget != null)
+			{
+				lookAtPos = goTarget.transform.position;
+				Vector3 _offset = Vector3.zero;
 
 				if (!targetPosition.IsNone)
 				{
-					lookAtOffset += targetPosition.Value;
+					_offset +=targetPosition.Value;
 				}
 				if (!targetPosition2d.IsNone)
 				{
-					lookAtOffset.x = lookAtOffset.x+ targetPosition2d.Value.x;
-					lookAtOffset.y = lookAtOffset.y+ targetPosition2d.Value.y;
+					_offset.x = _offset.x+ targetPosition2d.Value.x;
+					_offset.y = _offset.y+ targetPosition2d.Value.y;
 				}
 
 				if (!targetPosition2d.IsNone || !targetPosition.IsNone)
 				{
-					lookAtPos += target.transform.TransformPoint(lookAtOffset);
+					lookAtPos += goTarget.transform.TransformPoint(targetPosition2d.Value);
 				}
 			}
-            else
-            {
-                lookAtPos = new Vector3(targetPosition2d.Value.x,targetPosition2d.Value.y,0f);
-                if (!targetPosition.IsNone)
-                {
-                    lookAtPos += targetPosition.Value;
-                }
-            }
-            
-            var lookOffset = lookAtPos - transform.position;
-            lookOffset.Normalize();
-            
-            var zAngle = Mathf.Atan2(lookOffset.y, lookOffset.x) * Mathf.Rad2Deg;
-            if (useLimits.Value)
-            {
-                var zOffset = rotationOffset.Value + (transform.parent != null ? transform.parent.eulerAngles.z : 0);
-                zAngle = ClampAngle(zAngle, minAngle.Value  + zOffset, maxAngle.Value + zOffset);
-            }
+		
+			Vector3 diff = lookAtPos - go.transform.position;
+			diff.Normalize();
+			
+			
+			float rot_z = Mathf.Atan2(diff.y, diff.x) * Mathf.Rad2Deg;
+			desiredRotation = Quaternion.Euler(0f, 0f, rot_z - rotationOffset.Value);
 
-			desiredRotation = Quaternion.Euler(0f, 0f, zAngle - rotationOffset.Value );
 
-            lastRotation = Quaternion.Slerp(lastRotation, desiredRotation, speed.Value * Time.deltaTime);
-			transform.rotation = lastRotation;
+			lastRotation = Quaternion.Slerp(lastRotation, desiredRotation, speed.Value * Time.deltaTime);
+			go.transform.rotation = lastRotation;
 			
 			// debug line to target
 			
 			if (debug.Value)
 			{
-				Debug.DrawLine(transform.position, lookAtPos, Color.grey);
+				Debug.DrawLine(go.transform.position, lookAtPos, Color.grey);
 			}
 			
 			// send finish event?
 			
-			if (finishEvent != null || finish.Value)
+			if (finishEvent != null)
 			{
-                var targetDir = lookAtPos - transform.position;
-                var targetAngle = Vector3.Angle(targetDir, transform.right) - rotationOffset.Value;
-                if (Mathf.Abs(targetAngle ) <= finishTolerance.Value)
+				//var targetDir = lookAtPos - go.transform.position;
+				//var angle = Vector3.Angle(targetDir, go.transform.right) - rotationOffset.Value;
+				var angle = Vector3.Angle(desiredRotation.eulerAngles,lastRotation.eulerAngles);
+				if (Mathf.Abs(angle ) <= finishTolerance.Value)
 				{
 					Fsm.Event(finishEvent);
 				}
-                
-                if (finish.Value) Finish();
 			}
-        }
-
-        /*
-        float ClampAngle(float angle, float from, float to)
-        {
-            // accepts e.g. -80, 80
-            if (angle < 0f) angle = 360 + angle;
-            if (angle > 180f) return Mathf.Max(angle, 360+from);
-            return Mathf.Min(angle, to);
-        }*/
-
-        float ClampAngle(float angle, float min, float max)
-        {
-            if (angle<90 || angle>270){       // if angle in the critic region...
-                if (angle>180) angle -= 360;  // convert all angles to -180..+180
-                if (max>180) max -= 360;
-                if (min>180) min -= 360;
-            }    
-            angle = Mathf.Clamp(angle, min, max);
-            if (angle<0) angle += 360;  // if angle negative, convert to 0..360
-            return angle;
-        }
-
-
-#if UNITY_EDITOR
-
-        private float _originalAngle = -1;
-
-		public override float GetProgress()
-		{
-			var go = Fsm.GetOwnerDefaultTarget(gameObject);
-			if (go == null)
-			{
-				return 0f;
-			}
-
-			var targetDir = lookAtPos - go.transform.position;
-			var angle = Vector3.Angle(targetDir, go.transform.right) - rotationOffset.Value;
-
-			if (_originalAngle == -1) {
-				_originalAngle = angle;
-			}
-
-			_originalAngle = Mathf.Max (_originalAngle, angle);
-
-			return Mathf.Max(0,Mathf.Min(1f-(angle/_originalAngle) , 1f));
 		}
-
-#endif
 		
 	}
 }

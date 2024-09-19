@@ -1,22 +1,19 @@
-﻿// (c) Copyright HutongGames, LLC 2010-2016. All rights reserved.
+﻿// (c) Copyright HutongGames, LLC 2010-2013. All rights reserved.
 
 using UnityEngine;
 
 namespace HutongGames.PlayMaker.Actions
 {
-	[ActionCategory(ActionCategory.Physics2D)]
+	[ActionCategory("Physics 2d")]
 	[Tooltip("Gets info on the last collision 2D event and store in variables. See Unity and PlayMaker docs on Unity 2D physics.")]
+	[HelpUrl("https://hutonggames.fogbugz.com/default.asp?W1151")]
 	public class GetCollision2dInfo : FsmStateAction
 	{
 		[UIHint(UIHint.Variable)]
 		[Tooltip("Get the GameObject hit.")]
 		public FsmGameObject gameObjectHit;
-
-        [UIHint(UIHint.Variable)]
-        [Tooltip("Get the enabled state collision. if false, collision had no effect, like when using the PlatformEffector2D component set to one way")]
-        public FsmBool enabled;
-
-        [UIHint(UIHint.Variable)]
+		
+		[UIHint(UIHint.Variable)]
 		[Tooltip("Get the relative velocity of the collision.")]
 		public FsmVector3 relativeVelocity;
 		
@@ -27,20 +24,12 @@ namespace HutongGames.PlayMaker.Actions
 		[UIHint(UIHint.Variable)]
 		[Tooltip("Get the world position of the collision contact. Useful for spawning effects etc.")]
 		public FsmVector3 contactPoint;
-
-        [UIHint(UIHint.Variable)]
-        [Tooltip("Get the 2d world position of the collision contact. Useful for spawning effects etc.")]
-        public FsmVector2 contactPoint2d;
-
-        [UIHint(UIHint.Variable)]
+		
+		[UIHint(UIHint.Variable)]
 		[Tooltip("Get the collision normal vector. Useful for aligning spawned effects etc.")]
 		public FsmVector3 contactNormal;
 
-        [UIHint(UIHint.Variable)]
-        [Tooltip("Get the 2d collision normal vector. Useful for aligning spawned effects etc.")]
-        public FsmVector2 contactNormal2d;
-
-        [UIHint(UIHint.Variable)]
+		[UIHint(UIHint.Variable)]
 		[Tooltip("The number of separate shaped regions in the collider.")]
 		public FsmInt shapeCount;
 		
@@ -55,45 +44,31 @@ namespace HutongGames.PlayMaker.Actions
 			relativeSpeed = null;
 			contactPoint = null;
 			contactNormal = null;
-            contactPoint2d = null;
-            contactNormal2d = null;
-            shapeCount = null;
+			shapeCount = null;
 			physics2dMaterialName = null;
-            enabled = null;
-        }
+		}
 		
 		void StoreCollisionInfo()
 		{
-		    if (Fsm.Collision2DInfo == null) return;
+			PlayMakerUnity2DProxy _proxy = Fsm.GameObject.GetComponent<PlayMakerUnity2DProxy>();
 
-            enabled.Value = Fsm.Collision2DInfo.enabled;
-            gameObjectHit.Value = Fsm.Collision2DInfo.gameObject;
-            relativeSpeed.Value = Fsm.Collision2DInfo.relativeVelocity.magnitude;
-            relativeVelocity.Value = Fsm.Collision2DInfo.relativeVelocity;
-            physics2dMaterialName.Value = Fsm.Collision2DInfo.collider.sharedMaterial != null ? Fsm.Collision2DInfo.collider.sharedMaterial.name : "";
-
-            shapeCount.Value = Fsm.Collision2DInfo.collider.shapeCount;
-
-            if (Fsm.Collision2DInfo.contacts != null && Fsm.Collision2DInfo.contacts.Length > 0)
+			if (_proxy == null || _proxy.lastCollision2DInfo == null)
 			{
-                if (!contactPoint.IsNone)
-                {
-                    contactPoint.Value = Fsm.Collision2DInfo.contacts[0].point;
-                }
-                if (!contactNormal.IsNone)
-                {
-                    contactNormal.Value = Fsm.Collision2DInfo.contacts[0].normal;
-                }
+				return;
+			}
+			
+			gameObjectHit.Value = _proxy.lastCollision2DInfo.gameObject;
+			relativeSpeed.Value = _proxy.lastCollision2DInfo.relativeVelocity.magnitude;
+			relativeVelocity.Value = _proxy.lastCollision2DInfo.relativeVelocity;
+			physics2dMaterialName.Value = _proxy.lastCollision2DInfo.collider.sharedMaterial!=null?_proxy.lastCollision2DInfo.collider.sharedMaterial.name:"";
 
-                if (!contactPoint2d.IsNone)
-                {
-                    contactPoint2d.Value = Fsm.Collision2DInfo.contacts[0].point;
-                }
-                if (!contactNormal2d.IsNone)
-                {
-                    contactNormal2d.Value = Fsm.Collision2DInfo.contacts[0].normal;
-                }
-            }
+			shapeCount.Value = _proxy.lastCollision2DInfo.collider.shapeCount;
+
+			if (_proxy.lastCollision2DInfo.contacts != null && _proxy.lastCollision2DInfo.contacts.Length > 0)
+			{
+				contactPoint.Value = _proxy.lastCollision2DInfo.contacts[0].point;
+				contactNormal.Value = _proxy.lastCollision2DInfo.contacts[0].normal;
+			}
 		}
 		
 		public override void OnEnter()

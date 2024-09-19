@@ -8,8 +8,6 @@ public class HeroAnimatorController : MonoBehaviour
     private AnimatorClipInfo[] info;
     private HeroController heroCtrl;
     private HeroControllerStates cState;
-    private string clipName;
-    private float currentClipLength;
 
     public ActorStates actorStates { get; private set; }
     public ActorStates prevActorState { get; private set; }
@@ -17,7 +15,8 @@ public class HeroAnimatorController : MonoBehaviour
     private void Start()
     {
 	animator = GetComponent<Animator>();
-	heroCtrl = GetComponent<HeroController>();
+	heroCtrl = HeroController.instance;
+	cState = heroCtrl.cState;
 	actorStates = heroCtrl.hero_state;
 	PlayIdle();
     }
@@ -63,6 +62,7 @@ public class HeroAnimatorController : MonoBehaviour
 	{
 	    prevActorState = actorStates;
 	    actorStates = newState;
+	    
 	}
     }
 }

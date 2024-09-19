@@ -1,0 +1,383 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41cb500cf0f58e74f9a52a8af931edde, type: 3}
+  m_Name: -tk2d
+  m_EditorClassIdentifier: 
+  version: 4
+  spriteAnimationIndex:
+  - assetGUID: 467f7be8ed464524e8652beaf76605cb
+    dataGUID: 
+    managed: 0
+    loadable: 0
+  - assetGUID: a907b22c99aa9674dbb9145eecc19653
+    dataGUID: 
+    managed: 0
+    loadable: 0
+  - assetGUID: f7c3df02f1dc48242b224d80c6bb37b6
+    dataGUID: 
+    managed: 0
+    loadable: 0
+  - assetGUID: e3afbbf45b0209a45a90697e97bf13d8
+    dataGUID: 
+    managed: 0
+    loadable: 0
+  fontIndex: []
+  spriteCollectionIndex:
+  - name: KnightSpriteCollection
+    spriteCollectionGUID: ab828ee48eb14344daea0d67488db03c
+    spriteCollectionDataGUID: 494ecb3841c10a24da7b80b87deeef1f
+    spriteNames:
+    - 001-00-007
+    - 001-01-002
+    - 001-02-008
+    - 001-03-000
+    - 001-04-006
+    - 001-05-004
+    - 001-06-003
+    - 001-07-001
+    - 001-08-005
+    - 005-00-032
+    - 005-01-031
+    - 005-02-030
+    - 005-03-033
+    - 005-04-029
+    - 005-05-014
+    - 005-06-010
+    - 005-07-015
+    - 005-08-016
+    - 005-09-009
+    - 005-10-011
+    - 005-11-013
+    - 005-12-012
+    spriteTextureGUIDs:
+    - f99fbd5e809d74344a5000ddb33b2915
+    - 8df8dd8b1a8b7f341af6aaea8bd55409
+    - 9265ba7eef19b314e88fe872665fd373
+    - dec7fd390583eb84d8091ba309679a28
+    - 791c158f010ec8a4f946e9e9521317d4
+    - a094c3cfd0b4811408d16d119ae2b142
+    - cc9b6fb7a6183a8489ad01ff2ffcd289
+    - cef98139bfc15c04fa6920aaa50663c2
+    - 26a600c34355cfd46af254db46efd058
+    - d925e9f1b71d611409aa6342988d84c9
+    - d97d4a9d71d625d4baa032711848ec46
+    - 07f79ccd42ad6884b99664777530b547
+    - 8b212fb7b8276974ab4165fcbb3ff7cd
+    - d58ac5b6e35306140a4c625584fe1e4c
+    - 35d9a41ae59c1b14d85854296a56fff4
+    - 7607b3b23e2d73b4bacb04808af46ad1
+    - 038b966b739ad1248badc1a8f6b04213
+    - b03785bf9f9cdfa4a9bb896eb4d3691d
+    - c0f0b333f63d61f46a0830d9996bfd13
+    - 4ae171d1d3e5a864f8a95e070fce477d
+    - 1625264814af38c4488ba195ba883a09
+    - 44fa41f2f1620084ba3fe9c12e75ee2d
+    spriteTextureTimeStamps:
+    - 1726262566.13112
+    - 1726262566.28079
+    - 1726262566.43105
+    - 1726262566.58101
+    - 1726262566.73429
+    - 1726262566.8817
+    - 1726262567.0304
+    - 1726262567.17846
+    - 1726262567.32777
+    - 1726262573.29783
+    - 1726262573.44734
+    - 1726262573.59486
+    - 1726262573.74391
+    - 1726262573.89352
+    - 1726262574.04246
+    - 1726262574.19178
+    - 1726262574.34056
+    - 1726262574.48995
+    - 1726262574.64047
+    - 1726262574.78974
+    - 1726262574.94034
+    - 1726262575.09144
+    managedSpriteCollection: 0
+    loadable: 0
+    assetName: 
+    version: 3
+  - name: BuzzerSpriteCollection
+    spriteCollectionGUID: 05ee6449f709ea94ca8b28151adac9dd
+    spriteCollectionDataGUID: fcbd708001aeb814c9d4fb04343fa78c
+    spriteNames:
+    - Buzzer_000
+    - Buzzer_001
+    - Buzzer_002
+    - Buzzer_003
+    - Buzzer_004
+    - Buzzer_005
+    - Buzzer_006
+    - Buzzer_007
+    - Buzzer_008
+    - Buzzer_009
+    - Buzzer_010
+    - Buzzer_011
+    - Buzzer_012
+    - Buzzer_013
+    - Buzzer_014
+    - Buzzer_015
+    - Buzzer_016
+    - Buzzer_017
+    - Buzzer_018
+    - Buzzer_019
+    - Buzzer_020
+    - Buzzer_021
+    spriteTextureGUIDs:
+    - 839d9f90bcd18ce49a84b6af384d5f28
+    - b59e5b1323b1579468ee26b1130455b4
+    - da2dcca7b8d87984eb6691e92b30b52d
+    - 4c68c87c7368db44fa157755148af998
+    - 2dbef84b7887afe45854dd568ce03a9f
+    - d59cfc958b8bbe24384512a4ed84406c
+    - 73fb1192f926404498f356cab2d58b06
+    - c97cbf66a8a18cc40832f229c3bde161
+    - d96346f265eb9c24cb146cfad4c5c272
+    - 2b62d62f3bef96340ad2091af26b2a3a
+    - 5e20708a9421359498e891d94db7e8c0
+    - 34048fed4730df248b1aa7249576b51e
+    - b01b006acbfba9a44af6f474c8fb26ec
+    - 478ba1467eded774baa818a32070356c
+    - 3e0c363e1ca74da4b85c030371a9c655
+    - 9b626c8812e87164d99f305eabcc5039
+    - d9c5dcd73b61e4a4196013bdbedf5ce6
+    - 22a732ba45aa772468a07837059ca77b
+    - 088e5a9a3da27ca4a88d30033e2f8e0b
+    - 039b827808b42484e8e1f5b49692eeb4
+    - 5667c784d79ca6a499c92a647bd7e605
+    - 2bfbb362236a9284bb9711ee1d86a97d
+    spriteTextureTimeStamps:
+    - 1726263969.03303
+    - 1726263969.03404
+    - 1726263969.03504
+    - 1726263969.03604
+    - 1726263969.03604
+    - 1726263969.03755
+    - 1726263969.03856
+    - 1726263969.03955
+    - 1726263969.04055
+    - 1726263969.04106
+    - 1726263969.04207
+    - 1726263969.04307
+    - 1726263969.04407
+    - 1726263969.04507
+    - 1726263969.04607
+    - 1726263969.04607
+    - 1726263969.04758
+    - 1726263969.04859
+    - 1726263969.04959
+    - 1726263969.04959
+    - 1726263969.0516
+    - 1726263969.05259
+    managedSpriteCollection: 0
+    loadable: 0
+    assetName: 
+    version: 3
+  - name: ZombieRunnerSpriteCollection
+    spriteCollectionGUID: 51c811be261ef45428de762aec6c22bb
+    spriteCollectionDataGUID: a639d9d8b2ea8fb4591ad6c74152d590
+    spriteNames:
+    - Zombie Basic 1_attack0000
+    - Zombie Basic 1_attack0001
+    - Zombie Basic 1_attack0002
+    - Zombie Basic 1_attack0003
+    - Zombie Basic 1_attack0004
+    - Zombie Basic 1_attack0005
+    - Zombie Basic 1_death0000
+    - Zombie Basic 1_death0001
+    - Zombie Basic 1_death0002
+    - Zombie Basic 1_death0003
+    - Zombie Basic 1_death0004
+    - Zombie Basic 1_death0005
+    - Zombie Basic 1_death0006
+    - Zombie Basic 1_death0007
+    - Zombie Basic 1_death0008
+    - Zombie Basic 1_idle0000
+    - Zombie Basic 1_idle0001
+    - Zombie Basic 1_idle0002
+    - Zombie Basic 1_idle0003
+    - Zombie Basic 1_idle0004
+    - Zombie Basic 1_idle0005
+    - Zombie Basic 1_turn0000
+    - Zombie Basic 1_turn0001
+    - Zombie Basic 1_walk0000
+    - Zombie Basic 1_walk0001
+    - Zombie Basic 1_walk0002
+    - Zombie Basic 1_walk0003
+    - Zombie Basic 1_walk0004
+    - Zombie Basic 1_walk0005
+    - Zombie Basic 1_walk0006
+    - Zombie Basic 1_z01_attack_v02000
+    - Zombie Basic 1_z01_attack_v02001
+    - Zombie Basic 1_z01_attack_v02002
+    - Zombie Basic 1_z01_attack_v02003
+    - Zombie Basic 1_z01_attack_v02004
+    - Zombie Basic 1_z01_attack_v02005
+    - Zombie Basic 1_z01_attack_v02006
+    - Zombie Basic 1_z01_attack_v02007
+    - Zombie Basic 1_z01_attack_v02008
+    - Zombie Basic 1_z01_attack_v02009
+    spriteTextureGUIDs:
+    - 7fa412babbe44c54cb5fa632cdaf2d1d
+    - c6230eb01ce86eb4b9caf7cd5024a86f
+    - 1f0275e5f6cd65547b8dd7aea5a716a9
+    - eea810be3b4593e4b9cbc5fecb76c438
+    - 819061b365459f84d9603cd3cb8be83e
+    - 8627061c11ecc914687648ed50f88deb
+    - e1b02faafd4667244b3f0e615c85daec
+    - 7dfea9fac98f7724c8d66c04d534ebcc
+    - 909e9c0df8130d74c8eed33a7ec6f7a6
+    - 8547e4533f42fc94388540d11a39d460
+    - e55f741a37794164780d44336dbb7150
+    - 9e537a65bd6c0f445917e4271822ca4b
+    - 3ffaf6a8a1b5ca9419964e9d155cd01c
+    - 1ba3054972580404abe0bee1afe33819
+    - 1d3922fdef9dd3549b6ad67181f8ab33
+    - d8c72f648a1f6944cbf5c2705b92e31e
+    - 7cd89668c73923f45b6b8f1394045d05
+    - a7e0a73f16044b84f987382cbc9d997f
+    - 8483208b884642841b72376bca6095a1
+    - 2719e54821ac73f4ca9c8217cb8714a3
+    - 36b83be83e917954691d26fa0d9161b0
+    - a0b231986d1264d4e80d60c2119e6332
+    - 9a0180f9249a8d5488647eae53c3ee13
+    - e39f4d4179b457048bc31b6735b3360d
+    - 6e478ca5850ba834a850b54ea27c06c1
+    - 0e3eae6d3b291ab40b8b7346b4802ce4
+    - b7343b07a1674cd46994533538796b01
+    - 04ebcc63f2af087459d5fc694f244e04
+    - 454fde0ee748a64458fa6a01b6a236cd
+    - 4dbcef339c7a47e4e910db25d2a5b442
+    - 0e0dde1c3611e58489fc8d1d2c42ce19
+    - ab4a4e32205179549b42d90c52d8c911
+    - 26f79cdb6296b5c4fb05c8228280c25b
+    - 0b3e2fea3398d7f44bc363e9f57d5fb5
+    - 040501b0ef1983c45a5b4f70f31b63dd
+    - e0fcb881fcff3c04b9ed0e0b1b1b28fa
+    - 93c03e6dac8d6e4428b920dd9708b5b6
+    - 483bece87fca672469a49ea35ae25c6c
+    - 761a099402046974bae67fe596591002
+    - 7c762bc1a5345a449bad97e118dc05a2
+    spriteTextureTimeStamps:
+    - 1726718613.48459
+    - 1726718613.4866
+    - 1726718613.4876
+    - 1726718613.4886
+    - 1726718613.4896
+    - 1726718613.4916
+    - 1726718613.4916
+    - 1726718613.49323
+    - 1726718613.49424
+    - 1726718613.49524
+    - 1726718613.49624
+    - 1726718613.49724
+    - 1726718613.49824
+    - 1726718613.49924
+    - 1726718613.50024
+    - 1726718613.50124
+    - 1726718613.50275
+    - 1726718613.50378
+    - 1726718613.50478
+    - 1726718613.50579
+    - 1726718613.50679
+    - 1726718613.50779
+    - 1726718613.50879
+    - 1726718613.50979
+    - 1726718613.51079
+    - 1726718613.51179
+    - 1726718613.5133
+    - 1726718613.51431
+    - 1726718613.51531
+    - 1726718613.51631
+    - 1726718613.51731
+    - 1726718613.51831
+    - 1726718613.51931
+    - 1726718613.52031
+    - 1726718613.52131
+    - 1726718613.52282
+    - 1726718613.52386
+    - 1726718613.52486
+    - 1726718613.52587
+    - 1726718613.52687
+    managedSpriteCollection: 0
+    loadable: 0
+    assetName: 
+    version: 3
+  - name: CrawlerSpriteCollection
+    spriteCollectionGUID: 12aa1ab59cc5dc8478a6e47d306ead04
+    spriteCollectionDataGUID: 9a031bb638232c4418176628c9db17b4
+    spriteNames:
+    - Climber_climber_death_v02000
+    - Climber_climber_death_v02001
+    - Climber_climber_death_v02002
+    - Climber_climber_death_v02003
+    - Climber_climber_death_v02004
+    - Climber_climber_wounded000
+    - Climber_climber_wounded001
+    - Climber_walk0000
+    - Climber_walk0001
+    - Climber_walk0002
+    - Climber_walk0003
+    - Climber_deathroll_08
+    - Climber_deathroll_01
+    - Climber_deathroll_02
+    - Climber_deathroll_03
+    - Climber_deathroll_04
+    - Climber_deathroll_05
+    - Climber_deathroll_06
+    - Climber_deathroll_07
+    spriteTextureGUIDs:
+    - a36e1e59bcc0f9d4c8ad13fb1e7e77d8
+    - d9e5041cf78883e4d89dbf5eabb1c073
+    - 67bdd6bb70e866840b0dbf9b510d2de9
+    - 7d7ccd119129a604cabecca5eb30103a
+    - 90b189548efeb624eadb9a6e84f386fc
+    - df442e3cb17ad0547841e3cbfe3cd7bb
+    - 44562de0f6cb73d44a53c46ce0e179ec
+    - 1d936a350b9fd94478bc51725f9c1752
+    - cfda22b7ee57e884086e7aa892f6ace3
+    - c882232c37a5d1e4a90323bf7feca3b0
+    - d7e4572824c5b24479048b1925c2a68d
+    - fdc732c74f7489c46a34caca03ea96ba
+    - 2d02134156c35fa459f4607c9dff1a27
+    - e40abdb30c4ff2440b8501edf598fb03
+    - 98279405e927aae4eb9c9abe0005fa3c
+    - ef1a2dbd327315e488240ea73eab029a
+    - 9118785e89fa6784da27b7a58608300c
+    - 6f92b460457bd654eb78b241240db07a
+    - 6c4a79499dd537f4aa9a1d07e28a2d6f
+    spriteTextureTimeStamps:
+    - 1726718569.72934
+    - 1726718569.73034
+    - 1726718569.73134
+    - 1726718569.73134
+    - 1726718569.73285
+    - 1726718569.7339
+    - 1726718569.7349
+    - 1726718569.74338
+    - 1726718569.74425
+    - 1726718569.74526
+    - 1726718569.74626
+    - 1726718569.74287
+    - 1726718569.73686
+    - 1726718569.73686
+    - 1726718569.73787
+    - 1726718569.73886
+    - 1726718569.73987
+    - 1726718569.74087
+    - 1726718569.74187
+    managedSpriteCollection: 0
+    loadable: 0
+    assetName: 
+    version: 3

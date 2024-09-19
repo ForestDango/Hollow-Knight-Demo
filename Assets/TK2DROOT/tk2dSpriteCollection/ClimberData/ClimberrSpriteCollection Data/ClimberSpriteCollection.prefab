@@ -1,0 +1,965 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5175715291460150119
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 752854260839195827}
+  - component: {fileID: 297585507801166663}
+  m_Layer: 0
+  m_Name: ClimberSpriteCollection
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &752854260839195827
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5175715291460150119}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &297585507801166663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5175715291460150119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d546f34a90531a14eaba82a43b05b86b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 3
+  materialIdsValid: 1
+  needMaterialInstance: 0
+  spriteDefinitions:
+  - name: Climber_climber_death_v02000
+    boundsData:
+    - {x: 0.0546875, y: -0.054687485, z: 0}
+    - {x: 1.515625, y: 1.078125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 1.796875, y: 1.640625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.703125, y: -0.59375, z: 0}
+    - {x: 0.8125, y: -0.59375, z: 0}
+    - {x: -0.703125, y: 0.48437503, z: 0}
+    - {x: 0.8125, y: 0.48437503, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.34961134, y: 0.000001953125}
+    - {x: 0.53906053, y: 0.000001953125}
+    - {x: 0.34961134, y: 0.13476367}
+    - {x: 0.53906053, y: 0.13476367}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 01e4b3ecfc5342a42a7d7afc0f522356, type: 2}
+    materialId: 0
+    sourceTextureGUID: a36e1e59bcc0f9d4c8ad13fb1e7e77d8
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Climber_climber_death_v02001
+    boundsData:
+    - {x: 0.015625, y: 0.0390625, z: 0}
+    - {x: 1.21875, y: 1.296875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 1.796875, y: 1.640625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.59375, y: -0.609375, z: 0}
+    - {x: 0.625, y: -0.609375, z: 0}
+    - {x: -0.59375, y: 0.6875, z: 0}
+    - {x: 0.625, y: 0.6875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.46679884, y: 0.33203322}
+    - {x: 0.61913866, y: 0.33203322}
+    - {x: 0.46679884, y: 0.49413866}
+    - {x: 0.61913866, y: 0.49413866}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 01e4b3ecfc5342a42a7d7afc0f522356, type: 2}
+    materialId: 0
+    sourceTextureGUID: d9e5041cf78883e4d89dbf5eabb1c073
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Climber_climber_death_v02002
+    boundsData:
+    - {x: -0.085937515, y: -0.0234375, z: 0}
+    - {x: 1.171875, y: 1.390625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 1.796875, y: 1.640625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.671875, y: -0.71875, z: 0}
+    - {x: 0.49999997, y: -0.71875, z: 0}
+    - {x: -0.671875, y: 0.671875, z: 0}
+    - {x: 0.49999997, y: 0.671875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.32031447, y: 0.33203322}
+    - {x: 0.4667949, y: 0.33203322}
+    - {x: 0.32031447, y: 0.5058574}
+    - {x: 0.4667949, y: 0.5058574}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 01e4b3ecfc5342a42a7d7afc0f522356, type: 2}
+    materialId: 0
+    sourceTextureGUID: 67bdd6bb70e866840b0dbf9b510d2de9
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Climber_climber_death_v02003
+    boundsData:
+    - {x: -0.0078125, y: 0, z: 0}
+    - {x: 1.421875, y: 1.09375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 1.796875, y: 1.640625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.71875, y: -0.546875, z: 0}
+    - {x: 0.703125, y: -0.546875, z: 0}
+    - {x: -0.71875, y: 0.546875, z: 0}
+    - {x: 0.703125, y: 0.546875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.46875197, y: 0.13476758}
+    - {x: 0.46875197, y: 0.31249803}
+    - {x: 0.6054668, y: 0.13476758}
+    - {x: 0.6054668, y: 0.31249803}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 01e4b3ecfc5342a42a7d7afc0f522356, type: 2}
+    materialId: 0
+    sourceTextureGUID: 7d7ccd119129a604cabecca5eb30103a
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Climber_climber_death_v02004
+    boundsData:
+    - {x: -0.03125003, y: -0.124999985, z: 0}
+    - {x: 1.59375, y: 0.9375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 1.796875, y: 1.640625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.828125, y: -0.59375, z: 0}
+    - {x: 0.76562494, y: -0.59375, z: 0}
+    - {x: -0.828125, y: 0.34375003, z: 0}
+    - {x: 0.76562494, y: 0.34375003, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.000001953125, y: 0.8710957}
+    - {x: 0.1992168, y: 0.8710957}
+    - {x: 0.000001953125, y: 0.9882793}
+    - {x: 0.1992168, y: 0.9882793}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 01e4b3ecfc5342a42a7d7afc0f522356, type: 2}
+    materialId: 0
+    sourceTextureGUID: 90b189548efeb624eadb9a6e84f386fc
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Climber_climber_wounded000
+    boundsData:
+    - {x: -0.00781247, y: 0.015625, z: 0}
+    - {x: 1.515625, y: 1.125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 1.796875, y: 1.640625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.765625, y: -0.546875, z: 0}
+    - {x: 0.75000006, y: -0.546875, z: 0}
+    - {x: -0.765625, y: 0.578125, z: 0}
+    - {x: 0.75000006, y: 0.578125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.30859572, y: 0.67968947}
+    - {x: 0.30859572, y: 0.86913866}
+    - {x: 0.44921678, y: 0.67968947}
+    - {x: 0.44921678, y: 0.86913866}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 01e4b3ecfc5342a42a7d7afc0f522356, type: 2}
+    materialId: 0
+    sourceTextureGUID: df442e3cb17ad0547841e3cbfe3cd7bb
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Climber_climber_wounded001
+    boundsData:
+    - {x: 0.01562503, y: 0.0234375, z: 0}
+    - {x: 1.46875, y: 1.078125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 1.796875, y: 1.640625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.71875, y: -0.515625, z: 0}
+    - {x: 0.75000006, y: -0.515625, z: 0}
+    - {x: -0.71875, y: 0.5625, z: 0}
+    - {x: 0.75000006, y: 0.5625, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.33984572, y: 0.50586134}
+    - {x: 0.52343553, y: 0.50586134}
+    - {x: 0.33984572, y: 0.64062303}
+    - {x: 0.52343553, y: 0.64062303}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 01e4b3ecfc5342a42a7d7afc0f522356, type: 2}
+    materialId: 0
+    sourceTextureGUID: 44562de0f6cb73d44a53c46ce0e179ec
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Climber_walk0000
+    boundsData:
+    - {x: -0.02343753, y: 0.0859375, z: 0}
+    - {x: 1.390625, y: 1.234375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 1.796875, y: 1.640625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.71875, y: -0.53125, z: 0}
+    - {x: 0.67187494, y: -0.53125, z: 0}
+    - {x: -0.71875, y: 0.703125, z: 0}
+    - {x: 0.67187494, y: 0.703125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.16601758, y: 0.5253926}
+    - {x: 0.33984178, y: 0.5253926}
+    - {x: 0.16601758, y: 0.67968553}
+    - {x: 0.33984178, y: 0.67968553}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 01e4b3ecfc5342a42a7d7afc0f522356, type: 2}
+    materialId: 0
+    sourceTextureGUID: 1d936a350b9fd94478bc51725f9c1752
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Climber_walk0001
+    boundsData:
+    - {x: -0.03125003, y: 0.1015625, z: 0}
+    - {x: 1.40625, y: 1.234375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 1.796875, y: 1.640625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.734375, y: -0.515625, z: 0}
+    - {x: 0.67187494, y: -0.515625, z: 0}
+    - {x: -0.734375, y: 0.71875, z: 0}
+    - {x: 0.67187494, y: 0.71875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.16601758, y: 0.17383008}
+    - {x: 0.16601758, y: 0.3496074}
+    - {x: 0.32031053, y: 0.17383008}
+    - {x: 0.32031053, y: 0.3496074}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 01e4b3ecfc5342a42a7d7afc0f522356, type: 2}
+    materialId: 0
+    sourceTextureGUID: cfda22b7ee57e884086e7aa892f6ace3
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Climber_walk0002
+    boundsData:
+    - {x: -0.0078125, y: 0.078125, z: 0}
+    - {x: 1.421875, y: 1.1875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 1.796875, y: 1.640625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.71875, y: -0.515625, z: 0}
+    - {x: 0.703125, y: -0.515625, z: 0}
+    - {x: -0.71875, y: 0.671875, z: 0}
+    - {x: 0.703125, y: 0.671875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.32031447, y: 0.15429883}
+    - {x: 0.32031447, y: 0.33202928}
+    - {x: 0.46874803, y: 0.15429883}
+    - {x: 0.46874803, y: 0.33202928}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 01e4b3ecfc5342a42a7d7afc0f522356, type: 2}
+    materialId: 0
+    sourceTextureGUID: c882232c37a5d1e4a90323bf7feca3b0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Climber_walk0003
+    boundsData:
+    - {x: -0.03125003, y: 0.1015625, z: 0}
+    - {x: 1.40625, y: 1.234375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 1.796875, y: 1.640625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.734375, y: -0.515625, z: 0}
+    - {x: 0.67187494, y: -0.515625, z: 0}
+    - {x: -0.734375, y: 0.71875, z: 0}
+    - {x: 0.67187494, y: 0.71875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.17383008, y: 0.000001953125}
+    - {x: 0.3496074, y: 0.000001953125}
+    - {x: 0.17383008, y: 0.15429492}
+    - {x: 0.3496074, y: 0.15429492}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 01e4b3ecfc5342a42a7d7afc0f522356, type: 2}
+    materialId: 0
+    sourceTextureGUID: d7e4572824c5b24479048b1925c2a68d
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Climber_deathroll_08
+    boundsData:
+    - {x: 0.0546875, y: 0.1171875, z: 0}
+    - {x: 1.328125, y: 1.390625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 1.796875, y: 1.640625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.609375, y: -0.578125, z: 0}
+    - {x: 0.71875, y: -0.578125, z: 0}
+    - {x: -0.609375, y: 0.8125, z: 0}
+    - {x: 0.71875, y: 0.8125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.000001953125, y: 0.34961134}
+    - {x: 0.16601367, y: 0.34961134}
+    - {x: 0.000001953125, y: 0.52343553}
+    - {x: 0.16601367, y: 0.52343553}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 01e4b3ecfc5342a42a7d7afc0f522356, type: 2}
+    materialId: 0
+    sourceTextureGUID: fdc732c74f7489c46a34caca03ea96ba
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Climber_deathroll_01
+    boundsData:
+    - {x: -0.03125003, y: 0.1015625, z: 0}
+    - {x: 1.40625, y: 1.234375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 1.796875, y: 1.640625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.734375, y: -0.515625, z: 0}
+    - {x: 0.67187494, y: -0.515625, z: 0}
+    - {x: -0.734375, y: 0.71875, z: 0}
+    - {x: 0.67187494, y: 0.71875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.17383008, y: 0.000001953125}
+    - {x: 0.3496074, y: 0.000001953125}
+    - {x: 0.17383008, y: 0.15429492}
+    - {x: 0.3496074, y: 0.15429492}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 01e4b3ecfc5342a42a7d7afc0f522356, type: 2}
+    materialId: 0
+    sourceTextureGUID: 2d02134156c35fa459f4607c9dff1a27
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Climber_deathroll_02
+    boundsData:
+    - {x: 0.0390625, y: 0.0859375, z: 0}
+    - {x: 1.390625, y: 1.390625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 1.796875, y: 1.640625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.65625, y: -0.609375, z: 0}
+    - {x: 0.734375, y: -0.609375, z: 0}
+    - {x: -0.65625, y: 0.78125, z: 0}
+    - {x: 0.734375, y: 0.78125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.000001953125, y: 0.000001953125}
+    - {x: 0.17382617, y: 0.000001953125}
+    - {x: 0.000001953125, y: 0.17382617}
+    - {x: 0.17382617, y: 0.17382617}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 01e4b3ecfc5342a42a7d7afc0f522356, type: 2}
+    materialId: 0
+    sourceTextureGUID: e40abdb30c4ff2440b8501edf598fb03
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Climber_deathroll_03
+    boundsData:
+    - {x: -0.02343753, y: 0.09375, z: 0}
+    - {x: 1.234375, y: 1.40625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 1.796875, y: 1.640625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.640625, y: -0.609375, z: 0}
+    - {x: 0.59374994, y: -0.609375, z: 0}
+    - {x: -0.640625, y: 0.796875, z: 0}
+    - {x: 0.59374994, y: 0.796875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.000001953125, y: 0.69531447}
+    - {x: 0.15429492, y: 0.69531447}
+    - {x: 0.000001953125, y: 0.8710918}
+    - {x: 0.15429492, y: 0.8710918}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 01e4b3ecfc5342a42a7d7afc0f522356, type: 2}
+    materialId: 0
+    sourceTextureGUID: 98279405e927aae4eb9c9abe0005fa3c
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Climber_deathroll_04
+    boundsData:
+    - {x: 0.0390625, y: 0.125, z: 0}
+    - {x: 1.328125, y: 1.375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 1.796875, y: 1.640625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.625, y: -0.5625, z: 0}
+    - {x: 0.703125, y: -0.5625, z: 0}
+    - {x: -0.625, y: 0.8125, z: 0}
+    - {x: 0.703125, y: 0.8125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.000001953125, y: 0.52343947}
+    - {x: 0.16601367, y: 0.52343947}
+    - {x: 0.000001953125, y: 0.69531053}
+    - {x: 0.16601367, y: 0.69531053}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 01e4b3ecfc5342a42a7d7afc0f522356, type: 2}
+    materialId: 0
+    sourceTextureGUID: ef1a2dbd327315e488240ea73eab029a
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Climber_deathroll_05
+    boundsData:
+    - {x: -0.01562503, y: 0.0859375, z: 0}
+    - {x: 1.40625, y: 1.234375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 1.796875, y: 1.640625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.71875, y: -0.53125, z: 0}
+    - {x: 0.68749994, y: -0.53125, z: 0}
+    - {x: -0.71875, y: 0.703125, z: 0}
+    - {x: 0.68749994, y: 0.703125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.16601758, y: 0.34961134}
+    - {x: 0.16601758, y: 0.52538866}
+    - {x: 0.32031053, y: 0.34961134}
+    - {x: 0.32031053, y: 0.52538866}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 01e4b3ecfc5342a42a7d7afc0f522356, type: 2}
+    materialId: 0
+    sourceTextureGUID: 9118785e89fa6784da27b7a58608300c
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Climber_deathroll_06
+    boundsData:
+    - {x: 0.04687503, y: 0.1328125, z: 0}
+    - {x: 1.40625, y: 1.328125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 1.796875, y: 1.640625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.65625, y: -0.53125, z: 0}
+    - {x: 0.75000006, y: -0.53125, z: 0}
+    - {x: -0.65625, y: 0.796875, z: 0}
+    - {x: 0.75000006, y: 0.796875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.000001953125, y: 0.17383008}
+    - {x: 0.000001953125, y: 0.3496074}
+    - {x: 0.16601367, y: 0.17383008}
+    - {x: 0.16601367, y: 0.3496074}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 01e4b3ecfc5342a42a7d7afc0f522356, type: 2}
+    materialId: 0
+    sourceTextureGUID: 6f92b460457bd654eb78b241240db07a
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Climber_deathroll_07
+    boundsData:
+    - {x: -0.0078125, y: 0.078125, z: 0}
+    - {x: 1.234375, y: 1.40625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 1.796875, y: 1.640625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.625, y: -0.625, z: 0}
+    - {x: 0.609375, y: -0.625, z: 0}
+    - {x: -0.625, y: 0.78125, z: 0}
+    - {x: 0.609375, y: 0.78125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.15429883, y: 0.69531447}
+    - {x: 0.30859178, y: 0.69531447}
+    - {x: 0.15429883, y: 0.8710918}
+    - {x: 0.30859178, y: 0.8710918}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 01e4b3ecfc5342a42a7d7afc0f522356, type: 2}
+    materialId: 0
+    sourceTextureGUID: 6c4a79499dd537f4aa9a1d07e28a2d6f
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  premultipliedAlpha: 0
+  material: {fileID: 0}
+  materials:
+  - {fileID: 2100000, guid: 01e4b3ecfc5342a42a7d7afc0f522356, type: 2}
+  textures:
+  - {fileID: 2800000, guid: 8f761cab249782b4fb27e08408a6da27, type: 3}
+  pngTextures: []
+  materialPngTextureId: 00000000
+  textureFilterMode: 0
+  textureMipMaps: 0
+  allowMultipleAtlases: 0
+  spriteCollectionGUID: 12aa1ab59cc5dc8478a6e47d306ead04
+  spriteCollectionName: CrawlerSpriteCollection
+  assetName: 
+  loadable: 0
+  invOrthoSize: 2
+  halfTargetHeight: 32
+  buildKey: 1117164907
+  dataGuid: 9a031bb638232c4418176628c9db17b4
+  managedSpriteCollection: 0
+  hasPlatformData: 0
+  spriteCollectionPlatforms: []
+  spriteCollectionPlatformGUIDs: []

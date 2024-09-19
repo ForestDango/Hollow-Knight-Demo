@@ -1,4 +1,4 @@
-﻿// (c) Copyright HutongGames, LLC 2010-2016. All rights reserved.
+﻿// (c) Copyright HutongGames, LLC 2010-2014. All rights reserved.
 // original action created by collidernyc: http://hutonggames.com/playmakerforum/index.php?topic=7075.msg37373#msg37373
 
 using UnityEngine;
@@ -31,8 +31,11 @@ namespace HutongGames.PlayMaker.Actions
 		
 		private GameObject go;
 		private GameObject goTarget;
-
-	    public override void Reset()
+		private Vector3 lookAtPos;
+		
+		
+		
+		public override void Reset()
 		{
 			gameObject = null;
 			targetObject = null;
@@ -60,13 +63,16 @@ namespace HutongGames.PlayMaker.Actions
 		{
 			go = Fsm.GetOwnerDefaultTarget(gameObject);
 			goTarget = targetObject.Value;
-
-            if (go == null || goTarget == null) return;
 			
-			var diff = goTarget.transform.position - go.transform.position;
+			if (go == null || targetObject == null)
+			{
+				return;
+			}
+			
+			Vector3 diff = goTarget.transform.position - go.transform.position;
 			diff.Normalize();
 			
-			var rot_z = Mathf.Atan2(diff.y, diff.x) * Mathf.Rad2Deg;
+			float rot_z = Mathf.Atan2(diff.y, diff.x) * Mathf.Rad2Deg;
 			go.transform.rotation = Quaternion.Euler(0f, 0f, rot_z - rotationOffset.Value);
 			
 			if (debug.Value)

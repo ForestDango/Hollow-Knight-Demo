@@ -21,10 +21,36 @@ public class HeroController : MonoBehaviour
     private GameManager gm;
     private InputHandler inputHandler;
     public HeroControllerStates cState;
-    private HeroAnimatorController animCtrl;
+    private HeroAnimationController animCtrl;
+
+    private static HeroController _instance;
+
+    public static HeroController instance
+    {
+	get
+	{
+            if (_instance == null)
+                _instance = FindObjectOfType<HeroController>();
+            if(_instance && Application.isPlaying)
+	    {
+                DontDestroyOnLoad(_instance.gameObject);
+	    }
+            return _instance;
+	}
+    }
 
     private void Awake()
     {
+        if(_instance == null)
+	{
+            _instance = this;
+            DontDestroyOnLoad(this);
+	}
+        else if(this != _instance)
+	{
+            Destroy(gameObject);
+            return;
+	}
         SetupGameRefs();
     }
 
@@ -34,7 +60,7 @@ public class HeroController : MonoBehaviour
             cState = new HeroControllerStates();
         rb2d = GetComponent<Rigidbody2D>();
         col2d = GetComponent<BoxCollider2D>();
-        animCtrl = GetComponent<HeroAnimatorController>();
+        animCtrl = GetComponent<HeroAnimationController>();
         gm = GameManager.instance;
         inputHandler = gm.GetComponent<InputHandler>();
     }
@@ -135,7 +161,7 @@ public class HeroController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-	if(collision.gameObject.layer == LayerMask.NameToLayer("Wall"))
+	if(collision.gameObject.layer == LayerMask.NameToLayer("Terrain"))
 	{
             cState.onGround = true;
 	}
@@ -143,7 +169,7 @@ public class HeroController : MonoBehaviour
 
     private void OnCollisionStay2D(Collision2D collision)
     {
-        if (collision.gameObject.layer == LayerMask.NameToLayer("Wall"))
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Terrain"))
         {
             cState.onGround = true;
         }
@@ -151,7 +177,7 @@ public class HeroController : MonoBehaviour
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.gameObject.layer == LayerMask.NameToLayer("Wall"))
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Terrain"))
         {
             cState.onGround = false;
         }
@@ -166,7 +192,7 @@ public class HeroControllerStates
 
     public HeroControllerStates()
     {
-        facingRight = true;
+        facingRight = false;
         onGround = false;
     }
 }

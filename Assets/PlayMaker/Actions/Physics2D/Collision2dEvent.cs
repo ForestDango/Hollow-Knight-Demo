@@ -1,277 +1,140 @@
-﻿// (c) Copyright HutongGames, LLC 2010-2020. All rights reserved.
+﻿// (c) Copyright HutongGames, LLC 2010-2013. All rights reserved.
 
+using System;
 using UnityEngine;
 
 namespace HutongGames.PlayMaker.Actions
 {
-    [ActionCategory(ActionCategory.Physics2D)]
-    [Tooltip("Detect collisions between the Owner of this FSM and other Game Objects that have RigidBody2D components. " +
-             "NOTE: The system events, COLLISION ENTER 2D, COLLISION STAY 2D, and COLLISION EXIT 2D are sent automatically " +
-             "on collisions with any object. Use this action instead to filter collisions by Tag.")]
-    public class Collision2dEvent : FsmStateAction
-    {
-        [Tooltip("The GameObject to detect collisions on.")]
-        public FsmOwnerDefault gameObject;
+	[ActionCategory("Physics 2d")]
+	[Tooltip("Detect 2D collisions between the Owner of this FSM and other Game Objects that have RigidBody2D components.\nNOTE: The system events, COLLISION ENTER 2D, COLLISION STAY 2D, and COLLISION EXIT 2D are sent automatically on collisions with any object. Use this action to filter collisions by Tag.")]
+	public class Collision2dEvent : FsmStateAction
+	{
 
-        [Tooltip("The type of collision to detect.")]
-        public Collision2DType collision;
+		[Tooltip("The type of collision to detect.")]
+		public PlayMakerUnity2d.Collision2DType collision;
+		
+		[UIHint(UIHint.Tag)]
+		[Tooltip("Filter by Tag.")]
+		public FsmString collideTag;
 
-        [Tooltip("If true, Collision that are not enabled will be ignored.")]
-        public FsmBool ignoreDisabled;
+		[RequiredField]
+		[Tooltip("Event to send if a collision is detected.")]
+		public FsmEvent sendEvent;
+		
+		[UIHint(UIHint.Variable)]
+		[Tooltip("Store the GameObject that collided with the Owner of this FSM.")]
+		public FsmGameObject storeCollider;
+		
+		[UIHint(UIHint.Variable)]
+		[Tooltip("Store the force of the collision. NOTE: Use Get Collision Info to get more info about the collision.")]
+		public FsmFloat storeForce;
 
-        [UIHint(UIHint.TagMenu)]
-        [Tooltip("Filter by Tag.")]
-        public FsmString collideTag;
 
-        [Tooltip("Event to send if a collision is detected.")]
-        public FsmEvent sendEvent;
+		private PlayMakerUnity2DProxy _proxy;
 
-        [UIHint(UIHint.Variable)]
-        [Tooltip("Store the GameObject that collided with the Owner of this FSM.")]
-        public FsmGameObject storeCollider;
+		public override void Reset()
+		{
+			collision =  PlayMakerUnity2d.Collision2DType.OnCollisionEnter2D;
+			collideTag = new FsmString(){UseVariable=true};
+			sendEvent = null;
+			storeCollider = null;
+			storeForce = null;
+		}
+		
+		public override void OnEnter()
+		{
+			_proxy = (PlayMakerUnity2DProxy) this.Owner.GetComponent<PlayMakerUnity2DProxy>();
 
-        [UIHint(UIHint.Variable)]
-        [Tooltip("Store the force of the collision. NOTE: Use Get Collision 2D Info to get more info about the collision.")]
-        public FsmFloat storeForce;
+			if (_proxy == null)
+			{
+				_proxy = this.Owner.AddComponent<PlayMakerUnity2DProxy>();
+			}
 
-        // cached proxy component for callbacks
-        private PlayMakerProxyBase cachedProxy;
+			switch (collision)
+			{
+			case PlayMakerUnity2d.Collision2DType.OnCollisionEnter2D:
+				_proxy.AddOnCollisionEnter2dDelegate(this.DoCollisionEnter2D);
+				break;
+			case PlayMakerUnity2d.Collision2DType.OnCollisionStay2D:
+				_proxy.AddOnCollisionStay2dDelegate(this.DoCollisionStay2D);
+				break;
+			case PlayMakerUnity2d.Collision2DType.OnCollisionExit2D:
+				_proxy.AddOnCollisionExit2dDelegate(this.DoCollisionExit2D);
+				break;
+			}
+		}
 
-        public override void Reset()
-        {
-            collision = Collision2DType.OnCollisionEnter2D;
-            collideTag = "";
-            sendEvent = null;
-            storeCollider = null;
-            storeForce = null;
-            ignoreDisabled = false;
-        }
+		public override void OnExit()
+		{
+			if (_proxy==null)
+			{
+				return;
+			}
 
-        public override void OnPreprocess()
-        {
-            if (gameObject == null) gameObject = new FsmOwnerDefault();
-            if (gameObject.OwnerOption == OwnerDefaultOption.UseOwner)
-            {
-                switch (collision)
-                {
-                    case Collision2DType.OnCollisionEnter2D:
-                        Fsm.HandleCollisionEnter2D = true;
-                        break;
-                    case Collision2DType.OnCollisionStay2D:
-                        Fsm.HandleCollisionStay2D = true;
-                        break;
-                    case Collision2DType.OnCollisionExit2D:
-                        Fsm.HandleCollisionExit2D = true;
-                        break;
-                    case Collision2DType.OnParticleCollision:
-                        Fsm.HandleParticleCollision = true;
-                        break;
-                }
-            }
-            else
-            {
-                // Add proxy components now if we can
-                GetProxyComponent();
-            }
-        }
-
-        public override void OnEnter()
-        {
-            if (gameObject.OwnerOption == OwnerDefaultOption.UseOwner)
-                return;
-
-            if (cachedProxy == null)
-                GetProxyComponent();
-
-            AddCallback();
-
-            gameObject.GameObject.OnChange += UpdateCallback;
-        }
-
-        public override void OnExit()
-        {
-            if (gameObject.OwnerOption == OwnerDefaultOption.UseOwner)
-                return;
-
-            RemoveCallback();
-
-            gameObject.GameObject.OnChange -= UpdateCallback;
-        }
-
-        private void UpdateCallback()
-        {
-            RemoveCallback();
-            GetProxyComponent();
-            AddCallback();
-        }
-
-        private void GetProxyComponent()
-        {
-            cachedProxy = null;
-            var source = gameObject.GameObject.Value;
-            if (source == null)
-                return;
-
-            switch (collision)
-            {
-                case Collision2DType.OnCollisionEnter2D:
-                    cachedProxy = PlayMakerFSM.GetEventHandlerComponent<PlayMakerCollisionEnter2D>(source);
-                    break;
-                case Collision2DType.OnCollisionStay2D:
-                    cachedProxy = PlayMakerFSM.GetEventHandlerComponent<PlayMakerCollisionStay2D>(source);
-                    break;
-                case Collision2DType.OnCollisionExit2D:
-                    cachedProxy = PlayMakerFSM.GetEventHandlerComponent<PlayMakerCollisionExit2D>(source);
-                    break;
-                case Collision2DType.OnParticleCollision:
-                    cachedProxy = PlayMakerFSM.GetEventHandlerComponent<PlayMakerParticleCollision>(source);
-                    break;
-            }
-        }
-
-        private void AddCallback()
-        {
-            if (cachedProxy == null)
-                return;
-
-            switch (collision)
-            {
-                case Collision2DType.OnCollisionEnter2D:
-                    cachedProxy.AddCollision2DEventCallback(CollisionEnter2D);
-                    break;
-                case Collision2DType.OnCollisionStay2D:
-                    cachedProxy.AddCollision2DEventCallback(CollisionStay2D);
-                    break;
-                case Collision2DType.OnCollisionExit2D:
-                    cachedProxy.AddCollision2DEventCallback(CollisionExit2D);
-                    break;
-                case Collision2DType.OnParticleCollision:
-                    cachedProxy.AddParticleCollisionEventCallback(ParticleCollision);
-                    break;
-            }
-        }
-
-        private void RemoveCallback()
-        {
-            if (cachedProxy == null)
-                return;
-
-            switch (collision)
-            {
-                case Collision2DType.OnCollisionEnter2D:
-                    cachedProxy.RemoveCollision2DEventCallback(CollisionEnter2D);
-                    break;
-                case Collision2DType.OnCollisionStay2D:
-                    cachedProxy.RemoveCollision2DEventCallback(CollisionStay2D);
-                    break;
-                case Collision2DType.OnCollisionExit2D:
-                    cachedProxy.RemoveCollision2DEventCallback(CollisionExit2D);
-                    break;
-                case Collision2DType.OnParticleCollision:
-                    cachedProxy.RemoveParticleCollisionEventCallback(ParticleCollision);
-                    break;
-            }
-        }
-
-        private void StoreCollisionInfo(Collision2D collisionInfo)
-        {
-            storeCollider.Value = collisionInfo.gameObject;
-            storeForce.Value = collisionInfo.relativeVelocity.magnitude;
-        }
-
-        public override void DoCollisionEnter2D(Collision2D collisionInfo)
-        {
-            if (gameObject.OwnerOption == OwnerDefaultOption.UseOwner)
-                CollisionEnter2D(collisionInfo);
-        }
-
-        public override void DoCollisionStay2D(Collision2D collisionInfo)
-        {
-            if (gameObject.OwnerOption == OwnerDefaultOption.UseOwner)
-                CollisionStay2D(collisionInfo);
-        }
-
-        public override void DoCollisionExit2D(Collision2D collisionInfo)
-        {
-            if (gameObject.OwnerOption == OwnerDefaultOption.UseOwner)
-                CollisionExit2D(collisionInfo);
-        }
-
-        public override void DoParticleCollision(GameObject other)
-        {
-            if (gameObject.OwnerOption == OwnerDefaultOption.UseOwner)
-                ParticleCollision(other);
-        }
-
-        private void CollisionEnter2D(Collision2D collisionInfo)
-        {
-            if (collision == Collision2DType.OnCollisionEnter2D)
-            {
-                if (ignoreDisabled.Value && !collisionInfo.enabled)
-                {
-                    return;
-                }
-
-                if (TagMatches(collideTag, collisionInfo))
-                {
-                    StoreCollisionInfo(collisionInfo);
-                    Fsm.Event(sendEvent);
-                }
-            }
-        }
-
-        private void CollisionStay2D(Collision2D collisionInfo)
-        {
-            if (collision == Collision2DType.OnCollisionStay2D)
-            {
-                if (ignoreDisabled.Value && !collisionInfo.enabled)
-                {
-                    return;
-                }
-
-                if (TagMatches(collideTag, collisionInfo))
-                {
-                    StoreCollisionInfo(collisionInfo);
-                    Fsm.Event(sendEvent);
-                }
-            }
-        }
-
-        private void CollisionExit2D(Collision2D collisionInfo)
-        {
-            if (collision == Collision2DType.OnCollisionExit2D)
-            {
-                if (ignoreDisabled.Value && !collisionInfo.enabled)
-                {
-                    return;
-                }
-
-                if (TagMatches(collideTag, collisionInfo))
-                {
-                    StoreCollisionInfo(collisionInfo);
-                    Fsm.Event(sendEvent);
-                }
-            }
-        }
-
-        private void ParticleCollision(GameObject other)
-        {
-            if (collision == Collision2DType.OnParticleCollision)
-            {
-                if (TagMatches(collideTag, other))
-                {
-                    if (storeCollider != null)
-                        storeCollider.Value = other;
-
-                    storeForce.Value = 0f; //TODO: impact force?
-                    Fsm.Event(sendEvent);
-                }
-            }
-        }
-
-        public override string ErrorCheck()
-        {
-            return ActionHelpers.CheckPhysics2dSetup(Fsm.GetOwnerDefaultTarget(gameObject));
-        }
-    }
+			switch (collision)
+			{
+			case PlayMakerUnity2d.Collision2DType.OnCollisionEnter2D:
+				_proxy.RemoveOnCollisionEnter2dDelegate(this.DoCollisionEnter2D);
+				break;
+			case PlayMakerUnity2d.Collision2DType.OnCollisionStay2D:
+				_proxy.RemoveOnCollisionStay2dDelegate(this.DoCollisionStay2D);
+				break;
+			case PlayMakerUnity2d.Collision2DType.OnCollisionExit2D:
+				_proxy.RemoveOnCollisionExit2dDelegate(this.DoCollisionExit2D);
+				break;
+			}
+		}
+		
+		void StoreCollisionInfo(Collision2D collisionInfo)
+		{
+			storeCollider.Value = collisionInfo.gameObject;
+			storeForce.Value = collisionInfo.relativeVelocity.magnitude;
+		}
+		
+		public void DoCollisionEnter2D(Collision2D collisionInfo)
+		{
+			if (collision == PlayMakerUnity2d.Collision2DType.OnCollisionEnter2D)
+			{
+				if (collisionInfo.collider.gameObject.tag == collideTag.Value || collideTag.IsNone || string.IsNullOrEmpty(collideTag.Value))
+				{
+					StoreCollisionInfo(collisionInfo);
+					Fsm.Event(sendEvent);
+				}
+			}
+		}
+		
+		public void DoCollisionStay2D(Collision2D collisionInfo)
+		{
+			if (collision == PlayMakerUnity2d.Collision2DType.OnCollisionStay2D)
+			{
+				if (collisionInfo.collider.gameObject.tag == collideTag.Value || collideTag.IsNone || string.IsNullOrEmpty(collideTag.Value))
+				{
+					StoreCollisionInfo(collisionInfo);
+					Fsm.Event(sendEvent);
+				}
+			}
+		}
+		
+		public void DoCollisionExit2D(Collision2D collisionInfo)
+		{
+			if (collision == PlayMakerUnity2d.Collision2DType.OnCollisionExit2D)
+			{
+				if (collisionInfo.collider.gameObject.tag == collideTag.Value || collideTag.IsNone || string.IsNullOrEmpty(collideTag.Value))
+				{
+					StoreCollisionInfo(collisionInfo);
+					Fsm.Event(sendEvent);
+				}
+			}
+		}
+		
+		public override string ErrorCheck()
+		{
+			string text = string.Empty;
+			if (Owner != null && Owner.GetComponent<Collider2D>() == null && Owner.GetComponent<Rigidbody2D>() == null)
+			{
+				text += "Owner requires a RigidBody2D or Collider2D!\n";
+			}
+			return text;
+		}
+	}
 }

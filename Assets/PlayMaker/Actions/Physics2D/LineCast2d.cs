@@ -1,10 +1,10 @@
-﻿// (c) Copyright HutongGames, LLC 2010-2016. All rights reserved.
+﻿// (c) Copyright HutongGames, LLC 2010-2013. All rights reserved.
 
 using UnityEngine;
 
 namespace HutongGames.PlayMaker.Actions
 {
-	[ActionCategory(ActionCategory.Physics2D)]
+	[ActionCategory("Physics 2d")]
 	[Tooltip("Casts a Ray against all Colliders in the scene." +
 		"A linecast is an imaginary line between two points in world space. Any object making contact with the beam can be detected and reported. This differs from the similar raycast in that raycasting specifies the line using an origin and direction." +
 		"Use GetRaycastHit2dInfo to get more detailed info.")]
@@ -49,7 +49,7 @@ namespace HutongGames.PlayMaker.Actions
 		public FsmVector2 storeHitPoint;
 		
 		[UIHint(UIHint.Variable)]
-		[Tooltip("Get the 2d normal at the hit point and store it in a variable.\nNote, this is a direction vector not a rotation.")]
+		[Tooltip("Get the 2d normal at the hit point and store it in a variable.")]
 		public FsmVector2 storeHitNormal;
 		
 		[UIHint(UIHint.Variable)]
@@ -58,7 +58,7 @@ namespace HutongGames.PlayMaker.Actions
 		
 		[ActionSection("Filter")] 
 		
-		[Tooltip("Set how often to cast a ray. 0 = once, don't repeat; 1 = everyFrame; 2 = every other frame... \nBecause raycasts can get expensive use the highest repeat interval you can get away with.")]
+		[Tooltip("Set how often to cast a ray. 0 = once, don't repeat; 1 = everyFrame; 2 = every other frame... \nSince raycasts can get expensive use the highest repeat interval you can get away with.")]
 		public FsmInt repeatInterval;
 		
 		[UIHint(UIHint.Layer)]
@@ -75,12 +75,12 @@ namespace HutongGames.PlayMaker.Actions
 		
 		[Tooltip("Draw a debug line. Note: Check Gizmos in the Game View to see it in game.")]
 		public FsmBool debug;
+		
+		
+		Transform _fromTrans;
+		Transform _toTrans;
 
-
-	    private Transform _fromTrans;
-	    private Transform _toTrans;
-
-	    private int repeat;
+		int repeat;
 		
 		public override void Reset()
 		{
@@ -105,13 +105,15 @@ namespace HutongGames.PlayMaker.Actions
 		
 		public override void OnEnter()
 		{
-			var fromGo = Fsm.GetOwnerDefaultTarget(fromGameObject);			
+			GameObject fromGo = Fsm.GetOwnerDefaultTarget(fromGameObject);
+			
 			if (fromGo!=null)
 			{
 				_fromTrans = fromGo.transform;
 			}
 
-			var toGo = toGameObject.Value;		
+			GameObject toGo = toGameObject.Value;
+			
 			if (toGo!=null)
 			{
 				_toTrans = toGo.transform;
@@ -134,12 +136,12 @@ namespace HutongGames.PlayMaker.Actions
 				DoRaycast();
 			}
 		}
-
-	    private void DoRaycast()
+		
+		void DoRaycast()
 		{
 			repeat = repeatInterval.Value;
 			
-			var fromPos = fromPosition.Value;
+			Vector2 fromPos = fromPosition.Value;
 			
 			if (_fromTrans!=null)
 			{
@@ -147,7 +149,7 @@ namespace HutongGames.PlayMaker.Actions
 				fromPos.y += _fromTrans.position.y;
 			}
 
-			var toPos = toPosition.Value;
+			Vector2 toPos = toPosition.Value;
 			
 			if (_toTrans!=null)
 			{
@@ -161,17 +163,15 @@ namespace HutongGames.PlayMaker.Actions
 			if (minDepth.IsNone && maxDepth.IsNone)
 			{
 				hitInfo = Physics2D.Linecast(fromPos,toPos,ActionHelpers.LayerArrayToLayerMask(layerMask, invertMask.Value));
-			}
-            else
-            {
-				var _minDepth = minDepth.IsNone? Mathf.NegativeInfinity : minDepth.Value;
-				var _maxDepth = maxDepth.IsNone? Mathf.Infinity : maxDepth.Value;
+			}else{
+				float _minDepth = minDepth.IsNone? Mathf.NegativeInfinity : minDepth.Value;
+				float _maxDepth = maxDepth.IsNone? Mathf.Infinity : maxDepth.Value;
 				hitInfo = Physics2D.Linecast(fromPos,toPos,ActionHelpers.LayerArrayToLayerMask(layerMask, invertMask.Value),_minDepth,_maxDepth);
 			}
 
-			Fsm.RecordLastRaycastHit2DInfo(Fsm,hitInfo);
+			PlayMakerUnity2d.RecordLastRaycastHitInfo(this.Fsm,hitInfo);
 
-			var didHit = hitInfo.collider != null;
+			bool didHit = hitInfo.collider != null;
 			
 			storeDidHit.Value = didHit;
 			
@@ -186,8 +186,8 @@ namespace HutongGames.PlayMaker.Actions
 			
 			if (debug.Value)
 			{
-				var start = new Vector3(fromPos.x,fromPos.y,0);
-				var end = new Vector3(toPos.x,toPos.y,0);
+				Vector3 start = new Vector3(fromPos.x,fromPos.y,0);
+				Vector3 end = new Vector3(toPos.x,toPos.y,0);
 				
 				Debug.DrawLine(start,end, debugColor.Value);
 			}

@@ -1,30 +1,25 @@
-﻿// (c) Copyright HutongGames, LLC 2010-2016. All rights reserved.
+﻿// (c) Copyright HutongGames, LLC 2010-2013. All rights reserved.
 
 using System;
 using UnityEngine;
 
 namespace HutongGames.PlayMaker.Actions
 {
-	[ActionCategory(ActionCategory.Physics2D)]
-	[Tooltip("Tests if a Game Object's Rigidbody 2D is sleeping.")]
-    public class IsSleeping2d : ComponentAction<Rigidbody2D>
+	[ActionCategory("Physics 2d")]
+	[Tooltip("Tests if a Game Object's Rigid Body 2D is sleeping.")]
+	public class IsSleeping2d : RigidBody2dActionBase
 	{
 		[RequiredField]
 		[CheckForComponent(typeof(Rigidbody2D))]
-		[Tooltip("The GameObject with the Rigidbody2D attached")]
 		public FsmOwnerDefault gameObject;
-
-		[Tooltip("Event sent if sleeping")]
+		
 		public FsmEvent trueEvent;
-
-		[Tooltip("Event sent if not sleeping")]
+		
 		public FsmEvent falseEvent;
 		
 		[UIHint(UIHint.Variable)]
-		[Tooltip("Store the value in a Boolean variable")]
 		public FsmBool store;
-
-		[Tooltip("Repeat every frame")]
+		
 		public bool everyFrame;
 		
 		public override void Reset()
@@ -38,6 +33,8 @@ namespace HutongGames.PlayMaker.Actions
 		
 		public override void OnEnter()
 		{
+			CacheRigidBody2d(Fsm.GetOwnerDefaultTarget(gameObject));
+
 			DoIsSleeping();
 			
 			if (!everyFrame)
@@ -52,14 +49,13 @@ namespace HutongGames.PlayMaker.Actions
 		}
 		
 		void DoIsSleeping()
-		{
-            var go = Fsm.GetOwnerDefaultTarget(gameObject);
-            if (!UpdateCache(go))
-            {
-                return;
-            }
+		{	
+			if (rb2d == null)
+			{
+				return;
+			}
 			
-			var isSleeping = rigidbody2d.IsSleeping();
+			var isSleeping = rb2d.IsSleeping();
 			store.Value = isSleeping;
 			
 			Fsm.Event(isSleeping ? trueEvent : falseEvent);

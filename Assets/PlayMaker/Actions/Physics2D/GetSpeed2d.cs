@@ -1,25 +1,20 @@
-﻿// (c) Copyright HutongGames, LLC 2010-2016. All rights reserved.
+﻿// (c) Copyright HutongGames, LLC 2010-2013. All rights reserved.
 
 using UnityEngine;
 
 namespace HutongGames.PlayMaker.Actions
 {
-	[ActionCategory(ActionCategory.Physics2D)]
+	[ActionCategory("Physics 2d")]
 	[Tooltip("Gets the 2d Speed of a Game Object and stores it in a Float Variable. NOTE: The Game Object must have a rigid body 2D.")]
-    public class GetSpeed2d : ComponentAction<Rigidbody2D>
+	public class GetSpeed2d : RigidBody2dActionBase
 	{
 		[RequiredField]
 		[CheckForComponent(typeof(Rigidbody2D))]
-		[Tooltip("The GameObject with the Rigidbody2D attached")]
 		public FsmOwnerDefault gameObject;
-		
-        [RequiredField]
+		[RequiredField]
 		[UIHint(UIHint.Variable)]
-		[Tooltip("The speed, or in technical terms: velocity magnitude")]
 		public FsmFloat storeResult;
-
-		[Tooltip("Repeat every frame.")]
-        public bool everyFrame;
+		public bool everyFrame;
 		
 		public override void Reset()
 		{
@@ -30,12 +25,12 @@ namespace HutongGames.PlayMaker.Actions
 		
 		public override void OnEnter()
 		{
-			DoGetSpeed();
+			CacheRigidBody2d(Fsm.GetOwnerDefaultTarget(gameObject));
 
-		    if (!everyFrame)
-		    {
-		        Finish();
-		    }		
+			DoGetSpeed();
+			
+			if (!everyFrame)
+				Finish();		
 		}
 		
 		public override void OnUpdate()
@@ -45,15 +40,12 @@ namespace HutongGames.PlayMaker.Actions
 		
 		void DoGetSpeed()
 		{
-		    if (storeResult.IsNone) return;
+			if (storeResult == null || rb2d == null)
+			{
+				return;
+			}
 
-            var go = Fsm.GetOwnerDefaultTarget(gameObject);
-            if (!UpdateCache(go))
-            {
-                return;
-            }
-
-			storeResult.Value = rigidbody2d.velocity.magnitude;
+			storeResult.Value = rb2d.velocity.magnitude;
 		}
 		
 		

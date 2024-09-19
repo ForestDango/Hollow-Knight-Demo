@@ -1,4 +1,4 @@
-﻿// (c) Copyright HutongGames, LLC 2010-2016. All rights reserved.
+﻿// (c) Copyright HutongGames, LLC 2010-2014. All rights reserved.
 // original action created by collidernyc: http://hutonggames.com/playmakerforum/index.php?topic=7075.msg37373#msg37373
 
 using UnityEngine;
@@ -31,8 +31,14 @@ namespace HutongGames.PlayMaker.Actions
 		
 		[Tooltip("Repeat every frame.")]
 		public bool everyFrame = true;
+		
+		private GameObject go;
 
-	    public override void Reset()
+		private Vector3 lookAtPos;
+		
+		
+		
+		public override void Reset()
 		{
 			gameObject = null;
 
@@ -61,23 +67,24 @@ namespace HutongGames.PlayMaker.Actions
 		
 		void DoLookAt()
 		{
-			var go = Fsm.GetOwnerDefaultTarget(gameObject);			
+			go = Fsm.GetOwnerDefaultTarget(gameObject);
+			
 			if (go == null)
 			{
 				return;
 			}
 			
-			var target = new Vector3(vector2Target.Value.x,vector2Target.Value.y,0f);
+			Vector3 target = new Vector3(vector2Target.Value.x,vector2Target.Value.y,0f);
 			if (!vector3Target.IsNone)
 			{
 				target += vector3Target.Value;
 			}
 
-			var diff = target - go.transform.position;
+			Vector3 diff = target - go.transform.position;
 			diff.Normalize();
 
 			
-			var rot_z = Mathf.Atan2(diff.y, diff.x) * Mathf.Rad2Deg;
+			float rot_z = Mathf.Atan2(diff.y, diff.x) * Mathf.Rad2Deg;
 			go.transform.rotation = Quaternion.Euler(0f, 0f, rot_z - rotationOffset.Value);
 			
 			if (debug.Value)
