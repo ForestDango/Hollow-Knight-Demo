@@ -29,17 +29,45 @@ MonoBehaviour:
       showInInspector: 0
       networkSync: 0
       value: {fileID: 0}
+    - useVariable: 1
+      name: GameManager
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
     objectVariables: []
     materialVariables: []
     textureVariables: []
-    arrayVariables: []
+    arrayVariables:
+    - useVariable: 1
+      name: Ignore Names
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      type: 4
+      objectTypeName: UnityEngine.Object
+      floatValues: []
+      intValues: 
+      boolValues: 
+      stringValues: []
+      vector4Values: []
+      objectReferences: []
     enumVariables: []
     categories:
     - 
-    variableCategoryIDs: 00000000
+    variableCategoryIDs: 000000000000000000000000
   events:
   - ALERT
   - WAIT
   - ATTACK ALERT
   - MOVESTOP
   - RECOIL HORIZONTAL
+  - COLLISION ENTER 2D
+  - COLLISION EXIT 2D
+  - COLLISION STAY 2D
+  - TRIGGER ENTER 2D
+  - TRIGGER EXIT 2D
+  - TRIGGER STAY 2D
+  - WAKE
+  - HERO DAMAGED
+  - HIT

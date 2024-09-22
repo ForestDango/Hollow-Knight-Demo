@@ -11,16 +11,16 @@ namespace HutongGames.PlayMaker.Actions
 	private Collider2D collider;
 
 	public FsmOwnerDefault gameObject;
-	public float walkSpeed;
-	public bool spriteFacesLeft;
-	public string groundLayer;
-	public float turnDelay;
+	public float walkSpeed; //移动速度
+	public bool spriteFacesLeft; //sprite开始时是向左的吗
+	public string groundLayer; //也就是Terrain
+	public float turnDelay; //转向延时
 
-	private float nextTurnTime;
+	private float nextTurnTime; //下一次转身的时间
 
 	[Header("Animation")]
-	public FsmString walkAnimName;
-	public FsmString turnAnimName;
+	public FsmString walkAnimName; //walk的动画名字
+	public FsmString turnAnimName; //turn的动画名字
 
 	public FsmBool startLeft;
 	public FsmBool startRight;
@@ -29,14 +29,14 @@ namespace HutongGames.PlayMaker.Actions
 	private float scaleX_pos;
 	private float scaleX_neg;
 
-	private const float wallRayHeight = 0.5f;
-	private const float wallRayLength = 0.1f;
-	private const float groundRayLength = 1f;
+	private const float wallRayHeight = 0.5f; //检测墙壁的射线高度
+	private const float wallRayLength = 0.1f; //检测墙壁的射线长度
+	private const float groundRayLength = 1f; //检测地面的射线高度
 
-	private GameObject target;
-	private Coroutine walkRoutine;
-	private Coroutine turnRoutine;
-	private bool shouldTurn;
+	private GameObject target; //目标
+	private Coroutine walkRoutine; //walk的协程
+	private Coroutine turnRoutine; //turn的协程
+	private bool shouldTurn; //应该转身了吗
 
 	private float Direction
 	{
@@ -44,7 +44,7 @@ namespace HutongGames.PlayMaker.Actions
 	    {
 		if (target)
 		{
-		    return Mathf.Sign(target.transform.localScale.x) * (spriteFacesLeft ? -1 : 1);
+		    return Mathf.Sign(target.transform.localScale.x) * (spriteFacesLeft ? -1 : 1); //记录方向属性
 		}
 		return 0f;
 	    }
@@ -58,6 +58,9 @@ namespace HutongGames.PlayMaker.Actions
 	    walkRoutine = StartCoroutine(Walk());
 	}
 
+	/// <summary>
+	/// 退出时停掉所有正在执行的协程
+	/// </summary>
 	public override void OnExit()
 	{
 	    if(walkRoutine != null)
@@ -72,6 +75,9 @@ namespace HutongGames.PlayMaker.Actions
 	    }
 	}
 
+	/// <summary>
+	/// 如果目标target发生变化后重新初始化
+	/// </summary>
 	private void UpdateIfTargetChanged()
 	{
 	    GameObject ownerDefaultTarget = Fsm.GetOwnerDefaultTarget(gameObject);
@@ -122,7 +128,7 @@ namespace HutongGames.PlayMaker.Actions
 		yield return new WaitForSeconds(seconds);
 	    }
 	    Vector3 localScale = target.transform.localScale;
-	    localScale *= -1f;
+	    localScale.x *= -1f;
 	    target.transform.localScale = localScale;
 	    if (spriteAnimator)
 	    {
@@ -131,6 +137,10 @@ namespace HutongGames.PlayMaker.Actions
 	    turnRoutine = null;
 	}
 
+	/// <summary>
+	/// 检测是否接触到墙面
+	/// </summary>
+	/// <returns></returns>
 	private bool CheckWall()
 	{
 	    Vector2 vector = collider.bounds.center + new Vector3(0f, -(collider.bounds.size.y / 2f) + wallRayHeight);
@@ -140,6 +150,10 @@ namespace HutongGames.PlayMaker.Actions
 	    return Physics2D.Raycast(vector, vector2, num, LayerMask.GetMask(groundLayer)).collider != null;
 	}
 
+	/// <summary>
+	/// 检测是否接触到地板
+	/// </summary>
+	/// <returns></returns>
 	private bool CheckFloor()
 	{
 	    Vector2 vector = collider.bounds.center + new Vector3((collider.bounds.size.x / 2f + wallRayLength) * Direction, -(collider.bounds.size.y / 2f) + wallRayHeight);
@@ -147,6 +161,10 @@ namespace HutongGames.PlayMaker.Actions
 	    return !(Physics2D.Raycast(vector, Vector2.down, groundRayLength, LayerMask.GetMask(groundLayer)).collider != null);
 	}
 
+	/// <summary>
+	/// 检测是否已经接触到地面
+	/// </summary>
+	/// <returns></returns>
 	private bool CheckIsGrounded()
 	{
 	    Vector2 vector = collider.bounds.center + new Vector3(0f,-(collider.bounds.center.y / 2f) + wallRayHeight);
@@ -154,6 +172,9 @@ namespace HutongGames.PlayMaker.Actions
 	    return Physics2D.Raycast(vector, Vector2.down, groundRayLength, LayerMask.GetMask(groundLayer)).collider != null;
 	}
 
+	/// <summary>
+	/// 设置开始时GameObject的方向
+	/// </summary>
 	private void SetupStartingDirection()
 	{
 	    if (target.transform.localScale.x < 0f)
@@ -178,7 +199,7 @@ namespace HutongGames.PlayMaker.Actions
 		    shouldTurn = true;
 		}
 	    }
-	    if (!startLeft.Value && !startRight.Value && !keepDirection.Value && UnityEngine.Random.Range(0f, 100f) <= 50f)
+	    if (!startLeft.Value && !startRight.Value && !keepDirection.Value && UnityEngine.Random.Range(0f, 100f) <= 50f)//随机选择一边
 	    {
 		shouldTurn = true;
 	    }

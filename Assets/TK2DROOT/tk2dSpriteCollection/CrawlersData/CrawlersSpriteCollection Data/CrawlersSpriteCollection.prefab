@@ -1,0 +1,683 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &865034244282298950
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6999110430133418708}
+  - component: {fileID: 4584297455727314451}
+  m_Layer: 0
+  m_Name: CrawlersSpriteCollection
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6999110430133418708
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 865034244282298950}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4584297455727314451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 865034244282298950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d546f34a90531a14eaba82a43b05b86b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 3
+  materialIdsValid: 1
+  needMaterialInstance: 0
+  spriteDefinitions:
+  - name: Crawler_goomba_death0000
+    boundsData:
+    - {x: -0.03906256, y: -0.265625, z: 0}
+    - {x: 1.6406249, y: 1.53125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 4.734375, y: 2.765625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.859375, y: -1.03125, z: 0}
+    - {x: 0.7812499, y: -1.03125, z: 0}
+    - {x: -0.859375, y: 0.49999997, z: 0}
+    - {x: 0.7812499, y: 0.49999997, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.00000390625, y: 0.61718947}
+    - {x: 0.41015235, y: 0.61718947}
+    - {x: 0.00000390625, y: 0.8085918}
+    - {x: 0.41015235, y: 0.8085918}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 3dcd6f88fb7879e4fb3548f0ca0ffb4d, type: 2}
+    materialId: 0
+    sourceTextureGUID: fcc2183c7fde99a41b4807dbdbb2ab95
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Crawler_goomba_death0001
+    boundsData:
+    - {x: 0.18749997, y: -0.3125, z: 0}
+    - {x: 1.4375, y: 1.71875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 4.734375, y: 2.765625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.53125, y: -1.171875, z: 0}
+    - {x: 0.90624994, y: -1.171875, z: 0}
+    - {x: -0.53125, y: 0.546875, z: 0}
+    - {x: 0.90624994, y: 0.546875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.43359765, y: 0.3300801}
+    - {x: 0.43359765, y: 0.50976366}
+    - {x: 0.8632773, y: 0.3300801}
+    - {x: 0.8632773, y: 0.50976366}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 3dcd6f88fb7879e4fb3548f0ca0ffb4d, type: 2}
+    materialId: 0
+    sourceTextureGUID: b1e08da3740a83d4999cdf99f4c47197
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Crawler_goomba_death0002
+    boundsData:
+    - {x: -0.0703125, y: -0.6640625, z: 0}
+    - {x: 1.671875, y: 1.296875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 4.734375, y: 2.765625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.90625, y: -1.3125, z: 0}
+    - {x: 0.765625, y: -1.3125, z: 0}
+    - {x: -0.90625, y: -0.01562504, z: 0}
+    - {x: 0.765625, y: -0.01562504, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.4296914, y: 0.5097676}
+    - {x: 0.8476523, y: 0.5097676}
+    - {x: 0.4296914, y: 0.67187303}
+    - {x: 0.8476523, y: 0.67187303}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 3dcd6f88fb7879e4fb3548f0ca0ffb4d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 864a203a37c339e4da3a3670b7fd7c90
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Crawler_goomba_death0003
+    boundsData:
+    - {x: -0.00781253, y: -0.58593756, z: 0}
+    - {x: 1.734375, y: 1.3593749, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 4.734375, y: 2.765625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.87500006, y: -1.265625, z: 0}
+    - {x: 0.859375, y: -1.265625, z: 0}
+    - {x: -0.87500006, y: 0.093749925, z: 0}
+    - {x: 0.859375, y: 0.093749925, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.4453164, y: 0.1601582}
+    - {x: 0.8789023, y: 0.1601582}
+    - {x: 0.4453164, y: 0.33007616}
+    - {x: 0.8789023, y: 0.33007616}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 3dcd6f88fb7879e4fb3548f0ca0ffb4d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 1aa3b9b43cc3b014683a5c5c900d0d05
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Crawler_goomba_death0004
+    boundsData:
+    - {x: 0.05468747, y: -0.75, z: 0}
+    - {x: 1.9843748, y: 1.125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 4.734375, y: 2.765625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.93749994, y: -1.3125, z: 0}
+    - {x: 1.0468749, y: -1.3125, z: 0}
+    - {x: -0.93749994, y: -0.18749999, z: 0}
+    - {x: 1.0468749, y: -0.18749999, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.00000390625, y: 0.000001953125}
+    - {x: 0.49608985, y: 0.000001953125}
+    - {x: 0.00000390625, y: 0.14062305}
+    - {x: 0.49608985, y: 0.14062305}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 3dcd6f88fb7879e4fb3548f0ca0ffb4d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 5de646feea914da458a9653364c3ef25
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Crawler_goomba_turn0000
+    boundsData:
+    - {x: 0.06250003, y: -0.5546875, z: 0}
+    - {x: 1.34375, y: 1.109375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 4.703125, y: 2.328125, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.60937494, y: -1.109375, z: 0}
+    - {x: 0.734375, y: -1.109375, z: 0}
+    - {x: -0.60937494, y: -0.000000053085387, z: 0}
+    - {x: 0.734375, y: -0.000000053085387, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.5507852, y: 0.8320332}
+    - {x: 0.5507852, y: 0.99999803}
+    - {x: 0.82812107, y: 0.8320332}
+    - {x: 0.82812107, y: 0.99999803}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 3dcd6f88fb7879e4fb3548f0ca0ffb4d, type: 2}
+    materialId: 0
+    sourceTextureGUID: a9da049f7a6ec1a46ab8f3698570da16
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Crawler_goomba_turn0001
+    boundsData:
+    - {x: -0.0234375, y: -0.546875, z: 0}
+    - {x: 1.4843751, y: 1.03125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 4.703125, y: 2.328125, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.76562506, y: -1.0625, z: 0}
+    - {x: 0.71875006, y: -1.0625, z: 0}
+    - {x: -0.76562506, y: -0.03124998, z: 0}
+    - {x: 0.71875006, y: -0.03124998, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.29297265, y: 0.8085957}
+    - {x: 0.29297265, y: 0.99413866}
+    - {x: 0.5507773, y: 0.8085957}
+    - {x: 0.5507773, y: 0.99413866}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 3dcd6f88fb7879e4fb3548f0ca0ffb4d, type: 2}
+    materialId: 0
+    sourceTextureGUID: a105fe95569629b419097499cac73af9
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Crawler_goomba_turn_r_0000
+    boundsData:
+    - {x: 0.12500003, y: -0.46875, z: 0}
+    - {x: 1.34375, y: 1.28125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 4.703125, y: 2.328125, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.54687494, y: -1.109375, z: 0}
+    - {x: 0.796875, y: -1.109375, z: 0}
+    - {x: -0.54687494, y: 0.17187503, z: 0}
+    - {x: 0.796875, y: 0.17187503, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.5507852, y: 0.67187697}
+    - {x: 0.8867148, y: 0.67187697}
+    - {x: 0.5507852, y: 0.8320293}
+    - {x: 0.8867148, y: 0.8320293}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 3dcd6f88fb7879e4fb3548f0ca0ffb4d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 6083c6b6a0f9e504186419e508926671
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Crawler_goomba_turn_r_0001
+    boundsData:
+    - {x: 0.07031241, y: -0.47656247, z: 0}
+    - {x: 1.484375, y: 1.171875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 4.703125, y: 2.328125, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.67187506, y: -1.0625, z: 0}
+    - {x: 0.8124999, y: -1.0625, z: 0}
+    - {x: -0.67187506, y: 0.10937504, z: 0}
+    - {x: 0.8124999, y: 0.10937504, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.00000390625, y: 0.8085957}
+    - {x: 0.00000390625, y: 0.99413866}
+    - {x: 0.29296485, y: 0.8085957}
+    - {x: 0.29296485, y: 0.99413866}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 3dcd6f88fb7879e4fb3548f0ca0ffb4d, type: 2}
+    materialId: 0
+    sourceTextureGUID: e07e8128d70eeb74598aa7bea31e3fae
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Crawler_goomba_walk0000
+    boundsData:
+    - {x: 0.01562497, y: -0.4921875, z: 0}
+    - {x: 1.7187498, y: 1.296875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 4.703125, y: 2.328125, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.84374994, y: -1.140625, z: 0}
+    - {x: 0.8749999, y: -1.140625, z: 0}
+    - {x: -0.84374994, y: 0.15625, z: 0}
+    - {x: 0.8749999, y: 0.15625, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.00000390625, y: 0.4550801}
+    - {x: 0.4296836, y: 0.4550801}
+    - {x: 0.00000390625, y: 0.61718553}
+    - {x: 0.4296836, y: 0.61718553}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 3dcd6f88fb7879e4fb3548f0ca0ffb4d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 29e32fbd65d47f94080146cde17401ae
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Crawler_goomba_walk0001
+    boundsData:
+    - {x: 0.02343759, y: -0.4609375, z: 0}
+    - {x: 1.734375, y: 1.265625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 4.703125, y: 2.328125, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.84374994, y: -1.09375, z: 0}
+    - {x: 0.8906251, y: -1.09375, z: 0}
+    - {x: -0.84374994, y: 0.17187503, z: 0}
+    - {x: 0.8906251, y: 0.17187503, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.00000390625, y: 0.29687697}
+    - {x: 0.43358985, y: 0.29687697}
+    - {x: 0.00000390625, y: 0.45507616}
+    - {x: 0.43358985, y: 0.45507616}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 3dcd6f88fb7879e4fb3548f0ca0ffb4d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 39af01bfa0f47d74baafb2f59112eca9
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Crawler_goomba_walk0002
+    boundsData:
+    - {x: -0.01562494, y: -0.46875, z: 0}
+    - {x: 1.8125001, y: 1.28125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 4.703125, y: 2.328125, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.921875, y: -1.109375, z: 0}
+    - {x: 0.8906251, y: -1.109375, z: 0}
+    - {x: -0.921875, y: 0.17187503, z: 0}
+    - {x: 0.8906251, y: 0.17187503, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.49609765, y: 0.000001953125}
+    - {x: 0.9492148, y: 0.000001953125}
+    - {x: 0.49609765, y: 0.1601543}
+    - {x: 0.9492148, y: 0.1601543}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 3dcd6f88fb7879e4fb3548f0ca0ffb4d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 61ecea595db08d14790a4c8925242163
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Crawler_goomba_walk0003
+    boundsData:
+    - {x: 0.000000059604645, y: -0.46875, z: 0}
+    - {x: 1.7812501, y: 1.25, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 4.703125, y: 2.328125, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.890625, y: -1.09375, z: 0}
+    - {x: 0.8906251, y: -1.09375, z: 0}
+    - {x: -0.890625, y: 0.15625, z: 0}
+    - {x: 0.8906251, y: 0.15625, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.00000390625, y: 0.14062695}
+    - {x: 0.4453086, y: 0.14062695}
+    - {x: 0.00000390625, y: 0.29687303}
+    - {x: 0.4453086, y: 0.29687303}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 3dcd6f88fb7879e4fb3548f0ca0ffb4d, type: 2}
+    materialId: 0
+    sourceTextureGUID: 61f3b8f02fb448e44a6b1e7711ff4a4a
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  premultipliedAlpha: 0
+  material: {fileID: 0}
+  materials:
+  - {fileID: 2100000, guid: 3dcd6f88fb7879e4fb3548f0ca0ffb4d, type: 2}
+  textures:
+  - {fileID: 2800000, guid: 7e91bc0418c583a479ee7a46d9853449, type: 3}
+  pngTextures: []
+  materialPngTextureId: 00000000
+  textureFilterMode: 0
+  textureMipMaps: 0
+  allowMultipleAtlases: 0
+  spriteCollectionGUID: bedc50c4371c11c49b74772d52a0cf41
+  spriteCollectionName: CrawlersSpriteCollection
+  assetName: 
+  loadable: 0
+  invOrthoSize: 2
+  halfTargetHeight: 32
+  buildKey: 506992213
+  dataGuid: 1808ed9d70463754abd54a42cd85f4d6
+  managedSpriteCollection: 0
+  hasPlatformData: 0
+  spriteCollectionPlatforms: []
+  spriteCollectionPlatformGUIDs: []

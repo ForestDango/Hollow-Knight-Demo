@@ -16,7 +16,11 @@ namespace HutongGames.PlayMaker.Actions
 		[UIHint(UIHint.Tag)]
 		[Tooltip("Filter by Tag.")]
 		public FsmString collideTag;
-		
+
+		[UIHint(UIHint.Layer)]
+		[Tooltip("Filter by Layer.")]
+		public FsmString collideLayer;
+
 		[RequiredField]
 		[Tooltip("Event to send if a collision is detected.")]
 		public FsmEvent sendEvent;

@@ -1,0 +1,307 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8217370805823788103
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2505972209528367111}
+  - component: {fileID: 7327338048712192215}
+  m_Layer: 0
+  m_Name: DashEffectSpriteCollection
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2505972209528367111
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8217370805823788103}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7327338048712192215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8217370805823788103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d546f34a90531a14eaba82a43b05b86b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 3
+  materialIdsValid: 1
+  needMaterialInstance: 0
+  spriteDefinitions:
+  - name: dash_effect_020000
+    boundsData:
+    - {x: -1.9218751, y: -0.03125, z: 0}
+    - {x: 3.9062498, y: 3.78125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 7.859375, y: 5.21875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -3.875, y: -1.921875, z: 0}
+    - {x: 0.031249784, y: -1.921875, z: 0}
+    - {x: -3.875, y: 1.859375, z: 0}
+    - {x: 0.031249784, y: 1.859375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.73144627, y: 0.3017588}
+    - {x: 0.975585, y: 0.3017588}
+    - {x: 0.73144627, y: 0.538085}
+    - {x: 0.975585, y: 0.538085}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 5753603f344797142b7b813628725e0c, type: 2}
+    materialId: 0
+    sourceTextureGUID: dd603107c73367f459dc1cc4ff30df9a
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: dash_effect_020001
+    boundsData:
+    - {x: -2.015625, y: -0.10156262, z: 0}
+    - {x: 3.8125, y: 4.828125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 7.859375, y: 5.21875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -3.921875, y: -2.515625, z: 0}
+    - {x: -0.1093751, y: -2.515625, z: 0}
+    - {x: -3.921875, y: 2.3124998, z: 0}
+    - {x: -0.1093751, y: 2.3124998, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.73144627, y: 0.0000009765625}
+    - {x: 0.9697256, y: 0.0000009765625}
+    - {x: 0.73144627, y: 0.30175683}
+    - {x: 0.9697256, y: 0.30175683}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 5753603f344797142b7b813628725e0c, type: 2}
+    materialId: 0
+    sourceTextureGUID: 56987d84e0ffb104390402fd3ccb05d7
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: dash_effect_020002
+    boundsData:
+    - {x: -0.8515624, y: -0.0859375, z: 0}
+    - {x: 5.859375, y: 4.859375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 7.859375, y: 5.21875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -3.78125, y: -2.515625, z: 0}
+    - {x: 2.0781252, y: -2.515625, z: 0}
+    - {x: -3.78125, y: 2.34375, z: 0}
+    - {x: 2.0781252, y: 2.34375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.36523536, y: 0.0000009765625}
+    - {x: 0.73144436, y: 0.0000009765625}
+    - {x: 0.36523536, y: 0.30370995}
+    - {x: 0.73144436, y: 0.30370995}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 5753603f344797142b7b813628725e0c, type: 2}
+    materialId: 0
+    sourceTextureGUID: d93847618559dc7458e5faf24aa32741
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: dash_effect_020003
+    boundsData:
+    - {x: 0.6718749, y: -0.0859375, z: 0}
+    - {x: 5.84375, y: 4.890625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 7.859375, y: 5.21875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -2.25, y: -2.53125, z: 0}
+    - {x: 3.5937498, y: -2.53125, z: 0}
+    - {x: -2.25, y: 2.359375, z: 0}
+    - {x: 3.5937498, y: 2.359375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.0000009765625, y: 0.0000009765625}
+    - {x: 0.3652334, y: 0.0000009765625}
+    - {x: 0.0000009765625, y: 0.30566308}
+    - {x: 0.3652334, y: 0.30566308}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 5753603f344797142b7b813628725e0c, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3ca7464b5f0b87d47a21001726a20c15
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: dash_effect_020004
+    boundsData:
+    - {x: 1.2421875, y: -0.06249988, z: 0}
+    - {x: 5.390625, y: 5.09375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 7.859375, y: 5.21875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.453125, y: -2.609375, z: 0}
+    - {x: 3.9375, y: -2.609375, z: 0}
+    - {x: -1.453125, y: 2.4843752, z: 0}
+    - {x: 3.9375, y: 2.4843752, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.36523536, y: 0.30371192}
+    - {x: 0.7021475, y: 0.30371192}
+    - {x: 0.36523536, y: 0.62206936}
+    - {x: 0.7021475, y: 0.62206936}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 5753603f344797142b7b813628725e0c, type: 2}
+    materialId: 0
+    sourceTextureGUID: 5891b248d1168ca4a86a3f2ea1e4c594
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  premultipliedAlpha: 0
+  material: {fileID: 0}
+  materials:
+  - {fileID: 2100000, guid: 5753603f344797142b7b813628725e0c, type: 2}
+  textures:
+  - {fileID: 2800000, guid: c104c39cc16eb824cbafccbdb9c35c0d, type: 3}
+  pngTextures: []
+  materialPngTextureId: 00000000
+  textureFilterMode: 0
+  textureMipMaps: 0
+  allowMultipleAtlases: 0
+  spriteCollectionGUID: 35e68b362c6481b4f9fa8995b7e3a97f
+  spriteCollectionName: DashEffectSpriteCollection
+  assetName: 
+  loadable: 0
+  invOrthoSize: 2
+  halfTargetHeight: 32
+  buildKey: 1991240187
+  dataGuid: acbb7ab061187244ebb6d587fb142b3d
+  managedSpriteCollection: 0
+  hasPlatformData: 0
+  spriteCollectionPlatforms: []
+  spriteCollectionPlatformGUIDs: []

@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - HeroWalkable
   layers:
   - Default
   - TransparentFX
@@ -21,16 +22,16 @@ TagManager:
   - Hero Detector
   - Enemy Detector
   - Terrain Detector
+  - Item
+  - Hero Attack
+  - Particle
+  - Interactive Object
   - 
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Bouncer
+  - Soft Terrain
   - 
   - 
   - 
@@ -40,6 +41,9 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Effect
+    uniqueID: 1871183173
     locked: 0
   - name: Player
     uniqueID: 361252149
