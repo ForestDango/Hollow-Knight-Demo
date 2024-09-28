@@ -21,6 +21,7 @@ public class HeroAudioController : MonoBehaviour
     public AudioSource falling;
     public AudioSource backDash;
     public AudioSource dash;
+    public AudioSource takeHit;
 
     private Coroutine fallingCo;
 
@@ -60,6 +61,9 @@ public class HeroAudioController : MonoBehaviour
 		    break;
 		case HeroSounds.DASH:
 		    dash.Play();
+		    break;
+		case HeroSounds.TAKE_HIT:
+		    takeHit.Play();
 		    break;
 		case HeroSounds.FALLING:
 		    fallingCo = StartCoroutine(FadeInVolume(falling, 0.7f));

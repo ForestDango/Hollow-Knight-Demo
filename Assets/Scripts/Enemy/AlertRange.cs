@@ -41,12 +41,12 @@ public class AlertRange : MonoBehaviour
 	    if (collider2D is CircleCollider2D)
 	    {
 		CircleCollider2D circleCollider2D = (CircleCollider2D)collider2D;
-		flag = Physics2D.OverlapCircle(transform.TransformPoint(circleCollider2D.offset), circleCollider2D.radius * Mathf.Max(transform.localScale.x, transform.localScale.y), LayerMask.NameToLayer("Player")) != null;
+		flag = Physics2D.OverlapCircle(transform.TransformPoint(circleCollider2D.offset), circleCollider2D.radius * Mathf.Max(transform.localScale.x, transform.localScale.y),LayerMask.GetMask("Player")) != null;
 	    }
 	    else if (collider2D is BoxCollider2D)
 	    {
 		BoxCollider2D boxCollider2D = (BoxCollider2D)collider2D;
-		flag = Physics2D.OverlapBox(transform.TransformPoint(boxCollider2D.offset), new Vector2(boxCollider2D.size.x * transform.localScale.x, boxCollider2D.size.y * transform.localScale.y), transform.eulerAngles.z, LayerMask.NameToLayer("Player")) != null;
+		flag = Physics2D.OverlapBox(transform.TransformPoint(boxCollider2D.offset), new Vector2(boxCollider2D.size.x * transform.localScale.x, boxCollider2D.size.y * transform.localScale.y), transform.eulerAngles.z, LayerMask.GetMask("Player")) != null;
 	    }
 	    if (flag)
 	    {

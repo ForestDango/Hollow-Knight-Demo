@@ -11,6 +11,10 @@ public class HeroActions : PlayerActionSet
     public PlayerAction attack;
     public PlayerAction jump;
     public PlayerAction dash;
+    public PlayerAction cast;
+    public PlayerAction focus;
+    public PlayerAction quickCast;
+
 
     public HeroActions()
     {
@@ -28,5 +32,8 @@ public class HeroActions : PlayerActionSet
 	attack = CreatePlayerAction("Attack");
 	jump = CreatePlayerAction("Jump");
 	dash = CreatePlayerAction("Dash");
+	cast = CreatePlayerAction("Cast");
+	focus = CreatePlayerAction("Focus");
+	quickCast = CreatePlayerAction("QuickCast");
     }
 }

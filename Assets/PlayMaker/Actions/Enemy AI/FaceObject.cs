@@ -7,6 +7,7 @@ namespace HutongGames.PlayMaker.Actions
     [Tooltip("Object A will flip to face Object B horizontally.")]
     public class FaceObject : FsmStateAction
     {
+	//A朝着B看
 	[RequiredField]
 	public FsmGameObject objectA;
 	[RequiredField]
@@ -41,7 +42,7 @@ namespace HutongGames.PlayMaker.Actions
 	    {
 		Finish();
 	    }
-	    xScale = objectA.Value.transform.localScale.x;
+	    xScale = objectA.Value.transform.localScale.x; //xsclae= 1f;
 	    if (xScale < 0f)
 	    {
 		xScale *= -1f;
@@ -53,7 +54,6 @@ namespace HutongGames.PlayMaker.Actions
 	    }
 	}
 
-	// Code that runs every frame.
 	public override void OnUpdate()
 	{
 	    DoFace();
@@ -66,7 +66,7 @@ namespace HutongGames.PlayMaker.Actions
 	    {
 		Finish();
 	    }
-	    if (objectA.Value.transform.position.x < objectB.Value.transform.position.x)
+	    if (objectA.Value.transform.position.x < objectB.Value.transform.position.x) //B在A的右边，A向右看
 	    {
 		if (spriteFacesRight.Value)
 		{
@@ -111,7 +111,7 @@ namespace HutongGames.PlayMaker.Actions
 		    }
 		}
 	    }
-	    else if (localScale.x != xScale)
+	    else if (localScale.x != xScale)//B在A的左边，A向左看
 	    {
 		localScale.x = xScale;
 		if (resetFrame)

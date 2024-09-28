@@ -13,6 +13,29 @@ public static  class Extensions
 	}
     }
 
+    public static void SetPositionX(this Transform t, float newX)
+    {
+	t.position = new Vector3(newX, t.position.y, t.position.z);
+    }
+    public static void SetPositionY(this Transform t, float newY)
+    {
+	t.position = new Vector3(t.position.x, newY, t.position.z);
+    }
+
+    public static void SetPosition2D(this Transform t, float x, float y)
+    {
+	t.position = new Vector3(x, y, t.position.z);
+    }
+    public static void SetPosition2D(this Transform t, Vector2 position)
+    {
+	t.position = new Vector3(position.x, position.y, t.position.z);
+    }
+
+    public static void SetPosition3D(this Transform t, float x, float y, float z)
+    {
+	t.position = new Vector3(x, y, z);
+    }
+
     public static void SetScaleX(this Transform t, float newXScale)
     {
 	t.localScale = new Vector3(newXScale, t.localScale.y, t.localScale.z);

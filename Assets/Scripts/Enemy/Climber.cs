@@ -71,7 +71,12 @@ public class Climber : MonoBehaviour
 	{
 	    currentDirection = clockwise ? Direction.Right : Direction.Left;
 	}
-	//TODO:
+	Recoil component = GetComponent<Recoil>();
+	if (component)
+	{
+	    component.SkipFreezingByController = true;
+	    component.OnHandleFreeze += Stun;
+	}
 	previousPos = transform.position;
 	StartCoroutine(Walk());
     }

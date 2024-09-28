@@ -1,6 +1,8 @@
 using HutongGames.PlayMaker;
 using System;
+using UnityEngine;
 
+[ActionCategory("Hollow Knight")]
 public class CheckAlertRange : FsmStateAction
 {
     [UIHint(UIHint.Variable)]

@@ -23,7 +23,7 @@ namespace HutongGames.PlayMaker.Actions
 		if(ownerDefaultTarget != null)
 		{
 		    MeshRenderer component = ownerDefaultTarget.GetComponent<MeshRenderer>();
-		    if(component != null)
+		    if (component != null)
 		    {
 			component.enabled = active.Value;
 		    }

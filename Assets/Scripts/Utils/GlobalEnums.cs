@@ -31,6 +31,22 @@ namespace GlobalEnums
 	other
     }
 
+    public enum DamageMode
+    {
+	FULL_DAMAGE,
+	HAZARD_ONLY,
+	NO_DAMAGE
+    }
+
+    public enum HazardTypes
+    {
+	NON_HAZARD,
+	SPIKES,
+	ACID,
+	LAVA,
+	PIT
+    }
+
     public enum HeroSounds
     {
 	FOOTSETP_RUN,
@@ -40,7 +56,8 @@ namespace GlobalEnums
 	JUMP,
 	BACK_DASH,
 	DASH,
-	FALLING
+	FALLING,
+	TAKE_HIT
     }
 
     public enum PhysLayers
@@ -61,7 +78,9 @@ namespace GlobalEnums
 	HERO_ATTACK,
 	PARTICLE,
 	INTERACTIVE_OBJECT,
+	HERO_BOX,
 	BOUNCER = 24,
-	SOFT_TERRAIN = 25
+	SOFT_TERRAIN = 25,
+	CORPSE
     }
 }

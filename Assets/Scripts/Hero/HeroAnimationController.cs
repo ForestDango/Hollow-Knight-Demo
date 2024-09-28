@@ -19,6 +19,8 @@ public class HeroAnimationController : MonoBehaviour
 
     public ActorStates actorStates { get; private set; }
     public ActorStates prevActorStates { get; private set; }
+    public ActorStates stateBeforeControl { get; private set; }
+    public bool controlEnabled { get; private set; }
 
     private void Awake()
     {
@@ -32,7 +34,10 @@ public class HeroAnimationController : MonoBehaviour
 	pd = PlayerData.instance;
 	ResetAll();
 	actorStates = heroCtrl.hero_state;
-
+	if (!controlEnabled)
+	{
+	    animator.Stop();
+	}
 	if(heroCtrl.hero_state == ActorStates.airborne)
 	{
 	    animator.PlayFromFrame("Airborne", 7);
@@ -43,13 +48,18 @@ public class HeroAnimationController : MonoBehaviour
 
     private void Update()
     {
-	UpdateAnimation();
-	if (cState.facingRight)
+	if(controlEnabled)
+	{
+	    UpdateAnimation();
+	}
+	else if (cState.facingRight)
 	{
 	    wasFacingRight = true;
-	    return;
 	}
-	wasFacingRight = false;
+	else
+	{
+	    wasFacingRight = false;
+	}
     }
 
     private void UpdateAnimation()
@@ -84,6 +94,14 @@ public class HeroAnimationController : MonoBehaviour
 	if (actorStates == ActorStates.no_input)
 	{
 	    //TODO:
+	    if (cState.recoilFrozen)
+	    {
+		Play("Stun");
+	    }
+	    else if (cState.recoiling)
+	    {
+		Play("Recoil");
+	    }
 	}
 	else if (cState.dashing)
 	{
@@ -251,6 +269,7 @@ public class HeroAnimationController : MonoBehaviour
 	playRunToIdle = false;
 	playDashToIdle = false;
 	wasFacingRight = false;
+	controlEnabled = true;
     }
 
     private void ResetPlays()
@@ -262,7 +281,7 @@ public class HeroAnimationController : MonoBehaviour
 
     public void UpdateState(ActorStates newState)
     {
-	if(newState != actorStates)
+	if(controlEnabled &&  newState != actorStates)
 	{
 	    if(actorStates == ActorStates.airborne && newState == ActorStates.idle && !playLanding)
 	    {
@@ -274,6 +293,38 @@ public class HeroAnimationController : MonoBehaviour
 	    }
 	    prevActorStates = actorStates;
 	    actorStates = newState;
+	}
+    }
+
+    public void PlayClip(string clipName)
+    {
+	if (controlEnabled)
+	{
+	    Play(clipName);
+	}
+    }
+
+    public void StartControl()
+    {
+	actorStates = heroCtrl.hero_state;
+	controlEnabled = true;
+	PlayIdle();
+    }
+
+    public void StopControl()
+    {
+	if(controlEnabled)
+	{
+	    controlEnabled = false;
+	    stateBeforeControl = actorStates;
+	}
+    }
+    public void StartControlWithoutSettingState()
+    {
+	controlEnabled = true;
+	if (stateBeforeControl == ActorStates.running && actorStates == ActorStates.running)
+	{
+	    actorStates = ActorStates.idle;
 	}
     }
 

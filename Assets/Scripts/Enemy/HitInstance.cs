@@ -10,7 +10,7 @@ public struct HitInstance
     public int DamageDealt;
     public float Direction;
     public bool IgnoreInvulnerable;
-    public float MagnitudeMultiplier;
+    public float MagnitudeMultiplier; //受到的后坐力乘以倍数
     public float MoveAngle;
     public bool MoveDirection;
     public float Multiplier;
@@ -32,7 +32,8 @@ public struct HitInstance
 public enum AttackTypes
 {
     Nail,
-    Generic
+    Generic,
+    Spell
 }
 
 public enum SpecialTypes

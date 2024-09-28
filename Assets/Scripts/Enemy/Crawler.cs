@@ -7,19 +7,19 @@ public class Crawler : MonoBehaviour
 {
     public float speed;
     [Space]
-    private Transform wallCheck; //墙面检测的位置
-    private Transform groundCheck; //地面检测的位置
+    public Transform wallCheck; //墙面检测的位置
+    public Transform groundCheck; //地面检测的位置
     private Vector2 velocity; //记录速度
     private CrawlerType type;
 
     private Rigidbody2D body;
-
+    private Recoil recoil;
     private tk2dSpriteAnimator anim;
 
     private void Awake()
     {
 	body = GetComponent<Rigidbody2D>();
-
+	recoil = GetComponent<Recoil>();
 	anim = GetComponent<tk2dSpriteAnimator>();
     }
 
@@ -47,20 +47,24 @@ public class Crawler : MonoBehaviour
 	    type = ((transform.localScale.y > 0f) ? CrawlerType.Floor : CrawlerType.Roof);
 	    velocity = new Vector2(Mathf.Sign(-transform.localScale.x) * speed, 0f);
 	}
-	//TODO:
+	recoil.SetRecoilSpeed(0f);
+	recoil.OnCancelRecoil += delegate()
+	{
+	    body.velocity = velocity;
+	};
 	CrawlerType crawlerType = type;
 	if(crawlerType != CrawlerType.Floor)
 	{
 	    if(crawlerType - CrawlerType.Roof <= 1)
 	    {
 		body.gravityScale = 0;//如果在墙面面上rb2d的重力就设置为1
-				     
+		recoil.freezeInPlace = true;	     
 	    }
 	}
 	else
 	{
 	    body.gravityScale = 1; //如果在地面上rb2d的重力就设置为1
-	    //TODO:
+	    recoil.freezeInPlace = false;
 	}
 	StartCoroutine(nameof(Walk));
     }
@@ -78,12 +82,12 @@ public class Crawler : MonoBehaviour
 	    bool hit = false;
 	    while (!hit)
 	    {
-		if(CheckRayLocal(wallCheck.localPosition,transform.localScale.x > 0f ? Vector2.left : Vector2.right, 1f))
+		if(CheckRayLocal(wallCheck.localPosition,(transform.localScale.x > 0f )? Vector2.left : Vector2.right, 1f))
 		{
 		    hit = true;
 		    break;
 		}
-		if (!CheckRayLocal(groundCheck.localPosition, transform.localScale.y > 0f ? Vector2.down : Vector2.up, 1f))
+		if (CheckRayLocal(groundCheck.localPosition, (transform.localScale.y > 0f) ? Vector2.down : Vector2.up, 1f))
 		{
 		    hit = true;
 		    break;

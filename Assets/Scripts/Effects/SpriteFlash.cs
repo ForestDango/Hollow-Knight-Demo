@@ -7,6 +7,7 @@ public class SpriteFlash : MonoBehaviour
 {
     private Renderer rend;
     private Color flashColour;
+    private Color prevColor;
 
     private float amount;
     private float amountCurrent;
@@ -30,6 +31,7 @@ public class SpriteFlash : MonoBehaviour
 	if(rend == null)
 	{
 	    rend = GetComponent<Renderer>();
+	    prevColor = rend.material.color;
 	}
 	if (block == null)
 	{
@@ -108,6 +110,7 @@ public class SpriteFlash : MonoBehaviour
 	    else
 	    {
 		block.SetFloat("_FlashAmount", 0f);
+		block.SetColor("_FlashColor", prevColor);
 		rend.SetPropertyBlock(block);
 		flashTimer = 0f;
 		if (repeatFlash)
@@ -140,11 +143,43 @@ public class SpriteFlash : MonoBehaviour
 	SendToChildren(new Action(flashInfected));
     }
 
+    private void flashFocusHeal()
+    {
+	Start();
+	flashColour = new Color(1f, 1f, 1f);
+	amount = 0.85f;
+	timeUp = 0.1f;
+	stayTime = 0.01f;
+	timeDown = 0.35f;
+	block.Clear();
+	block.SetColor("_FlashColor", flashColour);
+	flashingState = 1;
+	flashTimer = 0f;
+	repeatFlash = false;
+	//SendToChildren(new Action(flashFocusHeal));
+    }
+
+    private void flashFocusGet()
+    {
+	Start();
+	flashColour = new Color(1f, 1f, 1f);
+	amount = 0.5f;
+	timeUp = 0.1f;
+	stayTime = 0.01f;
+	timeDown = 0.35f;
+	block.Clear();
+	block.SetColor("_FlashColor", flashColour);
+	flashingState = 1;
+	flashTimer = 0f;
+	repeatFlash = false;
+	SendToChildren(new Action(flashFocusGet));
+    }
+
     private void SendToChildren(Action function)
     {
 	if (!sendToChildren)
 	    return;
-	foreach (SpriteFlash spriteFlash  in GetComponentsInChildren<SpriteFlash>())
+	foreach (SpriteFlash spriteFlash in GetComponentsInChildren<SpriteFlash>())
 	{
 	    if(!(spriteFlash == null))
 	    {

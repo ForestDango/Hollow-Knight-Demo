@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using HutongGames.PlayMaker;
 using GlobalEnums;
 using UnityEngine;
+using System.Reflection;
 
 public class HeroController : MonoBehaviour
 {
@@ -11,31 +12,36 @@ public class HeroController : MonoBehaviour
     public ActorStates prev_hero_state;
 
     public bool acceptingInput = true;
+    public bool controlReqlinquished; //控制是否被放弃
+    public bool isHeroInPosition = true;
+
+    public delegate void HeroInPosition(bool forceDirect);
+    public event HeroInPosition heroInPosition;
 
     public float move_input;
     public float vertical_input;
 
-    private Vector2 current_velocity;
+    public Vector2 current_velocity;
 
     public float WALK_SPEED = 3.1f;//走路速度
     public float RUN_SPEED = 5f;//跑步速度
-    public float JUMP_SPEED = 5f;//跳跃的食欲
+    public float JUMP_SPEED = 5f;//跳跃的速度
 
-    [SerializeField] private NailSlash slashComponent;
-    [SerializeField] private PlayMakerFSM slashFsm;
+    private NailSlash slashComponent; //决定使用哪种攻击的NailSlash
+    private PlayMakerFSM slashFsm;//决定使用哪种攻击的PlayMakerFSM
 
     public NailSlash normalSlash;
     public NailSlash altetnateSlash;
     public NailSlash upSlash;
     public NailSlash downSlash;
 
-    public PlayMakerFSM normalSlashFsm;
+    public PlayMakerFSM normalSlashFsm; 
     public PlayMakerFSM altetnateSlashFsm;
     public PlayMakerFSM upSlashFsm;
     public PlayMakerFSM downSlashFsm;
 
-    private bool attackQueuing;
-    private int attackQueueSteps;
+    private bool attackQueuing; //是否开始攻击计数步骤
+    private int attackQueueSteps; //攻击计数步骤
 
     private float attack_time;
     private float attackDuration; //攻击状态持续时间，根据有无护符来决定
@@ -47,9 +53,18 @@ public class HeroController : MonoBehaviour
     public float ATTACK_RECOVERY_TIME; //攻击恢复时间，一旦超出这个时间就退出攻击状态
     public float ALT_ATTACK_RESET; //二段攻击重置时间
 
-    private int ATTACK_QUEUE_STEPS = 5;
+    private int ATTACK_QUEUE_STEPS = 5; //超过5步即可开始攻击
 
     private float NAIL_TERRAIN_CHECK_TIME = 0.12f;
+
+    private bool drainMP; //是否正在流走MP
+    private float drainMP_timer; //流走MP的计时器
+    private float drainMP_time; //流走MP花费的时间
+    private float MP_drained; //已经流走的MP数量
+    private float focusMP_amount; //使用focus回血所需要的MP数量
+    private float preventCastByDialogueEndTimer;
+    public PlayMakerFSM spellControl;
+
 
     private int jump_steps; //跳跃的步
     private int jumped_steps; //已经跳跃的步
@@ -87,8 +102,38 @@ public class HeroController : MonoBehaviour
     public float BACK_DASH_SPEED;//后撤冲刺时的速度 (标注：此行代码无用待后续开发)
     public float BACK_DASH_TIME;//后撤冲刺时间 (标注：此行代码无用待后续开发)
     public float BACK_DASH_COOLDOWN; //后撤冲刺冷却时间 (标注：此行代码无用待后续开发)
+    public float DOWN_DASH_TIME; //向下冲刺持续时间
     public float DASH_LANDING_TIME;
     public int DASH_QUEUE_STEPS; //最大冲刺队列的步
+
+    public delegate void TakeDamageEvent();
+    public event TakeDamageEvent OnTakenDamage;
+    public delegate void OnDeathEvent();
+    public event OnDeathEvent OnDeath;
+
+    public bool takeNoDamage; //不受到伤害
+    public PlayMakerFSM damageEffectFSM; //负责的受伤效果playmakerFSM
+    public DamageMode damageMode; //受伤类型
+    private Coroutine takeDamageCoroutine; //受伤协程
+    private float parryInvulnTimer;  //无敌时间
+    public float INVUL_TIME;//无敌时间
+
+    public float DAMAGE_FREEZE_DOWN;  //受伤冻结的上半程时间
+    public float DAMAGE_FREEZE_WAIT; //受伤冻结切换的时间
+    public float DAMAGE_FREEZE_UP;//受伤冻结的下半程时间
+
+    private int recoilSteps; 
+    private float recoilTimer; //后坐力计时器
+    private bool recoilLarge; //是否是更大的后坐力
+    private Vector2 recoilVector; //后坐力二维上的速度
+
+    public float RECOIL_HOR_VELOCITY; //后坐力X轴上的速度
+    public float RECOIL_HOR_VELOCITY_LONG; //后坐力X轴上更大的速度
+    public float RECOIL_DOWN_VELOCITY; //后坐力Y轴上的速度
+    public float RECOIL_HOR_STEPS; //后坐力X轴的步
+    public float RECOIL_DURATION; //后坐力持续时间
+    public float RECOIL_VELOCITY; //后坐力时的速度(是两个轴上都适用的)
+
 
     public float fallTimer { get; private set; }
 
@@ -99,6 +144,7 @@ public class HeroController : MonoBehaviour
     public float HARD_LANDING_TIME; //正在hardLanding花费的时间。
     public float BIG_FALL_TIME;  //判断是否是hardLanding所需要的事件，大于它就是
 
+
     public GameObject hardLandingEffectPrefab;
 
     private float prevGravityScale;
@@ -106,6 +152,15 @@ public class HeroController : MonoBehaviour
     private int landingBufferSteps;
     private int LANDING_BUFFER_STEPS = 5;
     private bool fallRumble; //是否开启掉落时相机抖动
+
+    private float floatingBufferTimer;
+    private float FLOATING_CHECK_TIME = 0.18f;
+
+    private bool startWithWallslide;
+    private bool startWithJump;
+    private bool startWithFullJump;
+    private bool startWithDash;
+    private bool startWithAttack;
 
     public GameObject softLandingEffectPrefab;
 
@@ -120,10 +175,13 @@ public class HeroController : MonoBehaviour
     private InputHandler inputHandler;
     public HeroControllerStates cState;
     private HeroAnimationController animCtrl;
-    private HeroAudioController audioCtrl; 
+    private HeroAudioController audioCtrl;
+    private new MeshRenderer renderer;
+    private InvulnerablePulse invPulse;
+    private SpriteFlash spriteFlash;
+    public PlayMakerFSM proxyFSM { get; private set; }
 
     private static HeroController _instance;
-
     public static HeroController instance
     {
 	get
@@ -146,6 +204,7 @@ public class HeroController : MonoBehaviour
         JUMP_RELEASE_QUEUE_STEPS = 2;
 
         LANDING_BUFFER_STEPS = 5;
+        FLOATING_CHECK_TIME = 0.18f;
     }
 
     private void Awake()
@@ -174,24 +233,41 @@ public class HeroController : MonoBehaviour
         gm = GameManager.instance;
         playerData = PlayerData.instance;
         inputHandler = gm.GetComponent<InputHandler>();
+	renderer = GetComponent<MeshRenderer>();
+        invPulse = GetComponent<InvulnerablePulse>();
+        spriteFlash = GetComponent<SpriteFlash>();
+        proxyFSM = FSMUtility.LocateFSM(gameObject, "ProxyFSM");
     }
 
-    void Start()
+    private void Start()
     {
+        heroInPosition += delegate(bool forceDirect)
+        {
+            isHeroInPosition = true;
+        };
         playerData = PlayerData.instance;
         if (dashBurst == null)
 	{
             Debug.Log("DashBurst came up null, locating manually");
             dashBurst = FSMUtility.GetFSM(transform.Find("Effects").Find("Dash Burst").gameObject);
 	}
+        if (spellControl == null)
+        {
+            Debug.Log("SpellControl came up null, locating manually");
+	    spellControl = FSMUtility.LocateFSM(gameObject, "Spell Control");
+        }
+        if(heroInPosition != null)
+	{
+            heroInPosition(false);
+	}
     }
 
-    void Update()
+    private void Update()
     {
         current_velocity = rb2d.velocity;
         FallCheck();
         FailSafeCheck();
-        if (hero_state == ActorStates.running && !cState.dashing && !cState.backDashing)
+        if (hero_state == ActorStates.running && !cState.dashing && !cState.backDashing && !controlReqlinquished)
         {
             if (cState.inWalkZone)
             {
@@ -209,15 +285,15 @@ public class HeroController : MonoBehaviour
             audioCtrl.StopSound(HeroSounds.FOOTSETP_RUN);
             audioCtrl.StopSound(HeroSounds.FOOTSTEP_WALK);
         }
-        if(hero_state == ActorStates.dash_landing)
-	{
-	    dashLandingTimer += Time.deltaTime;
-            if(dashLandingTimer > DASH_LANDING_TIME)
-	    {
+        if (hero_state == ActorStates.dash_landing)
+        {
+            dashLandingTimer += Time.deltaTime;
+            if (dashLandingTimer > DOWN_DASH_TIME)
+            {
                 BackOnGround();
-	    }
-	}
-	if (hero_state == ActorStates.hard_landing)
+            }
+        }
+        if (hero_state == ActorStates.hard_landing)
         {
             hardLandingTimer += Time.deltaTime;
             if (hardLandingTimer > HARD_LANDING_TIME)
@@ -228,42 +304,114 @@ public class HeroController : MonoBehaviour
         }
         if (hero_state == ActorStates.no_input)
         {
+            if (cState.recoiling)
+            {
+                if (recoilTimer < RECOIL_DURATION)
+                {
+                    recoilTimer += Time.deltaTime;
+                }
+                else
+                {
+                    CancelDamageRecoil();
+                    if ((prev_hero_state == ActorStates.idle || prev_hero_state == ActorStates.running) && !CheckTouchingGround())
+                    {
+                        cState.onGround = false;
+                        SetState(ActorStates.airborne);
+                    }
+                    else
+                    {
+                        SetState(ActorStates.previous);
+                    }
 
+                }
+            }
         }
         else if (hero_state != ActorStates.no_input)
         {
             LookForInput();
-
-            if(cState.attacking && !cState.dashing)
-	    {
+            if (cState.recoiling)
+            {
+                cState.recoiling = false;
+                AffectedByGravity(true);
+            }
+            if (cState.attacking && !cState.dashing)
+            {
                 attack_time += Time.deltaTime;
-                if(attack_time >= attackDuration)
-		{
+                if (attack_time >= attackDuration)
+                {
                     ResetAttacks();
                     animCtrl.StopAttack();
+                }
+            }
+
+            if(hero_state == ActorStates.idle)
+	    {
+                if(!controlReqlinquished && !gm.isPaused)
+		{
+                    //TODO:
 		}
+                
 	    }
         }
         LookForQueueInput();
-        if(attack_cooldown > 0f)
+        if (drainMP)
+	{
+            drainMP_timer += Time.deltaTime;
+            while (drainMP_timer >= drainMP_time) //drainMP_time在无护符下等于0.027
+            {
+                MP_drained += 1f;
+                drainMP_timer -= drainMP_time;
+                TakeMp(1);
+
+                if(MP_drained == focusMP_amount)
+		{
+                    MP_drained -= drainMP_time;
+                    proxyFSM.SendEvent("HeroCtrl-FocusCompleted");
+
+		}
+	    }
+	}
+	if (attack_cooldown > 0f)
 	{
             attack_cooldown -= Time.deltaTime;
 	}
         if (dashCooldownTimer > 0f) //计时器在Update中-= Time.deltaTime
         {
             dashCooldownTimer -= Time.deltaTime;
-        }
+	}
+
+	preventCastByDialogueEndTimer -= Time.deltaTime;
+
+	if (parryInvulnTimer > 0f)
+	{
+            parryInvulnTimer -= Time.deltaTime;
+	}
     }
 
     private void FixedUpdate()
     {
+        if(cState.recoilingLeft || cState.recoilingRight)
+	{
+            if(recoilSteps <= RECOIL_HOR_STEPS)
+	    {
+                recoilSteps++;
+	    }
+	    else
+	    {
+                CancelRecoilHorizonal();
+	    }
+	}
         if(hero_state == ActorStates.hard_landing || hero_state == ActorStates.dash_landing)
 	{
             ResetMotion();
 	}
         else if(hero_state == ActorStates.no_input)
 	{
-
+	    if (cState.recoiling)
+	    {
+                AffectedByGravity(false);
+                rb2d.velocity = recoilVector;
+	    }
 	}
         else if (hero_state != ActorStates.no_input)
 	{
@@ -289,10 +437,52 @@ public class HeroController : MonoBehaviour
                     if (move_input > 0f && !cState.facingRight)
                     {
                         FlipSprite();
+                        CancelAttack();
                     }
                     else if (move_input < 0f && cState.facingRight)
                     {
                         FlipSprite();
+                        CancelAttack();
+                    }
+                }
+                if(cState.recoilingLeft)
+		{
+                    float num;
+                    if (recoilLarge)
+                    {
+                        num = RECOIL_HOR_VELOCITY_LONG;
+                    }
+                    else
+                    {
+                        num = RECOIL_HOR_VELOCITY;
+                    }
+                    if(rb2d.velocity.x > -num)
+		    {
+                        rb2d.velocity = new Vector2(-num, rb2d.velocity.y);
+		    }
+		    else
+		    {
+                        rb2d.velocity = new Vector2(rb2d.velocity.x - num, rb2d.velocity.y);
+		    }
+		}
+                if (cState.recoilingRight)
+                {
+                    float num2;
+                    if(recoilLarge)
+		    {
+                        num2 = RECOIL_HOR_VELOCITY_LONG;
+		    }
+                    else
+		    {
+                        num2 = RECOIL_HOR_VELOCITY;
+                    }
+                    if (rb2d.velocity.x < num2)
+                    {
+                        rb2d.velocity = new Vector2(num2, rb2d.velocity.y);
+                    }
+                    else
+                    {
+                        rb2d.velocity = new Vector2(rb2d.velocity.x + num2, rb2d.velocity.y);
                     }
                 }
             }
@@ -307,7 +497,7 @@ public class HeroController : MonoBehaviour
             Dash();
 	}
         //限制速度
-        if(rb2d.velocity.y < -MAX_FALL_VELOCITY)
+        if(rb2d.velocity.y < -MAX_FALL_VELOCITY && !controlReqlinquished )
 	{
             rb2d.velocity = new Vector2(rb2d.velocity.x, -MAX_FALL_VELOCITY);
 	}
@@ -421,7 +611,7 @@ public class HeroController : MonoBehaviour
     private void DoAttack()
     {
 
-
+        cState.recoiling = false;
         attack_cooldown = ATTACK_COOLDOWN_TIME;
         if(vertical_input > Mathf.Epsilon)
 	{
@@ -447,15 +637,17 @@ public class HeroController : MonoBehaviour
 
     private bool CanAttack()
     {
-        return hero_state != ActorStates.no_input && hero_state != ActorStates.hard_landing && hero_state != ActorStates.dash_landing && attack_cooldown <= 0f && !cState.attacking && !cState.dashing;
+        return hero_state != ActorStates.no_input && hero_state != ActorStates.hard_landing && hero_state != ActorStates.dash_landing && attack_cooldown <= 0f && !cState.attacking && !cState.dashing && !cState.dead && !cState.hazardDeath && !controlReqlinquished;
     }
 
-    //TODO:
     private void CancelAttack()
     {
-        
+	if (cState.attacking)
+	{
+            slashComponent.CancelAttack();
+            ResetAttacks();
+	}
     }
-
 
     private void ResetAttacks()
     {
@@ -464,6 +656,222 @@ public class HeroController : MonoBehaviour
         cState.downAttacking = false;
         attack_time = 0f;
     }
+
+    public void AddMPCharge(int amount)
+    {
+        int mpreverse = playerData.MPReverse;
+        playerData.AddMPCharge(amount);
+
+        if(playerData.MPReverse != mpreverse && gm)
+	{
+
+	}
+    }
+
+    public void SetMPCharge(int amount)
+    {
+        playerData.MPCharge = amount;
+        //TODO:
+    }
+
+
+    public void SoulGain()
+    {
+        int num;
+        if(playerData.MPCharge < playerData.maxMP)
+	{
+            num = 11;
+	}
+	else
+	{
+            num = 6;
+	}
+        int mpreverse = playerData.MPReverse;
+        playerData.AddMPCharge(num);
+        if(playerData.MPReverse != mpreverse)
+	{
+
+	}
+    }
+
+    public void TakeMp(int amount)
+    {
+        if(playerData.MPCharge > 0)
+	{
+            playerData.TakeMP(amount);
+            if(amount > 1)
+	    {
+
+	    }
+	}
+    }
+
+    public void AddHealth(int amount)
+    {
+        playerData.AddHealth(amount);
+        proxyFSM.SendEvent("HeroCtrl-Healed");
+    }
+
+    public void TakeHealth(int amount)
+    {
+        playerData.TakeHealth(amount);
+        proxyFSM.SendEvent("HeroCtrl-HeroDamaged");
+    }
+
+    public void MaxHealth()
+    {
+        proxyFSM.SendEvent("HeroCtrl-MaxHealth");
+	playerData.MaxHealth();
+    }
+
+
+    public void StartMPDrain(float time)
+    {
+        Debug.LogFormat("Start MP Drain");
+        drainMP = true;
+        drainMP_timer = 0f;
+        MP_drained = 0f;
+        drainMP_time = time; //
+        focusMP_amount = (float)playerData.GetInt("focusMP_amount");
+    }
+
+    public void StopMPDrain()
+    {
+        drainMP = false;
+    }
+    
+    public bool CanFocus()
+    {
+        return !gm.isPaused && hero_state != ActorStates.no_input && !cState.dashing && !cState.backDashing && (!cState.attacking || attack_time > ATTACK_RECOVERY_TIME) && !cState.recoiling && cState.onGround && !cState.recoilFrozen && !cState.hazardDeath && CanInput();
+    }
+
+    public bool CanCast()
+    {
+        return !gm.isPaused && !cState.dashing && hero_state != ActorStates.no_input && !cState.backDashing && (!cState.attacking || attack_time >= ATTACK_RECOVERY_TIME) && !cState.recoiling && !cState.recoilFrozen && CanInput() && preventCastByDialogueEndTimer <= 0f;
+    }
+
+    public bool CanInput()
+    {
+        return acceptingInput;
+    }
+
+    public void IgnoreInput()
+    {
+	if (acceptingInput)
+	{
+            acceptingInput = false;
+            ResetInput();
+	}
+    }
+
+    public void AcceptInput()
+    {
+        acceptingInput = true;
+    }
+
+    /// <summary>
+    /// 放弃控制
+    /// </summary>
+    public void RelinquishControl()
+    {
+        if(!controlReqlinquished && !cState.dead)
+	{
+            ResetInput();
+            ResetMotion();
+            IgnoreInput();
+            controlReqlinquished = true;
+
+            ResetAttacks();
+            touchingWallL = false;
+            touchingWallR = false;
+	}
+    }
+
+    /// <summary>
+    /// 重新获得控制
+    /// </summary>
+    public void RegainControl()
+    {
+        AcceptInput();
+        hero_state = ActorStates.idle;
+        if(controlReqlinquished && !cState.dead)
+	{
+            AffectedByGravity(true);
+            SetStartingMotionState();
+            controlReqlinquished = false;
+	    if (startWithWallslide)
+	    {
+
+                cState.willHardLand = false;
+                cState.touchingWall = true;
+
+                if(transform.localScale.x< 0f)
+		{
+                    touchingWallR = true;
+                    return;
+		}
+                touchingWallL = true;
+	    }
+	    else
+	    {
+		if (startWithJump)
+		{
+                    HeroJumpNoEffect();
+
+                    startWithJump = false;
+                    return;
+		}
+                if (startWithFullJump)
+                {
+                    HeroJump();
+
+                    startWithFullJump = false;
+                    return;
+                }
+                if (startWithDash)
+                {
+                    HeroDash();
+
+                    startWithDash = false;
+                    return;
+                }
+                if (startWithAttack)
+                {
+                    DoAttack();
+
+                    startWithAttack = false;
+                    return;
+                }
+                cState.touchingWall = false;
+                touchingWallL = false;
+                touchingWallR = false;
+            }
+	}
+    }
+
+    private void SetStartingMotionState()
+    {
+        SetStartingMotionState(false);
+    }
+
+    private void SetStartingMotionState(bool preventRunDip)
+    {
+        move_input = (acceptingInput || preventRunDip) ? inputHandler.inputActions.moveVector.X : 0f;
+        cState.touchingWall = false;
+	if (CheckTouchingGround())
+	{
+            cState.onGround = true;
+            SetState(ActorStates.grounded);
+            
+	}
+	else
+	{
+            cState.onGround = false;
+            SetState(ActorStates.airborne);
+	}
+        animCtrl.UpdateState(hero_state);
+    }
+
 
     /// <summary>
     /// 小骑士跳跃的函数
@@ -549,6 +957,7 @@ public class HeroController : MonoBehaviour
         audioCtrl.StopSound(HeroSounds.FOOTSTEP_WALK);
         audioCtrl.PlaySound(HeroSounds.DASH);
 
+        cState.recoiling = false;
 
 	if (inputHandler.inputActions.right.IsPressed)
 	{
@@ -593,7 +1002,7 @@ public class HeroController : MonoBehaviour
     /// <returns></returns>
     public bool CanBackDash()
     {
-        return !cState.dashing && hero_state != ActorStates.no_input && !cState.backDashing && !cState.preventBackDash && !cState.backDashCooldown && cState.onGround && playerData.canBackDash;
+        return !cState.dashing && hero_state != ActorStates.no_input && !cState.backDashing && (!cState.attacking || attack_time >= ATTACK_RECOVERY_TIME)  &&!cState.preventBackDash && !cState.backDashCooldown && !controlReqlinquished && !cState.recoilFrozen && !cState.recoiling && cState.onGround && playerData.canBackDash;
     } 
 
     /// <summary>
@@ -686,6 +1095,28 @@ public class HeroController : MonoBehaviour
 	{
             hardLandFailSafeTimer = 0f;
 	}
+
+        if(rb2d.velocity.y == 0f && !cState.onGround && !cState.falling && !cState.jumping && !cState.dashing && hero_state != ActorStates.hard_landing && hero_state != ActorStates.no_input)
+	{
+	    if (CheckTouchingGround())
+	    {
+                floatingBufferTimer += Time.deltaTime;
+                if(floatingBufferTimer > FLOATING_CHECK_TIME)
+		{
+		    if (cState.recoiling)
+		    {
+                        CancelDamageRecoil();
+		    }
+                    BackOnGround();
+                    floatingBufferTimer = 0f;
+                    return;
+		}
+	    }
+	    else
+	    {
+                floatingBufferTimer = 0f;
+	    }
+	}
     }
 
     /// <summary>
@@ -694,7 +1125,7 @@ public class HeroController : MonoBehaviour
     private void FallCheck()
     {
         //如果y轴上的速度小于-1E-06F判断是否到地面上了
-        if (rb2d.velocity.y < -1E-06F)
+        if (rb2d.velocity.y <= -1E-06F)
 	{
 	    if (!CheckTouchingGround())
 	    {
@@ -766,7 +1197,7 @@ public class HeroController : MonoBehaviour
         CancelJump();
         CancelDash();
         CancelBackDash();
-
+        CancelRecoilHorizonal();
         rb2d.velocity = Vector2.zero;
 
     }
@@ -796,6 +1227,305 @@ public class HeroController : MonoBehaviour
         Vector3 localScale = transform.localScale;
         localScale.x = 1f;
         transform.localScale = localScale;
+    }
+
+    public void RecoilLeft()
+    {
+        if(!cState.recoilingLeft && !cState.recoilingRight && !controlReqlinquished)
+	{
+            CancelDash();
+            recoilSteps = 0;
+            cState.recoilingLeft = true;
+            cState.recoilingRight = false;
+            recoilLarge = false;
+            rb2d.velocity = new Vector2(-RECOIL_HOR_VELOCITY, rb2d.velocity.y);
+	}
+    }
+
+    public void RecoilRight()
+    {
+        if (!cState.recoilingLeft && !cState.recoilingRight && !controlReqlinquished)
+        {
+            CancelDash();
+            recoilSteps = 0;
+            cState.recoilingLeft = false;
+            cState.recoilingRight = true;
+            recoilLarge = false;
+            rb2d.velocity = new Vector2(RECOIL_HOR_VELOCITY, rb2d.velocity.y);
+        }
+    }
+
+    public void RecoilLeftLong()
+    {
+        if (!cState.recoilingLeft && !cState.recoilingRight && !controlReqlinquished)
+        {
+            CancelDash();
+            ResetAttacks();
+            recoilSteps = 0;
+            cState.recoilingLeft = true;
+            cState.recoilingRight = false;
+            recoilLarge = true;
+            rb2d.velocity = new Vector2(-RECOIL_HOR_VELOCITY_LONG, rb2d.velocity.y);
+        }
+    }
+
+    public void RecoilRightLong()
+    {
+        if (!cState.recoilingLeft && !cState.recoilingRight && !controlReqlinquished)
+        {
+            CancelDash();
+            ResetAttacks();
+            recoilSteps = 0;
+            cState.recoilingLeft = false;
+            cState.recoilingRight = true;
+            recoilLarge = true;
+            rb2d.velocity = new Vector2(RECOIL_HOR_VELOCITY_LONG, rb2d.velocity.y);
+        }
+    }
+
+    public void RecoilDown()
+    {
+        CancelJump();
+        if(rb2d.velocity.y > RECOIL_DOWN_VELOCITY && !controlReqlinquished)
+	{
+            rb2d.velocity = new Vector2(rb2d.velocity.x, RECOIL_DOWN_VELOCITY);
+	}
+    }
+
+    public void CancelRecoilHorizonal()
+    {
+        cState.recoilingLeft = false;
+        cState.recoilingRight = false;
+        recoilSteps = 0;
+    }
+
+    private bool CanTakeDamage()
+    {
+        return damageMode != DamageMode.NO_DAMAGE && !cState.invulnerable && !cState.recoiling && !cState.dead;
+    }
+
+    public void TakeDamage(GameObject go,CollisionSide damageSide,int damageAmount,int hazardType)
+    {
+        bool spawnDamageEffect = true;
+        if (damageAmount > 0)
+        {
+            if (CanTakeDamage())
+            {
+                if (damageMode == DamageMode.HAZARD_ONLY && hazardType == 1)
+                {
+                    return;
+                }
+                if (parryInvulnTimer > 0f && hazardType == 1)
+                {
+                    return;
+                }
+
+                proxyFSM.SendEvent("HeroCtrl-HeroDamaged");
+                CancelAttack();
+
+                if (cState.touchingWall)
+                {
+                    cState.touchingWall = false;
+                }
+                if (cState.recoilingLeft || cState.recoilingRight)
+                {
+                    CancelRecoilHorizonal();
+                }
+                audioCtrl.PlaySound(HeroSounds.TAKE_HIT);
+                if (!takeNoDamage)
+                {
+                    playerData.TakeHealth(damageAmount);
+                }
+
+                if (damageAmount > 0 && OnTakenDamage != null)
+                {
+                    OnTakenDamage();
+                }
+                if (playerData.health == 0)
+                {
+                    StartCoroutine(Die());
+                    return;
+                }
+                if (hazardType == 2)
+                {
+                    Debug.LogFormat("Die From Spikes");
+                    return;
+                }
+                if (hazardType == 3)
+                {
+                    Debug.LogFormat("Die From Acid");
+                    return;
+                }
+                if (hazardType == 4)
+                {
+                    Debug.LogFormat("Die From Lava");
+                    return;
+                }
+                if (hazardType == 5)
+                {
+                    Debug.LogFormat("Die From Pit");
+                    return;
+                }
+                StartCoroutine(StartRecoil(damageSide, spawnDamageEffect, damageAmount));
+                return;
+            }
+            else if (cState.invulnerable && !cState.hazardDeath)
+	    {
+                if(hazardType == 2)
+		{
+		    if (!takeNoDamage)
+		    {
+                        playerData.TakeHealth(damageAmount);
+		    }
+                    proxyFSM.SendEvent("HeroCtrl-HeroDamaged");
+                    if(playerData.health == 0)
+		    {
+                        StartCoroutine(Die());
+                        return;
+		    }
+                    audioCtrl.PlaySound(HeroSounds.TAKE_HIT);
+                    StartCoroutine(DieFromHazard(HazardTypes.SPIKES, (go != null) ? go.transform.rotation.z : 0f));
+                    return;
+		}
+                else if (hazardType == 3)
+                {             
+                    playerData.TakeHealth(damageAmount);
+                    proxyFSM.SendEvent("HeroCtrl-HeroDamaged");
+                    if (playerData.health == 0)
+                    {
+                        StartCoroutine(Die());
+                        return;
+                    }
+                    audioCtrl.PlaySound(HeroSounds.TAKE_HIT);
+                    StartCoroutine(DieFromHazard(HazardTypes.ACID, 0f));
+                    return;
+                }
+                else if(hazardType == 4)
+		{
+                    Debug.LogFormat("Die From Lava");
+                }
+            }
+	}
+    }
+
+    private IEnumerator Die()
+    {
+	if (OnDeath != null)
+	{
+            OnDeath();
+	}
+	if (!cState.dead)
+	{
+            playerData.disablePause = true;
+
+            rb2d.velocity = Vector2.zero;
+            CancelRecoilHorizonal();
+
+            AffectedByGravity(false);
+            HeroBox.inactive = true;
+            rb2d.isKinematic = true;
+            SetState(ActorStates.no_input);
+            cState.dead = true;
+            ResetMotion();
+            ResetHardLandingTimer();
+            renderer.enabled = false;
+            gameObject.layer = 2;
+
+            yield return null;
+
+	}
+    }
+
+    private IEnumerator DieFromHazard(HazardTypes hazardType,float angle)
+    {
+	if (!cState.hazardDeath)
+	{
+            playerData.disablePause = true;
+
+            SetHeroParent(null);
+            SetState(ActorStates.no_input);
+            cState.hazardDeath = true;
+            ResetMotion();
+            ResetHardLandingTimer();
+            AffectedByGravity(false);
+            renderer.enabled = false;
+            gameObject.layer = 2;
+            if(hazardType == HazardTypes.SPIKES)
+	    {
+
+	    }
+            else if(hazardType == HazardTypes.ACID)
+	    {
+
+	    }
+            yield return null;
+
+	}
+    }
+
+    private IEnumerator StartRecoil(CollisionSide impactSide, bool spawnDamageEffect, int damageAmount)
+    {
+	if (!cState.recoiling)
+	{
+            playerData.disablePause = true;
+            ResetMotion();
+            AffectedByGravity(false);
+            if(impactSide == CollisionSide.left)
+	    {
+		recoilVector = new Vector2(RECOIL_VELOCITY, RECOIL_VELOCITY * 0.5f);
+		if (cState.facingRight)
+		{
+                    FlipSprite();
+		}
+	    }
+            else if (impactSide == CollisionSide.right)
+            {
+                recoilVector = new Vector2(-RECOIL_VELOCITY, RECOIL_VELOCITY * 0.5f);
+                if (!cState.facingRight)
+                {
+                    FlipSprite();
+                }
+            }
+	    else
+	    {
+                recoilVector = Vector2.zero;
+	    }
+            SetState(ActorStates.no_input);
+            cState.recoilFrozen = true;
+	    if (spawnDamageEffect)
+	    {
+                damageEffectFSM.SendEvent("DAMAGE");
+                if(damageAmount > 1)
+		{
+
+		}
+	    }
+            StartCoroutine(Invulnerable(INVUL_TIME));
+            yield return takeDamageCoroutine = StartCoroutine(gm.FreezeMoment(DAMAGE_FREEZE_DOWN, DAMAGE_FREEZE_WAIT, DAMAGE_FREEZE_UP, 0.0001f));
+            cState.recoilFrozen = false;
+            cState.recoiling = true;
+            playerData.disablePause = false;
+        }
+    }
+
+    private IEnumerator Invulnerable(float duration)
+    {
+        cState.invulnerable = true;
+        yield return new WaitForSeconds(DAMAGE_FREEZE_DOWN);
+        invPulse.StartInvulnerablePulse();
+        yield return new WaitForSeconds(duration);
+        invPulse.StopInvulnerablePulse();
+	cState.invulnerable = false;
+        cState.recoiling = false;
+    }
+
+    public void CancelDamageRecoil()
+    {
+        cState.recoiling = false;
+        recoilTimer = 0f;
+        ResetMotion();
+        AffectedByGravity(true);
+
     }
 
     private void LookForInput()
@@ -887,7 +1617,7 @@ public class HeroController : MonoBehaviour
 	    }
             if(inputHandler.inputActions.attack.IsPressed && attackQueueSteps <= ATTACK_QUEUE_STEPS && CanAttack() && attackQueuing)
 	    {
-                Debug.LogFormat("Start Do ATTack");
+                Debug.LogFormat("Start Do Attack");
                 DoAttack();
 	    }
 	}
@@ -907,6 +1637,7 @@ public class HeroController : MonoBehaviour
 	{
             return true; //如果在地面上就return true
 	}
+        
         return false;
     }
 
@@ -918,6 +1649,7 @@ public class HeroController : MonoBehaviour
 
         audioCtrl.PlaySound(HeroSounds.JUMP);
 
+        cState.recoiling = false;
         cState.jumping = true;
         jumpQueueSteps = 0;
         jumped_steps = 0;
@@ -1379,16 +2111,16 @@ public class HeroController : MonoBehaviour
 			{
 			    if (cState.facingRight)
 			    {
-
+                                RecoilLeft();
 			    }
 			    else
 			    {
-
+                                RecoilRight();
 			    }
 			}
 			else if (attackDir == AttackDirection.upward)
 			{
-
+                            RecoilDown();
 			}
 		    }
 		}
@@ -1444,7 +2176,6 @@ public class HeroController : MonoBehaviour
                 float num4 = raycastHit2D3.point.y - raycastHit2D4.point.y;
                 if(num4 > 0f)
 		{
-                    Debug.Log("Bump Height: " + num4.ToString());
                     return true;
                 }
 	    }
@@ -1489,6 +2220,45 @@ public class HeroController : MonoBehaviour
         return CollisionSide.bottom;
     }
 
+    public void SetHeroParent(Transform newParent)
+    {
+        transform.parent = newParent;
+        if (newParent == null)
+        {
+	    DontDestroyOnLoad(gameObject);
+        }
+    }
+
+    /// <summary>
+    /// 设置一个新的HeroControllerStates状态
+    /// </summary>
+    /// <param name="stateName"></param>
+    /// <param name="value"></param>
+    public void SetCState(string stateName, bool value)
+    {
+        cState.SetState(stateName, value);
+    }
+
+    /// <summary>
+    /// 获取当前HeroControllerStates状态
+    /// </summary>
+    /// <param name="stateName"></param>
+    /// <returns></returns>
+    public bool GetCState(string stateName)
+    {
+        return cState.GetState(stateName);
+    }
+
+    public void StartAnimationControl()
+    {
+        animCtrl.StartControl();
+    }
+
+    public void StopAnimationControl()
+    {
+        animCtrl.StopControl();
+    }
+
 
 }
 
@@ -1510,6 +2280,15 @@ public class HeroControllerStates
     public bool touchingWall;
     public bool wallSliding;
     public bool willHardLand;
+    public bool recoilFrozen;
+    public bool recoiling;
+    public bool recoilingLeft;
+    public bool recoilingRight;
+    public bool freezeCharge;
+    public bool focusing;
+    public bool dead;
+    public bool hazardDeath;
+    public bool invulnerable;
     public bool preventDash;
     public bool preventBackDash;
     public bool dashCooldown;
@@ -1533,10 +2312,62 @@ public class HeroControllerStates
         touchingWall = false;
         wallSliding = false;
         willHardLand = false;
+        recoilFrozen = false;
+        recoiling = false;
+        recoilingLeft = false;
+        recoilingRight = false;
+        freezeCharge = false;
+        focusing = false;
+        dead = false;
+        hazardDeath = false;
+        invulnerable = false;
         preventDash = false;
         preventBackDash = false;
 	dashCooldown = false;
         backDashCooldown = false;
 	isPaused = false;
     }
+
+    /// <summary>
+    /// 设置一个新的状态（通常用在playmakerFSM上）
+    /// </summary>
+    /// <param name="stateName"></param>
+    /// <param name="value"></param>
+    public void SetState(string stateName, bool value)
+    {
+        FieldInfo field = GetType().GetField(stateName);
+        if (field != null)
+        {
+            try
+            {
+                field.SetValue(HeroController.instance.cState, value);
+                return;
+            }
+            catch (Exception ex)
+            {
+                string str = "Failed to set cState: ";
+                Exception ex2 = ex;
+                Debug.LogError(str + ((ex2 != null) ? ex2.ToString() : null));
+                return;
+            }
+        }
+        Debug.LogError("HeroControllerStates: Could not find bool named" + stateName + "in cState");
+    }
+
+    /// <summary>
+    /// 获取一个新的状态（通常用在playmakerFSM上）
+    /// </summary>
+    /// <param name="stateName"></param>
+    /// <returns></returns>
+    public bool GetState(string stateName)
+    {
+        FieldInfo field = GetType().GetField(stateName);
+        if (field != null)
+        {
+            return (bool)field.GetValue(HeroController.instance.cState);
+        }
+        Debug.LogError("HeroControllerStates: Could not find bool named" + stateName + "in cState");
+        return false;
+    }
+
 }

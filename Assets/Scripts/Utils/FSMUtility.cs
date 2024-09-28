@@ -13,6 +13,28 @@ public static class FSMUtility
 	fsmListPool = new List<List<PlayMakerFSM>>();
     }
 
+    public static PlayMakerFSM LocateFSM(GameObject go, string fsmName)
+    {
+	if (go == null)
+	{
+	    return null;
+	}
+	List<PlayMakerFSM> list = ObtainFsmList();
+	go.GetComponents<PlayMakerFSM>(list);
+	PlayMakerFSM result = null;
+	for (int i = 0; i < list.Count; i++)
+	{
+	    PlayMakerFSM playMakerFSM = list[i];
+	    if (playMakerFSM.FsmName == fsmName)
+	    {
+		result = playMakerFSM;
+		break;
+	    }
+	}
+	ReleaseFsmList(list);
+	return result;
+    }
+
     private static List<PlayMakerFSM> ObtainFsmList()
     {
 	if (fsmListPool.Count > 0)
@@ -22,6 +44,32 @@ public static class FSMUtility
 	    return result;
 	}
 	return new List<PlayMakerFSM>();
+    }
+
+    public static bool ContainsFSM(GameObject go, string fsmName)
+    {
+	if (go == null)
+	{
+	    return false;
+	}
+	List<PlayMakerFSM> list = FSMUtility.ObtainFsmList();
+	go.GetComponents<PlayMakerFSM>(list);
+	bool result = false;
+	for (int i = 0; i < list.Count; i++)
+	{
+	    if (list[i].FsmName == fsmName)
+	    {
+		result = true;
+		break;
+	    }
+	}
+	FSMUtility.ReleaseFsmList(list);
+	return result;
+    }
+
+    public static int GetInt(PlayMakerFSM fsm, string variableName)
+    {
+	return fsm.FsmVariables.FindFsmInt(variableName).Value;
     }
 
     private static void ReleaseFsmList(List<PlayMakerFSM> fsmList)

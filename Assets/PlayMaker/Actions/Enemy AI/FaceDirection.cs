@@ -19,7 +19,7 @@ namespace HutongGames.PlayMaker.Actions
 	public bool pauseBetweenTurns; //是否播放转身动画时暂停
 	public FsmFloat pauseTime;
 	private FsmGameObject target;
-	private Animation _sprite;
+	private tk2dSpriteAnimator _sprite;
 	private float xScale;
 
 	private float pauseTimer;
@@ -37,7 +37,7 @@ namespace HutongGames.PlayMaker.Actions
 	{
 	    CacheRigidBody2d(Fsm.GetOwnerDefaultTarget(gameObject));
 	    target = Fsm.GetOwnerDefaultTarget(gameObject);
-	    _sprite = target.Value.GetComponent<Animation>();
+	    _sprite = target.Value.GetComponent<tk2dSpriteAnimator>();
 	    xScale = target.Value.transform.localScale.x;
 	    if(xScale < 0f)
 	    {
@@ -60,7 +60,7 @@ namespace HutongGames.PlayMaker.Actions
 	    if (rb2d == null)
 		return;
 	    Vector2 velocity = rb2d.velocity;
-	    Vector3 localScale = target.Value.transform.localScale;
+	    Vector3 localScale = target.Value.transform.localScale; 
 	    float x = velocity.x;
 	    if(pauseTimer <= 0f || !pauseBetweenTurns)
 	    {
@@ -75,16 +75,18 @@ namespace HutongGames.PlayMaker.Actions
 			    if (playNewAnimation)
 			    {
 				_sprite.Play(newAnimationClip.Value);
+				_sprite.PlayFromFrame(0);
 			    }
 			}
 		    }
-		    else if(localScale.x != xScale)
+		    else if(localScale.x != -xScale)
 		    {
 			pauseTimer = pauseTime.Value;
 			localScale.x = -xScale;
 			if (playNewAnimation)
 			{
 			    _sprite.Play(newAnimationClip.Value);
+			    _sprite.PlayFromFrame(0);
 			}
 		    }
 		}
@@ -99,6 +101,7 @@ namespace HutongGames.PlayMaker.Actions
 			    if (playNewAnimation)
 			    {
 				_sprite.Play(newAnimationClip.Value);
+				_sprite.PlayFromFrame(0);
 			    }
 			}
 		    }
@@ -109,6 +112,7 @@ namespace HutongGames.PlayMaker.Actions
 			if (playNewAnimation)
 			{
 			    _sprite.Play(newAnimationClip.Value);
+			    _sprite.PlayFromFrame(0);
 			}
 		    }
 		}
@@ -120,5 +124,4 @@ namespace HutongGames.PlayMaker.Actions
 	    target.Value.transform.localScale = new Vector3(localScale.x, target.Value.transform.localScale.y, target.Value.transform.localScale.z);
 	}
     }
-
 }

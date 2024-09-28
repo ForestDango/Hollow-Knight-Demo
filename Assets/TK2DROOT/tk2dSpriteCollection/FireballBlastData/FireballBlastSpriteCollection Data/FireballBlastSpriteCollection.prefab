@@ -1,0 +1,354 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &753024621767743912
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 648528474041128349}
+  - component: {fileID: 4158037366056232710}
+  m_Layer: 0
+  m_Name: FireballBlastSpriteCollection
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &648528474041128349
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753024621767743912}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4158037366056232710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753024621767743912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d546f34a90531a14eaba82a43b05b86b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 3
+  materialIdsValid: 1
+  needMaterialInstance: 0
+  spriteDefinitions:
+  - name: fireball_impact_effect0000
+    boundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 1.4375, y: 1.359375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 1.515625, y: 1.421875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.71875, y: -0.6875, z: 0}
+    - {x: 0.71875, y: -0.6875, z: 0}
+    - {x: -0.71875, y: 0.671875, z: 0}
+    - {x: 0.71875, y: 0.671875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.2753926, y: 0.59961134}
+    - {x: 0.45507616, y: 0.59961134}
+    - {x: 0.2753926, y: 0.7695293}
+    - {x: 0.45507616, y: 0.7695293}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 174b99724bce45c4bbf032faa9738962, type: 2}
+    materialId: 0
+    sourceTextureGUID: d0d04fe720800ad4cb82e533422ac3d6
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: fireball_impact_effect0001
+    boundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 2.578125, y: 2.203125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 2.640625, y: 2.265625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.28125, y: -1.109375, z: 0}
+    - {x: 1.296875, y: -1.109375, z: 0}
+    - {x: -1.28125, y: 1.09375, z: 0}
+    - {x: 1.296875, y: 1.09375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.000001953125, y: 0.59961134}
+    - {x: 0.000001953125, y: 0.92187303}
+    - {x: 0.27538866, y: 0.59961134}
+    - {x: 0.27538866, y: 0.92187303}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 174b99724bce45c4bbf032faa9738962, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3a16f14956fec134b932d58fd4045b2c
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: fireball_impact_effect0002
+    boundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 3.46875, y: 2.515625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 3.53125, y: 2.578125, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.734375, y: -1.265625, z: 0}
+    - {x: 1.734375, y: -1.265625, z: 0}
+    - {x: -1.734375, y: 1.25, z: 0}
+    - {x: 1.734375, y: 1.25, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.46484572, y: 0.34179884}
+    - {x: 0.89843553, y: 0.34179884}
+    - {x: 0.46484572, y: 0.65624803}
+    - {x: 0.89843553, y: 0.65624803}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 174b99724bce45c4bbf032faa9738962, type: 2}
+    materialId: 0
+    sourceTextureGUID: 7b19571080834bf4a9872a1113f499d8
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: fireball_impact_effect0003
+    boundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 3.59375, y: 2.734375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 3.65625, y: 2.796875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.796875, y: -1.375, z: 0}
+    - {x: 1.796875, y: -1.375, z: 0}
+    - {x: -1.796875, y: 1.359375, z: 0}
+    - {x: 1.796875, y: 1.359375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.46484572, y: 0.000001953125}
+    - {x: 0.91406053, y: 0.000001953125}
+    - {x: 0.46484572, y: 0.3417949}
+    - {x: 0.91406053, y: 0.3417949}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 174b99724bce45c4bbf032faa9738962, type: 2}
+    materialId: 0
+    sourceTextureGUID: b5de44477956dfa4faab1352326b52b0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: fireball_impact_effect0004
+    boundsData:
+    - {x: -0.000000059604645, y: 0, z: 0}
+    - {x: 3.71875, y: 2.8125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 3.78125, y: 2.875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.859375, y: -1.40625, z: 0}
+    - {x: 1.8593749, y: -1.40625, z: 0}
+    - {x: -1.859375, y: 1.40625, z: 0}
+    - {x: 1.8593749, y: 1.40625, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.000001953125, y: 0.000001953125}
+    - {x: 0.46484178, y: 0.000001953125}
+    - {x: 0.000001953125, y: 0.35156053}
+    - {x: 0.46484178, y: 0.35156053}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 174b99724bce45c4bbf032faa9738962, type: 2}
+    materialId: 0
+    sourceTextureGUID: 201151b11aaf9af4fbbce4e0bf14ba0d
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: fireball_impact_effect0006
+    boundsData:
+    - {x: 0.0078125, y: -0.00781253, z: 0}
+    - {x: 3.671875, y: 1.984375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.734375, y: 2.046875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.828125, y: -1, z: 0}
+    - {x: 1.84375, y: -1, z: 0}
+    - {x: -1.828125, y: 0.98437494, z: 0}
+    - {x: 1.84375, y: 0.98437494, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.000001953125, y: 0.35156447}
+    - {x: 0.4589824, y: 0.35156447}
+    - {x: 0.000001953125, y: 0.5996074}
+    - {x: 0.4589824, y: 0.5996074}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 174b99724bce45c4bbf032faa9738962, type: 2}
+    materialId: 0
+    sourceTextureGUID: 76cf79d642482164088c5d41a6093708
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  premultipliedAlpha: 0
+  material: {fileID: 0}
+  materials:
+  - {fileID: 2100000, guid: 174b99724bce45c4bbf032faa9738962, type: 2}
+  textures:
+  - {fileID: 2800000, guid: e7cc975c018d2814db43bd6d82408c35, type: 3}
+  pngTextures: []
+  materialPngTextureId: 00000000
+  textureFilterMode: 0
+  textureMipMaps: 0
+  allowMultipleAtlases: 0
+  spriteCollectionGUID: 0aeb11eb552f3a448add329a475f4cbc
+  spriteCollectionName: FireballBlastSpriteCollection
+  assetName: 
+  loadable: 0
+  invOrthoSize: 2
+  halfTargetHeight: 32
+  buildKey: 1364239301
+  dataGuid: 380f24974c1d0b042bceb927aea6c5f3
+  managedSpriteCollection: 0
+  hasPlatformData: 0
+  spriteCollectionPlatforms: []
+  spriteCollectionPlatformGUIDs: []

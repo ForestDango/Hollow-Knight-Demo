@@ -8,21 +8,23 @@ public class HealthManager : MonoBehaviour, IHitResponder
 {
     private BoxCollider2D boxCollider;
     private IHitEffectReciever hitEffectReceiver;
+    private Recoil recoil;
     private tk2dSpriteAnimator animator;
     private tk2dSprite sprite;
+    private DamageHero damageHero;
 
     [Header("Asset")]
-    [SerializeField] private AudioSource audioPlayerPrefab;
+    [SerializeField] private AudioSource audioPlayerPrefab; //声音播放器预制体
 
     [Header("Body")]
-    [SerializeField] public int hp;
-    [SerializeField] public int enemyType;
-    [SerializeField] private Vector3 effectOrigin;
+    [SerializeField] public int hp; //血量
+    [SerializeField] public int enemyType; //敌人类型
+    [SerializeField] private Vector3 effectOrigin; //生效偏移量
 
     public bool isDead;
 
     private int directionOfLastAttack; //最后一次受到攻击的方向
-    private float evasionByHitRemaining; //剩余攻击下的逃避时间
+    private float evasionByHitRemaining; //被攻击后的剩余无敌时间
     private const string CheckPersistenceKey = "CheckPersistence";
 
     public delegate void DeathEvent();
@@ -32,8 +34,10 @@ public class HealthManager : MonoBehaviour, IHitResponder
     {
 	boxCollider = GetComponent<BoxCollider2D>();
 	hitEffectReceiver = GetComponent<IHitEffectReciever>();
+	recoil = GetComponent<Recoil>();
 	animator = GetComponent<tk2dSpriteAnimator>();
 	sprite = GetComponent<tk2dSprite>();
+	damageHero = GetComponent<DamageHero>();
     }
 
     protected void OnEnable()
@@ -75,7 +79,7 @@ public class HealthManager : MonoBehaviour, IHitResponder
 	TakeDamage(hitInstance);
     }
 
-    private void Invincible(HitInstance hitInstance)
+    public void Invincible(HitInstance hitInstance)
     {
 	int cardinalDirection = DirectionUtils.GetCardinalDirection(hitInstance.GetActualDirection(transform));
 	directionOfLastAttack = cardinalDirection;
@@ -89,11 +93,11 @@ public class HealthManager : MonoBehaviour, IHitResponder
 	    {
 		if(cardinalDirection == 0)
 		{
-
+		    HeroController.instance.RecoilLeft();
 		}
 		else if(cardinalDirection == 2)
 		{
-
+		    HeroController.instance.RecoilRight();
 		}
 	    }
 
@@ -132,7 +136,7 @@ public class HealthManager : MonoBehaviour, IHitResponder
 	evasionByHitRemaining = 0.15f;
     }
 
-    private void TakeDamage(HitInstance hitInstance)
+    public void TakeDamage(HitInstance hitInstance)
     {
 	Debug.LogFormat("Enemy Take Damage");
 	int cardinalDirection = DirectionUtils.GetCardinalDirection(hitInstance.GetActualDirection(transform));
@@ -140,18 +144,22 @@ public class HealthManager : MonoBehaviour, IHitResponder
 	FSMUtility.SendEventToGameObject(gameObject, "HIT", false);
 	FSMUtility.SendEventToGameObject(hitInstance.Source, "HIT LANDED", false);
 	FSMUtility.SendEventToGameObject(gameObject, "TOOK DAMAGE", false);
+	if(recoil != null)
+	{
+	    recoil.RecoilByDirection(cardinalDirection,hitInstance.MagnitudeMultiplier);
+	}
 	switch (hitInstance.AttackType)
 	{
 	    case AttackTypes.Nail:
 		if(hitInstance.AttackType == AttackTypes.Nail && enemyType !=3 && enemyType != 6)
 		{
-
+		    HeroController.instance.SoulGain();
 		}
 		Vector3 position = (hitInstance.Source.transform.position + transform.position) * 0.5f + effectOrigin;
 		break;
 	    case AttackTypes.Generic:
 		break;
-	    default:
+	    case AttackTypes.Spell:
 		break;
 	}
 	if(hitEffectReceiver != null)
@@ -163,11 +171,19 @@ public class HealthManager : MonoBehaviour, IHitResponder
 	hp = Mathf.Max(hp - num, -50);
 	if(hp > 0)
 	{
-
+	    NonFatalHit(hitInstance.IgnoreInvulnerable);
 	}
 	else
 	{
 	    Die(new float?(hitInstance.GetActualDirection(transform)), hitInstance.AttackType, hitInstance.IgnoreInvulnerable);
+	}
+    }
+
+    private void NonFatalHit(bool ignoreEvasion)
+    {
+	if (!ignoreEvasion)
+	{
+	    evasionByHitRemaining = 0.2f;
 	}
     }
 
@@ -180,10 +196,13 @@ public class HealthManager : MonoBehaviour, IHitResponder
 	if (sprite)
 	{
 	    sprite.color = Color.white;
-	
 	}
 	FSMUtility.SendEventToGameObject(gameObject, "ZERO HP", false);
 	isDead = true;
+	if(damageHero != null)
+	{
+	    damageHero.damageDealt = 0;
+	}
 	SendDeathEvent();
 	Destroy(gameObject); //TODO:
     }

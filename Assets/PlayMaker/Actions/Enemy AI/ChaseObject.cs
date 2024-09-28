@@ -65,10 +65,10 @@ namespace HutongGames.PlayMaker.Actions
 	    {
 		if(timer >= spreadResetTime)
 		{
-		    this.spreadX = UnityEngine.Random.Range(-this.targetSpread.Value, this.targetSpread.Value);
-		    this.spreadY = UnityEngine.Random.Range(-this.targetSpread.Value, this.targetSpread.Value);
-		    this.timer = 0f;
-		    this.spreadResetTime = UnityEngine.Random.Range(this.spreadResetTimeMin.Value, this.spreadResetTimeMax.Value);
+		    spreadX = UnityEngine.Random.Range(-targetSpread.Value, targetSpread.Value);
+		    spreadY = UnityEngine.Random.Range(-targetSpread.Value, targetSpread.Value);
+		    timer = 0f;
+		    spreadResetTime = UnityEngine.Random.Range(spreadResetTimeMin.Value, spreadResetTimeMax.Value);
 		}
 		else
 		{
@@ -76,21 +76,21 @@ namespace HutongGames.PlayMaker.Actions
 		}
 	    }
 	    Vector2 velocity = rb2d.velocity;
-	    if (this.self.Value.transform.position.x < this.target.Value.transform.position.x + this.spreadX)
+	    if (self.Value.transform.position.x < target.Value.transform.position.x + spreadX)
 	    {
-		velocity.x += this.acceleration.Value;
+		velocity.x += acceleration.Value;
 	    }
 	    else
 	    {
-		velocity.x -= this.acceleration.Value;
+		velocity.x -= acceleration.Value;
 	    }
-	    if (this.self.Value.transform.position.y < this.target.Value.transform.position.y + this.spreadY)
+	    if (self.Value.transform.position.y < target.Value.transform.position.y + spreadY)
 	    {
-		velocity.y += this.acceleration.Value;
+		velocity.y += acceleration.Value;
 	    }
 	    else
 	    {
-		velocity.y -= this.acceleration.Value;
+		velocity.y -= acceleration.Value;
 	    }
 	    //限制速度
 	    if(velocity.x > speedMax.Value)

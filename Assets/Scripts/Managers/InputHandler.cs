@@ -42,6 +42,8 @@ public class InputHandler : MonoBehaviour
 	AddKeyBinding(inputActions.attack, "Z");
 	AddKeyBinding(inputActions.jump, "X");
 	AddKeyBinding(inputActions.dash, "D");
+	AddKeyBinding(inputActions.cast, "F");
+	AddKeyBinding(inputActions.quickCast, "Q");
     }
 
     private static void AddKeyBinding(PlayerAction action, string savedBinding)
