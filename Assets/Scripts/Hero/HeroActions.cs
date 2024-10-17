@@ -7,6 +7,8 @@ public class HeroActions : PlayerActionSet
     public PlayerAction right;
     public PlayerAction up;
     public PlayerAction down;
+    public PlayerAction menuSubmit;
+    public PlayerAction menuCancel;
     public PlayerTwoAxisAction moveVector;
     public PlayerAction attack;
     public PlayerAction jump;
@@ -14,10 +16,13 @@ public class HeroActions : PlayerActionSet
     public PlayerAction cast;
     public PlayerAction focus;
     public PlayerAction quickCast;
+    public PlayerAction openInventory;
 
 
     public HeroActions()
     {
+	menuSubmit = CreatePlayerAction("Submit");
+	menuCancel = CreatePlayerAction("Cancel");
 	left = CreatePlayerAction("Left");
 	left.StateThreshold = 0.3f;
 	right = CreatePlayerAction("Right");
@@ -35,5 +40,6 @@ public class HeroActions : PlayerActionSet
 	cast = CreatePlayerAction("Cast");
 	focus = CreatePlayerAction("Focus");
 	quickCast = CreatePlayerAction("QuickCast");
+	openInventory = CreatePlayerAction("Inventory");
     }
 }

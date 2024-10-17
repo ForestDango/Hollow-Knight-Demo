@@ -98,22 +98,22 @@ namespace HutongGames.PlayMaker.Actions
 				switch (sceneReference) {
 				case SceneReferenceOptions.ActiveScene:
 
-					_asyncOperation = SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene());
+					_asyncOperation = UnityEngine.SceneManagement.SceneManager.UnloadSceneAsync(UnityEngine.SceneManagement.SceneManager.GetActiveScene());
 
 					break;
 				case SceneReferenceOptions.SceneAtBuildIndex:
-					_asyncOperation = SceneManager.UnloadSceneAsync(sceneAtBuildIndex.Value);
+					_asyncOperation = UnityEngine.SceneManagement.SceneManager.UnloadSceneAsync(sceneAtBuildIndex.Value);
 					break;
 				case SceneReferenceOptions.SceneAtIndex:
 
-					_asyncOperation = SceneManager.UnloadSceneAsync(SceneManager.GetSceneAt(sceneAtIndex.Value));
+					_asyncOperation = UnityEngine.SceneManagement.SceneManager.UnloadSceneAsync(UnityEngine.SceneManagement.SceneManager.GetSceneAt(sceneAtIndex.Value));
 
 					break;
 				case SceneReferenceOptions.SceneByName:
-					_asyncOperation = SceneManager.UnloadSceneAsync (sceneByName.Value);
+					_asyncOperation = UnityEngine.SceneManagement.SceneManager.UnloadSceneAsync (sceneByName.Value);
 					break;
 				case SceneReferenceOptions.SceneByPath:
-					_asyncOperation = SceneManager.UnloadSceneAsync(SceneManager.GetSceneByPath(sceneByPath.Value));
+					_asyncOperation = UnityEngine.SceneManagement.SceneManager.UnloadSceneAsync(UnityEngine.SceneManagement.SceneManager.GetSceneByPath(sceneByPath.Value));
 
 					break;
 				case SceneReferenceOptions.SceneByGameObject:
@@ -123,7 +123,7 @@ namespace HutongGames.PlayMaker.Actions
 					{
 						throw new  Exception ("Null GameObject");
 					}else{
-						_asyncOperation = SceneManager.UnloadSceneAsync(_go.scene);
+						_asyncOperation = UnityEngine.SceneManagement.SceneManager.UnloadSceneAsync(_go.scene);
 					}
 
 

@@ -67,16 +67,16 @@ namespace HutongGames.PlayMaker.Actions
 			try{
 				switch (sceneReference) {
 				case SceneAllReferenceOptions.ActiveScene:
-					_scene = SceneManager.GetActiveScene ();
+					_scene = UnityEngine.SceneManagement.SceneManager.GetActiveScene ();
 					break;
 				case SceneAllReferenceOptions.SceneAtIndex:
-					_scene = SceneManager.GetSceneAt (sceneAtIndex.Value);	
+					_scene = UnityEngine.SceneManagement.SceneManager.GetSceneAt (sceneAtIndex.Value);	
 					break;
 				case SceneAllReferenceOptions.SceneByName:
-					_scene = SceneManager.GetSceneByName (sceneByName.Value);
+					_scene = UnityEngine.SceneManagement.SceneManager.GetSceneByName (sceneByName.Value);
 					break;
 				case SceneAllReferenceOptions.SceneByPath:
-					_scene = SceneManager.GetSceneByPath (sceneByPath.Value);
+					_scene = UnityEngine.SceneManagement.SceneManager.GetSceneByPath (sceneByPath.Value);
 					break;
 				case SceneAllReferenceOptions.SceneByGameObject:
 					GameObject _go = Fsm.GetOwnerDefaultTarget (sceneByGameObject);

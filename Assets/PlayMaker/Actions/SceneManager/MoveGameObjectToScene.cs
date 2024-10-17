@@ -56,7 +56,7 @@ namespace HutongGames.PlayMaker.Actions
 				}
 
 				if (_go.transform.parent == null) {
-					SceneManager.MoveGameObjectToScene(_go, _scene);
+					UnityEngine.SceneManagement.SceneManager.MoveGameObjectToScene(_go, _scene);
 					success.Value = true;
 					Fsm.Event (successEvent);
 

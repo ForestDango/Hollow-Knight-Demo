@@ -183,7 +183,7 @@ namespace HutongGames.PlayMakerEditor
             var openScenes = new List<string>();
             for (var i = 0; i < EditorSceneManager.loadedSceneCount; i++)
             {
-                openScenes.Add(SceneManager.GetSceneAt(i).path);
+                openScenes.Add(UnityEngine.SceneManagement.SceneManager.GetSceneAt(i).path);
             }
 
             return openScenes;    

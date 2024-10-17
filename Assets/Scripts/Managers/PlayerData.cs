@@ -33,6 +33,15 @@ public class PlayerData
 
     public int nailDamage;
 
+    public string respawnScene;
+    [NonSerialized]
+    public Vector3 hazardRespawnLocation;
+    public bool hazardRespawnFacingRight;
+    public string respawnMarkerName;
+    public bool isInvincible;
+
+    public int currentArea;
+
     public int maxMP; //最大MP容量
     public int MPCharge; //当前MP存储量
     public int MPReverse; //花费的MP
@@ -50,7 +59,14 @@ public class PlayerData
     public int quakeLevel;//地震法术等级，0表示没有
     public int screamLevel;//狂啸法术等级，0表示没有
 
+    public bool hasLantern;
+    public bool hasDreamNail;
+
+    public int charmsOwned;
     public bool overcharmed;
+
+    public bool gotCharm_6; //复仇之魂
+    public bool equippedCharm_6;
 
     public bool gotCharm_7; //快速聚集
     public bool equippedCharm_7;
@@ -76,6 +92,22 @@ public class PlayerData
     public bool gotCharm_34; //深度聚集
     public bool equippedCharm_34;
 
+    public bool giantFlyDefeated;
+
+    public bool falseKnightWallBroken;
+    public bool falseKnightWallRepaired;
+    public bool shamanPillar;
+
+    public bool falseKnightDefeated;
+    public bool falseKnightFirstPlop;
+    public bool killedFalseKnight;
+    public bool newDataFalseKnight;
+    public int killsFalseKnight;
+    public bool corn_crossroadsLeft;
+    public bool openedMapperShop;
+
+    public bool crossroadsMawlekWall;
+
     public int CurrentMaxHealth
     {
 	get
@@ -99,6 +131,8 @@ public class PlayerData
     {
 	disablePause = false;
 
+	currentArea = 0;
+
 	health = 5;
 	maxHealth = 5;
 	maxHealthBase = 5;
@@ -112,6 +146,12 @@ public class PlayerData
 	soulLimited = false;
 	focusMP_amount = 33;
 
+	respawnScene = "Tutorial_01";
+	respawnMarkerName = "Death Respawn Marker";
+	hazardRespawnLocation = Vector3.zero;
+	hazardRespawnFacingRight = false;
+	isInvincible = false;
+
 	hasDash = true; //测试阶段先设置为true方便测试
 	canDash = true;
 	hasBackDash = false;
@@ -122,7 +162,13 @@ public class PlayerData
 	quakeLevel = 0;
 	screamLevel = 0;
 
+	hasLantern = false;
+	hasDreamNail = false;
+
+	charmsOwned = 0;
 	overcharmed = false;
+	gotCharm_6 = false;
+	equippedCharm_6 = false;
 	gotCharm_7 = false;
 	equippedCharm_7 = false;
 	gotCharm_10 = false;
@@ -139,6 +185,34 @@ public class PlayerData
 	equippedCharm_31 = true;
 	gotCharm_34 = false;
 	equippedCharm_34 = false;
+
+	giantFlyDefeated = false;
+
+
+	falseKnightFirstPlop = false;
+	falseKnightDefeated = false;
+	killedFalseKnight = false;
+	newDataFalseKnight = false;
+	killsFalseKnight = 0;
+
+	corn_crossroadsLeft = false;
+
+	openedMapperShop = false;
+
+	crossroadsMawlekWall = false;
+    }
+
+    public void SetHazardRespawn(HazardRespawnMarker location)
+    {
+	hazardRespawnLocation = location.transform.position;
+	hazardRespawnFacingRight = location.respawnFacingRight;
+	Debug.LogFormat("hazardRespawnLocation =" + hazardRespawnLocation);
+	Debug.LogFormat("hazardRespawnFacingRight =" + hazardRespawnFacingRight);
+    }
+    public void SetHazardRespawn(Vector3 position, bool facingRight)
+    {
+	hazardRespawnLocation = position;
+	hazardRespawnFacingRight = facingRight;
     }
 
     public void AddHealth(int amount)
@@ -239,6 +313,29 @@ public class PlayerData
 	}
 	Debug.LogError("PlayerData: Could not find int named " + intName + " in PlayerData");
 	return -9999;
+    }
+
+    public void IncrementInt(string intName)
+    {
+	FieldInfo field = GetType().GetField(intName);
+	if (field != null)
+	{
+	    int num = (int)field.GetValue(instance);
+	    field.SetValue(instance, num + 1);
+	    return;
+	}
+	Debug.Log("PlayerData: Could not find field named " + intName + ", check variable name exists and FSM variable string is correct.");
+    }
+
+    public void SetInt(string intName, int value)
+    {
+	FieldInfo field = GetType().GetField(intName);
+	if (field != null)
+	{
+	    field.SetValue(instance, value);
+	    return;
+	}
+	Debug.Log("PlayerData: Could not find field named " + intName + ", check variable name exists and FSM variable string is correct.");
     }
 
     public bool GetBool(string boolName)

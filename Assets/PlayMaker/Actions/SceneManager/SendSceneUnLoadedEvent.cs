@@ -25,7 +25,7 @@ namespace HutongGames.PlayMaker.Actions
 
 		public override void OnEnter()
 		{
-			SceneManager.sceneUnloaded += SceneManager_sceneUnloaded;
+			UnityEngine.SceneManagement.SceneManager.sceneUnloaded += SceneManager_sceneUnloaded;
 
 			Finish();
 		}
@@ -43,7 +43,7 @@ namespace HutongGames.PlayMaker.Actions
 
 		public override void OnExit()
 		{
-			SceneManager.sceneUnloaded -= SceneManager_sceneUnloaded;
+			UnityEngine.SceneManagement.SceneManager.sceneUnloaded -= SceneManager_sceneUnloaded;
 		}
 	}
 }

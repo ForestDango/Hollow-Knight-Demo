@@ -42,7 +42,7 @@ namespace HutongGames.PlayMaker.Actions
 
 		void DoGetSceneCount()
 		{
-			sceneCount.Value =	SceneManager.sceneCount;
+			sceneCount.Value = UnityEngine.SceneManagement.SceneManager.sceneCount;
 		}
 	}
 }

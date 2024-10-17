@@ -8,10 +8,14 @@ public class HealthManager : MonoBehaviour, IHitResponder
 {
     private BoxCollider2D boxCollider;
     private IHitEffectReciever hitEffectReceiver;
+    private EnemyDeathEffects enemyDeathEffects;
     private Recoil recoil;
     private tk2dSpriteAnimator animator;
     private tk2dSprite sprite;
     private DamageHero damageHero;
+
+    [Header("Scene")]
+    [SerializeField] private GameObject battleScene;
 
     [Header("Asset")]
     [SerializeField] private AudioSource audioPlayerPrefab; //声音播放器预制体
@@ -20,6 +24,45 @@ public class HealthManager : MonoBehaviour, IHitResponder
     [SerializeField] public int hp; //血量
     [SerializeField] public int enemyType; //敌人类型
     [SerializeField] private Vector3 effectOrigin; //生效偏移量
+
+    [Header("Invincible")]
+    [SerializeField] private bool invincible;
+    [SerializeField] private int invincibleFromDirection;
+
+    [Header("Hit")]
+    [SerializeField] private bool hasAlternateHitAnimation;
+    [SerializeField] private string alternateHitAnimation;
+
+    [Header("Death")]
+    [SerializeField] public bool deathReset;
+    [SerializeField] public bool hasSpecialDeath;
+
+    private bool notifiedBattleScene;
+
+
+    public bool IsInvincible
+    {
+	get
+	{
+	    return invincible;
+	}
+	set
+	{
+	    invincible = value;
+	}
+    }
+
+    public int InvincibleFromDirection
+    {
+	get
+	{
+	    return invincibleFromDirection;
+	}
+	set
+	{
+	    invincibleFromDirection = value;
+	}
+    }
 
     public bool isDead;
 
@@ -34,6 +77,7 @@ public class HealthManager : MonoBehaviour, IHitResponder
     {
 	boxCollider = GetComponent<BoxCollider2D>();
 	hitEffectReceiver = GetComponent<IHitEffectReciever>();
+	enemyDeathEffects = GetComponent<EnemyDeathEffects>();
 	recoil = GetComponent<Recoil>();
 	animator = GetComponent<tk2dSpriteAnimator>();
 	sprite = GetComponent<tk2dSprite>();
@@ -138,7 +182,6 @@ public class HealthManager : MonoBehaviour, IHitResponder
 
     public void TakeDamage(HitInstance hitInstance)
     {
-	Debug.LogFormat("Enemy Take Damage");
 	int cardinalDirection = DirectionUtils.GetCardinalDirection(hitInstance.GetActualDirection(transform));
 	directionOfLastAttack = cardinalDirection;
 	FSMUtility.SendEventToGameObject(gameObject, "HIT", false);
@@ -164,9 +207,9 @@ public class HealthManager : MonoBehaviour, IHitResponder
 	}
 	if(hitEffectReceiver != null)
 	{
-	    hitEffectReceiver.ReceiverHitEffect(hitInstance.GetActualDirection(transform));
+	    hitEffectReceiver.ReceiveHitEffect(hitInstance.GetActualDirection(base.transform));
 	}
-	int num = Mathf.RoundToInt((float)hitInstance.DamageDealt * hitInstance.Multiplier);
+	int num = Mathf.RoundToInt(hitInstance.DamageDealt * hitInstance.Multiplier);
 
 	hp = Mathf.Max(hp - num, -50);
 	if(hp > 0)
@@ -183,14 +226,25 @@ public class HealthManager : MonoBehaviour, IHitResponder
     {
 	if (!ignoreEvasion)
 	{
-	    evasionByHitRemaining = 0.2f;
+	    if (hasAlternateHitAnimation)
+	    {
+		if (animator != null)
+		{
+		    animator.Play(alternateHitAnimation);
+		    return;
+		}
+	    }
+	    else
+	    {
+		evasionByHitRemaining = 0.2f;
+	    }
 	}
     }
 
-    public void Die(float? v, AttackTypes attackType, bool ignoreInvulnerable)
+    public void Die(float? attackDirection, AttackTypes attackType, bool ignoreEvasion)
     {
 	if (isDead)
-	{
+	{ 
 	    return;
 	}
 	if (sprite)
@@ -198,13 +252,44 @@ public class HealthManager : MonoBehaviour, IHitResponder
 	    sprite.color = Color.white;
 	}
 	FSMUtility.SendEventToGameObject(gameObject, "ZERO HP", false);
+	if (hasSpecialDeath)
+	{
+	    NonFatalHit(ignoreEvasion);
+	    return;
+	}
 	isDead = true;
 	if(damageHero != null)
 	{
 	    damageHero.damageDealt = 0;
 	}
+	if(battleScene != null && !notifiedBattleScene)
+	{
+	    PlayMakerFSM playMakerFSM = FSMUtility.LocateFSM(battleScene, "Battle Control");
+	    if(playMakerFSM != null)
+	    {
+		FsmInt fsmInt = playMakerFSM.FsmVariables.GetFsmInt("Battle Enemies");
+		if(fsmInt != null)
+		{
+		    fsmInt.Value--;
+		    notifiedBattleScene = true;
+		}
+	    }
+	}
+	if (enemyDeathEffects != null)
+	{
+	    if (attackType == AttackTypes.Generic)
+	    {
+		enemyDeathEffects.doKillFreeze = false;
+	    }
+	    enemyDeathEffects.RecieveDeathEvent(attackDirection, deathReset, attackType == AttackTypes.Spell, false);
+	}
 	SendDeathEvent();
 	Destroy(gameObject); //TODO:
+    }
+
+    public void SetIsDead(bool set)
+    {
+	isDead = set;
     }
 
     public void SendDeathEvent()
@@ -217,10 +302,62 @@ public class HealthManager : MonoBehaviour, IHitResponder
 
     public bool IsBlockingByDirection(int cardinalDirection,AttackTypes attackType)
     {
-
+	if(attackType == AttackTypes.Spell && gameObject.CompareTag("Spell Vulnerable"))
+	{
+	    return false;
+	}
+	if (!invincible)
+	{
+	    return false;
+	}
+	if(invincibleFromDirection == 0)
+	{
+	    return true;
+	}
 	switch (cardinalDirection)
 	{
-
+	    case 0:
+	    {
+		int num = invincibleFromDirection;
+		if (num <= 5)
+		{
+		    if (num != 1 && num != 5)
+		    {
+		     return false;
+		    }
+		 }
+		else if (num != 8 && num != 10)
+		{
+		    return false;
+		}
+		return true;
+	    }   
+	    case 1:
+	    {
+		int num = invincibleFromDirection;
+		return num == 2 || num - 5 <= 4;
+	    }
+	    case 2:
+		{
+		    int num = invincibleFromDirection;
+		    if (num <= 6)
+		    {
+			if (num != 3 && num != 6)
+			{
+			    return false;
+			}
+		    }
+		    else if (num != 9 && num != 11)
+		    {
+			return false;
+		    }
+		    return true;
+		}
+	    case 3:
+		{
+		    int num = invincibleFromDirection;
+		    return num == 4 || num - 7 <= 4;
+		}
 	    default:
 		return false;
 	}

@@ -1,0 +1,3080 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &85163633299294586
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7112997506837930313}
+  - component: {fileID: 887120449441527492}
+  m_Layer: 0
+  m_Name: SwitchesAndGatesSpriteCollection
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7112997506837930313
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 85163633299294586}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &887120449441527492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 85163633299294586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d546f34a90531a14eaba82a43b05b86b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 3
+  materialIdsValid: 1
+  needMaterialInstance: 0
+  spriteDefinitions:
+  - name: Switches and gates_sliding_wall0016
+    boundsData:
+    - {x: -0.40624994, y: 2.375, z: 0}
+    - {x: 2.9375, y: 0.53125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 3.75, y: 5.296875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.875, y: 2.109375, z: 0}
+    - {x: 1.0625001, y: 2.109375, z: 0}
+    - {x: -1.875, y: 2.640625, z: 0}
+    - {x: 1.0625001, y: 2.640625, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.21679786, y: 0.3403325}
+    - {x: 0.21679786, y: 0.43212843}
+    - {x: 0.24999902, y: 0.3403325}
+    - {x: 0.24999902, y: 0.43212843}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b4a3c778d6c00104c97c65214295bcb6, type: 2}
+    materialId: 0
+    sourceTextureGUID: 866312e0362aba344afc7ec2688d1b49
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Switches and gates_bone_gate_02000
+    boundsData:
+    - {x: 0.02343753, y: 1.9921875, z: 0}
+    - {x: 1.390625, y: 0.8906249, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 2.0625, y: 5.4375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.671875, y: 1.5468751, z: 0}
+    - {x: 0.71875006, y: 1.5468751, z: 0}
+    - {x: -0.671875, y: 2.4375, z: 0}
+    - {x: 0.71875006, y: 2.4375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.3457041, y: 0.4423833}
+    - {x: 0.4326162, y: 0.4423833}
+    - {x: 0.3457041, y: 0.47021437}
+    - {x: 0.4326162, y: 0.47021437}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b4a3c778d6c00104c97c65214295bcb6, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3a8d7299ebd2f744db6bc39fc0f4f26b
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Switches and gates_bone_gate_02001
+    boundsData:
+    - {x: 0.03125003, y: 1.5234377, z: 0}
+    - {x: 1.625, y: 1.7968751, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 2.0625, y: 5.4375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.78125, y: 0.6250001, z: 0}
+    - {x: 0.84375006, y: 0.6250001, z: 0}
+    - {x: -0.78125, y: 2.4218752, z: 0}
+    - {x: 0.84375006, y: 2.4218752, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.63281345, y: 0.39599657}
+    - {x: 0.73437405, y: 0.39599657}
+    - {x: 0.63281345, y: 0.45214796}
+    - {x: 0.73437405, y: 0.45214796}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b4a3c778d6c00104c97c65214295bcb6, type: 2}
+    materialId: 0
+    sourceTextureGUID: b50597ee29ec63140b19ac8a08715f78
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Switches and gates_bone_gate_02002
+    boundsData:
+    - {x: 0.000000029802322, y: 0.6015625, z: 0}
+    - {x: 1.6875, y: 3.921875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 2.0625, y: 5.4375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.84375, y: -1.359375, z: 0}
+    - {x: 0.84375006, y: -1.359375, z: 0}
+    - {x: -0.84375, y: 2.5625, z: 0}
+    - {x: 0.84375006, y: 2.5625, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.63281345, y: 0.20410205}
+    - {x: 0.7382803, y: 0.20410205}
+    - {x: 0.63281345, y: 0.32665968}
+    - {x: 0.7382803, y: 0.32665968}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b4a3c778d6c00104c97c65214295bcb6, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3154e2ee13af74449bb4fab26b5b2433
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Switches and gates_bone_gate_02003
+    boundsData:
+    - {x: 0.000000029802322, y: 0.0234375, z: 0}
+    - {x: 1.6875, y: 5.015625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 2.0625, y: 5.4375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.84375, y: -2.484375, z: 0}
+    - {x: 0.84375006, y: -2.484375, z: 0}
+    - {x: -0.84375, y: 2.53125, z: 0}
+    - {x: 0.84375006, y: 2.53125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.4892588, y: 0.094727054}
+    - {x: 0.4892588, y: 0.14746045}
+    - {x: 0.8027334, y: 0.094727054}
+    - {x: 0.8027334, y: 0.14746045}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b4a3c778d6c00104c97c65214295bcb6, type: 2}
+    materialId: 0
+    sourceTextureGUID: 0d32487c844d5a94e85974dd48f6393e
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Switches and gates_bone_gate_02004
+    boundsData:
+    - {x: 0.000000029802322, y: 0.03906262, z: 0}
+    - {x: 1.6875, y: 4.765625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 2.0625, y: 5.4375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.84375, y: -2.34375, z: 0}
+    - {x: 0.84375006, y: -2.34375, z: 0}
+    - {x: -0.84375, y: 2.4218752, z: 0}
+    - {x: 0.84375006, y: 2.4218752, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.4892588, y: 0.14941455}
+    - {x: 0.4892588, y: 0.20214795}
+    - {x: 0.7871084, y: 0.14941455}
+    - {x: 0.7871084, y: 0.20214795}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b4a3c778d6c00104c97c65214295bcb6, type: 2}
+    materialId: 0
+    sourceTextureGUID: d18b3db7bc9c44e4a9b9f25a8024dfc7
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Switches and gates_crossroad_03_gate0000
+    boundsData:
+    - {x: 0, y: -0.04687494, z: 0}
+    - {x: 0.75, y: 3.75, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0.78125, y: 3.84375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.375, y: -1.921875, z: 0}
+    - {x: 0.375, y: -1.921875, z: 0}
+    - {x: -0.375, y: 1.8281251, z: 0}
+    - {x: 0.375, y: 1.8281251, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.899415, y: 0.48193407}
+    - {x: 0.9462881, y: 0.48193407}
+    - {x: 0.899415, y: 0.5991206}
+    - {x: 0.9462881, y: 0.5991206}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b4a3c778d6c00104c97c65214295bcb6, type: 2}
+    materialId: 0
+    sourceTextureGUID: 99b3d96d7f35be34db78767196e8c38f
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Switches and gates_crossroad_03_gate0001
+    boundsData:
+    - {x: 0, y: -0.03906244, z: 0}
+    - {x: 0.75, y: 3.765625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0.78125, y: 3.84375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.375, y: -1.921875, z: 0}
+    - {x: 0.375, y: -1.921875, z: 0}
+    - {x: -0.375, y: 1.8437501, z: 0}
+    - {x: 0.375, y: 1.8437501, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.74218845, y: 0.3251958}
+    - {x: 0.78906155, y: 0.3251958}
+    - {x: 0.74218845, y: 0.44287062}
+    - {x: 0.78906155, y: 0.44287062}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b4a3c778d6c00104c97c65214295bcb6, type: 2}
+    materialId: 0
+    sourceTextureGUID: 384449c341eb55542bfd95434023dd9a
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Switches and gates_crossroad_03_gate0002
+    boundsData:
+    - {x: 0, y: -0.04687494, z: 0}
+    - {x: 0.75, y: 3.75, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0.78125, y: 3.84375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.375, y: -1.921875, z: 0}
+    - {x: 0.375, y: -1.921875, z: 0}
+    - {x: -0.375, y: 1.8281251, z: 0}
+    - {x: 0.375, y: 1.8281251, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.899415, y: 0.48193407}
+    - {x: 0.9462881, y: 0.48193407}
+    - {x: 0.899415, y: 0.5991206}
+    - {x: 0.9462881, y: 0.5991206}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b4a3c778d6c00104c97c65214295bcb6, type: 2}
+    materialId: 0
+    sourceTextureGUID: 1ecac6e1ad76bc442ba344d86da3b418
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Switches and gates_crossroad_03_gate0003
+    boundsData:
+    - {x: 0, y: -0.03906244, z: 0}
+    - {x: 0.75, y: 3.765625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0.78125, y: 3.84375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.375, y: -1.921875, z: 0}
+    - {x: 0.375, y: -1.921875, z: 0}
+    - {x: -0.375, y: 1.8437501, z: 0}
+    - {x: 0.375, y: 1.8437501, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.74218845, y: 0.3251958}
+    - {x: 0.78906155, y: 0.3251958}
+    - {x: 0.74218845, y: 0.44287062}
+    - {x: 0.78906155, y: 0.44287062}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b4a3c778d6c00104c97c65214295bcb6, type: 2}
+    materialId: 0
+    sourceTextureGUID: 8a260b63a800e814b910446fd9058297
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Switches and gates_crossroad_03_gate0004
+    boundsData:
+    - {x: 0, y: -0.04687494, z: 0}
+    - {x: 0.75, y: 3.75, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0.78125, y: 3.84375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.375, y: -1.921875, z: 0}
+    - {x: 0.375, y: -1.921875, z: 0}
+    - {x: -0.375, y: 1.8281251, z: 0}
+    - {x: 0.375, y: 1.8281251, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.899415, y: 0.48193407}
+    - {x: 0.9462881, y: 0.48193407}
+    - {x: 0.899415, y: 0.5991206}
+    - {x: 0.9462881, y: 0.5991206}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b4a3c778d6c00104c97c65214295bcb6, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3804f624948eef647bc5f84cbb1413fc
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Switches and gates_crossroad_03_gate0005
+    boundsData:
+    - {x: 0, y: -0.03906244, z: 0}
+    - {x: 0.75, y: 3.765625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0.78125, y: 3.84375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.375, y: -1.921875, z: 0}
+    - {x: 0.375, y: -1.921875, z: 0}
+    - {x: -0.375, y: 1.8437501, z: 0}
+    - {x: 0.375, y: 1.8437501, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.74218845, y: 0.3251958}
+    - {x: 0.78906155, y: 0.3251958}
+    - {x: 0.74218845, y: 0.44287062}
+    - {x: 0.78906155, y: 0.44287062}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b4a3c778d6c00104c97c65214295bcb6, type: 2}
+    materialId: 0
+    sourceTextureGUID: e7a634e250f69f143983bcaa2048b648
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Switches and gates_crossroad_03_gate0006
+    boundsData:
+    - {x: 0, y: -0.04687494, z: 0}
+    - {x: 0.75, y: 3.75, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0.78125, y: 3.84375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.375, y: -1.921875, z: 0}
+    - {x: 0.375, y: -1.921875, z: 0}
+    - {x: -0.375, y: 1.8281251, z: 0}
+    - {x: 0.375, y: 1.8281251, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.899415, y: 0.48193407}
+    - {x: 0.9462881, y: 0.48193407}
+    - {x: 0.899415, y: 0.5991206}
+    - {x: 0.9462881, y: 0.5991206}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b4a3c778d6c00104c97c65214295bcb6, type: 2}
+    materialId: 0
+    sourceTextureGUID: 6600acc2c91429940bcbe7e18b867dbf
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Switches and gates_crossroad_03_gate0007
+    boundsData:
+    - {x: 0, y: -0.03906244, z: 0}
+    - {x: 0.75, y: 3.765625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0.78125, y: 3.84375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.375, y: -1.921875, z: 0}
+    - {x: 0.375, y: -1.921875, z: 0}
+    - {x: -0.375, y: 1.8437501, z: 0}
+    - {x: 0.375, y: 1.8437501, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.74218845, y: 0.3251958}
+    - {x: 0.78906155, y: 0.3251958}
+    - {x: 0.74218845, y: 0.44287062}
+    - {x: 0.78906155, y: 0.44287062}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b4a3c778d6c00104c97c65214295bcb6, type: 2}
+    materialId: 0
+    sourceTextureGUID: 1b60a11897ac31a4a831edecd243d5eb
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Switches and gates_crossroad_03_gate0008
+    boundsData:
+    - {x: 0, y: -0.015625, z: 0}
+    - {x: 0.75, y: 3.8125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0.78125, y: 3.84375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.375, y: -1.921875, z: 0}
+    - {x: 0.375, y: -1.921875, z: 0}
+    - {x: -0.375, y: 1.890625, z: 0}
+    - {x: 0.375, y: 1.890625, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.74218845, y: 0.20410205}
+    - {x: 0.78906155, y: 0.20410205}
+    - {x: 0.74218845, y: 0.3232417}
+    - {x: 0.78906155, y: 0.3232417}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b4a3c778d6c00104c97c65214295bcb6, type: 2}
+    materialId: 0
+    sourceTextureGUID: 78010ae3d0f29bb4cad9bb856fc1c2a2
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Switches and gates_crossroad_03_gate0009
+    boundsData:
+    - {x: 0.015625, y: -0.265625, z: 0}
+    - {x: 0.75, y: 3.3125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0.78125, y: 3.84375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.359375, y: -1.921875, z: 0}
+    - {x: 0.390625, y: -1.921875, z: 0}
+    - {x: -0.359375, y: 1.390625, z: 0}
+    - {x: 0.390625, y: 1.390625, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.95019627, y: 0.54248095}
+    - {x: 0.99706936, y: 0.54248095}
+    - {x: 0.95019627, y: 0.6459956}
+    - {x: 0.99706936, y: 0.6459956}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b4a3c778d6c00104c97c65214295bcb6, type: 2}
+    materialId: 0
+    sourceTextureGUID: a7d09c026f7281a4e9e033a08e6c3ca8
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Switches and gates_crossroad_03_gate0010
+    boundsData:
+    - {x: 0.03125, y: -1.0546875, z: 0}
+    - {x: 0.71875, y: 1.734375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0.78125, y: 3.84375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.328125, y: -1.921875, z: 0}
+    - {x: 0.390625, y: -1.921875, z: 0}
+    - {x: -0.328125, y: -0.18750004, z: 0}
+    - {x: 0.390625, y: -0.18750004, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.5839853, y: 0.38916063}
+    - {x: 0.6289053, y: 0.38916063}
+    - {x: 0.5839853, y: 0.4433589}
+    - {x: 0.6289053, y: 0.4433589}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b4a3c778d6c00104c97c65214295bcb6, type: 2}
+    materialId: 0
+    sourceTextureGUID: 66f02d67c47fc0c49810465b512d73b2
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Switches and gates_gate0000
+    boundsData:
+    - {x: 0.03906238, y: -0.03906253, z: 0}
+    - {x: 5.859375, y: 1.328125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 6.09375, y: 1.890625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -2.890625, y: -0.703125, z: 0}
+    - {x: 2.9687498, y: -0.703125, z: 0}
+    - {x: -2.890625, y: 0.62499994, z: 0}
+    - {x: 2.9687498, y: 0.62499994, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.8974619, y: 0.094727054}
+    - {x: 0.8974619, y: 0.27783155}
+    - {x: 0.9804678, y: 0.094727054}
+    - {x: 0.9804678, y: 0.27783155}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b4a3c778d6c00104c97c65214295bcb6, type: 2}
+    materialId: 0
+    sourceTextureGUID: f64061f946c6bc149afcce276db8c20e
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Switches and gates_gate0001
+    boundsData:
+    - {x: 0.03906238, y: -0.0078125, z: 0}
+    - {x: 5.859375, y: 1.390625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 6.09375, y: 1.890625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -2.890625, y: -0.703125, z: 0}
+    - {x: 2.9687498, y: -0.703125, z: 0}
+    - {x: -2.890625, y: 0.6875, z: 0}
+    - {x: 2.9687498, y: 0.6875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.8066416, y: 0.094727054}
+    - {x: 0.8066416, y: 0.27783155}
+    - {x: 0.89355373, y: 0.094727054}
+    - {x: 0.89355373, y: 0.27783155}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b4a3c778d6c00104c97c65214295bcb6, type: 2}
+    materialId: 0
+    sourceTextureGUID: fc539626389f01f4891568c3e9168387
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Switches and gates_gate0002
+    boundsData:
+    - {x: 0.03906238, y: -0.03906253, z: 0}
+    - {x: 5.859375, y: 1.328125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 6.09375, y: 1.890625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -2.890625, y: -0.703125, z: 0}
+    - {x: 2.9687498, y: -0.703125, z: 0}
+    - {x: -2.890625, y: 0.62499994, z: 0}
+    - {x: 2.9687498, y: 0.62499994, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.0019541015, y: 0.18847705}
+    - {x: 0.36816308, y: 0.18847705}
+    - {x: 0.0019541015, y: 0.22997998}
+    - {x: 0.36816308, y: 0.22997998}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b4a3c778d6c00104c97c65214295bcb6, type: 2}
+    materialId: 0
+    sourceTextureGUID: 6f7c6c3f2fd7b0247a79f0ee503a25fe
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Switches and gates_gate0003
+    boundsData:
+    - {x: 0.03906238, y: -0.03906253, z: 0}
+    - {x: 5.859375, y: 1.328125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 6.09375, y: 1.890625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -2.890625, y: -0.703125, z: 0}
+    - {x: 2.9687498, y: -0.703125, z: 0}
+    - {x: -2.890625, y: 0.62499994, z: 0}
+    - {x: 2.9687498, y: 0.62499994, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.3720713, y: 0.18847705}
+    - {x: 0.3720713, y: 0.37158155}
+    - {x: 0.45507714, y: 0.18847705}
+    - {x: 0.45507714, y: 0.37158155}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b4a3c778d6c00104c97c65214295bcb6, type: 2}
+    materialId: 0
+    sourceTextureGUID: bf487f8a47b122f4fbb9b1bfec4a7ec9
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Switches and gates_gate0004
+    boundsData:
+    - {x: 0.03906238, y: -0.03906253, z: 0}
+    - {x: 5.859375, y: 1.328125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 6.09375, y: 1.890625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -2.890625, y: -0.703125, z: 0}
+    - {x: 2.9687498, y: -0.703125, z: 0}
+    - {x: -2.890625, y: 0.62499994, z: 0}
+    - {x: 2.9687498, y: 0.62499994, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.45898536, y: 0.20410205}
+    - {x: 0.45898536, y: 0.38720655}
+    - {x: 0.54199123, y: 0.20410205}
+    - {x: 0.54199123, y: 0.38720655}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b4a3c778d6c00104c97c65214295bcb6, type: 2}
+    materialId: 0
+    sourceTextureGUID: 2c4851b491d870a46aefd10dae0b7e94
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Switches and gates_gate0005
+    boundsData:
+    - {x: 0.03906238, y: -0.03906253, z: 0}
+    - {x: 5.859375, y: 1.328125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 6.09375, y: 1.890625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -2.890625, y: -0.703125, z: 0}
+    - {x: 2.9687498, y: -0.703125, z: 0}
+    - {x: -2.890625, y: 0.62499994, z: 0}
+    - {x: 2.9687498, y: 0.62499994, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.5458994, y: 0.20410205}
+    - {x: 0.5458994, y: 0.38720655}
+    - {x: 0.6289053, y: 0.20410205}
+    - {x: 0.6289053, y: 0.38720655}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b4a3c778d6c00104c97c65214295bcb6, type: 2}
+    materialId: 0
+    sourceTextureGUID: b6aadf24eb7f17e47952954f678257b6
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Switches and gates_gate0006
+    boundsData:
+    - {x: 0.03906238, y: -0.03906253, z: 0}
+    - {x: 5.859375, y: 1.328125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 6.09375, y: 1.890625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -2.890625, y: -0.703125, z: 0}
+    - {x: 2.9687498, y: -0.703125, z: 0}
+    - {x: -2.890625, y: 0.62499994, z: 0}
+    - {x: 2.9687498, y: 0.62499994, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.5458994, y: 0.20410205}
+    - {x: 0.5458994, y: 0.38720655}
+    - {x: 0.6289053, y: 0.20410205}
+    - {x: 0.6289053, y: 0.38720655}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b4a3c778d6c00104c97c65214295bcb6, type: 2}
+    materialId: 0
+    sourceTextureGUID: aef3c8dace58b9146beb58495b254657
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Switches and gates_gate0007
+    boundsData:
+    - {x: 0.03906238, y: -0.03906253, z: 0}
+    - {x: 5.859375, y: 1.328125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 6.09375, y: 1.890625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -2.890625, y: -0.703125, z: 0}
+    - {x: 2.9687498, y: -0.703125, z: 0}
+    - {x: -2.890625, y: 0.62499994, z: 0}
+    - {x: 2.9687498, y: 0.62499994, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.5458994, y: 0.20410205}
+    - {x: 0.5458994, y: 0.38720655}
+    - {x: 0.6289053, y: 0.20410205}
+    - {x: 0.6289053, y: 0.38720655}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b4a3c778d6c00104c97c65214295bcb6, type: 2}
+    materialId: 0
+    sourceTextureGUID: b6215edf6e4b44e4c93e8f1acb9f42ef
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Switches and gates_gate0008
+    boundsData:
+    - {x: 0.03906238, y: -0.03906253, z: 0}
+    - {x: 5.859375, y: 1.328125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 6.09375, y: 1.890625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -2.890625, y: -0.703125, z: 0}
+    - {x: 2.9687498, y: -0.703125, z: 0}
+    - {x: -2.890625, y: 0.62499994, z: 0}
+    - {x: 2.9687498, y: 0.62499994, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.5458994, y: 0.20410205}
+    - {x: 0.5458994, y: 0.38720655}
+    - {x: 0.6289053, y: 0.20410205}
+    - {x: 0.6289053, y: 0.38720655}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b4a3c778d6c00104c97c65214295bcb6, type: 2}
+    materialId: 0
+    sourceTextureGUID: 82d687464a364794c861c47cff529216
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Switches and gates_gate0009
+    boundsData:
+    - {x: 0.03906238, y: -0.03906253, z: 0}
+    - {x: 5.859375, y: 1.328125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 6.09375, y: 1.890625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -2.890625, y: -0.703125, z: 0}
+    - {x: 2.9687498, y: -0.703125, z: 0}
+    - {x: -2.890625, y: 0.62499994, z: 0}
+    - {x: 2.9687498, y: 0.62499994, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.5458994, y: 0.20410205}
+    - {x: 0.5458994, y: 0.38720655}
+    - {x: 0.6289053, y: 0.20410205}
+    - {x: 0.6289053, y: 0.38720655}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b4a3c778d6c00104c97c65214295bcb6, type: 2}
+    materialId: 0
+    sourceTextureGUID: 0cc79779636cb6a4cb27f01638fcbaee
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Switches and gates_gate0010
+    boundsData:
+    - {x: 0.03906238, y: -0.03906253, z: 0}
+    - {x: 5.859375, y: 1.328125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 6.09375, y: 1.890625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -2.890625, y: -0.703125, z: 0}
+    - {x: 2.9687498, y: -0.703125, z: 0}
+    - {x: -2.890625, y: 0.62499994, z: 0}
+    - {x: 2.9687498, y: 0.62499994, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.5458994, y: 0.20410205}
+    - {x: 0.5458994, y: 0.38720655}
+    - {x: 0.6289053, y: 0.20410205}
+    - {x: 0.6289053, y: 0.38720655}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b4a3c778d6c00104c97c65214295bcb6, type: 2}
+    materialId: 0
+    sourceTextureGUID: 1435c7f1d6bf0e04fbd3c92a618dff51
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Switches and gates_gate_effect0000
+    boundsData:
+    - {x: 0.03125003, y: -0.24218747, z: 0}
+    - {x: 1.3125, y: 1.609375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 1.78125, y: 2.078125, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.625, y: -1.046875, z: 0}
+    - {x: 0.68750006, y: -1.046875, z: 0}
+    - {x: -0.625, y: 0.56250006, z: 0}
+    - {x: 0.68750006, y: 0.56250006, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.28418067, y: 0.28710985}
+    - {x: 0.36620995, y: 0.28710985}
+    - {x: 0.28418067, y: 0.33740187}
+    - {x: 0.36620995, y: 0.33740187}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b4a3c778d6c00104c97c65214295bcb6, type: 2}
+    materialId: 0
+    sourceTextureGUID: d72ae409f5647ff469db5f60f55eaba6
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Switches and gates_gate_effect0001
+    boundsData:
+    - {x: 0, y: 0.0546875, z: 0}
+    - {x: 1.34375, y: 1.703125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 1.78125, y: 2.078125, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.671875, y: -0.796875, z: 0}
+    - {x: 0.671875, y: -0.796875, z: 0}
+    - {x: -0.671875, y: 0.90625, z: 0}
+    - {x: 0.671875, y: 0.90625, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.28418067, y: 0.23193409}
+    - {x: 0.36816308, y: 0.23193409}
+    - {x: 0.28418067, y: 0.28515577}
+    - {x: 0.36816308, y: 0.28515577}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b4a3c778d6c00104c97c65214295bcb6, type: 2}
+    materialId: 0
+    sourceTextureGUID: 98d00d6655d00f54c829ab6d3faab4e8
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Switches and gates_gate_effect0002
+    boundsData:
+    - {x: -0.0234375, y: 0.234375, z: 0}
+    - {x: 1.390625, y: 1.59375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 1.78125, y: 2.078125, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.71875, y: -0.5625, z: 0}
+    - {x: 0.671875, y: -0.5625, z: 0}
+    - {x: -0.71875, y: 1.03125, z: 0}
+    - {x: 0.671875, y: 1.03125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.44629005, y: 0.4345708}
+    - {x: 0.44629005, y: 0.47802687}
+    - {x: 0.5458975, y: 0.4345708}
+    - {x: 0.5458975, y: 0.47802687}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b4a3c778d6c00104c97c65214295bcb6, type: 2}
+    materialId: 0
+    sourceTextureGUID: f743083719725934893a91ddf35a90b3
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Switches and gates_gate_effect0003
+    boundsData:
+    - {x: 0.007812523, y: 0.015624972, z: 0}
+    - {x: 0.015625047, y: 0.031250004, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 1.78125, y: 2.078125, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: 0, y: -0.000000029802322, z: 0}
+    - {x: 0.015625047, y: -0.000000029802322, z: 0}
+    - {x: 0, y: 0.031249974, z: 0}
+    - {x: 0.015625047, y: 0.031249974, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.98437595, y: 0.094727054}
+    - {x: 0.98437595, y: 0.09521435}
+    - {x: 0.9863272, y: 0.094727054}
+    - {x: 0.9863272, y: 0.09521435}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b4a3c778d6c00104c97c65214295bcb6, type: 2}
+    materialId: 0
+    sourceTextureGUID: 9d9f0e02fd215b9499ea076406b86656
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Switches and gates_gate_resize0000
+    boundsData:
+    - {x: 0.007812485, y: 1.8984375, z: 0}
+    - {x: 0.609375, y: 0.484375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 2.1875, y: 4.296875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.296875, y: 1.65625, z: 0}
+    - {x: 0.31249997, y: 1.65625, z: 0}
+    - {x: -0.296875, y: 2.140625, z: 0}
+    - {x: 0.31249997, y: 2.140625, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.54980564, y: 0.4345708}
+    - {x: 0.54980564, y: 0.4536128}
+    - {x: 0.5800772, y: 0.4345708}
+    - {x: 0.5800772, y: 0.4536128}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b4a3c778d6c00104c97c65214295bcb6, type: 2}
+    materialId: 0
+    sourceTextureGUID: 0b7aa61c780b05448afe27cb64a32244
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Switches and gates_gate_resize0001
+    boundsData:
+    - {x: 0.007812485, y: 1.921875, z: 0}
+    - {x: 0.609375, y: 0.43750012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 2.1875, y: 4.296875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.296875, y: 1.7031249, z: 0}
+    - {x: 0.31249997, y: 1.7031249, z: 0}
+    - {x: -0.296875, y: 2.140625, z: 0}
+    - {x: 0.31249997, y: 2.140625, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.093750976, y: 0.35156298}
+    - {x: 0.093750976, y: 0.370605}
+    - {x: 0.121092774, y: 0.35156298}
+    - {x: 0.121092774, y: 0.370605}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b4a3c778d6c00104c97c65214295bcb6, type: 2}
+    materialId: 0
+    sourceTextureGUID: 99beddc0b76351442be36481f1aba6d1
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Switches and gates_gate_resize0002
+    boundsData:
+    - {x: 0.007812485, y: 1.328125, z: 0}
+    - {x: 0.609375, y: 1.625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 2.1875, y: 4.296875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.296875, y: 0.515625, z: 0}
+    - {x: 0.31249997, y: 0.515625, z: 0}
+    - {x: -0.296875, y: 2.140625, z: 0}
+    - {x: 0.31249997, y: 2.140625, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.7382822, y: 0.4448247}
+    - {x: 0.77636623, y: 0.4448247}
+    - {x: 0.7382822, y: 0.495605}
+    - {x: 0.77636623, y: 0.495605}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b4a3c778d6c00104c97c65214295bcb6, type: 2}
+    materialId: 0
+    sourceTextureGUID: 7f84e163bab4de64a880470781210468
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Switches and gates_gate_resize0003
+    boundsData:
+    - {x: 0.007812485, y: 0.140625, z: 0}
+    - {x: 0.609375, y: 4, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 2.1875, y: 4.296875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.296875, y: -1.859375, z: 0}
+    - {x: 0.31249997, y: -1.859375, z: 0}
+    - {x: -0.296875, y: 2.140625, z: 0}
+    - {x: 0.31249997, y: 2.140625, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.95312595, y: 0.41552782}
+    - {x: 0.99121, y: 0.41552782}
+    - {x: 0.95312595, y: 0.54052687}
+    - {x: 0.99121, y: 0.54052687}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b4a3c778d6c00104c97c65214295bcb6, type: 2}
+    materialId: 0
+    sourceTextureGUID: 5511ae0a908204d449ab5649ac642a1c
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Switches and gates_gate_resize0004
+    boundsData:
+    - {x: 0.01562497, y: 0, z: 0}
+    - {x: 0.62499994, y: 4.28125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 2.1875, y: 4.296875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.296875, y: -2.140625, z: 0}
+    - {x: 0.32812494, y: -2.140625, z: 0}
+    - {x: -0.296875, y: 2.140625, z: 0}
+    - {x: 0.32812494, y: 2.140625, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.9570322, y: 0.27978563}
+    - {x: 0.9960928, y: 0.27978563}
+    - {x: 0.9570322, y: 0.41357374}
+    - {x: 0.9960928, y: 0.41357374}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b4a3c778d6c00104c97c65214295bcb6, type: 2}
+    materialId: 0
+    sourceTextureGUID: edc252fb2fefb5d409e0e18863d44367
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Switches and gates_gate_resize0005
+    boundsData:
+    - {x: 0.01562497, y: 0.0390625, z: 0}
+    - {x: 0.62499994, y: 4.203125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 2.1875, y: 4.296875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.296875, y: -2.0625, z: 0}
+    - {x: 0.32812494, y: -2.0625, z: 0}
+    - {x: -0.296875, y: 2.140625, z: 0}
+    - {x: 0.32812494, y: 2.140625, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.9101572, y: 0.3486333}
+    - {x: 0.9492178, y: 0.3486333}
+    - {x: 0.9101572, y: 0.47998}
+    - {x: 0.9492178, y: 0.47998}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b4a3c778d6c00104c97c65214295bcb6, type: 2}
+    materialId: 0
+    sourceTextureGUID: b03bd37bb1ab6fb4584974e9f116068c
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Switches and gates_lever0000
+    boundsData:
+    - {x: 0.33593753, y: -0.4921875, z: 0}
+    - {x: 2.140625, y: 1.390625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 3.046875, y: 2.5, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.73437494, y: -1.1875, z: 0}
+    - {x: 1.40625, y: -1.1875, z: 0}
+    - {x: -0.73437494, y: 0.20312503, z: 0}
+    - {x: 1.40625, y: 0.20312503, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.0019541015, y: 0.42041063}
+    - {x: 0.0019541015, y: 0.4873042}
+    - {x: 0.08886621, y: 0.42041063}
+    - {x: 0.08886621, y: 0.4873042}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b4a3c778d6c00104c97c65214295bcb6, type: 2}
+    materialId: 0
+    sourceTextureGUID: d774fc3201cd27b40aa62a2fff775c7a
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Switches and gates_lever0001
+    boundsData:
+    - {x: 0.28125003, y: -0.36718753, z: 0}
+    - {x: 2.03125, y: 1.640625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 3.046875, y: 2.5, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.73437494, y: -1.1875, z: 0}
+    - {x: 1.296875, y: -1.1875, z: 0}
+    - {x: -0.73437494, y: 0.45312494, z: 0}
+    - {x: 1.296875, y: 0.45312494, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.7929697, y: 0.4423833}
+    - {x: 0.7929697, y: 0.5058589}
+    - {x: 0.89550686, y: 0.4423833}
+    - {x: 0.89550686, y: 0.5058589}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b4a3c778d6c00104c97c65214295bcb6, type: 2}
+    materialId: 0
+    sourceTextureGUID: c2469fce368c12940adac8b6b483bef9
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Switches and gates_lever0002
+    boundsData:
+    - {x: 0.09375006, y: -0.140625, z: 0}
+    - {x: 1.65625, y: 2.09375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 3.046875, y: 2.5, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.73437494, y: -1.1875, z: 0}
+    - {x: 0.92187506, y: -1.1875, z: 0}
+    - {x: -0.73437494, y: 0.90625, z: 0}
+    - {x: 0.92187506, y: 0.90625, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.63281345, y: 0.32861376}
+    - {x: 0.7363272, y: 0.32861376}
+    - {x: 0.63281345, y: 0.3940425}
+    - {x: 0.7363272, y: 0.3940425}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b4a3c778d6c00104c97c65214295bcb6, type: 2}
+    materialId: 0
+    sourceTextureGUID: b47f3784f6ab2de4cb880a0ba4f927af
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Switches and gates_lever0003
+    boundsData:
+    - {x: 0.000000029802322, y: -0.23437497, z: 0}
+    - {x: 1.84375, y: 1.90625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 3.046875, y: 2.5, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.921875, y: -1.1875, z: 0}
+    - {x: 0.92187506, y: -1.1875, z: 0}
+    - {x: -0.921875, y: 0.71875006, z: 0}
+    - {x: 0.92187506, y: 0.71875006, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.0019541015, y: 0.29199266}
+    - {x: 0.0019541015, y: 0.3496089}
+    - {x: 0.121092774, y: 0.29199266}
+    - {x: 0.121092774, y: 0.3496089}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b4a3c778d6c00104c97c65214295bcb6, type: 2}
+    materialId: 0
+    sourceTextureGUID: 871d5b3f7144fb34cb05bb3af957845a
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Switches and gates_lever0004
+    boundsData:
+    - {x: 0.015625, y: -0.1796875, z: 0}
+    - {x: 2.5625, y: 2.140625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 3.046875, y: 2.5, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.265625, y: -1.25, z: 0}
+    - {x: 1.296875, y: -1.25, z: 0}
+    - {x: -1.265625, y: 0.890625, z: 0}
+    - {x: 1.296875, y: 0.890625, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.7929697, y: 0.27978563}
+    - {x: 0.95312405, y: 0.27978563}
+    - {x: 0.7929697, y: 0.3466792}
+    - {x: 0.95312405, y: 0.3466792}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b4a3c778d6c00104c97c65214295bcb6, type: 2}
+    materialId: 0
+    sourceTextureGUID: f9106b1e0e95cc44fa6d2839248aef28
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Switches and gates_lever0005
+    boundsData:
+    - {x: 0.015625, y: -0.1796875, z: 0}
+    - {x: 2.5625, y: 2.140625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 3.046875, y: 2.5, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.265625, y: -1.25, z: 0}
+    - {x: 1.296875, y: -1.25, z: 0}
+    - {x: -1.265625, y: 0.890625, z: 0}
+    - {x: 1.296875, y: 0.890625, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.7929697, y: 0.27978563}
+    - {x: 0.95312405, y: 0.27978563}
+    - {x: 0.7929697, y: 0.3466792}
+    - {x: 0.95312405, y: 0.3466792}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b4a3c778d6c00104c97c65214295bcb6, type: 2}
+    materialId: 0
+    sourceTextureGUID: 48014442c54090c428ea22d7a4786e51
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Switches and gates_lever0006
+    boundsData:
+    - {x: -0.0625, y: -0.32031253, z: 0}
+    - {x: 2.15625, y: 1.859375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 3.046875, y: 2.5, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.140625, y: -1.25, z: 0}
+    - {x: 1.015625, y: -1.25, z: 0}
+    - {x: -1.140625, y: 0.60937494, z: 0}
+    - {x: 1.015625, y: 0.60937494, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.1455088, y: 0.23193409}
+    - {x: 0.28027245, y: 0.23193409}
+    - {x: 0.1455088, y: 0.2900386}
+    - {x: 0.28027245, y: 0.2900386}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b4a3c778d6c00104c97c65214295bcb6, type: 2}
+    materialId: 0
+    sourceTextureGUID: 8f9acecd171b1bd4bb538b73f90ee3c3
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Switches and gates_lever0007
+    boundsData:
+    - {x: -0.1015625, y: -0.32031253, z: 0}
+    - {x: 2.234375, y: 1.859375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 3.046875, y: 2.5, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.21875, y: -1.25, z: 0}
+    - {x: 1.015625, y: -1.25, z: 0}
+    - {x: -1.21875, y: 0.60937494, z: 0}
+    - {x: 1.015625, y: 0.60937494, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.0019541015, y: 0.23193409}
+    - {x: 0.14160058, y: 0.23193409}
+    - {x: 0.0019541015, y: 0.2900386}
+    - {x: 0.14160058, y: 0.2900386}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b4a3c778d6c00104c97c65214295bcb6, type: 2}
+    materialId: 0
+    sourceTextureGUID: 15e8e459e60ad8a49b9a5303f49f1213
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Switches and gates_lever0008
+    boundsData:
+    - {x: -0.14843747, y: -0.4765625, z: 0}
+    - {x: 2.140625, y: 1.421875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 3.046875, y: 2.5, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.21875, y: -1.1875, z: 0}
+    - {x: 0.92187506, y: -1.1875, z: 0}
+    - {x: -1.21875, y: 0.234375, z: 0}
+    - {x: 0.92187506, y: 0.234375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.26171973, y: 0.33935595}
+    - {x: 0.26171973, y: 0.40624952}
+    - {x: 0.35058495, y: 0.33935595}
+    - {x: 0.35058495, y: 0.40624952}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b4a3c778d6c00104c97c65214295bcb6, type: 2}
+    materialId: 0
+    sourceTextureGUID: 5ce5323d718f66142a0fb2c99296acf6
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Switches and gates_lever0009
+    boundsData:
+    - {x: -0.14062497, y: -0.44531253, z: 0}
+    - {x: 2.125, y: 1.484375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 3.046875, y: 2.5, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.203125, y: -1.1875, z: 0}
+    - {x: 0.92187506, y: -1.1875, z: 0}
+    - {x: -1.203125, y: 0.29687494, z: 0}
+    - {x: 0.92187506, y: 0.29687494, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.12500098, y: 0.29199266}
+    - {x: 0.25781152, y: 0.29199266}
+    - {x: 0.12500098, y: 0.33837843}
+    - {x: 0.25781152, y: 0.33837843}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b4a3c778d6c00104c97c65214295bcb6, type: 2}
+    materialId: 0
+    sourceTextureGUID: e1fa8a68cc494b84bbb4575bb66f3291
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Switches and gates_lever_bling0000
+    boundsData:
+    - {x: 0.33593753, y: -0.4921875, z: 0}
+    - {x: 2.140625, y: 1.390625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 3.046875, y: 2.5, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.73437494, y: -1.1875, z: 0}
+    - {x: 1.40625, y: -1.1875, z: 0}
+    - {x: -0.73437494, y: 0.20312503, z: 0}
+    - {x: 1.40625, y: 0.20312503, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.0019541015, y: 0.42041063}
+    - {x: 0.0019541015, y: 0.4873042}
+    - {x: 0.08886621, y: 0.42041063}
+    - {x: 0.08886621, y: 0.4873042}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b4a3c778d6c00104c97c65214295bcb6, type: 2}
+    materialId: 0
+    sourceTextureGUID: cc1dd9258e7e7fe4e944a679346411ad
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Switches and gates_lever_bling0001
+    boundsData:
+    - {x: 0.33593753, y: -0.4921875, z: 0}
+    - {x: 2.140625, y: 1.390625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 3.046875, y: 2.5, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.73437494, y: -1.1875, z: 0}
+    - {x: 1.40625, y: -1.1875, z: 0}
+    - {x: -0.73437494, y: 0.20312503, z: 0}
+    - {x: 1.40625, y: 0.20312503, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.09277441, y: 0.47802782}
+    - {x: 0.09277441, y: 0.5449214}
+    - {x: 0.17968652, y: 0.47802782}
+    - {x: 0.17968652, y: 0.5449214}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b4a3c778d6c00104c97c65214295bcb6, type: 2}
+    materialId: 0
+    sourceTextureGUID: 237900d5940102746b66b14bc5422589
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Switches and gates_lever_bling0002
+    boundsData:
+    - {x: 0.33593753, y: -0.4921875, z: 0}
+    - {x: 2.140625, y: 1.390625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 3.046875, y: 2.5, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.73437494, y: -1.1875, z: 0}
+    - {x: 1.40625, y: -1.1875, z: 0}
+    - {x: -0.73437494, y: 0.20312503, z: 0}
+    - {x: 1.40625, y: 0.20312503, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.0019541015, y: 0.4892583}
+    - {x: 0.0019541015, y: 0.55615187}
+    - {x: 0.08886621, y: 0.4892583}
+    - {x: 0.08886621, y: 0.55615187}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b4a3c778d6c00104c97c65214295bcb6, type: 2}
+    materialId: 0
+    sourceTextureGUID: 9aeaecabe9c99204284d756dd5a40ce1
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Switches and gates_lever_bling0003
+    boundsData:
+    - {x: 0.33593753, y: -0.4921875, z: 0}
+    - {x: 2.140625, y: 1.390625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 3.046875, y: 2.5, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.73437494, y: -1.1875, z: 0}
+    - {x: 1.40625, y: -1.1875, z: 0}
+    - {x: -0.73437494, y: 0.20312503, z: 0}
+    - {x: 1.40625, y: 0.20312503, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.44629005, y: 0.38916063}
+    - {x: 0.5800772, y: 0.38916063}
+    - {x: 0.44629005, y: 0.4326167}
+    - {x: 0.5800772, y: 0.4326167}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b4a3c778d6c00104c97c65214295bcb6, type: 2}
+    materialId: 0
+    sourceTextureGUID: c25cd3d62cc9b8e4da553c05d3aede92
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Switches and gates_lever_bling0004
+    boundsData:
+    - {x: 0.33593753, y: -0.48437503, z: 0}
+    - {x: 2.140625, y: 1.40625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 3.046875, y: 2.5, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.73437494, y: -1.1875, z: 0}
+    - {x: 1.40625, y: -1.1875, z: 0}
+    - {x: -0.73437494, y: 0.21874994, z: 0}
+    - {x: 1.40625, y: 0.21874994, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.35449317, y: 0.37353563}
+    - {x: 0.35449317, y: 0.4404292}
+    - {x: 0.44238183, y: 0.37353563}
+    - {x: 0.44238183, y: 0.4404292}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b4a3c778d6c00104c97c65214295bcb6, type: 2}
+    materialId: 0
+    sourceTextureGUID: a2407825d50ba9d48a245242ca8ae012
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Switches and gates_lever_bling0005
+    boundsData:
+    - {x: 0.33593753, y: -0.48437503, z: 0}
+    - {x: 2.140625, y: 1.40625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 3.046875, y: 2.5, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.73437494, y: -1.1875, z: 0}
+    - {x: 1.40625, y: -1.1875, z: 0}
+    - {x: -0.73437494, y: 0.21874994, z: 0}
+    - {x: 1.40625, y: 0.21874994, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.12500098, y: 0.3403325}
+    - {x: 0.12500098, y: 0.4072261}
+    - {x: 0.21288964, y: 0.3403325}
+    - {x: 0.21288964, y: 0.4072261}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b4a3c778d6c00104c97c65214295bcb6, type: 2}
+    materialId: 0
+    sourceTextureGUID: 38cf38aa54bbce84e972b91c74c8a98b
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Switches and gates_lever_bling0006
+    boundsData:
+    - {x: 0.33593753, y: -0.48437503, z: 0}
+    - {x: 2.140625, y: 1.40625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 3.046875, y: 2.5, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.73437494, y: -1.1875, z: 0}
+    - {x: 1.40625, y: -1.1875, z: 0}
+    - {x: -0.73437494, y: 0.21874994, z: 0}
+    - {x: 1.40625, y: 0.21874994, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.25390723, y: 0.4082036}
+    - {x: 0.25390723, y: 0.47509718}
+    - {x: 0.3417959, y: 0.4082036}
+    - {x: 0.3417959, y: 0.47509718}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b4a3c778d6c00104c97c65214295bcb6, type: 2}
+    materialId: 0
+    sourceTextureGUID: 75c3ee90fb48ef74fa18f066e489d1d0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Switches and gates_lever_bling0007
+    boundsData:
+    - {x: 0.33593753, y: -0.48437503, z: 0}
+    - {x: 2.140625, y: 1.40625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 3.046875, y: 2.5, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.73437494, y: -1.1875, z: 0}
+    - {x: 1.40625, y: -1.1875, z: 0}
+    - {x: -0.73437494, y: 0.21874994, z: 0}
+    - {x: 1.40625, y: 0.21874994, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.0019541015, y: 0.35156298}
+    - {x: 0.0019541015, y: 0.41845655}
+    - {x: 0.089842774, y: 0.35156298}
+    - {x: 0.089842774, y: 0.41845655}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b4a3c778d6c00104c97c65214295bcb6, type: 2}
+    materialId: 0
+    sourceTextureGUID: 077a585f01d9a1747b5ae9de6b47d9ea
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Switches and gates_lever_bling0008
+    boundsData:
+    - {x: 0.33593753, y: -0.48437503, z: 0}
+    - {x: 2.140625, y: 1.40625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 3.046875, y: 2.5, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.73437494, y: -1.1875, z: 0}
+    - {x: 1.40625, y: -1.1875, z: 0}
+    - {x: -0.73437494, y: 0.21874994, z: 0}
+    - {x: 1.40625, y: 0.21874994, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.093750976, y: 0.40918016}
+    - {x: 0.093750976, y: 0.47607374}
+    - {x: 0.18163964, y: 0.40918016}
+    - {x: 0.18163964, y: 0.47607374}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b4a3c778d6c00104c97c65214295bcb6, type: 2}
+    materialId: 0
+    sourceTextureGUID: 7cb1b8a4f38d01f49b945843cdf4628d
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Switches and gates_sliding_wall0009
+    boundsData:
+    - {x: -0.40624994, y: -0.0078125, z: 0}
+    - {x: 2.9375, y: 5.296875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 3.75, y: 5.296875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.875, y: -2.65625, z: 0}
+    - {x: 1.0625001, y: -2.65625, z: 0}
+    - {x: -1.875, y: 2.640625, z: 0}
+    - {x: 1.0625001, y: 2.640625, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.0019541015, y: 0.0009770507}
+    - {x: 0.0019541015, y: 0.092772946}
+    - {x: 0.33300683, y: 0.0009770507}
+    - {x: 0.33300683, y: 0.092772946}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b4a3c778d6c00104c97c65214295bcb6, type: 2}
+    materialId: 0
+    sourceTextureGUID: 8a1088a53a1cc11468aed84942226459
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Switches and gates_sliding_wall0010
+    boundsData:
+    - {x: -0.40624994, y: 0, z: 0}
+    - {x: 2.9375, y: 5.28125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 3.75, y: 5.296875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.875, y: -2.640625, z: 0}
+    - {x: 1.0625001, y: -2.640625, z: 0}
+    - {x: -1.875, y: 2.640625, z: 0}
+    - {x: 1.0625001, y: 2.640625, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.33691505, y: 0.0009770507}
+    - {x: 0.33691505, y: 0.092772946}
+    - {x: 0.66699123, y: 0.0009770507}
+    - {x: 0.66699123, y: 0.092772946}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b4a3c778d6c00104c97c65214295bcb6, type: 2}
+    materialId: 0
+    sourceTextureGUID: c89f60bf3419d3245891ed87e5e79f74
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Switches and gates_sliding_wall0011
+    boundsData:
+    - {x: -0.40624994, y: 0.046875, z: 0}
+    - {x: 2.9375, y: 5.1875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 3.75, y: 5.296875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.875, y: -2.546875, z: 0}
+    - {x: 1.0625001, y: -2.546875, z: 0}
+    - {x: -1.875, y: 2.640625, z: 0}
+    - {x: 1.0625001, y: 2.640625, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.6708994, y: 0.0009770507}
+    - {x: 0.6708994, y: 0.092772946}
+    - {x: 0.99511623, y: 0.0009770507}
+    - {x: 0.99511623, y: 0.092772946}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b4a3c778d6c00104c97c65214295bcb6, type: 2}
+    materialId: 0
+    sourceTextureGUID: 64eec4925a6d14b48a671de24c8ad8d5
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Switches and gates_sliding_wall0012
+    boundsData:
+    - {x: -0.40624994, y: 0.3984375, z: 0}
+    - {x: 2.9375, y: 4.484375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 3.75, y: 5.296875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.875, y: -1.84375, z: 0}
+    - {x: 1.0625001, y: -1.84375, z: 0}
+    - {x: -1.875, y: 2.640625, z: 0}
+    - {x: 1.0625001, y: 2.640625, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.0019541015, y: 0.094727054}
+    - {x: 0.0019541015, y: 0.18652295}
+    - {x: 0.28222558, y: 0.094727054}
+    - {x: 0.28222558, y: 0.18652295}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b4a3c778d6c00104c97c65214295bcb6, type: 2}
+    materialId: 0
+    sourceTextureGUID: 37d92852b343910459662026191a43fd
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Switches and gates_sliding_wall0013
+    boundsData:
+    - {x: -0.40624994, y: 1.046875, z: 0}
+    - {x: 2.9375, y: 3.1875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 3.75, y: 5.296875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.875, y: -0.54687506, z: 0}
+    - {x: 1.0625001, y: -0.54687506, z: 0}
+    - {x: -1.875, y: 2.640625, z: 0}
+    - {x: 1.0625001, y: 2.640625, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.2861338, y: 0.094727054}
+    - {x: 0.2861338, y: 0.18652295}
+    - {x: 0.48535058, y: 0.094727054}
+    - {x: 0.48535058, y: 0.18652295}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b4a3c778d6c00104c97c65214295bcb6, type: 2}
+    materialId: 0
+    sourceTextureGUID: ebaab18419c278046aa0ba9153bfeb45
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Switches and gates_sliding_wall0014
+    boundsData:
+    - {x: -0.40624994, y: 1.734375, z: 0}
+    - {x: 2.9375, y: 1.8125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 3.75, y: 5.296875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.875, y: 0.82812506, z: 0}
+    - {x: 1.0625001, y: 0.82812506, z: 0}
+    - {x: -1.875, y: 2.640625, z: 0}
+    - {x: 1.0625001, y: 2.640625, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.7929697, y: 0.3486333}
+    - {x: 0.7929697, y: 0.4404292}
+    - {x: 0.90624905, y: 0.3486333}
+    - {x: 0.90624905, y: 0.4404292}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b4a3c778d6c00104c97c65214295bcb6, type: 2}
+    materialId: 0
+    sourceTextureGUID: 149763e014901f14b83563d59b6d2453
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Switches and gates_sliding_wall0015
+    boundsData:
+    - {x: -0.40624994, y: 2.3046875, z: 0}
+    - {x: 2.9375, y: 0.6718749, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 3.75, y: 5.296875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.875, y: 1.9687501, z: 0}
+    - {x: 1.0625001, y: 1.9687501, z: 0}
+    - {x: -1.875, y: 2.640625, z: 0}
+    - {x: 1.0625001, y: 2.640625, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.18554786, y: 0.4340825}
+    - {x: 0.18554786, y: 0.5258784}
+    - {x: 0.22753808, y: 0.4340825}
+    - {x: 0.22753808, y: 0.5258784}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b4a3c778d6c00104c97c65214295bcb6, type: 2}
+    materialId: 0
+    sourceTextureGUID: 8e89d2abfa1a4d648ae0da0fe244d001
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  premultipliedAlpha: 0
+  material: {fileID: 0}
+  materials:
+  - {fileID: 2100000, guid: b4a3c778d6c00104c97c65214295bcb6, type: 2}
+  textures:
+  - {fileID: 2800000, guid: 29b46ae582a98d443835ffa20a2cfe80, type: 3}
+  pngTextures: []
+  materialPngTextureId: 00000000
+  textureFilterMode: 1
+  textureMipMaps: 0
+  allowMultipleAtlases: 0
+  spriteCollectionGUID: c42560e3762bc3049a0963a3a19b73ac
+  spriteCollectionName: SwitchesAndGatesSpriteCollection
+  assetName: 
+  loadable: 0
+  invOrthoSize: 2
+  halfTargetHeight: 32
+  buildKey: 869566818
+  dataGuid: 3d44a2e8c102bfd45b298544cabdb71c
+  managedSpriteCollection: 0
+  hasPlatformData: 0
+  spriteCollectionPlatforms: []
+  spriteCollectionPlatformGUIDs: []

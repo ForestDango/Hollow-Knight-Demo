@@ -23,7 +23,7 @@ namespace HutongGames.PlayMaker.Actions
 #if UNITY_PRE_5_3
             Application.LoadLevel(Application.loadedLevelName);
 #else
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name, LoadSceneMode.Single);
+            UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name, LoadSceneMode.Single);
 #endif
             Finish();
         }

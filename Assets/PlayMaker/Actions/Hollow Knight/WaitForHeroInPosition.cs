@@ -29,7 +29,7 @@ public class WaitForHeroInPosition : FsmStateAction
 	    HeroController.instance.heroInPosition += temp;
 	    return;
 	}
-	base.Finish();
+	Finish();
     }
 
 

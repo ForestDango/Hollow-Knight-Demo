@@ -23,7 +23,7 @@ namespace HutongGames.PlayMaker.Actions
 
 		public override void OnEnter()
 		{
-			SceneManager.CreateScene(sceneName.Value);
+			UnityEngine.SceneManagement.SceneManager.CreateScene(sceneName.Value);
 
 			Finish();
 		}

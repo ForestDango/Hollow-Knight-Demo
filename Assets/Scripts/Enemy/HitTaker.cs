@@ -9,7 +9,7 @@ public static class HitTaker
 	if (targetGameObject != null)
 	{
 	    Transform transform = targetGameObject.transform;
-	    //说白了就是检测targetGameObject自己this,父对象parent,爷对象grandparent有咩有IHitResponder，有的话执行Hit
+	    //说白了就是检测targetGameObject自己this,父对象parent,爷对象grandparent有没有IHitResponder，有的话执行Hit
 	    for (int i = 0; i < recursionDepth; i++) 
 	    {
 		IHitResponder component = transform.GetComponent<IHitResponder>();

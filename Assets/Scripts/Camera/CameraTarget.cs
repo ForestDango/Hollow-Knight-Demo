@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class CameraTarget : MonoBehaviour
 {
-    private bool verboseMode = true;
+    private bool verboseMode;
     public bool isGameplayScene;
 
     private float slowTimer;
@@ -59,18 +59,12 @@ public class CameraTarget : MonoBehaviour
     public bool fallStick;//是否黏住玩家下落的位置
     public float fallCatcher; //下落位置捕捉
 
-    private void Awake()
-    {
-	GameInit();
-	SceneInit();
-    }
-
     public void GameInit()
     {
 	gm = GameManager.instance;
 	if(cameraCtrl == null)
 	{
-	    cameraCtrl = GetComponentInParent<CameraController>();
+	    cameraCtrl = transform.parent.GetComponent<CameraController>();
 	}
     }
 
@@ -312,7 +306,7 @@ public class CameraTarget : MonoBehaviour
 	    {
 		if (hero_ctrl.cState.falling && cameraCtrl.transform.position.y > y + 0.1f && !fallStick && (cameraCtrl.transform.position.y - 0.1f >= yLockMin || mode != TargetMode.LOCK_ZONE))
 		{
-		    Debug.LogFormat("Fall Catcher");								    
+		    //Debug.LogFormat("Fall Catcher");								    
 		    cameraCtrl.transform.SetPositionY(cameraCtrl.transform.position.y - fallCatcher * Time.deltaTime);
 		    if (mode == TargetMode.LOCK_ZONE && cameraCtrl.transform.position.y < yLockMin)
 		    {
@@ -338,7 +332,7 @@ public class CameraTarget : MonoBehaviour
 		    fallCatcher = 0f;
 		    if (heroTransform.position.y + 0.1f >= yLockMin || mode != TargetMode.LOCK_ZONE)
 		    {
-			Debug.LogFormat("将cameraCtrl的Y坐标设置成heroTransform，再将cameraTarget的Y坐标设置成cameraCtrl的Y坐标");
+			//Debug.LogFormat("将cameraCtrl的Y坐标设置成heroTransform，再将cameraTarget的Y坐标设置成cameraCtrl的Y坐标");
 			cameraCtrl.transform.SetPositionY(heroTransform.position.y + 0.1f);
 			transform.SetPositionY(cameraCtrl.transform.position.y);
 			num2 = cameraCtrl.transform.position.y;
@@ -619,6 +613,11 @@ public class CameraTarget : MonoBehaviour
 	{
 	    dampTimeY = dampTimeNormal;
 	}
+    }
+
+    public void FreezeInPlace()
+    {
+	mode = TargetMode.FREE;
     }
 
     public enum TargetMode

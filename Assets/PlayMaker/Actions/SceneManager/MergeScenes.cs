@@ -92,7 +92,7 @@ namespace HutongGames.PlayMaker.Actions
 				{
 					LogError("Source and Destination scenes can not be the same");
 				}else{
-					SceneManager.MergeScenes (_sourceScene, _destinationScene);
+		    UnityEngine.SceneManagement.SceneManager.MergeScenes (_sourceScene, _destinationScene);
 				}
 				success.Value = true;
 				Fsm.Event(successEvent);
@@ -111,16 +111,16 @@ namespace HutongGames.PlayMaker.Actions
 			try{
 				switch (sourceReference) {
 				case GetSceneActionBase.SceneAllReferenceOptions.ActiveScene:
-					_sourceScene = SceneManager.GetActiveScene ();
+					_sourceScene = UnityEngine.SceneManagement.SceneManager.GetActiveScene ();
 					break;
 				case GetSceneActionBase.SceneAllReferenceOptions.SceneAtIndex:
-					_sourceScene = SceneManager.GetSceneAt (sourceAtIndex.Value);	
+					_sourceScene = UnityEngine.SceneManagement.SceneManager.GetSceneAt (sourceAtIndex.Value);	
 					break;
 				case GetSceneActionBase.SceneAllReferenceOptions.SceneByName:
-					_sourceScene = SceneManager.GetSceneByName (sourceByName.Value);
+					_sourceScene = UnityEngine.SceneManagement.SceneManager.GetSceneByName (sourceByName.Value);
 					break;
 				case GetSceneActionBase.SceneAllReferenceOptions.SceneByPath:
-					_sourceScene = SceneManager.GetSceneByPath (sourceByPath.Value);
+					_sourceScene = UnityEngine.SceneManagement.SceneManager.GetSceneByPath (sourceByPath.Value);
 					break;
 				}
 			}catch(Exception e) {
@@ -139,16 +139,16 @@ namespace HutongGames.PlayMaker.Actions
 			try{
 				switch (sourceReference) {
 				case GetSceneActionBase.SceneAllReferenceOptions.ActiveScene:
-					_destinationScene = SceneManager.GetActiveScene ();
+					_destinationScene = UnityEngine.SceneManagement.SceneManager.GetActiveScene ();
 					break;
 				case GetSceneActionBase.SceneAllReferenceOptions.SceneAtIndex:
-					_destinationScene = SceneManager.GetSceneAt (destinationAtIndex.Value);	
+					_destinationScene = UnityEngine.SceneManagement.SceneManager.GetSceneAt (destinationAtIndex.Value);	
 					break;
 				case GetSceneActionBase.SceneAllReferenceOptions.SceneByName:
-					_destinationScene = SceneManager.GetSceneByName (destinationByName.Value);
+					_destinationScene = UnityEngine.SceneManagement.SceneManager.GetSceneByName (destinationByName.Value);
 					break;
 				case GetSceneActionBase.SceneAllReferenceOptions.SceneByPath:
-					_destinationScene = SceneManager.GetSceneByPath (destinationByPath.Value);
+					_destinationScene = UnityEngine.SceneManagement.SceneManager.GetSceneByPath (destinationByPath.Value);
 					break;
 				}
 			}catch(Exception e) {

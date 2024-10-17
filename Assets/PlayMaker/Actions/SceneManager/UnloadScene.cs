@@ -75,27 +75,27 @@ namespace HutongGames.PlayMaker.Actions
 				switch (sceneReference) {
 				case SceneReferenceOptions.ActiveScene:
 					#if UNITY_5_4_OR_NEWER
-						_unloaded = SceneManager.UnloadScene(SceneManager.GetActiveScene());
+						_unloaded = UnityEngine.SceneManagement.SceneManager.UnloadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene());
 					#else
 						LogError("SceneReferenceOptions.ActiveScene not available in this version of Unity");
 					#endif
 					break;
 				case SceneReferenceOptions.SceneAtBuildIndex:
-					_unloaded = SceneManager.UnloadScene(sceneAtBuildIndex.Value);
+					_unloaded = UnityEngine.SceneManagement.SceneManager.UnloadScene(sceneAtBuildIndex.Value);
 					break;
 				case SceneReferenceOptions.SceneAtIndex:
 					#if UNITY_5_4_OR_NEWER
-						_unloaded = SceneManager.UnloadScene(SceneManager.GetSceneAt(sceneAtIndex.Value));
+						_unloaded = UnityEngine.SceneManagement.SceneManager.UnloadScene(UnityEngine.SceneManagement.SceneManager.GetSceneAt(sceneAtIndex.Value));
 					#else
 						LogError("SceneReferenceOptions.SceneAtIndex not available in this version of Unity");
 					#endif
 					break;
 				case SceneReferenceOptions.SceneByName:
-					_unloaded = SceneManager.UnloadScene (sceneByName.Value);
+					_unloaded = UnityEngine.SceneManagement.SceneManager.UnloadScene (sceneByName.Value);
 					break;
 				case SceneReferenceOptions.SceneByPath:
 					#if UNITY_5_4_OR_NEWER
-						_unloaded = SceneManager.UnloadScene(SceneManager.GetSceneByPath(sceneByPath.Value));
+						_unloaded = UnityEngine.SceneManagement.SceneManager.UnloadScene(UnityEngine.SceneManagement.SceneManager.GetSceneByPath(sceneByPath.Value));
 					#else
 						LogError("SceneReferenceOptions.SceneByPath not available in this version of Unity");
 					#endif	
@@ -107,7 +107,7 @@ namespace HutongGames.PlayMaker.Actions
 						{
 							throw new  Exception ("Null GameObject");
 						}else{
-							_unloaded = SceneManager.UnloadScene(_go.scene);
+							_unloaded = UnityEngine.SceneManagement.SceneManager.UnloadScene(_go.scene);
 						}
 					#else
 						LogError("SceneReferenceOptions.SceneByGameObject not available in this version of Unity");

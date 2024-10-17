@@ -111,17 +111,17 @@ namespace HutongGames.PlayMaker.Actions
 		{
 			if (sceneReference == GetSceneActionBase.SceneSimpleReferenceOptions.SceneAtIndex)
 			{
-				if (SceneManager.GetActiveScene ().buildIndex == sceneAtIndex.Value) {
+				if (UnityEngine.SceneManagement.SceneManager.GetActiveScene ().buildIndex == sceneAtIndex.Value) {
 					return false;
 				} else {
-					_asyncOperation = SceneManager.LoadSceneAsync (sceneAtIndex.Value, (LoadSceneMode)loadSceneMode.Value);
+					_asyncOperation = UnityEngine.SceneManagement.SceneManager.LoadSceneAsync (sceneAtIndex.Value, (LoadSceneMode)loadSceneMode.Value);
 				}
 
 			} else {
-				if (SceneManager.GetActiveScene ().name == sceneByName.Value) {
+				if (UnityEngine.SceneManagement.SceneManager.GetActiveScene ().name == sceneByName.Value) {
 					return false;
 				} else {
-					_asyncOperation = SceneManager.LoadSceneAsync (sceneByName.Value, (LoadSceneMode)loadSceneMode.Value);
+					_asyncOperation = UnityEngine.SceneManagement.SceneManager.LoadSceneAsync (sceneByName.Value, (LoadSceneMode)loadSceneMode.Value);
 				}
 			}
 

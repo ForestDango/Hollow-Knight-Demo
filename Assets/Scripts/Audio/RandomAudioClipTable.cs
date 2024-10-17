@@ -5,7 +5,7 @@ using UnityEngine;
 /// 根据权重weight确定随机播放某些音乐片段的概率
 /// </summary>
 
-[CreateAssetMenu(fileName = "RandomAudioClipTable", menuName = "Hollow Knight/Random Audio Clip Table", order = -1000)]
+[CreateAssetMenu(fileName = "RandomAudioClipTable", menuName = "Hollow Knight/Random Audio Clip Table", order = 1000)]
 public class RandomAudioClipTable : ScriptableObject
 {
     [SerializeField] private RandomAudioClipTable.Option[] options;

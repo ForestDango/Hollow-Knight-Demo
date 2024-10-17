@@ -337,4 +337,24 @@ public class HeroAnimationController : MonoBehaviour
 	return !animator.IsPlaying("Wake Up Ground") && !animator.IsPlaying("Hazard Respawn"); ;
     }
 
+    /// <summary>
+    /// 获取动画的播放时间
+    /// </summary>
+    /// <param name="clipName"></param>
+    /// <returns></returns>
+    public float GetClipDuration(string clipName)
+    {
+	if (animator == null)
+	{
+	    animator = GetComponent<tk2dSpriteAnimator>();
+	}
+	tk2dSpriteAnimationClip clipByName = animator.GetClipByName(clipName);
+	if (clipByName == null)
+	{
+	    Debug.LogError("HeroAnim: Could not find animation clip with the name " + clipName);
+	    return -1f;
+	}
+	return clipByName.frames.Length / clipByName.fps;
+    }
+
 }

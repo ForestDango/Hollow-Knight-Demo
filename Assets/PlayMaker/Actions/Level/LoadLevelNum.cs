@@ -61,7 +61,7 @@ namespace HutongGames.PlayMaker.Actions
 #if UNITY_PRE_5_3
                 Application.LoadLevelAdditive(levelIndex.Value);
 #else
-                SceneManager.LoadScene(levelIndex.Value, LoadSceneMode.Additive);
+                UnityEngine.SceneManagement.SceneManager.LoadScene(levelIndex.Value, LoadSceneMode.Additive);
 #endif
             }
             else
@@ -69,7 +69,7 @@ namespace HutongGames.PlayMaker.Actions
 #if UNITY_PRE_5_3
                 Application.LoadLevel(levelIndex.Value);
 #else
-                SceneManager.LoadScene(levelIndex.Value, LoadSceneMode.Single);
+                UnityEngine.SceneManagement.SceneManager.LoadScene(levelIndex.Value, LoadSceneMode.Single);
 #endif
             }
 

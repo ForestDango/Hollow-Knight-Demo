@@ -4,7 +4,6 @@ using System;
 
 namespace HutongGames.PlayMaker.Actions
 {
-
     [ActionCategory(ActionCategory.Physics)]
     [Tooltip("Detect additional collisions between the Owner of this FSM and other object with additional raycasting.")]
     public class CheckCollisionSideEnter : FsmStateAction
@@ -124,6 +123,7 @@ namespace HutongGames.PlayMaker.Actions
 		{
 		    bottomHit.Value = true;
 		    Fsm.Event(bottomHitEvent);
+		    Debug.LogFormat("Bottom Hit Terrain");
 		    break;
 		}
 	    }

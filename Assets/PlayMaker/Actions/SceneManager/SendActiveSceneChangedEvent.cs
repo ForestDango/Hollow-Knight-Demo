@@ -26,7 +26,7 @@ namespace HutongGames.PlayMaker.Actions
 
 		public override void OnEnter()
 		{
-			SceneManager.activeSceneChanged += SceneManager_activeSceneChanged;
+			UnityEngine.SceneManagement.SceneManager.activeSceneChanged += SceneManager_activeSceneChanged;
 
 			Finish();
 		}
@@ -44,7 +44,7 @@ namespace HutongGames.PlayMaker.Actions
 
 		public override void OnExit()
 		{
-			SceneManager.activeSceneChanged -= SceneManager_activeSceneChanged;
+			UnityEngine.SceneManagement.SceneManager.activeSceneChanged -= SceneManager_activeSceneChanged;
 		}
 	}
 }

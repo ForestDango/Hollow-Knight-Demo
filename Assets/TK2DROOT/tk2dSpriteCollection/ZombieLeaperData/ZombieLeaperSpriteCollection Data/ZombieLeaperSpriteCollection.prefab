@@ -1,0 +1,1905 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6030481291324324503
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5984208952793034135}
+  - component: {fileID: 5260619869971843705}
+  m_Layer: 0
+  m_Name: ZombieLeaperSpriteCollection
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5984208952793034135
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6030481291324324503}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5260619869971843705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6030481291324324503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d546f34a90531a14eaba82a43b05b86b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 3
+  materialIdsValid: 1
+  needMaterialInstance: 0
+  spriteDefinitions:
+  - name: Zombie Basic 6_attack_leap0000
+    boundsData:
+    - {x: -0.53125, y: -0.0390625, z: 0}
+    - {x: 2.40625, y: 2.953125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.734375, y: 3.421875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.734375, y: -1.515625, z: 0}
+    - {x: 0.67187494, y: -1.515625, z: 0}
+    - {x: -1.734375, y: 1.4375, z: 0}
+    - {x: 0.67187494, y: 1.4375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.0019541015, y: 0.0019541015}
+    - {x: 0.15234277, y: 0.0019541015}
+    - {x: 0.0019541015, y: 0.18652245}
+    - {x: 0.15234277, y: 0.18652245}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: af30d103d5ab01d46883a7dad3120cf1, type: 2}
+    materialId: 0
+    sourceTextureGUID: 5b330e025c94bde4f9fc77e93431670a
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zombie Basic 6_attack_leap0001
+    boundsData:
+    - {x: -0.125, y: -0.1328125, z: 0}
+    - {x: 1.75, y: 2.734375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.734375, y: 3.421875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1, y: -1.5, z: 0}
+    - {x: 0.75, y: -1.5, z: 0}
+    - {x: -1, y: 1.234375, z: 0}
+    - {x: 0.75, y: 1.234375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.2519541, y: 0.3955088}
+    - {x: 0.36132714, y: 0.3955088}
+    - {x: 0.2519541, y: 0.5664053}
+    - {x: 0.36132714, y: 0.5664053}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: af30d103d5ab01d46883a7dad3120cf1, type: 2}
+    materialId: 0
+    sourceTextureGUID: f3a89f75d662c5e4f882b3a5660d7a55
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zombie Basic 6_attack_leap0002
+    boundsData:
+    - {x: -0.23437494, y: -0.31250003, z: 0}
+    - {x: 1.7812501, y: 2.34375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.734375, y: 3.421875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.125, y: -1.484375, z: 0}
+    - {x: 0.6562501, y: -1.484375, z: 0}
+    - {x: -1.125, y: 0.85937494, z: 0}
+    - {x: 0.6562501, y: 0.85937494, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.76074314, y: 0.29785255}
+    - {x: 0.87206936, y: 0.29785255}
+    - {x: 0.76074314, y: 0.44433495}
+    - {x: 0.87206936, y: 0.44433495}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: af30d103d5ab01d46883a7dad3120cf1, type: 2}
+    materialId: 0
+    sourceTextureGUID: 299c3592e472c1849873012b7636f79a
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zombie Basic 6_attack_leap0003
+    boundsData:
+    - {x: 0.04687497, y: -0.03906244, z: 0}
+    - {x: 1.25, y: 3.015625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.734375, y: 3.421875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.578125, y: -1.546875, z: 0}
+    - {x: 0.67187494, y: -1.546875, z: 0}
+    - {x: -0.578125, y: 1.4687501, z: 0}
+    - {x: 0.67187494, y: 1.4687501, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.36523536, y: 0.48828223}
+    - {x: 0.36523536, y: 0.5664053}
+    - {x: 0.55371, y: 0.48828223}
+    - {x: 0.55371, y: 0.5664053}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: af30d103d5ab01d46883a7dad3120cf1, type: 2}
+    materialId: 0
+    sourceTextureGUID: 6447c56f8c9208b4bb565a4402b1cc7e
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zombie Basic 6_attack_leap0004
+    boundsData:
+    - {x: 0.11718753, y: -0.0390625, z: 0}
+    - {x: 1.265625, y: 3.171875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.734375, y: 3.421875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.51562494, y: -1.625, z: 0}
+    - {x: 0.75, y: -1.625, z: 0}
+    - {x: -0.51562494, y: 1.546875, z: 0}
+    - {x: 0.75, y: 1.546875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.76074314, y: 0.44824317}
+    - {x: 0.8398428, y: 0.44824317}
+    - {x: 0.76074314, y: 0.6464834}
+    - {x: 0.8398428, y: 0.6464834}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: af30d103d5ab01d46883a7dad3120cf1, type: 2}
+    materialId: 0
+    sourceTextureGUID: 492a8b29edec80842b9ff22cc20f60a4
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zombie Basic 6_attack_leap0005
+    boundsData:
+    - {x: 0.11718747, y: -0.25781244, z: 0}
+    - {x: 1.515625, y: 2.921875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.734375, y: 3.421875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.640625, y: -1.71875, z: 0}
+    - {x: 0.87499994, y: -1.71875, z: 0}
+    - {x: -0.640625, y: 1.2031251, z: 0}
+    - {x: 0.87499994, y: 1.2031251, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.8896494, y: 0.0019541015}
+    - {x: 0.98437405, y: 0.0019541015}
+    - {x: 0.8896494, y: 0.18456933}
+    - {x: 0.98437405, y: 0.18456933}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: af30d103d5ab01d46883a7dad3120cf1, type: 2}
+    materialId: 0
+    sourceTextureGUID: ad46a625d6b9c044884d0552eeef05ad
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zombie Basic 6_attack_leap0006
+    boundsData:
+    - {x: 0.18749994, y: -0.24218753, z: 0}
+    - {x: 1.8749999, y: 2.421875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.734375, y: 3.421875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.75, y: -1.453125, z: 0}
+    - {x: 1.1249999, y: -1.453125, z: 0}
+    - {x: -0.75, y: 0.96874994, z: 0}
+    - {x: 1.1249999, y: 0.96874994, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.56543064, y: 0.0019541015}
+    - {x: 0.68261623, y: 0.0019541015}
+    - {x: 0.56543064, y: 0.15331933}
+    - {x: 0.68261623, y: 0.15331933}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: af30d103d5ab01d46883a7dad3120cf1, type: 2}
+    materialId: 0
+    sourceTextureGUID: c4354b186cd562c4c8ff535e493bfcd0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zombie Basic 6_attack_leap0007
+    boundsData:
+    - {x: 0.06249997, y: -0.24999994, z: 0}
+    - {x: 1.84375, y: 2.25, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.734375, y: 3.421875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.859375, y: -1.375, z: 0}
+    - {x: 0.98437494, y: -1.375, z: 0}
+    - {x: -0.859375, y: 0.8750001, z: 0}
+    - {x: 0.98437494, y: 0.8750001, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.8759775, y: 0.38183692}
+    - {x: 0.99121, y: 0.38183692}
+    - {x: 0.8759775, y: 0.52246}
+    - {x: 0.99121, y: 0.52246}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: af30d103d5ab01d46883a7dad3120cf1, type: 2}
+    materialId: 0
+    sourceTextureGUID: 644ebdc9babc94f459f467700eb7f0f8
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zombie Basic 6_attack_leap0008
+    boundsData:
+    - {x: -0.00781253, y: -0.32031247, z: 0}
+    - {x: 1.984375, y: 2.078125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.734375, y: 3.421875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1, y: -1.359375, z: 0}
+    - {x: 0.98437494, y: -1.359375, z: 0}
+    - {x: -1, y: 0.71875006, z: 0}
+    - {x: 0.98437494, y: 0.71875006, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.5146494, y: 0.57031345}
+    - {x: 0.6386709, y: 0.57031345}
+    - {x: 0.5146494, y: 0.70019436}
+    - {x: 0.6386709, y: 0.70019436}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: af30d103d5ab01d46883a7dad3120cf1, type: 2}
+    materialId: 0
+    sourceTextureGUID: 33287f3216a1e43418ecf293c4e57863
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zombie Basic 6_attack_leap0009
+    boundsData:
+    - {x: -0.10156253, y: -0.32031253, z: 0}
+    - {x: 2.171875, y: 2.046875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.734375, y: 3.421875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.1875, y: -1.34375, z: 0}
+    - {x: 0.98437494, y: -1.34375, z: 0}
+    - {x: -1.1875, y: 0.70312494, z: 0}
+    - {x: 0.98437494, y: 0.70312494, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.84375095, y: 0.52636814}
+    - {x: 0.97949123, y: 0.52636814}
+    - {x: 0.84375095, y: 0.6542959}
+    - {x: 0.97949123, y: 0.6542959}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: af30d103d5ab01d46883a7dad3120cf1, type: 2}
+    materialId: 0
+    sourceTextureGUID: 6f6334a8c7706794fa5f47d8693d263e
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zombie Basic 6_attack_leap0010
+    boundsData:
+    - {x: -0.10937506, y: -0.43749997, z: 0}
+    - {x: 2.25, y: 2.125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.734375, y: 3.421875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.234375, y: -1.5, z: 0}
+    - {x: 1.0156249, y: -1.5, z: 0}
+    - {x: -1.234375, y: 0.62500006, z: 0}
+    - {x: 1.0156249, y: 0.62500006, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.25879005, y: 0.17285255}
+    - {x: 0.25879005, y: 0.31347558}
+    - {x: 0.39160058, y: 0.17285255}
+    - {x: 0.39160058, y: 0.31347558}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: af30d103d5ab01d46883a7dad3120cf1, type: 2}
+    materialId: 0
+    sourceTextureGUID: d87fb858f79908e41adba2424df42998
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zombie Basic 6_attack_leap0011
+    boundsData:
+    - {x: -0.04687506, y: -0.57031256, z: 0}
+    - {x: 1.9062499, y: 1.9218749, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.734375, y: 3.421875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1, y: -1.53125, z: 0}
+    - {x: 0.9062499, y: -1.53125, z: 0}
+    - {x: -1, y: 0.3906249, z: 0}
+    - {x: 0.9062499, y: 0.3906249, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.6425791, y: 0.6503916}
+    - {x: 0.6425791, y: 0.7695303}
+    - {x: 0.76269436, y: 0.6503916}
+    - {x: 0.76269436, y: 0.7695303}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: af30d103d5ab01d46883a7dad3120cf1, type: 2}
+    materialId: 0
+    sourceTextureGUID: 0bff7a38a1ff1844a906357b702295eb
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zombie Basic 6_attack_leap0012
+    boundsData:
+    - {x: -0.21875003, y: -0.21874994, z: 0}
+    - {x: 1.90625, y: 2.625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.734375, y: 3.421875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.171875, y: -1.53125, z: 0}
+    - {x: 0.73437494, y: -1.53125, z: 0}
+    - {x: -1.171875, y: 1.0937501, z: 0}
+    - {x: 0.73437494, y: 1.0937501, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.13964942, y: 0.5927744}
+    - {x: 0.13964942, y: 0.7119131}
+    - {x: 0.30370995, y: 0.5927744}
+    - {x: 0.30370995, y: 0.7119131}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: af30d103d5ab01d46883a7dad3120cf1, type: 2}
+    materialId: 0
+    sourceTextureGUID: 0ba79a10e024a1b408d948dc81923a56
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zombie Basic 6_death0000
+    boundsData:
+    - {x: 0.10156256, y: 0.1484375, z: 0}
+    - {x: 2.796875, y: 2.140625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.734375, y: 3.421875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.296875, y: -0.921875, z: 0}
+    - {x: 1.5000001, y: -0.921875, z: 0}
+    - {x: -1.296875, y: 1.21875, z: 0}
+    - {x: 1.5000001, y: 1.21875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.0019541015, y: 0.5800791}
+    - {x: 0.0019541015, y: 0.75488186}
+    - {x: 0.1357412, y: 0.5800791}
+    - {x: 0.1357412, y: 0.75488186}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: af30d103d5ab01d46883a7dad3120cf1, type: 2}
+    materialId: 0
+    sourceTextureGUID: 8edaca9f2dcecbe4d8fe89de8e75195d
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zombie Basic 6_death0001
+    boundsData:
+    - {x: 0.234375, y: -0.421875, z: 0}
+    - {x: 3.21875, y: 1.90625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.734375, y: 3.421875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.375, y: -1.375, z: 0}
+    - {x: 1.84375, y: -1.375, z: 0}
+    - {x: -1.375, y: 0.53125, z: 0}
+    - {x: 1.84375, y: 0.53125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.13574317, y: 0.19043067}
+    - {x: 0.13574317, y: 0.39160058}
+    - {x: 0.25488183, y: 0.19043067}
+    - {x: 0.25488183, y: 0.39160058}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: af30d103d5ab01d46883a7dad3120cf1, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3cca0b117b44d10469c2aab172450f27
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zombie Basic 6_death0002
+    boundsData:
+    - {x: 0.28124994, y: -0.4453125, z: 0}
+    - {x: 3.09375, y: 1.734375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.734375, y: 3.421875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.265625, y: -1.3125, z: 0}
+    - {x: 1.8281249, y: -1.3125, z: 0}
+    - {x: -1.265625, y: 0.421875, z: 0}
+    - {x: 1.8281249, y: 0.421875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.13964942, y: 0.3955088}
+    - {x: 0.13964942, y: 0.58886623}
+    - {x: 0.24804589, y: 0.3955088}
+    - {x: 0.24804589, y: 0.58886623}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: af30d103d5ab01d46883a7dad3120cf1, type: 2}
+    materialId: 0
+    sourceTextureGUID: c3281d18a8de7e24983b537dba89e9bb
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zombie Basic 6_death0003
+    boundsData:
+    - {x: 0.1796875, y: -0.5078125, z: 0}
+    - {x: 3.234375, y: 2.078125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.734375, y: 3.421875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.4375, y: -1.546875, z: 0}
+    - {x: 1.796875, y: -1.546875, z: 0}
+    - {x: -1.4375, y: 0.53125, z: 0}
+    - {x: 1.796875, y: 0.53125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.0019541015, y: 0.19043067}
+    - {x: 0.0019541015, y: 0.39257714}
+    - {x: 0.13183495, y: 0.19043067}
+    - {x: 0.13183495, y: 0.39257714}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: af30d103d5ab01d46883a7dad3120cf1, type: 2}
+    materialId: 0
+    sourceTextureGUID: c6c78403d1acf9f4da442f7632a68b95
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zombie Basic 6_death0004
+    boundsData:
+    - {x: 0.234375, y: -0.39062497, z: 0}
+    - {x: 3.21875, y: 1.90625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.734375, y: 3.421875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.375, y: -1.34375, z: 0}
+    - {x: 1.84375, y: -1.34375, z: 0}
+    - {x: -1.375, y: 0.56250006, z: 0}
+    - {x: 1.84375, y: 0.56250006, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.15625098, y: 0.0019541015}
+    - {x: 0.3574209, y: 0.0019541015}
+    - {x: 0.15625098, y: 0.121092774}
+    - {x: 0.3574209, y: 0.121092774}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: af30d103d5ab01d46883a7dad3120cf1, type: 2}
+    materialId: 0
+    sourceTextureGUID: 750da161ac77cc846a5c7256132e5eaf
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zombie Basic 6_death0005
+    boundsData:
+    - {x: 0.32031244, y: -0.49218756, z: 0}
+    - {x: 3.078125, y: 1.7656249, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.734375, y: 3.421875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.21875, y: -1.375, z: 0}
+    - {x: 1.8593749, y: -1.375, z: 0}
+    - {x: -1.21875, y: 0.3906249, z: 0}
+    - {x: 1.8593749, y: 0.3906249, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.0019541015, y: 0.75879}
+    - {x: 0.0019541015, y: 0.9511709}
+    - {x: 0.11230371, y: 0.75879}
+    - {x: 0.11230371, y: 0.9511709}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: af30d103d5ab01d46883a7dad3120cf1, type: 2}
+    materialId: 0
+    sourceTextureGUID: 70392cc6a7b864b43be884936ab037c9
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zombie Basic 6_death0006
+    boundsData:
+    - {x: 0.40624994, y: -0.42968756, z: 0}
+    - {x: 2.90625, y: 1.8593749, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.734375, y: 3.421875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.046875, y: -1.359375, z: 0}
+    - {x: 1.8593749, y: -1.359375, z: 0}
+    - {x: -1.046875, y: 0.4999999, z: 0}
+    - {x: 1.8593749, y: 0.4999999, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.11621191, y: 0.75879}
+    - {x: 0.11621191, y: 0.94042873}
+    - {x: 0.23242089, y: 0.75879}
+    - {x: 0.23242089, y: 0.94042873}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: af30d103d5ab01d46883a7dad3120cf1, type: 2}
+    materialId: 0
+    sourceTextureGUID: 6bb2a3c02753d95499600b9e688519ff
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zombie Basic 6_death0007
+    boundsData:
+    - {x: 0.5, y: -0.47656247, z: 0}
+    - {x: 2.59375, y: 1.546875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.734375, y: 3.421875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.79687494, y: -1.25, z: 0}
+    - {x: 1.796875, y: -1.25, z: 0}
+    - {x: -0.79687494, y: 0.29687506, z: 0}
+    - {x: 1.796875, y: 0.29687506, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.6425791, y: 0.44921973}
+    - {x: 0.6425791, y: 0.6113272}
+    - {x: 0.73925686, y: 0.44921973}
+    - {x: 0.73925686, y: 0.6113272}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: af30d103d5ab01d46883a7dad3120cf1, type: 2}
+    materialId: 0
+    sourceTextureGUID: 21c19a1842dc2d94bbc178b527bae10a
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zombie Basic 6_death0008
+    boundsData:
+    - {x: 0.59374994, y: -0.6484375, z: 0}
+    - {x: 2.46875, y: 1.359375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.734375, y: 3.421875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.640625, y: -1.328125, z: 0}
+    - {x: 1.8281249, y: -1.328125, z: 0}
+    - {x: -0.640625, y: 0.031250056, z: 0}
+    - {x: 1.8281249, y: 0.031250056, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.4238291, y: 0.6601572}
+    - {x: 0.4238291, y: 0.8144522}
+    - {x: 0.5087881, y: 0.6601572}
+    - {x: 0.5087881, y: 0.8144522}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: af30d103d5ab01d46883a7dad3120cf1, type: 2}
+    materialId: 0
+    sourceTextureGUID: 6799b8df0c2f0e64d9afd37f39de0b58
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zombie Basic 6_idle0000
+    boundsData:
+    - {x: -0.07031256, y: 0.0625, z: 0}
+    - {x: 1.3906249, y: 3.1875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.734375, y: 3.421875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.765625, y: -1.53125, z: 0}
+    - {x: 0.6249999, y: -1.53125, z: 0}
+    - {x: -0.765625, y: 1.65625, z: 0}
+    - {x: 0.6249999, y: 1.65625, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.6865244, y: 0.0019541015}
+    - {x: 0.6865244, y: 0.08886621}
+    - {x: 0.88574123, y: 0.0019541015}
+    - {x: 0.88574123, y: 0.08886621}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: af30d103d5ab01d46883a7dad3120cf1, type: 2}
+    materialId: 0
+    sourceTextureGUID: 323376fc435135c40bf7dab8882d3447
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zombie Basic 6_idle0001
+    boundsData:
+    - {x: -0.03906253, y: 0.0546875, z: 0}
+    - {x: 1.421875, y: 3.203125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.734375, y: 3.421875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.75, y: -1.546875, z: 0}
+    - {x: 0.67187494, y: -1.546875, z: 0}
+    - {x: -0.75, y: 1.65625, z: 0}
+    - {x: 0.67187494, y: 1.65625, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.3613291, y: 0.0019541015}
+    - {x: 0.3613291, y: 0.09081934}
+    - {x: 0.5615225, y: 0.0019541015}
+    - {x: 0.5615225, y: 0.09081934}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: af30d103d5ab01d46883a7dad3120cf1, type: 2}
+    materialId: 0
+    sourceTextureGUID: 4e1e894ea88f2e94a9057edc60b24a4d
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zombie Basic 6_idle0002
+    boundsData:
+    - {x: -0.000000059604645, y: 0.078125, z: 0}
+    - {x: 1.40625, y: 3.21875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.734375, y: 3.421875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.70312506, y: -1.53125, z: 0}
+    - {x: 0.70312494, y: -1.53125, z: 0}
+    - {x: -0.70312506, y: 1.6875, z: 0}
+    - {x: 0.70312494, y: 1.6875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.3955088, y: 0.16699317}
+    - {x: 0.3955088, y: 0.25488183}
+    - {x: 0.59667873, y: 0.16699317}
+    - {x: 0.59667873, y: 0.25488183}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: af30d103d5ab01d46883a7dad3120cf1, type: 2}
+    materialId: 0
+    sourceTextureGUID: f201ab268900a5c48bf15c9a130ef1e4
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zombie Basic 6_idle0003
+    boundsData:
+    - {x: 0.03125006, y: 0.078125, z: 0}
+    - {x: 1.375, y: 3.25, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.734375, y: 3.421875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.65624994, y: -1.546875, z: 0}
+    - {x: 0.71875006, y: -1.546875, z: 0}
+    - {x: -0.65624994, y: 1.703125, z: 0}
+    - {x: 0.71875006, y: 1.703125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.30761817, y: 0.57031345}
+    - {x: 0.30761817, y: 0.65624905}
+    - {x: 0.51074123, y: 0.57031345}
+    - {x: 0.51074123, y: 0.65624905}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: af30d103d5ab01d46883a7dad3120cf1, type: 2}
+    materialId: 0
+    sourceTextureGUID: b2e3604ff548c0842b5fdebb55088523
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zombie Basic 6_idle0004
+    boundsData:
+    - {x: -0.00781256, y: 0.078125, z: 0}
+    - {x: 1.359375, y: 3.21875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.734375, y: 3.421875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.68750006, y: -1.53125, z: 0}
+    - {x: 0.67187494, y: -1.53125, z: 0}
+    - {x: -0.68750006, y: 1.6875, z: 0}
+    - {x: 0.67187494, y: 1.6875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.79980564, y: 0.09277441}
+    - {x: 0.8847647, y: 0.09277441}
+    - {x: 0.79980564, y: 0.29394433}
+    - {x: 0.8847647, y: 0.29394433}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: af30d103d5ab01d46883a7dad3120cf1, type: 2}
+    materialId: 0
+    sourceTextureGUID: f5694d0a3dd54764bb47e00dc9199fd5
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zombie Basic 6_idle0005
+    boundsData:
+    - {x: -0.03906244, y: 0.0546875, z: 0}
+    - {x: 1.3906251, y: 3.203125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.734375, y: 3.421875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.734375, y: -1.546875, z: 0}
+    - {x: 0.6562501, y: -1.546875, z: 0}
+    - {x: -0.734375, y: 1.65625, z: 0}
+    - {x: 0.6562501, y: 1.65625, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.4658213, y: 0.25879005}
+    - {x: 0.4658213, y: 0.34570214}
+    - {x: 0.6660147, y: 0.25879005}
+    - {x: 0.6660147, y: 0.34570214}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: af30d103d5ab01d46883a7dad3120cf1, type: 2}
+    materialId: 0
+    sourceTextureGUID: 8f8f0fc44fbfa9740b7ba74666279a08
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zombie Basic 6_slash_decal0000
+    boundsData:
+    - {x: -1.234375, y: -0.24218747, z: 0}
+    - {x: 1.09375, y: 0.89062494, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.734375, y: 3.421875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.78125, y: -0.68749994, z: 0}
+    - {x: -0.68750006, y: -0.68749994, z: 0}
+    - {x: -1.78125, y: 0.20312501, z: 0}
+    - {x: -0.68750006, y: 0.20312501, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.3613291, y: 0.09472754}
+    - {x: 0.3613291, y: 0.16308495}
+    - {x: 0.4169912, y: 0.09472754}
+    - {x: 0.4169912, y: 0.16308495}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: af30d103d5ab01d46883a7dad3120cf1, type: 2}
+    materialId: 0
+    sourceTextureGUID: 8efc9f853f5bcee41bbcaab4525c8c81
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zombie Basic 6_slash_decal0001
+    boundsData:
+    - {x: -0.6640625, y: -0.17968756, z: 0}
+    - {x: 1.765625, y: 0.703125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.734375, y: 3.421875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.546875, y: -0.53125006, z: 0}
+    - {x: 0.21875, y: -0.53125006, z: 0}
+    - {x: -1.546875, y: 0.17187493, z: 0}
+    - {x: 0.21875, y: 0.17187493, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.15625098, y: 0.12500098}
+    - {x: 0.26660058, y: 0.12500098}
+    - {x: 0.15625098, y: 0.16894433}
+    - {x: 0.26660058, y: 0.16894433}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: af30d103d5ab01d46883a7dad3120cf1, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3885519a4b6771c45a523d0fe6f350b3
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zombie Basic 6_turn0000
+    boundsData:
+    - {x: -0.0390625, y: 0.078125, z: 0}
+    - {x: 1.2656249, y: 3.25, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.734375, y: 3.421875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.67187494, y: -1.546875, z: 0}
+    - {x: 0.59374994, y: -1.546875, z: 0}
+    - {x: -0.67187494, y: 1.703125, z: 0}
+    - {x: 0.59374994, y: 1.703125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.55957127, y: 0.34961036}
+    - {x: 0.6386709, y: 0.34961036}
+    - {x: 0.55957127, y: 0.5527334}
+    - {x: 0.6386709, y: 0.5527334}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: af30d103d5ab01d46883a7dad3120cf1, type: 2}
+    materialId: 0
+    sourceTextureGUID: dfedb2bcc04686541aedbda9fd07367f
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zombie Basic 6_turn0001
+    boundsData:
+    - {x: 0.02343744, y: 0.078125, z: 0}
+    - {x: 1.140625, y: 3.25, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.734375, y: 3.421875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.54687506, y: -1.546875, z: 0}
+    - {x: 0.59374994, y: -1.546875, z: 0}
+    - {x: -0.54687506, y: 1.703125, z: 0}
+    - {x: 0.59374994, y: 1.703125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.25879005, y: 0.3173838}
+    - {x: 0.25879005, y: 0.3886709}
+    - {x: 0.46191308, y: 0.3173838}
+    - {x: 0.46191308, y: 0.3886709}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: af30d103d5ab01d46883a7dad3120cf1, type: 2}
+    materialId: 0
+    sourceTextureGUID: 2db626b49de2b8d4e9208e210372b138
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zombie Basic 6_walk0000
+    boundsData:
+    - {x: -0.11718756, y: 0.01562506, z: 0}
+    - {x: 1.421875, y: 3.125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.734375, y: 3.421875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.82812506, y: -1.546875, z: 0}
+    - {x: 0.59374994, y: -1.546875, z: 0}
+    - {x: -0.82812506, y: 1.5781251, z: 0}
+    - {x: 0.59374994, y: 1.5781251, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.6005869, y: 0.15722755}
+    - {x: 0.6005869, y: 0.24609277}
+    - {x: 0.7958975, y: 0.15722755}
+    - {x: 0.7958975, y: 0.24609277}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: af30d103d5ab01d46883a7dad3120cf1, type: 2}
+    materialId: 0
+    sourceTextureGUID: 1124aaa04e37dfe419757cfb1fd0d026
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zombie Basic 6_walk0001
+    boundsData:
+    - {x: -0.1015625, y: 0.03125, z: 0}
+    - {x: 1.3906249, y: 3.125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.734375, y: 3.421875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.79687494, y: -1.53125, z: 0}
+    - {x: 0.59374994, y: -1.53125, z: 0}
+    - {x: -0.79687494, y: 1.59375, z: 0}
+    - {x: 0.59374994, y: 1.59375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.6699228, y: 0.25000098}
+    - {x: 0.756835, y: 0.25000098}
+    - {x: 0.6699228, y: 0.44531152}
+    - {x: 0.756835, y: 0.44531152}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: af30d103d5ab01d46883a7dad3120cf1, type: 2}
+    materialId: 0
+    sourceTextureGUID: 045d6ac8e02e9994a82491e5a476e325
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zombie Basic 6_walk0002
+    boundsData:
+    - {x: -0.14843747, y: -0.015625, z: 0}
+    - {x: 1.453125, y: 3.03125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.734375, y: 3.421875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.875, y: -1.53125, z: 0}
+    - {x: 0.57812506, y: -1.53125, z: 0}
+    - {x: -0.875, y: 1.5, z: 0}
+    - {x: 0.57812506, y: 1.5, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.8886728, y: 0.18847755}
+    - {x: 0.97949123, y: 0.18847755}
+    - {x: 0.8886728, y: 0.3779287}
+    - {x: 0.97949123, y: 0.3779287}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: af30d103d5ab01d46883a7dad3120cf1, type: 2}
+    materialId: 0
+    sourceTextureGUID: 462b51964edcae54ca21ffd21985d021
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zombie Basic 6_walk0003
+    boundsData:
+    - {x: -0.23437503, y: -0.078125, z: 0}
+    - {x: 1.53125, y: 2.9375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.734375, y: 3.421875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1, y: -1.546875, z: 0}
+    - {x: 0.53124994, y: -1.546875, z: 0}
+    - {x: -1, y: 1.390625, z: 0}
+    - {x: 0.53124994, y: 1.390625, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.23632911, y: 0.9023447}
+    - {x: 0.23632911, y: 0.9980459}
+    - {x: 0.4199209, y: 0.9023447}
+    - {x: 0.4199209, y: 0.9980459}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: af30d103d5ab01d46883a7dad3120cf1, type: 2}
+    materialId: 0
+    sourceTextureGUID: 2b95b42c31c8efd4eb3c182ae23ae04c
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zombie Basic 6_walk0004
+    boundsData:
+    - {x: 0.00781256, y: -0.109375, z: 0}
+    - {x: 2.140625, y: 2.875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.734375, y: 3.421875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.0625, y: -1.546875, z: 0}
+    - {x: 1.0781251, y: -1.546875, z: 0}
+    - {x: -1.0625, y: 1.328125, z: 0}
+    - {x: 1.0781251, y: 1.328125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.0019541015, y: 0.39648536}
+    - {x: 0.1357412, y: 0.39648536}
+    - {x: 0.0019541015, y: 0.5761709}
+    - {x: 0.1357412, y: 0.5761709}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: af30d103d5ab01d46883a7dad3120cf1, type: 2}
+    materialId: 0
+    sourceTextureGUID: ab1deeaf8044d7d44b420b18b12eb2e2
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zombie Basic 6_walk0005
+    boundsData:
+    - {x: -0.24218753, y: -0.0859375, z: 0}
+    - {x: 1.546875, y: 2.921875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.734375, y: 3.421875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.015625, y: -1.546875, z: 0}
+    - {x: 0.53124994, y: -1.546875, z: 0}
+    - {x: -1.015625, y: 1.375, z: 0}
+    - {x: 0.53124994, y: 1.375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.23632911, y: 0.71582127}
+    - {x: 0.33300683, y: 0.71582127}
+    - {x: 0.23632911, y: 0.89843655}
+    - {x: 0.33300683, y: 0.89843655}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: af30d103d5ab01d46883a7dad3120cf1, type: 2}
+    materialId: 0
+    sourceTextureGUID: b63347ed33b0ba146bd6cd96875a29ad
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zombie Basic 6_walk0006
+    boundsData:
+    - {x: -0.15624997, y: -0.00781256, z: 0}
+    - {x: 1.46875, y: 3.046875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.734375, y: 3.421875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.890625, y: -1.53125, z: 0}
+    - {x: 0.57812506, y: -1.53125, z: 0}
+    - {x: -0.890625, y: 1.5156249, z: 0}
+    - {x: 0.57812506, y: 1.5156249, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.36523536, y: 0.3925791}
+    - {x: 0.36523536, y: 0.48437402}
+    - {x: 0.5556631, y: 0.3925791}
+    - {x: 0.5556631, y: 0.48437402}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: af30d103d5ab01d46883a7dad3120cf1, type: 2}
+    materialId: 0
+    sourceTextureGUID: 095311fa5473bd94e91a3a645b32caed
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  premultipliedAlpha: 0
+  material: {fileID: 0}
+  materials:
+  - {fileID: 2100000, guid: af30d103d5ab01d46883a7dad3120cf1, type: 2}
+  textures:
+  - {fileID: 2800000, guid: 8fe740a0fc53e074f9ef9961dc5c2ae8, type: 3}
+  pngTextures: []
+  materialPngTextureId: 00000000
+  textureFilterMode: 1
+  textureMipMaps: 0
+  allowMultipleAtlases: 0
+  spriteCollectionGUID: 9ea6d7543aa3be440802b48834463ec4
+  spriteCollectionName: ZombieLeaperSpriteCollection
+  assetName: 
+  loadable: 0
+  invOrthoSize: 2
+  halfTargetHeight: 32
+  buildKey: 546905499
+  dataGuid: 78ff1f9909281ef46969ce41fcdca30b
+  managedSpriteCollection: 0
+  hasPlatformData: 0
+  spriteCollectionPlatforms: []
+  spriteCollectionPlatformGUIDs: []

@@ -1,0 +1,3926 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4041061621362991294
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8825182584818579542}
+  - component: {fileID: 4065589836301276750}
+  m_Layer: 0
+  m_Name: HealthBugsSpriteCollection
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8825182584818579542
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4041061621362991294}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4065589836301276750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4041061621362991294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d546f34a90531a14eaba82a43b05b86b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 3
+  materialIdsValid: 1
+  needMaterialInstance: 0
+  spriteDefinitions:
+  - name: Health Bugs_appear0000
+    boundsData:
+    - {x: -0.015625015, y: -0.023437515, z: 0}
+    - {x: 0.78125, y: 0.984375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.90625, y: 1.1875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.40625003, y: -0.515625, z: 0}
+    - {x: 0.375, y: -0.515625, z: 0}
+    - {x: -0.40625003, y: 0.46874997, z: 0}
+    - {x: 0.375, y: 0.46874997, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.24902393, y: 0.379395}
+    - {x: 0.27343702, y: 0.379395}
+    - {x: 0.24902393, y: 0.41015577}
+    - {x: 0.27343702, y: 0.41015577}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 06885ca4fb65596448053b42eabd3147
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_appear0001
+    boundsData:
+    - {x: -0.015625015, y: -0.00781253, z: 0}
+    - {x: 0.84375, y: 1.109375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.90625, y: 1.1875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.4375, y: -0.5625, z: 0}
+    - {x: 0.40624997, y: -0.5625, z: 0}
+    - {x: -0.4375, y: 0.54687494, z: 0}
+    - {x: 0.40624997, y: 0.54687494, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.2910161, y: 0.96386766}
+    - {x: 0.31738234, y: 0.96386766}
+    - {x: 0.2910161, y: 0.9985347}
+    - {x: 0.31738234, y: 0.9985347}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 51e7f0ab4b722224bb199ed9b3401e81
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_appear0002
+    boundsData:
+    - {x: -0.02343753, y: 0, z: 0}
+    - {x: 0.89062494, y: 1.1875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.90625, y: 1.1875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.46875, y: -0.59375, z: 0}
+    - {x: 0.42187494, y: -0.59375, z: 0}
+    - {x: -0.46875, y: 0.59375, z: 0}
+    - {x: 0.42187494, y: 0.59375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.17627002, y: 0.38427782}
+    - {x: 0.17627002, y: 0.4121089}
+    - {x: 0.21337841, y: 0.38427782}
+    - {x: 0.21337841, y: 0.4121089}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 9000f5ada039d0d4a99c7d9feff84374
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_appear0003
+    boundsData:
+    - {x: -0.007812485, y: -0.03125, z: 0}
+    - {x: 0.8906251, y: 1.0625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.90625, y: 1.1875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.45312503, y: -0.5625, z: 0}
+    - {x: 0.43750006, y: -0.5625, z: 0}
+    - {x: -0.45312503, y: 0.5, z: 0}
+    - {x: 0.43750006, y: 0.5, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.29052782, y: 0.9287114}
+    - {x: 0.3183589, y: 0.9287114}
+    - {x: 0.29052782, y: 0.9619136}
+    - {x: 0.3183589, y: 0.9619136}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 6e1032f024f46294697c26bad4a205b1
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_appear0004
+    boundsData:
+    - {x: -0.015625015, y: -0.039062515, z: 0}
+    - {x: 0.84375, y: 1.015625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.90625, y: 1.1875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.4375, y: -0.546875, z: 0}
+    - {x: 0.40624997, y: -0.546875, z: 0}
+    - {x: -0.4375, y: 0.46874997, z: 0}
+    - {x: 0.40624997, y: 0.46874997, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.37646532, y: 0.960938}
+    - {x: 0.40283155, y: 0.960938}
+    - {x: 0.37646532, y: 0.9926753}
+    - {x: 0.40283155, y: 0.9926753}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 64cd1b079dd1ad94baae9707deba3889
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_appear0005
+    boundsData:
+    - {x: -0.015625015, y: -0.054687515, z: 0}
+    - {x: 0.84375, y: 1.015625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.90625, y: 1.1875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.4375, y: -0.5625, z: 0}
+    - {x: 0.40624997, y: -0.5625, z: 0}
+    - {x: -0.4375, y: 0.45312497, z: 0}
+    - {x: 0.40624997, y: 0.45312497, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.21533252, y: 0.38427782}
+    - {x: 0.21533252, y: 0.41064405}
+    - {x: 0.24706982, y: 0.38427782}
+    - {x: 0.24706982, y: 0.41064405}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: ea94577a76cd4cb4ea11638a6d91f14b
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_appear0006
+    boundsData:
+    - {x: -0.039062515, y: -0.039062515, z: 0}
+    - {x: 0.828125, y: 0.984375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.90625, y: 1.1875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.45312503, y: -0.53125, z: 0}
+    - {x: 0.375, y: -0.53125, z: 0}
+    - {x: -0.45312503, y: 0.45312497, z: 0}
+    - {x: 0.375, y: 0.45312497, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.2724614, y: 0.33203173}
+    - {x: 0.2724614, y: 0.35790968}
+    - {x: 0.30322218, y: 0.33203173}
+    - {x: 0.30322218, y: 0.35790968}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 615fc6acac7929a4b8968be076dfb988
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_burst0000
+    boundsData:
+    - {x: -0.0078125, y: -0.234375, z: 0}
+    - {x: 1.328125, y: 0.625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.90625, y: 1.1875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.671875, y: -0.546875, z: 0}
+    - {x: 0.65625, y: -0.546875, z: 0}
+    - {x: -0.671875, y: 0.078124985, z: 0}
+    - {x: 0.65625, y: 0.078124985, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.24414112, y: 0.21484424}
+    - {x: 0.28564405, y: 0.21484424}
+    - {x: 0.24414112, y: 0.23437451}
+    - {x: 0.28564405, y: 0.23437451}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 71532745c6dc1d14fb3648b21160cd11
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_burst0001
+    boundsData:
+    - {x: -0.0703125, y: -0.109375, z: 0}
+    - {x: 1.484375, y: 0.78125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.90625, y: 1.1875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.8125, y: -0.5, z: 0}
+    - {x: 0.671875, y: -0.5, z: 0}
+    - {x: -0.8125, y: 0.28125, z: 0}
+    - {x: 0.671875, y: 0.28125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.12793018, y: 0.38427782}
+    - {x: 0.17431591, y: 0.38427782}
+    - {x: 0.12793018, y: 0.40869093}
+    - {x: 0.17431591, y: 0.40869093}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 4f0999da4fc4a5640a12e86d96728e5c
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_burst0002
+    boundsData:
+    - {x: -0.046875, y: -0.2578125, z: 0}
+    - {x: 1.8125, y: 0.484375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.90625, y: 1.1875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.953125, y: -0.5, z: 0}
+    - {x: 0.859375, y: -0.5, z: 0}
+    - {x: -0.953125, y: -0.015625011, z: 0}
+    - {x: 0.859375, y: -0.015625011, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.18554737, y: 0.21484424}
+    - {x: 0.24218701, y: 0.21484424}
+    - {x: 0.18554737, y: 0.22997998}
+    - {x: 0.24218701, y: 0.22997998}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: c4187a50d40c9184a9eb4d1ebbaf5ad7
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_burst0003
+    boundsData:
+    - {x: 0.0078125, y: -0.25, z: 0}
+    - {x: 1.734375, y: 0.28125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.90625, y: 1.1875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.859375, y: -0.390625, z: 0}
+    - {x: 0.875, y: -0.390625, z: 0}
+    - {x: -0.859375, y: -0.10937501, z: 0}
+    - {x: 0.875, y: -0.10937501, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.09228565, y: 0.22998096}
+    - {x: 0.14648388, y: 0.22998096}
+    - {x: 0.09228565, y: 0.23876904}
+    - {x: 0.14648388, y: 0.23876904}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 754eb48b07e1ad745b2f88af7bf9405a
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_fly0000
+    boundsData:
+    - {x: 0.015624985, y: -0.046874985, z: 0}
+    - {x: 0.875, y: 1.0625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 1.71875, y: 1.140625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.421875, y: -0.578125, z: 0}
+    - {x: 0.45312497, y: -0.578125, z: 0}
+    - {x: -0.421875, y: 0.48437503, z: 0}
+    - {x: 0.45312497, y: 0.48437503, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.3193364, y: 0.96386766}
+    - {x: 0.3466792, y: 0.96386766}
+    - {x: 0.3193364, y: 0.99706984}
+    - {x: 0.3466792, y: 0.99706984}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: ef5a020d92403c941875db89ffff05e4
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_fly0001
+    boundsData:
+    - {x: 0.007812485, y: -0.0078125, z: 0}
+    - {x: 0.890625, y: 1.140625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 1.71875, y: 1.140625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.4375, y: -0.578125, z: 0}
+    - {x: 0.45312497, y: -0.578125, z: 0}
+    - {x: -0.4375, y: 0.5625, z: 0}
+    - {x: 0.45312497, y: 0.5625, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.15429737, y: 0.804688}
+    - {x: 0.18212841, y: 0.804688}
+    - {x: 0.15429737, y: 0.84033155}
+    - {x: 0.18212841, y: 0.84033155}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3ba66b27a42021b4f86b3d64d4f14807
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_fly0002
+    boundsData:
+    - {x: 0.015625, y: -0.093750015, z: 0}
+    - {x: 1, y: 0.96875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 1.71875, y: 1.140625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.484375, y: -0.578125, z: 0}
+    - {x: 0.515625, y: -0.578125, z: 0}
+    - {x: -0.484375, y: 0.39062497, z: 0}
+    - {x: 0.515625, y: 0.39062497, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.25878954, y: 0.96386766}
+    - {x: 0.25878954, y: 0.9951167}
+    - {x: 0.28906202, y: 0.96386766}
+    - {x: 0.28906202, y: 0.9951167}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 90c50ee831477a142805fa386fa29392
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_fly0003
+    boundsData:
+    - {x: -0.015625015, y: -0.0703125, z: 0}
+    - {x: 0.96875, y: 1.015625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 1.71875, y: 1.140625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.5, y: -0.578125, z: 0}
+    - {x: 0.46874997, y: -0.578125, z: 0}
+    - {x: -0.5, y: 0.4375, z: 0}
+    - {x: 0.46874997, y: 0.4375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.15966846, y: 0.77002}
+    - {x: 0.18994091, y: 0.77002}
+    - {x: 0.15966846, y: 0.80175734}
+    - {x: 0.18994091, y: 0.80175734}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 0f6874900cf1c67478e61aad876785a8
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_health_cocoon_top0000
+    boundsData:
+    - {x: 0.2890625, y: 1.515625, z: 0}
+    - {x: 2.859375, y: 4.875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 4.453125, y: 7.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.140625, y: -0.92187494, z: 0}
+    - {x: 1.71875, y: -0.92187494, z: 0}
+    - {x: -1.140625, y: 3.953125, z: 0}
+    - {x: 1.71875, y: 3.953125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.35498095, y: 0.8374028}
+    - {x: 0.35498095, y: 0.92675734}
+    - {x: 0.50732374, y: 0.8374028}
+    - {x: 0.50732374, y: 0.92675734}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 13eae6aa904afb84bbdc3c95cf7d8161
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_health_cocoon_top0001
+    boundsData:
+    - {x: 0.2890625, y: 1.515625, z: 0}
+    - {x: 2.859375, y: 4.875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 4.453125, y: 7.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.140625, y: -0.92187494, z: 0}
+    - {x: 1.71875, y: -0.92187494, z: 0}
+    - {x: -1.140625, y: 3.953125, z: 0}
+    - {x: 1.71875, y: 3.953125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.37011766, y: 0.7163091}
+    - {x: 0.37011766, y: 0.8056636}
+    - {x: 0.52246046, y: 0.7163091}
+    - {x: 0.52246046, y: 0.8056636}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: c2fbf566b8efa2e43ac82f9d6851ffd7
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_health_cocoon_top0002
+    boundsData:
+    - {x: 0.2890625, y: 1.515625, z: 0}
+    - {x: 2.859375, y: 4.875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 4.453125, y: 7.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.140625, y: -0.92187494, z: 0}
+    - {x: 1.71875, y: -0.92187494, z: 0}
+    - {x: -1.140625, y: 3.953125, z: 0}
+    - {x: 1.71875, y: 3.953125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.5092778, y: 0.80761766}
+    - {x: 0.59863234, y: 0.80761766}
+    - {x: 0.5092778, y: 0.95996046}
+    - {x: 0.59863234, y: 0.95996046}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: de99ece563eee5a478820a6b9124c290
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_health_cocoon_top0003
+    boundsData:
+    - {x: 0.2890625, y: 1.3671875, z: 0}
+    - {x: 2.859375, y: 5.171875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 4.453125, y: 7.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.140625, y: -1.2187499, z: 0}
+    - {x: 1.71875, y: -1.2187499, z: 0}
+    - {x: -1.140625, y: 3.953125, z: 0}
+    - {x: 1.71875, y: 3.953125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.09228565, y: 0.6064458}
+    - {x: 0.18164013, y: 0.6064458}
+    - {x: 0.09228565, y: 0.7680659}
+    - {x: 0.18164013, y: 0.7680659}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 84aefcb3d26584343a3fc2596e481c7e
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_health_cocoon_top0004
+    boundsData:
+    - {x: 0.20312494, y: 1.5234375, z: 0}
+    - {x: 2.84375, y: 4.859375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 4.453125, y: 7.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.21875, y: -0.90624994, z: 0}
+    - {x: 1.6249999, y: -0.90624994, z: 0}
+    - {x: -1.21875, y: 3.953125, z: 0}
+    - {x: 1.6249999, y: 3.953125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.21630909, y: 0.7465825}
+    - {x: 0.21630909, y: 0.83544874}
+    - {x: 0.3681636, y: 0.7465825}
+    - {x: 0.3681636, y: 0.83544874}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 7a2b649f9431a174f90b08c887f98cdb
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_health_cocoon_top0005
+    boundsData:
+    - {x: 0.38281244, y: 1.3828125, z: 0}
+    - {x: 2.921875, y: 5.140625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 4.453125, y: 7.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.078125, y: -1.1875, z: 0}
+    - {x: 1.8437499, y: -1.1875, z: 0}
+    - {x: -1.078125, y: 3.953125, z: 0}
+    - {x: 1.8437499, y: 3.953125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.36816454, y: 0.0009770507}
+    - {x: 0.45947218, y: 0.0009770507}
+    - {x: 0.36816454, y: 0.1616206}
+    - {x: 0.45947218, y: 0.1616206}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 257357afafebe80438636c464f0d2225
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_health_cocoon_top0006
+    boundsData:
+    - {x: 0.203125, y: 1.25, z: 0}
+    - {x: 4, y: 5.40625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 4.453125, y: 7.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.796875, y: -1.453125, z: 0}
+    - {x: 2.203125, y: -1.453125, z: 0}
+    - {x: -1.796875, y: 3.953125, z: 0}
+    - {x: 2.203125, y: 3.953125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.0009770507, y: 0.24365284}
+    - {x: 0.12597607, y: 0.24365284}
+    - {x: 0.0009770507, y: 0.41259718}
+    - {x: 0.12597607, y: 0.41259718}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: ee7e49e9ac2bc774c982bced24da18ce
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_health_cocoon_top0007
+    boundsData:
+    - {x: 0.2890625, y: 0.7734375, z: 0}
+    - {x: 2.859375, y: 6.359375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 4.453125, y: 7.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.140625, y: -2.40625, z: 0}
+    - {x: 1.71875, y: -2.40625, z: 0}
+    - {x: -1.140625, y: 3.953125, z: 0}
+    - {x: 1.71875, y: 3.953125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.0009770507, y: 0.64502}
+    - {x: 0.09033154, y: 0.64502}
+    - {x: 0.0009770507, y: 0.8437495}
+    - {x: 0.09033154, y: 0.8437495}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: b08c9bea9b98f714a9e07e9196968bfa
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_health_cocoon_top0008
+    boundsData:
+    - {x: 0.2890625, y: 0.1015625, z: 0}
+    - {x: 2.859375, y: 7.703125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 4.453125, y: 7.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.140625, y: -3.75, z: 0}
+    - {x: 1.71875, y: -3.75, z: 0}
+    - {x: -1.140625, y: 3.953125, z: 0}
+    - {x: 1.71875, y: 3.953125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.0009770507, y: 0.0009770507}
+    - {x: 0.09033154, y: 0.0009770507}
+    - {x: 0.0009770507, y: 0.24169873}
+    - {x: 0.09033154, y: 0.24169873}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 44495f07e390fd64a9eca8516915c0d8
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_health_cocoon_top0009
+    boundsData:
+    - {x: 0.2890625, y: 1.515625, z: 0}
+    - {x: 2.859375, y: 4.875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 4.453125, y: 7.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.140625, y: -0.92187494, z: 0}
+    - {x: 1.71875, y: -0.92187494, z: 0}
+    - {x: -1.140625, y: 3.953125, z: 0}
+    - {x: 1.71875, y: 3.953125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.27929735, y: 0.41406298}
+    - {x: 0.27929735, y: 0.5034175}
+    - {x: 0.43164015, y: 0.41406298}
+    - {x: 0.43164015, y: 0.5034175}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 9695a7e1fc5dd9f49b5f018780a363ba
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_health_cocoon_top0010
+    boundsData:
+    - {x: 0.2890625, y: 1.515625, z: 0}
+    - {x: 2.859375, y: 4.875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 4.453125, y: 7.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.140625, y: -0.92187494, z: 0}
+    - {x: 1.71875, y: -0.92187494, z: 0}
+    - {x: -1.140625, y: 3.953125, z: 0}
+    - {x: 1.71875, y: 3.953125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.37109423, y: 0.5053716}
+    - {x: 0.46044874, y: 0.5053716}
+    - {x: 0.37109423, y: 0.65771437}
+    - {x: 0.46044874, y: 0.65771437}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 385b21c56a077ef4b9aba0ffb7e769b6
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_health_cocoon_top0011
+    boundsData:
+    - {x: 0.2890625, y: 1.515625, z: 0}
+    - {x: 2.859375, y: 4.875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 4.453125, y: 7.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.140625, y: -0.92187494, z: 0}
+    - {x: 1.71875, y: -0.92187494, z: 0}
+    - {x: -1.140625, y: 3.953125, z: 0}
+    - {x: 1.71875, y: 3.953125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.43359423, y: 0.33105516}
+    - {x: 0.52294874, y: 0.33105516}
+    - {x: 0.43359423, y: 0.48339796}
+    - {x: 0.52294874, y: 0.48339796}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 2daa555e2009aab4bb4d8f7db426f0fe
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_health_cocoon_top0012
+    boundsData:
+    - {x: 0.2890625, y: 1.1875, z: 0}
+    - {x: 2.859375, y: 5.53125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 4.453125, y: 7.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.140625, y: -1.578125, z: 0}
+    - {x: 1.71875, y: -1.578125, z: 0}
+    - {x: -1.140625, y: 3.953125, z: 0}
+    - {x: 1.71875, y: 3.953125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.12793018, y: 0.24072315}
+    - {x: 0.12793018, y: 0.33007765}
+    - {x: 0.30078077, y: 0.24072315}
+    - {x: 0.30078077, y: 0.33007765}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 0d3eba9ad0885614faa2311c75887c95
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_health_cocoon_top0013
+    boundsData:
+    - {x: 0.2890625, y: 1.5, z: 0}
+    - {x: 2.859375, y: 4.90625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 4.453125, y: 7.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.140625, y: -0.9531251, z: 0}
+    - {x: 1.71875, y: -0.9531251, z: 0}
+    - {x: -1.140625, y: 3.953125, z: 0}
+    - {x: 1.71875, y: 3.953125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.30273485, y: 0.23974659}
+    - {x: 0.30273485, y: 0.3291011}
+    - {x: 0.4560542, y: 0.23974659}
+    - {x: 0.4560542, y: 0.3291011}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 0998c4d82ee4ecf43a8ac3e4a1eec0bf
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_health_cocoon_top0014
+    boundsData:
+    - {x: 0.2890625, y: 1.4140625, z: 0}
+    - {x: 2.859375, y: 5.078125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 4.453125, y: 7.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.140625, y: -1.1250001, z: 0}
+    - {x: 1.71875, y: -1.1250001, z: 0}
+    - {x: -1.140625, y: 3.953125, z: 0}
+    - {x: 1.71875, y: 3.953125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.19433643, y: 0.8374028}
+    - {x: 0.19433643, y: 0.92675734}
+    - {x: 0.35302687, y: 0.8374028}
+    - {x: 0.35302687, y: 0.92675734}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 76712ca8a8215184a82736d727b8ead6
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_health_cocoon_top0015
+    boundsData:
+    - {x: 0.2890625, y: 1.2890625, z: 0}
+    - {x: 2.859375, y: 5.328125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 4.453125, y: 7.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.140625, y: -1.3749999, z: 0}
+    - {x: 1.71875, y: -1.3749999, z: 0}
+    - {x: -1.140625, y: 3.953125, z: 0}
+    - {x: 1.71875, y: 3.953125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.18554737, y: 0.0009770507}
+    - {x: 0.27490187, y: 0.0009770507}
+    - {x: 0.18554737, y: 0.16747998}
+    - {x: 0.27490187, y: 0.16747998}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: e6ba80de6f12e56439b3628011fe463c
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_health_cocoon_top0016
+    boundsData:
+    - {x: 0.2890625, y: 0.890625, z: 0}
+    - {x: 2.859375, y: 6.125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 4.453125, y: 7.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.140625, y: -2.171875, z: 0}
+    - {x: 1.71875, y: -2.171875, z: 0}
+    - {x: -1.140625, y: 3.953125, z: 0}
+    - {x: 1.71875, y: 3.953125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.0009770507, y: 0.8457036}
+    - {x: 0.0009770507, y: 0.9350581}
+    - {x: 0.19238232, y: 0.8457036}
+    - {x: 0.19238232, y: 0.9350581}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: b46820132c10e0046b3342abd9c374ed
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_health_cocoon_top0017
+    boundsData:
+    - {x: 0.2890625, y: 0.296875, z: 0}
+    - {x: 2.859375, y: 7.3125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 4.453125, y: 7.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.140625, y: -3.359375, z: 0}
+    - {x: 1.71875, y: -3.359375, z: 0}
+    - {x: -1.140625, y: 3.953125, z: 0}
+    - {x: 1.71875, y: 3.953125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.0009770507, y: 0.41455126}
+    - {x: 0.09033154, y: 0.41455126}
+    - {x: 0.0009770507, y: 0.6430659}
+    - {x: 0.09033154, y: 0.6430659}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 97db88e99b2f0604f9564270936d0db9
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_health_cocoon_top0018
+    boundsData:
+    - {x: 0.2890625, y: 1.3203125, z: 0}
+    - {x: 2.859375, y: 5.265625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 4.453125, y: 7.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.140625, y: -1.3125, z: 0}
+    - {x: 1.71875, y: -1.3125, z: 0}
+    - {x: -1.140625, y: 3.953125, z: 0}
+    - {x: 1.71875, y: 3.953125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.27685595, y: 0.0009770507}
+    - {x: 0.36621046, y: 0.0009770507}
+    - {x: 0.27685595, y: 0.16552685}
+    - {x: 0.36621046, y: 0.16552685}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 7108ca756a2e4e74cbc2f02cf1689e52
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_health_cocoon_top0019
+    boundsData:
+    - {x: 0.20312494, y: 0.9140625, z: 0}
+    - {x: 2.84375, y: 6.078125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 4.453125, y: 7.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.21875, y: -2.125, z: 0}
+    - {x: 1.6249999, y: -2.125, z: 0}
+    - {x: -1.21875, y: 3.953125, z: 0}
+    - {x: 1.6249999, y: 3.953125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.09228565, y: 0.41455126}
+    - {x: 0.18115185, y: 0.41455126}
+    - {x: 0.09228565, y: 0.6044917}
+    - {x: 0.18115185, y: 0.6044917}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: d30f6953594833745a653124cac1d8d4
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_health_cocoon_top0020
+    boundsData:
+    - {x: 0.38281244, y: 0.3203125, z: 0}
+    - {x: 2.921875, y: 7.265625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 4.453125, y: 7.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.078125, y: -3.3125, z: 0}
+    - {x: 1.8437499, y: -3.3125, z: 0}
+    - {x: -1.078125, y: 3.953125, z: 0}
+    - {x: 1.8437499, y: 3.953125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.09228565, y: 0.0009770507}
+    - {x: 0.18359326, y: 0.0009770507}
+    - {x: 0.09228565, y: 0.22802685}
+    - {x: 0.18359326, y: 0.22802685}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 25196413025539d4eacf633e9706b169
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_health_cocoon_top0021
+    boundsData:
+    - {x: 0.43750006, y: 1.53125, z: 0}
+    - {x: 2.9375, y: 4.84375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 4.453125, y: 7.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.0312499, y: -0.890625, z: 0}
+    - {x: 1.90625, y: -0.890625, z: 0}
+    - {x: -1.0312499, y: 3.953125, z: 0}
+    - {x: 1.90625, y: 3.953125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.46142626, y: 0.0009770507}
+    - {x: 0.5532222, y: 0.0009770507}
+    - {x: 0.46142626, y: 0.15234326}
+    - {x: 0.5532222, y: 0.15234326}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: a8e3d978024b9ad42866aeb3b33b150e
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_health_cocoon_top0022
+    boundsData:
+    - {x: 0.2890625, y: 1.53125, z: 0}
+    - {x: 2.859375, y: 4.84375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 4.453125, y: 7.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.140625, y: -0.890625, z: 0}
+    - {x: 1.71875, y: -0.890625, z: 0}
+    - {x: -1.140625, y: 3.953125, z: 0}
+    - {x: 1.71875, y: 3.953125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.55517626, y: 0.0009770507}
+    - {x: 0.6445308, y: 0.0009770507}
+    - {x: 0.55517626, y: 0.15234326}
+    - {x: 0.6445308, y: 0.15234326}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: dbd20708f30b38c438f038f3761c7fbd
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_health_plant_010013
+    boundsData:
+    - {x: 0.10156247, y: -0.09375006, z: 0}
+    - {x: 1.609375, y: 3.65625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 2.203125, y: 3.953125, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.703125, y: -1.921875, z: 0}
+    - {x: 0.90624994, y: -1.921875, z: 0}
+    - {x: -0.703125, y: 1.7343749, z: 0}
+    - {x: 0.90624994, y: 1.7343749, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.12793018, y: 0.33203173}
+    - {x: 0.12793018, y: 0.38232374}
+    - {x: 0.24218701, y: 0.33203173}
+    - {x: 0.24218701, y: 0.38232374}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 779011b38a5f41545a9d1112b5c75a47
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_health_plant_010014
+    boundsData:
+    - {x: 0.1015625, y: -0.07812494, z: 0}
+    - {x: 1.390625, y: 3.6875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 2.203125, y: 3.953125, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.59375, y: -1.921875, z: 0}
+    - {x: 0.796875, y: -1.921875, z: 0}
+    - {x: -0.59375, y: 1.7656251, z: 0}
+    - {x: 0.796875, y: 1.7656251, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.18554737, y: 0.16943409}
+    - {x: 0.18554737, y: 0.21289013}
+    - {x: 0.30078077, y: 0.16943409}
+    - {x: 0.30078077, y: 0.21289013}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 5e4eab8274b582943bb1bebe24383bb8
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_health_plant_010015
+    boundsData:
+    - {x: 0.08593753, y: -0.07031244, z: 0}
+    - {x: 1.296875, y: 3.703125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 2.203125, y: 3.953125, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.5625, y: -1.921875, z: 0}
+    - {x: 0.73437506, y: -1.921875, z: 0}
+    - {x: -0.5625, y: 1.7812501, z: 0}
+    - {x: 0.73437506, y: 1.7812501, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.30273485, y: 0.16748096}
+    - {x: 0.30273485, y: 0.20800732}
+    - {x: 0.41845655, y: 0.16748096}
+    - {x: 0.41845655, y: 0.20800732}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 5a767e0ec56b9d34abe189e3acf00d20
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_health_plant_010016
+    boundsData:
+    - {x: 0.0546875, y: -0.14843744, z: 0}
+    - {x: 1.765625, y: 3.546875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 2.203125, y: 3.953125, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.828125, y: -1.921875, z: 0}
+    - {x: 0.9375, y: -1.921875, z: 0}
+    - {x: -0.828125, y: 1.6250001, z: 0}
+    - {x: 0.9375, y: 1.6250001, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.0009770507, y: 0.9370122}
+    - {x: 0.0009770507, y: 0.992187}
+    - {x: 0.111815915, y: 0.9370122}
+    - {x: 0.111815915, y: 0.992187}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 320909b2f842bb140b7dfd53bb9e6277
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_health_plant_010017
+    boundsData:
+    - {x: 0.1015625, y: -0.1171875, z: 0}
+    - {x: 1.671875, y: 3.609375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 2.203125, y: 3.953125, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.734375, y: -1.921875, z: 0}
+    - {x: 0.9375, y: -1.921875, z: 0}
+    - {x: -0.734375, y: 1.6875, z: 0}
+    - {x: 0.9375, y: 1.6875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.11377002, y: 0.9370122}
+    - {x: 0.11377002, y: 0.98925734}
+    - {x: 0.22656201, y: 0.9370122}
+    - {x: 0.22656201, y: 0.98925734}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 026c2f67284f8b842bbceb5b6261fd83
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_health_plant_020007
+    boundsData:
+    - {x: 0.0703125, y: -0.11718738, z: 0}
+    - {x: 2.953125, y: 4.671875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.484375, y: 5.171875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.40625, y: -2.453125, z: 0}
+    - {x: 1.546875, y: -2.453125, z: 0}
+    - {x: -1.40625, y: 2.2187502, z: 0}
+    - {x: 1.546875, y: 2.2187502, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.46240282, y: 0.48535204}
+    - {x: 0.554687, y: 0.48535204}
+    - {x: 0.46240282, y: 0.6313472}
+    - {x: 0.554687, y: 0.6313472}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: a1bc7c42c82abc147b95c9cd5d9f01e0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_health_plant_020008
+    boundsData:
+    - {x: 0.1484375, y: -0.11718738, z: 0}
+    - {x: 2.796875, y: 4.671875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.484375, y: 5.171875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.25, y: -2.453125, z: 0}
+    - {x: 1.546875, y: -2.453125, z: 0}
+    - {x: -1.25, y: 2.2187502, z: 0}
+    - {x: 1.546875, y: 2.2187502, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.61767626, y: 0.61279345}
+    - {x: 0.70507765, y: 0.61279345}
+    - {x: 0.61767626, y: 0.7587886}
+    - {x: 0.70507765, y: 0.7587886}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 41b1271fac408234485cf8af056e8e3c
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_health_plant_020009
+    boundsData:
+    - {x: 0.1796875, y: -0.11718738, z: 0}
+    - {x: 2.734375, y: 4.671875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.484375, y: 5.171875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.1875, y: -2.453125, z: 0}
+    - {x: 1.546875, y: -2.453125, z: 0}
+    - {x: -1.1875, y: 2.2187502, z: 0}
+    - {x: 1.546875, y: 2.2187502, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.64697313, y: 0.4521489}
+    - {x: 0.7324214, y: 0.4521489}
+    - {x: 0.64697313, y: 0.59814405}
+    - {x: 0.7324214, y: 0.59814405}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: e71a7d63204ddb74d870357332414aff
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_health_plant_020010
+    boundsData:
+    - {x: 0.0390625, y: -0.078125, z: 0}
+    - {x: 3.015625, y: 4.75, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.484375, y: 5.171875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.46875, y: -2.453125, z: 0}
+    - {x: 1.546875, y: -2.453125, z: 0}
+    - {x: -1.46875, y: 2.296875, z: 0}
+    - {x: 1.546875, y: 2.296875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.18310596, y: 0.41406298}
+    - {x: 0.27734327, y: 0.41406298}
+    - {x: 0.18310596, y: 0.5624995}
+    - {x: 0.27734327, y: 0.5624995}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 03c85b0cfa385ad4fa7aaaea9813f5fa
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_health_plant_020011
+    boundsData:
+    - {x: 0.0703125, y: -0.0546875, z: 0}
+    - {x: 2.953125, y: 4.796875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.484375, y: 5.171875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.40625, y: -2.453125, z: 0}
+    - {x: 1.546875, y: -2.453125, z: 0}
+    - {x: -1.40625, y: 2.34375, z: 0}
+    - {x: 1.546875, y: 2.34375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.18359424, y: 0.59472704}
+    - {x: 0.27587843, y: 0.59472704}
+    - {x: 0.18359424, y: 0.7446284}
+    - {x: 0.27587843, y: 0.7446284}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 60088bfb3f285d543827f0eccae4c5bf
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_health_plant_020012
+    boundsData:
+    - {x: 0.0859375, y: -0.2109375, z: 0}
+    - {x: 2.921875, y: 4.484375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.484375, y: 5.171875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.375, y: -2.453125, z: 0}
+    - {x: 1.546875, y: -2.453125, z: 0}
+    - {x: -1.375, y: 2.03125, z: 0}
+    - {x: 1.546875, y: 2.03125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.7397466, y: 0.0009770507}
+    - {x: 0.8310542, y: 0.0009770507}
+    - {x: 0.7397466, y: 0.14111279}
+    - {x: 0.8310542, y: 0.14111279}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: b249b42f60bf4e640b6abdf741f3edfc
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_health_plant_020013
+    boundsData:
+    - {x: 0.0859375, y: -0.1484375, z: 0}
+    - {x: 2.921875, y: 4.609375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.484375, y: 5.171875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.375, y: -2.453125, z: 0}
+    - {x: 1.546875, y: -2.453125, z: 0}
+    - {x: -1.375, y: 2.15625, z: 0}
+    - {x: 1.546875, y: 2.15625, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.64648485, y: 0.0009770507}
+    - {x: 0.7377925, y: 0.0009770507}
+    - {x: 0.64648485, y: 0.14501904}
+    - {x: 0.7377925, y: 0.14501904}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 7da58ad38e9d1f544ab955f135f15535
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_health_plant_020014
+    boundsData:
+    - {x: 0.0859375, y: -0.11718738, z: 0}
+    - {x: 2.921875, y: 4.671875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.484375, y: 5.171875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.375, y: -2.453125, z: 0}
+    - {x: 1.546875, y: -2.453125, z: 0}
+    - {x: -1.375, y: 2.2187502, z: 0}
+    - {x: 1.546875, y: 2.2187502, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.5249028, y: 0.3144536}
+    - {x: 0.61621046, y: 0.3144536}
+    - {x: 0.5249028, y: 0.46044874}
+    - {x: 0.61621046, y: 0.46044874}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: b79fce555d6c5b844868171445eec8d3
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_health_plant_020015
+    boundsData:
+    - {x: 0.0859375, y: -0.078125, z: 0}
+    - {x: 2.921875, y: 4.75, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.484375, y: 5.171875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.375, y: -2.453125, z: 0}
+    - {x: 1.546875, y: -2.453125, z: 0}
+    - {x: -1.375, y: 2.296875, z: 0}
+    - {x: 1.546875, y: 2.296875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.4580083, y: 0.2211919}
+    - {x: 0.4580083, y: 0.31249952}
+    - {x: 0.60644484, y: 0.2211919}
+    - {x: 0.60644484, y: 0.31249952}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: fe337fa65d02a2a4c93420bbdff11241
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_health_plant_020016
+    boundsData:
+    - {x: 0.0859375, y: -0.0546875, z: 0}
+    - {x: 2.921875, y: 4.796875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.484375, y: 5.171875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.375, y: -2.453125, z: 0}
+    - {x: 1.546875, y: -2.453125, z: 0}
+    - {x: -1.375, y: 2.34375, z: 0}
+    - {x: 1.546875, y: 2.34375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.2778325, y: 0.5644536}
+    - {x: 0.36914015, y: 0.5644536}
+    - {x: 0.2778325, y: 0.714355}
+    - {x: 0.36914015, y: 0.714355}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 17e7a9b3df6233d409852238c2ac0439
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_health_plant_020017
+    boundsData:
+    - {x: 0.0859375, y: -0.2109375, z: 0}
+    - {x: 2.921875, y: 4.484375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.484375, y: 5.171875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.375, y: -2.453125, z: 0}
+    - {x: 1.546875, y: -2.453125, z: 0}
+    - {x: -1.375, y: 2.03125, z: 0}
+    - {x: 1.546875, y: 2.03125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.6005864, y: 0.77929735}
+    - {x: 0.69189405, y: 0.77929735}
+    - {x: 0.6005864, y: 0.9194331}
+    - {x: 0.69189405, y: 0.9194331}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 42e3d49df7ca38a4ab886300b6e454e7
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_health_plant_020018
+    boundsData:
+    - {x: 0.0859375, y: -0.1484375, z: 0}
+    - {x: 2.921875, y: 4.609375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.484375, y: 5.171875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.375, y: -2.453125, z: 0}
+    - {x: 1.546875, y: -2.453125, z: 0}
+    - {x: -1.375, y: 2.15625, z: 0}
+    - {x: 1.546875, y: 2.15625, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.52441454, y: 0.63330126}
+    - {x: 0.6157222, y: 0.63330126}
+    - {x: 0.52441454, y: 0.7773433}
+    - {x: 0.6157222, y: 0.7773433}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: c2e3d03faacbd5946906042efc93a2ad
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_health_plant_020019
+    boundsData:
+    - {x: 0.0390625, y: -0.078125, z: 0}
+    - {x: 2.828125, y: 4.75, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.484375, y: 5.171875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.375, y: -2.453125, z: 0}
+    - {x: 1.453125, y: -2.453125, z: 0}
+    - {x: -1.375, y: 2.296875, z: 0}
+    - {x: 1.453125, y: 2.296875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.5566411, y: 0.46240282}
+    - {x: 0.64501905, y: 0.46240282}
+    - {x: 0.5566411, y: 0.61083937}
+    - {x: 0.64501905, y: 0.61083937}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: d0542047af10346478ff42b2cbd53cb7
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_health_plant_020020
+    boundsData:
+    - {x: 0.01562506, y: -0.0546875, z: 0}
+    - {x: 2.78125, y: 4.796875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.484375, y: 5.171875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.375, y: -2.453125, z: 0}
+    - {x: 1.4062501, y: -2.453125, z: 0}
+    - {x: -1.375, y: 2.34375, z: 0}
+    - {x: 1.4062501, y: 2.34375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.61816454, y: 0.30029345}
+    - {x: 0.70507765, y: 0.30029345}
+    - {x: 0.61816454, y: 0.45019484}
+    - {x: 0.70507765, y: 0.45019484}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: a3a10e84f74f8c94093b0a284d4720b5
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_health_plant_020021
+    boundsData:
+    - {x: 0.10937494, y: -0.2109375, z: 0}
+    - {x: 2.96875, y: 4.484375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.484375, y: 5.171875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.375, y: -2.453125, z: 0}
+    - {x: 1.5937499, y: -2.453125, z: 0}
+    - {x: -1.375, y: 2.03125, z: 0}
+    - {x: 1.5937499, y: 2.03125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.7021489, y: 0.14697315}
+    - {x: 0.7949214, y: 0.14697315}
+    - {x: 0.7021489, y: 0.2871089}
+    - {x: 0.7949214, y: 0.2871089}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 15d920c08b0a4e849a2d07eb3aabad34
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_health_plant_020022
+    boundsData:
+    - {x: 0.09375, y: -0.1484375, z: 0}
+    - {x: 2.9375, y: 4.609375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.484375, y: 5.171875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.375, y: -2.453125, z: 0}
+    - {x: 1.5625, y: -2.453125, z: 0}
+    - {x: -1.375, y: 2.15625, z: 0}
+    - {x: 1.5625, y: 2.15625, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.6083989, y: 0.15429737}
+    - {x: 0.70019484, y: 0.15429737}
+    - {x: 0.6083989, y: 0.29833937}
+    - {x: 0.70019484, y: 0.29833937}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 2dd710a8be1f70f4fabc3c86838e17ef
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_land0000
+    boundsData:
+    - {x: 0.03124997, y: -0.0703125, z: 0}
+    - {x: 1.09375, y: 1.015625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 1.71875, y: 1.140625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.515625, y: -0.578125, z: 0}
+    - {x: 0.57812494, y: -0.578125, z: 0}
+    - {x: -0.515625, y: 0.4375, z: 0}
+    - {x: 0.57812494, y: 0.4375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.09228565, y: 0.77002}
+    - {x: 0.09228565, y: 0.80419874}
+    - {x: 0.124022946, y: 0.77002}
+    - {x: 0.124022946, y: 0.80419874}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 5f75bcdfd90533a4b871bb6e81eae451
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_land0001
+    boundsData:
+    - {x: 0.015624985, y: 0.046874985, z: 0}
+    - {x: 0.90625, y: 0.90625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 1.71875, y: 1.140625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.4375, y: -0.40625, z: 0}
+    - {x: 0.46874997, y: -0.40625, z: 0}
+    - {x: -0.4375, y: 0.49999997, z: 0}
+    - {x: 0.46874997, y: 0.49999997, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.18310596, y: 0.5644536}
+    - {x: 0.21142529, y: 0.5644536}
+    - {x: 0.18310596, y: 0.59277296}
+    - {x: 0.21142529, y: 0.59277296}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 63985a83bd1f2bd44b917ebf31e48477
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_land0002
+    boundsData:
+    - {x: 0.03125, y: -0.0703125, z: 0}
+    - {x: 0.96875, y: 1.015625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 1.71875, y: 1.140625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.453125, y: -0.578125, z: 0}
+    - {x: 0.515625, y: -0.578125, z: 0}
+    - {x: -0.453125, y: 0.4375, z: 0}
+    - {x: 0.515625, y: 0.4375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.18408252, y: 0.8037114}
+    - {x: 0.21435498, y: 0.8037114}
+    - {x: 0.18408252, y: 0.83544874}
+    - {x: 0.21435498, y: 0.83544874}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 357c7567d9421ca45ac0340251f6bfb4
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_land_fly0000
+    boundsData:
+    - {x: 0.0234375, y: -0.109374985, z: 0}
+    - {x: 1.015625, y: 0.9375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 1.71875, y: 1.140625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.484375, y: -0.578125, z: 0}
+    - {x: 0.53125, y: -0.578125, z: 0}
+    - {x: -0.484375, y: 0.35937503, z: 0}
+    - {x: 0.53125, y: 0.35937503, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.25927782, y: 0.9287114}
+    - {x: 0.25927782, y: 0.96044874}
+    - {x: 0.28857374, y: 0.9287114}
+    - {x: 0.28857374, y: 0.96044874}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 9f699049353d1724db6c79ac1755620b
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_land_fly0001
+    boundsData:
+    - {x: 0.02343753, y: -0.015625, z: 0}
+    - {x: 0.92187506, y: 1.0625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 1.71875, y: 1.140625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.4375, y: -0.546875, z: 0}
+    - {x: 0.48437506, y: -0.546875, z: 0}
+    - {x: -0.4375, y: 0.515625, z: 0}
+    - {x: 0.48437506, y: 0.515625, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.22851612, y: 0.9287114}
+    - {x: 0.25732374, y: 0.9287114}
+    - {x: 0.22851612, y: 0.9619136}
+    - {x: 0.25732374, y: 0.9619136}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 26da0024942b9424591d6fc63eb607f2
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_land_fly0002
+    boundsData:
+    - {x: 0.07031253, y: -0.03125, z: 0}
+    - {x: 1.078125, y: 0.90625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 1.71875, y: 1.140625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.46875, y: -0.484375, z: 0}
+    - {x: 0.60937506, y: -0.484375, z: 0}
+    - {x: -0.46875, y: 0.421875, z: 0}
+    - {x: 0.60937506, y: 0.421875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.22851612, y: 0.96386766}
+    - {x: 0.22851612, y: 0.9975581}
+    - {x: 0.25683546, y: 0.96386766}
+    - {x: 0.25683546, y: 0.9975581}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: cfc7072957224cd4c917d1c3f82b6614
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_land_fly0003
+    boundsData:
+    - {x: 0.1796875, y: -0.109374985, z: 0}
+    - {x: 0.984375, y: 0.9375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 1.71875, y: 1.140625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.3125, y: -0.578125, z: 0}
+    - {x: 0.671875, y: -0.578125, z: 0}
+    - {x: -0.3125, y: 0.35937503, z: 0}
+    - {x: 0.671875, y: 0.35937503, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.32031298, y: 0.9287114}
+    - {x: 0.32031298, y: 0.9594722}
+    - {x: 0.3496089, y: 0.9287114}
+    - {x: 0.3496089, y: 0.9594722}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: ab0e99f401bf0d6488777bd37ea82600
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_land_to_idle0000
+    boundsData:
+    - {x: 0.0078125, y: -0.3359375, z: 0}
+    - {x: 1.359375, y: 0.421875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.90625, y: 1.1875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.671875, y: -0.546875, z: 0}
+    - {x: 0.6875, y: -0.546875, z: 0}
+    - {x: -0.671875, y: -0.124999985, z: 0}
+    - {x: 0.6875, y: -0.124999985, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.24414112, y: 0.3642583}
+    - {x: 0.28662062, y: 0.3642583}
+    - {x: 0.24414112, y: 0.37744093}
+    - {x: 0.28662062, y: 0.37744093}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 75876a588bc6aeb41bdd51e2600764c4
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_land_to_idle0001
+    boundsData:
+    - {x: 0.0234375, y: -0.18750001, z: 0}
+    - {x: 1.046875, y: 0.6875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.90625, y: 1.1875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.5, y: -0.53125, z: 0}
+    - {x: 0.546875, y: -0.53125, z: 0}
+    - {x: -0.5, y: 0.15624997, z: 0}
+    - {x: 0.546875, y: 0.15624997, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.2753911, y: 0.379395}
+    - {x: 0.2753911, y: 0.4121089}
+    - {x: 0.29687452, y: 0.379395}
+    - {x: 0.29687452, y: 0.4121089}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: bb7073b4d09167f4fb5ec553a2e8dfc3
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_land_to_idle0002
+    boundsData:
+    - {x: 0.00781253, y: -0.24999999, z: 0}
+    - {x: 1.046875, y: 0.59375006, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.90625, y: 1.1875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.515625, y: -0.546875, z: 0}
+    - {x: 0.53125006, y: -0.546875, z: 0}
+    - {x: -0.515625, y: 0.046875034, z: 0}
+    - {x: 0.53125006, y: 0.046875034, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.3222661, y: 0.20996143}
+    - {x: 0.35498, y: 0.20996143}
+    - {x: 0.3222661, y: 0.22851513}
+    - {x: 0.35498, y: 0.22851513}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 2a2155cc5de186d4895f743a5aa118ff
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_land_to_idle0003
+    boundsData:
+    - {x: -0.01562497, y: -0.3671875, z: 0}
+    - {x: 1.28125, y: 0.390625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.90625, y: 1.1875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.65625, y: -0.5625, z: 0}
+    - {x: 0.62500006, y: -0.5625, z: 0}
+    - {x: -0.65625, y: -0.17187501, z: 0}
+    - {x: 0.62500006, y: -0.17187501, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.42041063, y: 0.16357471}
+    - {x: 0.42041063, y: 0.20361279}
+    - {x: 0.4326167, y: 0.16357471}
+    - {x: 0.4326167, y: 0.20361279}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 83de89a68676520499dc12bd324642e1
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_land_to_idle0004
+    boundsData:
+    - {x: 0.0078125, y: -0.296875, z: 0}
+    - {x: 1.140625, y: 0.5, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.90625, y: 1.1875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.5625, y: -0.546875, z: 0}
+    - {x: 0.578125, y: -0.546875, z: 0}
+    - {x: -0.5625, y: -0.046875, z: 0}
+    - {x: 0.578125, y: -0.046875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.2885747, y: 0.35986376}
+    - {x: 0.32421827, y: 0.35986376}
+    - {x: 0.2885747, y: 0.3754878}
+    - {x: 0.32421827, y: 0.3754878}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: ee7a29d20e4d1f64ca50643ba2a9d75a
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_land_to_idle0005
+    boundsData:
+    - {x: 0.03125, y: -0.23437501, z: 0}
+    - {x: 1.03125, y: 0.59375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.90625, y: 1.1875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.484375, y: -0.53125, z: 0}
+    - {x: 0.546875, y: -0.53125, z: 0}
+    - {x: -0.484375, y: 0.062499974, z: 0}
+    - {x: 0.546875, y: 0.062499974, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.35693407, y: 0.20996143}
+    - {x: 0.38915968, y: 0.20996143}
+    - {x: 0.35693407, y: 0.22851513}
+    - {x: 0.38915968, y: 0.22851513}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 024246b905402b74e8ed2ed4df9ee4a3
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_land_to_idle0006
+    boundsData:
+    - {x: 0.015625, y: -0.3125, z: 0}
+    - {x: 1.09375, y: 0.4375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.90625, y: 1.1875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.53125, y: -0.53125, z: 0}
+    - {x: 0.5625, y: -0.53125, z: 0}
+    - {x: -0.53125, y: -0.09375, z: 0}
+    - {x: 0.5625, y: -0.09375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.43066454, y: 0.2055669}
+    - {x: 0.46484327, y: 0.2055669}
+    - {x: 0.43066454, y: 0.21923779}
+    - {x: 0.46484327, y: 0.21923779}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 015edbff0498d004b96482e67a956ab4
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_land_to_idle0007
+    boundsData:
+    - {x: 0.02343753, y: -0.296875, z: 0}
+    - {x: 1.203125, y: 0.46875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.90625, y: 1.1875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.578125, y: -0.53125, z: 0}
+    - {x: 0.62500006, y: -0.53125, z: 0}
+    - {x: -0.578125, y: -0.06250001, z: 0}
+    - {x: 0.62500006, y: -0.06250001, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.39111376, y: 0.20996143}
+    - {x: 0.42871046, y: 0.20996143}
+    - {x: 0.39111376, y: 0.22460888}
+    - {x: 0.42871046, y: 0.22460888}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 41adc91666f98a74b8fdb391bc078a71
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_run0000
+    boundsData:
+    - {x: 0.09374997, y: -0.0390625, z: 0}
+    - {x: 0.96874994, y: 0.921875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 1.71875, y: 1.140625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.390625, y: -0.5, z: 0}
+    - {x: 0.57812494, y: -0.5, z: 0}
+    - {x: -0.390625, y: 0.421875, z: 0}
+    - {x: 0.57812494, y: 0.421875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.35156298, y: 0.9287114}
+    - {x: 0.35156298, y: 0.9589839}
+    - {x: 0.38037062, y: 0.9287114}
+    - {x: 0.38037062, y: 0.9589839}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 9a04ef65fcdccbf43b900a4f392e6fba
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_run0001
+    boundsData:
+    - {x: 0.1328125, y: 0.0390625, z: 0}
+    - {x: 1.046875, y: 1.015625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 1.71875, y: 1.140625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.390625, y: -0.46875, z: 0}
+    - {x: 0.65625, y: -0.46875, z: 0}
+    - {x: -0.390625, y: 0.546875, z: 0}
+    - {x: 0.65625, y: 0.546875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.12597705, y: 0.77002}
+    - {x: 0.12597705, y: 0.8027339}
+    - {x: 0.15771435, y: 0.77002}
+    - {x: 0.15771435, y: 0.8027339}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 80572c8db7d373b4ebd09d8bb6b04326
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_run0002
+    boundsData:
+    - {x: 0.24218749, y: -0.109375, z: 0}
+    - {x: 1.203125, y: 0.84375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 1.71875, y: 1.140625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.35937503, y: -0.53125, z: 0}
+    - {x: 0.84375, y: -0.53125, z: 0}
+    - {x: -0.35937503, y: 0.3125, z: 0}
+    - {x: 0.84375, y: 0.3125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.12597705, y: 0.804688}
+    - {x: 0.12597705, y: 0.8422847}
+    - {x: 0.15234326, y: 0.804688}
+    - {x: 0.15234326, y: 0.8422847}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: e3f39210b7513564aac54f86395b6498
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_run0003
+    boundsData:
+    - {x: 0.14843749, y: 0.0234375, z: 0}
+    - {x: 1.015625, y: 1.046875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 1.71875, y: 1.140625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.35937503, y: -0.5, z: 0}
+    - {x: 0.65625, y: -0.5, z: 0}
+    - {x: -0.35937503, y: 0.546875, z: 0}
+    - {x: 0.65625, y: 0.546875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.09228565, y: 0.8061528}
+    - {x: 0.124022946, y: 0.8061528}
+    - {x: 0.09228565, y: 0.8388667}
+    - {x: 0.124022946, y: 0.8388667}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 127e1122c276bf9408a8e48acdc82ced
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_spawn0000
+    boundsData:
+    - {x: 0.046875015, y: -0.070312515, z: 0}
+    - {x: 0.71875, y: 0.890625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 1.71875, y: 1.140625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.3125, y: -0.515625, z: 0}
+    - {x: 0.40625003, y: -0.515625, z: 0}
+    - {x: -0.3125, y: 0.37499997, z: 0}
+    - {x: 0.40625003, y: 0.37499997, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.30517626, y: 0.33105516}
+    - {x: 0.30517626, y: 0.35351515}
+    - {x: 0.33300734, y: 0.33105516}
+    - {x: 0.33300734, y: 0.35351515}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 8bd3926c6c23add40911c98f147392c1
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_spawn0001
+    boundsData:
+    - {x: 0.0078124553, y: -0.039062485, z: 0}
+    - {x: 0.734375, y: 1.046875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 1.71875, y: 1.140625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.35937503, y: -0.5625, z: 0}
+    - {x: 0.37499994, y: -0.5625, z: 0}
+    - {x: -0.35937503, y: 0.48437503, z: 0}
+    - {x: 0.37499994, y: 0.48437503, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.28759813, y: 0.21484424}
+    - {x: 0.28759813, y: 0.23779248}
+    - {x: 0.32031202, y: 0.21484424}
+    - {x: 0.32031202, y: 0.23779248}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 09b5cbaff79a98247a72316c2c3cc5f7
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_spawn0002
+    boundsData:
+    - {x: 0.031249985, y: -0.093750015, z: 0}
+    - {x: 0.84375, y: 0.96875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 1.71875, y: 1.140625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.390625, y: -0.578125, z: 0}
+    - {x: 0.45312497, y: -0.578125, z: 0}
+    - {x: -0.390625, y: 0.39062497, z: 0}
+    - {x: 0.45312497, y: 0.39062497, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.24414112, y: 0.33203173}
+    - {x: 0.27050734, y: 0.33203173}
+    - {x: 0.24414112, y: 0.3623042}
+    - {x: 0.27050734, y: 0.3623042}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: a0511292e4d68444db89d2950c6068e9
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Health Bugs_spawn0003
+    boundsData:
+    - {x: -0.007812485, y: -0.03125, z: 0}
+    - {x: 0.828125, y: 1.09375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 1.71875, y: 1.140625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.421875, y: -0.578125, z: 0}
+    - {x: 0.40625003, y: -0.578125, z: 0}
+    - {x: -0.421875, y: 0.515625, z: 0}
+    - {x: 0.40625003, y: 0.515625, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.3486333, y: 0.96142626}
+    - {x: 0.37451124, y: 0.96142626}
+    - {x: 0.3486333, y: 0.995605}
+    - {x: 0.37451124, y: 0.995605}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+    materialId: 0
+    sourceTextureGUID: aef3f29c4bdfedf46b8d2187cb9a1baf
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  premultipliedAlpha: 0
+  material: {fileID: 0}
+  materials:
+  - {fileID: 2100000, guid: 701ef12f367b7e2449febcdb06fcf3d8, type: 2}
+  textures:
+  - {fileID: 2800000, guid: 5796a6c4cb5c27346a3f9d7fdfdc1f0d, type: 3}
+  pngTextures: []
+  materialPngTextureId: 00000000
+  textureFilterMode: 1
+  textureMipMaps: 0
+  allowMultipleAtlases: 0
+  spriteCollectionGUID: 374ead2bc38b15e44b87e72795575504
+  spriteCollectionName: HealthBugsSpriteCollection
+  assetName: 
+  loadable: 0
+  invOrthoSize: 2
+  halfTargetHeight: 32
+  buildKey: 595088378
+  dataGuid: 958baf3c6a629294abba7f6a67f5ced8
+  managedSpriteCollection: 0
+  hasPlatformData: 0
+  spriteCollectionPlatforms: []
+  spriteCollectionPlatformGUIDs: []

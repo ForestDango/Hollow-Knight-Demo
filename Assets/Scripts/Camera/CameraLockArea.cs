@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class CameraLockArea : MonoBehaviour
 {
-    private bool verboseMode = true;
+    private bool verboseMode;
     public bool maxPriority;
 
     public float cameraXMin;
@@ -51,14 +51,19 @@ public class CameraLockArea : MonoBehaviour
 	{
 	    leftSideX = box2d.bounds.min.x;
 	    rightSideX = box2d.bounds.max.x;
-	    topSideY = box2d.bounds.max.y;
 	    botSideY = box2d.bounds.min.y;
+	    topSideY = box2d.bounds.max.y;
 	}
+    }
+    private bool IsInApplicableGameState()
+    {
+	GameManager unsafeInstance = GameManager.UnsafeInstance;
+	return !(unsafeInstance == null) && (unsafeInstance.gameState == GameState.PLAYING || unsafeInstance.gameState == GameState.ENTERING_LEVEL);
     }
 
     private void OnTriggerEnter2D(Collider2D otherCollider)
     {
-	if(otherCollider.tag == "Player")
+	if(IsInApplicableGameState() && otherCollider.tag == "Player")
 	{
 	    heroPos = otherCollider.gameObject.transform.position;
 	    if(box2d != null)

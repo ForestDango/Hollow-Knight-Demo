@@ -1,3 +1,4 @@
+using GlobalEnums;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -5,7 +6,7 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    private bool verboseMode = true;
+    private bool verboseMode;
 
     public CameraMode mode;
     private CameraMode prevMode;
@@ -13,6 +14,7 @@ public class CameraController : MonoBehaviour
     public bool atSceneBounds;//是否位于场景的边界外
     public bool atHorizontalSceneBounds;//是否位于场景的X轴方向的边界外
 
+    private bool isGameplayScene;
     public tk2dTileMap tilemap; //通过tk2dTileMap的高度和宽度来确定场景的宽度和长度以及摄像机限制
     public float sceneWidth; //场景的高度
     public float sceneHeight; //场景的宽度
@@ -47,15 +49,10 @@ public class CameraController : MonoBehaviour
     private Camera cam;
     public CameraTarget camTarget;
     private GameManager gm;
+    private PlayMakerFSM fadeFSM;
     private HeroController hero_ctrl;
     private Transform cameraParent;
 
-
-    private void Awake()
-    {
-	GameInit();
-	SceneInit();
-    }
 
     private void LateUpdate()
     {
@@ -64,7 +61,7 @@ public class CameraController : MonoBehaviour
 	float z = transform.position.z;
 	float x2 = cameraParent.position.x;
 	float y2 = cameraParent.position.y;
-	if(mode != CameraMode.FROZEN)
+	if(isGameplayScene && mode != CameraMode.FROZEN)
 	{
 	    lookOffset = 0f;
 	    UpdateTargetDestinationDelta();
@@ -110,25 +107,36 @@ public class CameraController : MonoBehaviour
 		velocity = velocity.normalized * maxVelocityCurrent;
 	    }
 	}
-	if (x + x2 < 14.6f)
+	if (isGameplayScene)
 	{
-	    transform.SetPositionX(14.6f);
+	    if (x + x2 < 14.6f)
+	    {
+		transform.SetPositionX(14.6f);
+	    }
+	    if (transform.position.x + x2 > xLimit)
+	    {
+		transform.SetPositionX(xLimit);
+	    }
+	    if (transform.position.y + y2 < 8.3f)
+	    {
+		transform.SetPositionY(8.3f);
+	    }
+	    if (transform.position.y + y2 > yLimit)
+	    {
+		transform.SetPositionY(yLimit);
+	    }
+	    if (startLockedTimer > 0f)
+	    {
+		startLockedTimer -= Time.deltaTime;
+	    }
 	}
-	if (transform.position.x + x2 > xLimit)
+    }
+
+    private void OnDisable()
+    {
+	if(hero_ctrl != null)
 	{
-	    transform.SetPositionX(xLimit);
-	}
-	if (transform.position.y + y2 < 8.3f)
-	{
-	    transform.SetPositionY(8.3f);
-	}
-	if (transform.position.y + y2 > yLimit)
-	{
-	    transform.SetPositionY(yLimit);
-	}
-	if (startLockedTimer > 0f)
-	{
-	    startLockedTimer -= Time.deltaTime;
+	    hero_ctrl.heroInPosition -= PositionToHero;
 	}
     }
 
@@ -137,32 +145,49 @@ public class CameraController : MonoBehaviour
 	gm = GameManager.instance;
 	cam = GetComponent<Camera>();
 	cameraParent = transform.parent.transform;
+	fadeFSM = FSMUtility.LocateFSM(gameObject, "CameraFade");
     }
 
     public void SceneInit()
     {
 	startLockedTimer = 0.5f;
 	velocity = Vector3.zero;
-	if(hero_ctrl == null)
+	if (gm.IsGameplayScene())
 	{
-	    hero_ctrl = HeroController.instance;
-	    hero_ctrl.heroInPosition += PositionToHero;
+	    isGameplayScene = true;
+	    if (hero_ctrl == null)
+	    {
+		hero_ctrl = HeroController.instance;
+		hero_ctrl.heroInPosition += PositionToHero;
+	    }
+	    lockZoneList = new List<CameraLockArea>();
+	    GetTilemapInfo();
+	    xLockMin = 0f;
+	    xLockMax = xLimit;
+	    yLockMin = 0f;
+	    yLockMax = yLimit;
+	    dampTimeX = dampTime;
+	    dampTimeY = dampTime;
+	    maxVelocityCurrent = maxVelocity;
 	}
-	lockZoneList = new List<CameraLockArea>();
-	GetTilemapInfo();
-	xLockMin = 0f;
-	xLockMax = xLimit;
-	yLockMin = 0f;
-	yLockMax = yLimit;
-	dampTimeX = dampTime;
-	dampTimeY = dampTime;
-	maxVelocityCurrent = maxVelocity;
+	else
+	{
+	    isGameplayScene = false;
+	    if (gm.IsMenuScene())
+	    {
 
+	    }
+	}
     }
 
     public void PositionToHero(bool forceDirect)
     {
 	StartCoroutine(DoPositionToHero(forceDirect));
+    }
+
+    public void FadeSceneIn()
+    {
+	GameCameras.instance.cameraFadeFSM.Fsm.Event("FADE SCENE IN");
     }
 
     /// <summary>
@@ -221,11 +246,10 @@ public class CameraController : MonoBehaviour
 	    }
 	    if(startLockedTimer > 0f) //迅速进入锁定区域
 	    {
-		Debug.LogFormat("Enter Lock Zone Instant!");
-		camTarget.transform.SetPosition2D(KeepWithinSceneBounds(hero_ctrl.transform.position));
+		camTarget.transform.SetPosition2D(KeepWithinLockBounds(hero_ctrl.transform.position));
 		camTarget.destination = camTarget.transform.position;
 		camTarget.EnterLockZoneInstant(xLockMin, xLockMax, yLockMin, yLockMax);
-		transform.SetPosition2D(KeepWithinSceneBounds(hero_ctrl.transform.position));
+		transform.SetPosition2D(KeepWithinLockBounds(hero_ctrl.transform.position));
 		destination = transform.position;
 		return;
 	    }
@@ -326,7 +350,7 @@ public class CameraController : MonoBehaviour
 		    Debug.Log("====> TEST 3 - Lock Zone Active");
 		}
 		PositionToHeroFacing(newPosition, true);
-		transform.SetPosition2D(KeepWithinSceneBounds(transform.position));
+		transform.SetPosition2D(KeepWithinLockBounds(transform.position));
 	    }
 	    else
 	    {
@@ -391,8 +415,8 @@ public class CameraController : MonoBehaviour
 	velocityX = Vector3.zero;
 	velocityY = Vector3.zero;
 	yield return new WaitForSeconds(0.1f);
-
-	if(previousMode == CameraMode.FROZEN)
+	GameCameras.instance.cameraFadeFSM.Fsm.Event("LEVEL LOADED");
+	if (previousMode == CameraMode.FROZEN)
 	{
 	    SetMode(CameraMode.FOLLOWING);
 	}
@@ -424,6 +448,29 @@ public class CameraController : MonoBehaviour
 		hero_ctrl.transform.position
 	    });
 	}
+    }
+
+    public Vector2 KeepWithinLockBounds(Vector2 targetDest)
+    {
+	float x = targetDest.x;
+	float y = targetDest.y;
+	if (x < xLockMin)
+	{
+	    x = xLockMin;
+	}
+	if (x > xLockMax)
+	{
+	    x = xLockMax;
+	}
+	if (y < yLockMin)
+	{
+	    y = yLockMin;
+	}
+	if (y > yLockMax)
+	{
+	    y = yLockMax;
+	}
+	return new Vector2(x, y);
     }
 
     private void PositionToHeroFacing(Vector3 newPosition, bool useXOffset)
@@ -539,6 +586,49 @@ public class CameraController : MonoBehaviour
 	    result = true;
 	}
 	return result;
+    }
+
+    public void FreezeInPlace(bool freezeTargetAlso = false)
+    {
+	SetMode(CameraMode.FROZEN);
+	if (freezeTargetAlso)
+	{
+	    camTarget.FreezeInPlace();
+	}
+    }
+
+    public void FadeOut(CameraFadeType type)
+    {
+	SetMode(CameraMode.FROZEN);
+	if (type == CameraFadeType.LEVEL_TRANSITION)
+	{
+	    fadeFSM.Fsm.Event("FADE OUT");
+	    return;
+	}
+	if(type == CameraFadeType.HERO_DEATH)
+	{
+	    fadeFSM.Fsm.Event("RESPAWN FADE");
+	    return;
+	}
+	if (type == CameraFadeType.HERO_HAZARD_DEATH)
+	{
+	    fadeFSM.Fsm.Event("HAZARD FADE");
+	    return;
+	}
+	if (type == CameraFadeType.JUST_FADE)
+	{
+	    fadeFSM.Fsm.Event("JUST FADE");
+	    return;
+	}
+	if (type == CameraFadeType.START_FADE)
+	{
+	    fadeFSM.Fsm.Event("START FADE");
+	}
+    }
+
+    public void ResetStartTimer()
+    {
+	startLockedTimer = 0.5f;
     }
 
     public void SetMode(CameraMode newMode)

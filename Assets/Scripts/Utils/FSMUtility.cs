@@ -52,7 +52,7 @@ public static class FSMUtility
 	{
 	    return false;
 	}
-	List<PlayMakerFSM> list = FSMUtility.ObtainFsmList();
+	List<PlayMakerFSM> list = ObtainFsmList();
 	go.GetComponents<PlayMakerFSM>(list);
 	bool result = false;
 	for (int i = 0; i < list.Count; i++)
@@ -63,13 +63,18 @@ public static class FSMUtility
 		break;
 	    }
 	}
-	FSMUtility.ReleaseFsmList(list);
+	ReleaseFsmList(list);
 	return result;
     }
 
     public static int GetInt(PlayMakerFSM fsm, string variableName)
     {
 	return fsm.FsmVariables.FindFsmInt(variableName).Value;
+    }
+
+    public static void SetFloat(PlayMakerFSM fsm, string variableName, float value)
+    {
+	fsm.FsmVariables.GetFsmFloat(variableName).Value = value;
     }
 
     private static void ReleaseFsmList(List<PlayMakerFSM> fsmList)
@@ -125,4 +130,29 @@ public static class FSMUtility
 	}
     }
 
+    public abstract class CheckFsmStateAction : FsmStateAction
+    {
+	public FsmEvent trueEvent;
+	public FsmEvent falseEvent;
+	public abstract bool IsTrue { get; }
+
+	public override void Reset()
+	{
+	    trueEvent = null;
+	    falseEvent = null;
+	}
+
+	public override void OnEnter()
+	{
+	    if (IsTrue)
+	    {
+		Fsm.Event(trueEvent);
+	    }
+	    else
+	    {
+		Fsm.Event(falseEvent);
+	    }
+	    Finish();
+	}
+    }
 }

@@ -49,6 +49,8 @@ namespace HutongGames.PlayMaker.Actions
 
 	public override void OnExit()
 	{
+	    if (_proxy == null)
+		return;
 	    _proxy.RemoveOnCollisionEnter2dDelegate(new PlayMakerUnity2DProxy.OnCollisionEnter2dDelegate(DoCollisionEnter2D));
 	    _proxy.RemoveOnTriggerEnter2dDelegate(new PlayMakerUnity2DProxy.OnTriggerEnter2dDelegate(DoTriggerEnter2D));
 	    _proxy.RemoveOnTriggerStay2dDelegate(new PlayMakerUnity2DProxy.OnTriggerStay2dDelegate(DoTriggerStay2D));

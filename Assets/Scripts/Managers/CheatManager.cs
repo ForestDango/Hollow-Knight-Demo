@@ -16,6 +16,7 @@ public class CheatManager : MonoBehaviour
     {
 	if (Input.GetKeyDown(KeyCode.P))
 	{
+	    playerData.nailDamage = 100;
 	    playerData.hasDash = true;
 	    playerData.MPCharge = playerData.maxMP;
 	    playerData.fireballLevel = 1;

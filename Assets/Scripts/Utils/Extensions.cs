@@ -1,9 +1,28 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
-public static  class Extensions 
+public static class Extensions 
 {
+    /// <summary>
+    /// 找到第一个可交互的Selectable对象，如果它不可交互就继续寻找它的下一位selectable
+    /// </summary>
+    /// <param name="start"></param>
+    /// <returns></returns>
+    public static Selectable GetFirstInteractable(this Selectable start)
+    {
+	if (start == null)
+	{
+	    return null;
+	}
+	if (start.interactable)
+	{
+	    return start;
+	}
+	return start.navigation.selectOnDown.GetFirstInteractable();
+    }
+
     public static void SetActiveChildren(this GameObject self, bool value)
     {
 	int childCount = self.transform.childCount;
@@ -20,6 +39,10 @@ public static  class Extensions
     public static void SetPositionY(this Transform t, float newY)
     {
 	t.position = new Vector3(t.position.x, newY, t.position.z);
+    }
+    public static void SetPositionZ(this Transform t, float newZ)
+    {
+	t.position = new Vector3(t.position.x, t.position.y, newZ);
     }
 
     public static void SetPosition2D(this Transform t, float x, float y)
@@ -40,12 +63,47 @@ public static  class Extensions
     {
 	t.localScale = new Vector3(newXScale, t.localScale.y, t.localScale.z);
     }
+    public static void SetScaleY(this Transform t, float newYScale)
+    {
+	t.localScale = new Vector3(t.localScale.x, newYScale, t.localScale.z);
+    }
+
+    public static void SetRotationZ(this Transform t, float newZRotation)
+    {
+	t.localEulerAngles = new Vector3(t.localEulerAngles.x, t.localEulerAngles.y, newZRotation); 
+    }
+
+    public static float GetRotation2D(this Transform t)
+    {
+	return t.localEulerAngles.z;
+    }
 
     public static void SetRotation2D(this Transform t,float rotation)
     {
 	Vector3 eulerAngles = t.eulerAngles;
 	eulerAngles.z = rotation;
 	t.eulerAngles = eulerAngles;
+    }
+
+    public static bool HasParameter(this Animator self, string paramName, AnimatorControllerParameterType? type = null)
+    {
+	foreach (AnimatorControllerParameter animatorControllerParameter in self.parameters)
+	{
+	    if (animatorControllerParameter.name == paramName)
+	    {
+		if (type != null)
+		{
+		    AnimatorControllerParameterType type2 = animatorControllerParameter.type;
+		    AnimatorControllerParameterType? animatorControllerParameterType = type;
+		    if (!(type2 == animatorControllerParameterType.GetValueOrDefault() & animatorControllerParameterType != null))
+		    {
+			break;
+		    }
+		}
+		return true;
+	    }
+	}
+	return false;
     }
 
     public static IEnumerator PlayAnimWait(this tk2dSpriteAnimator self, string anim)

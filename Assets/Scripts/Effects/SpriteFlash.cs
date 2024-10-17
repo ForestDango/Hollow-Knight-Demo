@@ -143,6 +143,24 @@ public class SpriteFlash : MonoBehaviour
 	SendToChildren(new Action(flashInfected));
     }
 
+    public void flashArmoured()
+    {
+	flashColour = new Color(1f, 1f, 1f);
+	amount = 0.9f;
+	timeUp = 0.01f;
+	stayTime = 0.01f;
+	timeDown = 0.25f;
+	if (block != null)
+	{
+	    block.Clear();
+	    block.SetColor("_FlashColor", flashColour);
+	}
+	flashingState = 1;
+	flashTimer = 0f;
+	repeatFlash = false;
+	SendToChildren(new Action(flashArmoured));
+    }
+
     private void flashFocusHeal()
     {
 	Start();

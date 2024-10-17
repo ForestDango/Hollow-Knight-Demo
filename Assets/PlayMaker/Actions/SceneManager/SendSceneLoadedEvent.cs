@@ -32,7 +32,7 @@ namespace HutongGames.PlayMaker.Actions
 		public override void OnEnter()
 		{
 			_loaded = -1;
-			SceneManager.sceneLoaded += SceneManager_sceneLoaded;
+			UnityEngine.SceneManagement.SceneManager.sceneLoaded += SceneManager_sceneLoaded;
 		}
 
 		void SceneManager_sceneLoaded (Scene scene, LoadSceneMode mode)
@@ -61,7 +61,7 @@ namespace HutongGames.PlayMaker.Actions
 
 		public override void OnExit()
 		{
-			SceneManager.sceneLoaded -= SceneManager_sceneLoaded;
+			UnityEngine.SceneManagement.SceneManager.sceneLoaded -= SceneManager_sceneLoaded;
 		}
 
 		public override string ErrorCheck()

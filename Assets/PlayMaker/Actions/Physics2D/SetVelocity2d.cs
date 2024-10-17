@@ -84,9 +84,8 @@ namespace HutongGames.PlayMaker.Actions
 			
 			if (!x.IsNone) velocity.x = x.Value;
 			if (!y.IsNone) velocity.y = y.Value;
-			
-			// apply
-			
+
+	    // apply
 			rb2d.velocity = velocity;
 		}
 	}

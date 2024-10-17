@@ -46,8 +46,8 @@ public class Walker : MonoBehaviour
     [SerializeField] public bool ignoreHoles; //是否忽略洞
     [SerializeField] private bool preventTurningToFaceHero; //防止转向玩家的位置
 
-    private Walker.States state;
-    private Walker.StopReasons stopReason;
+    [SerializeField] private Walker.States state;
+    [SerializeField] private Walker.StopReasons stopReason;
     private bool didFulfilCameraDistanceCondition; //暂时没有用到
     private bool didFulfilHeroXCondition; //暂时没有用到
     private int currentFacing;//Debug的时候可以在前面加个[SerializeField]
@@ -275,7 +275,7 @@ public class Walker : MonoBehaviour
 	    BeginTurning(-currentFacing);
 	    return;
 	}
-	BeginTurning(currentFacing);
+	BeginWalking(currentFacing);
     }
 
     /// <summary>
@@ -309,7 +309,6 @@ public class Walker : MonoBehaviour
 	{
 	    audioSource.Play();
 	}
-	Debug.LogFormat("facing = " + facing);
 	body.velocity = new Vector2((facing > 0) ? walkSpeedR : walkSpeedL,body.velocity.y);
     }
 
@@ -334,7 +333,7 @@ public class Walker : MonoBehaviour
 	    if (!ignoreHoles)
 	    {
 		Sweep sweep2 = new Sweep(bodyCollider, DirectionUtils.Down, Sweep.DefaultRayCount, 0.1f);
-		if (!sweep2.Check(transform.position + new Vector3((bodyCollider.bounds.extents.x + 0.5f + edgeXAdjuster) * (float)currentFacing, 0f), 0.25f, LayerMask.GetMask("Terrain")))
+		if (!sweep2.Check((Vector2)transform.position + new Vector2((bodyCollider.bounds.extents.x + 0.5f + edgeXAdjuster) * currentFacing, 0f), 0.25f, LayerMask.GetMask("Terrain")))
 		{
 		    BeginTurning(-currentFacing);
 		    return;

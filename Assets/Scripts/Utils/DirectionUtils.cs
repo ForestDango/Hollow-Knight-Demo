@@ -10,7 +10,7 @@ public static class DirectionUtils
 
     public static int GetCardinalDirection(float degrees)
     {
-	return DirectionUtils.NegSafeMod(Mathf.RoundToInt(degrees / 90f), 4); //取一个最接近degrees / 90的整数，再获取它最靠近的方向
+	return NegSafeMod(Mathf.RoundToInt(degrees / 90f), 4); //取一个最接近degrees / 90的整数，再获取它最靠近的方向
     }
 
     public static int NegSafeMod(int val, int len)

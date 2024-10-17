@@ -24,17 +24,18 @@ public class EnemyHitEffectsBlackKnight : MonoBehaviour,IHitEffectReciever
 	didFireThisFrame = false;
     }
 
-    public void ReceiverHitEffect(float attackDirection)
+    public void ReceiveHitEffect(float attackDirection)
     {
 	if (didFireThisFrame)
 	    return;
-	FSMUtility.SendEventToGameObject(this.gameObject, "DAMAGE FLASH", false);
+	FSMUtility.SendEventToGameObject(base.gameObject, "DAMAGE FLASH", true);
 	enemyDamage.SpawnAndPlayOneShot(audioPlayerPrefab, transform.position);
 	if (spriteFlash)
 	{
 	    spriteFlash.flashInfected();
 	}
-	GameObject gameObject = Instantiate(hitFlashOrange, transform.position + effectOrigin, Quaternion.identity);
+	Instantiate(hitFlashOrange, transform.position + effectOrigin, Quaternion.identity);
+	GameObject gameObject = Instantiate(hitPuffLarge, transform.position + effectOrigin, Quaternion.identity);
 	switch (DirectionUtils.GetCardinalDirection(attackDirection))
 	{
 	    case 0:
