@@ -35,9 +35,9 @@ namespace HutongGames.PlayMaker.Actions
 	    while (!flag)
 	    {
 		int randomWeightedIndex = ActionHelpers.GetRandomWeightedIndex(weights);
-		if(randomWeightedIndex == -1 && trackingInts[randomWeightedIndex].Value < eventMax[randomWeightedIndex].Value)
+		if(randomWeightedIndex != -1 && trackingInts[randomWeightedIndex].Value < eventMax[randomWeightedIndex].Value)
 		{
-		    int value = trackingInts[randomWeightedIndex].Value;
+		    int value = ++trackingInts[randomWeightedIndex].Value;
 		    for (int i = 0; i < trackingInts.Length; i++)
 		    {
 			trackingInts[i].Value = 0;

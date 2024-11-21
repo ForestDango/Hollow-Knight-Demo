@@ -1,0 +1,1294 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3930360788855362444
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5000970361884130540}
+  - component: {fileID: 8447776062602847709}
+  m_Layer: 0
+  m_Name: BounceShroomClnSpriteCollection
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5000970361884130540
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3930360788855362444}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8447776062602847709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3930360788855362444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d546f34a90531a14eaba82a43b05b86b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 3
+  materialIdsValid: 1
+  needMaterialInstance: 0
+  spriteDefinitions:
+  - name: Bounce Shroom Cln_bounce_010000
+    boundsData:
+    - {x: 0.0078125, y: -0.234375, z: 0}
+    - {x: 1.578125, y: 1.25, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 1.59375, y: 1.765625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.78125, y: -0.859375, z: 0}
+    - {x: 0.796875, y: -0.859375, z: 0}
+    - {x: -0.78125, y: 0.390625, z: 0}
+    - {x: 0.796875, y: 0.390625, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.32031447, y: 0.003908203}
+    - {x: 0.32031447, y: 0.20116992}
+    - {x: 0.47656053, y: 0.003908203}
+    - {x: 0.47656053, y: 0.20116992}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 839196b8f19894141a5d972f5990bb6a, type: 2}
+    materialId: 0
+    sourceTextureGUID: bfebc3f2c13ef754e9206c3a7d5d5e17
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Bounce Shroom Cln_bounce_010001
+    boundsData:
+    - {x: -0.01562503, y: 0.00781247, z: 0}
+    - {x: 1.40625, y: 1.515625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 1.59375, y: 1.765625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.71875, y: -0.75, z: 0}
+    - {x: 0.68749994, y: -0.75, z: 0}
+    - {x: -0.71875, y: 0.76562494, z: 0}
+    - {x: 0.68749994, y: 0.76562494, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.003908203, y: 0.28125197}
+    - {x: 0.17968555, y: 0.28125197}
+    - {x: 0.003908203, y: 0.47070116}
+    - {x: 0.17968555, y: 0.47070116}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 839196b8f19894141a5d972f5990bb6a, type: 2}
+    materialId: 0
+    sourceTextureGUID: e01ba73d0d5612e49aecccf92174f097
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Bounce Shroom Cln_bounce_010002
+    boundsData:
+    - {x: -0.03125003, y: -0.09375, z: 0}
+    - {x: 1.4375, y: 1.375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 1.59375, y: 1.765625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.75, y: -0.78125, z: 0}
+    - {x: 0.68749994, y: -0.78125, z: 0}
+    - {x: -0.75, y: 0.59375, z: 0}
+    - {x: 0.68749994, y: 0.59375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.18750195, y: 0.26953322}
+    - {x: 0.18750195, y: 0.44921678}
+    - {x: 0.35937303, y: 0.26953322}
+    - {x: 0.35937303, y: 0.44921678}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 839196b8f19894141a5d972f5990bb6a, type: 2}
+    materialId: 0
+    sourceTextureGUID: fc10181f9b34ea44a8dafc7c65b0c8a8
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Bounce Shroom Cln_bounce_010003
+    boundsData:
+    - {x: -0.0234375, y: -0.046875, z: 0}
+    - {x: 1.453125, y: 1.40625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 1.59375, y: 1.765625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.75, y: -0.75, z: 0}
+    - {x: 0.703125, y: -0.75, z: 0}
+    - {x: -0.75, y: 0.65625, z: 0}
+    - {x: 0.703125, y: 0.65625, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.1367207, y: 0.003908203}
+    - {x: 0.1367207, y: 0.18554492}
+    - {x: 0.31249803, y: 0.003908203}
+    - {x: 0.31249803, y: 0.18554492}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 839196b8f19894141a5d972f5990bb6a, type: 2}
+    materialId: 0
+    sourceTextureGUID: 44516497459ba2346b4db7f8728b70b0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Bounce Shroom Cln_bounce_010004
+    boundsData:
+    - {x: -0.03125003, y: -0.0703125, z: 0}
+    - {x: 1.4375, y: 1.390625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 1.59375, y: 1.765625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.75, y: -0.765625, z: 0}
+    - {x: 0.68749994, y: -0.765625, z: 0}
+    - {x: -0.75, y: 0.625, z: 0}
+    - {x: 0.68749994, y: 0.625, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.1367207, y: 0.4785176}
+    - {x: 0.1367207, y: 0.65820116}
+    - {x: 0.3105449, y: 0.4785176}
+    - {x: 0.3105449, y: 0.65820116}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 839196b8f19894141a5d972f5990bb6a, type: 2}
+    materialId: 0
+    sourceTextureGUID: ddd2682804478244cb9fe54f8d5c7c68
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Bounce Shroom Cln_bounce_020000
+    boundsData:
+    - {x: 0.0234375, y: -0.15625, z: 0}
+    - {x: 1.328125, y: 1.125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.375, y: 1.5625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.640625, y: -0.71875, z: 0}
+    - {x: 0.6875, y: -0.71875, z: 0}
+    - {x: -0.640625, y: 0.40625, z: 0}
+    - {x: 0.6875, y: 0.40625, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.42187697, y: 0.85156447}
+    - {x: 0.58788866, y: 0.85156447}
+    - {x: 0.42187697, y: 0.99218553}
+    - {x: 0.58788866, y: 0.99218553}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 839196b8f19894141a5d972f5990bb6a, type: 2}
+    materialId: 0
+    sourceTextureGUID: b5af1b127c77aa94ebf283234aa244b3
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Bounce Shroom Cln_bounce_020001
+    boundsData:
+    - {x: 0, y: 0.046875, z: 0}
+    - {x: 1.1875, y: 1.3125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.375, y: 1.5625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.59375, y: -0.609375, z: 0}
+    - {x: 0.59375, y: -0.609375, z: 0}
+    - {x: -0.59375, y: 0.703125, z: 0}
+    - {x: 0.59375, y: 0.703125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.31836134, y: 0.45703322}
+    - {x: 0.4667949, y: 0.45703322}
+    - {x: 0.31836134, y: 0.6210918}
+    - {x: 0.4667949, y: 0.6210918}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 839196b8f19894141a5d972f5990bb6a, type: 2}
+    materialId: 0
+    sourceTextureGUID: b9cca667c817a354596e714087254281
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Bounce Shroom Cln_bounce_020002
+    boundsData:
+    - {x: 0.0234375, y: -0.046875, z: 0}
+    - {x: 1.203125, y: 1.21875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.375, y: 1.5625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.578125, y: -0.65625, z: 0}
+    - {x: 0.625, y: -0.65625, z: 0}
+    - {x: -0.578125, y: 0.5625, z: 0}
+    - {x: 0.625, y: 0.5625, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.52929884, y: 0.16992383}
+    - {x: 0.67968553, y: 0.16992383}
+    - {x: 0.52929884, y: 0.32226366}
+    - {x: 0.67968553, y: 0.32226366}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 839196b8f19894141a5d972f5990bb6a, type: 2}
+    materialId: 0
+    sourceTextureGUID: 79f5912b58575134faa0d4e7556f434a
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Bounce Shroom Cln_bounce_020003
+    boundsData:
+    - {x: 0.0078125, y: -0.015625, z: 0}
+    - {x: 1.234375, y: 1.25, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.375, y: 1.5625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.609375, y: -0.640625, z: 0}
+    - {x: 0.625, y: -0.640625, z: 0}
+    - {x: -0.609375, y: 0.609375, z: 0}
+    - {x: 0.625, y: 0.609375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.36718947, y: 0.20898633}
+    - {x: 0.5214824, y: 0.20898633}
+    - {x: 0.36718947, y: 0.3652324}
+    - {x: 0.5214824, y: 0.3652324}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 839196b8f19894141a5d972f5990bb6a, type: 2}
+    materialId: 0
+    sourceTextureGUID: e70cad84e44e77a4c890cd532f400a8e
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Bounce Shroom Cln_bounce_020004
+    boundsData:
+    - {x: 0.02343747, y: -0.03125, z: 0}
+    - {x: 1.234375, y: 1.21875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.375, y: 1.5625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.59375, y: -0.640625, z: 0}
+    - {x: 0.64062494, y: -0.640625, z: 0}
+    - {x: -0.59375, y: 0.578125, z: 0}
+    - {x: 0.64062494, y: 0.578125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.47461134, y: 0.37304884}
+    - {x: 0.47461134, y: 0.5273418}
+    - {x: 0.62695116, y: 0.37304884}
+    - {x: 0.62695116, y: 0.5273418}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 839196b8f19894141a5d972f5990bb6a, type: 2}
+    materialId: 0
+    sourceTextureGUID: 7df5de31b4954de40b2aac9f7d8cd57c
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Bounce Shroom Cln_bounce_shroom_BG_020000
+    boundsData:
+    - {x: 0.015624985, y: -0.046875, z: 0}
+    - {x: 0.875, y: 1.71875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 0.953125, y: 1.8125, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.421875, y: -0.90625, z: 0}
+    - {x: 0.45312497, y: -0.90625, z: 0}
+    - {x: -0.421875, y: 0.8125, z: 0}
+    - {x: 0.45312497, y: 0.8125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.42187697, y: 0.6289082}
+    - {x: 0.53124803, y: 0.6289082}
+    - {x: 0.42187697, y: 0.84374803}
+    - {x: 0.53124803, y: 0.84374803}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 839196b8f19894141a5d972f5990bb6a, type: 2}
+    materialId: 0
+    sourceTextureGUID: 639ccd121f28f1342a840cea6fff8145
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Bounce Shroom Cln_bounce_shroom_BG_020001
+    boundsData:
+    - {x: 0.023437515, y: -0.20312497, z: 0}
+    - {x: 0.890625, y: 1.40625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 0.953125, y: 1.8125, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.421875, y: -0.90625, z: 0}
+    - {x: 0.46875003, y: -0.90625, z: 0}
+    - {x: -0.421875, y: 0.50000006, z: 0}
+    - {x: 0.46875003, y: 0.50000006, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.6425801, y: 0.003908203}
+    - {x: 0.6425801, y: 0.11523242}
+    - {x: 0.8183574, y: 0.003908203}
+    - {x: 0.8183574, y: 0.11523242}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 839196b8f19894141a5d972f5990bb6a, type: 2}
+    materialId: 0
+    sourceTextureGUID: ab1253bb34d28704fb581bc111699967
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Bounce Shroom Cln_bounce_shroom_BG_020002
+    boundsData:
+    - {x: 0.031250015, y: 0, z: 0}
+    - {x: 0.875, y: 1.8125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 0.953125, y: 1.8125, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.40625, y: -0.90625, z: 0}
+    - {x: 0.46875003, y: -0.90625, z: 0}
+    - {x: -0.40625, y: 0.90625, z: 0}
+    - {x: 0.46875003, y: 0.90625, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.30468947, y: 0.6660176}
+    - {x: 0.41406053, y: 0.6660176}
+    - {x: 0.30468947, y: 0.89257616}
+    - {x: 0.41406053, y: 0.89257616}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 839196b8f19894141a5d972f5990bb6a, type: 2}
+    materialId: 0
+    sourceTextureGUID: bd43ebd1c6501d24f8fdef68e04eb575
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Bounce Shroom Cln_bounce_slash0000
+    boundsData:
+    - {x: 0.0078125, y: -0.84375, z: 0}
+    - {x: 0.546875, y: 1.1875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 1.234375, y: 2.859375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.265625, y: -1.4375, z: 0}
+    - {x: 0.28125, y: -1.4375, z: 0}
+    - {x: -0.265625, y: -0.25, z: 0}
+    - {x: 0.28125, y: -0.25, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.1367207, y: 0.19336133}
+    - {x: 0.1367207, y: 0.26171678}
+    - {x: 0.28515428, y: 0.19336133}
+    - {x: 0.28515428, y: 0.26171678}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 839196b8f19894141a5d972f5990bb6a, type: 2}
+    materialId: 0
+    sourceTextureGUID: 91f485c3f3004ce4ea9642e3ad1c6e89
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Bounce Shroom Cln_bounce_slash0001
+    boundsData:
+    - {x: 0.054687485, y: -0.27343753, z: 0}
+    - {x: 0.890625, y: 1.828125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 1.234375, y: 2.859375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.390625, y: -1.1875, z: 0}
+    - {x: 0.49999997, y: -1.1875, z: 0}
+    - {x: -0.390625, y: 0.64062494, z: 0}
+    - {x: 0.49999997, y: 0.64062494, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.18554883, y: 0.6660176}
+    - {x: 0.29687303, y: 0.6660176}
+    - {x: 0.18554883, y: 0.8945293}
+    - {x: 0.29687303, y: 0.8945293}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 839196b8f19894141a5d972f5990bb6a, type: 2}
+    materialId: 0
+    sourceTextureGUID: 4beb3e1c184f2a04ea85da46f725b003
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Bounce Shroom Cln_bounce_slash0002
+    boundsData:
+    - {x: 0.03125, y: 0.125, z: 0}
+    - {x: 1, y: 2.03125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 1.234375, y: 2.859375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.46875, y: -0.890625, z: 0}
+    - {x: 0.53125, y: -0.890625, z: 0}
+    - {x: -0.46875, y: 1.140625, z: 0}
+    - {x: 0.53125, y: 1.140625, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.003908203, y: 0.4785176}
+    - {x: 0.1289043, y: 0.4785176}
+    - {x: 0.003908203, y: 0.7324199}
+    - {x: 0.1289043, y: 0.7324199}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 839196b8f19894141a5d972f5990bb6a, type: 2}
+    materialId: 0
+    sourceTextureGUID: 448a663257b62e74f816a1e8509e6b36
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Bounce Shroom Cln_bounce_slash0003
+    boundsData:
+    - {x: 0.0625, y: 0.328125, z: 0}
+    - {x: 1, y: 2.15625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 1.234375, y: 2.859375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.4375, y: -0.75, z: 0}
+    - {x: 0.5625, y: -0.75, z: 0}
+    - {x: -0.4375, y: 1.40625, z: 0}
+    - {x: 0.5625, y: 1.40625, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.003908203, y: 0.003908203}
+    - {x: 0.1289043, y: 0.003908203}
+    - {x: 0.003908203, y: 0.27343553}
+    - {x: 0.1289043, y: 0.27343553}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 839196b8f19894141a5d972f5990bb6a, type: 2}
+    materialId: 0
+    sourceTextureGUID: 7fb5cb570a7d39e46bdbb9e6ae56e333
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Bounce Shroom Cln_idle_010000
+    boundsData:
+    - {x: -0.03125003, y: -0.0703125, z: 0}
+    - {x: 1.4375, y: 1.390625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 1.59375, y: 1.765625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.75, y: -0.765625, z: 0}
+    - {x: 0.68749994, y: -0.765625, z: 0}
+    - {x: -0.75, y: 0.625, z: 0}
+    - {x: 0.68749994, y: 0.625, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.1367207, y: 0.4785176}
+    - {x: 0.1367207, y: 0.65820116}
+    - {x: 0.3105449, y: 0.4785176}
+    - {x: 0.3105449, y: 0.65820116}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 839196b8f19894141a5d972f5990bb6a, type: 2}
+    materialId: 0
+    sourceTextureGUID: 1ada2e09b414a1443b2cff0ca0065f58
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Bounce Shroom Cln_idle_010001
+    boundsData:
+    - {x: -0.03125003, y: -0.09375, z: 0}
+    - {x: 1.4375, y: 1.375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 1.59375, y: 1.765625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.75, y: -0.78125, z: 0}
+    - {x: 0.68749994, y: -0.78125, z: 0}
+    - {x: -0.75, y: 0.59375, z: 0}
+    - {x: 0.68749994, y: 0.59375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.18750195, y: 0.26953322}
+    - {x: 0.18750195, y: 0.44921678}
+    - {x: 0.35937303, y: 0.26953322}
+    - {x: 0.35937303, y: 0.44921678}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 839196b8f19894141a5d972f5990bb6a, type: 2}
+    materialId: 0
+    sourceTextureGUID: a149d15d2c3cfc8479f827678e16d5d0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Bounce Shroom Cln_idle_010002
+    boundsData:
+    - {x: -0.0234375, y: -0.0546875, z: 0}
+    - {x: 1.390625, y: 1.453125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 1.59375, y: 1.765625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.71875, y: -0.78125, z: 0}
+    - {x: 0.671875, y: -0.78125, z: 0}
+    - {x: -0.71875, y: 0.671875, z: 0}
+    - {x: 0.671875, y: 0.671875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.003908203, y: 0.74023634}
+    - {x: 0.17773242, y: 0.74023634}
+    - {x: 0.003908203, y: 0.92187303}
+    - {x: 0.17773242, y: 0.92187303}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 839196b8f19894141a5d972f5990bb6a, type: 2}
+    materialId: 0
+    sourceTextureGUID: c49172651670bd54d9c5a4245243b4ee
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Bounce Shroom Cln_idle_020000
+    boundsData:
+    - {x: 0.02343747, y: -0.03125, z: 0}
+    - {x: 1.234375, y: 1.21875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.375, y: 1.5625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.59375, y: -0.640625, z: 0}
+    - {x: 0.64062494, y: -0.640625, z: 0}
+    - {x: -0.59375, y: 0.578125, z: 0}
+    - {x: 0.64062494, y: 0.578125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.47461134, y: 0.37304884}
+    - {x: 0.47461134, y: 0.5273418}
+    - {x: 0.62695116, y: 0.37304884}
+    - {x: 0.62695116, y: 0.5273418}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 839196b8f19894141a5d972f5990bb6a, type: 2}
+    materialId: 0
+    sourceTextureGUID: 8c2646645b0da8a499542f7bf48457c0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Bounce Shroom Cln_idle_020001
+    boundsData:
+    - {x: 0.0234375, y: -0.046875, z: 0}
+    - {x: 1.203125, y: 1.21875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.375, y: 1.5625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.578125, y: -0.65625, z: 0}
+    - {x: 0.625, y: -0.65625, z: 0}
+    - {x: -0.578125, y: 0.5625, z: 0}
+    - {x: 0.625, y: 0.5625, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.52929884, y: 0.16992383}
+    - {x: 0.67968553, y: 0.16992383}
+    - {x: 0.52929884, y: 0.32226366}
+    - {x: 0.67968553, y: 0.32226366}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 839196b8f19894141a5d972f5990bb6a, type: 2}
+    materialId: 0
+    sourceTextureGUID: aabaabaa7505e8b4fa05e77f6dc0fcf8
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Bounce Shroom Cln_idle_020002
+    boundsData:
+    - {x: 0.0234375, y: -0.0234375, z: 0}
+    - {x: 1.203125, y: 1.265625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.375, y: 1.5625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.578125, y: -0.65625, z: 0}
+    - {x: 0.625, y: -0.65625, z: 0}
+    - {x: -0.578125, y: 0.609375, z: 0}
+    - {x: 0.625, y: 0.609375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.48437697, y: 0.003908203}
+    - {x: 0.63476366, y: 0.003908203}
+    - {x: 0.48437697, y: 0.16210742}
+    - {x: 0.63476366, y: 0.16210742}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 839196b8f19894141a5d972f5990bb6a, type: 2}
+    materialId: 0
+    sourceTextureGUID: 0014e72682a65cc43bcf690227656cc7
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Bounce Shroom Cln_small_shroom_010004
+    boundsData:
+    - {x: 0.0390625, y: -0.04687503, z: 0}
+    - {x: 0.796875, y: 1.375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 0.859375, y: 1.546875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.359375, y: -0.734375, z: 0}
+    - {x: 0.4375, y: -0.734375, z: 0}
+    - {x: -0.359375, y: 0.64062494, z: 0}
+    - {x: 0.4375, y: 0.64062494, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.53906447, y: 0.73242384}
+    - {x: 0.53906447, y: 0.8320293}
+    - {x: 0.71093553, y: 0.73242384}
+    - {x: 0.71093553, y: 0.8320293}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 839196b8f19894141a5d972f5990bb6a, type: 2}
+    materialId: 0
+    sourceTextureGUID: 11aa41e2d72acd54bbf63f62aeea7c0c
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Bounce Shroom Cln_small_shroom_010005
+    boundsData:
+    - {x: -0.000000014901161, y: -0.14062501, z: 0}
+    - {x: 0.8125, y: 1.21875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 0.859375, y: 1.546875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.40625, y: -0.75, z: 0}
+    - {x: 0.40624997, y: -0.75, z: 0}
+    - {x: -0.40625, y: 0.46874997, z: 0}
+    - {x: 0.40624997, y: 0.46874997, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.5957051, y: 0.8398457}
+    - {x: 0.69726366, y: 0.8398457}
+    - {x: 0.5957051, y: 0.99218553}
+    - {x: 0.69726366, y: 0.99218553}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 839196b8f19894141a5d972f5990bb6a, type: 2}
+    materialId: 0
+    sourceTextureGUID: 8764f81f3cf4285418e8fce3cb13fe9b
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Bounce Shroom Cln_small_shroom_010006
+    boundsData:
+    - {x: 0.0390625, y: 0.0078125, z: 0}
+    - {x: 0.796875, y: 1.515625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 0.859375, y: 1.546875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.359375, y: -0.75, z: 0}
+    - {x: 0.4375, y: -0.75, z: 0}
+    - {x: -0.359375, y: 0.765625, z: 0}
+    - {x: 0.4375, y: 0.765625, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.53906447, y: 0.5351582}
+    - {x: 0.6386699, y: 0.5351582}
+    - {x: 0.53906447, y: 0.7246074}
+    - {x: 0.6386699, y: 0.7246074}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 839196b8f19894141a5d972f5990bb6a, type: 2}
+    materialId: 0
+    sourceTextureGUID: 9c59be1731fa1ea49aadecbad25fd654
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  premultipliedAlpha: 0
+  material: {fileID: 0}
+  materials:
+  - {fileID: 2100000, guid: 839196b8f19894141a5d972f5990bb6a, type: 2}
+  textures:
+  - {fileID: 2800000, guid: 9e1e26beea70ef047aa07398a1de321f, type: 3}
+  pngTextures: []
+  materialPngTextureId: 00000000
+  textureFilterMode: 1
+  textureMipMaps: 0
+  allowMultipleAtlases: 0
+  spriteCollectionGUID: a978be7772b51194d93bc210d9205ca6
+  spriteCollectionName: BounceShroomClnSpriteCollection
+  assetName: 
+  loadable: 0
+  invOrthoSize: 2
+  halfTargetHeight: 32
+  buildKey: 834990442
+  dataGuid: 0a008f758b1f07e4c890cf8daa77ef7c
+  managedSpriteCollection: 0
+  hasPlatformData: 0
+  spriteCollectionPlatforms: []
+  spriteCollectionPlatformGUIDs: []

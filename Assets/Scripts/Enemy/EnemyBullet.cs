@@ -117,7 +117,7 @@ public class EnemyBullet : MonoBehaviour
 	yield return null;
 	col.enabled = false;
 	yield return new WaitForSeconds((impactAnim.frames.Length - 1) / impactAnim.fps);
-	Destroy(gameObject);//TODO:
+	gameObject.Recycle();
     }
 
 }

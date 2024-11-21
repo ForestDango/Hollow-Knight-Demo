@@ -71,15 +71,15 @@ namespace GlobalEnums
 
     public enum GameState
     {
-	INACTIVE,
-	MAIN_MENU,
-	LOADING,
-	ENTERING_LEVEL,
-	PLAYING,
-	PAUSED,
-	EXITING_LEVEL,
-	CUTSCENE,
-	PRIMER
+	INACTIVE, //非活跃
+	MAIN_MENU, //主菜单
+	LOADING, //加载
+	ENTERING_LEVEL, //进入场景
+	PLAYING, //游玩
+	PAUSED, //暂停
+	EXITING_LEVEL, //里面场景
+	CUTSCENE, //过场
+	PRIMER //先前的
     }
 
     public enum GatePosition
@@ -117,6 +117,42 @@ namespace GlobalEnums
 	NO_SAVE_MENU //不保存界面
     }
 
+    public enum MapZone
+    {
+	NONE,
+	TEST_AREA,
+	KINGS_PASS,
+	CLIFFS,
+	TOWN,
+	CROSSROADS,
+	GREEN_PATH,
+	FOG_CANYON,
+	SHAMAN_TEMPLE,
+	QUEENS_STATION,
+	GODS_GLORY,
+    }
+
+    public enum HeroActionButton
+    {
+	JUMP,
+	ATTACK,
+	DASH,
+	SUPER_DASH,
+	CAST,
+	QUICK_MAP,
+	INVENTORY,
+	MENU_SUBMIT,
+	MENU_CANCEL,
+	DREAM_NAIL,
+	UP,
+	DOWN,
+	LEFT,
+	RIGHT,
+	QUICK_CAST,
+	MENU_PANE_LEFT,
+	MENU_PANE_RIGHT
+    }
+
     public enum HazardType
     {
 	NON_HAZARD,
@@ -136,7 +172,9 @@ namespace GlobalEnums
 	BACK_DASH,
 	DASH,
 	FALLING,
-	TAKE_HIT
+	TAKE_HIT,
+	WALLJUMP,
+	WALLSLIDE
     }
 
     public enum HeroTransitionState
@@ -153,6 +191,19 @@ namespace GlobalEnums
 	SKIP_INSTANT,
 	NOT_SKIPPABLE,
 	NOT_SKIPPABLE_DUE_TO_LOADING
+    }
+    public enum SupportedLanguages
+    {
+	EN = 44,
+	FR = 82,
+	DE = 37,
+	ZH = 199,
+	ES = 57,
+	KO = 117,
+	JA = 109,
+	IT = 105,
+	PT = 147,
+	RU = 154
     }
 
     public enum UIState
@@ -190,5 +241,14 @@ namespace GlobalEnums
 	BOUNCER = 24,
 	SOFT_TERRAIN = 25,
 	CORPSE
+    }
+
+    public enum SceneType
+    {
+	GAMEPLAY,
+	MENU,
+	LOADING,
+	CUTSCENE,
+	TEST
     }
 }

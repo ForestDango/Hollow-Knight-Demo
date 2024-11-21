@@ -5,13 +5,13 @@ using UnityEngine;
 
 public class SceneLoad
 {
-    public bool IsFetchAllowed { get; set; }
-    public bool IsActivationAllowed { get; set; }
-    public bool IsUnloadAssetsRequired { get; set; }
-    public float BeginTime { get; set; }
-    public bool IsGarbageCollectRequired { get; set; }
+    public bool IsFetchAllowed { get; set; } //是否允许获取下一个场景
+    public bool IsActivationAllowed { get; set; } //是否允许激活创建
+    public bool IsUnloadAssetsRequired { get; set; } //是否需要卸载掉当前场景的Assets
+    public float BeginTime { get; set; } //开启时间
+    public bool IsGarbageCollectRequired { get; set; } //是否需要GC垃圾回收
 
-    public delegate void FetchCompleteDelegate();
+    public delegate void FetchCompleteDelegate(); 
     public event FetchCompleteDelegate FetchComplete;
 
     public delegate void WillActivateDelegate();
@@ -173,10 +173,19 @@ public class SceneLoad
 	}
     }
 
+    /// <summary>
+    /// 记录开启转移的时间
+    /// </summary>
+    /// <param name="phase"></param>
     private void RecordBeginTime(Phases phase)
     {
 	phaseInfos[(int)phase].BeginTime = new float?(Time.realtimeSinceStartup);
     }
+
+    /// <summary>
+    /// 记录结束转移后的时间
+    /// </summary>
+    /// <param name="phase"></param>
     private void RecordEndTime(Phases phase)
     {
 	phaseInfos[(int)phase].EndTime = new float?(Time.realtimeSinceStartup);

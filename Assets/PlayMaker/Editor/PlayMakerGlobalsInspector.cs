@@ -108,7 +108,7 @@ namespace HutongGames.PlayMakerEditor
 
         private void DoGlobalEventsGUI()
         {
-            // TODO:
+            //
             // Context menu to find usages
             // Usages count
 

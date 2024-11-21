@@ -111,7 +111,7 @@ public class HealthCocoon : MonoBehaviour
 		GameObject[] array = slashEffects;
 		for (int i = 0; i < array.Length; i++)
 		{
-		    GameObject gameObject = Instantiate(array[i], transform.position + effectOrigin, Quaternion.identity);
+		    GameObject gameObject = array[i].Spawn(transform.position + effectOrigin);
 		    gameObject.transform.eulerAngles = new Vector3(0f, 0f, z);
 		    gameObject.transform.localScale = v;
 		}
@@ -122,7 +122,7 @@ public class HealthCocoon : MonoBehaviour
 		GameObject[] array = slashEffects;
 		for (int i = 0; i < array.Length; i++)
 		{
-		    GameObject gameObject2 = Instantiate(array[i], transform.position + effectOrigin, Quaternion.identity);
+		    GameObject gameObject2 = array[i].Spawn(transform.position + effectOrigin);
 		    Vector3 position = gameObject2.transform.position;
 		    position.z = 0.0031f;
 		    gameObject2.transform.position = position;
@@ -143,10 +143,10 @@ public class HealthCocoon : MonoBehaviour
 		    a.Normalize();
 		    cap.AddForce(capHitForce * a, ForceMode2D.Impulse);
 		}
-		//foreach (FlingPrefab fling in flingPrefabs)
-		//{
-		//    FlingObjects(fling);
-		//}
+		foreach (FlingPrefab fling in flingPrefabs)
+		{
+		    FlingObjects(fling);
+		}
 		PlaySound(deathSound);
 		SetBroken();
 		//TODO:

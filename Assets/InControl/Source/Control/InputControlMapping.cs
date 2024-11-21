@@ -15,7 +15,6 @@ namespace InControl
 		[SerializeField]
 		string name = "";
 
-		// TODO: It seems like this can just be replaced with an inverted target range.
 		// Invert the final mapped value.
 		[SerializeField]
 		bool invert = false;

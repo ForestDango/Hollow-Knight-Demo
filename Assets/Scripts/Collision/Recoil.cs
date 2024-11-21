@@ -98,11 +98,11 @@ public class Recoil : MonoBehaviour
 	    if (isRecoilSweeping)
 	    {
 		float num;
-		if(recoilSweep.Check(transform.position,recoilSpeed * deltaTime, SweepLayerMask,out num))
+		if (recoilSweep.Check(base.transform.position,recoilSpeed * deltaTime, SweepLayerMask,out num))
 		{
 		    isRecoilSweeping = false;
 		}
-		if(num > Mathf.Epsilon)
+		if (num > Mathf.Epsilon)
 		{
 		    transform.Translate(recoilSweep.Direction * num, Space.World);
 		}
@@ -131,7 +131,7 @@ public class Recoil : MonoBehaviour
 	    Freeze();
 	    return;
 	}
-	if(attackDirection == 1&& preventRecoilUp)
+	if(attackDirection == 1 && preventRecoilUp)
 	{
 	    return;
 	}

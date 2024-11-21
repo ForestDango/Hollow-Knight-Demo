@@ -70,8 +70,7 @@ namespace HutongGames.PlayMaker.Actions
 		    }
 		    if (gameObject != null)
 		    {
-			//TODO:
-			GameObject gameObject = Object.Instantiate(this.gameObject.Value, a, Quaternion.Euler(euler));
+			GameObject gameObject = this.gameObject.Value.Spawn(a, Quaternion.Euler(euler));
 			if (scaleMin != null && scaleMax != null)
 			{
 			    float num = Random.Range(scaleMin.Value, scaleMax.Value);

@@ -31,7 +31,6 @@ namespace HutongGames.PlayMaker.Actions
 		[Tooltip("Event to send when the blend has finished.")]
 		public FsmEvent finishEvent;
 
-		// TODO: Delayed event doesn't handle speed changes etc.
 		// Use Animation isPlaying instead?
 		DelayedEvent delayedFinishEvent;
 
@@ -83,7 +82,6 @@ namespace HutongGames.PlayMaker.Actions
 			var timeValue = time.Value;
 			animation.Blend(animName.Value, targetWeight.Value, timeValue);
 			
-			// TODO: doesn't work well with scaled time
 			if (finishEvent != null)
 			{
 				delayedFinishEvent = Fsm.DelayedEvent(finishEvent, anim.length);

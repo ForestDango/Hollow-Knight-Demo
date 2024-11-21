@@ -1,0 +1,1200 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8362260562246182693
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9021185676372621528}
+  - component: {fileID: 5281739112913703048}
+  m_Layer: 0
+  m_Name: PlantTurretSpriteCollection
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9021185676372621528
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8362260562246182693}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5281739112913703048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8362260562246182693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d546f34a90531a14eaba82a43b05b86b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 3
+  materialIdsValid: 1
+  needMaterialInstance: 0
+  spriteDefinitions:
+  - name: Plant Turret_cover
+    boundsData:
+    - {x: 0.0078125, y: -0.35156247, z: 0}
+    - {x: 2.578125, y: 0.89062506, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 2.59375, y: 3.140625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.28125, y: -0.796875, z: 0}
+    - {x: 1.296875, y: -0.796875, z: 0}
+    - {x: -1.28125, y: 0.09375004, z: 0}
+    - {x: 1.296875, y: 0.09375004, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.8242207, y: 0.42187598}
+    - {x: 0.8242207, y: 0.58300686}
+    - {x: 0.9355449, y: 0.42187598}
+    - {x: 0.9355449, y: 0.58300686}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: c9a8ea4d4365b4d49928b26fc7df2017, type: 2}
+    materialId: 0
+    sourceTextureGUID: f842b4f73142ad14888f03fd3119be92
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Plant Turret_death0000
+    boundsData:
+    - {x: -0.03124997, y: 0.0234375, z: 0}
+    - {x: 1.59375, y: 1.640625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 2.59375, y: 3.140625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.828125, y: -0.796875, z: 0}
+    - {x: 0.76562506, y: -0.796875, z: 0}
+    - {x: -0.828125, y: 0.84375, z: 0}
+    - {x: 0.76562506, y: 0.84375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.72461134, y: 0.10254004}
+    - {x: 0.72461134, y: 0.20214745}
+    - {x: 0.92968553, y: 0.10254004}
+    - {x: 0.92968553, y: 0.20214745}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: c9a8ea4d4365b4d49928b26fc7df2017, type: 2}
+    materialId: 0
+    sourceTextureGUID: 969f94df50ab1674d96f8e3dd6f77bcf
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Plant Turret_death0001
+    boundsData:
+    - {x: 0.03125, y: -0.07031244, z: 0}
+    - {x: 1.75, y: 1.5468751, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 2.59375, y: 3.140625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.84375, y: -0.84375, z: 0}
+    - {x: 0.90625, y: -0.84375, z: 0}
+    - {x: -0.84375, y: 0.7031251, z: 0}
+    - {x: 0.90625, y: 0.7031251, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.72461134, y: 0.0019541015}
+    - {x: 0.9433574, y: 0.0019541015}
+    - {x: 0.72461134, y: 0.09863184}
+    - {x: 0.9433574, y: 0.09863184}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: c9a8ea4d4365b4d49928b26fc7df2017, type: 2}
+    materialId: 0
+    sourceTextureGUID: c86683c3b08971247be58a97d68dc5f2
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Plant Turret_death0002
+    boundsData:
+    - {x: -0.0859375, y: -0.0078125, z: 0}
+    - {x: 1.328125, y: 1.234375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 2.59375, y: 3.140625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.75, y: -0.625, z: 0}
+    - {x: 0.578125, y: -0.625, z: 0}
+    - {x: -0.75, y: 0.609375, z: 0}
+    - {x: 0.578125, y: 0.609375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.38867384, y: 0.39648536}
+    - {x: 0.55468553, y: 0.39648536}
+    - {x: 0.38867384, y: 0.47363183}
+    - {x: 0.55468553, y: 0.47363183}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: c9a8ea4d4365b4d49928b26fc7df2017, type: 2}
+    materialId: 0
+    sourceTextureGUID: d7f1b6b93d6ed1f4583c99dadded762a
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Plant Turret_death0003
+    boundsData:
+    - {x: -0.06250003, y: -0.00781247, z: 0}
+    - {x: 1.1875, y: 1.171875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 2.59375, y: 3.140625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.65625, y: -0.59375, z: 0}
+    - {x: 0.53124994, y: -0.59375, z: 0}
+    - {x: -0.65625, y: 0.57812506, z: 0}
+    - {x: 0.53124994, y: 0.57812506, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.003908203, y: 0.48339942}
+    - {x: 0.003908203, y: 0.55761623}
+    - {x: 0.15038867, y: 0.48339942}
+    - {x: 0.15038867, y: 0.55761623}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: c9a8ea4d4365b4d49928b26fc7df2017, type: 2}
+    materialId: 0
+    sourceTextureGUID: 5e19f0f9392552b4e98d1e7b5efdd1a5
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Plant Turret_idle0000
+    boundsData:
+    - {x: -0.03125, y: 0.140625, z: 0}
+    - {x: 1.65625, y: 1.78125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 2.59375, y: 3.140625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.859375, y: -0.75, z: 0}
+    - {x: 0.796875, y: -0.75, z: 0}
+    - {x: -0.859375, y: 1.03125, z: 0}
+    - {x: 0.796875, y: 1.03125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.2597676, y: 0.0019541015}
+    - {x: 0.2597676, y: 0.105467774}
+    - {x: 0.4824199, y: 0.0019541015}
+    - {x: 0.4824199, y: 0.105467774}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: c9a8ea4d4365b4d49928b26fc7df2017, type: 2}
+    materialId: 0
+    sourceTextureGUID: c0d7b55d2e36e284a95694fd3ef30009
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Plant Turret_idle0001
+    boundsData:
+    - {x: -0.03125, y: 0.20312506, z: 0}
+    - {x: 1.71875, y: 1.46875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 2.59375, y: 3.140625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.890625, y: -0.53124994, z: 0}
+    - {x: 0.828125, y: -0.53124994, z: 0}
+    - {x: -0.890625, y: 0.93750006, z: 0}
+    - {x: 0.828125, y: 0.93750006, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.66992384, y: 0.20605567}
+    - {x: 0.88476366, y: 0.20605567}
+    - {x: 0.66992384, y: 0.29785058}
+    - {x: 0.88476366, y: 0.29785058}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: c9a8ea4d4365b4d49928b26fc7df2017, type: 2}
+    materialId: 0
+    sourceTextureGUID: 2cee4ce437dfb37468683f5f8bb03fc6
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Plant Turret_idle0002
+    boundsData:
+    - {x: -0.046875, y: 0.17187497, z: 0}
+    - {x: 1.75, y: 1.4375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 2.59375, y: 3.140625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.921875, y: -0.546875, z: 0}
+    - {x: 0.828125, y: -0.546875, z: 0}
+    - {x: -0.921875, y: 0.89062494, z: 0}
+    - {x: 0.828125, y: 0.89062494, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.42578322, y: 0.22558692}
+    - {x: 0.6445293, y: 0.22558692}
+    - {x: 0.42578322, y: 0.3154287}
+    - {x: 0.6445293, y: 0.3154287}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: c9a8ea4d4365b4d49928b26fc7df2017, type: 2}
+    materialId: 0
+    sourceTextureGUID: d1f14617eccde214781245c7e0ebf145
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Plant Turret_idle0003
+    boundsData:
+    - {x: -0.03906253, y: 0.14062497, z: 0}
+    - {x: 1.859375, y: 1.375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 2.59375, y: 3.140625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.96875, y: -0.546875, z: 0}
+    - {x: 0.89062494, y: -0.546875, z: 0}
+    - {x: -0.96875, y: 0.82812494, z: 0}
+    - {x: 0.89062494, y: 0.82812494, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.49023634, y: 0.105469726}
+    - {x: 0.49023634, y: 0.2216787}
+    - {x: 0.6621074, y: 0.105469726}
+    - {x: 0.6621074, y: 0.2216787}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: c9a8ea4d4365b4d49928b26fc7df2017, type: 2}
+    materialId: 0
+    sourceTextureGUID: a44efa0e7f381ef468ec2534ce49dffa
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Plant Turret_idle0004
+    boundsData:
+    - {x: -0.07031247, y: 0.11718747, z: 0}
+    - {x: 1.828125, y: 1.328125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 2.59375, y: 3.140625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.984375, y: -0.546875, z: 0}
+    - {x: 0.84375006, y: -0.546875, z: 0}
+    - {x: -0.984375, y: 0.78124994, z: 0}
+    - {x: 0.84375006, y: 0.78124994, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.8242207, y: 0.30371192}
+    - {x: 0.8242207, y: 0.41796777}
+    - {x: 0.9902324, y: 0.30371192}
+    - {x: 0.9902324, y: 0.41796777}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: c9a8ea4d4365b4d49928b26fc7df2017, type: 2}
+    materialId: 0
+    sourceTextureGUID: 4692cd098def4b64fae5ab6afdb65bd9
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Plant Turret_idle0005
+    boundsData:
+    - {x: -0.06250003, y: 0.10937497, z: 0}
+    - {x: 1.90625, y: 1.3125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 2.59375, y: 3.140625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.015625, y: -0.546875, z: 0}
+    - {x: 0.89062494, y: -0.546875, z: 0}
+    - {x: -1.015625, y: 0.76562494, z: 0}
+    - {x: 0.89062494, y: 0.76562494, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.6523457, y: 0.3017588}
+    - {x: 0.6523457, y: 0.42089745}
+    - {x: 0.8164043, y: 0.3017588}
+    - {x: 0.8164043, y: 0.42089745}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: c9a8ea4d4365b4d49928b26fc7df2017, type: 2}
+    materialId: 0
+    sourceTextureGUID: 6dda2ce44ea67ce45b2bebb1563a03d4
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Plant Turret_shoot0000
+    boundsData:
+    - {x: -0.01562497, y: 0.14843747, z: 0}
+    - {x: 2, y: 1.265625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 2.59375, y: 3.140625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.015625, y: -0.484375, z: 0}
+    - {x: 0.98437506, y: -0.484375, z: 0}
+    - {x: -1.015625, y: 0.78124994, z: 0}
+    - {x: 0.98437506, y: 0.78124994, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.2597676, y: 0.109375976}
+    - {x: 0.2597676, y: 0.23437402}
+    - {x: 0.41796678, y: 0.109375976}
+    - {x: 0.41796678, y: 0.23437402}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: c9a8ea4d4365b4d49928b26fc7df2017, type: 2}
+    materialId: 0
+    sourceTextureGUID: d57dfb6537f71c846b28ce0de4f4e842
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Plant Turret_shoot0001
+    boundsData:
+    - {x: 0.00781253, y: 0.085937515, z: 0}
+    - {x: 1.890625, y: 1.171875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 2.59375, y: 3.140625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.9375, y: -0.49999997, z: 0}
+    - {x: 0.95312506, y: -0.49999997, z: 0}
+    - {x: -0.9375, y: 0.671875, z: 0}
+    - {x: 0.95312506, y: 0.671875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.003908203, y: 0.3613291}
+    - {x: 0.003908203, y: 0.4794912}
+    - {x: 0.15038867, y: 0.3613291}
+    - {x: 0.15038867, y: 0.4794912}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: c9a8ea4d4365b4d49928b26fc7df2017, type: 2}
+    materialId: 0
+    sourceTextureGUID: 05d28ced9beb46f4caede53d2556769d
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Plant Turret_shoot0002
+    boundsData:
+    - {x: -0.0078125, y: 0.10937506, z: 0}
+    - {x: 1.890625, y: 1.1875001, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 2.59375, y: 3.140625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.953125, y: -0.484375, z: 0}
+    - {x: 0.9375, y: -0.484375, z: 0}
+    - {x: -0.953125, y: 0.7031251, z: 0}
+    - {x: 0.9375, y: 0.7031251, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.16992383, y: 0.23828223}
+    - {x: 0.40624803, y: 0.23828223}
+    - {x: 0.16992383, y: 0.31249902}
+    - {x: 0.40624803, y: 0.31249902}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: c9a8ea4d4365b4d49928b26fc7df2017, type: 2}
+    materialId: 0
+    sourceTextureGUID: df82d00b6c5989d48b410612ce9a4d5a
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Plant Turret_shoot0003
+    boundsData:
+    - {x: -0.0390625, y: 0.5234375, z: 0}
+    - {x: 1.671875, y: 1.984375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 2.59375, y: 3.140625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.875, y: -0.46874997, z: 0}
+    - {x: 0.796875, y: -0.46874997, z: 0}
+    - {x: -0.875, y: 1.515625, z: 0}
+    - {x: 0.796875, y: 1.515625, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.003908203, y: 0.0019541015}
+    - {x: 0.003908203, y: 0.10644434}
+    - {x: 0.25195116, y: 0.0019541015}
+    - {x: 0.25195116, y: 0.10644434}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: c9a8ea4d4365b4d49928b26fc7df2017, type: 2}
+    materialId: 0
+    sourceTextureGUID: e7fe76d2e81104a4dac1531c6fa9c0f1
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Plant Turret_sleep_to_idle0000
+    boundsData:
+    - {x: 0.04687497, y: -0.07031253, z: 0}
+    - {x: 1.46875, y: 0.98437494, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 2.59375, y: 3.140625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.6875, y: -0.5625, z: 0}
+    - {x: 0.78124994, y: -0.5625, z: 0}
+    - {x: -0.6875, y: 0.42187494, z: 0}
+    - {x: 0.78124994, y: 0.42187494, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.15820508, y: 0.47168067}
+    - {x: 0.3417949, y: 0.47168067}
+    - {x: 0.15820508, y: 0.5332022}
+    - {x: 0.3417949, y: 0.5332022}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: c9a8ea4d4365b4d49928b26fc7df2017, type: 2}
+    materialId: 0
+    sourceTextureGUID: fc2aabb9ad17c8d4e923f943c067106b
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Plant Turret_sleep_to_idle0001
+    boundsData:
+    - {x: -0.03125, y: -0.14843749, z: 0}
+    - {x: 1.5, y: 0.828125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 2.59375, y: 3.140625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.78125, y: -0.5625, z: 0}
+    - {x: 0.71875, y: -0.5625, z: 0}
+    - {x: -0.78125, y: 0.26562503, z: 0}
+    - {x: 0.71875, y: 0.26562503, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.8925801, y: 0.20605567}
+    - {x: 0.8925801, y: 0.2998037}
+    - {x: 0.9960918, y: 0.20605567}
+    - {x: 0.9960918, y: 0.2998037}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: c9a8ea4d4365b4d49928b26fc7df2017, type: 2}
+    materialId: 0
+    sourceTextureGUID: c93df5bc968a2e743a99bdc503d5a613
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Plant Turret_sleep_to_idle0002
+    boundsData:
+    - {x: 0.015625, y: 0.085937515, z: 0}
+    - {x: 1.78125, y: 1.171875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 2.59375, y: 3.140625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.875, y: -0.49999997, z: 0}
+    - {x: 0.90625, y: -0.49999997, z: 0}
+    - {x: -0.875, y: 0.671875, z: 0}
+    - {x: 0.90625, y: 0.671875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.15820508, y: 0.39453223}
+    - {x: 0.3808574, y: 0.39453223}
+    - {x: 0.15820508, y: 0.46777245}
+    - {x: 0.3808574, y: 0.46777245}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: c9a8ea4d4365b4d49928b26fc7df2017, type: 2}
+    materialId: 0
+    sourceTextureGUID: a14b9b8221a2b8748baa63dc4dea4ba0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Plant Turret_sleep_to_idle0003
+    boundsData:
+    - {x: -0.0078125, y: 0.10937506, z: 0}
+    - {x: 1.890625, y: 1.1875001, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 2.59375, y: 3.140625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.953125, y: -0.484375, z: 0}
+    - {x: 0.9375, y: -0.484375, z: 0}
+    - {x: -0.953125, y: 0.7031251, z: 0}
+    - {x: 0.9375, y: 0.7031251, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.003908203, y: 0.2392588}
+    - {x: 0.003908203, y: 0.3574209}
+    - {x: 0.1523418, y: 0.2392588}
+    - {x: 0.1523418, y: 0.3574209}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: c9a8ea4d4365b4d49928b26fc7df2017, type: 2}
+    materialId: 0
+    sourceTextureGUID: b5b60b12ead27ca498ed062b70ed8fad
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Plant Turret_sleep_to_idle0004
+    boundsData:
+    - {x: -0.03124997, y: 0.1875, z: 0}
+    - {x: 1.59375, y: 1.8125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 2.59375, y: 3.140625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.828125, y: -0.71875, z: 0}
+    - {x: 0.76562506, y: -0.71875, z: 0}
+    - {x: -0.828125, y: 1.09375, z: 0}
+    - {x: 0.76562506, y: 1.09375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.49023634, y: 0.0019541015}
+    - {x: 0.49023634, y: 0.101561524}
+    - {x: 0.7167949, y: 0.0019541015}
+    - {x: 0.7167949, y: 0.101561524}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: c9a8ea4d4365b4d49928b26fc7df2017, type: 2}
+    materialId: 0
+    sourceTextureGUID: af40343a5f9edb04ab36fad70fcd3773
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Plant Turret_spike_ball
+    boundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 1.1875, y: 1.140625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 1.1875, y: 1.140625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.59375, y: -0.578125, z: 0}
+    - {x: 0.59375, y: -0.578125, z: 0}
+    - {x: -0.59375, y: 0.5625, z: 0}
+    - {x: 0.59375, y: 0.5625, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.56250197, y: 0.42480567}
+    - {x: 0.71093553, y: 0.42480567}
+    - {x: 0.56250197, y: 0.49609277}
+    - {x: 0.71093553, y: 0.49609277}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: c9a8ea4d4365b4d49928b26fc7df2017, type: 2}
+    materialId: 0
+    sourceTextureGUID: 7fc6ddacd9c75d9499e4d2947e2f1582
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Plant Turret_stun0000
+    boundsData:
+    - {x: -0.0078125, y: 0.10937506, z: 0}
+    - {x: 1.890625, y: 1.1875001, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 2.59375, y: 3.140625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.953125, y: -0.484375, z: 0}
+    - {x: 0.9375, y: -0.484375, z: 0}
+    - {x: -0.953125, y: 0.7031251, z: 0}
+    - {x: 0.9375, y: 0.7031251, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.1601582, y: 0.31640723}
+    - {x: 0.3964824, y: 0.31640723}
+    - {x: 0.1601582, y: 0.39062402}
+    - {x: 0.3964824, y: 0.39062402}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: c9a8ea4d4365b4d49928b26fc7df2017, type: 2}
+    materialId: 0
+    sourceTextureGUID: ac228a90fb78a93488326d05072e085f
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Plant Turret_stun0001
+    boundsData:
+    - {x: 0.00781253, y: 0.085937515, z: 0}
+    - {x: 1.890625, y: 1.171875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 2.59375, y: 3.140625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.9375, y: -0.49999997, z: 0}
+    - {x: 0.95312506, y: -0.49999997, z: 0}
+    - {x: -0.9375, y: 0.671875, z: 0}
+    - {x: 0.95312506, y: 0.671875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.40429884, y: 0.31933692}
+    - {x: 0.64062303, y: 0.31933692}
+    - {x: 0.40429884, y: 0.39257714}
+    - {x: 0.64062303, y: 0.39257714}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: c9a8ea4d4365b4d49928b26fc7df2017, type: 2}
+    materialId: 0
+    sourceTextureGUID: 1868e5c274d743a4b9ef31f0a7158729
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Plant Turret_stun0002
+    boundsData:
+    - {x: -0.01562497, y: 0.14843747, z: 0}
+    - {x: 2, y: 1.265625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 2.59375, y: 3.140625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.015625, y: -0.484375, z: 0}
+    - {x: 0.98437506, y: -0.484375, z: 0}
+    - {x: -1.015625, y: 0.78124994, z: 0}
+    - {x: 0.98437506, y: 0.78124994, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.003908203, y: 0.11035254}
+    - {x: 0.003908203, y: 0.23535058}
+    - {x: 0.16210742, y: 0.11035254}
+    - {x: 0.16210742, y: 0.23535058}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: c9a8ea4d4365b4d49928b26fc7df2017, type: 2}
+    materialId: 0
+    sourceTextureGUID: 5bbc82628684c594baca431a73683ea2
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  premultipliedAlpha: 0
+  material: {fileID: 0}
+  materials:
+  - {fileID: 2100000, guid: c9a8ea4d4365b4d49928b26fc7df2017, type: 2}
+  textures:
+  - {fileID: 2800000, guid: dfd1c4fc1ca42f54a9e9d0b0b99b516e, type: 3}
+  pngTextures: []
+  materialPngTextureId: 00000000
+  textureFilterMode: 1
+  textureMipMaps: 0
+  allowMultipleAtlases: 0
+  spriteCollectionGUID: f171f07c79a657e4b959f7dc7740e30a
+  spriteCollectionName: PlantTurretSpriteCollection
+  assetName: 
+  loadable: 0
+  invOrthoSize: 2
+  halfTargetHeight: 32
+  buildKey: 776085501
+  dataGuid: b945105f15a105f4e8455134d05ebcf3
+  managedSpriteCollection: 0
+  hasPlatformData: 0
+  spriteCollectionPlatforms: []
+  spriteCollectionPlatformGUIDs: []

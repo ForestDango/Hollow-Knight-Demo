@@ -59,7 +59,7 @@ public class SpatterOrange : MonoBehaviour
 		animFrame++;
 		if(animFrame > 6)
 		{
-		    Destroy(gameObject);//TODO:
+		    gameObject.Recycle();
 		    return;
 		}
 		spriteRenderer.sprite = sprites[animFrame];

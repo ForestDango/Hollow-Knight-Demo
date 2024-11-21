@@ -32,6 +32,20 @@ public static class Extensions
 	}
     }
 
+    public static void SetActiveWithChildren(this MeshRenderer self, bool value)
+    {
+	if (self.transform.childCount > 0)
+	{
+	    MeshRenderer[] componentsInChildren = self.GetComponentsInChildren<MeshRenderer>();
+	    for (int i = 0; i < componentsInChildren.Length; i++)
+	    {
+		componentsInChildren[i].enabled = value;
+	    }
+	    return;
+	}
+	self.enabled = value;
+    }
+
     public static void SetPositionX(this Transform t, float newX)
     {
 	t.position = new Vector3(newX, t.position.y, t.position.z);

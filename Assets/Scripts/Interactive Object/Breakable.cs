@@ -292,9 +292,50 @@ public class Breakable : MonoBehaviour,IHitResponder
 	isBroken = true;
     }
 
-    private void SetStaticPartsActivation(bool v)
+    private void SetStaticPartsActivation(bool broken) //发送来的是true
     {
-	
+	if (wholeRenderer != null)
+	{
+	    wholeRenderer.enabled = !broken;
+	}
+	for (int i = 0; i < wholeParts.Length; i++)
+	{
+	    GameObject gameObject = wholeParts[i];
+	    if (gameObject == null)
+	    {
+		Debug.LogErrorFormat(this, "Unassigned whole part in {0}", new object[]
+		{
+		    this
+		});
+	    }
+	    else
+	    {
+		gameObject.SetActive(!broken);
+	    }
+	}
+	for (int j = 0; j < remnantParts.Length; j++)
+	{
+	    GameObject gameObject2 = remnantParts[j];
+	    if (gameObject2 == null)
+	    {
+		Debug.LogErrorFormat(this, "Unassigned remnant part in {0}", new object[]
+		{
+		    this
+		});
+	    }
+	    else
+	    {
+		gameObject2.SetActive(broken);
+	    }
+	}
+	if (hitEventReciever != null)
+	{
+	    FSMUtility.SendEventToGameObject(hitEventReciever, "HIT", false);
+	}
+	if (bodyCollider)
+	{
+	    bodyCollider.enabled = !broken;
+	}
     }
 
     [System.Serializable]
@@ -330,8 +371,7 @@ public class Breakable : MonoBehaviour,IHitResponder
 	    int num = Random.Range(spawnMin, spawnMax + 1);
 	    for (int i = 0; i < num; i++)
 	    {
-		//TODO:Object Pool
-		GameObject gameObject = Instantiate(referenceObject);
+		GameObject gameObject = referenceObject.Spawn();
 		if (gameObject)
 		{
 		    gameObject.transform.position = origin + new Vector3(Random.Range(-originVariation.x, originVariation.x), Random.Range(-originVariation.y, originVariation.y), 0f);

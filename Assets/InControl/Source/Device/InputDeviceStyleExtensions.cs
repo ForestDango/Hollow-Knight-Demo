@@ -26,7 +26,7 @@ namespace InControl
 				case InputDeviceStyle.Steam:
 					return InputControlType.Back;
 				case InputDeviceStyle.AppleMFi:
-					return InputControlType.Menu; // TODO: Correct?
+					return InputControlType.Menu;
 				case InputDeviceStyle.AmazonFireTV:
 					return InputControlType.Back;
 				case InputDeviceStyle.NVIDIAShield:
@@ -47,8 +47,8 @@ namespace InControl
 				case InputDeviceStyle.Ouya:
 					return InputControlType.None; // Only has one or no button
 
-				case InputDeviceStyle.Vive: // TODO: Check?
-				case InputDeviceStyle.Oculus: // TODO: Check?
+				case InputDeviceStyle.Vive:
+				case InputDeviceStyle.Oculus:
 				case InputDeviceStyle.Unknown:
 				default:
 					return defaultLeftCommandControl;
@@ -75,7 +75,7 @@ namespace InControl
 				case InputDeviceStyle.Steam:
 					return InputControlType.Start;
 				case InputDeviceStyle.AppleMFi:
-					return InputControlType.Options; // TODO: Correct?
+					return InputControlType.Options;
 				case InputDeviceStyle.AmazonFireTV:
 					return InputControlType.Menu;
 				case InputDeviceStyle.NVIDIAShield:
@@ -97,8 +97,8 @@ namespace InControl
 				case InputDeviceStyle.PlayStationMove:
 					return InputControlType.None; // Only has one or no button
 
-				case InputDeviceStyle.Vive: // TODO: Check?
-				case InputDeviceStyle.Oculus: // TODO: Check?
+				case InputDeviceStyle.Vive:
+				case InputDeviceStyle.Oculus:
 				case InputDeviceStyle.Unknown:
 				default:
 					return defaultRightCommandControl;

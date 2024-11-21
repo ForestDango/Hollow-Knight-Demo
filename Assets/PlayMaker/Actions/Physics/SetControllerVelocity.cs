@@ -49,7 +49,7 @@ namespace HutongGames.PlayMaker.Actions
 			everyFrame = false;
 		}
 
-        // TODO: test this works in OnEnter!
+        //test this works in OnEnter!
 		public override void OnEnter()
 		{
 			DoSetVelocity();

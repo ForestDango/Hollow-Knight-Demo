@@ -161,7 +161,7 @@ namespace UnityStandardAssets.ImageEffects
                 Graphics.Blit (source, renderTarget2Use, ccDepthMaterial);
             }
             else
-			{
+	    {
                 ccMaterial.SetTexture ("_RgbTex", rgbChannelTex);
                 ccMaterial.SetFloat ("_Saturation", saturation);
 
@@ -169,7 +169,7 @@ namespace UnityStandardAssets.ImageEffects
             }
 
             if (selectiveCc)
-			{
+	    {
                 selectiveCcMaterial.SetColor ("selColor", selectiveFromColor);
                 selectiveCcMaterial.SetColor ("targetColor", selectiveToColor);
                 Graphics.Blit (renderTarget2Use, destination, selectiveCcMaterial);

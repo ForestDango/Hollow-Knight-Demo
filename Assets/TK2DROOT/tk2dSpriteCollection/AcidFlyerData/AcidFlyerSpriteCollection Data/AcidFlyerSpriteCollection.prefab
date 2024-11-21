@@ -1,0 +1,636 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4284206319242695431
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8946642205290155217}
+  - component: {fileID: 2393352263679867978}
+  m_Layer: 0
+  m_Name: AcidFlyerSpriteCollection
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8946642205290155217
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4284206319242695431}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2393352263679867978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4284206319242695431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d546f34a90531a14eaba82a43b05b86b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 3
+  materialIdsValid: 1
+  needMaterialInstance: 0
+  spriteDefinitions:
+  - name: Acid Flyer_death
+    boundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 4.0625, y: 3.953125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 4.0625, y: 3.953125, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -2.03125, y: -1.984375, z: 0}
+    - {x: 2.03125, y: -1.984375, z: 0}
+    - {x: -2.03125, y: 1.96875, z: 0}
+    - {x: 2.03125, y: 1.96875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.26855567, y: 0.46630907}
+    - {x: 0.52246, y: 0.46630907}
+    - {x: 0.26855567, y: 0.5898433}
+    - {x: 0.52246, y: 0.5898433}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 1644d850e82e61b4f9135993ea16fc5c, type: 2}
+    materialId: 0
+    sourceTextureGUID: 036d3e803773d8f49bc53525730e642e
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Acid Flyer_fly0000
+    boundsData:
+    - {x: -0.171875, y: 0.046875, z: 0}
+    - {x: 4.65625, y: 4.65625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 5.34375, y: 5.078125, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -2.5, y: -2.28125, z: 0}
+    - {x: 2.15625, y: -2.28125, z: 0}
+    - {x: -2.5, y: 2.375, z: 0}
+    - {x: 2.15625, y: 2.375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.0019541015, y: 0.0009770507}
+    - {x: 0.29296777, y: 0.0009770507}
+    - {x: 0.0019541015, y: 0.14648388}
+    - {x: 0.29296777, y: 0.14648388}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 1644d850e82e61b4f9135993ea16fc5c, type: 2}
+    materialId: 0
+    sourceTextureGUID: dad4c7bf924794443962d605994e3c3e
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Acid Flyer_fly0001
+    boundsData:
+    - {x: -0.09375, y: -0.1015625, z: 0}
+    - {x: 4.75, y: 4.546875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 5.34375, y: 5.078125, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -2.46875, y: -2.375, z: 0}
+    - {x: 2.28125, y: -2.375, z: 0}
+    - {x: -2.46875, y: 2.171875, z: 0}
+    - {x: 2.28125, y: 2.171875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.5976572, y: 0.0009770507}
+    - {x: 0.8945303, y: 0.0009770507}
+    - {x: 0.5976572, y: 0.14306591}
+    - {x: 0.8945303, y: 0.14306591}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 1644d850e82e61b4f9135993ea16fc5c, type: 2}
+    materialId: 0
+    sourceTextureGUID: 6b0568f6de54aac4f95935288d3a6ef3
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Acid Flyer_fly0002
+    boundsData:
+    - {x: 0, y: -0.37500006, z: 0}
+    - {x: 5.03125, y: 4.03125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 5.34375, y: 5.078125, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -2.515625, y: -2.390625, z: 0}
+    - {x: 2.515625, y: -2.390625, z: 0}
+    - {x: -2.515625, y: 1.6406249, z: 0}
+    - {x: 2.515625, y: 1.6406249, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.2939463, y: 0.30712938}
+    - {x: 0.2939463, y: 0.464355}
+    - {x: 0.5458975, y: 0.30712938}
+    - {x: 0.5458975, y: 0.464355}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 1644d850e82e61b4f9135993ea16fc5c, type: 2}
+    materialId: 0
+    sourceTextureGUID: f4da30f40d4a36b45b926e8378af793b
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Acid Flyer_fly0003
+    boundsData:
+    - {x: -0.14843762, y: -0.0625, z: 0}
+    - {x: 4.546875, y: 4.59375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 5.34375, y: 5.078125, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -2.421875, y: -2.359375, z: 0}
+    - {x: 2.1249998, y: -2.359375, z: 0}
+    - {x: -2.421875, y: 2.234375, z: 0}
+    - {x: 2.1249998, y: 2.234375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.5976572, y: 0.14502002}
+    - {x: 0.5976572, y: 0.2871089}
+    - {x: 0.8847647, y: 0.14502002}
+    - {x: 0.8847647, y: 0.2871089}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 1644d850e82e61b4f9135993ea16fc5c, type: 2}
+    materialId: 0
+    sourceTextureGUID: 316b5766a25a5c5499e207ed2c60fc29
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Acid Flyer_fly0004
+    boundsData:
+    - {x: -0.125, y: -0.09374988, z: 0}
+    - {x: 4.75, y: 4.5625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 5.34375, y: 5.078125, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -2.5, y: -2.375, z: 0}
+    - {x: 2.25, y: -2.375, z: 0}
+    - {x: -2.5, y: 2.1875002, z: 0}
+    - {x: 2.25, y: 2.1875002, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.29687598, y: 0.0009770507}
+    - {x: 0.59374905, y: 0.0009770507}
+    - {x: 0.29687598, y: 0.1435542}
+    - {x: 0.59374905, y: 0.1435542}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 1644d850e82e61b4f9135993ea16fc5c, type: 2}
+    materialId: 0
+    sourceTextureGUID: cee3dd49db6c9a44687f2d6dc7c91d0c
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Acid Flyer_fly0005
+    boundsData:
+    - {x: -0.0703125, y: -0.28125, z: 0}
+    - {x: 5.109375, y: 4.0625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 5.34375, y: 5.078125, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -2.625, y: -2.3125, z: 0}
+    - {x: 2.484375, y: -2.3125, z: 0}
+    - {x: -2.625, y: 1.75, z: 0}
+    - {x: 2.484375, y: 1.75, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.29687598, y: 0.1455083}
+    - {x: 0.29687598, y: 0.3051753}
+    - {x: 0.5507803, y: 0.1455083}
+    - {x: 0.5507803, y: 0.3051753}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 1644d850e82e61b4f9135993ea16fc5c, type: 2}
+    materialId: 0
+    sourceTextureGUID: 2f530c69af32e5e4c81cf5a269ec9435
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Acid Flyer_head_bounce0000
+    boundsData:
+    - {x: -0.35937494, y: 0, z: 0}
+    - {x: 4.34375, y: 4.71875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 5.34375, y: 5.078125, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -2.53125, y: -2.359375, z: 0}
+    - {x: 1.8125001, y: -2.359375, z: 0}
+    - {x: -2.53125, y: 2.359375, z: 0}
+    - {x: 1.8125001, y: 2.359375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.55468845, y: 0.28906298}
+    - {x: 0.55468845, y: 0.4248042}
+    - {x: 0.8496084, y: 0.28906298}
+    - {x: 0.8496084, y: 0.4248042}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 1644d850e82e61b4f9135993ea16fc5c, type: 2}
+    materialId: 0
+    sourceTextureGUID: f96dcd59d7db5774a9ed5bfaf1826017
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Acid Flyer_head_bounce0001
+    boundsData:
+    - {x: 0.125, y: -0.10937494, z: 0}
+    - {x: 4.96875, y: 4.15625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 5.34375, y: 5.078125, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -2.359375, y: -2.1875, z: 0}
+    - {x: 2.609375, y: -2.1875, z: 0}
+    - {x: -2.359375, y: 1.9687501, z: 0}
+    - {x: 2.609375, y: 1.9687501, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.0019541015, y: 0.14843799}
+    - {x: 0.0019541015, y: 0.30371046}
+    - {x: 0.26171777, y: 0.14843799}
+    - {x: 0.26171777, y: 0.30371046}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 1644d850e82e61b4f9135993ea16fc5c, type: 2}
+    materialId: 0
+    sourceTextureGUID: 1dd63970d401c2e4286356e93dde0c4b
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Acid Flyer_turn0000
+    boundsData:
+    - {x: 0.3828125, y: 0.09375012, z: 0}
+    - {x: 4.203125, y: 4.65625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 5.34375, y: 5.078125, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.71875, y: -2.234375, z: 0}
+    - {x: 2.484375, y: -2.234375, z: 0}
+    - {x: -1.71875, y: 2.4218752, z: 0}
+    - {x: 2.484375, y: 2.4218752, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.0019541015, y: 0.44677782}
+    - {x: 0.26464745, y: 0.44677782}
+    - {x: 0.0019541015, y: 0.5922847}
+    - {x: 0.26464745, y: 0.5922847}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 1644d850e82e61b4f9135993ea16fc5c, type: 2}
+    materialId: 0
+    sourceTextureGUID: 0710491101b4b9c4684fa6ce3128a5d1
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Acid Flyer_turn0001
+    boundsData:
+    - {x: -0.11718744, y: -0.0390625, z: 0}
+    - {x: 4.203125, y: 4.640625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 5.34375, y: 5.078125, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -2.21875, y: -2.359375, z: 0}
+    - {x: 1.9843751, y: -2.359375, z: 0}
+    - {x: -2.21875, y: 2.28125, z: 0}
+    - {x: 1.9843751, y: 2.28125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.54980564, y: 0.4267583}
+    - {x: 0.54980564, y: 0.558105}
+    - {x: 0.8398428, y: 0.4267583}
+    - {x: 0.8398428, y: 0.558105}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 1644d850e82e61b4f9135993ea16fc5c, type: 2}
+    materialId: 0
+    sourceTextureGUID: 49da59317bec69646bf1d02e251cdeff
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Acid Flyer_turn0002
+    boundsData:
+    - {x: 0.2890625, y: -0.0546875, z: 0}
+    - {x: 4.453125, y: 4.609375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 5.34375, y: 5.078125, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.9375, y: -2.359375, z: 0}
+    - {x: 2.515625, y: -2.359375, z: 0}
+    - {x: -1.9375, y: 2.25, z: 0}
+    - {x: 2.515625, y: 2.25, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.0019541015, y: 0.30566454}
+    - {x: 0.0019541015, y: 0.44482374}
+    - {x: 0.29003808, y: 0.30566454}
+    - {x: 0.29003808, y: 0.44482374}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 1644d850e82e61b4f9135993ea16fc5c, type: 2}
+    materialId: 0
+    sourceTextureGUID: ff01cd7e16130884abc6155312084e9b
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  premultipliedAlpha: 0
+  material: {fileID: 0}
+  materials:
+  - {fileID: 2100000, guid: 1644d850e82e61b4f9135993ea16fc5c, type: 2}
+  textures:
+  - {fileID: 2800000, guid: a49b1ae47df97e64b9a6158589fc92b9, type: 3}
+  pngTextures: []
+  materialPngTextureId: 00000000
+  textureFilterMode: 1
+  textureMipMaps: 0
+  allowMultipleAtlases: 0
+  spriteCollectionGUID: f529b7c4bcaf07d409f4289b47578bc9
+  spriteCollectionName: AcidFlyerSpriteCollection
+  assetName: 
+  loadable: 0
+  invOrthoSize: 2
+  halfTargetHeight: 32
+  buildKey: 1996242918
+  dataGuid: fc3bc6241518d9e4cb3c4a7637857535
+  managedSpriteCollection: 0
+  hasPlatformData: 0
+  spriteCollectionPlatforms: []
+  spriteCollectionPlatformGUIDs: []

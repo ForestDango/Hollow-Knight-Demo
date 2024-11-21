@@ -143,10 +143,10 @@ namespace HutongGames.PlayMaker.Actions
 	/// <returns></returns>
 	private bool CheckWall()
 	{
-	    Vector2 vector = collider.bounds.center + new Vector3(0f, -(collider.bounds.size.y / 2f) + wallRayHeight);
+	    Vector2 vector = collider.bounds.center + new Vector3(0f, -(collider.bounds.size.y / 2f));
 	    Vector2 vector2 = Vector2.right * Direction;
 	    float num = collider.bounds.center.x / 2f + wallRayLength;
-	    Debug.DrawLine(vector, vector + vector2 * num);
+	    //Debug.DrawLine(vector, vector + vector2 * num);
 	    return Physics2D.Raycast(vector, vector2, num, LayerMask.GetMask(groundLayer)).collider != null;
 	}
 
@@ -157,7 +157,7 @@ namespace HutongGames.PlayMaker.Actions
 	private bool CheckFloor()
 	{
 	    Vector2 vector = collider.bounds.center + new Vector3((collider.bounds.size.x / 2f + wallRayLength) * Direction, -(collider.bounds.size.y / 2f) + wallRayHeight);
-	    Debug.DrawLine(vector, vector + Vector2.down * groundRayLength);
+	    //Debug.DrawLine(vector, vector + Vector2.down * groundRayLength);
 	    return !(Physics2D.Raycast(vector, Vector2.down, groundRayLength, LayerMask.GetMask(groundLayer)).collider != null);
 	}
 
@@ -167,8 +167,8 @@ namespace HutongGames.PlayMaker.Actions
 	/// <returns></returns>
 	private bool CheckIsGrounded()
 	{
-	    Vector2 vector = collider.bounds.center + new Vector3(0f,-(collider.bounds.center.y / 2f) + wallRayHeight);
-	    Debug.DrawLine(vector, vector + Vector2.down * groundRayLength);
+	    Vector2 vector = collider.bounds.min;
+	    //Debug.DrawLine(vector, vector + Vector2.down * groundRayLength);
 	    return Physics2D.Raycast(vector, Vector2.down, groundRayLength, LayerMask.GetMask(groundLayer)).collider != null;
 	}
 

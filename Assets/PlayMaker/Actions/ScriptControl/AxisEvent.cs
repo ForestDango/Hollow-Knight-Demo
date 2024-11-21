@@ -81,7 +81,7 @@ namespace HutongGames.PlayMaker.Actions
 			}
 			
 			// get integer direction sector (4 directions)
-			// TODO: 8 directions? or new action?
+			// 8 directions? or new action?
 			
 			var angle = (Mathf.Atan2(y, x) * Mathf.Rad2Deg) + 45f;
 			if (angle < 0f) 

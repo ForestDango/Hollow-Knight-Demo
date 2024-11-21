@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityStandardAssets.ImageEffects;
 
 public class GameCameras : MonoBehaviour
 {
@@ -33,6 +34,22 @@ public class GameCameras : MonoBehaviour
     [Header("FSMs")]
     public PlayMakerFSM cameraShakeFSM;
     public PlayMakerFSM cameraFadeFSM;
+    public PlayMakerFSM soulOrbFSM;
+    public PlayMakerFSM soulVesselFSM;
+
+    [Header("Camera Effects")]
+    public ColorCorrectionCurves colorCorrectionCurves;
+    public SceneColorManager sceneColorManager;
+    public BrightnessEffect brightnessEffect;
+    public SceneParticlesController sceneParticlesPrefab;
+
+    [Header("Other")]
+    public tk2dCamera tk2dCam;
+    public GameObject hudCanvas;
+    public Transform cameraParent;
+    public GeoCounter geoCounter;
+
+    public SceneParticlesController sceneParticles { get; private set; }
 
     private bool init;
 
@@ -40,23 +57,28 @@ public class GameCameras : MonoBehaviour
 
     private void Awake()
     {
-	if(_instance == null)
+	if (_instance == null)
 	{
 	    _instance = this;
 	    Debug.LogFormat("GameCameras DontDestroyOnLoad");
 	    DontDestroyOnLoad(this);
 	    return;
 	}
-	if(this != _instance)
+	if (this != _instance)
 	{
 	    DestroyImmediate(gameObject);
 	    return;
 	}
     }
 
+    private void OnDestroy()
+    {
+	DestroyImmediate(sceneParticles);
+    }
+
     public void SceneInit()
     {
-	if(this == _instance)
+	if (this == _instance)
 	{
 	    StartScene();
 	}
@@ -68,7 +90,7 @@ public class GameCameras : MonoBehaviour
 	{
 	    SetupGameRefs();
 	}
-	if(gm.IsGameplayScene() || gm.ShouldKeepHUDCameraActive())
+	if (gm.IsGameplayScene() || gm.ShouldKeepHUDCameraActive())
 	{
 	    MoveMenuToHUDCamera();
 	    if (!hudCamera.gameObject.activeSelf)
@@ -87,6 +109,7 @@ public class GameCameras : MonoBehaviour
 	cameraController.SceneInit();
 	cameraTarget.SceneInit();
 
+	sceneParticles.SceneInit();
     }
 
     public void MoveMenuToHUDCamera()
@@ -110,7 +133,7 @@ public class GameCameras : MonoBehaviour
     private void SetupGameRefs()
     {
 	gm = GameManager.instance;
-	if(cameraController != null)
+	if (cameraController != null)
 	{
 	    cameraController.GameInit();
 	}
@@ -126,7 +149,39 @@ public class GameCameras : MonoBehaviour
 	{
 	    Debug.LogError("CameraTarget not set in inspector.");
 	}
+	if (sceneParticlesPrefab != null)
+	{
+	    sceneParticles = Instantiate(sceneParticlesPrefab);
+	    sceneParticles.name = "SceneParticlesController";
+	    sceneParticles.transform.position = new Vector3(tk2dCam.transform.position.x, tk2dCam.transform.position.y, 0f);
+	    sceneParticles.transform.SetParent(tk2dCam.transform);
+	}
+	else
+	{
+	    Debug.LogError("Scene Particles Prefab not set in inspector.");
+	}
 	init = true;
+    }
+
+    public void DisableImageEffects()
+    {
+	mainCamera.GetComponent<FastNoise>().enabled = false;
+	mainCamera.GetComponent<BloomOptimized>().enabled = false;
+	mainCamera.GetComponent<ColorCorrectionCurves>().enabled = false;
+    }
+
+    public void EnableImageEffects(bool isGameplayLevel, bool isBloomForced)
+    {
+	mainCamera.GetComponent<ColorCorrectionCurves>().enabled = true;
+	cameraController.ApplyEffectConfiguration(isGameplayLevel, isBloomForced);
+    }
+    public void StopCameraShake()
+    {
+	cameraShakeFSM.Fsm.Event("CANCEL SHAKE");
+    }
+    public void ResumeCameraShake()
+    {
+	cameraShakeFSM.Fsm.Event("RESUME SHAKE");
     }
 
 }

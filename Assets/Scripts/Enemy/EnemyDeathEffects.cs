@@ -43,7 +43,8 @@ public class EnemyDeathEffects : MonoBehaviour
     {
 	if(!corpse && corpsePrefab)
 	{
-	    corpse = Instantiate(corpsePrefab, transform.position + corpseSpawnPoint, Quaternion.identity, transform);
+	    corpse = Instantiate(corpsePrefab, transform.position + corpseSpawnPoint, Quaternion.identity,transform);
+	    Debug.LogFormat("Corpse Position is " + transform.position);
 	    tk2dSprite[] componentInChildrens = corpse.GetComponentsInChildren<tk2dSprite>(true);
 	    for (int i = 0; i < componentInChildrens.Length; i++)
 	    {
@@ -105,7 +106,7 @@ public class EnemyDeathEffects : MonoBehaviour
 		component2.SetIsDead(false);
 	    }
 	    didFire = false;
-	    //TODO:
+	    gameObject.Recycle();
 	    return;
 	}
 	Destroy(gameObject);
@@ -116,7 +117,7 @@ public class EnemyDeathEffects : MonoBehaviour
 	if (corpse == null)
 	    return;
 	corpse.transform.SetParent(null);
-	corpse.transform.SetPositionZ(UnityEngine.Random.Range(-0.08f, -0.09f));
+	corpse.transform.SetPositionZ(UnityEngine.Random.Range(-0.008f, -0.009f));
 	corpse.SetActive(true);
 	PlayMakerFSM playMakerFSM = FSMUtility.LocateFSM(corpse, "corpse");
 	if(playMakerFSM != null)
@@ -288,7 +289,7 @@ public class EnemyDeathEffects : MonoBehaviour
 	ShakeCameraIfVisible("EnemyKillShake");
     }
 
-    private void EmitSound()
+    public void EmitSound()
     {
 	enemyDeathSwordAudio.SpawnAndPlayOneShot(audioPlayerPrefab, transform.position);
 	enemyDamageAudio.SpawnAndPlayOneShot(audioPlayerPrefab, transform.position);

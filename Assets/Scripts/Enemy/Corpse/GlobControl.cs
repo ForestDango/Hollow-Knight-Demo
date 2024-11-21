@@ -59,7 +59,7 @@ public class GlobControl : MonoBehaviour
 		    {
 			landed = true;
 			collision.doCollisionStay = false;
-			if (CheckForGround())
+			if (CheckForGround()) //检测是否碰到地面
 			{
 			    anim.Play(landAnim);
 			    return;
@@ -85,7 +85,7 @@ public class GlobControl : MonoBehaviour
 		}
 		if (col.gameObject.layer == LayerMask.NameToLayer("Enemies"))
 		{
-		    anim.Play(wobbleAnim);
+		    anim.Play(wobbleAnim); //检测如果敌人碰到了执行动画wobbleAnim
 		}
 	    };
 	}
@@ -97,12 +97,12 @@ public class GlobControl : MonoBehaviour
 	{
 	    return;
 	}
-	if (col.tag == "Nail Attack")
+	if (col.tag == "Nail Attack") //如果是骨钉攻击，执行break函数
 	{
 	    StartCoroutine(Break());
 	    return;
 	}
-	if (col.tag == "HeroBox")
+	if (col.tag == "HeroBox") //如果是玩家碰到了执行wobble的动画
 	{
 	    anim.Play(wobbleAnim);
 	}
@@ -115,7 +115,7 @@ public class GlobControl : MonoBehaviour
 	GlobalPrefabDefaults.Instance.SpawnBlood(transform.position, 4, 5, 5f, 20f, 80f, 100f, new Color?(bloodColorOverride));
 	if (splatChild)
 	{
-	    splatChild.SetActive(true);
+	    splatChild.SetActive(true); //生成一些效果和子对象splatChild
 	}
 	yield return anim.PlayAnimWait(breakAnim);
 	if (rend)

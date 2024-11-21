@@ -47,7 +47,7 @@ public class HardLandEffect : MonoBehaviour
     {
 	if(Time.time > recycleTime)
 	{
-	    Destroy(gameObject); //TODO:
+	    gameObject.Recycle();
 	}
     }
 }

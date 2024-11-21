@@ -38,7 +38,7 @@ namespace HutongGames.PlayMaker.Actions
 		[UIHint(UIHint.Variable)]
         [Tooltip("Store the vertical accuracy of the location.")]
 		public FsmFloat verticalAccuracy;
-		// TODO: figure out useful way to expose timeStamp
+
 		// maybe how old is the location...?
 		//[UIHint(UIHint.Variable)]
 		//[Tooltip("Timestamp (in seconds since the game started) when location was last updated.")]

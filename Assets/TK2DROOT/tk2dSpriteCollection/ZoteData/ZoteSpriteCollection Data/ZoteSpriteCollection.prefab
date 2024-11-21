@@ -1,0 +1,3409 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1960550899386194633
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 402691495634177181}
+  - component: {fileID: 6209932458771229103}
+  m_Layer: 0
+  m_Name: ZoteSpriteCollection
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &402691495634177181
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1960550899386194633}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6209932458771229103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1960550899386194633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d546f34a90531a14eaba82a43b05b86b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 3
+  materialIdsValid: 1
+  needMaterialInstance: 0
+  spriteDefinitions:
+  - name: Zote_bounce000
+    boundsData:
+    - {x: 0.42968747, y: -0.890625, z: 0}
+    - {x: 1.5468748, y: 1.125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 5.453125, y: 2.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.34374994, y: -1.453125, z: 0}
+    - {x: 1.2031249, y: -1.453125, z: 0}
+    - {x: -0.34374994, y: -0.32812503, z: 0}
+    - {x: 1.2031249, y: -0.32812503, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.7617197, y: 0.6660166}
+    - {x: 0.8583975, y: 0.6660166}
+    - {x: 0.7617197, y: 0.7363272}
+    - {x: 0.8583975, y: 0.7363272}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+    materialId: 0
+    sourceTextureGUID: 64e906f6954691e42ae1855d99d818c9
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zote_bounce001
+    boundsData:
+    - {x: 0.5625001, y: -0.42968756, z: 0}
+    - {x: 2.4375, y: 1.3906249, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 5.453125, y: 2.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.65624994, y: -1.125, z: 0}
+    - {x: 1.7812501, y: -1.125, z: 0}
+    - {x: -0.65624994, y: 0.2656249, z: 0}
+    - {x: 1.7812501, y: 0.2656249, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.6005869, y: 0.0019541015}
+    - {x: 0.75292873, y: 0.0019541015}
+    - {x: 0.6005869, y: 0.08886621}
+    - {x: 0.75292873, y: 0.08886621}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+    materialId: 0
+    sourceTextureGUID: cbf283bfabc82f44f86e5e616e056de6
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zote_bounce002
+    boundsData:
+    - {x: 0.49218756, y: -0.3984375, z: 0}
+    - {x: 2.203125, y: 1.140625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 5.453125, y: 2.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.609375, y: -0.96875, z: 0}
+    - {x: 1.5937501, y: -0.96875, z: 0}
+    - {x: -0.609375, y: 0.17187501, z: 0}
+    - {x: 1.5937501, y: 0.17187501, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.28711036, y: 0.26171973}
+    - {x: 0.4248037, y: 0.26171973}
+    - {x: 0.28711036, y: 0.33300683}
+    - {x: 0.4248037, y: 0.33300683}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+    materialId: 0
+    sourceTextureGUID: 6f546ccfa31fd824aa17161ffbf5afb6
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zote_bounce003
+    boundsData:
+    - {x: 0.43749994, y: -0.59375, z: 0}
+    - {x: 2.03125, y: 1.59375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 5.453125, y: 2.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.578125, y: -1.390625, z: 0}
+    - {x: 1.4531249, y: -1.390625, z: 0}
+    - {x: -0.578125, y: 0.20312499, z: 0}
+    - {x: 1.4531249, y: 0.20312499, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.7568369, y: 0.0019541015}
+    - {x: 0.8837881, y: 0.0019541015}
+    - {x: 0.7568369, y: 0.101561524}
+    - {x: 0.8837881, y: 0.101561524}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+    materialId: 0
+    sourceTextureGUID: 2e04ebc44c8268f409d48fe09022ea6e
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zote_bounce004
+    boundsData:
+    - {x: 0.42968747, y: -0.890625, z: 0}
+    - {x: 1.5468748, y: 1.125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 5.453125, y: 2.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.34374994, y: -1.453125, z: 0}
+    - {x: 1.2031249, y: -1.453125, z: 0}
+    - {x: -0.34374994, y: -0.32812503, z: 0}
+    - {x: 1.2031249, y: -0.32812503, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.86230564, y: 0.72949314}
+    - {x: 0.9589834, y: 0.72949314}
+    - {x: 0.86230564, y: 0.79980373}
+    - {x: 0.9589834, y: 0.79980373}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+    materialId: 0
+    sourceTextureGUID: 7c27e8253a7f6b343893b02108dfd1b1
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zote_bounce005
+    boundsData:
+    - {x: 0.7812499, y: -1.0390625, z: 0}
+    - {x: 2.4687498, y: 0.765625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 5.453125, y: 2.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.45312503, y: -1.421875, z: 0}
+    - {x: 2.0156248, y: -1.421875, z: 0}
+    - {x: -0.45312503, y: -0.65625, z: 0}
+    - {x: 2.0156248, y: -0.65625, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.9443369, y: 0.14062598}
+    - {x: 0.9443369, y: 0.2949209}
+    - {x: 0.99218655, y: 0.14062598}
+    - {x: 0.99218655, y: 0.2949209}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+    materialId: 0
+    sourceTextureGUID: 30dfe8a626ada9442a91ade08e827294
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zote_deepnest_distress000
+    boundsData:
+    - {x: 0.000000059604645, y: -0.01562497, z: 0}
+    - {x: 2.28125, y: 1.6875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 2.453125, y: 1.703125, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.140625, y: -0.859375, z: 0}
+    - {x: 1.1406251, y: -0.859375, z: 0}
+    - {x: -1.140625, y: 0.82812506, z: 0}
+    - {x: 1.1406251, y: 0.82812506, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.0019541015, y: 0.0019541015}
+    - {x: 0.14453027, y: 0.0019541015}
+    - {x: 0.0019541015, y: 0.1074209}
+    - {x: 0.14453027, y: 0.1074209}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+    materialId: 0
+    sourceTextureGUID: aa1fdf1ce12811c4589b207a0f69f3ca
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zote_deepnest_distress001
+    boundsData:
+    - {x: 0.0390625, y: 0.03125, z: 0}
+    - {x: 2.296875, y: 1.5625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 2.453125, y: 1.703125, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.109375, y: -0.75, z: 0}
+    - {x: 1.1875, y: -0.75, z: 0}
+    - {x: -1.109375, y: 0.8125, z: 0}
+    - {x: 1.1875, y: 0.8125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.14843848, y: 0.0019541015}
+    - {x: 0.2919912, y: 0.0019541015}
+    - {x: 0.14843848, y: 0.0996084}
+    - {x: 0.2919912, y: 0.0996084}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+    materialId: 0
+    sourceTextureGUID: cae1808c641b615408f36a59fadaed74
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zote_deepnest_distress002
+    boundsData:
+    - {x: 0.0546875, y: 0.1171875, z: 0}
+    - {x: 2.359375, y: 1.453125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 2.453125, y: 1.703125, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.125, y: -0.609375, z: 0}
+    - {x: 1.234375, y: -0.609375, z: 0}
+    - {x: -1.125, y: 0.84375, z: 0}
+    - {x: 1.234375, y: 0.84375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.44921973, y: 0.0019541015}
+    - {x: 0.59667873, y: 0.0019541015}
+    - {x: 0.44921973, y: 0.09277246}
+    - {x: 0.59667873, y: 0.09277246}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+    materialId: 0
+    sourceTextureGUID: 311837f4684cc4f4c951b1e8aebc8565
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zote_deepnest_distress003
+    boundsData:
+    - {x: -0.0078125, y: 0.0703125, z: 0}
+    - {x: 2.390625, y: 1.484375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 2.453125, y: 1.703125, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.203125, y: -0.671875, z: 0}
+    - {x: 1.1875, y: -0.671875, z: 0}
+    - {x: -1.203125, y: 0.8125, z: 0}
+    - {x: 1.1875, y: 0.8125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.29589942, y: 0.0019541015}
+    - {x: 0.44531152, y: 0.0019541015}
+    - {x: 0.29589942, y: 0.09472559}
+    - {x: 0.44531152, y: 0.09472559}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+    materialId: 0
+    sourceTextureGUID: 7a22048e1159b3e49b8fe9b67855bbf3
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zote_fall000
+    boundsData:
+    - {x: 0.29687503, y: -0.49218753, z: 0}
+    - {x: 2.15625, y: 1.484375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 5.453125, y: 2.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.78124994, y: -1.234375, z: 0}
+    - {x: 1.375, y: -1.234375, z: 0}
+    - {x: -0.78124994, y: 0.24999994, z: 0}
+    - {x: 1.375, y: 0.24999994, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.88769627, y: 0.0019541015}
+    - {x: 0.88769627, y: 0.13671777}
+    - {x: 0.9804678, y: 0.0019541015}
+    - {x: 0.9804678, y: 0.13671777}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+    materialId: 0
+    sourceTextureGUID: ae7f8a36f8a216d4a97a8719a9cb5336
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zote_fall001
+    boundsData:
+    - {x: 0.40624994, y: -0.45312497, z: 0}
+    - {x: 1.9687499, y: 1.5, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 5.453125, y: 2.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.578125, y: -1.203125, z: 0}
+    - {x: 1.3906249, y: -1.203125, z: 0}
+    - {x: -0.578125, y: 0.29687506, z: 0}
+    - {x: 1.3906249, y: 0.29687506, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.6005869, y: 0.09277441}
+    - {x: 0.72363186, y: 0.09277441}
+    - {x: 0.6005869, y: 0.18652245}
+    - {x: 0.72363186, y: 0.18652245}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+    materialId: 0
+    sourceTextureGUID: 0a2ae1b6f86468349ba7cbdd276b382f
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zote_fall002
+    boundsData:
+    - {x: 0.39062494, y: -0.46875006, z: 0}
+    - {x: 1.9999999, y: 1.4687499, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 5.453125, y: 2.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.609375, y: -1.203125, z: 0}
+    - {x: 1.3906249, y: -1.203125, z: 0}
+    - {x: -0.609375, y: 0.2656249, z: 0}
+    - {x: 1.3906249, y: 0.2656249, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.44921973, y: 0.09668066}
+    - {x: 0.5742178, y: 0.09668066}
+    - {x: 0.44921973, y: 0.18847558}
+    - {x: 0.5742178, y: 0.18847558}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+    materialId: 0
+    sourceTextureGUID: 0972dc5a1a27cc04b88a283ed37bc3cc
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zote_idle000
+    boundsData:
+    - {x: 0.109374955, y: -0.28125003, z: 0}
+    - {x: 1.1875, y: 2.15625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 5.453125, y: 2.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.48437503, y: -1.359375, z: 0}
+    - {x: 0.70312494, y: -1.359375, z: 0}
+    - {x: -0.48437503, y: 0.79687494, z: 0}
+    - {x: 0.70312494, y: 0.79687494, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.72754, y: 0.105469726}
+    - {x: 0.72754, y: 0.17968652}
+    - {x: 0.86230373, y: 0.105469726}
+    - {x: 0.86230373, y: 0.17968652}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3d64a49175754d14a803becb110e8685
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zote_idle001
+    boundsData:
+    - {x: 0.10937503, y: -0.28125003, z: 0}
+    - {x: 1.15625, y: 2.15625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 5.453125, y: 2.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.46874994, y: -1.359375, z: 0}
+    - {x: 0.6875, y: -1.359375, z: 0}
+    - {x: -0.46874994, y: 0.79687494, z: 0}
+    - {x: 0.6875, y: 0.79687494, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.78613377, y: 0.4316416}
+    - {x: 0.78613377, y: 0.5039053}
+    - {x: 0.9208975, y: 0.4316416}
+    - {x: 0.9208975, y: 0.5039053}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+    materialId: 0
+    sourceTextureGUID: c0fd0748dec5a4f4ab27aa3b888ffe79
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zote_idle002
+    boundsData:
+    - {x: 0.101562485, y: -0.28906253, z: 0}
+    - {x: 1.171875, y: 2.140625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 5.453125, y: 2.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.48437503, y: -1.359375, z: 0}
+    - {x: 0.6875, y: -1.359375, z: 0}
+    - {x: -0.48437503, y: 0.78124994, z: 0}
+    - {x: 0.6875, y: 0.78124994, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.7089853, y: 0.3251963}
+    - {x: 0.7822256, y: 0.3251963}
+    - {x: 0.7089853, y: 0.4589834}
+    - {x: 0.7822256, y: 0.4589834}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+    materialId: 0
+    sourceTextureGUID: ddffaf139521efa499b27898c88f3491
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zote_idle003
+    boundsData:
+    - {x: 0.1171875, y: -0.28125003, z: 0}
+    - {x: 1.1718749, y: 2.15625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 5.453125, y: 2.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.46874994, y: -1.359375, z: 0}
+    - {x: 0.70312494, y: -1.359375, z: 0}
+    - {x: -0.46874994, y: 0.79687494, z: 0}
+    - {x: 0.70312494, y: 0.79687494, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.42871192, y: 0.1923838}
+    - {x: 0.42871192, y: 0.26562402}
+    - {x: 0.5634756, y: 0.1923838}
+    - {x: 0.5634756, y: 0.26562402}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+    materialId: 0
+    sourceTextureGUID: 067ff468eb788484f82dce8b4eeefd69
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zote_idle004
+    boundsData:
+    - {x: 0.109374955, y: -0.28125003, z: 0}
+    - {x: 1.1875, y: 2.15625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 5.453125, y: 2.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.48437503, y: -1.359375, z: 0}
+    - {x: 0.70312494, y: -1.359375, z: 0}
+    - {x: -0.48437503, y: 0.79687494, z: 0}
+    - {x: 0.70312494, y: 0.79687494, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.8662119, y: 0.14062598}
+    - {x: 0.94042873, y: 0.14062598}
+    - {x: 0.8662119, y: 0.27538964}
+    - {x: 0.94042873, y: 0.27538964}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+    materialId: 0
+    sourceTextureGUID: 2da1e34cc93da184fa397ad67880bcf5
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zote_look_left0000
+    boundsData:
+    - {x: 0.124999955, y: -0.24999997, z: 0}
+    - {x: 1.15625, y: 2.21875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 5.453125, y: 2.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.45312503, y: -1.359375, z: 0}
+    - {x: 0.70312494, y: -1.359375, z: 0}
+    - {x: -0.45312503, y: 0.85937506, z: 0}
+    - {x: 0.70312494, y: 0.85937506, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.14453223, y: 0.26074317}
+    - {x: 0.14453223, y: 0.33300683}
+    - {x: 0.28320214, y: 0.26074317}
+    - {x: 0.28320214, y: 0.33300683}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+    materialId: 0
+    sourceTextureGUID: 80948f651eace4646b0bd9b97420ac15
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zote_look_left0001
+    boundsData:
+    - {x: 0.117187485, y: -0.24999997, z: 0}
+    - {x: 1.140625, y: 2.21875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 5.453125, y: 2.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.45312503, y: -1.359375, z: 0}
+    - {x: 0.6875, y: -1.359375, z: 0}
+    - {x: -0.45312503, y: 0.85937506, z: 0}
+    - {x: 0.6875, y: 0.85937506, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.57812595, y: 0.19043067}
+    - {x: 0.57812595, y: 0.26171777}
+    - {x: 0.7167959, y: 0.19043067}
+    - {x: 0.7167959, y: 0.26171777}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3269c7ad60cd4e840806c99cbc222e27
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zote_look_left0002
+    boundsData:
+    - {x: 0.117187485, y: -0.25781247, z: 0}
+    - {x: 1.140625, y: 2.203125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 5.453125, y: 2.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.45312503, y: -1.359375, z: 0}
+    - {x: 0.6875, y: -1.359375, z: 0}
+    - {x: -0.45312503, y: 0.84375006, z: 0}
+    - {x: 0.6875, y: 0.84375006, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.56738377, y: 0.26562598}
+    - {x: 0.56738377, y: 0.33691308}
+    - {x: 0.7050772, y: 0.26562598}
+    - {x: 0.7050772, y: 0.33691308}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+    materialId: 0
+    sourceTextureGUID: 98713ab731385664ca2443c020c03b2a
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zote_look_left0003
+    boundsData:
+    - {x: 0.124999955, y: -0.25781247, z: 0}
+    - {x: 1.15625, y: 2.203125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 5.453125, y: 2.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.45312503, y: -1.359375, z: 0}
+    - {x: 0.70312494, y: -1.359375, z: 0}
+    - {x: -0.45312503, y: 0.84375006, z: 0}
+    - {x: 0.70312494, y: 0.84375006, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.72754, y: 0.18359473}
+    - {x: 0.79980373, y: 0.18359473}
+    - {x: 0.72754, y: 0.32128808}
+    - {x: 0.79980373, y: 0.32128808}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+    materialId: 0
+    sourceTextureGUID: 5067bfb0f3c5c474d9383b17f5073632
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zote_look_left0004
+    boundsData:
+    - {x: 0.124999955, y: -0.24999997, z: 0}
+    - {x: 1.15625, y: 2.21875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 5.453125, y: 2.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.45312503, y: -1.359375, z: 0}
+    - {x: 0.70312494, y: -1.359375, z: 0}
+    - {x: -0.45312503, y: 0.85937506, z: 0}
+    - {x: 0.70312494, y: 0.85937506, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.0019541015, y: 0.26660255}
+    - {x: 0.0019541015, y: 0.3388662}
+    - {x: 0.14062402, y: 0.26660255}
+    - {x: 0.14062402, y: 0.3388662}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+    materialId: 0
+    sourceTextureGUID: b939f5a3e879b584bb91cd075e5ea7a1
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zote_look_left0005
+    boundsData:
+    - {x: 0.12500003, y: -0.24999997, z: 0}
+    - {x: 1.125, y: 2.21875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 5.453125, y: 2.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.43749994, y: -1.359375, z: 0}
+    - {x: 0.6875, y: -1.359375, z: 0}
+    - {x: -0.43749994, y: 0.85937506, z: 0}
+    - {x: 0.6875, y: 0.85937506, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.42871192, y: 0.26953223}
+    - {x: 0.49902245, y: 0.26953223}
+    - {x: 0.42871192, y: 0.40820214}
+    - {x: 0.49902245, y: 0.40820214}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+    materialId: 0
+    sourceTextureGUID: d4a921febc6d56d4e931b913190126dc
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zote_look_right0000
+    boundsData:
+    - {x: 0.1328125, y: -0.26562497, z: 0}
+    - {x: 1.1406249, y: 2.1875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 5.453125, y: 2.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.43749994, y: -1.359375, z: 0}
+    - {x: 0.70312494, y: -1.359375, z: 0}
+    - {x: -0.43749994, y: 0.82812506, z: 0}
+    - {x: 0.70312494, y: 0.82812506, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.50293064, y: 0.3408213}
+    - {x: 0.50293064, y: 0.4121084}
+    - {x: 0.6396475, y: 0.3408213}
+    - {x: 0.6396475, y: 0.4121084}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+    materialId: 0
+    sourceTextureGUID: 6b25907a5153c4246acee9fc0ab8afba
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zote_look_right0001
+    boundsData:
+    - {x: 0.13281249, y: -0.27343753, z: 0}
+    - {x: 1.109375, y: 2.171875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 5.453125, y: 2.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.42187503, y: -1.359375, z: 0}
+    - {x: 0.6875, y: -1.359375, z: 0}
+    - {x: -0.42187503, y: 0.81249994, z: 0}
+    - {x: 0.6875, y: 0.81249994, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.57129, y: 0.55175877}
+    - {x: 0.64062405, y: 0.55175877}
+    - {x: 0.57129, y: 0.68749905}
+    - {x: 0.64062405, y: 0.68749905}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+    materialId: 0
+    sourceTextureGUID: f5e65f75c64eed0448883a39416c3daa
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zote_look_right0002
+    boundsData:
+    - {x: 0.12500003, y: -0.28125003, z: 0}
+    - {x: 1.125, y: 2.15625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 5.453125, y: 2.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.43749994, y: -1.359375, z: 0}
+    - {x: 0.6875, y: -1.359375, z: 0}
+    - {x: -0.43749994, y: 0.79687494, z: 0}
+    - {x: 0.6875, y: 0.79687494, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.70800877, y: 0.4628916}
+    - {x: 0.77831936, y: 0.4628916}
+    - {x: 0.70800877, y: 0.5976553}
+    - {x: 0.77831936, y: 0.5976553}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+    materialId: 0
+    sourceTextureGUID: 60da5b87fc9d6ec45ba87749960e658d
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zote_look_right0003
+    boundsData:
+    - {x: 0.1328125, y: -0.27343753, z: 0}
+    - {x: 1.1406249, y: 2.171875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 5.453125, y: 2.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.43749994, y: -1.359375, z: 0}
+    - {x: 0.70312494, y: -1.359375, z: 0}
+    - {x: -0.43749994, y: 0.81249994, z: 0}
+    - {x: 0.70312494, y: 0.81249994, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.92675877, y: 0.3564463}
+    - {x: 0.9980459, y: 0.3564463}
+    - {x: 0.92675877, y: 0.49218652}
+    - {x: 0.9980459, y: 0.49218652}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+    materialId: 0
+    sourceTextureGUID: 559f3bb17fa596448adf1f97eae320ad
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zote_look_right0004
+    boundsData:
+    - {x: 0.1328125, y: -0.26562497, z: 0}
+    - {x: 1.1406249, y: 2.1875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 5.453125, y: 2.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.43749994, y: -1.359375, z: 0}
+    - {x: 0.70312494, y: -1.359375, z: 0}
+    - {x: -0.43749994, y: 0.82812506, z: 0}
+    - {x: 0.70312494, y: 0.82812506, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.78613377, y: 0.3564463}
+    - {x: 0.78613377, y: 0.4277334}
+    - {x: 0.9228506, y: 0.3564463}
+    - {x: 0.9228506, y: 0.4277334}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+    materialId: 0
+    sourceTextureGUID: 069cd17f8822d8244b138b733f556a13
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zote_look_right_0005
+    boundsData:
+    - {x: 0.14843749, y: -0.27343753, z: 0}
+    - {x: 1.078125, y: 2.171875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 5.453125, y: 2.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.39062503, y: -1.359375, z: 0}
+    - {x: 0.6875, y: -1.359375, z: 0}
+    - {x: -0.39062503, y: 0.81249994, z: 0}
+    - {x: 0.6875, y: 0.81249994, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.35254005, y: 0.6240244}
+    - {x: 0.35254005, y: 0.6914053}
+    - {x: 0.48828027, y: 0.6240244}
+    - {x: 0.48828027, y: 0.6914053}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+    materialId: 0
+    sourceTextureGUID: fc069c0d28a306e44946be08a12af58e
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zote_stand000
+    boundsData:
+    - {x: 0.5546875, y: -0.8359375, z: 0}
+    - {x: 1.9218748, y: 1.203125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 5.453125, y: 2.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.40624994, y: -1.4375, z: 0}
+    - {x: 1.5156249, y: -1.4375, z: 0}
+    - {x: -0.40624994, y: -0.23437503, z: 0}
+    - {x: 1.5156249, y: -0.23437503, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.49218848, y: 0.6289072}
+    - {x: 0.49218848, y: 0.7490225}
+    - {x: 0.56738186, y: 0.6289072}
+    - {x: 0.56738186, y: 0.7490225}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+    materialId: 0
+    sourceTextureGUID: 8ad2922753bdd69499f4f49973e1c748
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zote_stand001
+    boundsData:
+    - {x: 0.46093747, y: -0.78125, z: 0}
+    - {x: 1.7343748, y: 1.28125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 5.453125, y: 2.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.40624994, y: -1.421875, z: 0}
+    - {x: 1.3281249, y: -1.421875, z: 0}
+    - {x: -0.40624994, y: -0.14062504, z: 0}
+    - {x: 1.3281249, y: -0.14062504, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.7822275, y: 0.5820322}
+    - {x: 0.89062405, y: 0.5820322}
+    - {x: 0.7822275, y: 0.6621084}
+    - {x: 0.89062405, y: 0.6621084}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+    materialId: 0
+    sourceTextureGUID: 9f098c1013209fe498c8f6971d1ce3f4
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zote_stand002
+    boundsData:
+    - {x: 0.28906247, y: -0.6875, z: 0}
+    - {x: 1.4531248, y: 1.5, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 5.453125, y: 2.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.43749994, y: -1.4375, z: 0}
+    - {x: 1.0156249, y: -1.4375, z: 0}
+    - {x: -0.43749994, y: 0.06249994, z: 0}
+    - {x: 1.0156249, y: 0.06249994, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.8945322, y: 0.6347666}
+    - {x: 0.8945322, y: 0.725585}
+    - {x: 0.9882803, y: 0.6347666}
+    - {x: 0.9882803, y: 0.725585}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+    materialId: 0
+    sourceTextureGUID: bb453e9adb4b94a4f9fd0bdfed1f48a1
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zote_stand003
+    boundsData:
+    - {x: 0.09375003, y: -0.45312506, z: 0}
+    - {x: 1.0625, y: 1.8124999, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 5.453125, y: 2.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.43749994, y: -1.359375, z: 0}
+    - {x: 0.625, y: -1.359375, z: 0}
+    - {x: -0.43749994, y: 0.4531249, z: 0}
+    - {x: 0.625, y: 0.4531249, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.6445322, y: 0.60156345}
+    - {x: 0.6445322, y: 0.6679678}
+    - {x: 0.75781155, y: 0.60156345}
+    - {x: 0.75781155, y: 0.6679678}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+    materialId: 0
+    sourceTextureGUID: 7ee77d99c4f6ef04889c520d86c2b509
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zote_stand004
+    boundsData:
+    - {x: 0.078124955, y: -0.35937497, z: 0}
+    - {x: 1.125, y: 2.03125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 5.453125, y: 2.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.48437503, y: -1.375, z: 0}
+    - {x: 0.64062494, y: -1.375, z: 0}
+    - {x: -0.48437503, y: 0.65625006, z: 0}
+    - {x: 0.64062494, y: 0.65625006, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.7822275, y: 0.50781345}
+    - {x: 0.7822275, y: 0.57812405}
+    - {x: 0.90917873, y: 0.50781345}
+    - {x: 0.90917873, y: 0.57812405}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+    materialId: 0
+    sourceTextureGUID: ab13746dafb504c48af78b05fafc68e3
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zote_stand005
+    boundsData:
+    - {x: 0.10156259, y: -0.3125, z: 0}
+    - {x: 1.140625, y: 2.125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 5.453125, y: 2.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.46874994, y: -1.375, z: 0}
+    - {x: 0.6718751, y: -1.375, z: 0}
+    - {x: -0.46874994, y: 0.75, z: 0}
+    - {x: 0.6718751, y: 0.75, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.49609473, y: 0.49218848}
+    - {x: 0.56738186, y: 0.49218848}
+    - {x: 0.49609473, y: 0.62499905}
+    - {x: 0.56738186, y: 0.62499905}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+    materialId: 0
+    sourceTextureGUID: 09498a0c1b177484bbc108588573b2c8
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zote_stand006
+    boundsData:
+    - {x: 0.10937503, y: -0.28125003, z: 0}
+    - {x: 1.15625, y: 2.15625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 5.453125, y: 2.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.46874994, y: -1.359375, z: 0}
+    - {x: 0.6875, y: -1.359375, z: 0}
+    - {x: -0.46874994, y: 0.79687494, z: 0}
+    - {x: 0.6875, y: 0.79687494, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.92480564, y: 0.49609473}
+    - {x: 0.99706936, y: 0.49609473}
+    - {x: 0.92480564, y: 0.6308584}
+    - {x: 0.99706936, y: 0.6308584}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+    materialId: 0
+    sourceTextureGUID: 4f0af19d89e2de444946ce0eae848a30
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zote_talk0000
+    boundsData:
+    - {x: 0.1171875, y: -0.27343753, z: 0}
+    - {x: 1.1718749, y: 2.171875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 5.453125, y: 2.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.46874994, y: -1.359375, z: 0}
+    - {x: 0.70312494, y: -1.359375, z: 0}
+    - {x: -0.46874994, y: 0.81249994, z: 0}
+    - {x: 0.70312494, y: 0.81249994, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.8037119, y: 0.27929786}
+    - {x: 0.8037119, y: 0.35253808}
+    - {x: 0.9394522, y: 0.27929786}
+    - {x: 0.9394522, y: 0.35253808}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+    materialId: 0
+    sourceTextureGUID: f9750c6355821534abee36f0faf14239
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zote_talk0001
+    boundsData:
+    - {x: 0.117187485, y: -0.28125003, z: 0}
+    - {x: 1.140625, y: 2.15625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 5.453125, y: 2.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.45312503, y: -1.359375, z: 0}
+    - {x: 0.6875, y: -1.359375, z: 0}
+    - {x: -0.45312503, y: 0.79687494, z: 0}
+    - {x: 0.6875, y: 0.79687494, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.13867286, y: 0.41308692}
+    - {x: 0.13867286, y: 0.48437402}
+    - {x: 0.27343652, y: 0.41308692}
+    - {x: 0.27343652, y: 0.48437402}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+    materialId: 0
+    sourceTextureGUID: 5ceb39ade02244746a1c0fd7e2ad2c38
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zote_talk0002
+    boundsData:
+    - {x: 0.10937503, y: -0.28906253, z: 0}
+    - {x: 1.15625, y: 2.140625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 5.453125, y: 2.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.46874994, y: -1.359375, z: 0}
+    - {x: 0.6875, y: -1.359375, z: 0}
+    - {x: -0.46874994, y: 0.78124994, z: 0}
+    - {x: 0.6875, y: 0.78124994, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.41992286, y: 0.41211036}
+    - {x: 0.49218652, y: 0.41211036}
+    - {x: 0.41992286, y: 0.5458975}
+    - {x: 0.49218652, y: 0.5458975}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+    materialId: 0
+    sourceTextureGUID: faee954df837c8849ac2aa42175d5c6a
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zote_talk0003
+    boundsData:
+    - {x: 0.14062496, y: -0.28906253, z: 0}
+    - {x: 1.125, y: 2.140625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 5.453125, y: 2.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.42187503, y: -1.359375, z: 0}
+    - {x: 0.70312494, y: -1.359375, z: 0}
+    - {x: -0.42187503, y: 0.78124994, z: 0}
+    - {x: 0.70312494, y: 0.78124994, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.35254005, y: 0.54980564}
+    - {x: 0.35254005, y: 0.62011623}
+    - {x: 0.48632714, y: 0.54980564}
+    - {x: 0.48632714, y: 0.62011623}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+    materialId: 0
+    sourceTextureGUID: de6be11bac360344c9ed146412f69dad
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zote_talk0004
+    boundsData:
+    - {x: 0.124999955, y: -0.28125003, z: 0}
+    - {x: 1.15625, y: 2.15625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 5.453125, y: 2.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.45312503, y: -1.359375, z: 0}
+    - {x: 0.70312494, y: -1.359375, z: 0}
+    - {x: -0.45312503, y: 0.79687494, z: 0}
+    - {x: 0.70312494, y: 0.79687494, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.14453223, y: 0.33691505}
+    - {x: 0.14453223, y: 0.4091787}
+    - {x: 0.2792959, y: 0.33691505}
+    - {x: 0.2792959, y: 0.4091787}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+    materialId: 0
+    sourceTextureGUID: be3313f558ae11944b0f6d940a8868c8
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zote_talk0005
+    boundsData:
+    - {x: 0.12499994, y: -0.27343753, z: 0}
+    - {x: 1.1874998, y: 2.171875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 5.453125, y: 2.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.46874994, y: -1.359375, z: 0}
+    - {x: 0.7187498, y: -1.359375, z: 0}
+    - {x: -0.46874994, y: 0.81249994, z: 0}
+    - {x: 0.7187498, y: 0.81249994, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.28906348, y: 0.18359473}
+    - {x: 0.28906348, y: 0.25781152}
+    - {x: 0.4248037, y: 0.18359473}
+    - {x: 0.4248037, y: 0.25781152}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+    materialId: 0
+    sourceTextureGUID: 903fcd820d48fbc499b4a1b37db79603
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zote_talk_left0000
+    boundsData:
+    - {x: 0.1171875, y: -0.27343753, z: 0}
+    - {x: 1.1718749, y: 2.171875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 5.453125, y: 2.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.46874994, y: -1.359375, z: 0}
+    - {x: 0.70312494, y: -1.359375, z: 0}
+    - {x: -0.46874994, y: 0.81249994, z: 0}
+    - {x: 0.70312494, y: 0.81249994, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.8037119, y: 0.27929786}
+    - {x: 0.8037119, y: 0.35253808}
+    - {x: 0.9394522, y: 0.27929786}
+    - {x: 0.9394522, y: 0.35253808}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+    materialId: 0
+    sourceTextureGUID: fc7c9ccd4c9909f4fbe8d8ff2f63feb8
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zote_talk_left0001
+    boundsData:
+    - {x: 0.117187485, y: -0.28125003, z: 0}
+    - {x: 1.140625, y: 2.15625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 5.453125, y: 2.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.45312503, y: -1.359375, z: 0}
+    - {x: 0.6875, y: -1.359375, z: 0}
+    - {x: -0.45312503, y: 0.79687494, z: 0}
+    - {x: 0.6875, y: 0.79687494, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.13867286, y: 0.41308692}
+    - {x: 0.13867286, y: 0.48437402}
+    - {x: 0.27343652, y: 0.41308692}
+    - {x: 0.27343652, y: 0.48437402}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+    materialId: 0
+    sourceTextureGUID: 29baf183442bba34290a6ea13985f469
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zote_talk_left0002
+    boundsData:
+    - {x: 0.10937503, y: -0.28906253, z: 0}
+    - {x: 1.15625, y: 2.140625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 5.453125, y: 2.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.46874994, y: -1.359375, z: 0}
+    - {x: 0.6875, y: -1.359375, z: 0}
+    - {x: -0.46874994, y: 0.78124994, z: 0}
+    - {x: 0.6875, y: 0.78124994, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.41992286, y: 0.41211036}
+    - {x: 0.49218652, y: 0.41211036}
+    - {x: 0.41992286, y: 0.5458975}
+    - {x: 0.49218652, y: 0.5458975}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+    materialId: 0
+    sourceTextureGUID: 1c150437e217df14e9dfdc6a00a8ff96
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zote_talk_left0003
+    boundsData:
+    - {x: 0.14062496, y: -0.28906253, z: 0}
+    - {x: 1.125, y: 2.140625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 5.453125, y: 2.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.42187503, y: -1.359375, z: 0}
+    - {x: 0.70312494, y: -1.359375, z: 0}
+    - {x: -0.42187503, y: 0.78124994, z: 0}
+    - {x: 0.70312494, y: 0.78124994, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.35254005, y: 0.54980564}
+    - {x: 0.35254005, y: 0.62011623}
+    - {x: 0.48632714, y: 0.54980564}
+    - {x: 0.48632714, y: 0.62011623}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+    materialId: 0
+    sourceTextureGUID: b9007c4d2740fbf4f8bde77a23ff41a0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zote_talk_left0004
+    boundsData:
+    - {x: 0.124999955, y: -0.28125003, z: 0}
+    - {x: 1.15625, y: 2.15625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 5.453125, y: 2.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.45312503, y: -1.359375, z: 0}
+    - {x: 0.70312494, y: -1.359375, z: 0}
+    - {x: -0.45312503, y: 0.79687494, z: 0}
+    - {x: 0.70312494, y: 0.79687494, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.14453223, y: 0.33691505}
+    - {x: 0.14453223, y: 0.4091787}
+    - {x: 0.2792959, y: 0.33691505}
+    - {x: 0.2792959, y: 0.4091787}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+    materialId: 0
+    sourceTextureGUID: 0c33fd5a6b1aa91418112a62dfffe649
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zote_talk_left0005
+    boundsData:
+    - {x: 0.12499994, y: -0.27343753, z: 0}
+    - {x: 1.1874998, y: 2.171875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 5.453125, y: 2.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.46874994, y: -1.359375, z: 0}
+    - {x: 0.7187498, y: -1.359375, z: 0}
+    - {x: -0.46874994, y: 0.81249994, z: 0}
+    - {x: 0.7187498, y: 0.81249994, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.28906348, y: 0.18359473}
+    - {x: 0.28906348, y: 0.25781152}
+    - {x: 0.4248037, y: 0.18359473}
+    - {x: 0.4248037, y: 0.25781152}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+    materialId: 0
+    sourceTextureGUID: 0712d4c478f8623468545baff7a49354
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zote_talk_left0006
+    boundsData:
+    - {x: 0.124999955, y: -0.3046875, z: 0}
+    - {x: 1.15625, y: 2.109375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 5.453125, y: 2.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.45312503, y: -1.359375, z: 0}
+    - {x: 0.70312494, y: -1.359375, z: 0}
+    - {x: -0.45312503, y: 0.75, z: 0}
+    - {x: 0.70312494, y: 0.75, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.49609473, y: 0.4160166}
+    - {x: 0.49609473, y: 0.48828027}
+    - {x: 0.62792873, y: 0.4160166}
+    - {x: 0.62792873, y: 0.48828027}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+    materialId: 0
+    sourceTextureGUID: c8e7e408cba70c44f9e0fd2614d28363
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zote_talk_left0007
+    boundsData:
+    - {x: 0.1328125, y: -0.28125003, z: 0}
+    - {x: 1.1406249, y: 2.15625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 5.453125, y: 2.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.43749994, y: -1.359375, z: 0}
+    - {x: 0.70312494, y: -1.359375, z: 0}
+    - {x: -0.43749994, y: 0.79687494, z: 0}
+    - {x: 0.70312494, y: 0.79687494, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.0019541015, y: 0.41992286}
+    - {x: 0.07324121, y: 0.41992286}
+    - {x: 0.0019541015, y: 0.55468655}
+    - {x: 0.07324121, y: 0.55468655}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+    materialId: 0
+    sourceTextureGUID: 6eb9e6ccc74ebc949b159918438bd182
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zote_talk_left0008
+    boundsData:
+    - {x: 0.1484374, y: -0.28125003, z: 0}
+    - {x: 1.1406249, y: 2.15625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 5.453125, y: 2.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.42187503, y: -1.359375, z: 0}
+    - {x: 0.7187498, y: -1.359375, z: 0}
+    - {x: -0.42187503, y: 0.79687494, z: 0}
+    - {x: 0.7187498, y: 0.79687494, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.27734473, y: 0.41406348}
+    - {x: 0.27734473, y: 0.48535058}
+    - {x: 0.4121084, y: 0.41406348}
+    - {x: 0.4121084, y: 0.48535058}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+    materialId: 0
+    sourceTextureGUID: 239aeae72a3036e4a870f514d5045e3b
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zote_talk_left0009
+    boundsData:
+    - {x: 0.16406259, y: -0.28906253, z: 0}
+    - {x: 1.140625, y: 2.140625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 5.453125, y: 2.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.40624994, y: -1.359375, z: 0}
+    - {x: 0.7343751, y: -1.359375, z: 0}
+    - {x: -0.40624994, y: 0.78124994, z: 0}
+    - {x: 0.7343751, y: 0.78124994, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.07714941, y: 0.5634775}
+    - {x: 0.07714941, y: 0.6347647}
+    - {x: 0.21093652, y: 0.5634775}
+    - {x: 0.21093652, y: 0.6347647}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+    materialId: 0
+    sourceTextureGUID: f950834219f821a4a9dc7cc8bd5fac0d
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zote_talk_left0010
+    boundsData:
+    - {x: 0.18749996, y: -0.29687503, z: 0}
+    - {x: 1.15625, y: 2.125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 5.453125, y: 2.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.39062503, y: -1.359375, z: 0}
+    - {x: 0.76562494, y: -1.359375, z: 0}
+    - {x: -0.39062503, y: 0.76562494, z: 0}
+    - {x: 0.76562494, y: 0.76562494, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.2158213, y: 0.4892588}
+    - {x: 0.2158213, y: 0.5615225}
+    - {x: 0.34863183, y: 0.4892588}
+    - {x: 0.34863183, y: 0.5615225}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+    materialId: 0
+    sourceTextureGUID: e63d6f0ab6c96d3458db27d62be7d6d4
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zote_talk_left0011
+    boundsData:
+    - {x: 0.1953124, y: -0.29687503, z: 0}
+    - {x: 1.1718749, y: 2.125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 5.453125, y: 2.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.39062503, y: -1.359375, z: 0}
+    - {x: 0.7812498, y: -1.359375, z: 0}
+    - {x: -0.39062503, y: 0.76562494, z: 0}
+    - {x: 0.7812498, y: 0.76562494, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.0019541015, y: 0.34277442}
+    - {x: 0.0019541015, y: 0.41601464}
+    - {x: 0.13476464, y: 0.34277442}
+    - {x: 0.13476464, y: 0.41601464}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+    materialId: 0
+    sourceTextureGUID: deef4d33485cab94f9f8ce0cc6b4ddae
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zote_talk_left0012
+    boundsData:
+    - {x: 0.1953124, y: -0.29687503, z: 0}
+    - {x: 1.1718749, y: 2.125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 5.453125, y: 2.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.39062503, y: -1.359375, z: 0}
+    - {x: 0.7812498, y: -1.359375, z: 0}
+    - {x: -0.39062503, y: 0.76562494, z: 0}
+    - {x: 0.7812498, y: 0.76562494, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.2832041, y: 0.33691505}
+    - {x: 0.2832041, y: 0.41015527}
+    - {x: 0.41601464, y: 0.33691505}
+    - {x: 0.41601464, y: 0.41015527}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+    materialId: 0
+    sourceTextureGUID: eee42fa42534383489412499f9d042ae
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zote_talk_left0013
+    boundsData:
+    - {x: 0.1640624, y: -0.28906253, z: 0}
+    - {x: 1.1093749, y: 2.140625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 5.453125, y: 2.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.39062503, y: -1.359375, z: 0}
+    - {x: 0.7187498, y: -1.359375, z: 0}
+    - {x: -0.39062503, y: 0.78124994, z: 0}
+    - {x: 0.7187498, y: 0.78124994, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.21484473, y: 0.56543064}
+    - {x: 0.21484473, y: 0.6347647}
+    - {x: 0.34863183, y: 0.56543064}
+    - {x: 0.34863183, y: 0.6347647}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+    materialId: 0
+    sourceTextureGUID: 1279aa971e994db4eb148bc50f8f7df5
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zote_talk_right0000
+    boundsData:
+    - {x: 0.1171875, y: -0.27343753, z: 0}
+    - {x: 1.1718749, y: 2.171875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 5.453125, y: 2.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.46874994, y: -1.359375, z: 0}
+    - {x: 0.70312494, y: -1.359375, z: 0}
+    - {x: -0.46874994, y: 0.81249994, z: 0}
+    - {x: 0.70312494, y: 0.81249994, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.8037119, y: 0.27929786}
+    - {x: 0.8037119, y: 0.35253808}
+    - {x: 0.9394522, y: 0.27929786}
+    - {x: 0.9394522, y: 0.35253808}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3b573ecfb3b20d444ac6a1062cc72ae3
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zote_talk_right0001
+    boundsData:
+    - {x: 0.117187485, y: -0.28125003, z: 0}
+    - {x: 1.140625, y: 2.15625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 5.453125, y: 2.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.45312503, y: -1.359375, z: 0}
+    - {x: 0.6875, y: -1.359375, z: 0}
+    - {x: -0.45312503, y: 0.79687494, z: 0}
+    - {x: 0.6875, y: 0.79687494, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.13867286, y: 0.41308692}
+    - {x: 0.13867286, y: 0.48437402}
+    - {x: 0.27343652, y: 0.41308692}
+    - {x: 0.27343652, y: 0.48437402}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+    materialId: 0
+    sourceTextureGUID: c8a5628bd17941042b731f5910ee6d29
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zote_talk_right0002
+    boundsData:
+    - {x: 0.10937503, y: -0.28906253, z: 0}
+    - {x: 1.15625, y: 2.140625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 5.453125, y: 2.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.46874994, y: -1.359375, z: 0}
+    - {x: 0.6875, y: -1.359375, z: 0}
+    - {x: -0.46874994, y: 0.78124994, z: 0}
+    - {x: 0.6875, y: 0.78124994, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.41992286, y: 0.41211036}
+    - {x: 0.49218652, y: 0.41211036}
+    - {x: 0.41992286, y: 0.5458975}
+    - {x: 0.49218652, y: 0.5458975}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+    materialId: 0
+    sourceTextureGUID: af326bedbbecbd6438370a0c330ba73f
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zote_talk_right0003
+    boundsData:
+    - {x: 0.14062496, y: -0.28906253, z: 0}
+    - {x: 1.125, y: 2.140625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 5.453125, y: 2.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.42187503, y: -1.359375, z: 0}
+    - {x: 0.70312494, y: -1.359375, z: 0}
+    - {x: -0.42187503, y: 0.78124994, z: 0}
+    - {x: 0.70312494, y: 0.78124994, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.35254005, y: 0.54980564}
+    - {x: 0.35254005, y: 0.62011623}
+    - {x: 0.48632714, y: 0.54980564}
+    - {x: 0.48632714, y: 0.62011623}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+    materialId: 0
+    sourceTextureGUID: c0329cb56e23a694aaa055ddb6cee71a
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zote_talk_right0004
+    boundsData:
+    - {x: 0.124999955, y: -0.28125003, z: 0}
+    - {x: 1.15625, y: 2.15625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 5.453125, y: 2.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.45312503, y: -1.359375, z: 0}
+    - {x: 0.70312494, y: -1.359375, z: 0}
+    - {x: -0.45312503, y: 0.79687494, z: 0}
+    - {x: 0.70312494, y: 0.79687494, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.14453223, y: 0.33691505}
+    - {x: 0.14453223, y: 0.4091787}
+    - {x: 0.2792959, y: 0.33691505}
+    - {x: 0.2792959, y: 0.4091787}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+    materialId: 0
+    sourceTextureGUID: 5ce8206b4013caa47bacbe1c0ca9c6e1
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zote_talk_right0005
+    boundsData:
+    - {x: 0.12499994, y: -0.27343753, z: 0}
+    - {x: 1.1874998, y: 2.171875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 5.453125, y: 2.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.46874994, y: -1.359375, z: 0}
+    - {x: 0.7187498, y: -1.359375, z: 0}
+    - {x: -0.46874994, y: 0.81249994, z: 0}
+    - {x: 0.7187498, y: 0.81249994, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.28906348, y: 0.18359473}
+    - {x: 0.28906348, y: 0.25781152}
+    - {x: 0.4248037, y: 0.18359473}
+    - {x: 0.4248037, y: 0.25781152}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+    materialId: 0
+    sourceTextureGUID: 135cbdfe8d282a04aa22d2f37439dcb2
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zote_talk_right0006
+    boundsData:
+    - {x: 0.124999955, y: -0.3046875, z: 0}
+    - {x: 1.15625, y: 2.109375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 5.453125, y: 2.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.45312503, y: -1.359375, z: 0}
+    - {x: 0.70312494, y: -1.359375, z: 0}
+    - {x: -0.45312503, y: 0.75, z: 0}
+    - {x: 0.70312494, y: 0.75, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.6318369, y: 0.4160166}
+    - {x: 0.7041006, y: 0.4160166}
+    - {x: 0.6318369, y: 0.5478506}
+    - {x: 0.7041006, y: 0.5478506}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+    materialId: 0
+    sourceTextureGUID: 78f0faf453333424093f86204b9097e9
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zote_talk_right0007
+    boundsData:
+    - {x: 0.1328125, y: -0.28125003, z: 0}
+    - {x: 1.1406249, y: 2.15625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 5.453125, y: 2.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.43749994, y: -1.359375, z: 0}
+    - {x: 0.70312494, y: -1.359375, z: 0}
+    - {x: -0.43749994, y: 0.79687494, z: 0}
+    - {x: 0.70312494, y: 0.79687494, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.07714941, y: 0.48828223}
+    - {x: 0.07714941, y: 0.55956936}
+    - {x: 0.21191308, y: 0.48828223}
+    - {x: 0.21191308, y: 0.55956936}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+    materialId: 0
+    sourceTextureGUID: cc37fbd876a736444b21a303dfe66f95
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zote_talk_right0008
+    boundsData:
+    - {x: 0.1484374, y: -0.28125003, z: 0}
+    - {x: 1.1406249, y: 2.15625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 5.453125, y: 2.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.42187503, y: -1.359375, z: 0}
+    - {x: 0.7187498, y: -1.359375, z: 0}
+    - {x: -0.42187503, y: 0.79687494, z: 0}
+    - {x: 0.7187498, y: 0.79687494, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.0019541015, y: 0.5585947}
+    - {x: 0.07324121, y: 0.5585947}
+    - {x: 0.0019541015, y: 0.6933584}
+    - {x: 0.07324121, y: 0.6933584}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+    materialId: 0
+    sourceTextureGUID: 39468f960ebe0794fa7c6d6b4245b7f9
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zote_talk_right0009
+    boundsData:
+    - {x: 0.1015625, y: -0.24999997, z: 0}
+    - {x: 1.2031249, y: 2.21875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 5.453125, y: 2.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.49999994, y: -1.359375, z: 0}
+    - {x: 0.70312494, y: -1.359375, z: 0}
+    - {x: -0.49999994, y: 0.85937506, z: 0}
+    - {x: 0.70312494, y: 0.85937506, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.14648536, y: 0.18164161}
+    - {x: 0.14648536, y: 0.25683495}
+    - {x: 0.28515527, y: 0.18164161}
+    - {x: 0.28515527, y: 0.25683495}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+    materialId: 0
+    sourceTextureGUID: 6d339b295cff33f49beb92576bd88358
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zote_talk_right0010
+    boundsData:
+    - {x: 0.101562485, y: -0.24999997, z: 0}
+    - {x: 1.171875, y: 2.21875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 5.453125, y: 2.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.48437503, y: -1.359375, z: 0}
+    - {x: 0.6875, y: -1.359375, z: 0}
+    - {x: -0.48437503, y: 0.85937506, z: 0}
+    - {x: 0.6875, y: 0.85937506, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.0019541015, y: 0.18945411}
+    - {x: 0.0019541015, y: 0.26269433}
+    - {x: 0.14062402, y: 0.18945411}
+    - {x: 0.14062402, y: 0.26269433}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+    materialId: 0
+    sourceTextureGUID: 2d992b575d4282c418b1f875058fe22f
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zote_talk_right0011
+    boundsData:
+    - {x: 0.09375003, y: -0.234375, z: 0}
+    - {x: 1.1875, y: 2.25, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 5.453125, y: 2.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.49999994, y: -1.359375, z: 0}
+    - {x: 0.6875, y: -1.359375, z: 0}
+    - {x: -0.49999994, y: 0.890625, z: 0}
+    - {x: 0.6875, y: 0.890625, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.14843848, y: 0.1035166}
+    - {x: 0.14843848, y: 0.17773339}
+    - {x: 0.28906152, y: 0.1035166}
+    - {x: 0.28906152, y: 0.17773339}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+    materialId: 0
+    sourceTextureGUID: 98d6b20737b1abb4aa9b1d8734ec3d0b
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zote_talk_right0012
+    boundsData:
+    - {x: 0.0546875, y: -0.234375, z: 0}
+    - {x: 1.2968749, y: 2.25, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 5.453125, y: 2.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.59374994, y: -1.359375, z: 0}
+    - {x: 0.70312494, y: -1.359375, z: 0}
+    - {x: -0.59374994, y: 0.890625, z: 0}
+    - {x: 0.70312494, y: 0.890625, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.29589942, y: 0.09863379}
+    - {x: 0.29589942, y: 0.17968652}
+    - {x: 0.43652245, y: 0.09863379}
+    - {x: 0.43652245, y: 0.17968652}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+    materialId: 0
+    sourceTextureGUID: 217aa2271d8476a4fb21037ed96cbcb5
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Zote_talk_right0013
+    boundsData:
+    - {x: 0.109374955, y: -0.234375, z: 0}
+    - {x: 1.1875, y: 2.25, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 5.453125, y: 2.90625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.48437503, y: -1.359375, z: 0}
+    - {x: 0.70312494, y: -1.359375, z: 0}
+    - {x: -0.48437503, y: 0.890625, z: 0}
+    - {x: 0.70312494, y: 0.890625, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.0019541015, y: 0.1113291}
+    - {x: 0.0019541015, y: 0.18554589}
+    - {x: 0.14257714, y: 0.1113291}
+    - {x: 0.14257714, y: 0.18554589}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+    materialId: 0
+    sourceTextureGUID: f8f2742f645b2bd4da6f18b7e14a3fd1
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  premultipliedAlpha: 0
+  material: {fileID: 0}
+  materials:
+  - {fileID: 2100000, guid: cb0490fe8fc9b7a4e99c953bb2537451, type: 2}
+  textures:
+  - {fileID: 2800000, guid: 5648fd3d60ff37d428d8e614791874df, type: 3}
+  pngTextures: []
+  materialPngTextureId: 00000000
+  textureFilterMode: 1
+  textureMipMaps: 0
+  allowMultipleAtlases: 0
+  spriteCollectionGUID: 17edf07f47c7041409c64fafd617e4ae
+  spriteCollectionName: ZoteSpriteCollection
+  assetName: 
+  loadable: 0
+  invOrthoSize: 2
+  halfTargetHeight: 32
+  buildKey: 120677020
+  dataGuid: b3d757322d605ac4583b8e82e16ad0d8
+  managedSpriteCollection: 0
+  hasPlatformData: 0
+  spriteCollectionPlatforms: []
+  spriteCollectionPlatformGUIDs: []

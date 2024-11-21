@@ -14,7 +14,7 @@ namespace HutongGames.PlayMakerEditor
     /// Base class for a Guided Tour Window 
     /// Uses GuidedTour to organize topics
     /// Uses HtmlText for help text with links etc.
-    /// TODO: Remove some dependencies and move to HutongGames.Editor so we can use in other projects
+    /// Remove some dependencies and move to HutongGames.Editor so we can use in other projects
     /// </summary>
     public abstract class BaseGuidedTourWindow : BaseEditorWindow
     {

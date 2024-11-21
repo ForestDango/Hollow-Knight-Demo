@@ -70,7 +70,7 @@ namespace HutongGames.PlayMakerEditor
             {
                 if (e is ExitGUIException) throw;
 
-                //TODO: detect if stuck in loop here
+                // detect if stuck in loop here
                 // E.g., set a "triedToRecover" flag that is cleared when OnGUI succeeds.
                 // If triedToRecover is true here it means we failed twice!
 

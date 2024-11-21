@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1798224009425392540}
   - component: {fileID: 1798224009425392543}
   - component: {fileID: 1798224009425392542}
-  - component: {fileID: 1798224009425392545}
+  - component: {fileID: 4364671612821082146}
   m_Layer: 26
   m_Name: Corpse Acid Steam
   m_TagString: Untagged
@@ -1371,7 +1371,7 @@ ParticleSystem:
         m_NumAlphaKeys: 4
   UVModule:
     serializedVersion: 2
-    enabled: 0
+    enabled: 1
     mode: 0
     timeMode: 0
     fps: 30
@@ -1482,8 +1482,8 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     speedRange: {x: 0, y: 1}
-    tilesX: 9
-    tilesY: 1
+    tilesX: 1
+    tilesY: 4
     animationType: 0
     rowIndex: 0
     cycles: 1
@@ -4814,7 +4814,7 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
---- !u!114 &1798224009425392545
+--- !u!114 &4364671612821082146
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4823,7 +4823,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 1798224009425392544}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70b707f4b5a325c42a8a498b30fb1abf, type: 3}
+  m_Script: {fileID: 11500000, guid: 765569881f059804cabafd4342bfaf28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  recycleTimer: 1

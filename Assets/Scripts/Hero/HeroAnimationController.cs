@@ -9,14 +9,18 @@ public class HeroAnimationController : MonoBehaviour
     private tk2dSpriteAnimator animator;
     private PlayerData pd;
 
+    public bool wasAttacking;
     private bool wasFacingRight;
-    private bool playLanding;
+    [HideInInspector]
+    public bool playLanding;
     private bool playRunToIdle;//播放"Run To Idle"动画片段
     private bool playDashToIdle; //播放"Dash To Idle"动画片段
     private bool playBackDashToIdleEnd; //播放"Back Dash To Idle"动画片段(其实并不会播放)
 
     private bool changedClipFromLastFrame;
 
+    [HideInInspector]
+    public bool setEntryAnim;
     public ActorStates actorStates { get; private set; }
     public ActorStates prevActorStates { get; private set; }
     public ActorStates stateBeforeControl { get; private set; }
@@ -102,6 +106,56 @@ public class HeroAnimationController : MonoBehaviour
 	    {
 		Play("Recoil");
 	    }
+	    else if (cState.transitioning)
+	    {
+		if (cState.onGround)
+		{
+		    if(heroCtrl.transitionState == HeroTransitionState.EXITING_SCENE)
+		    {
+			if (!animator.IsPlaying("Run"))
+			{
+			    Play("Run");
+			}
+		    }
+		    else if(heroCtrl.transitionState == HeroTransitionState.ENTERING_SCENE)
+		    {
+			if (!animator.IsPlaying("Run"))
+			{
+			    PlayFromFrame("Run", 3);
+			}
+		    }
+		}
+		else if(heroCtrl.transitionState == HeroTransitionState.EXITING_SCENE)
+		{
+		    if (!animator.IsPlaying("Airborne"))
+		    {
+			PlayFromFrame("Airborne", 7);
+		    }
+		}
+		else if(heroCtrl.transitionState == HeroTransitionState.WAITING_TO_ENTER_LEVEL)
+		{
+		    if (!animator.IsPlaying("Airborne"))
+		    {
+			PlayFromFrame("Airborne", 7);
+		    }
+		}
+		else if(heroCtrl.transitionState == HeroTransitionState.ENTERING_SCENE && !setEntryAnim)
+		{
+		    if (heroCtrl.gatePosition == GatePosition.top)
+		    {
+			PlayFromFrame("Airborne", 7);
+		    }
+		    else if (heroCtrl.gatePosition == GatePosition.bottom)
+		    {
+			PlayFromFrame("Airborne", 3);
+		    }
+		    setEntryAnim = true;
+		}
+	    }
+	}
+	else if (setEntryAnim)
+	{
+	    setEntryAnim = false;
 	}
 	else if (cState.dashing)
 	{
@@ -128,6 +182,10 @@ public class HeroAnimationController : MonoBehaviour
 	    {
 		Play("DownSlash");
 	    }
+	    else if (cState.wallSliding)
+	    {
+		Play("Wall Slash");
+	    }
 	    else if (!cState.altAttack)
 	    {
 		Play("Slash");
@@ -136,6 +194,14 @@ public class HeroAnimationController : MonoBehaviour
 	    {
 		Play("SlashAlt");
 	    }
+	}
+	else if (cState.casting)
+	{
+	    Play("Fireball");
+	}
+	else if (cState.wallSliding)
+	{
+	    Play("Wall Slide");
 	}
 	else if (actorStates == ActorStates.idle)
 	{
@@ -164,7 +230,11 @@ public class HeroAnimationController : MonoBehaviour
 	}
 	else if (actorStates == ActorStates.airborne)
 	{
-	    if (cState.jumping)
+	    if (heroCtrl.wallLocked)
+	    {
+		Play("Walljump");
+	    }
+	    else if (cState.jumping)
 	    {
 		if (!animator.IsPlaying("Airborne"))
 		{
@@ -208,6 +278,14 @@ public class HeroAnimationController : MonoBehaviour
 	    }
 	    wasFacingRight = false;
 	}
+	if (this.cState.attacking)
+	{
+	    this.wasAttacking = true;
+	}
+	else
+	{
+	    this.wasAttacking = false;
+	}
 	ResetPlays();
     }
 
@@ -229,6 +307,10 @@ public class HeroAnimationController : MonoBehaviour
 	{
 	    PlayIdle();
 	}
+	if (clip.name == "Exit Door To Idle")
+	{
+	    PlayIdle();
+	}
     }
 
     private void Play(string clipName)
@@ -239,9 +321,21 @@ public class HeroAnimationController : MonoBehaviour
 	}
 	animator.Play(clipName);
     }
-
+    private void PlayFromFrame(string clipName, int frame)
+    {
+	if (clipName != animator.CurrentClip.name)
+	{
+	    changedClipFromLastFrame = true;
+	}
+	animator.PlayFromFrame(clipName, frame);
+    }
     private void PlayRun()
     {
+	if (wasAttacking)
+	{
+	    animator.PlayFromFrame("Run", 3);
+	    return;
+	}
 	animator.Play("Run");
     }
 
@@ -300,6 +394,10 @@ public class HeroAnimationController : MonoBehaviour
     {
 	if (controlEnabled)
 	{
+	    if (clipName == "Exit Door To Idle")
+	    {
+		animator.AnimationCompleted = new Action<tk2dSpriteAnimator, tk2dSpriteAnimationClip>(AnimationCompleteDelegate);
+	    }
 	    Play(clipName);
 	}
     }

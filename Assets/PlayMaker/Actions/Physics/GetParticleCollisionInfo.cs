@@ -1,5 +1,5 @@
 ﻿// (c) Copyright HutongGames, LLC 2010-2013. All rights reserved.
-// TODO: Needs to support: ParticlePhysicsExtensions.GetCollisionEvents
+// Needs to support: ParticlePhysicsExtensions.GetCollisionEvents
 
 using UnityEngine;
 

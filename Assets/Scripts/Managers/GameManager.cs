@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
 
 public class GameManager : MonoBehaviour
 {
@@ -27,6 +28,9 @@ public class GameManager : MonoBehaviour
     public HeroController hero_ctrl { get; private set; }
     public CameraController cameraCtrl { get; private set; }
     public UIManager ui { get; private set; }
+    [SerializeField] public GameSettings gameSettings;
+    public PlayMakerFSM soulOrb_fsm { get; private set; }
+    public PlayMakerFSM soulVessel_fsm { get; private set; }
 
     [SerializeField] private AudioManager audioManager;
     public AudioManager AudioManager
@@ -57,6 +61,41 @@ public class GameManager : MonoBehaviour
     private bool isLoading;
     private int sceneLoadsWithoutGarbageCollect;
     private SceneLoadVisualizations loadVisualization;
+
+    private bool isUsingCustomLoadAnimation;
+    public bool IsUsingCustomLoadAnimation
+    {
+	get
+	{
+	    return isUsingCustomLoadAnimation;
+	}
+    }
+    private float currentLoadDuration;
+    public float CurrentLoadDuration
+    {
+	get
+	{
+	    if (!isLoading)
+	    {
+		return 0f;
+	    }
+	    return currentLoadDuration;
+	}
+    }
+    public bool IsLoadingSceneTransition
+    {
+	get
+	{
+	    return isLoading;
+	}
+    }
+    public SceneLoadVisualizations LoadVisualization
+    {
+	get
+	{
+	    return loadVisualization;
+	}
+    }
     [Space]
     public string sceneName;
     public string nextSceneName;
@@ -72,6 +111,7 @@ public class GameManager : MonoBehaviour
 	}
     }
 
+    private bool needFirstFadeIn;
     private bool waitForManualLevelStart;
 
     public delegate void SceneTransitionBeganDelegate(SceneLoad sceneLoad);
@@ -85,6 +125,21 @@ public class GameManager : MonoBehaviour
 
     public delegate void EnterSceneEvent();
     public event EnterSceneEvent OnFinishedEnteringScene;
+
+    public delegate void SavePersistentState();
+    public event SavePersistentState SavePersistentObjects;
+
+    public delegate void RefreshLanguage();
+    public event RefreshLanguage RefreshLanguageText;
+
+    public delegate void BossLoad();
+    public event BossLoad OnLoadedBoss;
+
+    public AudioMixerSnapshot actorSnapshotUnpaused;
+    public AudioMixerSnapshot actorSnapshotPaused;
+    public AudioMixerSnapshot silentSnapshot;
+    public AudioMixerSnapshot noMusicSnapshot;
+    public AudioMixerSnapshot noAtmosSnapshot;
 
     public static GameManager _instance;
     public static GameManager instance
@@ -145,6 +200,18 @@ public class GameManager : MonoBehaviour
 
     }
 
+    protected void Update()
+    {
+	if (isLoading)
+	{
+	    currentLoadDuration += Time.unscaledDeltaTime;
+	}
+	else
+	{
+	    currentLoadDuration = 0f;
+	}
+    }
+
     private void OnDisable()
     {
 	UnityEngine.SceneManagement.SceneManager.activeSceneChanged -= LevelActivated;
@@ -195,6 +262,8 @@ public class GameManager : MonoBehaviour
 	    {
 		RefreshTilemapInfo(sceneName);
 	    }
+	    soulOrb_fsm = gameCams.soulOrbFSM;
+	    soulVessel_fsm = gameCams.soulVesselFSM;
 	}
     }
 
@@ -228,7 +297,7 @@ public class GameManager : MonoBehaviour
 
 	yield return new WaitForSeconds(2.6f);
 	ui.MakeMenuLean();
-	BeginSceneTransiton(new SceneLoadInfo
+	BeginSceneTransition(new SceneLoadInfo
 	{
 	    AlwaysUnloadUnusedAssets = true,
 	    IsFirstLevelForPlayer = true,
@@ -269,7 +338,7 @@ public class GameManager : MonoBehaviour
 	{
 	    UnloadingLevel();
 	}
-	UnityEngine.SceneManagement.SceneManager.UnloadScene(destName);
+	//UnityEngine.SceneManagement.SceneManager.LoadScene(destName);
     }
 
     public IEnumerator LoadSceneAdditive(string destScene)
@@ -301,6 +370,12 @@ public class GameManager : MonoBehaviour
     private void UpdateSceneName()
     {
 	sceneName = GetBaseSceneName(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
+    }
+
+    public string GetSceneNameString()
+    {
+	UpdateSceneName();
+	return sceneName;
     }
 
     /// <summary>
@@ -417,10 +492,35 @@ public class GameManager : MonoBehaviour
 	EnterHero(false);
     }
 
+    public IEnumerator PlayerDead(float waitTime)
+    {
+	cameraCtrl.FreezeInPlace(true);
+	NoLongerFirstGame();
+	ResetSemiPersistentItems();
+	bool finishedSaving = false;
+	SaveGame(profileID, delegate (bool didSave)
+	 {
+	     finishedSaving = true;
+	 });
+	yield return new WaitForSeconds(waitTime);
+	cameraCtrl.FadeOut(CameraFadeType.HERO_DEATH);
+	yield return new WaitForSeconds(0.8f);
+	while (!finishedSaving)
+	{
+	    yield return null;
+	}
+	if (playerData.permadeathMode == 0)
+	{
+	    ReadyForRespawn(false);
+	}
+	//TODO:钢魂模式
+
+    }
+
     public void ReadyForRespawn(bool isFirstLevelForPlayer)
     {
 	RespawningHero = true;
-	BeginSceneTransiton(new SceneLoadInfo
+	BeginSceneTransition(new SceneLoadInfo
 	{
 	    PreventCameraFadeOut = true,
 	    WaitForSceneTransitionCameraFade = false,
@@ -436,6 +536,11 @@ public class GameManager : MonoBehaviour
     {
 	if (RespawningHero)
 	{
+	    if (needFirstFadeIn)
+	    {
+		StartCoroutine(FadeSceneInWithDelay(0.3f));
+		needFirstFadeIn = false;
+	    }
 	    StartCoroutine(hero_ctrl.Respawn());
 	    FinishedEnteringScene();
 	    RespawningHero = false;
@@ -544,6 +649,11 @@ public class GameManager : MonoBehaviour
 
     }
 
+    public void SetCurrentMapZoneAsRespawn()
+    {
+	playerData.mapZone = sm.mapZone;
+    }
+
     public void FadeSceneIn()
     {
 	cameraCtrl.FadeSceneIn();
@@ -564,10 +674,34 @@ public class GameManager : MonoBehaviour
 
     public void SaveLevelState()
     {
-	//TODO:
+	if (SavePersistentObjects != null)
+	{
+	    SavePersistentObjects();
+	}
     }
 
-    public void BeginSceneTransiton(SceneLoadInfo info)
+    public void ChangeToScene(string targetScene,string entryGateName,float pauseBeforeEnter)
+    {
+	if (hero_ctrl != null)
+	{
+	    hero_ctrl.proxyFSM.SendEvent("HeroCtrl-LeavingScene");
+	    hero_ctrl.transform.SetParent(null);
+	}
+	NoLongerFirstGame();
+	SaveLevelState();
+	SetState(GameState.EXITING_LEVEL);
+	this.entryGateName = entryGateName;
+	this.targetScene = targetScene;
+	entryDelay = pauseBeforeEnter;
+	cameraCtrl.FreezeInPlace(false);
+	if (hero_ctrl != null)
+	{
+	    hero_ctrl.ResetState();
+	}
+	LeftScene(false);
+    }
+
+    public void BeginSceneTransition(SceneLoadInfo info)
     {
 
 	if(info.IsFirstLevelForPlayer)
@@ -727,8 +861,9 @@ public class GameManager : MonoBehaviour
 
     public void BeginScene()
     {
+	Debug.LogFormat("Begin Scene()");
 	inputHandler.SceneInit();
-
+	ui.SceneInit();
 	if (hero_ctrl)
 	{
 	    hero_ctrl.SceneInit();
@@ -738,7 +873,7 @@ public class GameManager : MonoBehaviour
 	{
 	    SetState(GameState.MAIN_MENU);
 	    UpdateUIStateFromGameState();
-
+	    //TODO:Platform
 	    return;
 	}
 	if (IsGameplayScene())
@@ -749,7 +884,7 @@ public class GameManager : MonoBehaviour
 	    }
 	    if(sm != null)
 	    {
-
+		//TODO:Platform
 		return;
 	    }
 	}
@@ -853,10 +988,85 @@ public class GameManager : MonoBehaviour
     {
 	return false;
     }
+    public string GetCurrentMapZone()
+    {
+	return sm.mapZone.ToString();
+    }
 
     private void NoLongerFirstGame()
     {
-	
+	if (playerData.isFirstGame)
+	{
+	    playerData.isFirstGame = false;
+	}
+    }
+
+    public void SaveGame()
+    {
+	SaveGame(delegate (bool didSave)
+	{
+	});
+    }
+    public void SaveGame(Action<bool> callback)
+    {
+	SaveGame(profileID, callback);
+    }
+
+    private void SaveGame(int saveSlot, Action<bool> callback)
+    {
+	if(saveSlot >= 0)
+	{
+	    SaveLevelState();
+	    //TODO:SaveIcon()
+	    //TODO:Achievement
+	    if(playerData != null)
+	    {
+
+		playerData.version = "1.5.78.11833";
+		playerData.profileID = saveSlot;
+		playerData.CountGameCompletion();
+	    }
+	    else
+	    {
+		Debug.LogError("Error updating PlayerData before save (PlayerData is null)");
+	    }
+	    Debug.Log("Saving game disabled. No save file written.");
+	    if (callback != null)
+	    {
+		CoreLoop.InvokeNext(delegate
+		{
+		    callback(false);
+		});
+		return;
+	    }
+	}
+	else
+	{
+	    Debug.LogError("Save game slot not valid: " + saveSlot.ToString());
+	    if (callback != null)
+	    {
+		CoreLoop.InvokeNext(delegate
+		{
+		    callback(false);
+		});
+	    }
+	}
+    }
+
+    //TODO:
+    public void TimePasses()
+    {
+	Debug.LogFormat("TODO:Time Passes");
+    }
+
+    public void CheckCharmAchievements()
+    {
+	Debug.LogFormat("TODO:Check Charm Achievements");
+    }
+
+    public void CheckStagStationAchievements()
+    {
+	Debug.LogFormat("TODO:Check Stag Station Achievements");
     }
 
     public bool IsMenuScene()
@@ -881,11 +1091,32 @@ public class GameManager : MonoBehaviour
 	UpdateSceneName();
 	return sceneName == "Intro_Cutscene_Prologue" || sceneName == "Opening_Sequence" || sceneName == "Prologue_Excerpt" || sceneName == "Intro_Cutscene" || sceneName == "Cinematic_Stag_travel" || sceneName == "PermaDeath" || sceneName == "Cinematic_Ending_A" || sceneName == "Cinematic_Ending_B" || sceneName == "Cinematic_Ending_C" || sceneName == "Cinematic_Ending_D" || sceneName == "Cinematic_Ending_E" || sceneName == "Cinematic_MrMushroom" || sceneName == "BetaEnd";
     }
+    public bool IsStagTravelScene()
+    {
+	UpdateSceneName();
+	return sceneName == "Cinematic_Stag_travel";
+    }
 
     public bool ShouldKeepHUDCameraActive()
     {
 	UpdateSceneName();
 	return sceneName == "GG_Entrance_Cutscene" || sceneName == "GG_Boss_Door_Entrance" || sceneName == "GG_End_Sequence" || sceneName == "Cinematic_Ending_D";
+    }
+
+    public IEnumerator QuitGame()
+    {
+	StoryRecord_quit();
+	FSMUtility.SendEventToGameObject(GameObject.Find("Quit Blanker"), "START FADE", false);
+	yield return new WaitForSeconds(0.5f);
+	Application.Quit();
+    }
+
+    public void LoadedBoss()
+    {
+	if (OnLoadedBoss != null)
+	{
+	    OnLoadedBoss();
+	}
     }
 
     public void SetState(GameState newState)
@@ -902,6 +1133,10 @@ public class GameManager : MonoBehaviour
     {
 	return playerData.GetBool(boolName);
     }
+    public string GetPlayerDataString(string stringName)
+    {
+	return playerData.GetString(stringName);
+    }
 
     public void IncrementPlayerDataInt(string intName)
     {
@@ -916,6 +1151,15 @@ public class GameManager : MonoBehaviour
     public void SetPlayerDataBool(string boolName,bool value)
     {
 	playerData.SetBool(boolName, value); 
+    }
+    public void SetPlayerDataFloat(string floatName, float value)
+    {
+	playerData.SetFloat(floatName, value);
+    }
+
+    public void SetPlayerDataString(string stringName, string value)
+    {
+	playerData.SetString(stringName, value);
     }
 
     private IEnumerator SetTimeScale(float newTimeScale,float duration)
@@ -983,13 +1227,181 @@ public class GameManager : MonoBehaviour
 	Platform.Current.EnsureSaveSlotSpace(profileID, callback);
     }
 
+    public void AddToBenchList()
+    {
+	if (!playerData.scenesEncounteredBench.Contains(GetSceneNameString()))
+	{
+	    playerData.scenesEncounteredBench.Add(GetSceneNameString());
+	}
+    }
+
+    public void ResetSemiPersistentItems()
+    {
+	Debug.LogFormat("TODO:ResetSemiPersistentItems");
+    }
+
+    public bool IsGamePaused()
+    {
+	return gameState == GameState.PAUSED;
+    }
+
+    public IEnumerator PauseGameToggleByMenu()
+    {
+	yield return null;
+	IEnumerator iterator = PauseGameToggle();
+	while (iterator.MoveNext())
+	{
+	    object obj = iterator.Current;
+	    yield return obj;
+	}
+    }
+
+    public IEnumerator PauseGameToggle()
+    {
+	if(!playerData.disablePause && gameState == GameState.PLAYING)
+	{
+	    gameCams.StopCameraShake();
+	    inputHandler.PreventPause();
+	    inputHandler.StopUIInput();
+	    actorSnapshotPaused.TransitionTo(0f);
+	    isPaused = true;
+	    SetState(GameState.PAUSED);
+	    ui.AudioGoToPauseMenu(0.2f);
+	    ui.SetState(UIState.PAUSED);
+	    if(HeroController.instance != null)
+	    {
+		HeroController.instance.Pause();
+	    }
+	    gameCams.MoveMenuToHUDCamera();
+	    SetTimeScale(0f);
+	    yield return new WaitForSecondsRealtime(0.8f);
+	    inputHandler.AllowPause();
+	}
+	else if(gameState == GameState.PAUSED)
+	{
+	    gameCams.ResumeCameraShake();
+	    inputHandler.PreventPause();
+	    actorSnapshotUnpaused.TransitionTo(0f);
+	    isPaused = false;
+	    ui.AudioGoToPauseMenu(0.2f);
+	    ui.SetState(UIState.PLAYING);
+	    SetState(GameState.PLAYING);
+	    if(HeroController.instance != null)
+	    {
+		HeroController.instance.UnPause();
+	    }
+	    MenuButtonList.ClearAllLastSelected();
+	    SetTimeScale(1f);
+	    yield return new WaitForSecondsRealtime(0.8f);
+	    inputHandler.AllowPause();
+	}
+    }
+
+    public IEnumerator ReturnToMainMenu(ReturnToMainMenuSaveModes saveMode,Action<bool> callback = null)
+    {
+	StoryRecord_quit();
+	TimePasses();
+	if(saveMode == ReturnToMainMenuSaveModes.DontSave)
+	{
+	    //TODO:Dont Save!
+	    Debug.LogFormat("Dont Save!");
+	}
+	else if(callback != null)
+	{
+	    callback(false);
+	}
+	cameraCtrl.FreezeInPlace(true);
+	cameraCtrl.FadeOut(CameraFadeType.JUST_FADE);
+	noMusicSnapshot.TransitionTo(1.5f);
+	noAtmosSnapshot.TransitionTo(1.5f);
+	for (float timer = 0f; timer < 2f; timer += Time.unscaledDeltaTime)
+	{
+	    yield return null;
+	}
+	if (UnloadingLevel != null)
+	{
+	    try
+	    {
+		UnloadingLevel();
+	    }
+	    catch (Exception exception)
+	    {
+		Debug.LogErrorFormat("Error while UnloadingLevel in QuitToMenu, attempting to continue regardless.", Array.Empty<object>());
+		Debug.LogException(exception);
+	    }
+	}
+	PlayMakerFSM.BroadcastEvent("QUIT TO MENU");
+	waitForManualLevelStart = true;
+	yield return UnityEngine.SceneManagement.SceneManager.LoadSceneAsync("Quit_To_Menu", LoadSceneMode.Single);
+    }
+
     public void StoryRecord_acquired(string item)
     {
+	Debug.LogFormat("StoryRecord_acquired" + item);
+    }
+
+    public void StoryRecord_rest(string item)
+    {
+	Debug.LogFormat("StoryRecord_rest" + item);
+    }
+
+    public void StoryRecord_rodeStag(string item)
+    {
+	Debug.LogFormat("StoryRecord_rodeStag" + item);
+    }
+    public void StoryRecord_quit()
+    {
+	Debug.LogFormat("StoryRecord_quit");
+    }
+
+    public void StoryRecord_defeatedShade()
+    {
+	Debug.LogFormat("StoryRecord_defeatedShade");
+    }
+
+    public void EquipCharm(int charmNum)
+    {
+	playerData.EquipCharm(charmNum);
+    }
+
+    public void UnequipCharm(int charmNum)
+    {
+	playerData.UnequipCharm(charmNum);
+    }
+
+    public void RefreshOvercharm()
+    {
+	if (playerData.charmSlotsFilled > playerData.charmSlots)
+	{
+	    playerData.overcharmed = true;
+	    return;
+	}
+	playerData.overcharmed = false;
+    }
+
+    public void StartSoulLimiter()
+    {
+	playerData.StartSoulLimiter();
+    }
+
+    public void EndSoulLimiter()
+    {
+	playerData.EndSoulLimiter();
     }
 
     public void AwardAchievement(string key)
     {
 	//TODO:
+    }
+
+    public void CheckAllAchievements()
+    {
+	//TODO:
+    }
+
+    public void CountJournalEntries()
+    {
+	playerData.CountJournalEntries();
     }
 
     public void SkipCutscene()
@@ -1030,13 +1442,13 @@ public class GameManager : MonoBehaviour
 
     public enum SceneLoadVisualizations
     {
-	Default,
-	Custom = -1,
-	Dream = 1,
-	Colosseum,
-	GrimmDream,
-	ContinueFromSave,
-	GodsAndGlory
+	Default, //默认
+	Custom = -1, //自定义
+	Dream = 1, //梦境
+	Colosseum, //斗兽场
+	GrimmDream, //格林梦境
+	ContinueFromSave, //从保存的数据中继续
+	GodsAndGlory //神居
     }
 
     public class SceneLoadInfo

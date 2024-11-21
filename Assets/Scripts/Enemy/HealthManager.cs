@@ -16,9 +16,16 @@ public class HealthManager : MonoBehaviour, IHitResponder
 
     [Header("Scene")]
     [SerializeField] private GameObject battleScene;
+    [SerializeField] private string sendKilledToName;
+    [SerializeField] private GameObject sendKilledToObject;
 
     [Header("Asset")]
     [SerializeField] private AudioSource audioPlayerPrefab; //声音播放器预制体
+    [SerializeField] private GameObject corpseSplatPrefab;
+    [SerializeField] private AudioEvent regularInvincibleAudio;
+    [SerializeField] private GameObject blockHitPrefab;
+    [SerializeField] private bool hasAlternateInvincibleSound;
+    [SerializeField] private AudioClip alternateInvincibleSound;
 
     [Header("Body")]
     [SerializeField] public int hp; //血量
@@ -28,17 +35,31 @@ public class HealthManager : MonoBehaviour, IHitResponder
     [Header("Invincible")]
     [SerializeField] private bool invincible;
     [SerializeField] private int invincibleFromDirection;
+    [SerializeField] private bool preventInvincibleEffect;
+
+    [Header("Geo")]
+    [SerializeField] private int smallGeoDrops;
+    [SerializeField] private int mediumGeoDrops;
+    [SerializeField] private int largeGeoDrops;
+    [SerializeField] private bool megaFlingGeo;
+
+    [SerializeField] private GameObject smallGeoPrefab;
+    [SerializeField] private GameObject mediumGeoPrefab;
+    [SerializeField] private GameObject largeGeoPrefab;
 
     [Header("Hit")]
     [SerializeField] private bool hasAlternateHitAnimation;
     [SerializeField] private string alternateHitAnimation;
 
     [Header("Death")]
+    [SerializeField] private AudioMixerSnapshot deathAudioSnapshot;
     [SerializeField] public bool deathReset;
     [SerializeField] public bool hasSpecialDeath;
 
-    private bool notifiedBattleScene;
+    private PlayMakerFSM stunControlFSM;
 
+    private bool notifiedBattleScene;
+    private GameObject sendKilledTo;
 
     public bool IsInvincible
     {
@@ -82,6 +103,14 @@ public class HealthManager : MonoBehaviour, IHitResponder
 	animator = GetComponent<tk2dSpriteAnimator>();
 	sprite = GetComponent<tk2dSprite>();
 	damageHero = GetComponent<DamageHero>();
+	foreach (PlayMakerFSM playMakerFSM in gameObject.GetComponents<PlayMakerFSM>())
+	{
+	    if (playMakerFSM.FsmName == "Stun Control" || playMakerFSM.FsmName == "Stun")
+	    {
+		stunControlFSM = playMakerFSM;
+		break;
+	    }
+	}
     }
 
     protected void OnEnable()
@@ -92,6 +121,21 @@ public class HealthManager : MonoBehaviour, IHitResponder
     protected void Start()
     {
 	evasionByHitRemaining = -1f;
+	if (!string.IsNullOrEmpty(sendKilledToName))
+	{
+	    sendKilledTo = GameObject.Find(sendKilledToName);
+	    if (this.sendKilledTo == null)
+	    {
+		Debug.LogErrorFormat(this, "Failed to find GameObject '{0}' to send KILLED to.", new object[]
+		{
+		    this.sendKilledToName
+		});
+	    }
+	}
+	else if(sendKilledToObject != null)
+	{
+	    sendKilledTo = this.sendKilledToObject;
+	}
     }
 
     protected void Update()
@@ -131,50 +175,74 @@ public class HealthManager : MonoBehaviour, IHitResponder
 	FSMUtility.SendEventToGameObject(hitInstance.Source, "HIT LANDED", false);
 	if (!(GetComponent<DontClinkGates>() != null))
 	{
-	    FSMUtility.SendEventToGameObject(gameObject, "HIT", false);
-
-	    if(hitInstance.AttackType == AttackTypes.Nail)
+	    FSMUtility.SendEventToGameObject(base.gameObject, "HIT", false);
+	    if (!preventInvincibleEffect)
 	    {
-		if(cardinalDirection == 0)
+		if (hitInstance.AttackType == AttackTypes.Nail)
 		{
-		    HeroController.instance.RecoilLeft();
+		    if (cardinalDirection == 0)
+		    {
+			HeroController.instance.RecoilLeft();
+		    }
+		    else if (cardinalDirection == 2)
+		    {
+			HeroController.instance.RecoilRight();
+		    }
 		}
-		else if(cardinalDirection == 2)
+		GameManager.instance.FreezeMoment(1);
+		GameCameras.instance.cameraShakeFSM.SendEvent("EnemyKillShake");
+		Vector2 v;
+		Vector3 eulerAngles;
+		if (boxCollider != null)
 		{
-		    HeroController.instance.RecoilRight();
+		    switch (cardinalDirection)
+		    {
+			case 0:
+			    v = new Vector2(transform.GetPositionX() + boxCollider.offset.x - boxCollider.size.x * 0.5f, hitInstance.Source.transform.GetPositionY());
+			    eulerAngles = new Vector3(0f, 0f, 0f);
+			    FSMUtility.SendEventToGameObject(base.gameObject, "BLOCKED HIT R", false);
+			    break;
+			case 1:
+			    v = new Vector2(hitInstance.Source.transform.GetPositionX(), Mathf.Max(hitInstance.Source.transform.GetPositionY(), transform.GetPositionY() + boxCollider.offset.y - boxCollider.size.y * 0.5f));
+			    eulerAngles = new Vector3(0f, 0f, 90f);
+			    FSMUtility.SendEventToGameObject(base.gameObject, "BLOCKED HIT U", false);
+			    break;
+			case 2:
+			    v = new Vector2(transform.GetPositionX() + boxCollider.offset.x + boxCollider.size.x * 0.5f, hitInstance.Source.transform.GetPositionY());
+			    eulerAngles = new Vector3(0f, 0f, 180f);
+			    FSMUtility.SendEventToGameObject(base.gameObject, "BLOCKED HIT L", false);
+			    break;
+			case 3:
+			    v = new Vector2(hitInstance.Source.transform.GetPositionX(), Mathf.Min(hitInstance.Source.transform.GetPositionY(), transform.GetPositionY() + boxCollider.offset.y + boxCollider.size.y * 0.5f));
+			    eulerAngles = new Vector3(0f, 0f, 270f);
+			    FSMUtility.SendEventToGameObject(base.gameObject, "BLOCKED DOWN", false);
+			    break;
+			default:
+			    v = transform.position;
+			    eulerAngles = new Vector3(0f, 0f, 0f);
+			    break;
+		    }
 		}
-	    }
-
-	    Vector2 v;
-	    Vector3 eulerAngles;
-	    if (boxCollider != null)
-	    {
-		switch (cardinalDirection)
+		else
 		{
-		    case 0:
-			v = new Vector2(transform.GetPositionX() + boxCollider.offset.x - boxCollider.size.x * 0.5f, hitInstance.Source.transform.GetPositionY());
-			eulerAngles = new Vector3(0f, 0f, 0f);
-			break;
-		    case 1:
-			v = new Vector2(hitInstance.Source.transform.GetPositionX(), Mathf.Max(hitInstance.Source.transform.GetPositionY(), transform.GetPositionY() + boxCollider.offset.y - boxCollider.size.y * 0.5f));
-			eulerAngles = new Vector3(0f, 0f, 90f);
-			break;
-		    case 2:
-			v = new Vector2(transform.GetPositionX() + boxCollider.offset.x + boxCollider.size.x * 0.5f, hitInstance.Source.transform.GetPositionY());
-			eulerAngles = new Vector3(0f, 0f, 180f);
-			break;
-		    case 3:
-			v = new Vector2(hitInstance.Source.transform.GetPositionX(), Mathf.Min(hitInstance.Source.transform.GetPositionY(), transform.GetPositionY() + boxCollider.offset.y + boxCollider.size.y * 0.5f));
-			eulerAngles = new Vector3(0f, 0f, 270f);
-			break;
-		    default:
-			break;
+		    v = transform.position;
+		    eulerAngles = new Vector3(0f, 0f, 0f);
 		}
-	    }
-	    else
-	    {
-		v = transform.position;
-		eulerAngles = new Vector3(0f, 0f, 0f);
+		GameObject gameObject = blockHitPrefab.Spawn();
+		gameObject.transform.position = v;
+		gameObject.transform.eulerAngles = eulerAngles;
+		if (hasAlternateInvincibleSound)
+		{
+		    AudioSource component = GetComponent<AudioSource>();
+		    if (alternateInvincibleSound != null && component != null)
+		    {
+			component.PlayOneShot(alternateInvincibleSound);
+		    }
+		}
+		else
+		{
+		    regularInvincibleAudio.SpawnAndPlayOneShot(audioPlayerPrefab, transform.position);
+		}
 	    }
 	}
 	evasionByHitRemaining = 0.15f;
@@ -207,7 +275,7 @@ public class HealthManager : MonoBehaviour, IHitResponder
 	}
 	if(hitEffectReceiver != null)
 	{
-	    hitEffectReceiver.ReceiveHitEffect(hitInstance.GetActualDirection(base.transform));
+	    hitEffectReceiver.RecieveHitEffect(hitInstance.GetActualDirection(transform));
 	}
 	int num = Mathf.RoundToInt(hitInstance.DamageDealt * hitInstance.Multiplier);
 
@@ -215,6 +283,11 @@ public class HealthManager : MonoBehaviour, IHitResponder
 	if(hp > 0)
 	{
 	    NonFatalHit(hitInstance.IgnoreInvulnerable);
+	    if (stunControlFSM)
+	    {
+		stunControlFSM.SendEvent("STUN DAMAGE");
+		return;
+	    }
 	}
 	else
 	{
@@ -275,6 +348,86 @@ public class HealthManager : MonoBehaviour, IHitResponder
 		}
 	    }
 	}
+	if (deathAudioSnapshot != null)
+	{
+	    deathAudioSnapshot.TransitionTo(6f);
+	}
+	if (sendKilledTo != null)
+	{
+	    FSMUtility.SendEventToGameObject(sendKilledTo, "KILLED", false);
+	}
+	if(attackType == AttackTypes.Splatter)
+	{
+	    GameCameras.instance.cameraShakeFSM.SendEvent("AverageShake");
+	    Debug.LogWarningFormat(this, "Instantiate!", Array.Empty<object>());
+	    Instantiate<GameObject>(corpseSplatPrefab, transform.position + effectOrigin, Quaternion.identity);
+	    if (enemyDeathEffects)
+	    {
+		enemyDeathEffects.EmitSound();
+	    }
+	    Destroy(gameObject);
+	    return;
+	}
+	if(attackType != AttackTypes.RuinsWater)
+	{
+	    float angleMin = megaFlingGeo ? 65 : 80;
+	    float angleMax = megaFlingGeo ? 115 : 100;
+	    float speedMin = megaFlingGeo ? 30 : 15;
+	    float speedMax = megaFlingGeo ? 45 : 30;
+	    int num = smallGeoDrops;
+	    int num2 = mediumGeoDrops;
+	    int num3 = largeGeoDrops;
+	    bool flag = false;
+	    if(GameManager.instance.playerData.equippedCharm_24 && !GameManager.instance.playerData.brokenCharm_24)
+	    {
+		num += Mathf.CeilToInt(num * 0.2f);
+		num2 += Mathf.CeilToInt(num2 * 0.2f);
+		num3 += Mathf.CeilToInt(num3 * 0.2f);
+		flag = true;
+	    }
+	    GameObject[] gameObjects = FlingUtils.SpawnAndFling(new FlingUtils.Config
+	    {
+		Prefab = smallGeoPrefab,
+		AmountMin = num,
+		AmountMax = num,
+		SpeedMin = speedMin,
+		SpeedMax = speedMax,
+		AngleMin = angleMin,
+		AngleMax = angleMax
+	    }, transform, effectOrigin);
+	    if (flag)
+	    {
+		SetGeoFlashing(gameObjects, smallGeoDrops);
+	    }
+	    gameObjects = FlingUtils.SpawnAndFling(new FlingUtils.Config
+	    {
+		Prefab = mediumGeoPrefab,
+		AmountMin = num2,
+		AmountMax = num2,
+		SpeedMin = speedMin,
+		SpeedMax = speedMax,
+		AngleMin = angleMin,
+		AngleMax = angleMax
+	    }, transform, effectOrigin);
+	    if (flag)
+	    {
+		SetGeoFlashing(gameObjects, mediumGeoDrops);
+	    }
+	    gameObjects = FlingUtils.SpawnAndFling(new FlingUtils.Config
+	    {
+		Prefab = largeGeoPrefab,
+		AmountMin = num3,
+		AmountMax = num3,
+		SpeedMin = speedMin,
+		SpeedMax = speedMax,
+		AngleMin = angleMin,
+		AngleMax = angleMax
+	    }, transform, effectOrigin);
+	    if (flag)
+	    {
+		SetGeoFlashing(gameObjects, largeGeoDrops);
+	    }
+	}
 	if (enemyDeathEffects != null)
 	{
 	    if (attackType == AttackTypes.Generic)
@@ -285,6 +438,18 @@ public class HealthManager : MonoBehaviour, IHitResponder
 	}
 	SendDeathEvent();
 	Destroy(gameObject); //TODO:
+    }
+
+    private void SetGeoFlashing(GameObject[] gameObjects, int originalAmount)
+    {
+	for (int i = gameObjects.Length - 1; i >= originalAmount; i--)
+	{
+	    GeoControl component = gameObjects[i].GetComponent<GeoControl>();
+	    if (component)
+	    {
+		component.SetFlashing();
+	    }
+	}
     }
 
     public void SetIsDead(bool set)
@@ -318,12 +483,13 @@ public class HealthManager : MonoBehaviour, IHitResponder
 	{
 	    case 0:
 	    {
+		    Debug.LogFormat("Invincible from card0");
 		int num = invincibleFromDirection;
 		if (num <= 5)
 		{
 		    if (num != 1 && num != 5)
 		    {
-		     return false;
+			return false;
 		    }
 		 }
 		else if (num != 8 && num != 10)
@@ -334,11 +500,13 @@ public class HealthManager : MonoBehaviour, IHitResponder
 	    }   
 	    case 1:
 	    {
-		int num = invincibleFromDirection;
+		    Debug.LogFormat("Invincible from card1");
+		    int num = invincibleFromDirection;
 		return num == 2 || num - 5 <= 4;
 	    }
 	    case 2:
 		{
+		    Debug.LogFormat("Invincible from card2");
 		    int num = invincibleFromDirection;
 		    if (num <= 6)
 		    {
@@ -355,6 +523,7 @@ public class HealthManager : MonoBehaviour, IHitResponder
 		}
 	    case 3:
 		{
+		    Debug.LogFormat("Invincible from card3");
 		    int num = invincibleFromDirection;
 		    return num == 4 || num - 7 <= 4;
 		}
@@ -372,6 +541,21 @@ public class HealthManager : MonoBehaviour, IHitResponder
 	    gameObject.SetActive(false);
 	}
 	yield break;
+    }
+
+    public void SetBattleScene(GameObject newBattleScene)
+    {
+	battleScene = newBattleScene;
+    }
+
+    public void SetPreventInvincibleEffect(bool set)
+    {
+	preventInvincibleEffect = set;
+    }
+
+    public int GetAttackDirection()
+    {
+	return directionOfLastAttack;
     }
 
 }

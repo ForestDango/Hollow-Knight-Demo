@@ -33,7 +33,12 @@ public enum AttackTypes
 {
     Nail,
     Generic,
-    Spell
+    Spell,
+    Acid,
+    Splatter,
+    RuinsWater,
+    SharpShadow,
+    NailBeam
 }
 
 public enum SpecialTypes

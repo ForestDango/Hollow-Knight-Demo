@@ -27,8 +27,8 @@ public static class RandomAudioClipTableExtensions
 	{
 	    return;
 	}
-	//TODO:Object Pool
-	AudioSource audioSource = GameObject.Instantiate(prefab).GetComponent<AudioSource>();
+	AudioSource audioSource = prefab.Spawn<AudioSource>();
+	//AudioSource audioSource = GameObject.Instantiate(prefab).GetComponent<AudioSource>();
 	audioSource.transform.position = position;
 	audioSource.pitch = table.SelectPitch();
 	audioSource.volume = 1f;

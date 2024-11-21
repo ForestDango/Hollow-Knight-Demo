@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 public class ScenePreloader : MonoBehaviour
 {
     public string sceneNameToLoad = "";
+    public string sceneNameToLoadDefeated = "";
     public string needsPlayerDataBool = "";
     public bool playerDataBoolValue;
 
@@ -22,6 +23,10 @@ public class ScenePreloader : MonoBehaviour
 	{
 	    if(needsPlayerDataBool != "" && GameManager.instance.GetPlayerDataBool(needsPlayerDataBool) != playerDataBoolValue)
 	    {
+		if (!string.IsNullOrEmpty(sceneNameToLoadDefeated))
+		{
+		    StartCoroutine(LoadRoutineDefeated());
+		}
 		return;
 	    }
 	    StartCoroutine(LoadRoutine());
@@ -48,6 +53,22 @@ public class ScenePreloader : MonoBehaviour
 	AsyncOperation async = UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(sceneNameToLoad, LoadSceneMode.Additive);
 	async.allowSceneActivation = false;
 	pendingOperations.Add(new SceneLoadOp(sceneNameToLoad, async));
+	startLoadTime = Time.unscaledTime;
+	while (async.progress < 0.9f)
+	{
+	    yield return null;
+	}
+	async.allowSceneActivation = true;
+	endLoadTime = Time.unscaledTime;
+	loadTime = new float?(endLoadTime - startLoadTime);
+    }
+
+    public IEnumerator LoadRoutineDefeated()
+    {
+	yield return null;
+	AsyncOperation async = UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(sceneNameToLoadDefeated, LoadSceneMode.Additive);
+	async.allowSceneActivation = false;
+	pendingOperations.Add(new SceneLoadOp(sceneNameToLoadDefeated, async));
 	startLoadTime = Time.unscaledTime;
 	while (async.progress < 0.9f)
 	{

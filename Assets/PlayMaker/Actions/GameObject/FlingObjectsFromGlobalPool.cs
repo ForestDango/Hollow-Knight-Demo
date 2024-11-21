@@ -83,8 +83,8 @@ namespace HutongGames.PlayMaker.Actions
 		int num = Random.Range(spawnMin.Value, spawnMax.Value + 1);
 		for (int i = 1; i <= num; i++)
 		{
-		    //TODO:以后创造完对象池后记得替换掉
-		    GameObject gameObject = GameObject.Instantiate(this.gameObject.Value, a, Quaternion.Euler(zero));
+		    GameObject gameObject = this.gameObject.Value.Spawn(a, Quaternion.Euler(zero));
+		    //GameObject gameObject = GameObject.Instantiate(this.gameObject.Value, a, Quaternion.Euler(zero));
 		    float x = gameObject.transform.position.x;
 		    float y = gameObject.transform.position.y;
 		    float z = gameObject.transform.position.z;

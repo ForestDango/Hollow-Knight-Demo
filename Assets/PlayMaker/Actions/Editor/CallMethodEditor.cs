@@ -10,7 +10,7 @@ using HutongGames.PlayMaker;
 namespace HutongGames.PlayMakerEditor
 {
     /// <summary>
-    /// TODO: 
+    /// 
     /// Keep parameters when changing method signature?
     /// Copy/paste parameter values?
     /// Ability to add custom menu item to Action Settings menu?
@@ -213,7 +213,7 @@ namespace HutongGames.PlayMakerEditor
             {
                 //Debug.Log("InitMethod: None");
                 
-                // TODO: select none
+                // select none
                 ClearCache();
             }
             else
@@ -244,7 +244,7 @@ namespace HutongGames.PlayMakerEditor
             {
                 //Debug.Log("Select Method: None");
 
-                // TODO: select none
+                // select none
                 ClearCache();
             }
             else

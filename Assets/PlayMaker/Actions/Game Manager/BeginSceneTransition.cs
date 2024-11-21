@@ -35,7 +35,7 @@ namespace HutongGames.PlayMaker.Actions
 	    }
 	    else
 	    {
-		unsafeInstance.BeginSceneTransiton(new GameManager.SceneLoadInfo
+		unsafeInstance.BeginSceneTransition(new GameManager.SceneLoadInfo
 		{
 		    SceneName = sceneName.Value,
 		    EntryGateName = entryGateName.Value,

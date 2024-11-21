@@ -6,7 +6,6 @@ namespace HutongGames.PlayMaker.Actions
 	[Tooltip("Gets the last measured linear acceleration of a device and stores it in a Vector3 Variable.")]
 	public class GetDeviceAcceleration : FsmStateAction
 	{
-		// TODO: Figure out some nice mapping options for common use cases.
 /*		public enum MappingOptions
 		{
 			Flat,

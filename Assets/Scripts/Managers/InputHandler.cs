@@ -17,6 +17,7 @@ public class InputHandler : MonoBehaviour
 
     private bool isGameplayScene;
     private bool isMenuScene;
+    private bool isStagTravelScene;
 
     public static InputHandler Instance;
     private GameManager gm;
@@ -32,6 +33,10 @@ public class InputHandler : MonoBehaviour
     public event CursorVisibilityChange OnCursorVisibilityChange;//指针显示变化时发生的事件
 
     public bool readyToSkipCutscene;
+
+    private bool stagLockoutActive;
+    private float stagLockoutDuration = 1.2f;
+
     public SkipPromptMode skipMode { get; private set; }
 
     public delegate void ActiveControllerSwitch();
@@ -79,7 +84,21 @@ public class InputHandler : MonoBehaviour
 	    }
 	    else if(gm.gameState == GameState.CUTSCENE)
 	    {
-		CutSceneInput();
+		if (isStagTravelScene)
+		{
+		    if (!stagLockoutActive)
+		    {
+			StagCutsceneInput();
+		    }
+		}
+		else
+		{
+		    CutSceneInput();
+		}
+	    }
+	    if (inputActions.pause.WasPressed && pauseAllowed && !playerData.disablePause && (gm.gameState == GameState.PLAYING || gm.gameState == GameState.PAUSED))
+	    {
+		StartCoroutine(gm.PauseGameToggle());
 	    }
 	}
     }
@@ -113,7 +132,7 @@ public class InputHandler : MonoBehaviour
 	}
 	switch (skipMode)
 	{
-	    case SkipPromptMode.SKIP_PROMPT:
+	    case SkipPromptMode.SKIP_PROMPT: //确认跳过过场
 		if (!readyToSkipCutscene)
 		{
 		    //TODO:
@@ -133,13 +152,13 @@ public class InputHandler : MonoBehaviour
 		skippingCutscene = true;
 		gm.SkipCutscene();
 		return;
-	    case SkipPromptMode.SKIP_INSTANT:
+	    case SkipPromptMode.SKIP_INSTANT://立刻跳过过场
 		skippingCutscene = true;
 		gm.SkipCutscene();
 		return;
-	    case SkipPromptMode.NOT_SKIPPABLE:
+	    case SkipPromptMode.NOT_SKIPPABLE: //不准跳过过场
 		return;
-	    case SkipPromptMode.NOT_SKIPPABLE_DUE_TO_LOADING:
+	    case SkipPromptMode.NOT_SKIPPABLE_DUE_TO_LOADING: //在过场视频加载的时候不准跳过过场
 		gm.ui.ShowCutscenePrompt(CinematicSkipPopup.Texts.Skip);
 		CancelInvoke("StopCutsceneInput");
 		Invoke("StopCutsceneInput", 5f * Time.timeScale);
@@ -222,6 +241,11 @@ public class InputHandler : MonoBehaviour
 	{
 	    Key.I
 	});
+	inputActions.pause.AddDefaultBinding(new Key[]
+	{
+	    Key.Escape
+	});
+	inputActions.pause.AddDefaultBinding(InputControlType.Start);
     }
 
 
@@ -262,6 +286,18 @@ public class InputHandler : MonoBehaviour
 	{
 	    isMenuScene = false;
 	}
+	if (gm.IsStagTravelScene())
+	{
+	    isStagTravelScene = true;
+	    stagLockoutActive = true;
+	    Invoke("UnlockStagInput", stagLockoutDuration);
+	    return;
+	}
+    }
+
+    private void UnlockStagInput()
+    {
+	stagLockoutActive = false;
     }
 
     public void SetSkipMode(SkipPromptMode newMode)
@@ -288,6 +324,13 @@ public class InputHandler : MonoBehaviour
 	skipMode = newMode;
     }
 
+    private void StagCutsceneInput()
+    {
+	if (Input.anyKeyDown || gameController.AnyButton.WasPressed)
+	{
+	    gm.SkipCutscene();
+	}
+    }
 
     public void StopUIInput()
     {

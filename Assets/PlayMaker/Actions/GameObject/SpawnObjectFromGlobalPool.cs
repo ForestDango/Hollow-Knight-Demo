@@ -67,15 +67,11 @@ namespace HutongGames.PlayMaker.Actions
 		}
 		if (gameObject != null)
 		{
-		    //TODO:以后创造完对象池后记得替换掉
-		    GameObject value = GameObject.Instantiate(gameObject.Value, a, Quaternion.Euler(euler));
+		    GameObject value = gameObject.Value.Spawn(a, Quaternion.Euler(euler));
 		    storeObject.Value = value;
 		}
 	    }
 	    Finish();
 	}
-
-
     }
-
 }

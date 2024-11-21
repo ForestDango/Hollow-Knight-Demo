@@ -91,7 +91,7 @@ namespace HutongGames.PlayMakerEditor
 
             // setup start and end positions
             
-            // TODO
+            //
 
             if (EditorGUI.EndChangeCheck())
             {

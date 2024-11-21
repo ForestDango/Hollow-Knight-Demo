@@ -46,7 +46,7 @@ namespace HutongGames.PlayMaker.Actions
 			
 			if (adjustFixedDeltaTime.Value)
 			{
-				//TODO: how to get the user set default value?
+				// how to get the user set default value?
 				Time.fixedDeltaTime = 0.02f * Time.timeScale;
 			}
 		}

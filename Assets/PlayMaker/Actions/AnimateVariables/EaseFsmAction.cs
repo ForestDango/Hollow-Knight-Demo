@@ -273,7 +273,7 @@ namespace HutongGames.PlayMaker.Actions
 				ease = new EasingFunction(elastic);
 				break;
 			case EaseType.punch:
-			    ease = new EasingFunction(elastic); // TODO: Fix Punch easing function
+			    ease = new EasingFunction(elastic);
 			        break;
 			}
 		}

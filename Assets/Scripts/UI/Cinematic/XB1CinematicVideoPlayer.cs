@@ -16,17 +16,17 @@ public class XB1CinematicVideoPlayer : CinematicVideoPlayer
 	Graphics.Blit((config.FaderStyle == CinematicVideoFaderStyles.White) ? Texture2D.whiteTexture : Texture2D.blackTexture, renderTexture);
 	Debug.LogFormat("Creating Unity Video Player......");
 	videoPlayer = config.MeshRenderer.gameObject.AddComponent<VideoPlayer>();
-	videoPlayer.playOnAwake = false;
-	videoPlayer.audioOutputMode = VideoAudioOutputMode.AudioSource;
-	videoPlayer.SetTargetAudioSource(0, config.AudioSource);
-	videoPlayer.renderMode = VideoRenderMode.CameraFarPlane;
-	videoPlayer.targetCamera = GameCameras.instance.mainCamera;
-	videoPlayer.targetTexture = renderTexture;
-	config.MeshRenderer.material.SetTexture(TexturePropertyName, renderTexture);
-	VideoClip embeddedVideoClip = config.VideoReference.EmbeddedVideoClip;
+	videoPlayer.playOnAwake = false; //开始就播放
+	videoPlayer.audioOutputMode = VideoAudioOutputMode.AudioSource; //音效输出模式
+	videoPlayer.SetTargetAudioSource(0, config.AudioSource); //设置播放的audiosource游戏对象
+	videoPlayer.renderMode = VideoRenderMode.CameraFarPlane; //设置渲染模式
+	videoPlayer.targetCamera = GameCameras.instance.mainCamera; //设置渲染目标摄像机
+	videoPlayer.targetTexture = renderTexture; //设置目标纹理
+	config.MeshRenderer.material.SetTexture(TexturePropertyName, renderTexture); // 设置材质纹理
+	VideoClip embeddedVideoClip = config.VideoReference.EmbeddedVideoClip;  //设置播放的clip为config里面的EmbeddedVideoClip
 	videoPlayer.clip = embeddedVideoClip;
 	videoPlayer.prepareCompleted += OnPrepareCompleted;
-	videoPlayer.Prepare();
+	videoPlayer.Prepare(); //准备完成播放
     }
 
     public override bool IsLoading

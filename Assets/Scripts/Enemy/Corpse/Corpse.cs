@@ -18,6 +18,7 @@ public class Corpse : MonoBehaviour
     [SerializeField] protected AudioSource audioPlayerPrefab;
     [SerializeField] protected GameObject deathWaveInfectedPrefab;
     [SerializeField] protected GameObject spatterOrangePrefab;
+    [SerializeField] protected RandomAudioClipTable splatAudioClipTable;
 
     [SerializeField] private AudioEvent startAudio;
 
@@ -25,11 +26,15 @@ public class Corpse : MonoBehaviour
     [SerializeField] private bool massless;
     [SerializeField] private bool instantChunker;
     [SerializeField] private bool breaker;
+    [SerializeField] private int smashBounces;
+    [SerializeField] private bool bigBreaker;
 
     private bool noSteam;
     protected bool spellBurn;
     protected bool hitAcid;
 
+    private bool bouncedThisFrame;
+    private int bounceCount;
     private float landEffectsDelayRemaining;
 
     private void Awake()
@@ -105,6 +110,7 @@ public class Corpse : MonoBehaviour
 	}
 	else if(state == States.InAir)
 	{
+	    bouncedThisFrame = false;
 	    if (transform.position.y < -10f)
 	    {
 		Complete(true, true);
@@ -170,7 +176,17 @@ public class Corpse : MonoBehaviour
     {
 	if (breaker)
 	{
-
+	    if (bouncedThisFrame)
+	    {
+		return;
+	    }
+	    bounceCount++;
+	    bouncedThisFrame = true;
+	    if (bounceCount >= smashBounces)
+	    {
+		Smash();
+		return;
+	    }
 	}
 	else
 	{
@@ -195,6 +211,41 @@ public class Corpse : MonoBehaviour
 	}
     }
 
+    protected virtual void Smash()
+    {
+	if (!hitAcid)
+	{
+	    GlobalPrefabDefaults.Instance.SpawnBlood(transform.position, 6, 8, 10f, 20f, 75f, 105f, null);
+	}
+	splatAudioClipTable.SpawnAndPlayOneShot(audioPlayerPrefab, transform.position);
+	if (corpseFlame != null)
+	{
+	    corpseFlame.Stop();
+	}
+	if (corpseSteam != null)
+	{
+	    corpseSteam.Stop();
+	}
+	if (spriteAnimator != null)
+	{
+	    spriteAnimator.Play("Death Land");
+	}
+	body.velocity = Vector2.zero;
+	state = States.DeathAnimation;
+	if (bigBreaker)
+	{
+	    if (!hitAcid)
+	    {
+		GlobalPrefabDefaults.Instance.SpawnBlood(transform.position, 30, 30, 20f, 30f, 80f, 100f, null);
+	    }
+	    GameCameras instance = GameCameras.instance;
+	    if (instance)
+	    {
+		instance.cameraShakeFSM.SendEvent("EnemyKillShake");
+	    }
+	}
+    }
+
     protected virtual void LandEffects()
     {
 	
@@ -207,7 +258,6 @@ public class Corpse : MonoBehaviour
 	{
 	    corpseFlame.Stop();
 	}
-	yield break;
     }
 
     private enum States

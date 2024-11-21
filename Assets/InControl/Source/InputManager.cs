@@ -129,7 +129,6 @@ namespace InControl
 			KeyboardProvider = new UnityKeyboardProvider();
 			KeyboardProvider.Setup();
 
-			// TODO: Can this move further down after the UnityInputDeviceManager is added, which is more intuitive?
 			// Currently it's used to verify we're in or after setup for various functions that are
 			// called during manager initialization. There should be a safer way... maybe add IsReset?
 			IsSetup = true;
@@ -191,7 +190,6 @@ namespace InControl
 			}
 			#endif
 
-			// TODO: Can this move further down after the UnityInputDeviceManager is added, which is more intuitive?
 			// Currently, it allows use of InputManager.HideDevicesWithProfile() to be called in OnSetup, which is possibly useful?
 			if (OnSetup != null)
 			{

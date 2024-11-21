@@ -135,8 +135,8 @@ public class Grass : MonoBehaviour, IHitResponder
 	isCut = true;
 	bodyCollider.enabled = false;
 	FSMActionReplacements.Directions directions = FSMActionReplacements.CheckDirectionWithBrokenBehaviour(0f);
-	//TODO:
-	GameObject gameObject = Instantiate(slashImpactPrefab, transform.position, Quaternion.Euler(0f, 0f, UnityEngine.Random.Range(slashImpactRotationMin, slashImpactRotationMax)));
+	GameObject gameObject = slashImpactPrefab.Spawn(transform.position, Quaternion.Euler(0f, 0f, UnityEngine.Random.Range(slashImpactRotationMin, slashImpactRotationMax)));
+	//GameObject gameObject = Instantiate(slashImpactPrefab, transform.position, Quaternion.Euler(0f, 0f, UnityEngine.Random.Range(slashImpactRotationMin, slashImpactRotationMax)));
 	gameObject.transform.localScale = new Vector3((directions == FSMActionReplacements.Directions.Left) ? (-slashImpactScale) : slashImpactScale, slashImpactScale, 1f);
 	Vector3 localPosition = gameObject.transform.localPosition;
 	localPosition.z = 0f;

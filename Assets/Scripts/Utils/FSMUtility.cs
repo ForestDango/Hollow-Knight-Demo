@@ -67,15 +67,6 @@ public static class FSMUtility
 	return result;
     }
 
-    public static int GetInt(PlayMakerFSM fsm, string variableName)
-    {
-	return fsm.FsmVariables.FindFsmInt(variableName).Value;
-    }
-
-    public static void SetFloat(PlayMakerFSM fsm, string variableName, float value)
-    {
-	fsm.FsmVariables.GetFsmFloat(variableName).Value = value;
-    }
 
     private static void ReleaseFsmList(List<PlayMakerFSM> fsmList)
     {
@@ -129,7 +120,33 @@ public static class FSMUtility
 	    }
 	}
     }
+    public static int GetInt(PlayMakerFSM fsm, string variableName)
+    {
+	return fsm.FsmVariables.FindFsmInt(variableName).Value;
+    }
 
+    public static Vector3 GetVector3(PlayMakerFSM fsm, string variableName)
+    {
+	return fsm.FsmVariables.FindFsmVector3(variableName).Value;
+    }
+    public static void SetBool(PlayMakerFSM fsm, string variableName, bool value)
+    {
+	fsm.FsmVariables.GetFsmBool(variableName).Value = value;
+    }
+    public static void SetInt(PlayMakerFSM fsm, string variableName, int value)
+    {
+	fsm.FsmVariables.GetFsmInt(variableName).Value = value;
+    }
+
+    public static void SetFloat(PlayMakerFSM fsm, string variableName, float value)
+    {
+	fsm.FsmVariables.GetFsmFloat(variableName).Value = value;
+    }
+
+    public static void SetString(PlayMakerFSM fsm, string variableName, string value)
+    {
+	fsm.FsmVariables.GetFsmString(variableName).Value = value;
+    }
     public abstract class CheckFsmStateAction : FsmStateAction
     {
 	public FsmEvent trueEvent;

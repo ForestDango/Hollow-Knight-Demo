@@ -40,7 +40,7 @@ public class SoftLandEffect : MonoBehaviour
     {
 	if(recycleTimer <= 0f)
 	{
-	    Destroy(gameObject); //TODO:
+	    gameObject.Recycle();
 	    return;
 	}
 	recycleTimer -= Time.deltaTime;

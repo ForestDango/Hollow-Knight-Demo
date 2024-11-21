@@ -12,31 +12,31 @@ public class TransitionPoint : MonoBehaviour
 
     [Header("Door Type Gate Settings")]
     [Space(5f)]
-    public bool isADoor;
-    public bool dontWalkOutOfDoor;
+    public bool isADoor; //是否是个门，意思是当你到传送点的时候还需要UI提示后按键输入才能触发转移
+    public bool dontWalkOutOfDoor; //不要走出门
 
     [Header("Gate Entry")]
     [Tooltip("The wait time before entering from this gate (not the target gate).")]
-    public float entryDelay;
-    public bool alwaysEnterRight;
-    public bool alwaysEnterLeft;
+    public float entryDelay; //转移后的延迟
+    public bool alwaysEnterRight; //进入这个转移点总是朝右看
+    public bool alwaysEnterLeft; //进入这个转移点总是朝左看
 
     [Header("Force Hard Land (Top Gates Only)")]
     [Space(5f)]
-    public bool hardLandOnExit;
+    public bool hardLandOnExit; //强制重着地
 
     [Header("Destination Scene")]
     [Space(5f)]
-    public string targetScene;
-    public string entryPoint;
-    public Vector2 entryOffset;
+    public string targetScene; //目标场景
+    public string entryPoint; //进入的点
+    public Vector2 entryOffset; //进入时的偏移量
 
     [SerializeField] private bool alwaysUnloadUnusedAssets;
-    public PlayMakerFSM customFadeFSM;
+    public PlayMakerFSM customFadeFSM; //自定义Fade的playmakerFSM
 
     [Header("Hazard Respawn")]
     [Space(5f)]
-    public bool nonHazardGate;
+    public bool nonHazardGate; //这个门不能用来做HazardRespawn的重生点
     public HazardRespawnMarker respawnMarker;
 
     [Header("Set Audio Snapshots")]
@@ -54,7 +54,7 @@ public class TransitionPoint : MonoBehaviour
     public bool forceWaitFetch;
 
     private static List<TransitionPoint> transitionPoints;
-    public static string lastEntered = "";
+    public static string lastEntered = ""; //记录最后进入的TransitionPoint
 
     public delegate void BeforeTransitionEvent();
     public event BeforeTransitionEvent OnBeforeTransition;
@@ -132,7 +132,7 @@ public class TransitionPoint : MonoBehaviour
 		{
 		    OnBeforeTransition();
 		}
-		gm.BeginSceneTransiton(new GameManager.SceneLoadInfo
+		gm.BeginSceneTransition(new GameManager.SceneLoadInfo
 		{
 		    SceneName = targetScene,
 		    EntryGateName = entryPoint,
@@ -167,6 +167,10 @@ public class TransitionPoint : MonoBehaviour
 	}
     }
 
+    /// <summary>
+    /// 获取当前门的位置，请注意你的TransitionPoint名字一定要有如下字段
+    /// </summary>
+    /// <returns></returns>
     public GatePosition GetGatePosition()
     {
 	string name = base.name;

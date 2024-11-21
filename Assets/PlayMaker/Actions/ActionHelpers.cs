@@ -409,8 +409,7 @@ namespace HutongGames.PlayMaker
                         return layermask == 0 ? Physics.DefaultRaycastLayers : layermask;
 #endif
             */
-            // HACK just return the hardcoded value to avoid separate Unity 5.3 dll
-            // TODO Revisit in future version
+            // just return the hardcoded value to avoid separate Unity 5.3 dll
             return layermask == 0 ? -5 : layermask;
         }
 

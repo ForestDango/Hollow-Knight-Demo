@@ -55,6 +55,10 @@ namespace HutongGames.PlayMaker.Actions
 	public override void OnFixedUpdate()
 	{
 	    DoSetVelocity();
+	    if (!everyFrame)
+	    {
+		Finish();
+	    }
 	}
 
 	private void DoSetVelocity()
@@ -72,10 +76,14 @@ namespace HutongGames.PlayMaker.Actions
 	    }
 	    x = speed.Value * Mathf.Cos(num3 * 0.017453292f);
 	    y = speed.Value * Mathf.Sin(num3 * 0.017453292f);
+	    Debug.LogFormat("num3 = " + num3);
+	    Debug.LogFormat("x = " + x);
+	    Debug.LogFormat("y = " + y);
 	    Vector2 velocity;
 	    velocity.x = x.Value;
 	    velocity.y = y.Value;
 	    rb2d.velocity = velocity;
+	    Debug.LogFormat("rb2d.velocity.y = " + rb2d.velocity.y);
 	}
     }
 

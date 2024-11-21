@@ -7,7 +7,7 @@ namespace HutongGames.PlayMaker
     [Preserve]
 	public class FsmProcessor
     {
-        // TODO: Add callback for custom user processing?
+        // Add callback for custom user processing?
         //public static Action<PlayMakerFSM> onPreprocess;
 
 	    public static void OnPreprocess(PlayMakerFSM fsm)

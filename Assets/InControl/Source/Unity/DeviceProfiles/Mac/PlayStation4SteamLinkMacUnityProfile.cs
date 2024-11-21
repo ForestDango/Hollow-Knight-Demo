@@ -8,7 +8,6 @@ namespace InControl.UnityDeviceProfiles
 	[Preserve] [UnityInputDeviceProfile]
 	public class PlayStation4SteamLinkMacUnityProfile : InputDeviceProfile
 	{
-		// TODO: Seems like this could be any controller, not just PS4?
 		public override void Define()
 		{
 			base.Define();

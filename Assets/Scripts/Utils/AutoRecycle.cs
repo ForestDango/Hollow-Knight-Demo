@@ -12,7 +12,7 @@ public class AutoRecycle : MonoBehaviour
 	recycleTimer -= Time.deltaTime;
 	if(recycleTimer <= 0f)
 	{
-	    Destroy(gameObject); // TODO:
+	    gameObject.Recycle();
 	}
     }
 }

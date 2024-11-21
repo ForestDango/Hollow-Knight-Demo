@@ -48,7 +48,6 @@ namespace InControl
 		}
 
 
-		// TODO: Overall this is much better but see if it can be optimized further so
 		// this doesn't cause a lot of GC and unnecessary work particularly in large
 		// projects. Profile the Unity editor on script reloads.
 		static IEnumerable<Type> GetAllAssemblyTypes()

@@ -80,8 +80,8 @@ namespace HutongGames.PlayMaker.Actions
 	    GameObject value = audioPlayer.Value;
 	    Vector3 position = spawnPoint.Value.transform.position;
 	    Vector3 up = Vector3.up;
-	    //TODO:这行记得要改，因为我还没做对象池
-	    GameObject gameObject = UnityEngine.Object.Instantiate(audioPlayer.Value, position, Quaternion.Euler(up));
+	    GameObject gameObject = audioPlayer.Value.Spawn(position, Quaternion.Euler(up));
+	    //GameObject gameObject = UnityEngine.Object.Instantiate(audioPlayer.Value, position, Quaternion.Euler(up));
 	    audio = gameObject.GetComponent<AudioSource>();
 	    int randomWeightIndex = ActionHelpers.GetRandomWeightedIndex(weights);
 	    if(randomWeightIndex != -1)

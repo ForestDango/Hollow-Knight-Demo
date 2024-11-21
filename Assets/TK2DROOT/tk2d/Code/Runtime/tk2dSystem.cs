@@ -79,7 +79,7 @@ public class tk2dSystem : ScriptableObject
 #if UNITY_EDITOR
 			if (!currentPlatformInitialized)
 			{
-				// Hack, don't have access to editor classes from here
+				// don't have access to editor classes from here
 				currentPlatform = UnityEditor.EditorPrefs.GetString("tk2d_platform", "");
 				currentPlatformInitialized = true;
 			}
@@ -154,7 +154,7 @@ public class tk2dSystem : ScriptableObject
 	// Returns null if the name can't be found, or load fails for any other reason
 	T LoadResourceByNameImpl<T>(string name) where T : UnityEngine.Object
 	{
-		// TODO: create and use a dictionary
+		// create and use a dictionary
 		for (int i = 0; i < allResourceEntries.Length; ++i)
 		{
 			if (allResourceEntries[i] != null && allResourceEntries[i].assetName == name)

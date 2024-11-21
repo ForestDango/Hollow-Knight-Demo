@@ -139,8 +139,7 @@ public class StalactiteControl : MonoBehaviour
 	    foreach (GameObject gameObject in landEffectPrefabs)
 	    {
 		Vector3 vector = new Vector3(raycastHit2D.point.x, raycastHit2D.point.y, gameObject.transform.position.z);
-		//TODO:Object Pool
-		Instantiate(gameObject, (raycastHit2D.collider != null) ? vector : transform.position, Quaternion.identity);
+		gameObject.Spawn((raycastHit2D.collider != null) ? vector : transform.position);
 	    }
 	    gameObject.SetActive(false);
 	    return;
@@ -169,8 +168,7 @@ public class StalactiteControl : MonoBehaviour
 		    GameObject[] array = hitUpEffectPrefabs;
 		    for (int i = 0; i < array.Length; i++)
 		    {
-			//TODO:
-			Instantiate(array[i], transform.position, Quaternion.identity);
+			array[i].Spawn(transform.position);
 		    }
 		    FlingObjects();
 		    if (source && breakSound)
@@ -186,7 +184,7 @@ public class StalactiteControl : MonoBehaviour
 			audioSource.volume = source.volume;
 			audioSource.Play();
 		    }
-		    base.gameObject.SetActive(false);
+		    gameObject.SetActive(false);
 		    return;
 		}
 		if (value < 225f)
@@ -202,9 +200,8 @@ public class StalactiteControl : MonoBehaviour
 	    body.rotation = num;
 	    body.gravityScale = 0f;
 	    body.velocity = v;
-	    //TODO:
-	    Instantiate(nailStrikePrefab, transform.position, Quaternion.identity);
-	    if(source && hitSound)
+	    nailStrikePrefab.Spawn(transform.position);
+	    if (source && hitSound)
 	    {
 		source.PlayOneShot(hitSound);
 	    }
@@ -216,7 +213,7 @@ public class StalactiteControl : MonoBehaviour
 	int num = UnityEngine.Random.Range(spawnMin, speedMax + 1);
 	for (int i = 0; i <= num; i++)
 	{
-	    GameObject gameObject = Instantiate(hitUpRockPrefabs, transform.position, transform.rotation);
+	    GameObject gameObject = hitUpRockPrefabs.Spawn(transform.position, transform.rotation);
 	    Vector3 position = gameObject.transform.position;
 	    Vector3 rotatiton2 = gameObject.transform.position;
 	    Vector3 position3 = gameObject.transform.position;

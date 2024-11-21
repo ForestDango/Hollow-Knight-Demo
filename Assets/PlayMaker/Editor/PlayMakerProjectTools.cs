@@ -1,7 +1,7 @@
 // (c) Copyright HutongGames, LLC 2010-2020. All rights reserved.
 
-// TODO: Only do this when necessary.
-// TODO: Manual option.
+// Only do this when necessary.
+// Manual option.
 
 // Unity 5.1 introduced a new networking library. 
 // Unless we define PLAYMAKER_LEGACY_NETWORK old network actions are disabled
@@ -84,7 +84,7 @@ namespace HutongGames.PlayMakerEditor
         /// <summary>
         /// Collects all prefabs with FSMs referenced by scenes in the build.
         /// Then preprocess all FSMs on those prefabs.
-        /// TODO: check if this handles:
+        /// check if this handles:
         /// - PlayMakerFSMs referenced in actions
         /// - PlayMakerFSMs in Resources folders
         /// </summary>

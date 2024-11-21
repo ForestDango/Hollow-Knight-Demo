@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 288893425757892534}
   m_Layer: 0
   m_Name: GameManager
-  m_TagString: Untagged
+  m_TagString: GameController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -51,25 +51,80 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb83969b17ec68e438598a1190086edd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  profileID: 0
   gameState: 0
   isPaused: 0
   timeTool: {fileID: 1605818144392088864}
   playerData:
     disablePause: 0
+    version: 1.5.78.11833
+    profileID: 0
+    isFirstGame: 1
+    backerCredits: 0
+    bossRushMode: 0
+    permadeathMode: 0
+    enteredTutorialFirstTime: 0
+    unlockedCompletionRate: 0
+    travelling: 0
+    nextScene: 
+    geo: 0
+    geoPool: 0
+    firstGeo: 0
     health: 5
     maxHealth: 5
     maxHealthBase: 5
     prevHealth: 5
+    healthBlue: 0
+    joniHealthBlue: 0
+    damagedBlue: 0
     nailDamage: 5
-    respawnScene: Tutorial_01
-    hazardRespawnFacingRight: 0
+    mapZone: 2
+    scenesEncounteredBench: []
+    hasQuill: 0
+    hasMap: 0
+    mapAllRooms: 0
+    atMapPrompt: 0
+    mapDirtmouth: 1
+    mapCrossroads: 0
+    mapGreenpath: 0
+    mapFogCanyon: 0
+    mapRoyalGardens: 0
+    mapFungalWastes: 0
+    mapCity: 0
+    mapWaterways: 0
+    mapMines: 0
+    mapDeepnest: 0
+    mapCliffs: 0
+    mapOutskirts: 0
+    mapRestingGrounds: 0
+    mapAbyss: 0
+    atBench: 0
+    charmBenchMsg: 0
     respawnMarkerName: 
+    respawnScene: Tutorial_01
+    respawnType: 0
+    respawnFacingRight: 0
+    hazardRespawnFacingRight: 0
     isInvincible: 0
+    shadeScene: None
+    shadeMapZone: 
+    shadePositionX: -999
+    shadePositionY: -999
+    shadeHealth: 0
+    shadeMP: 0
+    shadeFireballLevel: 2
+    shadeQuakeLevel: 2
+    shadeScreamLevel: 2
+    shadeSpecialType: 0
     currentArea: 0
+    environmentType: 0
+    environmentTypeDefault: 0
+    seenFocusTablet: 0
+    promptFocus: 0
     maxMP: 99
     MPCharge: 0
-    MPReverse: 0
-    MPReverseMax: 0
+    MPReserve: 0
+    MPReserveMax: 0
     soulLimited: 0
     focusMP_amount: 33
     hasDash: 0
@@ -80,10 +135,21 @@ MonoBehaviour:
     fireballLevel: 0
     quakeLevel: 0
     screamLevel: 0
+    hasWalljump: 0
+    canWallJump: 0
+    corn_fungalWastesLeft: 0
     hasLantern: 0
     hasDreamNail: 0
+    hasAcidArmour: 0
+    foundTrinket2: 0
+    trinket2: 0
+    charmSlotsFilled: 0
+    charmSlots: 3
+    hasCharm: 0
     charmsOwned: 0
     overcharmed: 0
+    gotCharm_1: 0
+    equippedCharm_1: 0
     gotCharm_6: 0
     equippedCharm_6: 0
     gotCharm_7: 0
@@ -92,19 +158,73 @@ MonoBehaviour:
     equippedCharm_10: 0
     gotCharm_11: 0
     equippedCharm_11: 0
+    gotCharm_15: 0
+    equippedCharm_15: 0
     gotCharm_17: 0
     equippedCharm_17: 0
+    gotCharm_18: 0
+    equippedCharm_18: 0
     gotCharm_19: 0
     equippedCharm_19: 0
+    gotCharm_23: 0
+    equippedCharm_23: 0
+    brokenCharm_23: 0
+    charmCost_23: 2
+    gotCharm_24: 0
+    equippedCharm_24: 0
+    brokenCharm_24: 0
+    charmCost_24: 2
+    gotCharm_25: 0
+    equippedCharm_25: 0
+    brokenCharm_25: 0
+    charmCost_25: 3
+    gotCharm_27: 0
+    equippedCharm_27: 0
     gotCharm_28: 0
     equippedCharm_28: 0
+    gotCharm_29: 0
+    equippedCharm_29: 0
     gotCharm_31: 1
     equippedCharm_31: 1
     gotCharm_34: 0
     equippedCharm_34: 0
+    fragileHealth_unbreakable: 0
+    fragileGreed_unbreakable: 0
+    fragileStrength_unbreakable: 0
+    scenesVisited: []
+    visitedDirtmouth: 0
+    visitedCrossroads: 0
+    stagConvoTram: 0
+    stagConvoTiso: 0
+    stagRemember1: 0
+    stagRemember2: 0
+    stagRemember3: 0
+    stagEggInspected: 0
+    stagHopeConvo: 0
+    stagPosition: -1
+    stationsOpened: 0
+    openedTown: 0
+    openedTownBuilding: 0
+    openedCrossroads: 0
+    openedGreenpath: 0
+    openedRuins1: 0
+    openedRuins2: 0
+    openedFungalWastes: 0
+    openedRoyalGardens: 0
+    openedRestingGrounds: 0
+    openedDeepnest: 0
+    openedStagNest: 0
+    openedHiddenStation: 0
+    metStag: 0
     giantFlyDefeated: 0
     falseKnightWallBroken: 0
     falseKnightWallRepaired: 0
+    shaman: 0
+    shamanScreamConvo: 0
+    shamanQuakeConvo: 0
+    shamanFireball2Convo: 0
+    shamanScream2Convo: 0
+    shamanQuake2Convo: 0
     shamanPillar: 0
     falseKnightDefeated: 0
     falseKnightFirstPlop: 0
@@ -114,6 +234,46 @@ MonoBehaviour:
     corn_crossroadsLeft: 0
     openedMapperShop: 0
     crossroadsMawlekWall: 0
+    killedBigBuzzer: 0
+    zote: 0
+    zoteDead: 0
+    zoteRescuedBuzzer: 0
+    zoteDeathPos: 0
+    hornetGreenpath: 0
+    hornet_f19: 0
+    hornet1Defeated: 0
+    hornetCityBridge_ready: 0
+    hornetCityBridge_completed: 0
+    hornetFung: 0
+    megaMossChargerEncountered: 0
+    megaMossChargerDefeated: 0
+    defeatedMantisLords: 0
+    killedMantisLord: 0
+    newDataMantisLord: 0
+    killsMantisLord: 0
+    dreamerScene1: 0
+    royalCharmState: 0
+    metHunter: 0
+    hasJournal: 0
+    hunterRoared: 0
+    journalEntriesCompleted: 0
+    journalNotesCompleted: 0
+    journalEntriesTotal: 146
+    hasHuntersMark: 0
+    metCloth: 0
+    kingsStationNonDisplay: 0
+    queensStationNonDisplay: 0
+    hasXunFlower: 0
+    xunFlowerBroken: 0
+    xunFlowerBrokeTimes: 0
+  gameSettings:
+    masterVolume: 0
+    musicVolume: 0
+    soundVolume: 0
+    fullScreen: 0
+    vSync: 0
+    shaderQuality: 0
+    brightnessAdjustment: 20
   audioManager: {fileID: 6611731277625081757}
   startedOnThisScene: 1
   sceneWidth: 0
@@ -121,6 +281,11 @@ MonoBehaviour:
   sceneName: 
   nextSceneName: 
   entryGateName: 
+  actorSnapshotUnpaused: {fileID: 24500014, guid: 8398b8aed03036d4199e6e5a82adad32, type: 2}
+  actorSnapshotPaused: {fileID: 24500016, guid: 8398b8aed03036d4199e6e5a82adad32, type: 2}
+  silentSnapshot: {fileID: 24500050, guid: d818f42b2e68d0b46bf24297d96cc684, type: 2}
+  noMusicSnapshot: {fileID: 24500022, guid: 0fb79c0f696da4b4cb298d1df00f07b2, type: 2}
+  noAtmosSnapshot: {fileID: 24500068, guid: 336930d400f2c734ab9b5a11db37cf57, type: 2}
 --- !u!114 &288893425757892528
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -134,7 +299,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   acceptingInput: 1
+  skippingCutscene: 0
   lastActiveController: 0
+  lastInputDeviceStyle: 0
+  readyToSkipCutscene: 0
 --- !u!114 &288893425757892535
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -149,20 +317,74 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerData:
     disablePause: 0
+    version: 1.5.78.11833
+    profileID: 0
+    isFirstGame: 1
+    backerCredits: 0
+    bossRushMode: 0
+    permadeathMode: 0
+    enteredTutorialFirstTime: 0
+    unlockedCompletionRate: 0
+    travelling: 0
+    nextScene: 
+    geo: 0
+    geoPool: 0
+    firstGeo: 0
     health: 5
     maxHealth: 5
     maxHealthBase: 5
     prevHealth: 5
+    healthBlue: 0
+    joniHealthBlue: 0
+    damagedBlue: 0
     nailDamage: 5
-    respawnScene: Tutorial_01
-    hazardRespawnFacingRight: 0
+    mapZone: 2
+    scenesEncounteredBench: []
+    hasQuill: 0
+    hasMap: 0
+    mapAllRooms: 0
+    atMapPrompt: 0
+    mapDirtmouth: 1
+    mapCrossroads: 0
+    mapGreenpath: 0
+    mapFogCanyon: 0
+    mapRoyalGardens: 0
+    mapFungalWastes: 0
+    mapCity: 0
+    mapWaterways: 0
+    mapMines: 0
+    mapDeepnest: 0
+    mapCliffs: 0
+    mapOutskirts: 0
+    mapRestingGrounds: 0
+    mapAbyss: 0
+    atBench: 0
+    charmBenchMsg: 0
     respawnMarkerName: 
+    respawnScene: Tutorial_01
+    respawnType: 0
+    respawnFacingRight: 0
+    hazardRespawnFacingRight: 0
     isInvincible: 0
+    shadeScene: None
+    shadeMapZone: 
+    shadePositionX: -999
+    shadePositionY: -999
+    shadeHealth: 0
+    shadeMP: 0
+    shadeFireballLevel: 2
+    shadeQuakeLevel: 2
+    shadeScreamLevel: 2
+    shadeSpecialType: 0
     currentArea: 0
+    environmentType: 0
+    environmentTypeDefault: 0
+    seenFocusTablet: 0
+    promptFocus: 0
     maxMP: 99
     MPCharge: 0
-    MPReverse: 0
-    MPReverseMax: 0
+    MPReserve: 0
+    MPReserveMax: 0
     soulLimited: 0
     focusMP_amount: 33
     hasDash: 1
@@ -173,10 +395,21 @@ MonoBehaviour:
     fireballLevel: 0
     quakeLevel: 0
     screamLevel: 0
+    hasWalljump: 0
+    canWallJump: 0
+    corn_fungalWastesLeft: 0
     hasLantern: 0
     hasDreamNail: 0
+    hasAcidArmour: 0
+    foundTrinket2: 0
+    trinket2: 0
+    charmSlotsFilled: 0
+    charmSlots: 3
+    hasCharm: 0
     charmsOwned: 0
     overcharmed: 0
+    gotCharm_1: 0
+    equippedCharm_1: 0
     gotCharm_6: 0
     equippedCharm_6: 0
     gotCharm_7: 0
@@ -185,19 +418,73 @@ MonoBehaviour:
     equippedCharm_10: 0
     gotCharm_11: 0
     equippedCharm_11: 0
+    gotCharm_15: 0
+    equippedCharm_15: 0
     gotCharm_17: 0
     equippedCharm_17: 0
+    gotCharm_18: 0
+    equippedCharm_18: 0
     gotCharm_19: 0
     equippedCharm_19: 0
+    gotCharm_23: 0
+    equippedCharm_23: 0
+    brokenCharm_23: 0
+    charmCost_23: 2
+    gotCharm_24: 0
+    equippedCharm_24: 0
+    brokenCharm_24: 0
+    charmCost_24: 2
+    gotCharm_25: 0
+    equippedCharm_25: 0
+    brokenCharm_25: 0
+    charmCost_25: 3
+    gotCharm_27: 0
+    equippedCharm_27: 0
     gotCharm_28: 0
     equippedCharm_28: 0
+    gotCharm_29: 0
+    equippedCharm_29: 0
     gotCharm_31: 1
     equippedCharm_31: 1
     gotCharm_34: 0
     equippedCharm_34: 0
+    fragileHealth_unbreakable: 0
+    fragileGreed_unbreakable: 0
+    fragileStrength_unbreakable: 0
+    scenesVisited: []
+    visitedDirtmouth: 0
+    visitedCrossroads: 0
+    stagConvoTram: 0
+    stagConvoTiso: 0
+    stagRemember1: 0
+    stagRemember2: 0
+    stagRemember3: 0
+    stagEggInspected: 0
+    stagHopeConvo: 0
+    stagPosition: -1
+    stationsOpened: 0
+    openedTown: 0
+    openedTownBuilding: 0
+    openedCrossroads: 0
+    openedGreenpath: 0
+    openedRuins1: 0
+    openedRuins2: 0
+    openedFungalWastes: 0
+    openedRoyalGardens: 0
+    openedRestingGrounds: 0
+    openedDeepnest: 0
+    openedStagNest: 0
+    openedHiddenStation: 0
+    metStag: 0
     giantFlyDefeated: 0
     falseKnightWallBroken: 0
     falseKnightWallRepaired: 0
+    shaman: 0
+    shamanScreamConvo: 0
+    shamanQuakeConvo: 0
+    shamanFireball2Convo: 0
+    shamanScream2Convo: 0
+    shamanQuake2Convo: 0
     shamanPillar: 0
     falseKnightDefeated: 0
     falseKnightFirstPlop: 0
@@ -207,6 +494,38 @@ MonoBehaviour:
     corn_crossroadsLeft: 0
     openedMapperShop: 0
     crossroadsMawlekWall: 0
+    killedBigBuzzer: 0
+    zote: 0
+    zoteDead: 0
+    zoteRescuedBuzzer: 0
+    zoteDeathPos: 0
+    hornetGreenpath: 0
+    hornet_f19: 0
+    hornet1Defeated: 0
+    hornetCityBridge_ready: 0
+    hornetCityBridge_completed: 0
+    hornetFung: 0
+    megaMossChargerEncountered: 0
+    megaMossChargerDefeated: 0
+    defeatedMantisLords: 0
+    killedMantisLord: 0
+    newDataMantisLord: 0
+    killsMantisLord: 0
+    dreamerScene1: 0
+    royalCharmState: 0
+    metHunter: 0
+    hasJournal: 0
+    hunterRoared: 0
+    journalEntriesCompleted: 0
+    journalNotesCompleted: 0
+    journalEntriesTotal: 146
+    hasHuntersMark: 0
+    metCloth: 0
+    kingsStationNonDisplay: 0
+    queensStationNonDisplay: 0
+    hasXunFlower: 0
+    xunFlowerBroken: 0
+    xunFlowerBrokeTimes: 0
 --- !u!114 &1268540922414961067
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -548,6 +867,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7726035133982287068}
   - component: {fileID: 5405610878884187699}
+  - component: {fileID: 2590527889365962527}
   m_Layer: 0
   m_Name: GlobalPool
   m_TagString: Untagged
@@ -584,6 +904,167 @@ MonoBehaviour:
   bloodSplatterParticle: {fileID: 8571911006177876624, guid: f350397ac7aad2f4ca6d34121ca04233, type: 3}
   speedMultiplier: 1.2
   amountMultiplier: 1.3
+--- !u!114 &2590527889365962527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2128290631796333684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 009f2ad1cbaf6cc41a01277303a7258a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startupPools:
+  - size: 3
+    prefab: {fileID: 1379121558028678660, guid: f96af3324a9905c49b4bf507c04a1e4f, type: 3}
+  - size: 2
+    prefab: {fileID: 1379121558028678660, guid: fd9edc3dd6ce96644b26b5e09a804e80, type: 3}
+  - size: 2
+    prefab: {fileID: 1379121558028678660, guid: c0817991c504cde48af9447e68899590, type: 3}
+  - size: 2
+    prefab: {fileID: 1379121558028678660, guid: d3a85535d16303147a7856005c7b9767, type: 3}
+  - size: 20
+    prefab: {fileID: 3041178361285957278, guid: 3ed1932750fc94644a7f5099628d1937, type: 3}
+  - size: 2
+    prefab: {fileID: 7062202248048916521, guid: 91fdfeafaa01ad043ba30bc45a67433a, type: 3}
+  - size: 2
+    prefab: {fileID: 9149269782156064176, guid: 50b1c6938ec255c4b839b277904e92ad, type: 3}
+  - size: 2
+    prefab: {fileID: 8147350902530905713, guid: 151671b1552c94c4ea660652eff8520c, type: 3}
+  - size: 2
+    prefab: {fileID: 3543468536700658290, guid: 6db3467eaa6785e48a0b2fbf88606bff, type: 3}
+  - size: 2
+    prefab: {fileID: 8966044248110161406, guid: b0d030b67e81a064fbbafa003615fa41, type: 3}
+  - size: 2
+    prefab: {fileID: 6079247722271569417, guid: c9357605653c2244d9853a1eb215080d, type: 3}
+  - size: 2
+    prefab: {fileID: 34917096085677498, guid: 369ddb29459a7844997ed80b9c0ddc83, type: 3}
+  - size: 2
+    prefab: {fileID: 3156553226742431790, guid: ac41656840116ae419a4d7b3d110b484, type: 3}
+  - size: 2
+    prefab: {fileID: 3156553226742431790, guid: 685a91abb650b8e46b12aa56fbf97d4d, type: 3}
+  - size: 2
+    prefab: {fileID: 5780035974257654662, guid: 7802be2d66a9fe54fadaabbf3091a743, type: 3}
+  - size: 2
+    prefab: {fileID: 5563963640674330177, guid: 7ea61fbe424782746b189db11d4b1e87, type: 3}
+  - size: 5
+    prefab: {fileID: 4336845148911015518, guid: f3366b615d7e14a48be17999ce609bcb, type: 3}
+  - size: 5
+    prefab: {fileID: 8571911006177876624, guid: f350397ac7aad2f4ca6d34121ca04233, type: 3}
+  - size: 5
+    prefab: {fileID: 7461374883895101095, guid: 28f51ee16263c554481515187b2799a3, type: 3}
+  - size: 5
+    prefab: {fileID: 1486896613669697907, guid: 53c0a8230c74604499f7c9b95942b2e1, type: 3}
+  - size: 20
+    prefab: {fileID: 5495185629275249995, guid: dd2054afb8531be47ae516533889b425, type: 3}
+  - size: 20
+    prefab: {fileID: 1546869385050466278, guid: cacd819207ab62d4e834b169d58d0580, type: 3}
+  - size: 1
+    prefab: {fileID: 8386226766556044810, guid: 43fc516b75b5a2b40969fe04f3a1dc6c, type: 3}
+  - size: 1
+    prefab: {fileID: 7437710410708142629, guid: 0e4c012f35e6205489f9dda041895c25, type: 3}
+  - size: 2
+    prefab: {fileID: 5159771729505519218, guid: e44442e07ad728347b94bba5a9e31f07, type: 3}
+  - size: 1
+    prefab: {fileID: 2049811014582187808, guid: e57df879d02dc364f847793918b8d91d, type: 3}
+  - size: 1
+    prefab: {fileID: 1798224009425392544, guid: b0d6eea60c4b88a41bdd97e1f20525dc, type: 3}
+  - size: 1
+    prefab: {fileID: 2210591247166239188, guid: 642d5936ca384e94898a5d95d6008057, type: 3}
+  - size: 1
+    prefab: {fileID: 5378670524569041805, guid: 4df7735303454564daa17d03df9988a7, type: 3}
+  - size: 1
+    prefab: {fileID: 3082191558358413112, guid: a05d2107e64f08f42a0cc335b36ca792, type: 3}
+  - size: 1
+    prefab: {fileID: 3082191558358413112, guid: 7eec61ba0cffb724185f9d985b7c879b, type: 3}
+  - size: 1
+    prefab: {fileID: 3082191558358413112, guid: 9a81417b854fe51449b98e72bf5477f2, type: 3}
+  - size: 1
+    prefab: {fileID: 3082191558358413112, guid: 78bc7e4c76780c34bbe6eecb0897e660, type: 3}
+  - size: 2
+    prefab: {fileID: 7873219696269874181, guid: 05413523133dfdb499463b307e2aa873, type: 3}
+  - size: 2
+    prefab: {fileID: 7873219696269874181, guid: e242dfdd218f237448ade3a507467ff9, type: 3}
+  - size: 1
+    prefab: {fileID: 7087490798148329763, guid: 41a103cbd8d113b4780da09b5c2e6d25, type: 3}
+  - size: 1
+    prefab: {fileID: 7437710410708142629, guid: 5def9acada2e9484faaf4b21dcaf263b, type: 3}
+  - size: 1
+    prefab: {fileID: 1266837513836832504, guid: 6153f5762fefea04eb6fe036c4f8a7d3, type: 3}
+  - size: 1
+    prefab: {fileID: 4050863220718183867, guid: 250918c7dee52cf4589d94444ccdfac9, type: 3}
+  - size: 2
+    prefab: {fileID: 7062202248048916521, guid: c5c37e1a5631235418e079f218cb9cda, type: 3}
+  - size: 2
+    prefab: {fileID: 7062202248048916521, guid: 5ba22e987e918da4ba987b9895e09fe0, type: 3}
+  - size: 1
+    prefab: {fileID: 7437710410708142629, guid: adec012263743a64aae2bf421dd8c190, type: 3}
+  - size: 1
+    prefab: {fileID: 7437710410708142629, guid: 2ca24a39d87b6cf4c846488f830022d9, type: 3}
+  - size: 1
+    prefab: {fileID: 7437710410708142629, guid: b2dab52958501854393f6d473619f58d, type: 3}
+  - size: 1
+    prefab: {fileID: 7437710410708142629, guid: 548670d81c4aaa141a280503b9f1876d, type: 3}
+  - size: 1
+    prefab: {fileID: 7437710410708142629, guid: 80502a73fde19fa41adc4217690bd381, type: 3}
+  - size: 1
+    prefab: {fileID: 3571892695971979347, guid: 3366589a2f6506f4193132202673516a, type: 3}
+  - size: 1
+    prefab: {fileID: 3571892695971979347, guid: a9cd4fc029eb9864cbe5ebf3dceaa788, type: 3}
+  - size: 1
+    prefab: {fileID: 5077558777383121714, guid: 7578ccdc525ec1a47ba3ab99ed26083c, type: 3}
+  - size: 1
+    prefab: {fileID: 5077558777383121714, guid: 06cff674b85e41142bd49937e43af282, type: 3}
+  - size: 1
+    prefab: {fileID: 5077558777383121714, guid: 295c3d09cb24231469e23827700cc6bd, type: 3}
+  - size: 1
+    prefab: {fileID: 5077558777383121714, guid: c9de14d852ba3984bbe85bab97eb3409, type: 3}
+  - size: 1
+    prefab: {fileID: 5077558777383121714, guid: 15dc7e1b5d78251429384d5e3ef22954, type: 3}
+  - size: 1
+    prefab: {fileID: 5077558777383121714, guid: 139edf1e331a3f0498f00fd04cd814ce, type: 3}
+  - size: 1
+    prefab: {fileID: 9208959807768900939, guid: 8364a2f27ffee674ab5b673e008d71d5, type: 3}
+  - size: 1
+    prefab: {fileID: 6721041919948290835, guid: 82817d05f2efe554480e42b085529fef, type: 3}
+  - size: 1
+    prefab: {fileID: 1475414952198968718, guid: abfd905f6ab64ea428b610d83e2e3ed6, type: 3}
+  - size: 1
+    prefab: {fileID: 9156027863096861120, guid: e24e671c111a75744ac75f3f3c87513b, type: 3}
+  - size: 1
+    prefab: {fileID: 7437710410708142629, guid: a2a801a0d2114074faa557c75f81fe2b, type: 3}
+  - size: 1
+    prefab: {fileID: 4190684019383034312, guid: 32507d5320df13a49a1f14b672f5693c, type: 3}
+  - size: 1
+    prefab: {fileID: 7437710410708142629, guid: c5ac6ae703e74d34bafe336fb5b02316, type: 3}
+  - size: 1
+    prefab: {fileID: 7437710410708142629, guid: 57306a1fb4e58d54bb2307ac1f88eda7, type: 3}
+  - size: 2
+    prefab: {fileID: 8101064262096166521, guid: 83256beaac503624ea8509065f36675b, type: 3}
+  - size: 2
+    prefab: {fileID: 4016414711201092497, guid: f2b0cf8aa0862a74682e31d083c34399, type: 3}
+  - size: 5
+    prefab: {fileID: 5378670524569041805, guid: 75b504917f0d9ae4390289be277b1db9, type: 3}
+  - size: 5
+    prefab: {fileID: 5378670524569041805, guid: f343a150378eda948ba698ffe4b2b614, type: 3}
+  - size: 5
+    prefab: {fileID: 5378670524569041805, guid: a2e85357cf986aa43b7feabea4c76bfb, type: 3}
+  - size: 5
+    prefab: {fileID: 5378670524569041805, guid: 599bf0fe2b60bd14eb085fcf84c15dd4, type: 3}
+  - size: 2
+    prefab: {fileID: 994332864923652754, guid: b7a238ff962430548b4faf12c573499d, type: 3}
+  - size: 2
+    prefab: {fileID: 4264351380313153801, guid: 584f51a322862864698ec49aa250508c, type: 3}
+  - size: 20
+    prefab: {fileID: 3041178361285957278, guid: 7960323f95e61a34cb16e490f5860583, type: 3}
+  - size: 15
+    prefab: {fileID: 3041178361285957278, guid: 6e612c6e19ce3f44ab4b191e920a5516, type: 3}
+  - size: 2
+    prefab: {fileID: 6096229746068083384, guid: b4a240775820b60479a45ba8b6a68e6d, type: 3}
+  - size: 3
+    prefab: {fileID: 6371983890598273672, guid: f58f0474d2a33b944903526c3c31320d, type: 3}
 --- !u!1 &5433538456710156427
 GameObject:
   m_ObjectHideFlags: 0
@@ -1290,6 +1771,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5433538457118334615}
   - component: {fileID: 6611731277625081757}
+  - component: {fileID: 8273175831679326621}
+  - component: {fileID: 972190531617926471}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -1324,6 +1807,569 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d580fe9dafa51bd41b678af04862af16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8273175831679326621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5433538457118334612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1384774831, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fsm:
+    dataVersion: 2
+    usedInTemplate: {fileID: 0}
+    name: Globalise
+    startState: State 1
+    states:
+    - name: State 1
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 50
+        y: 116
+        width: 120
+        height: 16
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions: []
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.GetOwner
+        - HutongGames.PlayMaker.Actions.SetGameObject
+        customNames:
+        - 
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000001000000
+        actionHashCodes: 5c0045054d51cf04
+        unityObjectParams: []
+        fsmGameObjectParams:
+        - useVariable: 1
+          name: Self
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
+        - useVariable: 1
+          name: AudioManager
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
+        - useVariable: 1
+          name: Self
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 00
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 13000000130000001300000001000000
+        paramName:
+        - storeGameObject
+        - variable
+        - gameObject
+        - everyFrame
+        paramDataPos: 00000000010000000200000000000000
+        paramByteDataSize: 00000000000000000000000001000000
+    events:
+    - name: LEVEL LOADED
+      isSystemEvent: 1
+      isGlobal: 0
+    globalTransitions:
+    - fsmEvent:
+        name: LEVEL LOADED
+        isSystemEvent: 1
+        isGlobal: 0
+      toState: State 1
+      linkStyle: 0
+      linkConstraint: 0
+      linkTarget: 0
+      colorIndex: 0
+    variables:
+      floatVariables: []
+      intVariables: []
+      boolVariables: []
+      stringVariables: []
+      vector2Variables: []
+      vector3Variables: []
+      colorVariables: []
+      rectVariables: []
+      quaternionVariables: []
+      gameObjectVariables:
+      - useVariable: 1
+        name: Self
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: {fileID: 0}
+      objectVariables: []
+      materialVariables: []
+      textureVariables: []
+      arrayVariables: []
+      enumVariables: []
+      categories:
+      - 
+      variableCategoryIDs: 00000000
+    description: 
+    docUrl: 
+    showStateLabel: 0
+    maxLoopCount: 0
+    watermark: 
+    password: 
+    locked: 0
+    manualUpdate: 0
+    outVariableIndices: 
+    keepDelayedEventsOnStateExit: 0
+    preprocessed: 0
+    ExposedEvents: []
+    OutputEvents: []
+    RestartOnEnable: 1
+    ResetVariablesOnEnable: 0
+    EnableDebugFlow: 0
+    EnableBreakpoints: 1
+    editorFlags: 225
+    activeStateName: 
+    mouseEvents: 0
+    handleLevelLoaded: 0
+    handleTriggerEnter2D: 0
+    handleTriggerExit2D: 0
+    handleTriggerStay2D: 0
+    handleCollisionEnter2D: 0
+    handleCollisionExit2D: 0
+    handleCollisionStay2D: 0
+    handleTriggerEnter: 0
+    handleTriggerExit: 0
+    handleTriggerStay: 0
+    handleCollisionEnter: 0
+    handleCollisionExit: 0
+    handleCollisionStay: 0
+    handleParticleCollision: 0
+    handleControllerColliderHit: 0
+    handleJointBreak: 0
+    handleJointBreak2D: 0
+    handleOnGUI: 0
+    handleFixedUpdate: 0
+    handleLateUpdate: 0
+    handleApplicationEvents: 0
+    handleUiEvents: 0
+    handleLegacyNetworking: 0
+    handleAnimatorMove: 0
+    handleAnimatorIK: 0
+  fsmTemplate: {fileID: 0}
+  eventHandlerComponentsAdded: 0
+--- !u!114 &972190531617926471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5433538457118334612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1384774831, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fsm:
+    dataVersion: 2
+    usedInTemplate: {fileID: 0}
+    name: Hero Damaged Effects
+    startState: Idle
+    states:
+    - name: Idle
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 55
+        y: 113
+        width: 100
+        height: 16
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions: []
+      actionData:
+        actionNames: []
+        customNames: []
+        actionEnabled: 
+        actionIsOpen: 
+        actionStartIndex: 
+        actionHashCodes: 
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 
+        paramName: []
+        paramDataPos: 
+        paramByteDataSize: 
+    - name: To Lowpass
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 227
+        y: 105
+        width: 147
+        height: 48
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: CANCEL
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Fade Black
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Idle
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.GetPlayerDataInt
+        - HutongGames.PlayMaker.Actions.IntCompare
+        - HutongGames.PlayMaker.Actions.TransitionToAudioSnapshot
+        - HutongGames.PlayMaker.Actions.Wait
+        customNames:
+        - 
+        - 
+        - 
+        - 
+        actionEnabled: 01010101
+        actionIsOpen: 01010101
+        actionStartIndex: 0000000003000000090000000b000000
+        actionHashCodes: 8f73cd0209faa10295e3580248c01101
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: GameManager
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: health
+        fsmObjectParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          typeName: UnityEngine.Audio.AudioMixerSnapshot
+          value: {fileID: 24500016, guid: dbaba554f966d5348882614b974db23f, type: 2}
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0.1
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0.75
+        fsmIntParams:
+        - useVariable: 1
+          name: HP
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: HP
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - CANCEL
+        - CANCEL
+        - 
+        - FINISHED
+        byteData: 0000
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 140000001200000010000000100000001000000017000000170000001700000001000000180000000f0000000f0000001700000001000000
+        paramName:
+        - gameObject
+        - intName
+        - storeValue
+        - integer1
+        - integer2
+        - equal
+        - lessThan
+        - greaterThan
+        - everyFrame
+        - snapshot
+        - transitionTime
+        - time
+        - finishEvent
+        - realTime
+        paramDataPos: 0000000000000000000000000100000002000000000000000100000002000000000000000000000000000000010000000300000001000000
+        paramByteDataSize: 0000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000001000000
+    - name: Fade Black
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 208
+        y: 215
+        width: 100
+        height: 16
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions: []
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.TransitionToAudioSnapshot
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: 95e35802
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          typeName: UnityEngine.Audio.AudioMixerSnapshot
+          value: {fileID: 24500014, guid: dbaba554f966d5348882614b974db23f, type: 2}
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 2
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 180000000f000000
+        paramName:
+        - snapshot
+        - transitionTime
+        paramDataPos: 0000000000000000
+        paramByteDataSize: 0000000000000000
+    events:
+    - name: HERO DAMAGED
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: CANCEL
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: DAMAGE LOWPASS
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: FINISHED
+      isSystemEvent: 1
+      isGlobal: 0
+    globalTransitions:
+    - fsmEvent:
+        name: DAMAGE LOWPASS
+        isSystemEvent: 0
+        isGlobal: 0
+      toState: To Lowpass
+      linkStyle: 0
+      linkConstraint: 0
+      linkTarget: 0
+      colorIndex: 0
+    variables:
+      floatVariables: []
+      intVariables:
+      - useVariable: 1
+        name: HP
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
+      boolVariables: []
+      stringVariables: []
+      vector2Variables: []
+      vector3Variables: []
+      colorVariables: []
+      rectVariables: []
+      quaternionVariables: []
+      gameObjectVariables: []
+      objectVariables: []
+      materialVariables: []
+      textureVariables: []
+      arrayVariables: []
+      enumVariables: []
+      categories:
+      - 
+      variableCategoryIDs: 00000000
+    description: 
+    docUrl: 
+    showStateLabel: 0
+    maxLoopCount: 0
+    watermark: 
+    password: 
+    locked: 0
+    manualUpdate: 0
+    outVariableIndices: 
+    keepDelayedEventsOnStateExit: 0
+    preprocessed: 0
+    ExposedEvents: []
+    OutputEvents: []
+    RestartOnEnable: 1
+    ResetVariablesOnEnable: 0
+    EnableDebugFlow: 0
+    EnableBreakpoints: 1
+    editorFlags: 225
+    activeStateName: 
+    mouseEvents: 0
+    handleLevelLoaded: 0
+    handleTriggerEnter2D: 0
+    handleTriggerExit2D: 0
+    handleTriggerStay2D: 0
+    handleCollisionEnter2D: 0
+    handleCollisionExit2D: 0
+    handleCollisionStay2D: 0
+    handleTriggerEnter: 0
+    handleTriggerExit: 0
+    handleTriggerStay: 0
+    handleCollisionEnter: 0
+    handleCollisionExit: 0
+    handleCollisionStay: 0
+    handleParticleCollision: 0
+    handleControllerColliderHit: 0
+    handleJointBreak: 0
+    handleJointBreak2D: 0
+    handleOnGUI: 0
+    handleFixedUpdate: 0
+    handleLateUpdate: 0
+    handleApplicationEvents: 0
+    handleUiEvents: 0
+    handleLegacyNetworking: 0
+    handleAnimatorMove: 0
+    handleAnimatorIK: 0
+  fsmTemplate: {fileID: 0}
+  eventHandlerComponentsAdded: 0
 --- !u!1 &6170550732473326478
 GameObject:
   m_ObjectHideFlags: 0

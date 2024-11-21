@@ -8,7 +8,6 @@ namespace HutongGames.PlayMaker.Actions
 	[Tooltip("Projects the location found with Get Location Info to a 2d map using common projections.")]
 	public class ProjectLocationToMap : FsmStateAction
 	{
-		// TODO: more projections
 		public enum MapProjection
 		{
 			EquidistantCylindrical,
@@ -23,7 +22,6 @@ namespace HutongGames.PlayMaker.Actions
 		
 		[ActionSection("Map Region")]
 
-		//TODO: FsmRect screen region
 
 		[HasFloatSlider(-180,180)]
         [Tooltip("The minimum Longitude shown on the map.")]
@@ -43,7 +41,6 @@ namespace HutongGames.PlayMaker.Actions
 		
 		[ActionSection("Screen Region")]
 
-        //TODO: FsmRect screen region
 
         [Tooltip("The screen coordinate of the left edge of the map image.")]
 		public FsmFloat minX;

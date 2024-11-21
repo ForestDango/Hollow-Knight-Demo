@@ -17,7 +17,6 @@ namespace HutongGames.PlayMaker.Actions
 	[RequiredField]
 	public FsmFloat storeAngle;
 
-
 	private FsmGameObject self;
 	private FsmFloat x;
 	private FsmFloat y;
@@ -46,7 +45,10 @@ namespace HutongGames.PlayMaker.Actions
 		offsetY.Value = 0;
 	    }
 	    DoGetAngle();
-	    Finish();
+	    if (!everyFrame)
+	    {
+		Finish();
+	    }
 	}
 
 	public override void OnUpdate()
@@ -69,5 +71,4 @@ namespace HutongGames.PlayMaker.Actions
 	    storeAngle.Value = num3;
 	}
     }
-
 }

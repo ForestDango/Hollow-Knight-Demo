@@ -19,7 +19,7 @@ namespace HutongGames.PlayMaker.Actions
 {
 	/// <summary>
 	/// Action version of Unity's builtin MouseLook behaviour.
-	/// TODO: Expose invert Y option.
+	/// Expose invert Y option.
 	/// </summary>
 	[ActionCategory(ActionCategory.Input)]
 	[Tooltip("Rotates a GameObject based on mouse movement. Minimum and Maximum values can be used to constrain the rotation.")]
@@ -86,7 +86,7 @@ namespace HutongGames.PlayMaker.Actions
 			}
 
 			// Make the rigid body not change rotation
-			// TODO: Original Unity script had this. Expose as option?
+			// Original Unity script had this. Expose as option?
 		    var rigidbody = cachedGameObject.GetComponent<Rigidbody>();
             if (rigidbody != null)
 			{

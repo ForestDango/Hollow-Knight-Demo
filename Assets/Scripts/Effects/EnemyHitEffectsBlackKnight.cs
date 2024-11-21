@@ -24,7 +24,7 @@ public class EnemyHitEffectsBlackKnight : MonoBehaviour,IHitEffectReciever
 	didFireThisFrame = false;
     }
 
-    public void ReceiveHitEffect(float attackDirection)
+    public void RecieveHitEffect(float attackDirection)
     {
 	if (didFireThisFrame)
 	    return;

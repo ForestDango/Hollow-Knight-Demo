@@ -16,6 +16,11 @@ public abstract class Platform : MonoBehaviour
 
     public static event Action PlatformBecameCurrent;
 
+    public virtual SystemLanguage GetSystemLanguage()
+    {
+	return Application.systemLanguage;
+    }
+
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
     private static void Init()
     {
@@ -102,15 +107,38 @@ public abstract class Platform : MonoBehaviour
 	}
 	return MenuActions.None;
     }
-
+  
     public abstract void EnsureSaveSlotSpace(int slotIndex, Action<bool> callback);
-
     public virtual bool FetchScenesBeforeFade
     {
 	get
 	{
 	    return false;
 	}
+    }
+
+    private GraphicsTiers graphicsTier;
+    public GraphicsTiers GraphicsTier
+    {
+	get
+	{
+	    return graphicsTier;
+	}
+    }
+    public GraphicsTiers InitialGraphicsTier
+    {
+	get
+	{
+	    return GraphicsTiers.High;
+	}
+    }
+
+    public enum GraphicsTiers
+    {
+	VeryLow,
+	Low,
+	Medium,
+	High
     }
 
     public enum AcceptRejectInputStyles

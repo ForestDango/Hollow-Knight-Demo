@@ -6,7 +6,7 @@ namespace HutongGames.PlayMaker.Actions
 {
 	/// <summary>
 	/// Based on Unity's builtin MouseLook behaviour.
-	/// TODO: Expose invert Y option.
+	/// Expose invert Y option.
 	/// </summary>
 	[ActionCategory(ActionCategory.Transform)]
 	[Tooltip("Rotates a GameObject based on a Vector2 input, typically from a PlayerInput action. " +
@@ -88,7 +88,7 @@ namespace HutongGames.PlayMaker.Actions
             }
 
 			// Make the rigid body not change rotation
-			// TODO: Original Unity script had this. Expose as option?
+			// Original Unity script had this. Expose as option?
 		    var myRigidbody = cachedGameObject.GetComponent<Rigidbody>();
             if (myRigidbody != null)
 			{

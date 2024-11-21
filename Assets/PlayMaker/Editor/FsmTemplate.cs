@@ -9,7 +9,7 @@ using UnityEngine;
 /// <summary>
 /// Simple container for an Fsm so it can be saved as an asset in the project.
 /// This asset can then be pasted into FSMs.
-/// TODO: Create a new PlayMakerFSM from FsmTemplate and add to Game Object.
+/// Create a new PlayMakerFSM from FsmTemplate and add to Game Object.
 /// </summary>
 
 [Serializable]

@@ -22,6 +22,8 @@ public class HeroAudioController : MonoBehaviour
     public AudioSource backDash;
     public AudioSource dash;
     public AudioSource takeHit;
+    public AudioSource wallslide;
+    public AudioSource walljump;
 
     private Coroutine fallingCo;
 
@@ -56,6 +58,10 @@ public class HeroAudioController : MonoBehaviour
 		    RandomizePitch(jump, 0.9f, 1.1f);
 		    jump.Play();
 		    break;
+		case HeroSounds.WALLJUMP:
+		    this.RandomizePitch(this.walljump, 0.9f, 1.1f);
+		    this.walljump.Play();
+		    return;
 		case HeroSounds.BACK_DASH:
 		    backDash.Play();
 		    break;
@@ -65,6 +71,9 @@ public class HeroAudioController : MonoBehaviour
 		case HeroSounds.TAKE_HIT:
 		    takeHit.Play();
 		    break;
+		case HeroSounds.WALLSLIDE:
+		    this.wallslide.Play();
+		    return;
 		case HeroSounds.FALLING:
 		    fallingCo = StartCoroutine(FadeInVolume(falling, 0.7f));
 		    falling.Play();
@@ -89,6 +98,9 @@ public class HeroAudioController : MonoBehaviour
 	}
 	switch (soundEffect)
 	{
+	    case HeroSounds.WALLSLIDE:
+		this.wallslide.Stop();
+		return;
 	    case HeroSounds.FALLING:
 		falling.Stop();
 		if(fallingCo != null)
@@ -111,6 +123,7 @@ public class HeroAudioController : MonoBehaviour
 	dash.Stop();
 	footStepsRun.Stop();
 	footStepsWalk.Stop();
+	wallslide.Stop();
     }
 
     public void PauseAllSounds()
@@ -123,6 +136,7 @@ public class HeroAudioController : MonoBehaviour
 	dash.Pause();
 	footStepsRun.Pause();
 	footStepsWalk.Pause();
+	wallslide.Pause();
     }
 
     public void UnPauseAllSounds()
@@ -135,6 +149,7 @@ public class HeroAudioController : MonoBehaviour
 	dash.UnPause();
 	footStepsRun.UnPause();
 	footStepsWalk.UnPause();
+	wallslide.UnPause();
     }
 
     /// <summary>

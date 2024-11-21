@@ -10,8 +10,8 @@ public class MusicCue : ScriptableObject
     [SerializeField] private AudioMixerSnapshot snapshot;
     [SerializeField]
     [ArrayForEnum(typeof(MusicChannels))]
-    private MusicCue.MusicChannelInfo[] channelInfos;
-    [SerializeField] private MusicCue.Alternative[] alternatives;
+    private MusicChannelInfo[] channelInfos;
+    [SerializeField] private Alternative[] alternatives;
 
     public string OriginalMusicEventName
     {

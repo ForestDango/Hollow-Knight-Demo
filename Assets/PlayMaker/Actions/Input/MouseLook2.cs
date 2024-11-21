@@ -20,7 +20,7 @@ namespace HutongGames.PlayMaker.Actions
 {
 	/// <summary>
 	/// Action version of Unity's builtin MouseLook behaviour.
-	/// TODO: Expose invert Y option.
+	/// Expose invert Y option.
 	/// </summary>
 	[Obsolete("Use MouseLook instead.")]
 	[ActionCategory(ActionCategory.Input)]
@@ -94,7 +94,7 @@ namespace HutongGames.PlayMaker.Actions
 			}
 
             // Make the rigid body not change rotation			
-            // TODO: Original Unity script had this. Expose as option?
+            // Original Unity script had this. Expose as option?
             if (!UpdateCache(go))
             {
                 if (rigidbody)

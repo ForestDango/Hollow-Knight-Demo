@@ -275,7 +275,7 @@ namespace HutongGames.PlayMakerEditor
 
         private static bool Button(string name, string tooltip, Texture image = null)
         {
-            InitLabel(name, tooltip); // TODO: Fix image styling 
+            InitLabel(name, tooltip); // Fix image styling 
             return GUILayout.Button(label, GUILayout.Height(25));
         }
 

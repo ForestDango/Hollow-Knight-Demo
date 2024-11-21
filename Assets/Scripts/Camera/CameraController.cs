@@ -3,6 +3,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityStandardAssets.ImageEffects;
 
 public class CameraController : MonoBehaviour
 {
@@ -146,12 +147,15 @@ public class CameraController : MonoBehaviour
 	cam = GetComponent<Camera>();
 	cameraParent = transform.parent.transform;
 	fadeFSM = FSMUtility.LocateFSM(gameObject, "CameraFade");
+	ApplyEffectConfiguration(false, false);
+	gm.UnloadingLevel += OnLevelUnload;
     }
 
     public void SceneInit()
     {
 	startLockedTimer = 0.5f;
 	velocity = Vector3.zero;
+	bool isBloomForced = false;
 	if (gm.IsGameplayScene())
 	{
 	    isGameplayScene = true;
@@ -169,15 +173,22 @@ public class CameraController : MonoBehaviour
 	    dampTimeX = dampTime;
 	    dampTimeY = dampTime;
 	    maxVelocityCurrent = maxVelocity;
+	    string currentMapZone = gm.GetCurrentMapZone();
+	    string name = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
+	    if (name != null && name.StartsWith("Dream_Guardian_"))
+	    {
+		isBloomForced = true;
+	    }
 	}
 	else
 	{
 	    isGameplayScene = false;
 	    if (gm.IsMenuScene())
 	    {
-
+		isBloomForced = true;
 	    }
 	}
+	ApplyEffectConfiguration(isGameplayScene, isBloomForced);
     }
 
     public void PositionToHero(bool forceDirect)
@@ -188,6 +199,21 @@ public class CameraController : MonoBehaviour
     public void FadeSceneIn()
     {
 	GameCameras.instance.cameraFadeFSM.Fsm.Event("FADE SCENE IN");
+    }
+
+    /// <summary>
+    /// 如果卸载掉该场景了就把lockZoneList里的内容全部清空
+    /// </summary>
+    private void OnLevelUnload()
+    {
+	if (verboseMode)
+	{
+	    Debug.Log("Removing cam locks. (" + lockZoneList.Count.ToString() + " total)");
+	}
+	while (lockZoneList.Count > 0)
+	{
+	    ReleaseLock(lockZoneList[0]);
+	}
     }
 
     /// <summary>
@@ -624,6 +650,15 @@ public class CameraController : MonoBehaviour
 	{
 	    fadeFSM.Fsm.Event("START FADE");
 	}
+    }
+
+    public void ApplyEffectConfiguration(bool isGameplayLevel, bool isBloomForced)
+    {
+	bool flag = Platform.Current.InitialGraphicsTier > Platform.GraphicsTiers.Low;
+	GetComponent<FastNoise>().enabled = (isGameplayLevel && flag);
+	GetComponent<BloomOptimized>().enabled = (flag || isBloomForced);
+	GetComponent<BrightnessEffect>().enabled = flag;
+	GetComponent<ColorCorrectionCurves>().enabled = false; //TODO:
     }
 
     public void ResetStartTimer()

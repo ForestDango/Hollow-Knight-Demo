@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8360688883189769025}
   - component: {fileID: 4817906794698741447}
   - component: {fileID: 6894536546819129258}
+  - component: {fileID: 1944014816746686613}
   - component: {fileID: 4847243851925633944}
   m_Layer: 18
   m_Name: Slam Effect
@@ -123,6 +124,19 @@ MonoBehaviour:
   library: {fileID: 1440104856998500754, guid: 8a1ee418a175b0f48ba89907113dc24d, type: 3}
   defaultClipId: 8
   playAutomatically: 1
+--- !u!114 &1944014816746686613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5378670524569041805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56a629c5a9ac2494f8faa0d2ddaa4ae3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteAnimator: {fileID: 6894536546819129258}
 --- !u!114 &4847243851925633944
 MonoBehaviour:
   m_ObjectHideFlags: 0

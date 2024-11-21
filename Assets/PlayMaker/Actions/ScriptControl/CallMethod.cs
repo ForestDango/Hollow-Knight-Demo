@@ -131,7 +131,7 @@ namespace HutongGames.PlayMaker.Actions
             }
         }
 
-        // TODO: Move tests to helper function in core
+        // Move tests to helper function in core
         private bool NeedToUpdateCache()
         {
             return cachedBehaviour == null || cachedMethodName == null || // not cached yet

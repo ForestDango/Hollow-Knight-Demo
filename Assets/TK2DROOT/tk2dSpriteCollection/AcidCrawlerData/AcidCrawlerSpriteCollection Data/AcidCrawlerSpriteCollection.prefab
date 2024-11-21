@@ -1,0 +1,871 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5168129569778210880
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5752857279192743027}
+  - component: {fileID: 4697214963850025969}
+  m_Layer: 0
+  m_Name: AcidCrawlerSpriteCollection
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5752857279192743027
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5168129569778210880}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4697214963850025969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5168129569778210880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d546f34a90531a14eaba82a43b05b86b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 3
+  materialIdsValid: 1
+  needMaterialInstance: 0
+  spriteDefinitions:
+  - name: Acid Crawler Cln_death0000
+    boundsData:
+    - {x: -0.03124994, y: 0.0234375, z: 0}
+    - {x: 3.65625, y: 3.484375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 4.3125, y: 3.984375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.859375, y: -1.71875, z: 0}
+    - {x: 1.7968751, y: -1.71875, z: 0}
+    - {x: -1.859375, y: 1.765625, z: 0}
+    - {x: 1.7968751, y: 1.765625, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.20214942, y: 0.6113286}
+    - {x: 0.43066308, y: 0.6113286}
+    - {x: 0.20214942, y: 0.72021437}
+    - {x: 0.43066308, y: 0.72021437}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 36629123dea6c4647af7a7e0af6cd8b4, type: 2}
+    materialId: 0
+    sourceTextureGUID: 4370e5e6d0aafc74ca7312dce6d85125
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Acid Crawler Cln_death0001
+    boundsData:
+    - {x: -0.0234375, y: 0.046875, z: 0}
+    - {x: 4.015625, y: 3.78125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 4.3125, y: 3.984375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -2.03125, y: -1.84375, z: 0}
+    - {x: 1.984375, y: -1.84375, z: 0}
+    - {x: -2.03125, y: 1.9375, z: 0}
+    - {x: 1.984375, y: 1.9375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.5605478, y: 0.53173876}
+    - {x: 0.8115225, y: 0.53173876}
+    - {x: 0.5605478, y: 0.64990187}
+    - {x: 0.8115225, y: 0.64990187}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 36629123dea6c4647af7a7e0af6cd8b4, type: 2}
+    materialId: 0
+    sourceTextureGUID: db84fcb9d5d68f846a667c30cec63d54
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Acid Crawler Cln_death0002
+    boundsData:
+    - {x: 0.140625, y: 0.1015625, z: 0}
+    - {x: 3.6875, y: 3.328125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 4.3125, y: 3.984375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.703125, y: -1.5625, z: 0}
+    - {x: 1.984375, y: -1.5625, z: 0}
+    - {x: -1.703125, y: 1.765625, z: 0}
+    - {x: 1.984375, y: 1.765625, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.20214942, y: 0.72216845}
+    - {x: 0.20214942, y: 0.83740187}
+    - {x: 0.41015527, y: 0.72216845}
+    - {x: 0.41015527, y: 0.83740187}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 36629123dea6c4647af7a7e0af6cd8b4, type: 2}
+    materialId: 0
+    sourceTextureGUID: 827c48759390edd46a90c49e4adf0ec1
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Acid Crawler Cln_death0003
+    boundsData:
+    - {x: 0.0234375, y: -0.3046875, z: 0}
+    - {x: 3.921875, y: 3.234375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 4.3125, y: 3.984375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.9375, y: -1.921875, z: 0}
+    - {x: 1.984375, y: -1.921875, z: 0}
+    - {x: -1.9375, y: 1.3125, z: 0}
+    - {x: 1.984375, y: 1.3125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.4345713, y: 0.65185595}
+    - {x: 0.67968655, y: 0.65185595}
+    - {x: 0.4345713, y: 0.7529292}
+    - {x: 0.67968655, y: 0.7529292}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 36629123dea6c4647af7a7e0af6cd8b4, type: 2}
+    materialId: 0
+    sourceTextureGUID: facc88e06ded01741ab7b05c008ce38e
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Acid Crawler Cln_head_bounce0000
+    boundsData:
+    - {x: -0.07812494, y: -0.49999988, z: 0}
+    - {x: 3.6875, y: 5.28125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 4.3125, y: 6.546875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.921875, y: -3.140625, z: 0}
+    - {x: 1.7656251, y: -3.140625, z: 0}
+    - {x: -1.921875, y: 2.1406252, z: 0}
+    - {x: 1.7656251, y: 2.1406252, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.22656348, y: 0.4941411}
+    - {x: 0.22656348, y: 0.6093745}
+    - {x: 0.5566397, y: 0.4941411}
+    - {x: 0.5566397, y: 0.6093745}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 36629123dea6c4647af7a7e0af6cd8b4, type: 2}
+    materialId: 0
+    sourceTextureGUID: 5f5159bd8cf5a5a4e82f29fd8c92591e
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Acid Crawler Cln_head_bounce0001
+    boundsData:
+    - {x: 0.02343756, y: -0.15624988, z: 0}
+    - {x: 3.640625, y: 5.96875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 4.3125, y: 6.546875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.796875, y: -3.140625, z: 0}
+    - {x: 1.8437501, y: -3.140625, z: 0}
+    - {x: -1.796875, y: 2.8281252, z: 0}
+    - {x: 1.8437501, y: 2.8281252, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.0019541015, y: 0.118164554}
+    - {x: 0.0019541015, y: 0.2319331}
+    - {x: 0.37499902, y: 0.118164554}
+    - {x: 0.37499902, y: 0.2319331}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 36629123dea6c4647af7a7e0af6cd8b4, type: 2}
+    materialId: 0
+    sourceTextureGUID: e52d49a04513fb640b1d0b539f4262a1
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Acid Crawler Cln_turn0000
+    boundsData:
+    - {x: -0.06249994, y: -0.2265625, z: 0}
+    - {x: 3.59375, y: 5.953125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 4.3125, y: 6.546875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.859375, y: -3.203125, z: 0}
+    - {x: 1.7343751, y: -3.203125, z: 0}
+    - {x: -1.859375, y: 2.75, z: 0}
+    - {x: 1.7343751, y: 2.75, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.6113291, y: 0.30517626}
+    - {x: 0.6113291, y: 0.41748}
+    - {x: 0.9833975, y: 0.30517626}
+    - {x: 0.9833975, y: 0.41748}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 36629123dea6c4647af7a7e0af6cd8b4, type: 2}
+    materialId: 0
+    sourceTextureGUID: a041b896197071548bbc514f67e764b9
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Acid Crawler Cln_turn0001
+    boundsData:
+    - {x: -0.04687494, y: -0.2265625, z: 0}
+    - {x: 3.53125, y: 5.984375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 4.3125, y: 6.546875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.8125, y: -3.21875, z: 0}
+    - {x: 1.7187501, y: -3.21875, z: 0}
+    - {x: -1.8125, y: 2.765625, z: 0}
+    - {x: 1.7187501, y: 2.765625, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.5957041, y: 0.41943407}
+    - {x: 0.5957041, y: 0.5297847}
+    - {x: 0.9697256, y: 0.41943407}
+    - {x: 0.9697256, y: 0.5297847}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 36629123dea6c4647af7a7e0af6cd8b4, type: 2}
+    materialId: 0
+    sourceTextureGUID: 2a7c17bc7dfcf4641b00f52300108e08
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Acid Crawler Cln_turn0002
+    boundsData:
+    - {x: 0.03906244, y: -0.296875, z: 0}
+    - {x: 3.140625, y: 5.8125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 4.3125, y: 6.546875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.53125, y: -3.203125, z: 0}
+    - {x: 1.6093749, y: -3.203125, z: 0}
+    - {x: -1.53125, y: 2.609375, z: 0}
+    - {x: 1.6093749, y: 2.609375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.0019541015, y: 0.5405278}
+    - {x: 0.1982412, y: 0.5405278}
+    - {x: 0.0019541015, y: 0.7221675}
+    - {x: 0.1982412, y: 0.7221675}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 36629123dea6c4647af7a7e0af6cd8b4, type: 2}
+    materialId: 0
+    sourceTextureGUID: 4149d16fc4ec60c42a144e2e97106faa
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Acid Crawler Cln_turn0003
+    boundsData:
+    - {x: 0.390625, y: -0.21875, z: 0}
+    - {x: 3.53125, y: 5.9375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 4.3125, y: 6.546875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.375, y: -3.1875, z: 0}
+    - {x: 2.15625, y: -3.1875, z: 0}
+    - {x: -1.375, y: 2.75, z: 0}
+    - {x: 2.15625, y: 2.75, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.0019541015, y: 0.35302782}
+    - {x: 0.22265527, y: 0.35302782}
+    - {x: 0.0019541015, y: 0.53857374}
+    - {x: 0.22265527, y: 0.53857374}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 36629123dea6c4647af7a7e0af6cd8b4, type: 2}
+    materialId: 0
+    sourceTextureGUID: b393db5a3455f364cbf92997ce5831af
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Acid Crawler Cln_turn0004
+    boundsData:
+    - {x: 0.09375006, y: -0.2265625, z: 0}
+    - {x: 3.59375, y: 5.953125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 4.3125, y: 6.546875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.703125, y: -3.203125, z: 0}
+    - {x: 1.8906251, y: -3.203125, z: 0}
+    - {x: -1.703125, y: 2.75, z: 0}
+    - {x: 1.8906251, y: 2.75, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.36718848, y: 0.30615282}
+    - {x: 0.5917959, y: 0.30615282}
+    - {x: 0.36718848, y: 0.49218702}
+    - {x: 0.5917959, y: 0.49218702}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 36629123dea6c4647af7a7e0af6cd8b4, type: 2}
+    materialId: 0
+    sourceTextureGUID: 172e84c52ef4f2f4d86d354b44b6cb48
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Acid Crawler Cln_walk0000
+    boundsData:
+    - {x: -0.01562494, y: -0.1875, z: 0}
+    - {x: 3.65625, y: 5.9375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 4.3125, y: 6.546875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.84375, y: -3.15625, z: 0}
+    - {x: 1.8125001, y: -3.15625, z: 0}
+    - {x: -1.84375, y: 2.78125, z: 0}
+    - {x: 1.8125001, y: 2.78125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.37890723, y: 0.118652835}
+    - {x: 0.6074209, y: 0.118652835}
+    - {x: 0.37890723, y: 0.30419874}
+    - {x: 0.6074209, y: 0.30419874}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 36629123dea6c4647af7a7e0af6cd8b4, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3978a6d77be6f144882226c1298977a0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Acid Crawler Cln_walk0001
+    boundsData:
+    - {x: 0.000000059604645, y: -0.18750012, z: 0}
+    - {x: 3.6875, y: 6, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 4.3125, y: 6.546875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.84375, y: -3.1875, z: 0}
+    - {x: 1.8437501, y: -3.1875, z: 0}
+    - {x: -1.84375, y: 2.8124998, z: 0}
+    - {x: 1.8437501, y: 2.8124998, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.0019541015, y: 0.0009770507}
+    - {x: 0.0019541015, y: 0.116210446}
+    - {x: 0.37695214, y: 0.0009770507}
+    - {x: 0.37695214, y: 0.116210446}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 36629123dea6c4647af7a7e0af6cd8b4, type: 2}
+    materialId: 0
+    sourceTextureGUID: 8d71959b3db09114fa7a18476b5743c1
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Acid Crawler Cln_walk0002
+    boundsData:
+    - {x: -0.02343744, y: -0.2265625, z: 0}
+    - {x: 3.703125, y: 5.890625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 4.3125, y: 6.546875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.875, y: -3.171875, z: 0}
+    - {x: 1.8281251, y: -3.171875, z: 0}
+    - {x: -1.875, y: 2.71875, z: 0}
+    - {x: 1.8281251, y: 2.71875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.38086036, y: 0.0009770507}
+    - {x: 0.38086036, y: 0.11669873}
+    - {x: 0.7490225, y: 0.0009770507}
+    - {x: 0.7490225, y: 0.11669873}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 36629123dea6c4647af7a7e0af6cd8b4, type: 2}
+    materialId: 0
+    sourceTextureGUID: 7c970d02f7290e047a84688dcfc40096
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Acid Crawler Cln_walk0003
+    boundsData:
+    - {x: -0.0078124404, y: -0.3046875, z: 0}
+    - {x: 3.734375, y: 5.734375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 4.3125, y: 6.546875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.875, y: -3.171875, z: 0}
+    - {x: 1.8593751, y: -3.171875, z: 0}
+    - {x: -1.875, y: 2.5625, z: 0}
+    - {x: 1.8593751, y: 2.5625, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.6113291, y: 0.18652393}
+    - {x: 0.6113291, y: 0.30322218}
+    - {x: 0.9697256, y: 0.18652393}
+    - {x: 0.9697256, y: 0.30322218}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 36629123dea6c4647af7a7e0af6cd8b4, type: 2}
+    materialId: 0
+    sourceTextureGUID: 90638ef4103ca5847b0555b2c69661c7
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Acid Crawler Cln_walk0004
+    boundsData:
+    - {x: 0.000000059604645, y: -0.296875, z: 0}
+    - {x: 3.75, y: 5.78125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 4.3125, y: 6.546875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.875, y: -3.1875, z: 0}
+    - {x: 1.8750001, y: -3.1875, z: 0}
+    - {x: -1.875, y: 2.59375, z: 0}
+    - {x: 1.8750001, y: 2.59375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.0019541015, y: 0.23388721}
+    - {x: 0.0019541015, y: 0.35107374}
+    - {x: 0.36328027, y: 0.23388721}
+    - {x: 0.36328027, y: 0.35107374}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 36629123dea6c4647af7a7e0af6cd8b4, type: 2}
+    materialId: 0
+    sourceTextureGUID: bf93cbeae6abb2f46b6d9a52922541a8
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Acid Crawler Cln_walk0005
+    boundsData:
+    - {x: -0.0078124404, y: -0.25, z: 0}
+    - {x: 3.703125, y: 5.875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 4.3125, y: 6.546875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.859375, y: -3.1875, z: 0}
+    - {x: 1.8437501, y: -3.1875, z: 0}
+    - {x: -1.859375, y: 2.6875, z: 0}
+    - {x: 1.8437501, y: 2.6875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.75293064, y: 0.0009770507}
+    - {x: 0.98437405, y: 0.0009770507}
+    - {x: 0.75293064, y: 0.18456982}
+    - {x: 0.98437405, y: 0.18456982}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 36629123dea6c4647af7a7e0af6cd8b4, type: 2}
+    materialId: 0
+    sourceTextureGUID: 2afd06cb677728444b86b54355407a1f
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  premultipliedAlpha: 0
+  material: {fileID: 0}
+  materials:
+  - {fileID: 2100000, guid: 36629123dea6c4647af7a7e0af6cd8b4, type: 2}
+  textures:
+  - {fileID: 2800000, guid: dd4310017fb8e21478a2eaedac221b0c, type: 3}
+  pngTextures: []
+  materialPngTextureId: 00000000
+  textureFilterMode: 1
+  textureMipMaps: 0
+  allowMultipleAtlases: 0
+  spriteCollectionGUID: c965dba85c1053f418d13f05d3cdc3fe
+  spriteCollectionName: AcidCrawlerSpriteCollection
+  assetName: 
+  loadable: 0
+  invOrthoSize: 2
+  halfTargetHeight: 32
+  buildKey: 1922143790
+  dataGuid: 380f0e716cefadf48acdb344b94e92fe
+  managedSpriteCollection: 0
+  hasPlatformData: 0
+  spriteCollectionPlatforms: []
+  spriteCollectionPlatformGUIDs: []

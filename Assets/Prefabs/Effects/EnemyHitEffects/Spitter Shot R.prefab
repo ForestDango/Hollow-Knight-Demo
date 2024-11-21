@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 771787994574889206}
   - component: {fileID: 771787994574889097}
   - component: {fileID: 7913264319147899261}
+  - component: {fileID: 2413380525048635812}
   m_Layer: 22
   m_Name: Spitter Shot R
   m_TagString: Untagged
@@ -126,7 +127,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   library: {fileID: 7112793575335621746, guid: 20133693bad905b45a2ec40a5fd73a13, type: 3}
   defaultClipId: 0
-  playAutomatically: 0
+  playAutomatically: 1
 --- !u!50 &771787994574889207
 Rigidbody2D:
   serializedVersion: 4
@@ -213,6 +214,18 @@ MonoBehaviour:
     PitchMin: 0.85
     PitchMax: 1
     Volume: 1
+--- !u!114 &2413380525048635812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 771787994574889201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 978969c5da82a904b8272668b6b5cf07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &771787995916070597
 GameObject:
   m_ObjectHideFlags: 0
@@ -263,7 +276,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 41e037d43a4228f4197fe6e1ad324da0, type: 2}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

@@ -28,15 +28,12 @@ namespace InControl
 		[SerializeField]
 		InputDeviceStyle deviceStyle = InputDeviceStyle.Unknown;
 
-		// TODO: Rename to defaultSensitivity (or remove sensitivity?)
 		[SerializeField]
 		float sensitivity = 1.0f;
 
-		// TODO: Rename to defaultLowerDeadZone
 		[SerializeField]
 		float lowerDeadZone = 0.2f;
 
-		// TODO: Rename to defaultUpperDeadZone
 		[SerializeField]
 		float upperDeadZone = 0.9f;
 
@@ -46,11 +43,9 @@ namespace InControl
 		[SerializeField]
 		string[] excludePlatforms = new string[0];
 
-		// TODO: Convert to a nullable type
 		[SerializeField]
 		int minSystemBuildNumber = 0;
 
-		// TODO: Convert to a nullable type
 		[SerializeField]
 		int maxSystemBuildNumber = 0;
 

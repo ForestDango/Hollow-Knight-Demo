@@ -1,0 +1,6464 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &580760737069715631
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7304464272915755847}
+  - component: {fileID: 7718169650337357730}
+  m_Layer: 0
+  m_Name: MantisLordSpriteCollection
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7304464272915755847
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 580760737069715631}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7718169650337357730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 580760737069715631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d546f34a90531a14eaba82a43b05b86b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 3
+  materialIdsValid: 1
+  needMaterialInstance: 0
+  spriteDefinitions:
+  - name: Mantis Lords_dash_attack0000
+    boundsData:
+    - {x: -0.08593756, y: 0.9609375, z: 0}
+    - {x: 3.515625, y: 6.421875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 15.625, y: 9.015625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.84375, y: -2.25, z: 0}
+    - {x: 1.6718749, y: -2.25, z: 0}
+    - {x: -1.84375, y: 4.171875, z: 0}
+    - {x: 1.6718749, y: 4.171875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.3164065, y: 0.8442385}
+    - {x: 0.37133765, y: 0.8442385}
+    - {x: 0.3164065, y: 0.94457984}
+    - {x: 0.37133765, y: 0.94457984}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 4f2dce28b3041004b90eae2f0485631e
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_dash_attack0001
+    boundsData:
+    - {x: 0.7187498, y: -0.14843774, z: 0}
+    - {x: 4.5624995, y: 8.578125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 15.625, y: 9.015625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.5624999, y: -4.4375, z: 0}
+    - {x: 2.9999995, y: -4.4375, z: 0}
+    - {x: -1.5624999, y: 4.1406245, z: 0}
+    - {x: 2.9999995, y: 4.1406245, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.3771975, y: 0.0004885254}
+    - {x: 0.3771975, y: 0.0717771}
+    - {x: 0.51123023, y: 0.0004885254}
+    - {x: 0.51123023, y: 0.0717771}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: eed0667696e10074691d4ba5bf963c43
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_dash_attack0002
+    boundsData:
+    - {x: 1.2578126, y: -1.0234375, z: 0}
+    - {x: 4.3906255, y: 6.984375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 15.625, y: 9.015625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.93750006, y: -4.515625, z: 0}
+    - {x: 3.4531252, y: -4.515625, z: 0}
+    - {x: -0.93750006, y: 2.46875, z: 0}
+    - {x: 3.4531252, y: 2.46875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.76147485, y: 0.073486574}
+    - {x: 0.76147485, y: 0.1420896}
+    - {x: 0.87060523, y: 0.073486574}
+    - {x: 0.87060523, y: 0.1420896}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: c0417e1e5b159c2419741e5673b1686f
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_dash_attack0003
+    boundsData:
+    - {x: 0.53906226, y: -2.7265625, z: 0}
+    - {x: 7.7968745, y: 3.359375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 15.625, y: 9.015625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -3.359375, y: -4.40625, z: 0}
+    - {x: 4.4374995, y: -4.40625, z: 0}
+    - {x: -3.359375, y: -1.046875, z: 0}
+    - {x: 4.4374995, y: -1.046875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.08667017, y: 0.79516625}
+    - {x: 0.08667017, y: 0.91699195}
+    - {x: 0.13915992, y: 0.79516625}
+    - {x: 0.13915992, y: 0.91699195}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 7cb1d2a929f03bc419206ae363659e8f
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_dash_attack0004
+    boundsData:
+    - {x: 0.7578125, y: -2.40625, z: 0}
+    - {x: 7.890625, y: 4, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 15.625, y: 9.015625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -3.1875, y: -4.40625, z: 0}
+    - {x: 4.703125, y: -4.40625, z: 0}
+    - {x: -3.1875, y: -0.40624994, z: 0}
+    - {x: 4.703125, y: -0.40624994, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.8723147, y: 0.0004885254}
+    - {x: 0.99560523, y: 0.0004885254}
+    - {x: 0.8723147, y: 0.062988035}
+    - {x: 0.99560523, y: 0.062988035}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 7d2d9961ff5b3544ab91cdfb18b0fa77
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_dash_attack0005
+    boundsData:
+    - {x: 0.6249999, y: -2.3203125, z: 0}
+    - {x: 7.875, y: 4.140625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 15.625, y: 9.015625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -3.3125002, y: -4.390625, z: 0}
+    - {x: 4.5625, y: -4.390625, z: 0}
+    - {x: -3.3125002, y: -0.25000012, z: 0}
+    - {x: 4.5625, y: -0.25000012, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.51220727, y: 0.0004885254}
+    - {x: 0.63525367, y: 0.0004885254}
+    - {x: 0.51220727, y: 0.0651853}
+    - {x: 0.63525367, y: 0.0651853}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: d2d7c60419d91d74f99ea9ede1a4bd99
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_dash_attack0006
+    boundsData:
+    - {x: 0.6093751, y: -2.328125, z: 0}
+    - {x: 7.843751, y: 4.25, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 15.625, y: 9.015625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -3.3125002, y: -4.453125, z: 0}
+    - {x: 4.5312505, y: -4.453125, z: 0}
+    - {x: -3.3125002, y: -0.20312506, z: 0}
+    - {x: 4.5312505, y: -0.20312506, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.2690432, y: 0.20703149}
+    - {x: 0.2690432, y: 0.3295896}
+    - {x: 0.33544898, y: 0.20703149}
+    - {x: 0.33544898, y: 0.3295896}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 5bd6bf3a26196bd4393508949c5d0afd
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_dash_attack0008
+    boundsData:
+    - {x: -0.5546875, y: -2.171875, z: 0}
+    - {x: 7.890625, y: 4.5625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 15.625, y: 9.015625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -4.5, y: -4.453125, z: 0}
+    - {x: 3.390625, y: -4.453125, z: 0}
+    - {x: -4.5, y: 0.10937514, z: 0}
+    - {x: 3.390625, y: 0.10937514, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.19555688, y: 0.3723147}
+    - {x: 0.31884742, y: 0.3723147}
+    - {x: 0.19555688, y: 0.44360328}
+    - {x: 0.31884742, y: 0.44360328}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 93616c9b0cd68c94abcbe89df09dbc70
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_dash_attack0009
+    boundsData:
+    - {x: -0.6484376, y: -2.21875, z: 0}
+    - {x: 7.859375, y: 4.53125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 15.625, y: 9.015625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -4.578125, y: -4.484375, z: 0}
+    - {x: 3.2812498, y: -4.484375, z: 0}
+    - {x: -4.578125, y: 0.04687489, z: 0}
+    - {x: 3.2812498, y: 0.04687489, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.33642602, y: 0.24633813}
+    - {x: 0.45922828, y: 0.24633813}
+    - {x: 0.33642602, y: 0.31713843}
+    - {x: 0.45922828, y: 0.31713843}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: bd12069082d378d4192c2840ada3ac3d
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_dash_attack0010
+    boundsData:
+    - {x: -0.8359374, y: -2.21875, z: 0}
+    - {x: 7.859375, y: 4.53125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 15.625, y: 9.015625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -4.765625, y: -4.484375, z: 0}
+    - {x: 3.0937502, y: -4.484375, z: 0}
+    - {x: -4.765625, y: 0.04687489, z: 0}
+    - {x: 3.0937502, y: 0.04687489, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.47290063, y: 0.07275415}
+    - {x: 0.5957029, y: 0.07275415}
+    - {x: 0.47290063, y: 0.14355445}
+    - {x: 0.5957029, y: 0.14355445}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 93af538839f64e440bc88b22127f027f
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_dash_attack0011
+    boundsData:
+    - {x: -1.0937501, y: -2.15625, z: 0}
+    - {x: 7.59375, y: 4.65625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 15.625, y: 9.015625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -4.890625, y: -4.484375, z: 0}
+    - {x: 2.7031248, y: -4.484375, z: 0}
+    - {x: -4.890625, y: 0.17187487, z: 0}
+    - {x: 2.7031248, y: 0.17187487, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.58300805, y: 0.14453149}
+    - {x: 0.7016599, y: 0.14453149}
+    - {x: 0.58300805, y: 0.21728492}
+    - {x: 0.7016599, y: 0.21728492}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 645ba1970a5f66e4a97ab8aa567ec098
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_dash_attack0012
+    boundsData:
+    - {x: 0.30468774, y: -2.3359375, z: 0}
+    - {x: 9.015625, y: 2.921875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 15.625, y: 9.015625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -4.203125, y: -3.796875, z: 0}
+    - {x: 4.8125005, y: -3.796875, z: 0}
+    - {x: -4.203125, y: -0.875, z: 0}
+    - {x: 4.8125005, y: -0.875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.14575219, y: 0.6979983}
+    - {x: 0.14575219, y: 0.83886695}
+    - {x: 0.19140601, y: 0.6979983}
+    - {x: 0.19140601, y: 0.83886695}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 69c4f75c1f933fe43af7914f21956277
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_dash_attack0013
+    boundsData:
+    - {x: 0.375, y: -2.3203125, z: 0}
+    - {x: 9.0625, y: 2.765625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 15.625, y: 9.015625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -4.15625, y: -3.703125, z: 0}
+    - {x: 4.90625, y: -3.703125, z: 0}
+    - {x: -4.15625, y: -0.9375, z: 0}
+    - {x: 4.90625, y: -0.9375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.33349633, y: 0.7016604}
+    - {x: 0.33349633, y: 0.8432615}
+    - {x: 0.37670875, y: 0.7016604}
+    - {x: 0.37670875, y: 0.8432615}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 66fc4f7de2991d64eaa82088bf5129f1
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_dash_attack0014
+    boundsData:
+    - {x: 0.35156274, y: -2.2890625, z: 0}
+    - {x: 8.921875, y: 2.671875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 15.625, y: 9.015625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -4.109375, y: -3.625, z: 0}
+    - {x: 4.8125005, y: -3.625, z: 0}
+    - {x: -4.109375, y: -0.9531249, z: 0}
+    - {x: 4.8125005, y: -0.9531249, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.27368188, y: 0.8015139}
+    - {x: 0.27368188, y: 0.94091773}
+    - {x: 0.31542945, y: 0.8015139}
+    - {x: 0.31542945, y: 0.94091773}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 6a0b464d643c93f48821a431d7fdee6e
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_dash_attack0015
+    boundsData:
+    - {x: 1.6171873, y: -2.46875, z: 0}
+    - {x: 7.9531245, y: 3.84375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 15.625, y: 9.015625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -2.359375, y: -4.390625, z: 0}
+    - {x: 5.5937495, y: -4.390625, z: 0}
+    - {x: -2.359375, y: -0.5468751, z: 0}
+    - {x: 5.5937495, y: -0.5468751, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.87158227, y: 0.12744164}
+    - {x: 0.9958494, y: 0.12744164}
+    - {x: 0.87158227, y: 0.18749976}
+    - {x: 0.9958494, y: 0.18749976}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: f8dbf13c0bc23804b90134a39634127d
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_dash_attack0016
+    boundsData:
+    - {x: 1.5000001, y: -2.5234375, z: 0}
+    - {x: 7.812501, y: 3.796875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 15.625, y: 9.015625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -2.4062502, y: -4.421875, z: 0}
+    - {x: 5.4062505, y: -4.421875, z: 0}
+    - {x: -2.4062502, y: -0.62500006, z: 0}
+    - {x: 5.4062505, y: -0.62500006, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.5754397, y: 0.2834475}
+    - {x: 0.6975095, y: 0.2834475}
+    - {x: 0.5754397, y: 0.3427732}
+    - {x: 0.6975095, y: 0.3427732}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 03e384e9e83dab04f85cd8aec1ea8e2d
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_dash_attack0017
+    boundsData:
+    - {x: 1.4921876, y: -2.421875, z: 0}
+    - {x: 7.859375, y: 3.96875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 15.625, y: 9.015625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -2.4374998, y: -4.40625, z: 0}
+    - {x: 5.421875, y: -4.40625, z: 0}
+    - {x: -2.4374998, y: -0.4375001, z: 0}
+    - {x: 5.421875, y: -0.4375001, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.31982446, y: 0.3698733}
+    - {x: 0.31982446, y: 0.49267554}
+    - {x: 0.3818357, y: 0.3698733}
+    - {x: 0.3818357, y: 0.49267554}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 2be042f33dcb81c43abaf8578c3140ca
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_dash_attack0018
+    boundsData:
+    - {x: 1.5390627, y: -2.421875, z: 0}
+    - {x: 7.8593755, y: 4, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 15.625, y: 9.015625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -2.390625, y: -4.421875, z: 0}
+    - {x: 5.4687505, y: -4.421875, z: 0}
+    - {x: -2.390625, y: -0.42187488, z: 0}
+    - {x: 5.4687505, y: -0.42187488, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.8723147, y: 0.06396509}
+    - {x: 0.99511695, y: 0.06396509}
+    - {x: 0.8723147, y: 0.1264646}
+    - {x: 0.99511695, y: 0.1264646}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: e3d3b2f9c9e93414e9fc054f326ef5b7
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_dash_attack0019
+    boundsData:
+    - {x: 1.3984371, y: -2.46875, z: 0}
+    - {x: 7.546875, y: 3.84375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 15.625, y: 9.015625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -2.3750002, y: -4.390625, z: 0}
+    - {x: 5.1718745, y: -4.390625, z: 0}
+    - {x: -2.3750002, y: -0.5468751, z: 0}
+    - {x: 5.1718745, y: -0.5468751, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.38281274, y: 0.4294436}
+    - {x: 0.38281274, y: 0.54736304}
+    - {x: 0.44287086, y: 0.4294436}
+    - {x: 0.44287086, y: 0.54736304}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 73b90ab4ae4d9464ab5240f046538bca
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_dash_attack0020
+    boundsData:
+    - {x: 1.2890621, y: -2.4765625, z: 0}
+    - {x: 7.328125, y: 3.828125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 15.625, y: 9.015625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -2.3750002, y: -4.390625, z: 0}
+    - {x: 4.9531245, y: -4.390625, z: 0}
+    - {x: -2.3750002, y: -0.56250006, z: 0}
+    - {x: 4.9531245, y: -0.56250006, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.48559594, y: 0.4035647}
+    - {x: 0.48559594, y: 0.51806617}
+    - {x: 0.5454099, y: 0.4035647}
+    - {x: 0.5454099, y: 0.51806617}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: b372d7b999d89e24e8b42723dc74804e
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_dash_attack0021
+    boundsData:
+    - {x: 1.0859377, y: -2.5703125, z: 0}
+    - {x: 7.4531255, y: 3.671875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 15.625, y: 9.015625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -2.640625, y: -4.40625, z: 0}
+    - {x: 4.8125005, y: -4.40625, z: 0}
+    - {x: -2.640625, y: -0.73437506, z: 0}
+    - {x: 4.8125005, y: -0.73437506, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.08740259, y: 0.6777346}
+    - {x: 0.08740259, y: 0.7941892}
+    - {x: 0.14477515, y: 0.6777346}
+    - {x: 0.14477515, y: 0.7941892}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 00390400a1815844b882240f9508d075
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_dash_attack0022
+    boundsData:
+    - {x: 1.0859377, y: -2.5703125, z: 0}
+    - {x: 7.4531255, y: 3.671875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 15.625, y: 9.015625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -2.640625, y: -4.40625, z: 0}
+    - {x: 4.8125005, y: -4.40625, z: 0}
+    - {x: -2.640625, y: -0.73437506, z: 0}
+    - {x: 4.8125005, y: -0.73437506, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.69482446, y: 0.3471682}
+    - {x: 0.69482446, y: 0.4636228}
+    - {x: 0.752197, y: 0.3471682}
+    - {x: 0.752197, y: 0.4636228}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 9596ca6602b04984e85f4df0715bb2b5
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_dash_attack0025
+    boundsData:
+    - {x: 1.3515623, y: -2.6015625, z: 0}
+    - {x: 7.6406245, y: 3.578125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 15.625, y: 9.015625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -2.46875, y: -4.390625, z: 0}
+    - {x: 5.1718745, y: -4.390625, z: 0}
+    - {x: -2.46875, y: -0.8125, z: 0}
+    - {x: 5.1718745, y: -0.8125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.0004885254, y: 0.7233889}
+    - {x: 0.0004885254, y: 0.8427732}
+    - {x: 0.05639624, y: 0.7233889}
+    - {x: 0.05639624, y: 0.8427732}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: f815becf405899349903e7b9f8891564
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_dash_attack0026
+    boundsData:
+    - {x: 1.3046875, y: -2.7265625, z: 0}
+    - {x: 7.546875, y: 3.421875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 15.625, y: 9.015625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -2.46875, y: -4.4375, z: 0}
+    - {x: 5.078125, y: -4.4375, z: 0}
+    - {x: -2.46875, y: -1.0156249, z: 0}
+    - {x: 5.078125, y: -1.0156249, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.57397485, y: 0.4228518}
+    - {x: 0.57397485, y: 0.54077125}
+    - {x: 0.62744117, y: 0.4228518}
+    - {x: 0.62744117, y: 0.54077125}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 8c5c6372a534f9c4caaa3a1c246be83f
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_dash_attack0027
+    boundsData:
+    - {x: 2.40625, y: -0.8281251, z: 0}
+    - {x: 6.1875, y: 6.5625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 15.625, y: 9.015625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.6875, y: -4.109375, z: 0}
+    - {x: 5.5, y: -4.109375, z: 0}
+    - {x: -0.6875, y: 2.4531248, z: 0}
+    - {x: 5.5, y: 2.4531248, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.369385, y: 0.08789087}
+    - {x: 0.369385, y: 0.18457007}
+    - {x: 0.4719236, y: 0.08789087}
+    - {x: 0.4719236, y: 0.18457007}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: de84fe5e08c07df43997db38b9dc1307
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_dash_attack0028
+    boundsData:
+    - {x: 3.8437498, y: 1.0234375, z: 0}
+    - {x: 6.0312505, y: 6.453125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 15.625, y: 9.015625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: 0.8281246, y: -2.203125, z: 0}
+    - {x: 6.859375, y: -2.203125, z: 0}
+    - {x: 0.8281246, y: 4.25, z: 0}
+    - {x: 6.859375, y: 4.25, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.0004885254, y: 0.4011233}
+    - {x: 0.0004885254, y: 0.4953611}
+    - {x: 0.10131811, y: 0.4011233}
+    - {x: 0.10131811, y: 0.4953611}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: e5e12c031502cda46a6d02b87d350bfe
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_down_stab0000
+    boundsData:
+    - {x: -3.9921875, y: -1.3515625, z: 0}
+    - {x: 7.640625, y: 2.765625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 15.625, y: 12.34375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -7.8125, y: -2.734375, z: 0}
+    - {x: -0.17187512, y: -2.734375, z: 0}
+    - {x: -7.8125, y: 0.031250026, z: 0}
+    - {x: -0.17187512, y: 0.031250026, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.3776858, y: 0.7829592}
+    - {x: 0.3776858, y: 0.9023435}
+    - {x: 0.4208982, y: 0.7829592}
+    - {x: 0.4208982, y: 0.9023435}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 2a3456bdb06fce74297a357ee4d7ad78
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_down_stab0001
+    boundsData:
+    - {x: -2.1718748, y: -0.86718744, z: 0}
+    - {x: 7.9062505, y: 3.765625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 15.625, y: 12.34375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -6.125, y: -2.75, z: 0}
+    - {x: 1.7812504, y: -2.75, z: 0}
+    - {x: -6.125, y: 1.0156251, z: 0}
+    - {x: 1.7812504, y: 1.0156251, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.75537133, y: 0.2768557}
+    - {x: 0.75537133, y: 0.4003904}
+    - {x: 0.81420875, y: 0.2768557}
+    - {x: 0.81420875, y: 0.4003904}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 679019609375f614aa287e8bbbfaabe4
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_down_stab0002
+    boundsData:
+    - {x: 0.8046874, y: -0.6796876, z: 0}
+    - {x: 6.703124, y: 5.828125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 15.625, y: 12.34375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -2.5468748, y: -3.59375, z: 0}
+    - {x: 4.1562495, y: -3.59375, z: 0}
+    - {x: -2.5468748, y: 2.2343748, z: 0}
+    - {x: 4.1562495, y: 2.2343748, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.10351587, y: 0.3513186}
+    - {x: 0.10351587, y: 0.45605445}
+    - {x: 0.19457984, y: 0.3513186}
+    - {x: 0.19457984, y: 0.45605445}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 70d3f57e5a89e8e4fbdf972ef554c385
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_down_stab0003
+    boundsData:
+    - {x: 0.32031226, y: -0.578125, z: 0}
+    - {x: 6.5156245, y: 6.5625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 15.625, y: 12.34375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -2.9375, y: -3.859375, z: 0}
+    - {x: 3.5781245, y: -3.859375, z: 0}
+    - {x: -2.9375, y: 2.703125, z: 0}
+    - {x: 3.5781245, y: 2.703125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.0004885254, y: 0.19751}
+    - {x: 0.0004885254, y: 0.29931617}
+    - {x: 0.1030271, y: 0.19751}
+    - {x: 0.1030271, y: 0.29931617}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 803aa52ae242bc440812dda4c81ff374
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_down_stab0004
+    boundsData:
+    - {x: 0.46093762, y: -0.44531238, z: 0}
+    - {x: 6.703125, y: 6.578125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 15.625, y: 12.34375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -2.890625, y: -3.734375, z: 0}
+    - {x: 3.8125002, y: -3.734375, z: 0}
+    - {x: -2.890625, y: 2.8437502, z: 0}
+    - {x: 3.8125002, y: 2.8437502, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.0004885254, y: 0.093750246}
+    - {x: 0.10522436, y: 0.093750246}
+    - {x: 0.0004885254, y: 0.19653296}
+    - {x: 0.10522436, y: 0.19653296}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 9adb95d1728b87e4892e869c3b78a33e
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_down_stab0005
+    boundsData:
+    - {x: 0.38281238, y: -0.38281238, z: 0}
+    - {x: 6.453125, y: 6.578125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 15.625, y: 12.34375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -2.8437502, y: -3.671875, z: 0}
+    - {x: 3.609375, y: -3.671875, z: 0}
+    - {x: -2.8437502, y: 2.9062502, z: 0}
+    - {x: 3.609375, y: 2.9062502, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.10400415, y: 0.24755883}
+    - {x: 0.20483375, y: 0.24755883}
+    - {x: 0.10400415, y: 0.35034156}
+    - {x: 0.20483375, y: 0.35034156}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: cdaaa46a4dc6b5e4086055aa4ccf5673
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_down_stab0006
+    boundsData:
+    - {x: -0.65625, y: 0.26562512, z: 0}
+    - {x: 3.8750005, y: 7.21875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 15.625, y: 12.34375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -2.5937502, y: -3.34375, z: 0}
+    - {x: 1.2812502, y: -3.34375, z: 0}
+    - {x: -2.5937502, y: 3.8750002, z: 0}
+    - {x: 1.2812502, y: 3.8750002, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.3808596, y: 0.5483401}
+    - {x: 0.441406, y: 0.5483401}
+    - {x: 0.3808596, y: 0.6611326}
+    - {x: 0.441406, y: 0.6611326}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: e9458281e9867f447aa001356f01126f
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_down_stab0007
+    boundsData:
+    - {x: -0.890625, y: 0.80468774, z: 0}
+    - {x: 3.65625, y: 7.8281255, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 15.625, y: 12.34375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -2.71875, y: -3.109375, z: 0}
+    - {x: 0.93750006, y: -3.109375, z: 0}
+    - {x: -2.71875, y: 4.7187505, z: 0}
+    - {x: 0.93750006, y: 4.7187505, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.08837915, y: 0.5544436}
+    - {x: 0.14550757, y: 0.5544436}
+    - {x: 0.08837915, y: 0.6767576}
+    - {x: 0.14550757, y: 0.6767576}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 768fd37e596c43d4eb293ffc0ab0a3ab
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_down_stab0008
+    boundsData:
+    - {x: -0.8437501, y: 0.84374976, z: 0}
+    - {x: 3.7499998, y: 8.1875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 15.625, y: 12.34375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -2.71875, y: -3.25, z: 0}
+    - {x: 1.0312498, y: -3.25, z: 0}
+    - {x: -2.71875, y: 4.9374995, z: 0}
+    - {x: 1.0312498, y: 4.9374995, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.36865258, y: 0.18554711}
+    - {x: 0.36865258, y: 0.24414039}
+    - {x: 0.4965818, y: 0.18554711}
+    - {x: 0.4965818, y: 0.24414039}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 9f6497d24759ab0469c219cf9c031b2f
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_down_stab0009
+    boundsData:
+    - {x: -0.7343751, y: 0.9375, z: 0}
+    - {x: 3.5312498, y: 8.5, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 15.625, y: 12.34375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -2.5, y: -3.3125, z: 0}
+    - {x: 1.0312498, y: -3.3125, z: 0}
+    - {x: -2.5, y: 5.1875, z: 0}
+    - {x: 1.0312498, y: 5.1875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.76147485, y: 0.14306664}
+    - {x: 0.81665015, y: 0.14306664}
+    - {x: 0.76147485, y: 0.27587867}
+    - {x: 0.81665015, y: 0.27587867}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 6d00856b65b33c6488fa6ced43653f88
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_down_stab0010
+    boundsData:
+    - {x: -0.7187501, y: 1.2500002, z: 0}
+    - {x: 3.3125002, y: 8.78125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 15.625, y: 12.34375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -2.3750002, y: -3.140625, z: 0}
+    - {x: 0.93750006, y: -3.140625, z: 0}
+    - {x: -2.3750002, y: 5.6406255, z: 0}
+    - {x: 0.93750006, y: 5.6406255, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.70263696, y: 0.20898461}
+    - {x: 0.7543943, y: 0.20898461}
+    - {x: 0.70263696, y: 0.34619117}
+    - {x: 0.7543943, y: 0.34619117}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 75c865df9cd9d9a4693650ee6b66e7b1
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_down_stab0011
+    boundsData:
+    - {x: -0.75000006, y: 1.5859375, z: 0}
+    - {x: 2.96875, y: 9.171875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 15.625, y: 12.34375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -2.234375, y: -3, z: 0}
+    - {x: 0.7343749, y: -3, z: 0}
+    - {x: -2.234375, y: 6.171875, z: 0}
+    - {x: 0.7343749, y: 6.171875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.71411157, y: 0.06469751}
+    - {x: 0.7604978, y: 0.06469751}
+    - {x: 0.71411157, y: 0.20800757}
+    - {x: 0.7604978, y: 0.20800757}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 0.99999994}
+    - {x: 1, y: 0.99999994}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 2cce9631756d2c14db2d52ff644ad045
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_down_stab0012
+    boundsData:
+    - {x: -0.36718744, y: -1.3125001, z: 0}
+    - {x: 1.8906249, y: 9.09375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 15.625, y: 12.34375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.3124999, y: -5.859375, z: 0}
+    - {x: 0.578125, y: -5.859375, z: 0}
+    - {x: -1.3124999, y: 3.2343748, z: 0}
+    - {x: 0.578125, y: 3.2343748, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.338135, y: 0.10327173}
+    - {x: 0.36767554, y: 0.10327173}
+    - {x: 0.338135, y: 0.24536109}
+    - {x: 0.36767554, y: 0.24536109}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 0.99999994}
+    - {x: 1, y: 0.99999994}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3f3459b9c270f7d41a31920427d4952f
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_down_stab0013
+    boundsData:
+    - {x: -0.36718744, y: -1.1093749, z: 0}
+    - {x: 1.8906249, y: 9.78125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 15.625, y: 12.34375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.3124999, y: -6, z: 0}
+    - {x: 0.578125, y: -6, z: 0}
+    - {x: -1.3124999, y: 3.7812502, z: 0}
+    - {x: 0.578125, y: 3.7812502, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.10620142, y: 0.093750246}
+    - {x: 0.13574195, y: 0.093750246}
+    - {x: 0.10620142, y: 0.2465818}
+    - {x: 0.13574195, y: 0.2465818}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 0.99999994}
+    - {x: 1, y: 0.99999994}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 7d6482683b3139a4798ed6cb635d9e0a
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_down_stab0014
+    boundsData:
+    - {x: -0.20312494, y: -0.4453125, z: 0}
+    - {x: 3.28125, y: 7.671875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 15.625, y: 12.34375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.84375, y: -4.28125, z: 0}
+    - {x: 1.4375001, y: -4.28125, z: 0}
+    - {x: -1.84375, y: 3.390625, z: 0}
+    - {x: 1.4375001, y: 3.390625, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.38061547, y: 0.6621096}
+    - {x: 0.43188453, y: 0.6621096}
+    - {x: 0.38061547, y: 0.7819822}
+    - {x: 0.43188453, y: 0.7819822}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 230eeab4eaa3dd8459e36521acd342f9
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_down_stab0015
+    boundsData:
+    - {x: -0.5078125, y: 0.35156262, z: 0}
+    - {x: 3.765625, y: 7.046875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 15.625, y: 12.34375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -2.390625, y: -3.171875, z: 0}
+    - {x: 1.375, y: -3.171875, z: 0}
+    - {x: -2.390625, y: 3.8750002, z: 0}
+    - {x: 1.375, y: 3.8750002, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.27368188, y: 0.6904299}
+    - {x: 0.3325193, y: 0.6904299}
+    - {x: 0.27368188, y: 0.8005369}
+    - {x: 0.3325193, y: 0.8005369}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 9319d0c59a3e3bc4ba950bb665ce3a7b
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_down_stab0016
+    boundsData:
+    - {x: -0.671875, y: 0.109375, z: 0}
+    - {x: 4.0625005, y: 6.65625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 15.625, y: 12.34375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -2.7031252, y: -3.21875, z: 0}
+    - {x: 1.3593752, y: -3.21875, z: 0}
+    - {x: -2.7031252, y: 3.4375, z: 0}
+    - {x: 1.3593752, y: 3.4375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.28906274, y: 0.58544946}
+    - {x: 0.35253882, y: 0.58544946}
+    - {x: 0.28906274, y: 0.6894529}
+    - {x: 0.35253882, y: 0.6894529}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: f93977bdecdff0449b28c7b4d8a84d66
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_down_stab0017
+    boundsData:
+    - {x: -1.4843752, y: -0.48437488, z: 0}
+    - {x: 5.6249995, y: 5, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 15.625, y: 12.34375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -4.296875, y: -2.984375, z: 0}
+    - {x: 1.3281246, y: -2.984375, z: 0}
+    - {x: -4.296875, y: 2.0156252, z: 0}
+    - {x: 1.3281246, y: 2.0156252, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.5744631, y: 0.34375024}
+    - {x: 0.6623533, y: 0.34375024}
+    - {x: 0.5744631, y: 0.42187476}
+    - {x: 0.6623533, y: 0.42187476}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: b2e29879ba67624478373d4fe6dade8c
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_down_stab0018
+    boundsData:
+    - {x: -1.34375, y: -0.9296874, z: 0}
+    - {x: 7.3125, y: 4.109375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 15.625, y: 12.34375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -5, y: -2.984375, z: 0}
+    - {x: 2.3125, y: -2.984375, z: 0}
+    - {x: -5, y: 1.1250002, z: 0}
+    - {x: 2.3125, y: 1.1250002, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.5754397, y: 0.21826196}
+    - {x: 0.689697, y: 0.21826196}
+    - {x: 0.5754397, y: 0.28247046}
+    - {x: 0.689697, y: 0.28247046}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: b1daf40ebe82a78408e86a15a2bcc42a
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_down_stab0019
+    boundsData:
+    - {x: -1.328125, y: -0.9140624, z: 0}
+    - {x: 7.15625, y: 4.140625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 15.625, y: 12.34375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -4.90625, y: -2.984375, z: 0}
+    - {x: 2.25, y: -2.984375, z: 0}
+    - {x: -4.90625, y: 1.1562502, z: 0}
+    - {x: 2.25, y: 1.1562502, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.48852563, y: 0.29077172}
+    - {x: 0.48852563, y: 0.40258765}
+    - {x: 0.5532224, y: 0.29077172}
+    - {x: 0.5532224, y: 0.40258765}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: d2dd506600d35e243811de2b443ab8fe
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_down_stab0020
+    boundsData:
+    - {x: -0.9843749, y: -0.66406256, z: 0}
+    - {x: 7, y: 4.609375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 15.625, y: 12.34375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -4.484375, y: -2.96875, z: 0}
+    - {x: 2.5156252, y: -2.96875, z: 0}
+    - {x: -4.484375, y: 1.6406249, z: 0}
+    - {x: 2.5156252, y: 1.6406249, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.7619631, y: 0.0004885254}
+    - {x: 0.87133765, y: 0.0004885254}
+    - {x: 0.7619631, y: 0.07250952}
+    - {x: 0.87133765, y: 0.07250952}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: ec642754afdabdd42a0fb5133667038a
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_down_stab0021
+    boundsData:
+    - {x: 0.5625, y: 0.38281262, z: 0}
+    - {x: 7, y: 4.921875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 15.625, y: 12.34375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -2.9375, y: -2.078125, z: 0}
+    - {x: 4.0625, y: -2.078125, z: 0}
+    - {x: -2.9375, y: 2.8437502, z: 0}
+    - {x: 4.0625, y: 2.8437502, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.49755883, y: 0.18042016}
+    - {x: 0.49755883, y: 0.28979468}
+    - {x: 0.57446265, y: 0.18042016}
+    - {x: 0.57446265, y: 0.28979468}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: b4e90e80774939d42b0ae08e1e245dbe
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_down_stab0022
+    boundsData:
+    - {x: 2.171875, y: 1.34375, z: 0}
+    - {x: 7.0625, y: 4.7500005, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 15.625, y: 12.34375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.3593752, y: -1.0312501, z: 0}
+    - {x: 5.703125, y: -1.0312501, z: 0}
+    - {x: -1.3593752, y: 3.7187502, z: 0}
+    - {x: 5.703125, y: 3.7187502, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.38281274, y: 0.31811547}
+    - {x: 0.38281274, y: 0.42846656}
+    - {x: 0.457031, y: 0.31811547}
+    - {x: 0.457031, y: 0.42846656}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 89b9421968d88564587aa1e76f948bf1
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_down_stab0023
+    boundsData:
+    - {x: 0.0078123994, y: 0.031250026, z: 0}
+    - {x: 0.015624799, y: 0.031250022, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 15.625, y: 12.34375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: 0, y: 0.015625013, z: 0}
+    - {x: 0.015624799, y: 0.015625013, z: 0}
+    - {x: 0, y: 0.046875037, z: 0}
+    - {x: 0.015624799, y: 0.046875037, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.13671899, y: 0.093750246}
+    - {x: 0.13671899, y: 0.093993895}
+    - {x: 0.1372068, y: 0.093750246}
+    - {x: 0.1372068, y: 0.093993895}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: aac31907ec7718944a65280f27a0c57d
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_gg_mantis_intro0000
+    boundsData:
+    - {x: 0.000000059604645, y: -0.8359374, z: 0}
+    - {x: 1.46875, y: 7.359375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.921875, y: 9.234375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.73437494, y: -4.515625, z: 0}
+    - {x: 0.73437506, y: -4.515625, z: 0}
+    - {x: -0.73437494, y: 2.8437502, z: 0}
+    - {x: 0.73437506, y: 2.8437502, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.3723147, y: 0.90332055}
+    - {x: 0.3723147, y: 0.9262693}
+    - {x: 0.48730445, y: 0.90332055}
+    - {x: 0.48730445, y: 0.9262693}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 0c3f78a1f7521c646bea50dc9fe81535
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_gg_mantis_intro0001
+    boundsData:
+    - {x: -0.0703125, y: -0.7890624, z: 0}
+    - {x: 1.5781249, y: 7.453125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.921875, y: 9.234375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.85937494, y: -4.515625, z: 0}
+    - {x: 0.71874994, y: -4.515625, z: 0}
+    - {x: -0.85937494, y: 2.9375002, z: 0}
+    - {x: 0.71874994, y: 2.9375002, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.6552737, y: 0.45190454}
+    - {x: 0.6799314, y: 0.45190454}
+    - {x: 0.6552737, y: 0.56835914}
+    - {x: 0.6799314, y: 0.56835914}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 9443ab9fcf3c52e4d86b6ee962d97df2
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_gg_mantis_intro0002
+    boundsData:
+    - {x: 0.0234375, y: -0.8671875, z: 0}
+    - {x: 1.7031249, y: 7.328125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.921875, y: 9.234375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.82812494, y: -4.53125, z: 0}
+    - {x: 0.87499994, y: -4.53125, z: 0}
+    - {x: -0.82812494, y: 2.796875, z: 0}
+    - {x: 0.87499994, y: 2.796875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.54638696, y: 0.4035647}
+    - {x: 0.5729978, y: 0.4035647}
+    - {x: 0.54638696, y: 0.51806617}
+    - {x: 0.5729978, y: 0.51806617}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: aec1002a2a28ab34eaad36776f928efc
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_gg_mantis_intro0003
+    boundsData:
+    - {x: 0.078125, y: -0.8671875, z: 0}
+    - {x: 1.6562499, y: 7.328125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.921875, y: 9.234375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.74999994, y: -4.53125, z: 0}
+    - {x: 0.90624994, y: -4.53125, z: 0}
+    - {x: -0.74999994, y: 2.796875, z: 0}
+    - {x: 0.90624994, y: 2.796875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.6284182, y: 0.4228518}
+    - {x: 0.65429664, y: 0.4228518}
+    - {x: 0.6284182, y: 0.5373533}
+    - {x: 0.65429664, y: 0.5373533}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 8dd71ec1bea8c114a940fc30a78fd33f
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_gg_mantis_intro0004
+    boundsData:
+    - {x: 0.14843756, y: -0.8281251, z: 0}
+    - {x: 1.671875, y: 7.375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.921875, y: 9.234375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.68749994, y: -4.515625, z: 0}
+    - {x: 0.98437506, y: -4.515625, z: 0}
+    - {x: -0.68749994, y: 2.8593748, z: 0}
+    - {x: 0.98437506, y: 2.8593748, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.35351586, y: 0.58544946}
+    - {x: 0.37963843, y: 0.58544946}
+    - {x: 0.35351586, y: 0.70068336}
+    - {x: 0.37963843, y: 0.70068336}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 2a98f50f1e9f6514faa658391a332975
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_gg_mantis_intro0005
+    boundsData:
+    - {x: 0.14843756, y: -0.8281251, z: 0}
+    - {x: 1.671875, y: 7.375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.921875, y: 9.234375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.68749994, y: -4.515625, z: 0}
+    - {x: 0.98437506, y: -4.515625, z: 0}
+    - {x: -0.68749994, y: 2.8593748, z: 0}
+    - {x: 0.98437506, y: 2.8593748, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.057373293, y: 0.8352053}
+    - {x: 0.08349585, y: 0.8352053}
+    - {x: 0.057373293, y: 0.9504392}
+    - {x: 0.08349585, y: 0.9504392}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: a02c002556577974783ddafe240e2267
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_gg_mantis_intro0006
+    boundsData:
+    - {x: 0.18750003, y: -0.8281251, z: 0}
+    - {x: 1.75, y: 7.375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.921875, y: 9.234375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.68749994, y: -4.515625, z: 0}
+    - {x: 1.0625, y: -4.515625, z: 0}
+    - {x: -0.68749994, y: 2.8593748, z: 0}
+    - {x: 1.0625, y: 2.8593748, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.058349855, y: 0.7189944}
+    - {x: 0.08569311, y: 0.7189944}
+    - {x: 0.058349855, y: 0.8342283}
+    - {x: 0.08569311, y: 0.8342283}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 5d246eeb5696c094a891935d736b4619
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_gg_mantis_intro0007
+    boundsData:
+    - {x: 0.14843756, y: -0.8281251, z: 0}
+    - {x: 1.671875, y: 7.375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.921875, y: 9.234375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.68749994, y: -4.515625, z: 0}
+    - {x: 0.98437506, y: -4.515625, z: 0}
+    - {x: -0.68749994, y: 2.8593748, z: 0}
+    - {x: 0.98437506, y: 2.8593748, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.24658227, y: 0.60522485}
+    - {x: 0.27270484, y: 0.60522485}
+    - {x: 0.24658227, y: 0.72045875}
+    - {x: 0.27270484, y: 0.72045875}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: ab1a79afe5e2db14bb3981cfce6d757e
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_gg_mantis_intro0008
+    boundsData:
+    - {x: 0.14843756, y: -0.8281251, z: 0}
+    - {x: 1.671875, y: 7.375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.921875, y: 9.234375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.68749994, y: -4.515625, z: 0}
+    - {x: 0.98437506, y: -4.515625, z: 0}
+    - {x: -0.68749994, y: 2.8593748, z: 0}
+    - {x: 0.98437506, y: 2.8593748, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.24658227, y: 0.7214358}
+    - {x: 0.27270484, y: 0.7214358}
+    - {x: 0.24658227, y: 0.8366697}
+    - {x: 0.27270484, y: 0.8366697}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 017663ee0f8c0384a81e773dc46928d1
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_ml_projectile_v020000
+    boundsData:
+    - {x: 0.09375, y: 0.07812503, z: 0}
+    - {x: 4.375, y: 1.4375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 4.828125, y: 1.625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -2.09375, y: -0.640625, z: 0}
+    - {x: 2.28125, y: -0.640625, z: 0}
+    - {x: -2.09375, y: 0.79687506, z: 0}
+    - {x: 2.28125, y: 0.79687506, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.7775881, y: 0.8220217}
+    - {x: 0.845947, y: 0.8220217}
+    - {x: 0.7775881, y: 0.8444822}
+    - {x: 0.845947, y: 0.8444822}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 7bab2ea8f2c9ecc4d941b510b7402e14
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_ml_projectile_v020001
+    boundsData:
+    - {x: -0.20312506, y: 0.0625, z: 0}
+    - {x: 4.34375, y: 1.4375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 4.828125, y: 1.625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -2.375, y: -0.65625, z: 0}
+    - {x: 1.9687499, y: -0.65625, z: 0}
+    - {x: -2.375, y: 0.78125, z: 0}
+    - {x: 1.9687499, y: 0.78125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.8081057, y: 0.8454592}
+    - {x: 0.8759763, y: 0.8454592}
+    - {x: 0.8081057, y: 0.8679197}
+    - {x: 0.8759763, y: 0.8679197}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 0cbc6349ccf060647ae890241821d24e
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_ml_projectile_v020002
+    boundsData:
+    - {x: 0.0703125, y: -0.015625, z: 0}
+    - {x: 4.359375, y: 1.4375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 4.828125, y: 1.625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -2.109375, y: -0.734375, z: 0}
+    - {x: 2.25, y: -0.734375, z: 0}
+    - {x: -2.109375, y: 0.703125, z: 0}
+    - {x: 2.25, y: 0.703125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.7961428, y: 0.87500024}
+    - {x: 0.8642576, y: 0.87500024}
+    - {x: 0.7961428, y: 0.8974607}
+    - {x: 0.8642576, y: 0.8974607}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: c04949a6037970c459fb48078772a2fe
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_throne_bow0000
+    boundsData:
+    - {x: -0.0390625, y: -1.2109374, z: 0}
+    - {x: 1.5781249, y: 6.515625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.921875, y: 9.234375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.82812494, y: -4.46875, z: 0}
+    - {x: 0.74999994, y: -4.46875, z: 0}
+    - {x: -0.82812494, y: 2.0468752, z: 0}
+    - {x: 0.74999994, y: 2.0468752, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.6345217, y: 0.8674319}
+    - {x: 0.6345217, y: 0.8920896}
+    - {x: 0.7363279, y: 0.8674319}
+    - {x: 0.7363279, y: 0.8920896}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: e06d7952a84c6b54a826e5da60e4eb45
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_throne_bow0001
+    boundsData:
+    - {x: -0.03125, y: -0.84375, z: 0}
+    - {x: 1.4999999, y: 7.25, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.921875, y: 9.234375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.78124994, y: -4.46875, z: 0}
+    - {x: 0.71874994, y: -4.46875, z: 0}
+    - {x: -0.78124994, y: 2.78125, z: 0}
+    - {x: 0.71874994, y: 2.78125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.37036157, y: 0.9697268}
+    - {x: 0.37036157, y: 0.9931638}
+    - {x: 0.48364234, y: 0.9697268}
+    - {x: 0.48364234, y: 0.9931638}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 585ff0c207845754d8182fb2a5a1e678
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_throne_bow0002
+    boundsData:
+    - {x: -0.0078124404, y: -0.8281251, z: 0}
+    - {x: 1.484375, y: 7.375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.921875, y: 9.234375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.74999994, y: -4.515625, z: 0}
+    - {x: 0.73437506, y: -4.515625, z: 0}
+    - {x: -0.74999994, y: 2.8593748, z: 0}
+    - {x: 0.73437506, y: 2.8593748, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.13793969, y: 0.9763186}
+    - {x: 0.13793969, y: 0.9995115}
+    - {x: 0.2531736, y: 0.9763186}
+    - {x: 0.2531736, y: 0.9995115}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 1db41f73099219e4695395e4f1074fcf
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_throne_bow0003
+    boundsData:
+    - {x: 0.000000059604645, y: -0.8281251, z: 0}
+    - {x: 1.46875, y: 7.375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.921875, y: 9.234375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.73437494, y: -4.515625, z: 0}
+    - {x: 0.73437506, y: -4.515625, z: 0}
+    - {x: -0.73437494, y: 2.8593748, z: 0}
+    - {x: 0.73437506, y: 2.8593748, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.48461938, y: 0.9697268}
+    - {x: 0.48461938, y: 0.99267554}
+    - {x: 0.5998533, y: 0.9697268}
+    - {x: 0.5998533, y: 0.99267554}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 0ccb5d5a27c8a184caaa326062ddc020
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_throne_bow0008
+    boundsData:
+    - {x: -0.0078125, y: -0.8750001, z: 0}
+    - {x: 1.4531249, y: 7.28125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.921875, y: 9.234375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.73437494, y: -4.515625, z: 0}
+    - {x: 0.71874994, y: -4.515625, z: 0}
+    - {x: -0.73437494, y: 2.7656248, z: 0}
+    - {x: 0.71874994, y: 2.7656248, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.42187524, y: 0.87573266}
+    - {x: 0.42187524, y: 0.89843726}
+    - {x: 0.5356443, y: 0.87573266}
+    - {x: 0.5356443, y: 0.89843726}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 5944de31fb0dd5943beae988b3e1334f
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_throne_bow0009
+    boundsData:
+    - {x: 0.03125, y: -1.0078124, z: 0}
+    - {x: 1.4999999, y: 7.078125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.921875, y: 9.234375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.71874994, y: -4.546875, z: 0}
+    - {x: 0.78124994, y: -4.546875, z: 0}
+    - {x: -0.71874994, y: 2.5312502, z: 0}
+    - {x: 0.78124994, y: 2.5312502, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.4865725, y: 0.92724633}
+    - {x: 0.4865725, y: 0.95068336}
+    - {x: 0.59716773, y: 0.92724633}
+    - {x: 0.59716773, y: 0.95068336}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: e97f8229ca6c6c84db90f8cce72aaaaa
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_throne_bow0010
+    boundsData:
+    - {x: 0.0234375, y: -1.3203125, z: 0}
+    - {x: 1.7031249, y: 6.484375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.921875, y: 9.234375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.82812494, y: -4.5625, z: 0}
+    - {x: 0.87499994, y: -4.5625, z: 0}
+    - {x: -0.82812494, y: 1.9218751, z: 0}
+    - {x: 0.87499994, y: 1.9218751, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.43286157, y: 0.7089846}
+    - {x: 0.45947242, y: 0.7089846}
+    - {x: 0.43286157, y: 0.8103025}
+    - {x: 0.45947242, y: 0.8103025}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: c74a578b36c0ba6409cdef7e376facc6
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_throne_bow0011
+    boundsData:
+    - {x: 0.07031256, y: -1.375, z: 0}
+    - {x: 1.578125, y: 6.34375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.921875, y: 9.234375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.71874994, y: -4.546875, z: 0}
+    - {x: 0.85937506, y: -4.546875, z: 0}
+    - {x: -0.71874994, y: 1.796875, z: 0}
+    - {x: 0.85937506, y: 1.796875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.59448266, y: 0.667969}
+    - {x: 0.6191404, y: 0.667969}
+    - {x: 0.59448266, y: 0.7670896}
+    - {x: 0.6191404, y: 0.7670896}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: d204a37f6d9d98e40bce1e4c79e3c837
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_throne_bow0012
+    boundsData:
+    - {x: 0.109375, y: -1.4374999, z: 0}
+    - {x: 1.5937499, y: 6.34375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.921875, y: 9.234375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.68749994, y: -4.609375, z: 0}
+    - {x: 0.90624994, y: -4.609375, z: 0}
+    - {x: -0.68749994, y: 1.7343752, z: 0}
+    - {x: 0.90624994, y: 1.7343752, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.56860375, y: 0.667969}
+    - {x: 0.5935056, y: 0.667969}
+    - {x: 0.56860375, y: 0.7670896}
+    - {x: 0.5935056, y: 0.7670896}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3defa8e7299cc7b4f9981db7ea44fd39
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_throne_bow0013
+    boundsData:
+    - {x: 0.14062503, y: -1.453125, z: 0}
+    - {x: 1.65625, y: 6.3125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.921875, y: 9.234375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.68749994, y: -4.609375, z: 0}
+    - {x: 0.96875, y: -4.609375, z: 0}
+    - {x: -0.68749994, y: 1.703125, z: 0}
+    - {x: 0.96875, y: 1.703125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.59375024, y: 0.8969729}
+    - {x: 0.59375024, y: 0.9228513}
+    - {x: 0.6923826, y: 0.8969729}
+    - {x: 0.6923826, y: 0.9228513}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: dd623e66241248349821c1d442c837ae
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_throne_hand_snap0002
+    boundsData:
+    - {x: 0.000000059604645, y: -1.71875, z: 0}
+    - {x: 1.65625, y: 5.6875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.921875, y: 9.234375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.82812494, y: -4.5625, z: 0}
+    - {x: 0.82812506, y: -4.5625, z: 0}
+    - {x: -0.82812494, y: 1.1250001, z: 0}
+    - {x: 0.82812506, y: 1.1250001, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.04809595, y: 0.95141625}
+    - {x: 0.04809595, y: 0.9772947}
+    - {x: 0.13696265, y: 0.95141625}
+    - {x: 0.13696265, y: 0.9772947}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 81d80f5d14b81d0498e18bd1732ac28d
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_throne_hand_snap0003
+    boundsData:
+    - {x: -0.01562494, y: -1.46875, z: 0}
+    - {x: 1.6875, y: 6.1875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.921875, y: 9.234375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.85937494, y: -4.5625, z: 0}
+    - {x: 0.82812506, y: -4.5625, z: 0}
+    - {x: -0.85937494, y: 1.6250001, z: 0}
+    - {x: 0.82812506, y: 1.6250001, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.55834985, y: 0.76879907}
+    - {x: 0.55834985, y: 0.7951658}
+    - {x: 0.65502906, y: 0.76879907}
+    - {x: 0.65502906, y: 0.7951658}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 03193724a6968b6469e57d2637708abd
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_throne_hand_snap0004
+    boundsData:
+    - {x: -0.01562494, y: -1.4609374, z: 0}
+    - {x: 1.6875, y: 6.203125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.921875, y: 9.234375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.85937494, y: -4.5625, z: 0}
+    - {x: 0.82812506, y: -4.5625, z: 0}
+    - {x: -0.85937494, y: 1.6406252, z: 0}
+    - {x: 0.82812506, y: 1.6406252, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.53662133, y: 0.86962914}
+    - {x: 0.53662133, y: 0.89599586}
+    - {x: 0.6335447, y: 0.86962914}
+    - {x: 0.6335447, y: 0.89599586}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 1196b0b4a11d4a649914af1e1d259e79
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_throne_hand_snap0005
+    boundsData:
+    - {x: -0.07812497, y: -1.4609374, z: 0}
+    - {x: 1.8125, y: 6.203125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.921875, y: 9.234375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.984375, y: -4.5625, z: 0}
+    - {x: 0.82812506, y: -4.5625, z: 0}
+    - {x: -0.984375, y: 1.6406252, z: 0}
+    - {x: 0.82812506, y: 1.6406252, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.23999047, y: 0.8376467}
+    - {x: 0.2683103, y: 0.8376467}
+    - {x: 0.23999047, y: 0.9345701}
+    - {x: 0.2683103, y: 0.9345701}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 8efa9671c65854a489767c286477d03c
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_throne_hand_snap0006
+    boundsData:
+    - {x: -0.10937497, y: -1.4609374, z: 0}
+    - {x: 1.875, y: 6.203125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.921875, y: 9.234375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.046875, y: -4.5625, z: 0}
+    - {x: 0.82812506, y: -4.5625, z: 0}
+    - {x: -1.046875, y: 1.6406252, z: 0}
+    - {x: 0.82812506, y: 1.6406252, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.44238305, y: 0.6110842}
+    - {x: 0.47167945, y: 0.6110842}
+    - {x: 0.44238305, y: 0.7080076}
+    - {x: 0.47167945, y: 0.7080076}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 199d1630f5108a94a9ffe57164b44db9
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_throne_hand_snap0007
+    boundsData:
+    - {x: -0.02343744, y: -1.4609374, z: 0}
+    - {x: 1.703125, y: 6.203125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.921875, y: 9.234375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.87499994, y: -4.5625, z: 0}
+    - {x: 0.82812506, y: -4.5625, z: 0}
+    - {x: -0.87499994, y: 1.6406252, z: 0}
+    - {x: 0.82812506, y: 1.6406252, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.46044946, y: 0.77783227}
+    - {x: 0.46044946, y: 0.8044431}
+    - {x: 0.5573728, y: 0.77783227}
+    - {x: 0.5573728, y: 0.8044431}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 51105d335eef25246a8fb763852e36e8
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_throne_hand_snap0008
+    boundsData:
+    - {x: -0.01562494, y: -1.46875, z: 0}
+    - {x: 1.6875, y: 6.1875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.921875, y: 9.234375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.85937494, y: -4.5625, z: 0}
+    - {x: 0.82812506, y: -4.5625, z: 0}
+    - {x: -0.85937494, y: 1.6250001, z: 0}
+    - {x: 0.82812506, y: 1.6250001, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.59814477, y: 0.92382836}
+    - {x: 0.59814477, y: 0.9501951}
+    - {x: 0.694824, y: 0.92382836}
+    - {x: 0.694824, y: 0.9501951}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: caee539179cde6c469c720d7a3e4df7d
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_throne_hand_snap0009
+    boundsData:
+    - {x: 0.000000059604645, y: -1.71875, z: 0}
+    - {x: 1.65625, y: 5.6875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.921875, y: 9.234375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.82812494, y: -4.5625, z: 0}
+    - {x: 0.82812506, y: -4.5625, z: 0}
+    - {x: -0.82812494, y: 1.1250001, z: 0}
+    - {x: 0.82812506, y: 1.1250001, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.69848657, y: 0.94604516}
+    - {x: 0.69848657, y: 0.9719236}
+    - {x: 0.7873533, y: 0.94604516}
+    - {x: 0.7873533, y: 0.9719236}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 2b40054e2440aa645886b6af7da2c802
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_throne_return0000
+    boundsData:
+    - {x: 0.0234375, y: 0.01562513, z: 0}
+    - {x: 0.015624883, y: 0.03125017, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.921875, y: 9.234375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: 0.01562506, y: 0.00000004284084, z: 0}
+    - {x: 0.031249942, y: 0.00000004284084, z: 0}
+    - {x: 0.01562506, y: 0.031250216, z: 0}
+    - {x: 0.031249942, y: 0.031250216, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.13671899, y: 0.093750246}
+    - {x: 0.13671899, y: 0.093993895}
+    - {x: 0.1372068, y: 0.093750246}
+    - {x: 0.1372068, y: 0.093993895}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: d11a485d86fc4004983cb086f2fff85c
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_throne_return0001
+    boundsData:
+    - {x: -0.02343744, y: -0.13281238, z: 0}
+    - {x: 1.703125, y: 8.140625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.921875, y: 9.234375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.87499994, y: -4.203125, z: 0}
+    - {x: 0.82812506, y: -4.203125, z: 0}
+    - {x: -0.87499994, y: 3.9375002, z: 0}
+    - {x: 0.82812506, y: 3.9375002, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.45800805, y: 0.37622094}
+    - {x: 0.4846189, y: 0.37622094}
+    - {x: 0.45800805, y: 0.50341773}
+    - {x: 0.4846189, y: 0.50341773}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 4cce7b6e918adb940aa3a12a3b94c852
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_throne_return0002
+    boundsData:
+    - {x: -0.015625, y: -1.0859375, z: 0}
+    - {x: 1.96875, y: 6.765625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.921875, y: 9.234375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1, y: -4.46875, z: 0}
+    - {x: 0.96875, y: -4.46875, z: 0}
+    - {x: -1, y: 2.296875, z: 0}
+    - {x: 0.96875, y: 2.296875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.4438479, y: 0.50439477}
+    - {x: 0.47460914, y: 0.50439477}
+    - {x: 0.4438479, y: 0.6101072}
+    - {x: 0.47460914, y: 0.6101072}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: a3d4acd601ca087488c392f9fbbf7d9a
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_throne_return0003
+    boundsData:
+    - {x: -0.0390625, y: -1.1718751, z: 0}
+    - {x: 1.5781249, y: 6.6875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.921875, y: 9.234375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.82812494, y: -4.515625, z: 0}
+    - {x: 0.74999994, y: -4.515625, z: 0}
+    - {x: -0.82812494, y: 2.1718748, z: 0}
+    - {x: 0.74999994, y: 2.1718748, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.4882815, y: 0.8994143}
+    - {x: 0.4882815, y: 0.924072}
+    - {x: 0.5927732, y: 0.8994143}
+    - {x: 0.5927732, y: 0.924072}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 6457a746521fac64188b09ae8d6bea00
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_throne_return0004
+    boundsData:
+    - {x: -0.0078124404, y: -0.8281251, z: 0}
+    - {x: 1.484375, y: 7.375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.921875, y: 9.234375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.74999994, y: -4.515625, z: 0}
+    - {x: 0.73437506, y: -4.515625, z: 0}
+    - {x: -0.74999994, y: 2.8593748, z: 0}
+    - {x: 0.73437506, y: 2.8593748, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.25415063, y: 0.9624026}
+    - {x: 0.25415063, y: 0.98559546}
+    - {x: 0.36938453, y: 0.9624026}
+    - {x: 0.36938453, y: 0.98559546}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 419b1c2f7a8a9e64da0ec011d7cc9f47
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_throne_return_wounded0000
+    boundsData:
+    - {x: -0.0078124553, y: 1.1875, z: 0}
+    - {x: 0.921875, y: 6.84375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.921875, y: 9.234375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.46874997, y: -2.234375, z: 0}
+    - {x: 0.45312506, y: -2.234375, z: 0}
+    - {x: -0.46874997, y: 4.609375, z: 0}
+    - {x: 0.45312506, y: 4.609375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.26147485, y: 0.08789087}
+    - {x: 0.26147485, y: 0.102294676}
+    - {x: 0.36840796, y: 0.08789087}
+    - {x: 0.36840796, y: 0.102294676}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 6698f12ee1a9d454b89d023b163985ee
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_throne_return_wounded0001
+    boundsData:
+    - {x: -0.03125, y: 0.4453125, z: 0}
+    - {x: 1.7499999, y: 8.328125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.921875, y: 9.234375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.90624994, y: -3.71875, z: 0}
+    - {x: 0.84374994, y: -3.71875, z: 0}
+    - {x: -0.90624994, y: 4.609375, z: 0}
+    - {x: 0.84374994, y: 4.609375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.46020532, y: 0.24511743}
+    - {x: 0.4875486, y: 0.24511743}
+    - {x: 0.46020532, y: 0.3752439}
+    - {x: 0.4875486, y: 0.3752439}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: bcbadd3aa0b2931488662043624b0df3
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_throne_return_wounded0002
+    boundsData:
+    - {x: -0.02343747, y: -0.8515626, z: 0}
+    - {x: 1.953125, y: 6.859375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.921875, y: 9.234375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1, y: -4.28125, z: 0}
+    - {x: 0.95312506, y: -4.28125, z: 0}
+    - {x: -1, y: 2.5781248, z: 0}
+    - {x: 0.95312506, y: 2.5781248, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.6633303, y: 0.34375024}
+    - {x: 0.6938474, y: 0.34375024}
+    - {x: 0.6633303, y: 0.4509275}
+    - {x: 0.6938474, y: 0.4509275}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 68d9828414fc19647980a48d3dac4b46
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_throne_return_wounded0003
+    boundsData:
+    - {x: 0.07812506, y: -1.6093751, z: 0}
+    - {x: 1.5625, y: 5.53125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.921875, y: 9.234375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.70312494, y: -4.375, z: 0}
+    - {x: 0.85937506, y: -4.375, z: 0}
+    - {x: -0.70312494, y: 1.1562498, z: 0}
+    - {x: 0.85937506, y: 1.1562498, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.6201174, y: 0.6547854}
+    - {x: 0.644531, y: 0.6547854}
+    - {x: 0.6201174, y: 0.7412107}
+    - {x: 0.644531, y: 0.7412107}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 2dfd392f530b82c45a55c877818f7625
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_throne_return_wounded0004
+    boundsData:
+    - {x: 0.06250006, y: -1.8671874, z: 0}
+    - {x: 1.65625, y: 5.015625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.921875, y: 9.234375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.76562494, y: -4.375, z: 0}
+    - {x: 0.89062506, y: -4.375, z: 0}
+    - {x: -0.76562494, y: 0.64062524, z: 0}
+    - {x: 0.89062506, y: 0.64062524, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.6982424, y: 0.8220217}
+    - {x: 0.6982424, y: 0.84790015}
+    - {x: 0.7766111, y: 0.8220217}
+    - {x: 0.7766111, y: 0.84790015}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: bc85ca2dfa342a54a9708820f5534a96
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_throne_return_wounded0005
+    boundsData:
+    - {x: 0.05468756, y: -2.1796875, z: 0}
+    - {x: 1.609375, y: 4.515625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.921875, y: 9.234375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.74999994, y: -4.4375, z: 0}
+    - {x: 0.85937506, y: -4.4375, z: 0}
+    - {x: -0.74999994, y: 0.07812492, z: 0}
+    - {x: 0.85937506, y: 0.07812492, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.6201174, y: 0.74218774}
+    - {x: 0.6201174, y: 0.76733375}
+    - {x: 0.6906736, y: 0.74218774}
+    - {x: 0.6906736, y: 0.76733375}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: df250941801dca549b8d46c4bd957b55
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_throne_return_wounded0006
+    boundsData:
+    - {x: 0.0703125, y: -2.203125, z: 0}
+    - {x: 1.6093749, y: 4.46875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.921875, y: 9.234375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.73437494, y: -4.4375, z: 0}
+    - {x: 0.87499994, y: -4.4375, z: 0}
+    - {x: -0.73437494, y: 0.031250216, z: 0}
+    - {x: 0.87499994, y: 0.031250216, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.7373049, y: 0.8488772}
+    - {x: 0.7373049, y: 0.8740232}
+    - {x: 0.80712867, y: 0.8488772}
+    - {x: 0.80712867, y: 0.8740232}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: c2dc827e9853e0840a538670dfba214a
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_throne_sit_look_up0000
+    boundsData:
+    - {x: 0.000000059604645, y: -1.9609374, z: 0}
+    - {x: 1.65625, y: 5.203125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.921875, y: 9.234375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.82812494, y: -4.5625, z: 0}
+    - {x: 0.82812506, y: -4.5625, z: 0}
+    - {x: -0.82812494, y: 0.64062524, z: 0}
+    - {x: 0.82812506, y: 0.64062524, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.6560061, y: 0.7683108}
+    - {x: 0.6560061, y: 0.7941892}
+    - {x: 0.73730445, y: 0.7683108}
+    - {x: 0.73730445, y: 0.7941892}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: edf50b21c1678cd40a569d5e2a9ad0ac
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_throne_sit_look_up0001
+    boundsData:
+    - {x: 0.000000059604645, y: -1.9140624, z: 0}
+    - {x: 1.65625, y: 5.296875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.921875, y: 9.234375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.82812494, y: -4.5625, z: 0}
+    - {x: 0.82812506, y: -4.5625, z: 0}
+    - {x: -0.82812494, y: 0.73437524, z: 0}
+    - {x: 0.82812506, y: 0.73437524, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.18774438, y: 0.9355471}
+    - {x: 0.18774438, y: 0.96142554}
+    - {x: 0.27050757, y: 0.9355471}
+    - {x: 0.27050757, y: 0.96142554}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 84b489d260d958f46b0b8b06f6709215
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_throne_sit_look_up0002
+    boundsData:
+    - {x: 0.000000059604645, y: -1.71875, z: 0}
+    - {x: 1.65625, y: 5.6875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.921875, y: 9.234375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.82812494, y: -4.5625, z: 0}
+    - {x: 0.82812506, y: -4.5625, z: 0}
+    - {x: -0.82812494, y: 1.1250001, z: 0}
+    - {x: 0.82812506, y: 1.1250001, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.69848657, y: 0.9729006}
+    - {x: 0.69848657, y: 0.99877906}
+    - {x: 0.7873533, y: 0.9729006}
+    - {x: 0.7873533, y: 0.99877906}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 456e83444266af4478a228cd1b310d72
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_throne_sit_look_up0003
+    boundsData:
+    - {x: -0.01562494, y: -1.53125, z: 0}
+    - {x: 1.6875, y: 6.0625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.921875, y: 9.234375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.85937494, y: -4.5625, z: 0}
+    - {x: 0.82812506, y: -4.5625, z: 0}
+    - {x: -0.85937494, y: 1.5, z: 0}
+    - {x: 0.82812506, y: 1.5, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.695801, y: 0.9187014}
+    - {x: 0.695801, y: 0.9450681}
+    - {x: 0.7905271, y: 0.9187014}
+    - {x: 0.7905271, y: 0.9450681}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: cb0675eb431eb7c43b59b5c90d85494c
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_throne_sit_look_up0004
+    boundsData:
+    - {x: -0.01562494, y: -1.46875, z: 0}
+    - {x: 1.6875, y: 6.1875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.921875, y: 9.234375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.85937494, y: -4.5625, z: 0}
+    - {x: 0.82812506, y: -4.5625, z: 0}
+    - {x: -0.85937494, y: 1.6250001, z: 0}
+    - {x: 0.82812506, y: 1.6250001, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.6008303, y: 0.9511721}
+    - {x: 0.6008303, y: 0.9775388}
+    - {x: 0.6975095, y: 0.9511721}
+    - {x: 0.6975095, y: 0.9775388}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 9e1bea1d1b17986439790fe5eac507d0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_throne_wake_depart0000
+    boundsData:
+    - {x: 0.000000059604645, y: -1.9609374, z: 0}
+    - {x: 1.65625, y: 5.203125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.921875, y: 9.234375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.82812494, y: -4.5625, z: 0}
+    - {x: 0.82812506, y: -4.5625, z: 0}
+    - {x: -0.82812494, y: 0.64062524, z: 0}
+    - {x: 0.82812506, y: 0.64062524, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.6982424, y: 0.79516625}
+    - {x: 0.6982424, y: 0.8210447}
+    - {x: 0.7795408, y: 0.79516625}
+    - {x: 0.7795408, y: 0.8210447}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 80e15ae64abc564409e1fbedd1bdaa96
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_throne_wake_depart0001
+    boundsData:
+    - {x: -0.0390625, y: -1.2109374, z: 0}
+    - {x: 1.5781249, y: 6.515625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.921875, y: 9.234375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.82812494, y: -4.46875, z: 0}
+    - {x: 0.74999994, y: -4.46875, z: 0}
+    - {x: -0.82812494, y: 2.0468752, z: 0}
+    - {x: 0.74999994, y: 2.0468752, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.6933596, y: 0.89306664}
+    - {x: 0.6933596, y: 0.9177244}
+    - {x: 0.7951658, y: 0.89306664}
+    - {x: 0.7951658, y: 0.9177244}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 2ec036f3ccf03f848bb07dddc2317232
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_throne_wake_depart0002
+    boundsData:
+    - {x: -0.0078124404, y: -0.8281251, z: 0}
+    - {x: 1.484375, y: 7.375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.921875, y: 9.234375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.74999994, y: -4.515625, z: 0}
+    - {x: 0.73437506, y: -4.515625, z: 0}
+    - {x: -0.74999994, y: 2.8593748, z: 0}
+    - {x: 0.73437506, y: 2.8593748, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.37036157, y: 0.9455569}
+    - {x: 0.37036157, y: 0.96874976}
+    - {x: 0.48559546, y: 0.9455569}
+    - {x: 0.48559546, y: 0.96874976}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3472b33c98fdce54b82ab4b12176604c
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_throne_wake_depart0003
+    boundsData:
+    - {x: -0.01562494, y: -0.8203126, z: 0}
+    - {x: 1.5, y: 7.390625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.921875, y: 9.234375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.76562494, y: -4.515625, z: 0}
+    - {x: 0.73437506, y: -4.515625, z: 0}
+    - {x: -0.76562494, y: 2.8749998, z: 0}
+    - {x: 0.73437506, y: 2.8749998, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.6284182, y: 0.5383303}
+    - {x: 0.65185523, y: 0.5383303}
+    - {x: 0.6284182, y: 0.65380836}
+    - {x: 0.65185523, y: 0.65380836}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: f2c319ff36c7b3f47a5cee8766f9e937
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_throne_wake_depart0006
+    boundsData:
+    - {x: -0.14843753, y: -0.8828124, z: 0}
+    - {x: 1.796875, y: 7.453125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.921875, y: 9.234375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.046875, y: -4.609375, z: 0}
+    - {x: 0.74999994, y: -4.609375, z: 0}
+    - {x: -1.046875, y: 2.8437502, z: 0}
+    - {x: 0.74999994, y: 2.8437502, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.058349855, y: 0.60156274}
+    - {x: 0.086425535, y: 0.60156274}
+    - {x: 0.058349855, y: 0.71801734}
+    - {x: 0.086425535, y: 0.71801734}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 5d375094aa0d8964c835fc3bcc3603fd
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_throne_wake_depart0007
+    boundsData:
+    - {x: -0.046875, y: -0.6015626, z: 0}
+    - {x: 2.96875, y: 7.953125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.921875, y: 9.234375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.53125, y: -4.578125, z: 0}
+    - {x: 1.4375, y: -4.578125, z: 0}
+    - {x: -1.53125, y: 3.3749998, z: 0}
+    - {x: 1.4375, y: 3.3749998, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.5231936, y: 0.5190432}
+    - {x: 0.56957984, y: 0.5190432}
+    - {x: 0.5231936, y: 0.6433103}
+    - {x: 0.56957984, y: 0.6433103}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 53df75d5daf2e6a47a763a0ac9b2589f
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_throne_wake_depart0008
+    boundsData:
+    - {x: 0.3203126, y: 0.0859375, z: 0}
+    - {x: 2.453125, y: 7.265625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.921875, y: 9.234375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.90624994, y: -3.546875, z: 0}
+    - {x: 1.5468751, y: -3.546875, z: 0}
+    - {x: -0.90624994, y: 3.71875, z: 0}
+    - {x: 1.5468751, y: 3.71875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.2683108, y: 0.33056664}
+    - {x: 0.2683108, y: 0.36889625}
+    - {x: 0.3818357, y: 0.33056664}
+    - {x: 0.3818357, y: 0.36889625}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 74a03352dda5192418185c58737a695f
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_throne_wake_depart0009
+    boundsData:
+    - {x: 0.6796876, y: 0.6953125, z: 0}
+    - {x: 2.234375, y: 6.984375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.921875, y: 9.234375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.43749994, y: -2.796875, z: 0}
+    - {x: 1.7968751, y: -2.796875, z: 0}
+    - {x: -0.43749994, y: 4.1875, z: 0}
+    - {x: 1.7968751, y: 4.1875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.47290063, y: 0.14453149}
+    - {x: 0.47290063, y: 0.17944312}
+    - {x: 0.582031, y: 0.14453149}
+    - {x: 0.582031, y: 0.17944312}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 28b2a69a34c4d464e954c6506a10e047
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_wall_appear0000
+    boundsData:
+    - {x: -2.8515625, y: 3.2890627, z: 0}
+    - {x: 4.046875, y: 5.7656245, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 15.625, y: 12.34375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -4.875, y: 0.40625033, z: 0}
+    - {x: -0.82812506, y: 0.40625033, z: 0}
+    - {x: -4.875, y: 6.171875, z: 0}
+    - {x: -0.82812506, y: 6.171875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.52050805, y: 0.80542016}
+    - {x: 0.52050805, y: 0.8686521}
+    - {x: 0.61059546, y: 0.80542016}
+    - {x: 0.61059546, y: 0.8686521}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: febe059f1c4d7194e8f9c3e47c96eef6
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_wall_appear0001
+    boundsData:
+    - {x: -1.3906249, y: 2.1875, z: 0}
+    - {x: 5.0625, y: 5.8125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 15.625, y: 12.34375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -3.921875, y: -0.7187499, z: 0}
+    - {x: 1.1406252, y: -0.7187499, z: 0}
+    - {x: -3.921875, y: 5.09375, z: 0}
+    - {x: 1.1406252, y: 5.09375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.3007815, y: 0.49365258}
+    - {x: 0.37988257, y: 0.49365258}
+    - {x: 0.3007815, y: 0.5844724}
+    - {x: 0.37988257, y: 0.5844724}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3835d1813f9a52d44a35108f5e4be2d6
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_wall_appear0002
+    boundsData:
+    - {x: -1.046875, y: 1.2578125, z: 0}
+    - {x: 5.5625, y: 6.671875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 15.625, y: 12.34375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -3.828125, y: -2.078125, z: 0}
+    - {x: 1.734375, y: -2.078125, z: 0}
+    - {x: -3.828125, y: 4.59375, z: 0}
+    - {x: 1.734375, y: 4.59375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.0004885254, y: 0.49633813}
+    - {x: 0.0874021, y: 0.49633813}
+    - {x: 0.0004885254, y: 0.6005857}
+    - {x: 0.0874021, y: 0.6005857}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3d6935da361ded64aaf59fdf4a2ade6a
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_wall_appear0003
+    boundsData:
+    - {x: -0.015625238, y: -1.5625001, z: 0}
+    - {x: 2.8437498, y: 7.90625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 15.625, y: 12.34375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.4375001, y: -5.515625, z: 0}
+    - {x: 1.4062496, y: -5.515625, z: 0}
+    - {x: -1.4375001, y: 2.3906248, z: 0}
+    - {x: 1.4062496, y: 2.3906248, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.5231936, y: 0.64428735}
+    - {x: 0.5676267, y: 0.64428735}
+    - {x: 0.5231936, y: 0.767822}
+    - {x: 0.5676267, y: 0.767822}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 36f54e5fb07109a4c8a815373b97fc63
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_wall_appear0004
+    boundsData:
+    - {x: -0.234375, y: -1.5781251, z: 0}
+    - {x: 3.3437502, y: 7.96875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 15.625, y: 12.34375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.9062501, y: -5.5625, z: 0}
+    - {x: 1.4375001, y: -5.5625, z: 0}
+    - {x: -1.9062501, y: 2.4062498, z: 0}
+    - {x: 1.4375001, y: 2.4062498, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.19335961, y: 0.60522485}
+    - {x: 0.24560523, y: 0.60522485}
+    - {x: 0.19335961, y: 0.7297361}
+    - {x: 0.24560523, y: 0.7297361}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 7521c4c887e776245b30d21679760d7a
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_wall_appear0005
+    boundsData:
+    - {x: -0.5546875, y: -1.5234376, z: 0}
+    - {x: 4.0468745, y: 7.984375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 15.625, y: 12.34375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -2.5781248, y: -5.515625, z: 0}
+    - {x: 1.4687498, y: -5.515625, z: 0}
+    - {x: -2.5781248, y: 2.4687498, z: 0}
+    - {x: 1.4687498, y: 2.4687498, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.6362307, y: 0.0004885254}
+    - {x: 0.6362307, y: 0.06372046}
+    - {x: 0.7609861, y: 0.0004885254}
+    - {x: 0.7609861, y: 0.06372046}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: a51351d964617754280dac88680a0d66
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_wall_appear0006
+    boundsData:
+    - {x: -0.0390625, y: -1.8359376, z: 0}
+    - {x: 2.9843748, y: 8.671875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 15.625, y: 12.34375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.5312499, y: -6.171875, z: 0}
+    - {x: 1.4531249, y: -6.171875, z: 0}
+    - {x: -1.5312499, y: 2.4999998, z: 0}
+    - {x: 1.4531249, y: 2.4999998, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.0004885254, y: 0.84375024}
+    - {x: 0.047118895, y: 0.84375024}
+    - {x: 0.0004885254, y: 0.9792478}
+    - {x: 0.047118895, y: 0.9792478}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: cf2291259ec75284f8124295f772387f
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_wall_appear0007
+    boundsData:
+    - {x: -0.0390625, y: -1.8359376, z: 0}
+    - {x: 2.9843748, y: 8.671875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 15.625, y: 12.34375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.5312499, y: -6.171875, z: 0}
+    - {x: 1.4531249, y: -6.171875, z: 0}
+    - {x: -1.5312499, y: 2.4999998, z: 0}
+    - {x: 1.4531249, y: 2.4999998, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.19238305, y: 0.7307131}
+    - {x: 0.23901343, y: 0.7307131}
+    - {x: 0.19238305, y: 0.8662107}
+    - {x: 0.23901343, y: 0.8662107}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 36ec5e96f935bae4b929034ad378a102
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_wall_appear0008
+    boundsData:
+    - {x: -0.0390625, y: -1.8359376, z: 0}
+    - {x: 2.9843748, y: 8.671875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 15.625, y: 12.34375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.5312499, y: -6.171875, z: 0}
+    - {x: 1.4531249, y: -6.171875, z: 0}
+    - {x: -1.5312499, y: 2.4999998, z: 0}
+    - {x: 1.4531249, y: 2.4999998, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.14013696, y: 0.839844}
+    - {x: 0.18676734, y: 0.839844}
+    - {x: 0.14013696, y: 0.97534156}
+    - {x: 0.18676734, y: 0.97534156}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 423ce8830d706444ba7ff9d05eaa2c0d
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_wall_depart0020
+    boundsData:
+    - {x: -0.0546875, y: -1.7734376, z: 0}
+    - {x: 2.9843752, y: 8.515625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 15.625, y: 12.34375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.5468751, y: -6.03125, z: 0}
+    - {x: 1.4375001, y: -6.03125, z: 0}
+    - {x: -1.5468751, y: 2.4843748, z: 0}
+    - {x: 1.4375001, y: 2.4843748, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.47558618, y: 0.5190432}
+    - {x: 0.52221656, y: 0.5190432}
+    - {x: 0.47558618, y: 0.6520994}
+    - {x: 0.52221656, y: 0.6520994}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 01a86ba26b6729043a699b54b0ea3dad
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_wall_depart0027
+    boundsData:
+    - {x: -0.32031238, y: -1.4609376, z: 0}
+    - {x: 3.6406252, y: 7.734375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 15.625, y: 12.34375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -2.140625, y: -5.328125, z: 0}
+    - {x: 1.5000002, y: -5.328125, z: 0}
+    - {x: -2.140625, y: 2.4062498, z: 0}
+    - {x: 1.5000002, y: 2.4062498, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.0004885254, y: 0.60156274}
+    - {x: 0.0573728, y: 0.60156274}
+    - {x: 0.0004885254, y: 0.7224119}
+    - {x: 0.0573728, y: 0.7224119}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 812e37dc040cfb44baed81be57310a7a
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_wall_depart0028
+    boundsData:
+    - {x: -0.007812619, y: -1.5703126, z: 0}
+    - {x: 2.8281245, y: 7.921875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 15.625, y: 12.34375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.4218749, y: -5.53125, z: 0}
+    - {x: 1.4062496, y: -5.53125, z: 0}
+    - {x: -1.4218749, y: 2.3906248, z: 0}
+    - {x: 1.4062496, y: 2.3906248, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.4726565, y: 0.6530764}
+    - {x: 0.51684546, y: 0.6530764}
+    - {x: 0.4726565, y: 0.77685523}
+    - {x: 0.51684546, y: 0.77685523}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: de4a35f622c6ecc4490c31d385ddecf6
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_wall_depart0029
+    boundsData:
+    - {x: -0.08593786, y: -0.6953126, z: 0}
+    - {x: 6.171875, y: 6.015625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 15.625, y: 12.34375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -3.1718752, y: -3.703125, z: 0}
+    - {x: 2.9999995, y: -3.703125, z: 0}
+    - {x: -3.1718752, y: 2.3124998, z: 0}
+    - {x: 2.9999995, y: 2.3124998, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.10229517, y: 0.4570315}
+    - {x: 0.10229517, y: 0.55346656}
+    - {x: 0.19628882, y: 0.4570315}
+    - {x: 0.19628882, y: 0.55346656}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 840493c0e60fa364cb535977d5f672d3
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_wall_depart0030
+    boundsData:
+    - {x: -2.4999998, y: 1.3281252, z: 0}
+    - {x: 5.8125005, y: 5.0625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 15.625, y: 12.34375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -5.40625, y: -1.2031249, z: 0}
+    - {x: 0.40625036, y: -1.2031249, z: 0}
+    - {x: -5.40625, y: 3.8593752, z: 0}
+    - {x: 0.40625036, y: 3.8593752, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.19726586, y: 0.5251467}
+    - {x: 0.2880857, y: 0.5251467}
+    - {x: 0.19726586, y: 0.6042478}
+    - {x: 0.2880857, y: 0.6042478}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 41791f4fb82b5884f84bf8f335f18615
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_wall_depart0031
+    boundsData:
+    - {x: -3.515625, y: 1.5, z: 0}
+    - {x: 6.25, y: 4.0625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 15.625, y: 12.34375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -6.640625, y: -0.53125006, z: 0}
+    - {x: -0.3906251, y: -0.53125006, z: 0}
+    - {x: -6.640625, y: 3.53125, z: 0}
+    - {x: -0.3906251, y: 3.53125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.42187524, y: 0.81127954}
+    - {x: 0.519531, y: 0.81127954}
+    - {x: 0.42187524, y: 0.8747556}
+    - {x: 0.519531, y: 0.8747556}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 06ce8035b7db54544a97653ce315791a
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_wall_shoot0000
+    boundsData:
+    - {x: -1.8749998, y: 0.17187476, z: 0}
+    - {x: 6.5937505, y: 7.7187495, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 15.625, y: 12.34375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -5.171875, y: -3.6875, z: 0}
+    - {x: 1.4218754, y: -3.6875, z: 0}
+    - {x: -5.171875, y: 4.0312495, z: 0}
+    - {x: 1.4218754, y: 4.0312495, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.13989282, y: 0.0004885254}
+    - {x: 0.13989282, y: 0.10351538}
+    - {x: 0.2604978, y: 0.0004885254}
+    - {x: 0.2604978, y: 0.10351538}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 52ece68888dea914fbe050600d38fd55
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_wall_shoot0001
+    boundsData:
+    - {x: 0.22656262, y: 0.859375, z: 0}
+    - {x: 3.2656252, y: 8.96875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 15.625, y: 12.34375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.40625, y: -3.625, z: 0}
+    - {x: 1.8593752, y: -3.625, z: 0}
+    - {x: -1.40625, y: 5.34375, z: 0}
+    - {x: 1.8593752, y: 5.34375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.8176272, y: 0.14306664}
+    - {x: 0.8686521, y: 0.14306664}
+    - {x: 0.8176272, y: 0.2832029}
+    - {x: 0.8686521, y: 0.2832029}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 7d62d745d1fdd2743b2c9e83e5546106
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_wall_shoot0002
+    boundsData:
+    - {x: 0.6875, y: 0.984375, z: 0}
+    - {x: 2.9375005, y: 9.125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 15.625, y: 12.34375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.7812502, y: -3.578125, z: 0}
+    - {x: 2.1562502, y: -3.578125, z: 0}
+    - {x: -0.7812502, y: 5.546875, z: 0}
+    - {x: 2.1562502, y: 5.546875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.14648461, y: 0.5544436}
+    - {x: 0.19238257, y: 0.5544436}
+    - {x: 0.14648461, y: 0.69702125}
+    - {x: 0.19238257, y: 0.69702125}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 68e4bb6061f9bd84581d5d63fecc8b14
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_wall_shoot0003
+    boundsData:
+    - {x: -2.9921875, y: -0.7031251, z: 0}
+    - {x: 8.859375, y: 5.90625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 15.625, y: 12.34375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -7.421875, y: -3.65625, z: 0}
+    - {x: 1.4375001, y: -3.65625, z: 0}
+    - {x: -7.421875, y: 2.2499998, z: 0}
+    - {x: 1.4375001, y: 2.2499998, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.0004885254, y: 0.0004885254}
+    - {x: 0.13891578, y: 0.0004885254}
+    - {x: 0.0004885254, y: 0.09277319}
+    - {x: 0.13891578, y: 0.09277319}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0.99999994, y: 0}
+    - {x: 0, y: 1}
+    - {x: 0.99999994, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 6e704f493a8ff9b44b5f2403d898698e
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_wall_shoot0004
+    boundsData:
+    - {x: -0.375, y: -0.40624988, z: 0}
+    - {x: 5.09375, y: 6.5625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 15.625, y: 12.34375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -2.921875, y: -3.6875, z: 0}
+    - {x: 2.171875, y: -3.6875, z: 0}
+    - {x: -2.921875, y: 2.8750002, z: 0}
+    - {x: 2.171875, y: 2.8750002, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.19726586, y: 0.44458032}
+    - {x: 0.19726586, y: 0.5241697}
+    - {x: 0.29980445, y: 0.44458032}
+    - {x: 0.29980445, y: 0.5241697}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: eb6d64c63b92e95438bea3ddf7192242
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_wall_shoot0005
+    boundsData:
+    - {x: -0.5000001, y: -1.28125, z: 0}
+    - {x: 3.9374998, y: 8, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 15.625, y: 12.34375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -2.46875, y: -5.28125, z: 0}
+    - {x: 1.4687498, y: -5.28125, z: 0}
+    - {x: -2.46875, y: 2.71875, z: 0}
+    - {x: 1.4687498, y: 2.71875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.20581079, y: 0.24633813}
+    - {x: 0.26733375, y: 0.24633813}
+    - {x: 0.20581079, y: 0.37133765}
+    - {x: 0.26733375, y: 0.37133765}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: a7cda0f61dcf230428b74f159dbb09bd
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_wounded0000
+    boundsData:
+    - {x: -0.35937488, y: -0.33593762, z: 0}
+    - {x: 4.65625, y: 7.453125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 9.546875, y: 12, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -2.6875, y: -4.0625, z: 0}
+    - {x: 1.9687502, y: -4.0625, z: 0}
+    - {x: -2.6875, y: 3.3906248, z: 0}
+    - {x: 1.9687502, y: 3.3906248, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.5966799, y: 0.066162355}
+    - {x: 0.5966799, y: 0.13891578}
+    - {x: 0.7131345, y: 0.066162355}
+    - {x: 0.7131345, y: 0.13891578}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 6c235c3dc97c59d43b94d676d59e3d7c
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_wounded0001
+    boundsData:
+    - {x: -0.6718749, y: -0.09375012, z: 0}
+    - {x: 5.53125, y: 7.34375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 9.546875, y: 12, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -3.4375, y: -3.765625, z: 0}
+    - {x: 2.0937502, y: -3.765625, z: 0}
+    - {x: -3.4375, y: 3.5781248, z: 0}
+    - {x: 2.0937502, y: 3.5781248, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.26147485, y: 0.0004885254}
+    - {x: 0.26147485, y: 0.08691382}
+    - {x: 0.37622046, y: 0.0004885254}
+    - {x: 0.37622046, y: 0.08691382}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: aeadac7b639cff940bf1d02b95408b2b
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_wounded0002
+    boundsData:
+    - {x: -0.09375012, y: 0.21093762, z: 0}
+    - {x: 6.53125, y: 6.390625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 9.546875, y: 12, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -3.359375, y: -2.984375, z: 0}
+    - {x: 3.1718748, y: -2.984375, z: 0}
+    - {x: -3.359375, y: 3.4062502, z: 0}
+    - {x: 3.1718748, y: 3.4062502, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.0004885254, y: 0.3002932}
+    - {x: 0.10253882, y: 0.3002932}
+    - {x: 0.0004885254, y: 0.40014625}
+    - {x: 0.10253882, y: 0.40014625}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 2122a1e0712af884aa387346f835e21f
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_wounded0003
+    boundsData:
+    - {x: -0.09374988, y: 0.21093762, z: 0}
+    - {x: 6.5, y: 6.390625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 9.546875, y: 12, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -3.34375, y: -2.984375, z: 0}
+    - {x: 3.1562502, y: -2.984375, z: 0}
+    - {x: -3.34375, y: 3.4062502, z: 0}
+    - {x: 3.1562502, y: 3.4062502, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.23730493, y: 0.10449243}
+    - {x: 0.23730493, y: 0.20605445}
+    - {x: 0.33715796, y: 0.10449243}
+    - {x: 0.33715796, y: 0.20605445}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 87c6b11f08691fb469cd9da68c184cfb
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_wounded0004
+    boundsData:
+    - {x: -0.09375012, y: 0.21875012, z: 0}
+    - {x: 6.53125, y: 6.375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 9.546875, y: 12, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -3.359375, y: -2.96875, z: 0}
+    - {x: 3.1718748, y: -2.96875, z: 0}
+    - {x: -3.359375, y: 3.4062502, z: 0}
+    - {x: 3.1718748, y: 3.4062502, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.13671899, y: 0.10449243}
+    - {x: 0.13671899, y: 0.20654273}
+    - {x: 0.23632789, y: 0.10449243}
+    - {x: 0.23632789, y: 0.20654273}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 9d3ac2a2c5bca04478b6bfc5090c28a6
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_wounded0005
+    boundsData:
+    - {x: -0.15625012, y: -0.3046875, z: 0}
+    - {x: 2.8749998, y: 8.015625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 9.546875, y: 12, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.59375, y: -4.3125, z: 0}
+    - {x: 1.2812498, y: -4.3125, z: 0}
+    - {x: -1.59375, y: 3.703125, z: 0}
+    - {x: 1.2812498, y: 3.703125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.5705569, y: 0.5417483}
+    - {x: 0.6154783, y: 0.5417483}
+    - {x: 0.5705569, y: 0.66699195}
+    - {x: 0.6154783, y: 0.66699195}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: c95b5445315c44e49b6ddeac1cac6558
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_wounded0006
+    boundsData:
+    - {x: -0.07031244, y: 0.796875, z: 0}
+    - {x: 2.421875, y: 8.40625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 9.546875, y: 12, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.28125, y: -3.40625, z: 0}
+    - {x: 1.1406251, y: -3.40625, z: 0}
+    - {x: -1.28125, y: 5, z: 0}
+    - {x: 1.1406251, y: 5, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.13671899, y: 0.20751977}
+    - {x: 0.13671899, y: 0.24536109}
+    - {x: 0.26806617, y: 0.20751977}
+    - {x: 0.26806617, y: 0.24536109}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 902669f172dd5c84fab07fa2256631db
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_wounded0007
+    boundsData:
+    - {x: 0.21093732, y: 1.6015625, z: 0}
+    - {x: 1.2343748, y: 6.828125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 9.546875, y: 12, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.40625006, y: -1.8124999, z: 0}
+    - {x: 0.8281247, y: -1.8124999, z: 0}
+    - {x: -0.40625006, y: 5.015625, z: 0}
+    - {x: 0.8281247, y: 5.015625, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.55419946, y: 0.29077172}
+    - {x: 0.5734861, y: 0.29077172}
+    - {x: 0.55419946, y: 0.3974607}
+    - {x: 0.5734861, y: 0.3974607}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: faca010f54c27d341afd78e26de0f838
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_wounded0008
+    boundsData:
+    - {x: 0.94531244, y: 0.6328125, z: 0}
+    - {x: 4.578125, y: 5.390625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 8.84375, y: 6.65625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.3437501, y: -2.0625, z: 0}
+    - {x: 3.234375, y: -2.0625, z: 0}
+    - {x: -1.3437501, y: 3.328125, z: 0}
+    - {x: 3.234375, y: 3.328125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.79150414, y: 0.9187014}
+    - {x: 0.79150414, y: 0.99023414}
+    - {x: 0.8757322, y: 0.9187014}
+    - {x: 0.8757322, y: 0.99023414}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 142d7a68eee6db94080de3dc9fcec1a5
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mantis Lords_wounded0009
+    boundsData:
+    - {x: 1.6328125, y: 0.95312494, z: 0}
+    - {x: 5.484375, y: 4.5, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 8.84375, y: 6.65625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.109375, y: -1.2968751, z: 0}
+    - {x: 4.375, y: -1.2968751, z: 0}
+    - {x: -1.109375, y: 3.203125, z: 0}
+    - {x: 4.375, y: 3.203125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.6115725, y: 0.7961428}
+    - {x: 0.6972654, y: 0.7961428}
+    - {x: 0.6115725, y: 0.86645484}
+    - {x: 0.6972654, y: 0.86645484}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+    materialId: 0
+    sourceTextureGUID: 59595f9f45c03e14fafb97976d7af602
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  premultipliedAlpha: 0
+  material: {fileID: 0}
+  materials:
+  - {fileID: 2100000, guid: 8e5d3e8c39e597e49951cc5ef28ab45b, type: 2}
+  textures:
+  - {fileID: 2800000, guid: 94e776a24f7557d419e322bbe9bc1cb2, type: 3}
+  pngTextures: []
+  materialPngTextureId: 00000000
+  textureFilterMode: 1
+  textureMipMaps: 0
+  allowMultipleAtlases: 0
+  spriteCollectionGUID: 39ab52c9c80bd7a4faef8263893ee0aa
+  spriteCollectionName: MantisLordSpriteCollection
+  assetName: 
+  loadable: 0
+  invOrthoSize: 2
+  halfTargetHeight: 32
+  buildKey: 178239874
+  dataGuid: c62d255bf6938e64295c52464c30048e
+  managedSpriteCollection: 0
+  hasPlatformData: 0
+  spriteCollectionPlatforms: []
+  spriteCollectionPlatformGUIDs: []

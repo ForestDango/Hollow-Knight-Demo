@@ -54,7 +54,7 @@ public class LiftPlatform : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-	if(state == 0 && collision.collider.gameObject.layer != LayerMask.NameToLayer("Item") && collision.gameObject.layer != LayerMask.NameToLayer("Particle") && collision.GetSafeContact().Normal.y < 0.1f)
+	if(state == 0 && collision.collider.gameObject.layer != LayerMask.NameToLayer("Item") && collision.gameObject.layer != LayerMask.NameToLayer("Particle") &&  collision.gameObject.layer != LayerMask.NameToLayer("Enemies") && collision.GetSafeContact().Normal.y < 0.1f)
 	{
 	    source.pitch = Random.Range(0.85f, 1.15f);
 	    source.Play();

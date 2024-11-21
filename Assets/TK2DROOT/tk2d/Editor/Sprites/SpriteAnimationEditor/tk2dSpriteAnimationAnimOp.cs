@@ -349,7 +349,7 @@ namespace tk2dEditor.SpriteAnimationEditor
 
 		// Finds a sprite with the name and id
 		// matches "baseName" [ 0..9 ]* as id
-		// todo rewrite with regex
+		// rewrite with regex
 		int GetFrameIndex(tk2dSpriteDefinition def, string baseName)
 		{
 			if (System.String.Compare(baseName, 0, def.name, 0, baseName.Length, true) == 0)

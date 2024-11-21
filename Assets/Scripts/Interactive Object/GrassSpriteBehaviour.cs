@@ -92,8 +92,8 @@ public class GrassSpriteBehaviour : MonoBehaviour
 		{
 		    int num = (int)Mathf.Sign(collision.transform.position.x - transform.position.x);
 		    Vector3 position = (collision.transform.position + transform.position) / 2f;
-		    //TODO:Object Pool
-		    GameObject gameObject = Instantiate(cutEffectPrefab, position, Quaternion.identity);
+		    GameObject gameObject = cutEffectPrefab.Spawn(position);
+		    //GameObject gameObject = Instantiate(cutEffectPrefab, position, Quaternion.identity);
 		    Vector3 localScale = gameObject.transform.localScale;
 		    localScale.x = Mathf.Abs(localScale.x) * -num;
 		    gameObject.transform.localScale = localScale;

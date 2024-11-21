@@ -3,5 +3,5 @@ using UnityEngine;
 
 public interface IHitEffectReciever
 {
-    void ReceiveHitEffect(float attackDirection);
+    void RecieveHitEffect(float attackDirection);
 }

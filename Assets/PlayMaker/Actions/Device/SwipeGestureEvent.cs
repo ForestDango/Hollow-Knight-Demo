@@ -17,7 +17,6 @@ using UnityEngine.InputSystem;
 
 namespace HutongGames.PlayMaker.Actions
 {
-	// TODO: fairly basic right now
 	// should have more options and be more robust, e.g., other fingers.
 	
 	[ActionCategory(ActionCategory.Device)]
@@ -36,7 +35,6 @@ namespace HutongGames.PlayMaker.Actions
 		[Tooltip("Event to send when swipe down detected.")]
 		public FsmEvent swipeDownEvent;
 		
-		// TODO
 /*		[UIHint(UIHint.Variable)]
 		[Tooltip("Store the speed of the swipe.")]
 		public FsmFloat getSpeed;

@@ -166,7 +166,7 @@ namespace tk2dRuntime
 			Vector3 boundsMin = new Vector3(b0.x, b1.y, 0);
 			Vector3 boundsMax = new Vector3(b1.x, b0.y, 0);
 
-			// todo - calc trimmed bounds properly
+			// - calc trimmed bounds properly
 			def.boundsData = new Vector3[2] {
 				(boundsMax + boundsMin) / 2.0f,
 				(boundsMax - boundsMin)

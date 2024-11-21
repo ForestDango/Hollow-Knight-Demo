@@ -1,0 +1,1294 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6488587240837134238
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2329139392074611848}
+  - component: {fileID: 6902397428228592184}
+  m_Layer: 0
+  m_Name: MosquitoSpriteCollection
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2329139392074611848
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6488587240837134238}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6902397428228592184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6488587240837134238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d546f34a90531a14eaba82a43b05b86b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 3
+  materialIdsValid: 1
+  needMaterialInstance: 0
+  spriteDefinitions:
+  - name: Mosquito_attack0000
+    boundsData:
+    - {x: 0.27343756, y: -0.00781247, z: 0}
+    - {x: 1.8593751, y: 1.734375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 3.4375, y: 2.421875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.65625, y: -0.875, z: 0}
+    - {x: 1.2031251, y: -0.875, z: 0}
+    - {x: -0.65625, y: 0.85937506, z: 0}
+    - {x: 1.2031251, y: 0.85937506, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.003908203, y: 0.39355567}
+    - {x: 0.003908203, y: 0.5097647}
+    - {x: 0.22070117, y: 0.39355567}
+    - {x: 0.22070117, y: 0.5097647}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 6c8d12738a8bb8f47bfd3aed0e172030, type: 2}
+    materialId: 0
+    sourceTextureGUID: cd26587590f036245ba920320a1c5292
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mosquito_attack0001
+    boundsData:
+    - {x: 0.25781247, y: 0.0390625, z: 0}
+    - {x: 1.734375, y: 2.265625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 3.4375, y: 2.421875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.60937506, y: -1.09375, z: 0}
+    - {x: 1.125, y: -1.09375, z: 0}
+    - {x: -0.60937506, y: 1.171875, z: 0}
+    - {x: 1.125, y: 1.171875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.26953322, y: 0.12011816}
+    - {x: 0.48632616, y: 0.12011816}
+    - {x: 0.26953322, y: 0.26171777}
+    - {x: 0.48632616, y: 0.26171777}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 6c8d12738a8bb8f47bfd3aed0e172030, type: 2}
+    materialId: 0
+    sourceTextureGUID: a127981e9200ec64480cd7110b7f06cb
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mosquito_attack0002
+    boundsData:
+    - {x: 0.07031241, y: 0.171875, z: 0}
+    - {x: 1.765625, y: 2.0625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 3.4375, y: 2.421875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.81250006, y: -0.859375, z: 0}
+    - {x: 0.9531249, y: -0.859375, z: 0}
+    - {x: -0.81250006, y: 1.203125, z: 0}
+    - {x: 0.9531249, y: 1.203125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.4941426, y: 0.23242286}
+    - {x: 0.4941426, y: 0.34277245}
+    - {x: 0.75195116, y: 0.23242286}
+    - {x: 0.75195116, y: 0.34277245}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 6c8d12738a8bb8f47bfd3aed0e172030, type: 2}
+    materialId: 0
+    sourceTextureGUID: a53e78407e21a01479f557ae359d08aa
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mosquito_attack0003
+    boundsData:
+    - {x: -0.1875, y: 0.1953125, z: 0}
+    - {x: 2.0625, y: 2.015625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 3.4375, y: 2.421875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.21875, y: -0.8125, z: 0}
+    - {x: 0.84375, y: -0.8125, z: 0}
+    - {x: -1.21875, y: 1.203125, z: 0}
+    - {x: 0.84375, y: 1.203125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.003908203, y: 0.0019541015}
+    - {x: 0.26171678, y: 0.0019541015}
+    - {x: 0.003908203, y: 0.1279287}
+    - {x: 0.26171678, y: 0.1279287}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 6c8d12738a8bb8f47bfd3aed0e172030, type: 2}
+    materialId: 0
+    sourceTextureGUID: bfa29f38bac369d428009310cdeca005
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mosquito_attack0004
+    boundsData:
+    - {x: -0.1015625, y: 0.2265625, z: 0}
+    - {x: 1.859375, y: 1.921875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 3.4375, y: 2.421875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.03125, y: -0.734375, z: 0}
+    - {x: 0.828125, y: -0.734375, z: 0}
+    - {x: -1.03125, y: 1.1875, z: 0}
+    - {x: 0.828125, y: 1.1875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.23633008, y: 0.26562598}
+    - {x: 0.23633008, y: 0.38183495}
+    - {x: 0.47656053, y: 0.26562598}
+    - {x: 0.47656053, y: 0.38183495}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 6c8d12738a8bb8f47bfd3aed0e172030, type: 2}
+    materialId: 0
+    sourceTextureGUID: e63db27594145c34ebb014f34c894117
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mosquito_attack0005
+    boundsData:
+    - {x: -0.00781247, y: 0.2421875, z: 0}
+    - {x: 1.640625, y: 1.828125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 3.4375, y: 2.421875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.828125, y: -0.671875, z: 0}
+    - {x: 0.81250006, y: -0.671875, z: 0}
+    - {x: -0.828125, y: 1.15625, z: 0}
+    - {x: 0.81250006, y: 1.15625, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.003908203, y: 0.5136728}
+    - {x: 0.20898242, y: 0.5136728}
+    - {x: 0.003908203, y: 0.62792873}
+    - {x: 0.20898242, y: 0.62792873}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 6c8d12738a8bb8f47bfd3aed0e172030, type: 2}
+    materialId: 0
+    sourceTextureGUID: 6a9f2ea2d9ea9f74b914f94f02883fad
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mosquito_attack0006
+    boundsData:
+    - {x: 0.015625, y: 0.062500045, z: 0}
+    - {x: 3.3125, y: 0.9375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 3.4375, y: 2.421875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.640625, y: -0.40624997, z: 0}
+    - {x: 1.671875, y: -0.40624997, z: 0}
+    - {x: -1.640625, y: 0.53125006, z: 0}
+    - {x: 1.671875, y: 0.53125006, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.8476582, y: 0.0019541015}
+    - {x: 0.8476582, y: 0.20898339}
+    - {x: 0.9648418, y: 0.0019541015}
+    - {x: 0.9648418, y: 0.20898339}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 6c8d12738a8bb8f47bfd3aed0e172030, type: 2}
+    materialId: 0
+    sourceTextureGUID: 8dee784805790e14c9d1b13558bc7c6e
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mosquito_attack0007
+    boundsData:
+    - {x: 0.046875, y: 0.101562515, z: 0}
+    - {x: 3.28125, y: 0.9218751, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 3.4375, y: 2.421875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.59375, y: -0.35937503, z: 0}
+    - {x: 1.6875, y: -0.35937503, z: 0}
+    - {x: -1.59375, y: 0.56250006, z: 0}
+    - {x: 1.6875, y: 0.56250006, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.83593947, y: 0.21289161}
+    - {x: 0.83593947, y: 0.41796777}
+    - {x: 0.9511699, y: 0.21289161}
+    - {x: 0.9511699, y: 0.41796777}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 6c8d12738a8bb8f47bfd3aed0e172030, type: 2}
+    materialId: 0
+    sourceTextureGUID: db92f2cc7138bfe4186736180544bd6b
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mosquito_attack0008
+    boundsData:
+    - {x: 0.0390625, y: 0.0625, z: 0}
+    - {x: 3.234375, y: 0.81249994, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 3.4375, y: 2.421875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.578125, y: -0.34374997, z: 0}
+    - {x: 1.65625, y: -0.34374997, z: 0}
+    - {x: -1.578125, y: 0.46874997, z: 0}
+    - {x: 1.65625, y: 0.46874997, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.6582051, y: 0.52050877}
+    - {x: 0.6582051, y: 0.7226553}
+    - {x: 0.75976366, y: 0.52050877}
+    - {x: 0.75976366, y: 0.7226553}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 6c8d12738a8bb8f47bfd3aed0e172030, type: 2}
+    materialId: 0
+    sourceTextureGUID: 33e2071f72b3e9646a2f90a8babbee93
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mosquito_fly0000
+    boundsData:
+    - {x: 0.25781244, y: 0.015625, z: 0}
+    - {x: 1.7968749, y: 2.1875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 3.4375, y: 2.421875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.640625, y: -1.078125, z: 0}
+    - {x: 1.1562499, y: -1.078125, z: 0}
+    - {x: -0.640625, y: 1.109375, z: 0}
+    - {x: 1.1562499, y: 1.109375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.55468947, y: 0.11621191}
+    - {x: 0.55468947, y: 0.22851464}
+    - {x: 0.82812303, y: 0.11621191}
+    - {x: 0.82812303, y: 0.22851464}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 6c8d12738a8bb8f47bfd3aed0e172030, type: 2}
+    materialId: 0
+    sourceTextureGUID: 9e04eff757086294ebf019d04e36c09c
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mosquito_fly0001
+    boundsData:
+    - {x: 0.25781244, y: -0.015625, z: 0}
+    - {x: 1.8281249, y: 2.21875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 3.4375, y: 2.421875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.65625, y: -1.125, z: 0}
+    - {x: 1.1718749, y: -1.125, z: 0}
+    - {x: -0.65625, y: 1.09375, z: 0}
+    - {x: 1.1718749, y: 1.09375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.26953322, y: 0.0019541015}
+    - {x: 0.26953322, y: 0.11620996}
+    - {x: 0.54687303, y: 0.0019541015}
+    - {x: 0.54687303, y: 0.11620996}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 6c8d12738a8bb8f47bfd3aed0e172030, type: 2}
+    materialId: 0
+    sourceTextureGUID: f4d9af501ce9721449787aafa6eff2f4
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mosquito_fly0002
+    boundsData:
+    - {x: 0.2734374, y: 0.015625, z: 0}
+    - {x: 1.765625, y: 2.28125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 3.4375, y: 2.421875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.60937506, y: -1.125, z: 0}
+    - {x: 1.1562499, y: -1.125, z: 0}
+    - {x: -0.60937506, y: 1.15625, z: 0}
+    - {x: 1.1562499, y: 1.15625, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.55468947, y: 0.0019541015}
+    - {x: 0.55468947, y: 0.11230371}
+    - {x: 0.8398418, y: 0.0019541015}
+    - {x: 0.8398418, y: 0.11230371}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 6c8d12738a8bb8f47bfd3aed0e172030, type: 2}
+    materialId: 0
+    sourceTextureGUID: 83b545cfcebdffc42a3be4770f1e1d9f
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mosquito_fly0003
+    boundsData:
+    - {x: 0.3828125, y: 0.00781253, z: 0}
+    - {x: 1.828125, y: 1.640625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 3.4375, y: 2.421875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.53125, y: -0.8125, z: 0}
+    - {x: 1.296875, y: -0.8125, z: 0}
+    - {x: -0.53125, y: 0.82812506, z: 0}
+    - {x: 1.296875, y: 0.82812506, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.22851758, y: 0.5009775}
+    - {x: 0.45702928, y: 0.5009775}
+    - {x: 0.22851758, y: 0.6035147}
+    - {x: 0.45702928, y: 0.6035147}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 6c8d12738a8bb8f47bfd3aed0e172030, type: 2}
+    materialId: 0
+    sourceTextureGUID: 55f47777abf76d9498916c2c8cf7403d
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mosquito_fly0004
+    boundsData:
+    - {x: 0.3515625, y: 0.1171875, z: 0}
+    - {x: 1.796875, y: 2.171875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 3.4375, y: 2.421875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.546875, y: -0.96875, z: 0}
+    - {x: 1.25, y: -0.96875, z: 0}
+    - {x: -0.546875, y: 1.203125, z: 0}
+    - {x: 1.25, y: 1.203125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.003908203, y: 0.13183692}
+    - {x: 0.22851367, y: 0.13183692}
+    - {x: 0.003908203, y: 0.26757714}
+    - {x: 0.22851367, y: 0.26757714}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 6c8d12738a8bb8f47bfd3aed0e172030, type: 2}
+    materialId: 0
+    sourceTextureGUID: 2d118218aa747634490d50e77d8c95c5
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mosquito_fly0005
+    boundsData:
+    - {x: 0.28906256, y: 0.09375, z: 0}
+    - {x: 1.8281251, y: 2.21875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 3.4375, y: 2.421875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.625, y: -1.015625, z: 0}
+    - {x: 1.2031251, y: -1.015625, z: 0}
+    - {x: -0.625, y: 1.203125, z: 0}
+    - {x: 1.2031251, y: 1.203125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.26953322, y: 0.0019541015}
+    - {x: 0.26953322, y: 0.11620996}
+    - {x: 0.54687303, y: 0.0019541015}
+    - {x: 0.54687303, y: 0.11620996}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 6c8d12738a8bb8f47bfd3aed0e172030, type: 2}
+    materialId: 0
+    sourceTextureGUID: 85cf7fad88b25bb49ae15c4503374b68
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mosquito_fly0006
+    boundsData:
+    - {x: 0.16406247, y: 0.0625, z: 0}
+    - {x: 1.765625, y: 2.28125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 3.4375, y: 2.421875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.71875006, y: -1.078125, z: 0}
+    - {x: 1.046875, y: -1.078125, z: 0}
+    - {x: -0.71875006, y: 1.203125, z: 0}
+    - {x: 1.046875, y: 1.203125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.55468947, y: 0.0019541015}
+    - {x: 0.55468947, y: 0.11230371}
+    - {x: 0.8398418, y: 0.0019541015}
+    - {x: 0.8398418, y: 0.11230371}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 6c8d12738a8bb8f47bfd3aed0e172030, type: 2}
+    materialId: 0
+    sourceTextureGUID: 941a86bc05d6a84439c7c6d93e1a061a
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mosquito_fly0007
+    boundsData:
+    - {x: 0.28906256, y: -0.0546875, z: 0}
+    - {x: 1.8281251, y: 1.640625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 3.4375, y: 2.421875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.625, y: -0.875, z: 0}
+    - {x: 1.2031251, y: -0.875, z: 0}
+    - {x: -0.625, y: 0.765625, z: 0}
+    - {x: 1.2031251, y: 0.765625, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.22851758, y: 0.5009775}
+    - {x: 0.45702928, y: 0.5009775}
+    - {x: 0.22851758, y: 0.6035147}
+    - {x: 0.45702928, y: 0.6035147}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 6c8d12738a8bb8f47bfd3aed0e172030, type: 2}
+    materialId: 0
+    sourceTextureGUID: d3ef36760e521b449be25fdc603f1e92
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mosquito_startle0000
+    boundsData:
+    - {x: 0.17187497, y: 0.02343747, z: 0}
+    - {x: 1.75, y: 1.890625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 3.4375, y: 2.421875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.70312506, y: -0.921875, z: 0}
+    - {x: 1.046875, y: -0.921875, z: 0}
+    - {x: -0.70312506, y: 0.96874994, z: 0}
+    - {x: 1.046875, y: 0.96874994, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.48437697, y: 0.34668067}
+    - {x: 0.48437697, y: 0.4560537}
+    - {x: 0.72070116, y: 0.34668067}
+    - {x: 0.72070116, y: 0.4560537}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 6c8d12738a8bb8f47bfd3aed0e172030, type: 2}
+    materialId: 0
+    sourceTextureGUID: 167d67358830a704597176a1256505e1
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mosquito_startle0001
+    boundsData:
+    - {x: 0.109375, y: 0.24218753, z: 0}
+    - {x: 2.03125, y: 1.234375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 3.4375, y: 2.421875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.90625, y: -0.375, z: 0}
+    - {x: 1.125, y: -0.375, z: 0}
+    - {x: -0.90625, y: 0.85937506, z: 0}
+    - {x: 1.125, y: 0.85937506, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.46484572, y: 0.59668064}
+    - {x: 0.46484572, y: 0.72363186}
+    - {x: 0.61913866, y: 0.59668064}
+    - {x: 0.61913866, y: 0.72363186}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 6c8d12738a8bb8f47bfd3aed0e172030, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3d581ac117e685b47be5a215c83df770
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mosquito_startle0002
+    boundsData:
+    - {x: 0, y: 0.23437499, z: 0}
+    - {x: 2.125, y: 1.4374999, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 3.4375, y: 2.421875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.0625, y: -0.48437497, z: 0}
+    - {x: 1.0625, y: -0.48437497, z: 0}
+    - {x: -1.0625, y: 0.95312494, z: 0}
+    - {x: 1.0625, y: 0.95312494, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.4707051, y: 0.45996192}
+    - {x: 0.4707051, y: 0.5927725}
+    - {x: 0.65038866, y: 0.45996192}
+    - {x: 0.65038866, y: 0.5927725}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 6c8d12738a8bb8f47bfd3aed0e172030, type: 2}
+    materialId: 0
+    sourceTextureGUID: af3bab7159ef28a44b89fec48e47e327
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mosquito_startle0003
+    boundsData:
+    - {x: 0.18749997, y: 0.28125, z: 0}
+    - {x: 1.78125, y: 1.8125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 3.4375, y: 2.421875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.70312506, y: -0.625, z: 0}
+    - {x: 1.078125, y: -0.625, z: 0}
+    - {x: -0.70312506, y: 1.1875, z: 0}
+    - {x: 1.078125, y: 1.1875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.23633008, y: 0.38574317}
+    - {x: 0.23633008, y: 0.49706933}
+    - {x: 0.46288866, y: 0.38574317}
+    - {x: 0.46288866, y: 0.49706933}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 6c8d12738a8bb8f47bfd3aed0e172030, type: 2}
+    materialId: 0
+    sourceTextureGUID: 411fa46ad7a77704382d3a64a44ebd87
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mosquito_stun0000
+    boundsData:
+    - {x: 0.30468753, y: 0.0703125, z: 0}
+    - {x: 1.7968752, y: 1.890625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 3.4375, y: 2.421875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.59375006, y: -0.875, z: 0}
+    - {x: 1.2031251, y: -0.875, z: 0}
+    - {x: -0.59375006, y: 1.015625, z: 0}
+    - {x: 1.2031251, y: 1.015625, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.003908203, y: 0.27148536}
+    - {x: 0.22851367, y: 0.27148536}
+    - {x: 0.003908203, y: 0.38964745}
+    - {x: 0.22851367, y: 0.38964745}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 6c8d12738a8bb8f47bfd3aed0e172030, type: 2}
+    materialId: 0
+    sourceTextureGUID: 56f945e188044e949ac73a3a64cc0912
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mosquito_stun0001
+    boundsData:
+    - {x: -0.01562503, y: 0.00781253, z: 0}
+    - {x: 1.46875, y: 1.640625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 3.4375, y: 2.421875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.75, y: -0.8125, z: 0}
+    - {x: 0.71874994, y: -0.8125, z: 0}
+    - {x: -0.75, y: 0.82812506, z: 0}
+    - {x: 0.71874994, y: 0.82812506, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.21679883, y: 0.6074228}
+    - {x: 0.21679883, y: 0.6992178}
+    - {x: 0.42187303, y: 0.6074228}
+    - {x: 0.42187303, y: 0.6992178}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 6c8d12738a8bb8f47bfd3aed0e172030, type: 2}
+    materialId: 0
+    sourceTextureGUID: d705c06cab5c1ed40b4b5ae350219368
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mosquito_stun0002
+    boundsData:
+    - {x: 0.05468744, y: -0.015625, z: 0}
+    - {x: 1.734375, y: 1.1875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 3.4375, y: 2.421875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.81250006, y: -0.609375, z: 0}
+    - {x: 0.92187494, y: -0.609375, z: 0}
+    - {x: -0.81250006, y: 0.578125, z: 0}
+    - {x: 0.92187494, y: 0.578125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.1445332, y: 0.70312595}
+    - {x: 0.36132616, y: 0.70312595}
+    - {x: 0.1445332, y: 0.7773428}
+    - {x: 0.36132616, y: 0.7773428}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 6c8d12738a8bb8f47bfd3aed0e172030, type: 2}
+    materialId: 0
+    sourceTextureGUID: 53f104b2fbf2e0740ae1e598ddf38490
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mosquito_turn000
+    boundsData:
+    - {x: -0.21093744, y: 0.0546875, z: 0}
+    - {x: 1.5156251, y: 2.046875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 3.4375, y: 2.421875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.96875, y: -0.96875, z: 0}
+    - {x: 0.5468751, y: -0.96875, z: 0}
+    - {x: -0.96875, y: 1.078125, z: 0}
+    - {x: 0.5468751, y: 1.078125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.7285176, y: 0.42187598}
+    - {x: 0.7285176, y: 0.5166006}
+    - {x: 0.98437303, y: 0.42187598}
+    - {x: 0.98437303, y: 0.5166006}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 6c8d12738a8bb8f47bfd3aed0e172030, type: 2}
+    materialId: 0
+    sourceTextureGUID: da6a1d1d6ff1276478369ba127793e03
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mosquito_turn001
+    boundsData:
+    - {x: -0.109375, y: 0.07812494, z: 0}
+    - {x: 1.0625, y: 2.09375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -0.0078125, z: 0}
+    - {x: 3.4375, y: 2.421875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.640625, y: -0.96875, z: 0}
+    - {x: 0.421875, y: -0.96875, z: 0}
+    - {x: -0.640625, y: 1.1249999, z: 0}
+    - {x: 0.421875, y: 1.1249999, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.003908203, y: 0.6318369}
+    - {x: 0.1367168, y: 0.6318369}
+    - {x: 0.003908203, y: 0.76269436}
+    - {x: 0.1367168, y: 0.76269436}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 6c8d12738a8bb8f47bfd3aed0e172030, type: 2}
+    materialId: 0
+    sourceTextureGUID: 2daa69d12bf544744ade69e1f9c43deb
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  premultipliedAlpha: 0
+  material: {fileID: 0}
+  materials:
+  - {fileID: 2100000, guid: 6c8d12738a8bb8f47bfd3aed0e172030, type: 2}
+  textures:
+  - {fileID: 2800000, guid: 216ebd7d6730df0479867c050b3b9cd1, type: 3}
+  pngTextures: []
+  materialPngTextureId: 00000000
+  textureFilterMode: 1
+  textureMipMaps: 0
+  allowMultipleAtlases: 0
+  spriteCollectionGUID: 374608a47d901ee42ab77246f9377139
+  spriteCollectionName: MosquitoSpriteCollection
+  assetName: 
+  loadable: 0
+  invOrthoSize: 2
+  halfTargetHeight: 32
+  buildKey: 2115680739
+  dataGuid: 27c0fa5ab1a43e04c8e98f36020c9702
+  managedSpriteCollection: 0
+  hasPlatformData: 0
+  spriteCollectionPlatforms: []
+  spriteCollectionPlatformGUIDs: []

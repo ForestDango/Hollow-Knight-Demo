@@ -49,8 +49,7 @@ public class WaveEffectControl : MonoBehaviour
 	{
 	    if (!doNotRecycle)
 	    {
-		//TODO:
-		Destroy(gameObject);
+		gameObject.Recycle();
 		return;
 	    }
 	    gameObject.SetActive(false);

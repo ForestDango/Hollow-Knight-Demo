@@ -4,7 +4,6 @@ using UnityEngine;
 
 namespace HutongGames.PlayMaker.Actions
 {
-
     [ActionCategory(ActionCategory.ScriptControl)]
     public class CallMethodProper : FsmStateAction
     {

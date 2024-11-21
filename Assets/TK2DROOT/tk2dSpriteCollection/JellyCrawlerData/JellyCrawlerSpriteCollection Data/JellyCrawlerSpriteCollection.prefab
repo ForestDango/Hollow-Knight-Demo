@@ -1,0 +1,918 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &767245037990751269
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6489747655267681058}
+  - component: {fileID: 3566110365267956152}
+  m_Layer: 0
+  m_Name: JellyCrawlerSpriteCollection
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6489747655267681058
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 767245037990751269}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3566110365267956152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 767245037990751269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d546f34a90531a14eaba82a43b05b86b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 3
+  materialIdsValid: 1
+  needMaterialInstance: 0
+  spriteDefinitions:
+  - name: Jelly Crawler Cln_idle0000
+    boundsData:
+    - {x: -0.08593747, y: -0.17968753, z: 0}
+    - {x: 2.046875, y: 1.921875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.140625, y: 2.921875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.109375, y: -1.140625, z: 0}
+    - {x: 0.93750006, y: -1.140625, z: 0}
+    - {x: -1.109375, y: 0.78124994, z: 0}
+    - {x: 0.93750006, y: 0.78124994, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.003908203, y: 0.50000197}
+    - {x: 0.25976366, y: 0.50000197}
+    - {x: 0.003908203, y: 0.7402324}
+    - {x: 0.25976366, y: 0.7402324}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 0c614dddacffe23419bc8a10ce68c0ee, type: 2}
+    materialId: 0
+    sourceTextureGUID: d3c59386cf68b7b4db33ee513e1c72d5
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Jelly Crawler Cln_idle0001
+    boundsData:
+    - {x: 0.04687494, y: 0.0546875, z: 0}
+    - {x: 2.0625, y: 2.203125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.140625, y: 2.921875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.984375, y: -1.046875, z: 0}
+    - {x: 1.0781249, y: -1.046875, z: 0}
+    - {x: -0.984375, y: 1.15625, z: 0}
+    - {x: 1.0781249, y: 1.15625, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.003908203, y: 0.23437695}
+    - {x: 0.003908203, y: 0.49218553}
+    - {x: 0.2792949, y: 0.23437695}
+    - {x: 0.2792949, y: 0.49218553}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 0c614dddacffe23419bc8a10ce68c0ee, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3961932e6ae99584e891c04197a3df4d
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Jelly Crawler Cln_idle0002
+    boundsData:
+    - {x: -0.06249997, y: 0.0234375, z: 0}
+    - {x: 1.90625, y: 2.078125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.140625, y: 2.921875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.015625, y: -1.015625, z: 0}
+    - {x: 0.89062506, y: -1.015625, z: 0}
+    - {x: -1.015625, y: 1.0625, z: 0}
+    - {x: 0.89062506, y: 1.0625, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.28711134, y: 0.2597676}
+    - {x: 0.28711134, y: 0.4980449}
+    - {x: 0.54687303, y: 0.2597676}
+    - {x: 0.54687303, y: 0.4980449}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 0c614dddacffe23419bc8a10ce68c0ee, type: 2}
+    materialId: 0
+    sourceTextureGUID: 65379b38c890de14caf1b24618a2cd2e
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Jelly Crawler Cln_idle0003
+    boundsData:
+    - {x: -0.01562497, y: -0.125, z: 0}
+    - {x: 1.3125, y: 1.75, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.140625, y: 2.921875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.671875, y: -1, z: 0}
+    - {x: 0.64062506, y: -1, z: 0}
+    - {x: -0.671875, y: 0.75, z: 0}
+    - {x: 0.64062506, y: 0.75, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.8066426, y: 0.71875197}
+    - {x: 0.97070116, y: 0.71875197}
+    - {x: 0.8066426, y: 0.93749803}
+    - {x: 0.97070116, y: 0.93749803}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 0c614dddacffe23419bc8a10ce68c0ee, type: 2}
+    materialId: 0
+    sourceTextureGUID: 20dfde6073f57c042acd2c41331fe07b
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Jelly Crawler Cln_idle0004
+    boundsData:
+    - {x: 0.000000029802322, y: -0.10937503, z: 0}
+    - {x: 1.28125, y: 1.78125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.140625, y: 2.921875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.640625, y: -1, z: 0}
+    - {x: 0.64062506, y: -1, z: 0}
+    - {x: -0.640625, y: 0.78124994, z: 0}
+    - {x: 0.64062506, y: 0.78124994, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.1757832, y: 0.7519551}
+    - {x: 0.33593553, y: 0.7519551}
+    - {x: 0.1757832, y: 0.9746074}
+    - {x: 0.33593553, y: 0.9746074}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 0c614dddacffe23419bc8a10ce68c0ee, type: 2}
+    materialId: 0
+    sourceTextureGUID: 0830f2c8526ebf94cb7231a17f461422
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Jelly Crawler Cln_idle0005
+    boundsData:
+    - {x: 0.1328125, y: -0.15625, z: 0}
+    - {x: 2.265625, y: 1.8125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.140625, y: 2.921875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1, y: -1.0625, z: 0}
+    - {x: 1.265625, y: -1.0625, z: 0}
+    - {x: -1, y: 0.75, z: 0}
+    - {x: 1.265625, y: 0.75, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.6289082, y: 0.2382832}
+    - {x: 0.9121074, y: 0.2382832}
+    - {x: 0.6289082, y: 0.46484178}
+    - {x: 0.9121074, y: 0.46484178}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 0c614dddacffe23419bc8a10ce68c0ee, type: 2}
+    materialId: 0
+    sourceTextureGUID: 6d2d84d138d467745ae68187aa6a3deb
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Jelly Crawler Cln_idle0006
+    boundsData:
+    - {x: 0.18749994, y: -0.18749997, z: 0}
+    - {x: 1.9062499, y: 1.90625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.140625, y: 2.921875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.765625, y: -1.140625, z: 0}
+    - {x: 1.1406249, y: -1.140625, z: 0}
+    - {x: -0.765625, y: 0.76562506, z: 0}
+    - {x: 1.1406249, y: 0.76562506, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.2675801, y: 0.50586134}
+    - {x: 0.5058574, y: 0.50586134}
+    - {x: 0.2675801, y: 0.74413866}
+    - {x: 0.5058574, y: 0.74413866}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 0c614dddacffe23419bc8a10ce68c0ee, type: 2}
+    materialId: 0
+    sourceTextureGUID: 4a5d2ed962f80bf41a03f96be1cff59e
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Jelly Crawler Cln_idle0007
+    boundsData:
+    - {x: 0.0703125, y: -0.0859375, z: 0}
+    - {x: 1.953125, y: 1.921875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.140625, y: 2.921875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.90625, y: -1.046875, z: 0}
+    - {x: 1.046875, y: -1.046875, z: 0}
+    - {x: -0.90625, y: 0.875, z: 0}
+    - {x: 1.046875, y: 0.875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.55468947, y: 0.47265822}
+    - {x: 0.79882616, y: 0.47265822}
+    - {x: 0.55468947, y: 0.71288866}
+    - {x: 0.79882616, y: 0.71288866}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 0c614dddacffe23419bc8a10ce68c0ee, type: 2}
+    materialId: 0
+    sourceTextureGUID: b279e0b2ab667f749b5f9f9598301525
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Jelly Crawler Cln_idle0008
+    boundsData:
+    - {x: -0.03125003, y: -0.14062503, z: 0}
+    - {x: 1.3125, y: 1.75, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.140625, y: 2.921875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.68750006, y: -1.015625, z: 0}
+    - {x: 0.625, y: -1.015625, z: 0}
+    - {x: -0.68750006, y: 0.73437494, z: 0}
+    - {x: 0.625, y: 0.73437494, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.003908203, y: 0.74804884}
+    - {x: 0.1679668, y: 0.74804884}
+    - {x: 0.003908203, y: 0.9667949}
+    - {x: 0.1679668, y: 0.9667949}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 0c614dddacffe23419bc8a10ce68c0ee, type: 2}
+    materialId: 0
+    sourceTextureGUID: c0f4cfe0c90573c4390861e1a99bfd1a
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Jelly Crawler Cln_idle0009
+    boundsData:
+    - {x: -0.01562497, y: -0.125, z: 0}
+    - {x: 1.3125, y: 1.75, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.140625, y: 2.921875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.671875, y: -1, z: 0}
+    - {x: 0.64062506, y: -1, z: 0}
+    - {x: -0.671875, y: 0.75, z: 0}
+    - {x: 0.64062506, y: 0.75, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.8066426, y: 0.71875197}
+    - {x: 0.97070116, y: 0.71875197}
+    - {x: 0.8066426, y: 0.93749803}
+    - {x: 0.97070116, y: 0.93749803}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 0c614dddacffe23419bc8a10ce68c0ee, type: 2}
+    materialId: 0
+    sourceTextureGUID: 9c362a1214c8a2c49ad1c3ca6e770cb7
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Jelly Crawler Cln_idle0010
+    boundsData:
+    - {x: 0.14843744, y: -0.10937503, z: 0}
+    - {x: 2.578125, y: 1.78125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.140625, y: 2.921875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.140625, y: -1, z: 0}
+    - {x: 1.4374999, y: -1, z: 0}
+    - {x: -1.140625, y: 0.78124994, z: 0}
+    - {x: 1.4374999, y: 0.78124994, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.003908203, y: 0.003908203}
+    - {x: 0.3261699, y: 0.003908203}
+    - {x: 0.003908203, y: 0.22656055}
+    - {x: 0.3261699, y: 0.22656055}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 0c614dddacffe23419bc8a10ce68c0ee, type: 2}
+    materialId: 0
+    sourceTextureGUID: dd5c22aea83ff0540a367674fb5f2822
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Jelly Crawler Cln_idle0011
+    boundsData:
+    - {x: -0.08593756, y: -0.15625, z: 0}
+    - {x: 2.328125, y: 1.8125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.140625, y: 2.921875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.25, y: -1.0625, z: 0}
+    - {x: 1.0781249, y: -1.0625, z: 0}
+    - {x: -1.25, y: 0.75, z: 0}
+    - {x: 1.0781249, y: 0.75, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.6289082, y: 0.003908203}
+    - {x: 0.9199199, y: 0.003908203}
+    - {x: 0.6289082, y: 0.2304668}
+    - {x: 0.9199199, y: 0.2304668}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 0c614dddacffe23419bc8a10ce68c0ee, type: 2}
+    materialId: 0
+    sourceTextureGUID: 63d6270999c6d6e4e8853fc66462a5bf
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Jelly Crawler Cln_idle0012
+    boundsData:
+    - {x: 0.000000029802322, y: -0.18749997, z: 0}
+    - {x: 1.28125, y: 1.90625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.140625, y: 2.921875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.640625, y: -1.140625, z: 0}
+    - {x: 0.64062506, y: -1.140625, z: 0}
+    - {x: -0.640625, y: 0.76562506, z: 0}
+    - {x: 0.64062506, y: 0.76562506, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.8066426, y: 0.47265822}
+    - {x: 0.9667949, y: 0.47265822}
+    - {x: 0.8066426, y: 0.71093553}
+    - {x: 0.9667949, y: 0.71093553}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 0c614dddacffe23419bc8a10ce68c0ee, type: 2}
+    materialId: 0
+    sourceTextureGUID: a85ff73429f1a0643bf46d615a5b2da1
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Jelly Crawler Cln_idle0013
+    boundsData:
+    - {x: -0.01562497, y: -0.171875, z: 0}
+    - {x: 1.3125, y: 1.75, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.140625, y: 2.921875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.671875, y: -1.046875, z: 0}
+    - {x: 0.64062506, y: -1.046875, z: 0}
+    - {x: -0.671875, y: 0.703125, z: 0}
+    - {x: 0.64062506, y: 0.703125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.51367384, y: 0.7207051}
+    - {x: 0.6777324, y: 0.7207051}
+    - {x: 0.51367384, y: 0.93945116}
+    - {x: 0.6777324, y: 0.93945116}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 0c614dddacffe23419bc8a10ce68c0ee, type: 2}
+    materialId: 0
+    sourceTextureGUID: 198ac5a2c81849a4aac73a7d1c389c83
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Jelly Crawler Cln_idle0014
+    boundsData:
+    - {x: -0.03125003, y: -0.14062503, z: 0}
+    - {x: 1.3125, y: 1.75, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.140625, y: 2.921875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.68750006, y: -1.015625, z: 0}
+    - {x: 0.625, y: -1.015625, z: 0}
+    - {x: -0.68750006, y: 0.73437494, z: 0}
+    - {x: 0.625, y: 0.73437494, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.003908203, y: 0.74804884}
+    - {x: 0.1679668, y: 0.74804884}
+    - {x: 0.003908203, y: 0.9667949}
+    - {x: 0.1679668, y: 0.9667949}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 0c614dddacffe23419bc8a10ce68c0ee, type: 2}
+    materialId: 0
+    sourceTextureGUID: fc0dc1ed55e13484cb5ed9e97377a3d9
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Jelly Crawler Cln_idle0015
+    boundsData:
+    - {x: -0.01562497, y: -0.125, z: 0}
+    - {x: 1.3125, y: 1.75, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.140625, y: 2.921875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.671875, y: -1, z: 0}
+    - {x: 0.64062506, y: -1, z: 0}
+    - {x: -0.671875, y: 0.75, z: 0}
+    - {x: 0.64062506, y: 0.75, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.8066426, y: 0.71875197}
+    - {x: 0.97070116, y: 0.71875197}
+    - {x: 0.8066426, y: 0.93749803}
+    - {x: 0.97070116, y: 0.93749803}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 0c614dddacffe23419bc8a10ce68c0ee, type: 2}
+    materialId: 0
+    sourceTextureGUID: 5bf841c509b4bb649a08771d9c779e1c
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Jelly Crawler Cln_idle0016
+    boundsData:
+    - {x: 0.000000029802322, y: -0.10937503, z: 0}
+    - {x: 1.28125, y: 1.78125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.140625, y: 2.921875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.640625, y: -1, z: 0}
+    - {x: 0.64062506, y: -1, z: 0}
+    - {x: -0.640625, y: 0.78124994, z: 0}
+    - {x: 0.64062506, y: 0.78124994, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.1757832, y: 0.7519551}
+    - {x: 0.33593553, y: 0.7519551}
+    - {x: 0.1757832, y: 0.9746074}
+    - {x: 0.33593553, y: 0.9746074}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 0c614dddacffe23419bc8a10ce68c0ee, type: 2}
+    materialId: 0
+    sourceTextureGUID: 403bb6dd6f928694e9f5a8e5f298bdfa
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Jelly Crawler Cln_idle0017
+    boundsData:
+    - {x: -0.02343744, y: -0.0703125, z: 0}
+    - {x: 2.296875, y: 1.984375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 3.140625, y: 2.921875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.171875, y: -1.0625, z: 0}
+    - {x: 1.1250001, y: -1.0625, z: 0}
+    - {x: -1.171875, y: 0.921875, z: 0}
+    - {x: 1.1250001, y: 0.921875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.33398634, y: 0.003908203}
+    - {x: 0.6210918, y: 0.003908203}
+    - {x: 0.33398634, y: 0.25195116}
+    - {x: 0.6210918, y: 0.25195116}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 0c614dddacffe23419bc8a10ce68c0ee, type: 2}
+    materialId: 0
+    sourceTextureGUID: d8a9e9d445820b84b8e2ff2271373755
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  premultipliedAlpha: 0
+  material: {fileID: 0}
+  materials:
+  - {fileID: 2100000, guid: 0c614dddacffe23419bc8a10ce68c0ee, type: 2}
+  textures:
+  - {fileID: 2800000, guid: caf19ea0a3c42d24f958c7f8418259b7, type: 3}
+  pngTextures: []
+  materialPngTextureId: 00000000
+  textureFilterMode: 1
+  textureMipMaps: 0
+  allowMultipleAtlases: 0
+  spriteCollectionGUID: 62dabb1ab345c8f488ca216f8359b4d8
+  spriteCollectionName: JellyCrawlerSpriteCollection
+  assetName: 
+  loadable: 0
+  invOrthoSize: 2
+  halfTargetHeight: 32
+  buildKey: 1690266925
+  dataGuid: 1f8e410402cb6574b8da1222dce59609
+  managedSpriteCollection: 0
+  hasPlatformData: 0
+  spriteCollectionPlatforms: []
+  spriteCollectionPlatformGUIDs: []

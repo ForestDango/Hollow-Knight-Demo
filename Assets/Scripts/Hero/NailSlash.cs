@@ -102,16 +102,44 @@ public class NailSlash : MonoBehaviour
 		int layer = otherCollider.gameObject.layer;
 		if(layer == 11 && (otherCollider.gameObject.GetComponent<NonBouncer>() == null || !otherCollider.gameObject.GetComponent<NonBouncer>().active))
 		{
-		    
+		    if (otherCollider.gameObject.GetComponent<BounceShroom>() != null)
+		    {
+			heroCtrl.RecoilLeftLong();
+			Bounce(otherCollider, false);
+		    }
+		    else
+		    {
+			heroCtrl.RecoilLeft();
+		    }
 		}
-		
+		if (layer == 19 && otherCollider.gameObject.GetComponent<BounceShroom>() != null)
+		{
+		    heroCtrl.RecoilLeftLong();
+		    Bounce(otherCollider, false);
+		    return;
+		}
+
 	    }
 	    else if(slashAngle == 180f)
 	    {
 		int layer2 = otherCollider.gameObject.layer;
 		if (layer2 == 11 && (otherCollider.gameObject.GetComponent<NonBouncer>() == null || !otherCollider.gameObject.GetComponent<NonBouncer>().active))
 		{
-
+		    if (otherCollider.gameObject.GetComponent<BounceShroom>() != null)
+		    {
+			heroCtrl.RecoilRightLong();
+			Bounce(otherCollider, false);
+		    }
+		    else
+		    {
+			heroCtrl.RecoilRight();
+		    }
+		}
+		if (layer2 == 19 && otherCollider.gameObject.GetComponent<BounceShroom>() != null)
+		{
+		    heroCtrl.RecoilRightLong();
+		    Bounce(otherCollider, false);
+		    return;
 		}
 	    }
 	    else if (slashAngle == 90f)
@@ -119,7 +147,21 @@ public class NailSlash : MonoBehaviour
 		int layer3 = otherCollider.gameObject.layer;
 		if (layer3 == 11 && (otherCollider.gameObject.GetComponent<NonBouncer>() == null || !otherCollider.gameObject.GetComponent<NonBouncer>().active))
 		{
-
+		    if (otherCollider.gameObject.GetComponent<BounceShroom>() != null)
+		    {
+			heroCtrl.RecoilDown();
+			Bounce(otherCollider, false);
+		    }
+		    else
+		    {
+			heroCtrl.RecoilDown();
+		    }
+		}
+		if (layer3 == 19 && otherCollider.gameObject.GetComponent<BounceShroom>() != null)
+		{
+		    heroCtrl.RecoilDown();
+		    Bounce(otherCollider, false);
+		    return;
 		}
 	    }
 	    else if(slashAngle == 270f)
@@ -127,7 +169,18 @@ public class NailSlash : MonoBehaviour
 		PhysLayers layer4 = (PhysLayers)otherCollider.gameObject.layer;
 		if((layer4 == PhysLayers.ENEMIES || layer4 == PhysLayers.INTERACTIVE_OBJECT || layer4 == PhysLayers.HERO_ATTACK) && (otherCollider.gameObject.GetComponent<NonBouncer>() == null || !otherCollider.gameObject.GetComponent<NonBouncer>().active))
 		{
-
+		    if (otherCollider.gameObject.GetComponent<BigBouncer>() != null)
+		    {
+			heroCtrl.BounceHigh();
+			return;
+		    }
+		    if (otherCollider.gameObject.GetComponent<BounceShroom>() != null)
+		    {
+			heroCtrl.ShroomBounce();
+			Bounce(otherCollider, true);
+			return;
+		    }
+		    heroCtrl.Bounce();
 		}
 	    }
 	}
@@ -136,6 +189,21 @@ public class NailSlash : MonoBehaviour
     private void OnTriggerStay2D(Collider2D otherCollision)
     {
 	OnTriggerEnter2D(otherCollision);
+    }
+
+    private void Bounce(Collider2D otherCollider, bool useEffects)
+    {
+	PlayMakerFSM playMakerFSM = FSMUtility.LocateFSM(otherCollider.gameObject, "Bounce Shroom");
+	if (playMakerFSM)
+	{
+	    playMakerFSM.SendEvent("BOUNCE UPWARD");
+	    return;
+	}
+	BounceShroom component = otherCollider.GetComponent<BounceShroom>();
+	if (component)
+	{
+	    component.BounceLarge(useEffects);
+	}
     }
 
     public void CancelAttack()

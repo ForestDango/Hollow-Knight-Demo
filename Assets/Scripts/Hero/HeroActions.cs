@@ -18,7 +18,7 @@ public class HeroActions : PlayerActionSet
     public PlayerAction quickCast;
     public PlayerAction openInventory;
 
-
+    public PlayerAction pause;
     public HeroActions()
     {
 	menuSubmit = CreatePlayerAction("Submit");
@@ -41,5 +41,7 @@ public class HeroActions : PlayerActionSet
 	focus = CreatePlayerAction("Focus");
 	quickCast = CreatePlayerAction("QuickCast");
 	openInventory = CreatePlayerAction("Inventory");
+
+	pause = CreatePlayerAction("Pause");
     }
 }

@@ -30,7 +30,7 @@ public class GlobalPrefabDefaults : MonoBehaviour
     {
 	if (bloodSplatterParticle)
 	{
-	    ParticleSystem component = Instantiate(bloodSplatterParticle).GetComponent<ParticleSystem>();
+	    ParticleSystem component = bloodSplatterParticle.Spawn().GetComponent<ParticleSystem>();
 	    if (component)
 	    {
 		component.Stop();

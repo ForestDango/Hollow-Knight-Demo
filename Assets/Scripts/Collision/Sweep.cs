@@ -40,7 +40,7 @@ public struct Sweep
 	float num = distance;
 	for (int i = 0; i < RayCount; i++)
 	{
-	    float d = 2f * ((float)i / (float)(RayCount - 1)) - 1f;
+	    float d = (2f * ((float)i / (RayCount - 1))) - 1f;
 	    Vector2 b = a + a2 * d + Direction * -SkinThickness;
 	    Vector2 vector = offset + b;
 	    RaycastHit2D hit = Physics2D.Raycast(vector, Direction, num + SkinThickness, layerMask);

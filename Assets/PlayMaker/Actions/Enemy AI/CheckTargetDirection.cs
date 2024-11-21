@@ -58,10 +58,10 @@ namespace HutongGames.PlayMaker.Actions
 
 	private void DoCheckDirection()
 	{
-	    float num = this.self.Value.transform.position.x;
-	    float num2 = this.self.Value.transform.position.y;
-	    float num3 = this.target.Value.transform.position.x;
-	    float num4 = this.target.Value.transform.position.y;
+	    float num = self.Value.transform.position.x;
+	    float num2 = self.Value.transform.position.y;
+	    float num3 = target.Value.transform.position.x;
+	    float num4 = target.Value.transform.position.y;
 	    if(num < num3)
 	    {
 		Fsm.Event(rightEvent);

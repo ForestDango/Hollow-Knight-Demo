@@ -1,0 +1,2751 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7064028463152430621
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1987896228928192526}
+  - component: {fileID: 5386598837947108197}
+  m_Layer: 0
+  m_Name: MushroomRollerAndMiniSpriteCollection
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1987896228928192526
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7064028463152430621}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5386598837947108197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7064028463152430621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d546f34a90531a14eaba82a43b05b86b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 3
+  materialIdsValid: 1
+  needMaterialInstance: 0
+  spriteDefinitions:
+  - name: Mushroom_Roller_and_Mini_death_roll000
+    boundsData:
+    - {x: -0.1171875, y: -0.55468756, z: 0}
+    - {x: 2.546875, y: 2.484375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 3.828125, y: 3.96875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.390625, y: -1.796875, z: 0}
+    - {x: 1.15625, y: -1.796875, z: 0}
+    - {x: -1.390625, y: 0.6874999, z: 0}
+    - {x: 1.15625, y: 0.6874999, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.0019541015, y: 0.8745122}
+    - {x: 0.16113183, y: 0.8745122}
+    - {x: 0.0019541015, y: 0.95214796}
+    - {x: 0.16113183, y: 0.95214796}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 82a47db16c5de064ba6b2e8677ef05f7, type: 2}
+    materialId: 0
+    sourceTextureGUID: 44a154fd9bb76174abb8e452e8f20865
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mushroom_Roller_and_Mini_death_roll001
+    boundsData:
+    - {x: -0.09375, y: -0.6015625, z: 0}
+    - {x: 2.59375, y: 2.390625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 3.828125, y: 3.96875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.390625, y: -1.796875, z: 0}
+    - {x: 1.203125, y: -1.796875, z: 0}
+    - {x: -1.390625, y: 0.59374994, z: 0}
+    - {x: 1.203125, y: 0.59374994, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.16504005, y: 0.87548876}
+    - {x: 0.32714745, y: 0.87548876}
+    - {x: 0.16504005, y: 0.95019484}
+    - {x: 0.32714745, y: 0.95019484}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 82a47db16c5de064ba6b2e8677ef05f7, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3c3f8bf5adea2224ea3aeff39abdfd68
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mushroom_Roller_and_Mini_death_roll002
+    boundsData:
+    - {x: -0.19531244, y: -0.49218747, z: 0}
+    - {x: 2.765625, y: 2.703125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 3.828125, y: 3.96875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.578125, y: -1.84375, z: 0}
+    - {x: 1.1875001, y: -1.84375, z: 0}
+    - {x: -1.578125, y: 0.85937506, z: 0}
+    - {x: 1.1875001, y: 0.85937506, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.37597755, y: 0.72168016}
+    - {x: 0.5488272, y: 0.72168016}
+    - {x: 0.37597755, y: 0.80615187}
+    - {x: 0.5488272, y: 0.80615187}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 82a47db16c5de064ba6b2e8677ef05f7, type: 2}
+    materialId: 0
+    sourceTextureGUID: 4d8c4495cbbf5b14dac6ae17bd23f7a5
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mushroom_Roller_and_Mini_death_roll003
+    boundsData:
+    - {x: 0, y: -0.421875, z: 0}
+    - {x: 2.75, y: 2.78125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 3.828125, y: 3.96875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.375, y: -1.8125, z: 0}
+    - {x: 1.375, y: -1.8125, z: 0}
+    - {x: -1.375, y: 0.96875, z: 0}
+    - {x: 1.375, y: 0.96875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.8066416, y: 0.59228563}
+    - {x: 0.8066416, y: 0.6782222}
+    - {x: 0.9804678, y: 0.59228563}
+    - {x: 0.9804678, y: 0.6782222}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 82a47db16c5de064ba6b2e8677ef05f7, type: 2}
+    materialId: 0
+    sourceTextureGUID: e3448705b2c98e7448961bcd4675185a
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mushroom_Roller_and_Mini_death_roll004
+    boundsData:
+    - {x: 0.14062506, y: -0.40625, z: 0}
+    - {x: 2.8125, y: 3.03125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 3.828125, y: 3.96875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.265625, y: -1.921875, z: 0}
+    - {x: 1.5468751, y: -1.921875, z: 0}
+    - {x: -1.265625, y: 1.109375, z: 0}
+    - {x: 1.5468751, y: 1.109375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.0019541015, y: 0.70117235}
+    - {x: 0.0019541015, y: 0.789062}
+    - {x: 0.19140527, y: 0.70117235}
+    - {x: 0.19140527, y: 0.789062}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 82a47db16c5de064ba6b2e8677ef05f7, type: 2}
+    materialId: 0
+    sourceTextureGUID: 418a1f52317266b4cacdaf279725dff2
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mushroom_Roller_and_Mini_death_roll005
+    boundsData:
+    - {x: 0.2890625, y: -0.3828125, z: 0}
+    - {x: 3.265625, y: 2.953125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 3.828125, y: 3.96875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.34375, y: -1.859375, z: 0}
+    - {x: 1.921875, y: -1.859375, z: 0}
+    - {x: -1.34375, y: 1.09375, z: 0}
+    - {x: 1.921875, y: 1.09375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.0019541015, y: 0.5117192}
+    - {x: 0.2060537, y: 0.5117192}
+    - {x: 0.0019541015, y: 0.6040034}
+    - {x: 0.2060537, y: 0.6040034}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 82a47db16c5de064ba6b2e8677ef05f7, type: 2}
+    materialId: 0
+    sourceTextureGUID: 2e91f0bc47b59e746b4b110dfc5eb25a
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mushroom_Roller_and_Mini_death_roll006
+    boundsData:
+    - {x: 0.04687494, y: -0.6484375, z: 0}
+    - {x: 3.0625, y: 2.453125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 3.828125, y: 3.96875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.484375, y: -1.875, z: 0}
+    - {x: 1.5781249, y: -1.875, z: 0}
+    - {x: -1.484375, y: 0.57812494, z: 0}
+    - {x: 1.5781249, y: 0.57812494, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.5839853, y: 0.6738286}
+    - {x: 0.7753897, y: 0.6738286}
+    - {x: 0.5839853, y: 0.7504878}
+    - {x: 0.7753897, y: 0.7504878}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 82a47db16c5de064ba6b2e8677ef05f7, type: 2}
+    materialId: 0
+    sourceTextureGUID: d4fe37291feb0474b8478551ffe650a0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mushroom_Roller_and_Mini_death_roll007
+    boundsData:
+    - {x: -0.0546875, y: -0.96875, z: 0}
+    - {x: 2.953125, y: 1.78125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 3.828125, y: 3.96875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.53125, y: -1.859375, z: 0}
+    - {x: 1.421875, y: -1.859375, z: 0}
+    - {x: -1.53125, y: -0.07812496, z: 0}
+    - {x: 1.421875, y: -0.07812496, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.8769541, y: 0.29931688}
+    - {x: 0.8769541, y: 0.3916011}
+    - {x: 0.9882803, y: 0.29931688}
+    - {x: 0.9882803, y: 0.3916011}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 82a47db16c5de064ba6b2e8677ef05f7, type: 2}
+    materialId: 0
+    sourceTextureGUID: e506401d96f04e94296b6277aa0c8308
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mushroom_Roller_and_Mini_death_roll008
+    boundsData:
+    - {x: 0.03125, y: -1.109375, z: 0}
+    - {x: 3.125, y: 1.5625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 3.828125, y: 3.96875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.53125, y: -1.890625, z: 0}
+    - {x: 1.59375, y: -1.890625, z: 0}
+    - {x: -1.53125, y: -0.32812497, z: 0}
+    - {x: 1.59375, y: -0.32812497, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.8769541, y: 0.39355516}
+    - {x: 0.8769541, y: 0.49121046}
+    - {x: 0.9746084, y: 0.39355516}
+    - {x: 0.9746084, y: 0.49121046}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 82a47db16c5de064ba6b2e8677ef05f7, type: 2}
+    materialId: 0
+    sourceTextureGUID: 18bc0a90536e43545a334360d3e18029
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mushroom_Roller_and_Mini_death_roll009
+    boundsData:
+    - {x: 0.02343744, y: -1.109375, z: 0}
+    - {x: 3.109375, y: 1.5625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 3.828125, y: 3.96875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.53125, y: -1.890625, z: 0}
+    - {x: 1.5781249, y: -1.890625, z: 0}
+    - {x: -1.53125, y: -0.32812497, z: 0}
+    - {x: 1.5781249, y: -0.32812497, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.8652353, y: 0.49316454}
+    - {x: 0.8652353, y: 0.59033155}
+    - {x: 0.9628897, y: 0.49316454}
+    - {x: 0.9628897, y: 0.59033155}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 82a47db16c5de064ba6b2e8677ef05f7, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3b920ed3995e22c42bbb65bfb4137fb9
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mushroom_Roller_and_Mini_death_to_roll0000
+    boundsData:
+    - {x: 0.16406244, y: -0.0234375, z: 0}
+    - {x: 3.390625, y: 3.890625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 3.828125, y: 3.96875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.53125, y: -1.96875, z: 0}
+    - {x: 1.8593749, y: -1.96875, z: 0}
+    - {x: -1.53125, y: 1.921875, z: 0}
+    - {x: 1.8593749, y: 1.921875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.0019541015, y: 0.0009770507}
+    - {x: 0.0019541015, y: 0.1069331}
+    - {x: 0.2451162, y: 0.0009770507}
+    - {x: 0.2451162, y: 0.1069331}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 82a47db16c5de064ba6b2e8677ef05f7, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3a02587a77a55a24e8357fc0383d14ef
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mushroom_Roller_and_Mini_death_to_roll0001
+    boundsData:
+    - {x: -0.0625, y: -0.32031256, z: 0}
+    - {x: 3.15625, y: 2.984375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 3.828125, y: 3.96875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.640625, y: -1.8125, z: 0}
+    - {x: 1.515625, y: -1.8125, z: 0}
+    - {x: -1.640625, y: 1.1718749, z: 0}
+    - {x: 1.515625, y: 1.1718749, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.0019541015, y: 0.6059575}
+    - {x: 0.19921777, y: 0.6059575}
+    - {x: 0.0019541015, y: 0.6992183}
+    - {x: 0.19921777, y: 0.6992183}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 82a47db16c5de064ba6b2e8677ef05f7, type: 2}
+    materialId: 0
+    sourceTextureGUID: 6d9c414a57ac45040817d0540b34bfa5
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mushroom_Roller_and_Mini_death_to_roll0002
+    boundsData:
+    - {x: 0.17187506, y: -0.3828125, z: 0}
+    - {x: 2.96875, y: 2.734375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 3.828125, y: 3.96875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.3125, y: -1.75, z: 0}
+    - {x: 1.6562501, y: -1.75, z: 0}
+    - {x: -1.3125, y: 0.984375, z: 0}
+    - {x: 1.6562501, y: 0.984375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.61718845, y: 0.58642626}
+    - {x: 0.8027334, y: 0.58642626}
+    - {x: 0.61718845, y: 0.6718745}
+    - {x: 0.8027334, y: 0.6718745}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 82a47db16c5de064ba6b2e8677ef05f7, type: 2}
+    materialId: 0
+    sourceTextureGUID: bfb64a35eace41543be5f8f152eff1f4
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mushroom_Roller_and_Mini_death_to_roll0003
+    boundsData:
+    - {x: -0.015625, y: -0.41406247, z: 0}
+    - {x: 2.78125, y: 2.671875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 3.828125, y: 3.96875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.40625, y: -1.75, z: 0}
+    - {x: 1.375, y: -1.75, z: 0}
+    - {x: -1.40625, y: 0.92187506, z: 0}
+    - {x: 1.375, y: 0.92187506, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.19531348, y: 0.79003954}
+    - {x: 0.36913964, y: 0.79003954}
+    - {x: 0.19531348, y: 0.8735347}
+    - {x: 0.36913964, y: 0.8735347}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 82a47db16c5de064ba6b2e8677ef05f7, type: 2}
+    materialId: 0
+    sourceTextureGUID: e82aaa975733cd340b431d437894a61a
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mushroom_Roller_and_Mini_idle0000
+    boundsData:
+    - {x: 0.0234375, y: -0.06249994, z: 0}
+    - {x: 3.234375, y: 3.75, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 3.828125, y: 3.96875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.59375, y: -1.9375, z: 0}
+    - {x: 1.640625, y: -1.9375, z: 0}
+    - {x: -1.59375, y: 1.8125001, z: 0}
+    - {x: 1.640625, y: 1.8125001, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.24902442, y: 0.0009770507}
+    - {x: 0.24902442, y: 0.10205029}
+    - {x: 0.48339745, y: 0.0009770507}
+    - {x: 0.48339745, y: 0.10205029}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 82a47db16c5de064ba6b2e8677ef05f7, type: 2}
+    materialId: 0
+    sourceTextureGUID: 732a10794f463bb4b99c8346adba704f
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mushroom_Roller_and_Mini_idle0001
+    boundsData:
+    - {x: -0.03125, y: -0.11718756, z: 0}
+    - {x: 3.25, y: 3.546875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 3.828125, y: 3.96875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.65625, y: -1.890625, z: 0}
+    - {x: 1.59375, y: -1.890625, z: 0}
+    - {x: -1.65625, y: 1.6562499, z: 0}
+    - {x: 1.59375, y: 1.6562499, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.24902442, y: 0.1040044}
+    - {x: 0.24902442, y: 0.20556591}
+    - {x: 0.47070214, y: 0.1040044}
+    - {x: 0.47070214, y: 0.20556591}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 82a47db16c5de064ba6b2e8677ef05f7, type: 2}
+    materialId: 0
+    sourceTextureGUID: e4d19ab74ea8b164a9096123875c8b2b
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mushroom_Roller_and_Mini_idle0002
+    boundsData:
+    - {x: -0.0390625, y: -0.0234375, z: 0}
+    - {x: 3.203125, y: 3.765625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 3.828125, y: 3.96875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.640625, y: -1.90625, z: 0}
+    - {x: 1.5625, y: -1.90625, z: 0}
+    - {x: -1.640625, y: 1.859375, z: 0}
+    - {x: 1.5625, y: 1.859375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.7255869, y: 0.0009770507}
+    - {x: 0.7255869, y: 0.10107373}
+    - {x: 0.96093655, y: 0.0009770507}
+    - {x: 0.96093655, y: 0.10107373}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 82a47db16c5de064ba6b2e8677ef05f7, type: 2}
+    materialId: 0
+    sourceTextureGUID: e61a71f4a7c392e4fba85d68dbcfaf9c
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mushroom_Roller_and_Mini_idle0003
+    boundsData:
+    - {x: -0.05468744, y: -0.21875, z: 0}
+    - {x: 3.203125, y: 3.34375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 3.828125, y: 3.96875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.65625, y: -1.890625, z: 0}
+    - {x: 1.5468751, y: -1.890625, z: 0}
+    - {x: -1.65625, y: 1.453125, z: 0}
+    - {x: 1.5468751, y: 1.453125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.22461036, y: 0.40478563}
+    - {x: 0.22461036, y: 0.50488234}
+    - {x: 0.43359277, y: 0.40478563}
+    - {x: 0.43359277, y: 0.50488234}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 82a47db16c5de064ba6b2e8677ef05f7, type: 2}
+    materialId: 0
+    sourceTextureGUID: 1003f148dc5967948ae2be25ef8c3853
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mushroom_Roller_and_Mini_idle0004
+    boundsData:
+    - {x: 0.0234375, y: -0.06249994, z: 0}
+    - {x: 3.234375, y: 3.75, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 3.828125, y: 3.96875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.59375, y: -1.9375, z: 0}
+    - {x: 1.640625, y: -1.9375, z: 0}
+    - {x: -1.59375, y: 1.8125001, z: 0}
+    - {x: 1.640625, y: 1.8125001, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.48730567, y: 0.0009770507}
+    - {x: 0.48730567, y: 0.10205029}
+    - {x: 0.72167873, y: 0.0009770507}
+    - {x: 0.72167873, y: 0.10205029}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 82a47db16c5de064ba6b2e8677ef05f7, type: 2}
+    materialId: 0
+    sourceTextureGUID: 778307085e164624e93ecfca2af96a31
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mushroom_Roller_and_Mini_idle0005
+    boundsData:
+    - {x: 0.109375, y: -0.11718756, z: 0}
+    - {x: 3.25, y: 3.546875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 3.828125, y: 3.96875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.515625, y: -1.890625, z: 0}
+    - {x: 1.734375, y: -1.890625, z: 0}
+    - {x: -1.515625, y: 1.6562499, z: 0}
+    - {x: 1.734375, y: 1.6562499, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.0019541015, y: 0.10888721}
+    - {x: 0.0019541015, y: 0.21044873}
+    - {x: 0.22363183, y: 0.10888721}
+    - {x: 0.22363183, y: 0.21044873}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 82a47db16c5de064ba6b2e8677ef05f7, type: 2}
+    materialId: 0
+    sourceTextureGUID: 353f08b04b881c1449fefb8812a70eb9
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mushroom_Roller_and_Mini_idle0006
+    boundsData:
+    - {x: 0.1328125, y: -0.0234375, z: 0}
+    - {x: 3.203125, y: 3.765625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 3.828125, y: 3.96875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.46875, y: -1.90625, z: 0}
+    - {x: 1.734375, y: -1.90625, z: 0}
+    - {x: -1.46875, y: 1.859375, z: 0}
+    - {x: 1.734375, y: 1.859375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.7255869, y: 0.103027835}
+    - {x: 0.7255869, y: 0.20312451}
+    - {x: 0.96093655, y: 0.103027835}
+    - {x: 0.96093655, y: 0.20312451}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 82a47db16c5de064ba6b2e8677ef05f7, type: 2}
+    materialId: 0
+    sourceTextureGUID: 8663ad5fc573357499d0de74ba3880eb
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mushroom_Roller_and_Mini_idle0007
+    boundsData:
+    - {x: 0.1328125, y: -0.21875, z: 0}
+    - {x: 3.203125, y: 3.34375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 3.828125, y: 3.96875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.46875, y: -1.890625, z: 0}
+    - {x: 1.734375, y: -1.890625, z: 0}
+    - {x: -1.46875, y: 1.453125, z: 0}
+    - {x: 1.734375, y: 1.453125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.0019541015, y: 0.40966845}
+    - {x: 0.0019541015, y: 0.50976515}
+    - {x: 0.21093652, y: 0.40966845}
+    - {x: 0.21093652, y: 0.50976515}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 82a47db16c5de064ba6b2e8677ef05f7, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3ea4f68bb8849864bbb60a97b05e644d
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mushroom_Roller_and_Mini_mini_turn0000
+    boundsData:
+    - {x: -0.17187499, y: -0.234375, z: 0}
+    - {x: 1.09375, y: 1.375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.75, y: 2, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.71875, y: -0.921875, z: 0}
+    - {x: 0.37500003, y: -0.921875, z: 0}
+    - {x: -0.71875, y: 0.453125, z: 0}
+    - {x: 0.37500003, y: 0.453125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.5195322, y: 0.84716845}
+    - {x: 0.5878897, y: 0.84716845}
+    - {x: 0.5195322, y: 0.89013624}
+    - {x: 0.5878897, y: 0.89013624}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 82a47db16c5de064ba6b2e8677ef05f7, type: 2}
+    materialId: 0
+    sourceTextureGUID: ddb96124ea62aec4ab43b4ae7b2e5561
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mushroom_Roller_and_Mini_rest_to_idle0000
+    boundsData:
+    - {x: -0.0859375, y: -0.53125, z: 0}
+    - {x: 2.859375, y: 2.75, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 3.828125, y: 3.96875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.515625, y: -1.90625, z: 0}
+    - {x: 1.34375, y: -1.90625, z: 0}
+    - {x: -1.515625, y: 0.84375006, z: 0}
+    - {x: 1.34375, y: 0.84375006, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.40136817, y: 0.63378954}
+    - {x: 0.5800772, y: 0.63378954}
+    - {x: 0.40136817, y: 0.7197261}
+    - {x: 0.5800772, y: 0.7197261}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 82a47db16c5de064ba6b2e8677ef05f7, type: 2}
+    materialId: 0
+    sourceTextureGUID: 9308682b40babac429222ef75e60a250
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mushroom_Roller_and_Mini_rest_to_idle0001
+    boundsData:
+    - {x: -0.09374994, y: -0.60156256, z: 0}
+    - {x: 2.84375, y: 2.609375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 3.828125, y: 3.96875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.515625, y: -1.90625, z: 0}
+    - {x: 1.3281251, y: -1.90625, z: 0}
+    - {x: -1.515625, y: 0.7031249, z: 0}
+    - {x: 1.3281251, y: 0.7031249, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.0019541015, y: 0.7910161}
+    - {x: 0.17968652, y: 0.7910161}
+    - {x: 0.0019541015, y: 0.8725581}
+    - {x: 0.17968652, y: 0.8725581}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 82a47db16c5de064ba6b2e8677ef05f7, type: 2}
+    materialId: 0
+    sourceTextureGUID: 1dae6caf37b8e7d4d91a61ecf1de3d09
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mushroom_Roller_and_Mini_rest_to_idle0002
+    boundsData:
+    - {x: 0.27343756, y: -0.0703125, z: 0}
+    - {x: 2.984375, y: 3.109375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 3.828125, y: 3.96875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.21875, y: -1.625, z: 0}
+    - {x: 1.7656251, y: -1.625, z: 0}
+    - {x: -1.21875, y: 1.484375, z: 0}
+    - {x: 1.7656251, y: 1.484375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.4189463, y: 0.5385747}
+    - {x: 0.4189463, y: 0.63183546}
+    - {x: 0.6132803, y: 0.5385747}
+    - {x: 0.6132803, y: 0.63183546}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 82a47db16c5de064ba6b2e8677ef05f7, type: 2}
+    materialId: 0
+    sourceTextureGUID: ce61451ae9056ab4d8abb45553162087
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mushroom_Roller_and_Mini_rest_to_idle0003
+    boundsData:
+    - {x: 0.125, y: 0.2734375, z: 0}
+    - {x: 2.71875, y: 3.421875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 3.828125, y: 3.96875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.234375, y: -1.4375, z: 0}
+    - {x: 1.484375, y: -1.4375, z: 0}
+    - {x: -1.234375, y: 1.984375, z: 0}
+    - {x: 1.484375, y: 1.984375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.64355564, y: 0.4995122}
+    - {x: 0.64355564, y: 0.5844722}
+    - {x: 0.8574209, y: 0.4995122}
+    - {x: 0.8574209, y: 0.5844722}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 82a47db16c5de064ba6b2e8677ef05f7, type: 2}
+    materialId: 0
+    sourceTextureGUID: e87e4d7d33a47974eb1f149518aa1145
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mushroom_Roller_and_Mini_rest_to_idle0004
+    boundsData:
+    - {x: -0.046875, y: 0.3046875, z: 0}
+    - {x: 3.21875, y: 3.359375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 3.828125, y: 3.96875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.65625, y: -1.375, z: 0}
+    - {x: 1.5625, y: -1.375, z: 0}
+    - {x: -1.65625, y: 1.984375, z: 0}
+    - {x: 1.5625, y: 1.984375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.6630869, y: 0.29931688}
+    - {x: 0.6630869, y: 0.39990187}
+    - {x: 0.8730459, y: 0.29931688}
+    - {x: 0.8730459, y: 0.39990187}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 82a47db16c5de064ba6b2e8677ef05f7, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3fbc21c62409c2040bc7b4a7e8b2c494
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mushroom_Roller_and_Mini_rest_to_idle0005
+    boundsData:
+    - {x: -0.1328125, y: -0.0078125, z: 0}
+    - {x: 2.953125, y: 3.765625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 3.828125, y: 3.96875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.609375, y: -1.890625, z: 0}
+    - {x: 1.34375, y: -1.890625, z: 0}
+    - {x: -1.609375, y: 1.875, z: 0}
+    - {x: 1.34375, y: 1.875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.69824314, y: 0.20507862}
+    - {x: 0.69824314, y: 0.2973628}
+    - {x: 0.9335928, y: 0.20507862}
+    - {x: 0.9335928, y: 0.2973628}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 82a47db16c5de064ba6b2e8677ef05f7, type: 2}
+    materialId: 0
+    sourceTextureGUID: 2aabbeb791924bf468433347585ba66a
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mushroom_Roller_and_Mini_rest_to_wake_010000
+    boundsData:
+    - {x: 0.03125, y: -0.171875, z: 0}
+    - {x: 1.1875, y: 1.53125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.75, y: 2, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.5625, y: -0.9375, z: 0}
+    - {x: 0.625, y: -0.9375, z: 0}
+    - {x: -0.5625, y: 0.59375, z: 0}
+    - {x: 0.625, y: 0.59375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.45898536, y: 0.80810595}
+    - {x: 0.45898536, y: 0.84521437}
+    - {x: 0.55468655, y: 0.80810595}
+    - {x: 0.55468655, y: 0.84521437}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 82a47db16c5de064ba6b2e8677ef05f7, type: 2}
+    materialId: 0
+    sourceTextureGUID: 57d6a8ff4ede62c43b094c15cd052aeb
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mushroom_Roller_and_Mini_rest_to_wake_010001
+    boundsData:
+    - {x: 0.0546875, y: -0.21875, z: 0}
+    - {x: 1.203125, y: 1.40625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.75, y: 2, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.546875, y: -0.921875, z: 0}
+    - {x: 0.65625, y: -0.921875, z: 0}
+    - {x: -0.546875, y: 0.484375, z: 0}
+    - {x: 0.65625, y: 0.484375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.5527353, y: 0.7524419}
+    - {x: 0.62792873, y: 0.7524419}
+    - {x: 0.5527353, y: 0.79638624}
+    - {x: 0.62792873, y: 0.79638624}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 82a47db16c5de064ba6b2e8677ef05f7, type: 2}
+    materialId: 0
+    sourceTextureGUID: 266a27d8b15d0b2498f15b27e72cbaa9
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mushroom_Roller_and_Mini_rest_to_wake_020000
+    boundsData:
+    - {x: -0.0390625, y: -0.25, z: 0}
+    - {x: 1.015625, y: 1.4375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.75, y: 2, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.546875, y: -0.96875, z: 0}
+    - {x: 0.46875, y: -0.96875, z: 0}
+    - {x: -0.546875, y: 0.46875, z: 0}
+    - {x: 0.46875, y: 0.46875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.5585947, y: 0.7983403}
+    - {x: 0.62206936, y: 0.7983403}
+    - {x: 0.5585947, y: 0.84326124}
+    - {x: 0.62206936, y: 0.84326124}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 82a47db16c5de064ba6b2e8677ef05f7, type: 2}
+    materialId: 0
+    sourceTextureGUID: 8072740faa8c9524f94642becef45047
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mushroom_Roller_and_Mini_rest_to_wake_020001
+    boundsData:
+    - {x: -0.0234375, y: -0.3046875, z: 0}
+    - {x: 0.984375, y: 1.390625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.75, y: 2, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.515625, y: -1, z: 0}
+    - {x: 0.46875, y: -1, z: 0}
+    - {x: -0.515625, y: 0.390625, z: 0}
+    - {x: 0.46875, y: 0.390625, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.5722666, y: 0.8920903}
+    - {x: 0.6337881, y: 0.8920903}
+    - {x: 0.5722666, y: 0.9355464}
+    - {x: 0.6337881, y: 0.9355464}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 82a47db16c5de064ba6b2e8677ef05f7, type: 2}
+    materialId: 0
+    sourceTextureGUID: 64805f3eae3657443b8c3c2afcdcc4dc
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mushroom_Roller_and_Mini_rest_to_wake_030000
+    boundsData:
+    - {x: 0, y: -0.3203125, z: 0}
+    - {x: 1.03125, y: 1.296875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.75, y: 2, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.515625, y: -0.96875, z: 0}
+    - {x: 0.515625, y: -0.96875, z: 0}
+    - {x: -0.515625, y: 0.328125, z: 0}
+    - {x: 0.515625, y: 0.328125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.5917978, y: 0.8452153}
+    - {x: 0.65624905, y: 0.8452153}
+    - {x: 0.5917978, y: 0.8857417}
+    - {x: 0.65624905, y: 0.8857417}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 82a47db16c5de064ba6b2e8677ef05f7, type: 2}
+    materialId: 0
+    sourceTextureGUID: 5e211b5030fa34849bd9c08a4e3d683f
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mushroom_Roller_and_Mini_rest_to_wake_030001
+    boundsData:
+    - {x: -0.023437515, y: -0.375, z: 0}
+    - {x: 1.046875, y: 1.1875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.75, y: 2, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.546875, y: -0.96875, z: 0}
+    - {x: 0.49999997, y: -0.96875, z: 0}
+    - {x: -0.546875, y: 0.21875, z: 0}
+    - {x: 0.49999997, y: 0.21875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.6259775, y: 0.7983403}
+    - {x: 0.6914053, y: 0.7983403}
+    - {x: 0.6259775, y: 0.83544874}
+    - {x: 0.6914053, y: 0.83544874}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 82a47db16c5de064ba6b2e8677ef05f7, type: 2}
+    materialId: 0
+    sourceTextureGUID: 941363b54cfa89f438eccc4aa6ba5ba1
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mushroom_Roller_and_Mini_run0000
+    boundsData:
+    - {x: -0.05468747, y: -0.125, z: 0}
+    - {x: 1.453125, y: 1.59375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.75, y: 2, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.78125, y: -0.921875, z: 0}
+    - {x: 0.67187506, y: -0.921875, z: 0}
+    - {x: -0.78125, y: 0.671875, z: 0}
+    - {x: 0.67187506, y: 0.671875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.31054786, y: 0.9521489}
+    - {x: 0.31054786, y: 0.9975581}
+    - {x: 0.41015527, y: 0.9521489}
+    - {x: 0.41015527, y: 0.9975581}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 82a47db16c5de064ba6b2e8677ef05f7, type: 2}
+    materialId: 0
+    sourceTextureGUID: 2e88b3b7501ce15408077e8779046865
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mushroom_Roller_and_Mini_run0001
+    boundsData:
+    - {x: -0.046875, y: -0.1875, z: 0}
+    - {x: 1.3125, y: 1.46875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.75, y: 2, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.703125, y: -0.921875, z: 0}
+    - {x: 0.609375, y: -0.921875, z: 0}
+    - {x: -0.703125, y: 0.546875, z: 0}
+    - {x: 0.609375, y: 0.546875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.41406348, y: 0.9267583}
+    - {x: 0.49609277, y: 0.9267583}
+    - {x: 0.41406348, y: 0.9726558}
+    - {x: 0.49609277, y: 0.9726558}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 82a47db16c5de064ba6b2e8677ef05f7, type: 2}
+    materialId: 0
+    sourceTextureGUID: ac07fc712dbe189428eed88e314ebb2b
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mushroom_Roller_and_Mini_run0002
+    boundsData:
+    - {x: -0.0546875, y: -0.1640625, z: 0}
+    - {x: 1.328125, y: 1.546875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.75, y: 2, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.71875, y: -0.9375, z: 0}
+    - {x: 0.609375, y: -0.9375, z: 0}
+    - {x: -0.71875, y: 0.609375, z: 0}
+    - {x: 0.609375, y: 0.609375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.10449316, y: 0.95410204}
+    - {x: 0.10449316, y: 0.995605}
+    - {x: 0.20117089, y: 0.95410204}
+    - {x: 0.20117089, y: 0.995605}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 82a47db16c5de064ba6b2e8677ef05f7, type: 2}
+    materialId: 0
+    sourceTextureGUID: 051380a8aaf2ad442b598e00438d362a
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mushroom_Roller_and_Mini_run0003
+    boundsData:
+    - {x: -0.0546875, y: -0.0859375, z: 0}
+    - {x: 1.546875, y: 1.578125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.75, y: 2, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.828125, y: -0.875, z: 0}
+    - {x: 0.71875, y: -0.875, z: 0}
+    - {x: -0.828125, y: 0.703125, z: 0}
+    - {x: 0.71875, y: 0.703125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.33105567, y: 0.87548876}
+    - {x: 0.4277334, y: 0.87548876}
+    - {x: 0.33105567, y: 0.9248042}
+    - {x: 0.4277334, y: 0.9248042}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 82a47db16c5de064ba6b2e8677ef05f7, type: 2}
+    materialId: 0
+    sourceTextureGUID: 13b00c30b83179547aad05af833e46c7
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mushroom_Roller_and_Mini_startle_to_run0000
+    boundsData:
+    - {x: 0.09374997, y: -0.1875, z: 0}
+    - {x: 1.09375, y: 1.53125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.75, y: 2, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.453125, y: -0.953125, z: 0}
+    - {x: 0.64062494, y: -0.953125, z: 0}
+    - {x: -0.453125, y: 0.578125, z: 0}
+    - {x: 0.64062494, y: 0.578125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.50000095, y: 0.9023442}
+    - {x: 0.5683584, y: 0.9023442}
+    - {x: 0.50000095, y: 0.95019484}
+    - {x: 0.5683584, y: 0.95019484}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 82a47db16c5de064ba6b2e8677ef05f7, type: 2}
+    materialId: 0
+    sourceTextureGUID: ae2dc57a6f44a994a9cb1b454b226201
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mushroom_Roller_and_Mini_startle_to_run0001
+    boundsData:
+    - {x: 0.109375, y: 0.2109375, z: 0}
+    - {x: 1.3125, y: 1.484375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.75, y: 2, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.546875, y: -0.53125, z: 0}
+    - {x: 0.765625, y: -0.53125, z: 0}
+    - {x: -0.546875, y: 0.953125, z: 0}
+    - {x: 0.765625, y: 0.953125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.37304786, y: 0.80810595}
+    - {x: 0.45507714, y: 0.80810595}
+    - {x: 0.37304786, y: 0.8544917}
+    - {x: 0.45507714, y: 0.8544917}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 82a47db16c5de064ba6b2e8677ef05f7, type: 2}
+    materialId: 0
+    sourceTextureGUID: 1b25e0e3d056ff74ea1e73b3e46b3753
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mushroom_Roller_and_Mini_startle_to_run0002
+    boundsData:
+    - {x: 0.125, y: 0.265625, z: 0}
+    - {x: 1.34375, y: 1.40625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.75, y: 2, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.546875, y: -0.4375, z: 0}
+    - {x: 0.796875, y: -0.4375, z: 0}
+    - {x: -0.546875, y: 0.96875, z: 0}
+    - {x: 0.796875, y: 0.96875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.4316416, y: 0.8564458}
+    - {x: 0.51562405, y: 0.8564458}
+    - {x: 0.4316416, y: 0.90039015}
+    - {x: 0.51562405, y: 0.90039015}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 82a47db16c5de064ba6b2e8677ef05f7, type: 2}
+    materialId: 0
+    sourceTextureGUID: 54029b5ddbdf5e04596c7915bc885a25
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mushroom_Roller_and_Mini_startle_to_run0003
+    boundsData:
+    - {x: 0.171875, y: 0.2109375, z: 0}
+    - {x: 1.3125, y: 1.578125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.75, y: 2, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.484375, y: -0.578125, z: 0}
+    - {x: 0.828125, y: -0.578125, z: 0}
+    - {x: -0.484375, y: 1, z: 0}
+    - {x: 0.828125, y: 1, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.0019541015, y: 0.95410204}
+    - {x: 0.0019541015, y: 0.9951167}
+    - {x: 0.10058496, y: 0.95410204}
+    - {x: 0.10058496, y: 0.9951167}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 82a47db16c5de064ba6b2e8677ef05f7, type: 2}
+    materialId: 0
+    sourceTextureGUID: 99c3b767f2a9f964d94df4edc7367d0e
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mushroom_Roller_and_Mini_startle_to_run0004
+    boundsData:
+    - {x: -0.0859375, y: -0.21875, z: 0}
+    - {x: 1.109375, y: 1.46875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.75, y: 2, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.640625, y: -0.953125, z: 0}
+    - {x: 0.46875, y: -0.953125, z: 0}
+    - {x: -0.640625, y: 0.515625, z: 0}
+    - {x: 0.46875, y: 0.515625, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.50000095, y: 0.9521489}
+    - {x: 0.569335, y: 0.9521489}
+    - {x: 0.50000095, y: 0.9980464}
+    - {x: 0.569335, y: 0.9980464}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 82a47db16c5de064ba6b2e8677ef05f7, type: 2}
+    materialId: 0
+    sourceTextureGUID: 768bd092e46641b48ad28e6aa27a4a1d
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mushroom_Roller_and_Mini_startle_to_run0005
+    boundsData:
+    - {x: 0.00781247, y: -0.140625, z: 0}
+    - {x: 1.484375, y: 1.625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.75, y: 2, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.734375, y: -0.953125, z: 0}
+    - {x: 0.74999994, y: -0.953125, z: 0}
+    - {x: -0.734375, y: 0.671875, z: 0}
+    - {x: 0.74999994, y: 0.671875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.20507911, y: 0.9521489}
+    - {x: 0.20507911, y: 0.9985347}
+    - {x: 0.30663964, y: 0.9521489}
+    - {x: 0.30663964, y: 0.9985347}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 82a47db16c5de064ba6b2e8677ef05f7, type: 2}
+    materialId: 0
+    sourceTextureGUID: 2e8ddb87a00bd444da7a00729564a1a0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mushroom_Roller_and_Mini_turn0000
+    boundsData:
+    - {x: -0.0078125, y: -0.30468744, z: 0}
+    - {x: 3.203125, y: 3.171875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 3.828125, y: 3.96875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.609375, y: -1.890625, z: 0}
+    - {x: 1.59375, y: -1.890625, z: 0}
+    - {x: -1.609375, y: 1.2812501, z: 0}
+    - {x: 1.59375, y: 1.2812501, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.21484473, y: 0.5068364}
+    - {x: 0.41503808, y: 0.5068364}
+    - {x: 0.21484473, y: 0.60595655}
+    - {x: 0.41503808, y: 0.60595655}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 82a47db16c5de064ba6b2e8677ef05f7, type: 2}
+    materialId: 0
+    sourceTextureGUID: 86ad885f2c408854c9e5edf75253e585
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mushroom_Roller_and_Mini_turn0001
+    boundsData:
+    - {x: 0.03906256, y: -0.29687494, z: 0}
+    - {x: 3.234375, y: 3.1875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 3.828125, y: 3.96875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.578125, y: -1.890625, z: 0}
+    - {x: 1.6562501, y: -1.890625, z: 0}
+    - {x: -1.578125, y: 1.2968751, z: 0}
+    - {x: 1.6562501, y: 1.2968751, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.43750098, y: 0.4370122}
+    - {x: 0.6396475, y: 0.4370122}
+    - {x: 0.43750098, y: 0.5366206}
+    - {x: 0.6396475, y: 0.5366206}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 82a47db16c5de064ba6b2e8677ef05f7, type: 2}
+    materialId: 0
+    sourceTextureGUID: 9bbf71e782abf6e41ba318f8386572df
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mushroom_Roller_and_Mini_attack0000
+    boundsData:
+    - {x: -0.1328125, y: -0.0078125, z: 0}
+    - {x: 2.953125, y: 3.765625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 3.828125, y: 3.96875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.609375, y: -1.890625, z: 0}
+    - {x: 1.34375, y: -1.890625, z: 0}
+    - {x: -1.609375, y: 1.875, z: 0}
+    - {x: 1.34375, y: 1.875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.47461036, y: 0.20654346}
+    - {x: 0.65917873, y: 0.20654346}
+    - {x: 0.47461036, y: 0.32421827}
+    - {x: 0.65917873, y: 0.32421827}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 82a47db16c5de064ba6b2e8677ef05f7, type: 2}
+    materialId: 0
+    sourceTextureGUID: e254f9ba816048c42a97f382ecdf5372
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mushroom_Roller_and_Mini_attack0001
+    boundsData:
+    - {x: 0.1015625, y: -0.27343744, z: 0}
+    - {x: 2.984375, y: 3.109375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 3.828125, y: 3.96875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.390625, y: -1.828125, z: 0}
+    - {x: 1.59375, y: -1.828125, z: 0}
+    - {x: -1.390625, y: 1.2812501, z: 0}
+    - {x: 1.59375, y: 1.2812501, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.20312598, y: 0.60791063}
+    - {x: 0.20312598, y: 0.7011714}
+    - {x: 0.39745995, y: 0.60791063}
+    - {x: 0.39745995, y: 0.7011714}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 82a47db16c5de064ba6b2e8677ef05f7, type: 2}
+    materialId: 0
+    sourceTextureGUID: f28714b88855d714f99fc6ae48a93790
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mushroom_Roller_and_Mini_attack0002
+    boundsData:
+    - {x: -0.10937506, y: 0.1640625, z: 0}
+    - {x: 3.21875, y: 3.515625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 3.828125, y: 3.96875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.71875, y: -1.59375, z: 0}
+    - {x: 1.4999999, y: -1.59375, z: 0}
+    - {x: -1.71875, y: 1.921875, z: 0}
+    - {x: 1.4999999, y: 1.921875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.47461036, y: 0.1040044}
+    - {x: 0.47461036, y: 0.20458935}
+    - {x: 0.694335, y: 0.1040044}
+    - {x: 0.694335, y: 0.20458935}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 82a47db16c5de064ba6b2e8677ef05f7, type: 2}
+    materialId: 0
+    sourceTextureGUID: 6507b5416c95e7e4d8415170f04ba907
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mushroom_Roller_and_Mini_attack0003
+    boundsData:
+    - {x: -0.0703125, y: -0.359375, z: 0}
+    - {x: 2.828125, y: 2.71875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 3.828125, y: 3.96875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.484375, y: -1.71875, z: 0}
+    - {x: 1.34375, y: -1.71875, z: 0}
+    - {x: -1.484375, y: 1, z: 0}
+    - {x: 1.34375, y: 1, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.19531348, y: 0.7031255}
+    - {x: 0.37206933, y: 0.7031255}
+    - {x: 0.19531348, y: 0.78808546}
+    - {x: 0.37206933, y: 0.78808546}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 82a47db16c5de064ba6b2e8677ef05f7, type: 2}
+    materialId: 0
+    sourceTextureGUID: 1a9201e4eec9d88448b5addc248b48a1
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mushroom_Roller_and_Mini_attack0004
+    boundsData:
+    - {x: 0.03125006, y: -0.453125, z: 0}
+    - {x: 3.46875, y: 3.0625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 3.828125, y: 3.96875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.703125, y: -1.984375, z: 0}
+    - {x: 1.7656251, y: -1.984375, z: 0}
+    - {x: -1.703125, y: 1.078125, z: 0}
+    - {x: 1.7656251, y: 1.078125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.6445322, y: 0.40185595}
+    - {x: 0.8613272, y: 0.40185595}
+    - {x: 0.6445322, y: 0.49755812}
+    - {x: 0.8613272, y: 0.49755812}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 82a47db16c5de064ba6b2e8677ef05f7, type: 2}
+    materialId: 0
+    sourceTextureGUID: b91f02767e662034e8affdab01b8eecc
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mushroom_Roller_and_Mini_attack0005
+    boundsData:
+    - {x: 0.01562506, y: -0.4375, z: 0}
+    - {x: 3.5, y: 3.09375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 3.828125, y: 3.96875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.734375, y: -1.984375, z: 0}
+    - {x: 1.7656251, y: -1.984375, z: 0}
+    - {x: -1.734375, y: 1.109375, z: 0}
+    - {x: 1.7656251, y: 1.109375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.22754005, y: 0.20752002}
+    - {x: 0.44628808, y: 0.20752002}
+    - {x: 0.22754005, y: 0.30419874}
+    - {x: 0.44628808, y: 0.30419874}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 82a47db16c5de064ba6b2e8677ef05f7, type: 2}
+    materialId: 0
+    sourceTextureGUID: 39894c281bb1f1443b443b362f75e311
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mushroom_Roller_and_Mini_attack0006
+    boundsData:
+    - {x: 0.01562506, y: -0.4375, z: 0}
+    - {x: 3.5, y: 3.09375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 3.828125, y: 3.96875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.734375, y: -1.984375, z: 0}
+    - {x: 1.7656251, y: -1.984375, z: 0}
+    - {x: -1.734375, y: 1.109375, z: 0}
+    - {x: 1.7656251, y: 1.109375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.0019541015, y: 0.21240284}
+    - {x: 0.22070214, y: 0.21240284}
+    - {x: 0.0019541015, y: 0.30908155}
+    - {x: 0.22070214, y: 0.30908155}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 82a47db16c5de064ba6b2e8677ef05f7, type: 2}
+    materialId: 0
+    sourceTextureGUID: 455df83cb4265a9428b6087e724528c6
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mushroom_Roller_and_Mini_attack0007
+    boundsData:
+    - {x: 0.01562506, y: -0.4375, z: 0}
+    - {x: 3.5, y: 3.09375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 3.828125, y: 3.96875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.734375, y: -1.984375, z: 0}
+    - {x: 1.7656251, y: -1.984375, z: 0}
+    - {x: -1.734375, y: 1.109375, z: 0}
+    - {x: 1.7656251, y: 1.109375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.22461036, y: 0.30615282}
+    - {x: 0.4433584, y: 0.30615282}
+    - {x: 0.22461036, y: 0.40283155}
+    - {x: 0.4433584, y: 0.40283155}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 82a47db16c5de064ba6b2e8677ef05f7, type: 2}
+    materialId: 0
+    sourceTextureGUID: 6175c986fb3c17146864432fa232ec3d
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mushroom_Roller_and_Mini_attack0008
+    boundsData:
+    - {x: 0.01562506, y: -0.4375, z: 0}
+    - {x: 3.5, y: 3.09375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 3.828125, y: 3.96875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.734375, y: -1.984375, z: 0}
+    - {x: 1.7656251, y: -1.984375, z: 0}
+    - {x: -1.734375, y: 1.109375, z: 0}
+    - {x: 1.7656251, y: 1.109375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.0019541015, y: 0.31103563}
+    - {x: 0.22070214, y: 0.31103563}
+    - {x: 0.0019541015, y: 0.40771437}
+    - {x: 0.22070214, y: 0.40771437}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 82a47db16c5de064ba6b2e8677ef05f7, type: 2}
+    materialId: 0
+    sourceTextureGUID: 66e55ec70ada2d644a620bc1e405d982
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Mushroom_Roller_and_Mini_attack0009
+    boundsData:
+    - {x: 0.02343756, y: -0.4375, z: 0}
+    - {x: 3.484375, y: 3.09375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: 0, z: 0}
+    - {x: 3.828125, y: 3.96875, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.71875, y: -1.984375, z: 0}
+    - {x: 1.7656251, y: -1.984375, z: 0}
+    - {x: -1.71875, y: 1.109375, z: 0}
+    - {x: 1.7656251, y: 1.109375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.4472666, y: 0.32617235}
+    - {x: 0.4472666, y: 0.43505812}
+    - {x: 0.64062405, y: 0.32617235}
+    - {x: 0.64062405, y: 0.43505812}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 82a47db16c5de064ba6b2e8677ef05f7, type: 2}
+    materialId: 0
+    sourceTextureGUID: 31e0f201e0da89c4d8569acc6daa98aa
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  premultipliedAlpha: 0
+  material: {fileID: 0}
+  materials:
+  - {fileID: 2100000, guid: 82a47db16c5de064ba6b2e8677ef05f7, type: 2}
+  textures:
+  - {fileID: 2800000, guid: 8b75c911db4bfe649baa4d1c259a9b10, type: 3}
+  pngTextures: []
+  materialPngTextureId: 00000000
+  textureFilterMode: 1
+  textureMipMaps: 0
+  allowMultipleAtlases: 0
+  spriteCollectionGUID: 581ab5ad580cc1642863e91f91e01965
+  spriteCollectionName: MushroomRollerAndMiniSpriteCollection
+  assetName: 
+  loadable: 0
+  invOrthoSize: 2
+  halfTargetHeight: 32
+  buildKey: 1005220610
+  dataGuid: e5b86ccaf3a7146408f80378da3cc888
+  managedSpriteCollection: 0
+  hasPlatformData: 0
+  spriteCollectionPlatforms: []
+  spriteCollectionPlatformGUIDs: []

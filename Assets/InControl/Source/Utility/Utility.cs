@@ -210,7 +210,6 @@ namespace InControl
 		}
 
 
-		// TODO: This meaningless distinction should probably be removed entirely.
 		internal static bool TargetIsButton( InputControlType target )
 		{
 			return target >= InputControlType.Action1 && target <= InputControlType.Action12 ||

@@ -8,15 +8,15 @@ public class CinematicSequence : SkippableSequence
     private AudioSource audioSource;
     [SerializeField] private AudioMixerSnapshot atmosSnapshot;
     [SerializeField] private float atmosSnapshotTransitionDuration;
-    [SerializeField] private CinematicVideoReference videoReference;
-    [SerializeField] private bool isLooping;
+    [SerializeField] private CinematicVideoReference videoReference; //视频引用
+    [SerializeField] private bool isLooping; //循环播放
     [SerializeField] private MeshRenderer targetRenderer;
     [SerializeField] private MeshRenderer blankerRenderer;
 
     private CinematicVideoPlayer videoPlayer;
     private bool didPlay;
-    private bool isSkipped;
-    private int framesSinceBegan;
+    private bool isSkipped; //是否跳过
+    private int framesSinceBegan; //视频的第几帧
     private float fadeByController;
     public CinematicVideoPlayer VideoPlayer
     {
@@ -38,6 +38,25 @@ public class CinematicSequence : SkippableSequence
 	get
 	{
 	    return isSkipped;
+	}
+    }
+    public bool IsLooping
+    {
+	get
+	{
+	    if (videoPlayer != null)
+	    {
+		return videoPlayer.IsLooping;
+	    }
+	    return isLooping;
+	}
+	set
+	{
+	    if (videoPlayer != null)
+	    {
+		videoPlayer.IsLooping = value;
+	    }
+	    isLooping = value;
 	}
     }
     public override float FadeByController

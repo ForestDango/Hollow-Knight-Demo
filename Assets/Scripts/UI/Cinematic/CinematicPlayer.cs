@@ -106,6 +106,7 @@ public class CinematicPlayer : MonoBehaviour
 
     private void Update10()
     {
+	//每隔十帧检测一下是否动画已经播放完成。
 	if ((cinematicVideoPlayer == null || (!cinematicVideoPlayer.IsLoading && !cinematicVideoPlayer.IsPlaying)) && !loadingLevel && videoTriggered)
 	{
 	    if (videoType == VideoType.InGameVideo)
@@ -117,11 +118,15 @@ public class CinematicPlayer : MonoBehaviour
 	}
     }
 
+    /// <summary>
+    /// 影片结束后的行为
+    /// </summary>
     private void FinishVideo()
     {
 	Debug.LogFormat("Finishing the video.", Array.Empty<object>());
 	videoTriggered = false;
-	if(videoType == VideoType.OpeningCutscene)
+	//判断video类型，目前只有OpeningCutscene和OpeningPrologue
+	if (videoType == VideoType.OpeningCutscene) 
 	{
 	    GameCameras.instance.cameraFadeFSM.Fsm.Event("JUST FADE");
 	    ui.SetState(UIState.INACTIVE);
@@ -137,9 +142,19 @@ public class CinematicPlayer : MonoBehaviour
 	    //gm.LoadOpeningCinematic();
 	    return;
 	}
-	//TODO:
+	if(videoType == VideoType.StagTravel)
+	{
+	    ui.SetState(UIState.INACTIVE);
+	    loadingLevel = true;
+	    gm.ChangeToScene(pd.GetString("nextScene"), "door_stagExit", 0f);
+	    return;
+	}
+	//TODO:还有其他的videotype要做
     }
 
+    /// <summary>
+    /// 结束游戏内的视频video
+    /// </summary>
     private void FinishInGameVideo()
     {
 	Debug.LogFormat("Finishing in-game video.", Array.Empty<object>());
@@ -212,6 +227,32 @@ public class CinematicPlayer : MonoBehaviour
 	else if(videoType == VideoType.StagTravel)
 	{
 	    //TODO:
+	    GameCameras.instance.DisableImageEffects();
+	    if (cinematicVideoPlayer == null)
+	    {
+		    cinematicVideoPlayer = CinematicVideoPlayer.Create(new CinematicVideoPlayerConfig(videoClip, myRenderer, audioSource, faderStyle, GameManager.instance.GetImplicitCinematicVolume()));
+	    }
+	    while(cinematicVideoPlayer != null && cinematicVideoPlayer.IsLoading)
+	    {
+		yield return null;
+	    }
+	    if (cinematicVideoPlayer != null)
+	    {
+		cinematicVideoPlayer.IsLooping = loopVideo;
+		cinematicVideoPlayer.Play();
+		myRenderer.enabled = true;
+	    }
+	    yield return new WaitForSeconds(delayBeforeFadeIn);
+	    if(fadeInSpeed == FadeInSpeed.SLOW)
+	    {
+		GameCameras.instance.cameraFadeFSM.Fsm.Event("FADE SCENE IN SLOWLY");
+	    }
+	    else if(fadeInSpeed == FadeInSpeed.NORMAL)
+	    {
+		GameCameras.instance.cameraFadeFSM.Fsm.Event("FADE SCENE IN");
+	    }
+	    StartCoroutine(WaitForStagFadeOut());
+	    pd.disablePause = true;
 	}
 	else
 	{
@@ -242,6 +283,10 @@ public class CinematicPlayer : MonoBehaviour
 	}
     }
 
+    /// <summary>
+    /// 跳过视频
+    /// </summary>
+    /// <returns></returns>
     public IEnumerator SkipVideo()
     {
 	if (videoTriggered)
@@ -297,6 +342,12 @@ public class CinematicPlayer : MonoBehaviour
 		cinematicVideoPlayer.Stop();
 	    }
 	}
+    }
+    private IEnumerator WaitForStagFadeOut()
+    {
+	yield return new WaitForSeconds(2.6f);
+	GameCameras.instance.cameraFadeFSM.Fsm.Event("JUST FADE");
+	yield break;
     }
 
     public enum MovieTrigger

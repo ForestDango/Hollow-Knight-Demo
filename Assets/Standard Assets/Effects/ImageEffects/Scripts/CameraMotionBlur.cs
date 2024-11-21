@@ -93,7 +93,8 @@ namespace UnityStandardAssets.ImageEffects
 			prevStereoViewProjMat = new Matrix4x4[2];
 			CalculateViewProjection ();
             Remember ();
-            wasActive = false; // hack to fake position/rotation update and prevent bad blurs
+            // to fake position or rotation update and prevent bad blurs
+            wasActive = false; 
         }
 
         void OnEnable () {
@@ -396,7 +397,6 @@ namespace UnityStandardAssets.ImageEffects
 
         void StartFrame () {
             // take only x% of positional changes into account (camera motion)
-            // TODO: possibly do the same for rotational part
             prevFramePos = Vector3.Slerp(prevFramePos, transform.position, 0.75f);
         }
 

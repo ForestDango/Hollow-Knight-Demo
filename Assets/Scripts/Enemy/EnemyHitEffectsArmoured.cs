@@ -25,7 +25,7 @@ public class EnemyHitEffectsArmoured : MonoBehaviour,IHitEffectReciever
 	didFireThisFrame = false;
     }
 
-    public void ReceiveHitEffect(float attackDirection)
+    public void RecieveHitEffect(float attackDirection)
     {
 	if (didFireThisFrame)
 	{

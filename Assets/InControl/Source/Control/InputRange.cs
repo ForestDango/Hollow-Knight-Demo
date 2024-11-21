@@ -10,7 +10,7 @@
 	[Serializable]
 	public struct InputRange
 	{
-		// TODO: Can None be removed?
+
 		public static readonly InputRange None = new InputRange( 0.0f, 0.0f, InputRangeType.None );
 		public static readonly InputRange MinusOneToOne = new InputRange( -1.0f, 1.0f, InputRangeType.MinusOneToOne );
 		public static readonly InputRange OneToMinusOne = new InputRange( 1.0f, -1.0f, InputRangeType.OneToMinusOne );
@@ -22,7 +22,6 @@
 
 		static readonly InputRange[] typeToRange =
 		{
-			// TODO: Can None be removed?
 			None,
 			MinusOneToOne,
 			OneToMinusOne,

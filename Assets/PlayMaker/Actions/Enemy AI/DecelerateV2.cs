@@ -33,13 +33,17 @@ namespace HutongGames.PlayMaker.Actions
 	{
 	    CacheRigidBody2d(Fsm.GetOwnerDefaultTarget(gameObject));
 	    DecelerateSelf();
-	    base.Finish();
 	}
 
 	public override void OnFixedUpdate()
 	{
 	    DecelerateSelf();
 	}
+
+	//public override void OnUpdate()
+	//{
+	//    DecelerateSelf();
+	//}
 
 	private void DecelerateSelf()
 	{

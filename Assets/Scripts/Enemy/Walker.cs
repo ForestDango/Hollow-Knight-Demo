@@ -152,7 +152,7 @@ public class Walker : MonoBehaviour
 	Update();
     }
 
-    public void ReceiveGoMessage(int facing) //TODO:
+    public void RecieveGoMessage(int facing)
     {
 	if(state != States.Stopped || stopReason != StopReasons.Controlled)
 	{
@@ -205,7 +205,7 @@ public class Walker : MonoBehaviour
 	    didFulfilCameraDistanceCondition = true;
 	}
 	if(didFulfilCameraDistanceCondition && !didFulfilHeroXCondition && hero != null && 
-	    Mathf.Abs(hero.transform.position.x - waitHeroX) < WaitHeroXThreshold) //TODO:
+	    Mathf.Abs(hero.transform.GetPositionX() - waitHeroX) < WaitHeroXThreshold)
 	{
 	    didFulfilHeroXCondition = true;
 	}
@@ -275,7 +275,7 @@ public class Walker : MonoBehaviour
 	    BeginTurning(-currentFacing);
 	    return;
 	}
-	BeginWalking(currentFacing);
+	BeginWalking(currentFacing); //这里应该是开始行走Walk而不是开始转向Turn
     }
 
     /// <summary>

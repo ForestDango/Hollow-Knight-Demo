@@ -23,6 +23,9 @@ public class SpriteFlash : MonoBehaviour
     private bool repeatFlash;
     private bool cancelFlash;
 
+    private float geoTimer;
+    private bool geoFlash;
+
     private MaterialPropertyBlock block;
     private bool sendToChildren = true;
 
@@ -55,7 +58,7 @@ public class SpriteFlash : MonoBehaviour
 	flashingState = 0;
 	repeatFlash = false;
 	cancelFlash = false;
-
+	geoFlash = false;
     }
 
     private void Update()
@@ -123,6 +126,22 @@ public class SpriteFlash : MonoBehaviour
 		}
 	    }
 	}
+	if (geoFlash)
+	{
+	    if(geoTimer > 0f)
+	    {
+		geoTimer -= Time.deltaTime;
+		return;
+	    }
+	    FlashingSuperDash();
+	    geoFlash = false;
+	}
+    }
+
+    public void GeoFlash()
+    {
+	geoFlash = false;
+	geoTimer = 0.25f;
     }
 
     public void flashInfected()
@@ -143,6 +162,21 @@ public class SpriteFlash : MonoBehaviour
 	SendToChildren(new Action(flashInfected));
     }
 
+    public void flashInfectedLong()
+    {
+	flashColour = new Color(1f, 0.31f, 0f);
+	amount = 0.9f;
+	timeUp = 0.01f;
+	stayTime = 0.25f;
+	timeDown = 0.35f;
+	block.Clear();
+	block.SetColor("_FlashColor", flashColour);
+	flashingState = 1;
+	flashTimer = 0f;
+	repeatFlash = false;
+	//SendToChildren(new Action(flashInfectedLong));
+    }
+
     public void flashArmoured()
     {
 	flashColour = new Color(1f, 1f, 1f);
@@ -161,7 +195,7 @@ public class SpriteFlash : MonoBehaviour
 	SendToChildren(new Action(flashArmoured));
     }
 
-    private void flashFocusHeal()
+    public void flashFocusHeal()
     {
 	Start();
 	flashColour = new Color(1f, 1f, 1f);
@@ -177,6 +211,21 @@ public class SpriteFlash : MonoBehaviour
 	//SendToChildren(new Action(flashFocusHeal));
     }
 
+    public void flashBenchRest()
+    {
+	flashColour = new Color(1f, 1f, 1f);
+	amount = 0.7f;
+	timeUp = 0.01f;
+	stayTime = 0.1f;
+	timeDown = 0.75f;
+	block.Clear();
+	block.SetColor("_FlashColor", flashColour);
+	flashingState = 1;
+	flashTimer = 0f;
+	repeatFlash = false;
+	//SendToChildren(new Action(flashBenchRest));
+    }
+
     private void flashFocusGet()
     {
 	Start();
@@ -190,9 +239,71 @@ public class SpriteFlash : MonoBehaviour
 	flashingState = 1;
 	flashTimer = 0f;
 	repeatFlash = false;
-	SendToChildren(new Action(flashFocusGet));
+	//SendToChildren(new Action(flashFocusGet));
     }
 
+    public void flashSoulGet()
+    {
+	flashColour = new Color(1f, 1f, 1f);
+	amount = 0.5f;
+	timeUp = 0.01f;
+	stayTime = 0.01f;
+	timeDown = 0.25f;
+	block.Clear();
+	block.SetColor("_FlashColor", flashColour);
+	flashingState = 1;
+	flashTimer = 0f;
+	repeatFlash = false;
+	//SendToChildren(new Action(flashSoulGet));
+    }
+    public void flashShadeGet()
+    {
+	flashColour = new Color(0f, 0f, 0f);
+	amount = 0.5f;
+	timeUp = 0.01f;
+	stayTime = 0.01f;
+	timeDown = 0.25f;
+	block.Clear();
+	block.SetColor("_FlashColor", flashColour);
+	flashingState = 1;
+	flashTimer = 0f;
+	repeatFlash = false;
+	//SendToChildren(new Action(flashShadeGet));
+    }
+
+    public void FlashingSuperDash()
+    {
+	flashColour = new Color(1f, 1f, 1f);
+	amount = 0.7f;
+	timeUp = 0.1f;
+	stayTime = 0.01f;
+	timeDown = 0.1f;
+	block.Clear();
+	block.SetColor("_FlashColor", flashColour);
+	flashingState = 1;
+	flashTimer = 0f;
+	repeatFlash = true;
+	//SendToChildren(new Action(FlashingSuperDash));
+    }
+
+    public void FlashingFury()
+    {
+	Start();
+	flashColour = new Color(0.71f, 0.18f, 0.18f);
+	amount = 0.75f;
+	timeUp = 0.25f;
+	stayTime = 0.01f;
+	timeDown = 0.25f;
+	block.Clear();
+	block.SetColor("_FlashColor", flashColour);
+	flashingState = 1;
+	repeatFlash = true;
+	//SendToChildren(new Action(FlashingFury));
+    }
+    public void CancelFlash()
+    {
+	cancelFlash = true;
+    }
     private void SendToChildren(Action function)
     {
 	if (!sendToChildren)

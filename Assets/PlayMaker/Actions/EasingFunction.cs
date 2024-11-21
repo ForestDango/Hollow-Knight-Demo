@@ -423,7 +423,6 @@ namespace HutongGames
         // The easing functions all work with a normalized time (0 to 1) and the returned value here
         // reflects that. Values returned here should be divided by the actual time.
         //
-        // TODO: These functions have not had the testing they deserve. If there is odd behavior around
         //       dash speeds then this would be the first place I'd look.
 
         public static float LinearD(float start, float end, float value)

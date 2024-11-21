@@ -2,7 +2,6 @@ using UnityEngine;
 
 namespace HutongGames.PlayMaker.Actions
 {
-
     [ActionCategory("Enemy AI")]
     [Tooltip("Object idly buzzes about within a defined range")]
     public class IdleBuzz : RigidBody2dActionBase
