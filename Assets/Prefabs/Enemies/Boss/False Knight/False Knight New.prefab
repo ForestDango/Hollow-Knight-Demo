@@ -212,23 +212,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   battleScene: {fileID: 0}
+  sendKilledToName: 
+  sendKilledToObject: {fileID: 0}
   audioPlayerPrefab: {fileID: 8424441852534438005, guid: f96af3324a9905c49b4bf507c04a1e4f, type: 3}
   corpseSplatPrefab: {fileID: 0}
+  regularInvincibleAudio:
+    Clip: {fileID: 8300000, guid: 838436ca5cca57f4c8263ef351fcce5d, type: 3}
+    PitchMin: 0.85
+    PitchMax: 1.15
+    Volume: 1
+  blockHitPrefab: {fileID: 8754757665553440753, guid: cb321784eaf2ea44385acdb96474d931, type: 3}
+  strikeNailPrefab: {fileID: 7437710410708142629, guid: eb28e486e83b1e24fac84f6d3f03931b, type: 3}
+  slashImpactPrefab: {fileID: 1290429678873468, guid: b6b62e8744549024cbcce27e5ea86de8, type: 3}
+  hasAlternateInvincibleSound: 0
+  alternateInvincibleSound: {fileID: 0}
   hp: 65
   enemyType: 0
   effectOrigin: {x: 0, y: 0, z: 0}
   invincible: 0
   invincibleFromDirection: 0
+  preventInvincibleEffect: 0
   smallGeoDrops: 0
   mediumGeoDrops: 0
   largeGeoDrops: 0
   megaFlingGeo: 0
-  smallGeoPrefab: {fileID: 0}
-  mediumGeoPrefab: {fileID: 0}
-  largeGeoPrefab: {fileID: 0}
+  smallGeoPrefab: {fileID: 3041178361285957278, guid: 3ed1932750fc94644a7f5099628d1937, type: 3}
+  mediumGeoPrefab: {fileID: 3041178361285957278, guid: 7960323f95e61a34cb16e490f5860583, type: 3}
+  largeGeoPrefab: {fileID: 3041178361285957278, guid: 6e612c6e19ce3f44ab4b191e920a5516, type: 3}
   hasAlternateHitAnimation: 0
   alternateHitAnimation: 
-  deathAudioSnapshot: {fileID: 0}
+  deathAudioSnapshot: {fileID: 24500016, guid: dbaba554f966d5348882614b974db23f, type: 2}
   deathReset: 0
   hasSpecialDeath: 1
   isDead: 0
@@ -2097,12 +2110,12 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: {fileID: 0}
-        - useVariable: 0
-          name: 
+        - useVariable: 1
+          name: AreaTitle
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: {fileID: 7437710410708142629, guid: 5418039a298a74145bd4b3035502378f, type: 3}
+          value: {fileID: 0}
         fsmOwnerDefaultParams:
         - ownerOption: 1
           gameObject:
@@ -2237,7 +2250,7 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           typeName: UnityEngine.Audio.AudioMixerSnapshot
-          value: {fileID: 24500070, guid: 336930d400f2c734ab9b5a11db37cf57, type: 2}
+          value: {fileID: 24500032, guid: d818f42b2e68d0b46bf24297d96cc684, type: 2}
         fsmVarParams: []
         fsmArrayParams: []
         fsmEnumParams: []
@@ -2265,7 +2278,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 1
+          value: 0
         fsmIntParams: []
         fsmBoolParams:
         - useVariable: 0
@@ -3029,8 +3042,8 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 0101010101
-        actionIsOpen: 0101010101
+        actionEnabled: 0101010001
+        actionIsOpen: 0101010001
         actionStartIndex: 0000000003000000070000000e00000012000000
         actionHashCodes: 603dd90536f094001bcdca045e69bb0472e62e01
         unityObjectParams: []
@@ -5551,6 +5564,8 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.SetVelocity2d
         - HutongGames.PlayMaker.Actions.SendEventByName
         - HutongGames.PlayMaker.Actions.SpawnObjectFromGlobalPool
+        - HutongGames.PlayMaker.Actions.GetVelocity2d
+        - HutongGames.PlayMaker.Actions.FloatCompare
         customNames:
         - 
         - 
@@ -5559,10 +5574,12 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 01010101010101
-        actionIsOpen: 01010101010101
-        actionStartIndex: 000000000300000005000000070000000a0000001000000014000000
-        actionHashCodes: 8ddc9d038124dc01e8ea39027fb0a304e07f0804ba7ea101bf83c900
+        - 
+        - 
+        actionEnabled: 010101010101010101
+        actionIsOpen: 010101010101010101
+        actionStartIndex: 000000000300000005000000070000000a0000001000000014000000190000001f000000
+        actionHashCodes: 8ddc9d038124dc01e8ea39027fb0a304e07f0804ba7ea101bf83c90068fde3041bcdca04
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 0
@@ -5600,6 +5617,14 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             value: {fileID: 8539726504879736195}
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         - ownerOption: 0
           gameObject:
             useVariable: 0
@@ -5704,7 +5729,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 0.12
+          value: 0.5
         - useVariable: 1
           name: Jump X
           tooltip: 
@@ -5716,7 +5741,37 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 80
+          value: 105
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: Current Velocity Y
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: Current Velocity Y
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
         - useVariable: 0
           name: 
           tooltip: 
@@ -5737,7 +5792,13 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: {x: 0, y: 80}
+          value: {x: 0, y: 105}
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {x: 0, y: 0}
         fsmVector3Params:
         - useVariable: 0
           name: 
@@ -5754,13 +5815,16 @@ MonoBehaviour:
         fsmColorParams: []
         fsmRectParams: []
         fsmQuaternionParams: []
-        stringParams: []
-        byteData: 000000000000
+        stringParams:
+        - 
+        - 
+        - FINISHED
+        byteData: 010000000000000000000101
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 140000000f000000180000001400000010000000140000000f00000014000000120000001200000014000000250000000f0000000f00000001000000070000001f000000120000000f0000000100000013000000130000001c0000001c00000013000000
+        paramDataType: 140000000f000000180000001400000010000000140000000f00000014000000120000001200000014000000250000000f0000000f00000001000000070000001f000000120000000f0000000100000013000000130000001c0000001c0000001300000014000000250000000f0000000f00000007000000010000000f0000000f0000000f00000017000000170000001700000001000000
         paramName:
         - gameObject
         - volume
@@ -5787,8 +5851,21 @@ MonoBehaviour:
         - position
         - rotation
         - storeObject
-        paramDataPos: 00000000000000000000000001000000000000000200000001000000030000000000000001000000040000000000000002000000030000000000000001000000000000000200000004000000050000000000000001000000000000000100000002000000
-        paramByteDataSize: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000004000000000000000000000000000000010000000000000000000000000000000000000000000000
+        - gameObject
+        - vector
+        - x
+        - y
+        - space
+        - everyFrame
+        - float1
+        - float2
+        - tolerance
+        - equal
+        - lessThan
+        - greaterThan
+        - everyFrame
+        paramDataPos: 0000000000000000000000000100000000000000020000000100000003000000000000000100000004000000000000000200000003000000000000000100000000000000020000000400000005000000000000000100000000000000010000000200000005000000010000000500000006000000060000000a0000000700000008000000090000000000000001000000020000000b000000
+        paramByteDataSize: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000400000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000040000000100000000000000000000000000000000000000000000000000000001000000
     - name: JA Rise
       description: 
       colorIndex: 0
@@ -5826,8 +5903,8 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 010101010101
-        actionIsOpen: 010101010101
+        actionEnabled: 010001010101
+        actionIsOpen: 010001010101
         actionStartIndex: 0000000006000000090000000d0000001300000019000000
         actionHashCodes: 68fde3049845b3052a6e8a00e07f080468fde3041bcdca04
         unityObjectParams: []
@@ -5976,7 +6053,7 @@ MonoBehaviour:
         - 
         - FALL
         - 
-        byteData: 00000000010101010100000000000000000101
+        byteData: 00000000010101000100000000000000000101
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
@@ -6022,8 +6099,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 776.8672
-        y: 1658.4375
+        x: 760.39844
+        y: 1655.8984
         width: 100
         height: 32
       isBreakpoint: 0
@@ -6052,8 +6129,8 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 0101010101
-        actionIsOpen: 0101010101
+        actionEnabled: 0100010101
+        actionIsOpen: 0100010101
         actionStartIndex: 0000000006000000090000000d00000013000000
         actionHashCodes: 68fde3049845b3052a6e8a00e07f0804785c8303
         unityObjectParams: []
@@ -6136,13 +6213,13 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 1.15
+          value: 2
         - useVariable: 1
           name: 
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 26.066479
+          value: 12.06648
         - useVariable: 1
           name: Velocity Alter
           tooltip: 
@@ -6217,7 +6294,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: {x: 26.066479, y: 0}
+          value: {x: 12.06648, y: 0}
         - useVariable: 0
           name: 
           tooltip: 
@@ -9426,7 +9503,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 105
+          value: 65
         fsmIntParams:
         - useVariable: 0
           name: 
@@ -9447,7 +9524,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: {x: 0, y: 105}
+          value: {x: 0, y: 65}
         fsmVector3Params:
         - useVariable: 0
           name: 
@@ -10522,11 +10599,11 @@ MonoBehaviour:
           networkSync: 0
           value: {fileID: 3571892695971979347, guid: 3366589a2f6506f4193132202673516a, type: 3}
         - useVariable: 1
-          name: Self
+          name: Jump Slam Effect
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: {fileID: 0}
+          value: {fileID: 8539726503871451898}
         - useVariable: 1
           name: 
           tooltip: 
@@ -10767,8 +10844,8 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 010101010101010101010101010101010101
-        actionIsOpen: 010101010101010101010101010101010101
+        actionEnabled: 010101010101010100000000000101010100
+        actionIsOpen: 010101010101010100000000000101010100
         actionStartIndex: 00000000050000000a0000000e000000140000001900000020000000250000002a00000030000000350000003c0000004100000046000000490000004c0000005100000054000000
         actionHashCodes: 070f3000081bbf05ba7ea101dfd72a04bf83c900afff110568fece0587604502dfd72a04bf83c900afff110568fece05876045027fb0a3047fb0a304b2cf1000f805220368fece05
         unityObjectParams: []
@@ -11058,12 +11135,12 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0
-        - useVariable: 0
-          name: 
+        - useVariable: 1
+          name: Shockwave X Origin
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 5.5
+          value: 0
         - useVariable: 0
           name: 
           tooltip: 
@@ -11082,18 +11159,18 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 1
-        - useVariable: 0
+        - useVariable: 1
           name: 
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 1
-        - useVariable: 0
+          value: 0
+        - useVariable: 1
           name: 
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 1
+          value: 0
         - useVariable: 0
           name: 
           tooltip: 
@@ -11124,18 +11201,18 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: -1
-        - useVariable: 0
+        - useVariable: 1
           name: 
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 1
-        - useVariable: 0
+          value: 0
+        - useVariable: 1
           name: 
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 1
+          value: 0
         - useVariable: 0
           name: 
           tooltip: 
@@ -11174,12 +11251,12 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 1
-        - useVariable: 0
-          name: 
+        - useVariable: 1
+          name: Shockwave Going Right
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 1
+          value: 0
         - useVariable: 0
           name: 
           tooltip: 
@@ -12493,6 +12570,8 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.SetVelocity2d
         - HutongGames.PlayMaker.Actions.SendEventByName
         - HutongGames.PlayMaker.Actions.SpawnObjectFromGlobalPool
+        - HutongGames.PlayMaker.Actions.GetVelocity2d
+        - HutongGames.PlayMaker.Actions.FloatCompare
         customNames:
         - 
         - 
@@ -12502,10 +12581,12 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 0101010101010101
-        actionIsOpen: 0101010101010101
-        actionStartIndex: 00000000030000000500000007000000090000000c0000001200000016000000
-        actionHashCodes: 8ddc9d038124dc018124dc01e8ea39027fb0a304e07f0804ba7ea101bf83c900
+        - 
+        - 
+        actionEnabled: 01010101010101010101
+        actionIsOpen: 01010101010101010101
+        actionStartIndex: 00000000030000000500000007000000090000000c00000012000000160000001b00000021000000
+        actionHashCodes: 8ddc9d038124dc018124dc01e8ea39027fb0a304e07f0804ba7ea101bf83c90068fde3041bcdca04
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 0
@@ -12547,6 +12628,14 @@ MonoBehaviour:
           gameObject:
             useVariable: 1
             name: Dust Land Large
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
             tooltip: 
             showInInspector: 0
             networkSync: 0
@@ -12655,7 +12744,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 0.125
+          value: 0.12
         - useVariable: 1
           name: Jump X
           tooltip: 
@@ -12668,6 +12757,36 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 90
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: Current Velocity Y
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: Current Velocity Y
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
         - useVariable: 0
           name: 
           tooltip: 
@@ -12695,6 +12814,12 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: {x: 0, y: 90}
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {x: 0, y: 0}
         fsmVector3Params:
         - useVariable: 0
           name: 
@@ -12711,13 +12836,16 @@ MonoBehaviour:
         fsmColorParams: []
         fsmRectParams: []
         fsmQuaternionParams: []
-        stringParams: []
-        byteData: 000000000000
+        stringParams:
+        - 
+        - 
+        - FINISHED
+        byteData: 000000000000000000000101
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 140000000f0000001800000014000000100000001400000010000000140000000f00000014000000120000001200000014000000250000000f0000000f00000001000000070000001f000000120000000f0000000100000013000000130000001c0000001c00000013000000
+        paramDataType: 140000000f0000001800000014000000100000001400000010000000140000000f00000014000000120000001200000014000000250000000f0000000f00000001000000070000001f000000120000000f0000000100000013000000130000001c0000001c0000001300000014000000250000000f0000000f00000007000000010000000f0000000f0000000f00000017000000170000001700000001000000
         paramName:
         - gameObject
         - volume
@@ -12746,8 +12874,21 @@ MonoBehaviour:
         - position
         - rotation
         - storeObject
-        paramDataPos: 000000000000000000000000010000000000000002000000010000000300000001000000040000000000000001000000050000000000000002000000030000000000000001000000000000000200000004000000050000000000000001000000000000000100000002000000
-        paramByteDataSize: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000004000000000000000000000000000000010000000000000000000000000000000000000000000000
+        - gameObject
+        - vector
+        - x
+        - y
+        - space
+        - everyFrame
+        - float1
+        - float2
+        - tolerance
+        - equal
+        - lessThan
+        - greaterThan
+        - everyFrame
+        paramDataPos: 00000000000000000000000001000000000000000200000001000000030000000100000004000000000000000100000005000000000000000200000003000000000000000100000000000000020000000400000005000000000000000100000000000000010000000200000006000000010000000500000006000000060000000a0000000700000008000000090000000000000001000000020000000b000000
+        paramByteDataSize: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000400000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000040000000100000000000000000000000000000000000000000000000000000001000000
     - name: Rise
       description: 
       colorIndex: 0
@@ -19110,6 +19251,8 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.PlayParticleEmitter
         - HutongGames.PlayMaker.Actions.SendEventByName
         - HutongGames.PlayMaker.Actions.SetVelocity2d
+        - HutongGames.PlayMaker.Actions.GetVelocity2d
+        - HutongGames.PlayMaker.Actions.FloatCompare
         customNames:
         - 
         - 
@@ -19120,10 +19263,12 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 010101010101010101
-        actionIsOpen: 010101010101010101
-        actionStartIndex: 0000000002000000050000001000000012000000170000001a0000001c00000020000000
-        actionHashCodes: e8ea39028ddc9d0341f074018124dc01bf83c9007fb0a3048124dc01ba7ea101e07f0804
+        - 
+        - 
+        actionEnabled: 0101010101010101010101
+        actionIsOpen: 0101010101010101010101
+        actionStartIndex: 0000000002000000050000001000000012000000170000001a0000001c00000020000000260000002c000000
+        actionHashCodes: e8ea39028ddc9d0341f074018124dc01bf83c9007fb0a3048124dc01ba7ea101e07f080468fde3041bcdca04
         unityObjectParams:
         - {fileID: 8300000, guid: c8dcd95692f9854458b8b1a9ef60b556, type: 3}
         fsmGameObjectParams:
@@ -19200,6 +19345,14 @@ MonoBehaviour:
           gameObject:
             useVariable: 1
             name: Dust Land Large
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
             tooltip: 
             showInInspector: 0
             networkSync: 0
@@ -19340,7 +19493,37 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 80
+          value: 65
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: Current Velocity Y
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: Current Velocity Y
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         fsmIntParams:
         - useVariable: 0
           name: 
@@ -19361,7 +19544,13 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: {x: 0, y: 80}
+          value: {x: 0, y: 65}
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {x: 0, y: 0}
         fsmVector3Params:
         - useVariable: 0
           name: 
@@ -19378,15 +19567,18 @@ MonoBehaviour:
         fsmColorParams: []
         fsmRectParams: []
         fsmQuaternionParams: []
-        stringParams: []
-        byteData: 000000000000
+        stringParams:
+        - 
+        - 
+        - FINISHED
+        byteData: 000000000000000000000101
         arrayParamSizes: 0100000001000000
         arrayParamTypes:
         - UnityEngine.AudioClip
         - HutongGames.PlayMaker.FsmFloat
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 140000000f000000140000000f0000001800000013000000130000000c000000050000000c0000000f0000000f0000000f0000000f0000000f00000013000000140000001000000013000000130000001c0000001c0000001300000014000000120000001200000014000000100000001f000000120000000f0000000100000014000000250000000f0000000f0000000100000007000000
+        paramDataType: 140000000f000000140000000f0000001800000013000000130000000c000000050000000c0000000f0000000f0000000f0000000f0000000f00000013000000140000001000000013000000130000001c0000001c0000001300000014000000120000001200000014000000100000001f000000120000000f0000000100000014000000250000000f0000000f000000010000000700000014000000250000000f0000000f00000007000000010000000f0000000f0000000f00000017000000170000001700000001000000
         paramName:
         - gameObject
         - gravityScale
@@ -19426,8 +19618,21 @@ MonoBehaviour:
         - y
         - everyFrame
         - space
-        paramDataPos: 0000000000000000010000000100000000000000000000000100000000000000000000000100000002000000030000000400000005000000060000000200000002000000000000000300000004000000000000000100000005000000030000000000000001000000040000000100000000000000020000000700000000000000050000000000000008000000090000000100000002000000
-        paramByteDataSize: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000100000004000000
+        - gameObject
+        - vector
+        - x
+        - y
+        - space
+        - everyFrame
+        - float1
+        - float2
+        - tolerance
+        - equal
+        - lessThan
+        - greaterThan
+        - everyFrame
+        paramDataPos: 000000000000000001000000010000000000000000000000010000000000000000000000010000000200000003000000040000000500000006000000020000000200000000000000030000000400000000000000010000000500000003000000000000000100000004000000010000000000000002000000070000000000000005000000000000000800000009000000010000000200000006000000010000000a0000000b000000060000000a0000000c0000000d0000000e0000000000000001000000020000000b000000
+        paramByteDataSize: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000010000000400000000000000000000000000000000000000040000000100000000000000000000000000000000000000000000000000000001000000
     - name: Rise 2
       description: 
       colorIndex: 0
@@ -19529,7 +19734,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 1.15
+          value: 0.85
         - useVariable: 1
           name: 
           tooltip: 
@@ -22445,7 +22650,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 34
+          value: 39
         - useVariable: 1
           name: Jump X
           tooltip: 
@@ -22803,7 +23008,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 0.2
+          value: 0.8
         - useVariable: 1
           name: Jump X
           tooltip: 
@@ -22815,7 +23020,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 80
+          value: 65
         - useVariable: 0
           name: 
           tooltip: 
@@ -23170,7 +23375,7 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 010101010101
+        actionEnabled: 000100010101
         actionIsOpen: 010101010101
         actionStartIndex: 00000000040000000a0000000d0000001100000017000000
         actionHashCodes: ba7ea10168fde3049845b3052a6e8a00e07f0804785c8303
@@ -23286,7 +23491,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 1
+          value: 1.15
         - useVariable: 1
           name: Velocity Alter
           tooltip: 
@@ -23298,7 +23503,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 1
+          value: 1.15
         - useVariable: 1
           name: 
           tooltip: 
@@ -28991,6 +29196,12 @@ MonoBehaviour:
         showInInspector: 0
         networkSync: 0
         value: 5
+      - useVariable: 1
+        name: Current Velocity Y
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
       intVariables:
       - useVariable: 1
         name: Battle Enemies
@@ -29343,7 +29554,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+      variableCategoryIDs: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
     description: 
     docUrl: 
     showStateLabel: 0
@@ -29972,7 +30183,7 @@ MonoBehaviour:
   deathBroadcastEvent: 
   effectOrigin: {x: 0, y: 0, z: 0}
   lowCorpseArc: 0
-  enemyDeathType: 0
+  enemyDeathType: 6
   audioPlayerPrefab: {fileID: 8424441852534438005, guid: fd9edc3dd6ce96644b26b5e09a804e80, type: 3}
   enemyDeathSwordAudio:
     Clip: {fileID: 8300000, guid: 09d7d1019cb946649b3489e5e1d5be76, type: 3}
@@ -29991,8 +30202,8 @@ MonoBehaviour:
   deathWaveInfectedSmallPrefab: {fileID: 7873219696269874181, guid: 05413523133dfdb499463b307e2aa873, type: 3}
   recycle: 0
   rotateCorpse: 1
-  dustPuffMedPrefab: {fileID: 7437710410708142629, guid: 80502a73fde19fa41adc4217690bd381, type: 3}
-  deathPuffLargePrefab: {fileID: 3082191558358413112, guid: a05d2107e64f08f42a0cc335b36ca792, type: 3}
+  deathPuffMedPrefab: {fileID: 3082191558358413112, guid: 9a81417b854fe51449b98e72bf5477f2, type: 3}
+  deathPuffLargePrefab: {fileID: 3082191558358413112, guid: 7eec61ba0cffb724185f9d985b7c879b, type: 3}
   doKillFreeze: 1
 --- !u!114 &6049462930984436820
 MonoBehaviour:
@@ -40078,6 +40289,7 @@ GameObject:
   - component: {fileID: 8539726504241162710}
   - component: {fileID: 8539726504241162701}
   - component: {fileID: 8539726504241162698}
+  - component: {fileID: 4655319923539706788}
   m_Layer: 11
   m_Name: Hitter
   m_TagString: Untagged
@@ -40576,6 +40788,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 978969c5da82a904b8272668b6b5cf07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4655319923539706788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8539726504241162708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 774e8224615b24a4dad0874d524e467f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageDealt: 1
+  hazardType: 1
+  shadowDashHazard: 0
+  resetOnEnable: 0
 --- !u!1 &8539726504455125954
 GameObject:
   m_ObjectHideFlags: 0
@@ -61807,23 +62035,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   battleScene: {fileID: 0}
+  sendKilledToName: 
+  sendKilledToObject: {fileID: 0}
   audioPlayerPrefab: {fileID: 8424441852534438005, guid: fd9edc3dd6ce96644b26b5e09a804e80, type: 3}
   corpseSplatPrefab: {fileID: 0}
+  regularInvincibleAudio:
+    Clip: {fileID: 8300000, guid: 838436ca5cca57f4c8263ef351fcce5d, type: 3}
+    PitchMin: 0.85
+    PitchMax: 1.15
+    Volume: 1
+  blockHitPrefab: {fileID: 8754757665553440753, guid: cb321784eaf2ea44385acdb96474d931, type: 3}
+  strikeNailPrefab: {fileID: 7437710410708142629, guid: eb28e486e83b1e24fac84f6d3f03931b, type: 3}
+  slashImpactPrefab: {fileID: 1290429678873468, guid: b6b62e8744549024cbcce27e5ea86de8, type: 3}
+  hasAlternateInvincibleSound: 0
+  alternateInvincibleSound: {fileID: 0}
   hp: 40
   enemyType: 0
   effectOrigin: {x: 0, y: 0, z: 0}
   invincible: 0
   invincibleFromDirection: 0
+  preventInvincibleEffect: 0
   smallGeoDrops: 0
   mediumGeoDrops: 0
   largeGeoDrops: 0
   megaFlingGeo: 0
-  smallGeoPrefab: {fileID: 0}
-  mediumGeoPrefab: {fileID: 0}
-  largeGeoPrefab: {fileID: 0}
+  smallGeoPrefab: {fileID: 3041178361285957278, guid: 3ed1932750fc94644a7f5099628d1937, type: 3}
+  mediumGeoPrefab: {fileID: 3041178361285957278, guid: 7960323f95e61a34cb16e490f5860583, type: 3}
+  largeGeoPrefab: {fileID: 3041178361285957278, guid: 6e612c6e19ce3f44ab4b191e920a5516, type: 3}
   hasAlternateHitAnimation: 0
   alternateHitAnimation: 
-  deathAudioSnapshot: {fileID: 0}
+  deathAudioSnapshot: {fileID: 24500016, guid: dbaba554f966d5348882614b974db23f, type: 2}
   deathReset: 0
   hasSpecialDeath: 1
   isDead: 0
@@ -61910,7 +62151,7 @@ MonoBehaviour:
   deathWaveInfectedSmallPrefab: {fileID: 7873219696269874181, guid: 05413523133dfdb499463b307e2aa873, type: 3}
   recycle: 0
   rotateCorpse: 1
-  dustPuffMedPrefab: {fileID: 5077558777383121714, guid: 139edf1e331a3f0498f00fd04cd814ce, type: 3}
+  deathPuffMedPrefab: {fileID: 0}
   deathPuffLargePrefab: {fileID: 3082191558358413112, guid: 9a81417b854fe51449b98e72bf5477f2, type: 3}
   doKillFreeze: 1
 --- !u!114 &1640909438849037869

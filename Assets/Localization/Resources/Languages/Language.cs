@@ -10,16 +10,17 @@ namespace Language
     public static class Language
     {
 	public static string settingsAssetPath = "Assets/Localization/Resources/Languages/LocalizationSettings.asset";
-	private static LocalizationSettings _settings = null;
-        private static List<string> availableLanguages;
-        private static LanguageCode currentLanguage = LanguageCode.N;
-        private static Dictionary<string, Dictionary<string, string>> currentEntrySheets;
+	private static LocalizationSettings _settings = null; //本地化设置
+        private static List<string> availableLanguages; //可支持的语言的列表
+        private static LanguageCode currentLanguage = LanguageCode.N; //当前使用语言
+        private static Dictionary<string, Dictionary<string, string>> currentEntrySheets; //当前拥有的某个语言的文本框。
 	public static LocalizationSettings settings
 	{
 	    get
 	    {
 		if (_settings == null)
 		{
+		    //通过文件路径读取可序列化数据里的设置
 		    _settings = (LocalizationSettings)Resources.Load("Languages/" + Path.GetFileNameWithoutExtension(settingsAssetPath), typeof(LocalizationSettings));
 		}
 		return _settings;

@@ -77,8 +77,8 @@ GameObject:
   - component: {fileID: 5830566009427386682}
   - component: {fileID: 5830566009427386685}
   - component: {fileID: 5830566009427386684}
-  - component: {fileID: 5830566009427386687}
   - component: {fileID: 5830566009427386686}
+  - component: {fileID: 6993622144142984340}
   - component: {fileID: 5830566009427386681}
   - component: {fileID: 5830566009427386680}
   m_Layer: 11
@@ -2552,9 +2552,11 @@ MonoBehaviour:
     PitchMax: 0.85
     Volume: 1
   blockHitPrefab: {fileID: 8754757665553440753, guid: cb321784eaf2ea44385acdb96474d931, type: 3}
+  strikeNailPrefab: {fileID: 7437710410708142629, guid: eb28e486e83b1e24fac84f6d3f03931b, type: 3}
+  slashImpactPrefab: {fileID: 1290429678873468, guid: b6b62e8744549024cbcce27e5ea86de8, type: 3}
   hasAlternateInvincibleSound: 0
   alternateInvincibleSound: {fileID: 0}
-  hp: 5
+  hp: 2
   enemyType: 0
   effectOrigin: {x: 0, y: 0, z: 0}
   invincible: 0
@@ -2594,27 +2596,6 @@ MonoBehaviour:
     Volume: 1
   hitFlashOrange: {fileID: 7658921334995516276, guid: 14d20543255964042bf1c1e24df42ffe, type: 3}
   hitPuffLarge: {fileID: 1648848660361343018, guid: d274cef1725299441b938ebfd5a7e9f4, type: 3}
---- !u!114 &5830566009427386687
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5830566009427386669}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9fb3a3bbd987a0a4681b783a18c90789, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  effectOrigin: {x: 0, y: 0, z: 0}
-  audioPlayerPrefab: {fileID: 8424441852534438005, guid: fd9edc3dd6ce96644b26b5e09a804e80, type: 3}
-  enemyDamage:
-    Clip: {fileID: 8300000, guid: 8553d0528302fe140993fcb90965437c, type: 3}
-    PitchMin: 0.8
-    PitchMax: 1.2
-    Volume: 1
-  hitFlashOrange: {fileID: 7658921334995516276, guid: 14d20543255964042bf1c1e24df42ffe, type: 3}
-  hitPuffLarge: {fileID: 1648848660361343018, guid: d274cef1725299441b938ebfd5a7e9f4, type: 3}
 --- !u!114 &5830566009427386686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2634,6 +2615,47 @@ MonoBehaviour:
   stopVelocityXWhenRecoilingUp: 1
   preventRecoilUp: 1
   state: 0
+--- !u!114 &6993622144142984340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5830566009427386669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f669c6290b46b84288063e01213ce12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  corpsePrefab: {fileID: 7656040956884529094, guid: 3a26fc5407a1c8d49981de28d63b9719, type: 3}
+  corpseFacesRight: 0
+  corpseFlingSpeed: 0
+  corpseSpawnPoint: {x: 0, y: 0, z: 0}
+  deathBroadcastEvent: 
+  effectOrigin: {x: 0, y: 0, z: 0}
+  lowCorpseArc: 0
+  enemyDeathType: 4
+  audioPlayerPrefab: {fileID: 8424441852534438005, guid: f96af3324a9905c49b4bf507c04a1e4f, type: 3}
+  enemyDeathSwordAudio:
+    Clip: {fileID: 8300000, guid: 672112d46fb2b9043a82a10de0983f6e, type: 3}
+    PitchMin: 0.65
+    PitchMax: 0.85
+    Volume: 1
+  enemyDamageAudio:
+    Clip: {fileID: 8300000, guid: 8553d0528302fe140993fcb90965437c, type: 3}
+    PitchMin: 0.65
+    PitchMax: 0.85
+    Volume: 1
+  enemyDeathSwordClip: {fileID: 8300000, guid: 672112d46fb2b9043a82a10de0983f6e, type: 3}
+  enemyDamageClip: {fileID: 8300000, guid: 8553d0528302fe140993fcb90965437c, type: 3}
+  audioSnapshotOnDeath: {fileID: 24500070, guid: 336930d400f2c734ab9b5a11db37cf57, type: 2}
+  deathWaveInfectedPrefab: {fileID: 7873219696269874181, guid: e242dfdd218f237448ade3a507467ff9, type: 3}
+  deathWaveInfectedSmallPrefab: {fileID: 7873219696269874181, guid: e242dfdd218f237448ade3a507467ff9, type: 3}
+  recycle: 0
+  rotateCorpse: 1
+  deathPuffMedPrefab: {fileID: 3082191558358413112, guid: 9a81417b854fe51449b98e72bf5477f2, type: 3}
+  deathPuffLargePrefab: {fileID: 3082191558358413112, guid: 7eec61ba0cffb724185f9d985b7c879b, type: 3}
+  doKillFreeze: 1
 --- !u!114 &5830566009427386681
 MonoBehaviour:
   m_ObjectHideFlags: 0

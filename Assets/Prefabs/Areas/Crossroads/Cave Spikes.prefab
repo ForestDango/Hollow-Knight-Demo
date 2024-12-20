@@ -42,6 +42,7 @@ GameObject:
   - component: {fileID: 1684087431691068745}
   - component: {fileID: 1684087431691068751}
   - component: {fileID: 1684087431691068744}
+  - component: {fileID: 5835317043500314784}
   m_Layer: 17
   m_Name: Cave Spikes
   m_TagString: Untagged
@@ -126,3 +127,21 @@ MonoBehaviour:
   magnitudeMult: 1
   moveDirection: 0
   specialType: 0
+--- !u!114 &5835317043500314784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1684087431691068747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb4488737dbfd7245940529ff5bec638, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blockEffect: {fileID: 8754757665553440753, guid: cb321784eaf2ea44385acdb96474d931, type: 3}
+  useNailPosition: 0
+  sendFSMEvent: 0
+  FSMEvent: 
+  fsm: {fileID: 0}
+  sendDirectionalFSMEvents: 0

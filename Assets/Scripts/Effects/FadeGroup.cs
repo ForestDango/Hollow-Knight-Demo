@@ -157,7 +157,9 @@ public class FadeGroup : MonoBehaviour
 	    }
 	}
     }
-
+    /// <summary>
+    ///  将所有的spriterender和text都设置为透明alpha = 1
+    /// </summary>
     public void FadeDown()
     {
 	timer = fadeOutTime;
@@ -171,6 +173,9 @@ public class FadeGroup : MonoBehaviour
 	}
     }
 
+    /// <summary>
+    ///  将所有的spriterender和text都快速的设置为透明alpha = 1
+    /// </summary>
     public void FadeDownFast()
     {
 	timer = fadeOutTimeFast;

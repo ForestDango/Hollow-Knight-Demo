@@ -22,7 +22,7 @@ public class GeoControl : MonoBehaviour
     private HeroController hero;
     private Transform player;
     private bool activated;
-    private bool attracted;
+    private bool attracted; //是否触发捡钱吸入到玩家上
     private const float pickupStartDelay = 0.25f;
     private float pickupStartTime;
     private float defaultGravity;
@@ -138,7 +138,7 @@ public class GeoControl : MonoBehaviour
     }
 
     /// <summary>
-    /// 碰到地面上
+    /// 当吉欧碰到地面上
     /// </summary>
     /// <param name="collision"></param>
     private void OnCollisionEnter2D(Collision2D collision)
@@ -162,7 +162,6 @@ public class GeoControl : MonoBehaviour
 	float num = 0f;
 	if(collision.tag == "HeroBox") //如果碰到玩家了就加钱
 	{
-	    Debug.LogFormat("size.value = " + size.value);
 	    hero.AddGeo(size.value);
 	    num = Mathf.Max(num, PlayCollectSound());
 	    flag = true;
@@ -205,6 +204,10 @@ public class GeoControl : MonoBehaviour
 	return 0f;
     }
 
+    /// <summary>
+    /// 关闭捡钱和自身的renderer
+    /// </summary>
+    /// <param name="waitTime"></param>
     private void Disable(float waitTime)
     {
 	activated = true;

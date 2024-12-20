@@ -313,6 +313,10 @@ public sealed class ObjectPool : MonoBehaviour
 	}
 	isRecycling = false;
     }
+    public static void RecycleAll<T>(T prefab) where T : Component
+    {
+	RecycleAll(prefab.gameObject);
+    }
 
     public static void RecycleAll()
     {
@@ -322,6 +326,37 @@ public sealed class ObjectPool : MonoBehaviour
 	    Recycle(tempList[i]);
 	}
 	tempList.Clear();
+    }
+    public static void RecycleAll(GameObject prefab)
+    {
+	foreach (KeyValuePair<GameObject, GameObject> keyValuePair in instance.spawnedObjects)
+	{
+	    if (keyValuePair.Value == prefab)
+	    {
+		tempList.Add(keyValuePair.Key);
+	    }
+	}
+	for (int i = 0; i < tempList.Count; i++)
+	{
+	    Recycle(tempList[i]);
+	}
+	tempList.Clear();
+    }
+
+    public static void DestroyPooled(GameObject prefab, int amountToRemove)
+    {
+	RecycleAll(prefab);
+	List<GameObject> list;
+	if (instance.pooledObjects.TryGetValue(prefab, out list))
+	{
+	    int num = 0;
+	    while (num < amountToRemove && list.Count > 0)
+	    {
+		Destroy(list[0]);
+		list.RemoveAt(0);
+		num++;
+	    }
+	}
     }
 
     [Serializable]

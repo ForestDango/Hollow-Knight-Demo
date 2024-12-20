@@ -2582,7 +2582,7 @@ public class HeroController : MonoBehaviour
             enteringVertically = false;
             SetState(ActorStates.no_input);
             float num2 = enterGate.transform.position.x + enterGate.entryOffset.x;
-            float y4 = FindGroundPointY(num2, enterGate.transform.position.y, false);
+            float y4 = FindGroundPointY(num2 - 2f, enterGate.transform.position.y, false);
             transform.SetPosition2D(num2, y4);
             if(heroInPosition != null)
 	    {
@@ -2663,6 +2663,15 @@ public class HeroController : MonoBehaviour
 	    }
             FinishedEnteringScene(true, false);
         }
+    }
+
+    public string GetEntryGateName()
+    {
+        if(sceneEntryGate != null)
+	{
+            return sceneEntryGate.name;
+	}
+        return null;
     }
     public void SetHazardRespawn(Vector3 position, bool facingRight)
     {

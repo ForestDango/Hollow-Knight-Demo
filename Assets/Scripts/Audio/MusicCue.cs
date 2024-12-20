@@ -37,7 +37,7 @@ public class MusicCue : ScriptableObject
 	}
     }
 
-    public MusicChannelInfo GetChanelInfo(MusicChannels channel)
+    public MusicChannelInfo GetChannelInfo(MusicChannels channel)
     {
 	if (channel < MusicChannels.Main || channel >= (MusicChannels)channelInfos.Length)
 	{
@@ -53,7 +53,7 @@ public class MusicCue : ScriptableObject
 	    int i = 0;
 	    while (i < alternatives.Length)
 	    {
-		MusicCue.Alternative alternative = alternatives[i];
+		Alternative alternative = alternatives[i];
 		if (playerData.GetBool(alternative.PlayerDataBoolKey))
 		{
 		    MusicCue cue = alternative.Cue;

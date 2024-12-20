@@ -37,14 +37,14 @@ namespace HutongGames.PlayMaker.Actions
 
 	private bool checkUp;
 	private bool checkRight;
-	private bool checkBottom;
+	private bool checkDown;
 	private bool checkLeft;
 
 	public override void Reset()
 	{
 	    checkUp = false;
 	    checkRight = false;
-	    checkBottom = false;
+	    checkDown = false;
 	    checkLeft = false;
 	}
 
@@ -79,11 +79,11 @@ namespace HutongGames.PlayMaker.Actions
 	    }
 	    if (!bottomHit.IsNone || bottomHitEvent != null)
 	    {
-		checkBottom = true;
+		checkDown = true;
 	    }
 	    else
 	    {
-		checkBottom = false;
+		checkDown = false;
 	    }
 	    if (!leftHit.IsNone || leftHitEvent != null)
 	    {
@@ -101,7 +101,7 @@ namespace HutongGames.PlayMaker.Actions
 	    {
 		if (!otherLayer)
 		{
-		    CheckTouching(LayerMask.NameToLayer("Terrain"));
+		    CheckTouching(8);
 		    return;
 		}
 		CheckTouching(otherLayerNumber);
@@ -174,20 +174,21 @@ namespace HutongGames.PlayMaker.Actions
 		    }
 		}
 	    }
-	    if (checkBottom)
+	    if (checkDown)
 	    {
 		bottomRays.Clear();
-		bottomRays.Add(new Vector2(col2d.bounds.min.x, col2d.bounds.min.y));
+		bottomRays.Add(new Vector2(col2d.bounds.max.x, col2d.bounds.min.y));
 		bottomRays.Add(new Vector2(col2d.bounds.center.x, col2d.bounds.min.y));
 		bottomRays.Add(col2d.bounds.min);
 		bottomHit.Value = false;
 		for (int i = 0; i < 3; i++)
 		{
-		    RaycastHit2D raycastHit2D3 = Physics2D.Raycast(bottomRays[i], Vector2.down, RAYCAST_LENGTH, 1 << layer);
+		    RaycastHit2D raycastHit2D3 = Physics2D.Raycast(bottomRays[i], -Vector2.up, RAYCAST_LENGTH, 1 << layer);
 		    if (raycastHit2D3.collider != null && (!ignoreTriggers.Value || !raycastHit2D3.collider.isTrigger))
 		    {
 			bottomHit.Value = true;
 			Fsm.Event(bottomHitEvent);
+			Debug.LogFormat("Bottom Hit Terrain");
 			break;
 		    }
 		}

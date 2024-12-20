@@ -426,21 +426,23 @@ MonoBehaviour:
     PitchMax: 1.15
     Volume: 1
   blockHitPrefab: {fileID: 8754757665553440753, guid: cb321784eaf2ea44385acdb96474d931, type: 3}
+  strikeNailPrefab: {fileID: 7437710410708142629, guid: eb28e486e83b1e24fac84f6d3f03931b, type: 3}
+  slashImpactPrefab: {fileID: 1290429678873468, guid: b6b62e8744549024cbcce27e5ea86de8, type: 3}
   hasAlternateInvincibleSound: 0
   alternateInvincibleSound: {fileID: 0}
-  hp: 25
+  hp: 125
   enemyType: 0
   effectOrigin: {x: 0, y: 0, z: 0}
   invincible: 0
   invincibleFromDirection: 0
   preventInvincibleEffect: 0
   smallGeoDrops: 20
-  mediumGeoDrops: 0
+  mediumGeoDrops: 10
   largeGeoDrops: 0
   megaFlingGeo: 0
   smallGeoPrefab: {fileID: 3041178361285957278, guid: 3ed1932750fc94644a7f5099628d1937, type: 3}
-  mediumGeoPrefab: {fileID: 0}
-  largeGeoPrefab: {fileID: 0}
+  mediumGeoPrefab: {fileID: 3041178361285957278, guid: 7960323f95e61a34cb16e490f5860583, type: 3}
+  largeGeoPrefab: {fileID: 3041178361285957278, guid: 6e612c6e19ce3f44ab4b191e920a5516, type: 3}
   hasAlternateHitAnimation: 0
   alternateHitAnimation: 
   deathAudioSnapshot: {fileID: 24500016, guid: dbaba554f966d5348882614b974db23f, type: 2}
@@ -534,7 +536,7 @@ MonoBehaviour:
   deathBroadcastEvent: 
   effectOrigin: {x: 0, y: 0, z: 0}
   lowCorpseArc: 0
-  enemyDeathType: 0
+  enemyDeathType: 5
   audioPlayerPrefab: {fileID: 8424441852534438005, guid: f96af3324a9905c49b4bf507c04a1e4f, type: 3}
   enemyDeathSwordAudio:
     Clip: {fileID: 8300000, guid: 672112d46fb2b9043a82a10de0983f6e, type: 3}
@@ -553,8 +555,8 @@ MonoBehaviour:
   deathWaveInfectedSmallPrefab: {fileID: 7873219696269874181, guid: 05413523133dfdb499463b307e2aa873, type: 3}
   recycle: 0
   rotateCorpse: 1
-  dustPuffMedPrefab: {fileID: 5077558777383121714, guid: 139edf1e331a3f0498f00fd04cd814ce, type: 3}
-  deathPuffLargePrefab: {fileID: 3082191558358413112, guid: 9a81417b854fe51449b98e72bf5477f2, type: 3}
+  deathPuffMedPrefab: {fileID: 3082191558358413112, guid: 9a81417b854fe51449b98e72bf5477f2, type: 3}
+  deathPuffLargePrefab: {fileID: 3082191558358413112, guid: 7eec61ba0cffb724185f9d985b7c879b, type: 3}
   doKillFreeze: 1
 --- !u!114 &3678478949829858114
 MonoBehaviour:

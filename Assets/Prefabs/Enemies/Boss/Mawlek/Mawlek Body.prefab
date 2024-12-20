@@ -19626,12 +19626,12 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: {fileID: 0}
-        - useVariable: 0
-          name: 
+        - useVariable: 1
+          name: AreaTitle
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: {fileID: 7437710410708142629, guid: 5418039a298a74145bd4b3035502378f, type: 3}
+          value: {fileID: 0}
         fsmOwnerDefaultParams:
         - ownerOption: 1
           gameObject:
@@ -22755,13 +22755,13 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 24
+          value: 32
         - useVariable: 1
           name: Shot Speed Max
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 27
+          value: 35
         - useVariable: 1
           name: Angle Min
           tooltip: 
@@ -22785,13 +22785,13 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 24
+          value: 32
         - useVariable: 1
           name: Shot Speed Max
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 27
+          value: 35
         - useVariable: 1
           name: Angle Min
           tooltip: 
@@ -26539,11 +26539,13 @@ MonoBehaviour:
   audioPlayerPrefab: {fileID: 8424441852534438005, guid: f96af3324a9905c49b4bf507c04a1e4f, type: 3}
   corpseSplatPrefab: {fileID: 0}
   regularInvincibleAudio:
-    Clip: {fileID: 0}
-    PitchMin: 0
-    PitchMax: 0
-    Volume: 0
-  blockHitPrefab: {fileID: 0}
+    Clip: {fileID: 8300000, guid: 838436ca5cca57f4c8263ef351fcce5d, type: 3}
+    PitchMin: 0.85
+    PitchMax: 1.15
+    Volume: 1
+  blockHitPrefab: {fileID: 8754757665553440753, guid: cb321784eaf2ea44385acdb96474d931, type: 3}
+  strikeNailPrefab: {fileID: 7437710410708142629, guid: eb28e486e83b1e24fac84f6d3f03931b, type: 3}
+  slashImpactPrefab: {fileID: 1290429678873468, guid: b6b62e8744549024cbcce27e5ea86de8, type: 3}
   hasAlternateInvincibleSound: 0
   alternateInvincibleSound: {fileID: 0}
   hp: 300
@@ -26557,8 +26559,8 @@ MonoBehaviour:
   largeGeoDrops: 0
   megaFlingGeo: 0
   smallGeoPrefab: {fileID: 3041178361285957278, guid: 3ed1932750fc94644a7f5099628d1937, type: 3}
-  mediumGeoPrefab: {fileID: 0}
-  largeGeoPrefab: {fileID: 0}
+  mediumGeoPrefab: {fileID: 3041178361285957278, guid: 7960323f95e61a34cb16e490f5860583, type: 3}
+  largeGeoPrefab: {fileID: 3041178361285957278, guid: 6e612c6e19ce3f44ab4b191e920a5516, type: 3}
   hasAlternateHitAnimation: 0
   alternateHitAnimation: 
   deathAudioSnapshot: {fileID: 24500016, guid: dbaba554f966d5348882614b974db23f, type: 2}
@@ -26605,7 +26607,7 @@ MonoBehaviour:
   deathBroadcastEvent: 
   effectOrigin: {x: 0, y: 0, z: 0}
   lowCorpseArc: 0
-  enemyDeathType: 0
+  enemyDeathType: 5
   audioPlayerPrefab: {fileID: 8424441852534438005, guid: f96af3324a9905c49b4bf507c04a1e4f, type: 3}
   enemyDeathSwordAudio:
     Clip: {fileID: 8300000, guid: 7c543b8609c5d3445afce0a9332dbabf, type: 3}
@@ -26624,8 +26626,8 @@ MonoBehaviour:
   deathWaveInfectedSmallPrefab: {fileID: 7873219696269874181, guid: 05413523133dfdb499463b307e2aa873, type: 3}
   recycle: 0
   rotateCorpse: 0
-  dustPuffMedPrefab: {fileID: 7437710410708142629, guid: 80502a73fde19fa41adc4217690bd381, type: 3}
-  deathPuffLargePrefab: {fileID: 7437710410708142629, guid: 2ca24a39d87b6cf4c846488f830022d9, type: 3}
+  deathPuffMedPrefab: {fileID: 3082191558358413112, guid: 9a81417b854fe51449b98e72bf5477f2, type: 3}
+  deathPuffLargePrefab: {fileID: 3082191558358413112, guid: 7eec61ba0cffb724185f9d985b7c879b, type: 3}
   doKillFreeze: 1
 --- !u!114 &4174292625803398245
 MonoBehaviour:

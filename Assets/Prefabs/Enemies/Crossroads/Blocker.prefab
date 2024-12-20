@@ -186,6 +186,8 @@ MonoBehaviour:
     PitchMax: 1.15
     Volume: 1
   blockHitPrefab: {fileID: 8754757665553440753, guid: cb321784eaf2ea44385acdb96474d931, type: 3}
+  strikeNailPrefab: {fileID: 7437710410708142629, guid: eb28e486e83b1e24fac84f6d3f03931b, type: 3}
+  slashImpactPrefab: {fileID: 1290429678873468, guid: b6b62e8744549024cbcce27e5ea86de8, type: 3}
   hasAlternateInvincibleSound: 0
   alternateInvincibleSound: {fileID: 0}
   hp: 50
@@ -285,8 +287,8 @@ MonoBehaviour:
   deathWaveInfectedSmallPrefab: {fileID: 7873219696269874181, guid: 05413523133dfdb499463b307e2aa873, type: 3}
   recycle: 0
   rotateCorpse: 1
-  dustPuffMedPrefab: {fileID: 5077558777383121714, guid: 139edf1e331a3f0498f00fd04cd814ce, type: 3}
-  deathPuffLargePrefab: {fileID: 3082191558358413112, guid: 9a81417b854fe51449b98e72bf5477f2, type: 3}
+  deathPuffMedPrefab: {fileID: 3082191558358413112, guid: 9a81417b854fe51449b98e72bf5477f2, type: 3}
+  deathPuffLargePrefab: {fileID: 3082191558358413112, guid: 7eec61ba0cffb724185f9d985b7c879b, type: 3}
   doKillFreeze: 1
 --- !u!114 &4162840113551801909
 MonoBehaviour:
@@ -861,7 +863,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 15
+          value: 9
         - useVariable: 0
           name: 
           tooltip: 
@@ -1115,7 +1117,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 15
+          value: 9
         - useVariable: 0
           name: 
           tooltip: 
@@ -2645,7 +2647,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 15
+          value: 9
         - useVariable: 1
           name: Chooser
           tooltip: 
@@ -2681,7 +2683,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 15
+          value: 9
         - useVariable: 1
           name: Chooser
           tooltip: 
@@ -2689,7 +2691,7 @@ MonoBehaviour:
           networkSync: 0
           value: 0
         - useVariable: 1
-          name: Choose Min
+          name: Choose Max
           tooltip: 
           showInInspector: 0
           networkSync: 0
@@ -3004,15 +3006,31 @@ MonoBehaviour:
         linkTarget: 0
         colorIndex: 0
       actionData:
-        actionNames: []
-        customNames: []
-        actionEnabled: 
-        actionIsOpen: 
-        actionStartIndex: 
-        actionHashCodes: 
+        actionNames:
+        - HutongGames.PlayMaker.Actions.Tk2dWatchAnimationEvents
+        - CheckAlertRangeByName
+        - HutongGames.PlayMaker.Actions.BoolTest
+        - HutongGames.PlayMaker.Actions.Wait
+        customNames:
+        - 
+        - 
+        - 
+        - 
+        actionEnabled: 01010101
+        actionIsOpen: 01010101
+        actionStartIndex: 0000000003000000060000000a000000
+        actionHashCodes: f80522037de7b104a4c8bf0048c01101
         unityObjectParams: []
         fsmGameObjectParams: []
-        fsmOwnerDefaultParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -3024,24 +3042,61 @@ MonoBehaviour:
         fsmVarParams: []
         fsmArrayParams: []
         fsmEnumParams: []
-        fsmFloatParams: []
+        fsmFloatParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0.25
         fsmIntParams: []
-        fsmBoolParams: []
+        fsmBoolParams:
+        - useVariable: 1
+          name: In Attack Range
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: In Attack Range
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         fsmVector2Params: []
         fsmVector3Params: []
         fsmColorParams: []
         fsmRectParams: []
         fsmQuaternionParams: []
-        stringParams: []
-        byteData: 
+        stringParams:
+        - 
+        - FINISHED
+        - Attack Range
+        - CLOSE
+        - 
+        - FINISHED
+        byteData: 010100
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 
-        paramName: []
-        paramDataPos: 
-        paramByteDataSize: 
+        paramDataType: 140000001700000017000000110000000300000001000000110000001700000017000000010000000f0000001700000001000000
+        paramName:
+        - gameObject
+        - animationTriggerEvent
+        - animationCompleteEvent
+        - storeResult
+        - childName
+        - everyFrame
+        - boolVariable
+        - isTrue
+        - isFalse
+        - everyFrame
+        - time
+        - finishEvent
+        - realTime
+        paramDataPos: 00000000000000000100000000000000020000000000000001000000030000000400000001000000000000000500000002000000
+        paramByteDataSize: 00000000000000000000000000000000000000000100000000000000000000000000000001000000000000000000000001000000
     - name: Close
       description: 
       colorIndex: 0
@@ -4197,7 +4252,7 @@ MonoBehaviour:
         tooltip: 
         showInInspector: 0
         networkSync: 0
-        value: 20
+        value: 27
       - useVariable: 1
         name: Spawned Time
         tooltip: 

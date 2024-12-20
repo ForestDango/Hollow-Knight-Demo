@@ -18,17 +18,17 @@ public class GeoCounter : MonoBehaviour
     private PlayMakerFSM addTextFsm;
     private PlayMakerFSM subTextFsm;
 
-    private int counterCurrent;
-    private int geoChange;
-    private int addCounter;
-    private int takeCounter;
-    private int addRollerState;
-    private int takeRollerState;
-    private int changePerTick;
-    private float addRollerStartTimer;
-    private float takeRollerStartTimer;
-    private float digitChangeTimer;
-    private bool toZero;
+    private int counterCurrent; //当前拥有的吉欧
+    private int geoChange; //需要改变的geo数量
+    private int addCounter;//需要增加的吉欧的计数器
+    private int takeCounter;//需要减少的吉欧的计数器
+    private int addRollerState; //增加吉欧的动画的阶段
+    private int takeRollerState;//减少吉欧的动画的阶段
+    private int changePerTick; //每次执行tick动画减少的吉欧数量
+    private float addRollerStartTimer; //开始增加吉欧前的计时器
+    private float takeRollerStartTimer;//开始减少吉欧前的计时器
+    private float digitChangeTimer; //每次当这个变量digitChangeTimer小于0的时候就播放一次加钱的动画
+    private bool toZero; //将吉欧归零
 
     private void Awake()
     {
@@ -69,7 +69,7 @@ public class GeoCounter : MonoBehaviour
 	}
 	else
 	{
-	    if (addRollerState == 1)
+	    if (addRollerState == 1) //延迟进入吉欧增加的状态
 	    {
 		if (addRollerStartTimer > 0f)
 		{
@@ -80,19 +80,19 @@ public class GeoCounter : MonoBehaviour
 		    addRollerState = 2;
 		}
 	    }
-	    if (addRollerState == 2 && addCounter > 0)
+	    if (addRollerState == 2 && addCounter > 0) //进入吉欧增加的动画，切要保证增加的吉欧数量大于0
 	    {
 		geoSpriteFsm.SendEvent("GET");
 		if (digitChangeTimer < 0f)
 		{
-		    addCounter -= changePerTick;
+		    addCounter -= changePerTick;//这里的changePerTick应该是正数，最小不小于-1
 		    counterCurrent += changePerTick;
 		    geoTextMesh.text = counterCurrent.ToString();
 		    if (addTextMesh != null)
 		    {
 			addTextMesh.text = "+ " + addCounter.ToString();
 		    }
-		    if (addCounter <= 0)
+		    if (addCounter <= 0)//如果累计增加的addCounter小于等于0以后，就说明状态执行完毕已完成整个增加吉欧的行为，就回到addRollerState = 0状态
 		    {
 			geoSpriteFsm.SendEvent("IDLE");
 			addCounter = 0;
@@ -109,7 +109,7 @@ public class GeoCounter : MonoBehaviour
 		    digitChangeTimer -= Time.deltaTime;
 		}
 	    }
-	    if (takeRollerState == 1)
+	    if (takeRollerState == 1)//延迟进入吉欧减少的状态
 	    {
 		if (takeRollerStartTimer > 0f)
 		{
@@ -120,19 +120,19 @@ public class GeoCounter : MonoBehaviour
 		    takeRollerState = 2;
 		}
 	    }
-	    if (takeRollerState == 2 && takeCounter < 0)
+	    if (takeRollerState == 2 && takeCounter < 0)//进入吉欧减少的动画状态，切要保证减少的吉欧数量大于0
 	    {
-		geoSpriteFsm.SendEvent("TAKE");
-		if (digitChangeTimer < 0f)
+		geoSpriteFsm.SendEvent("TAKE"); //向geoSpriteFsm发送事件TAKE
+		if (digitChangeTimer < 0f) //每一次digitChangeTimer的时间小于0的时候就改变changePerTick数量的takeCounter和counterCurrent
 		{
-		    takeCounter -= changePerTick;
+		    takeCounter -= changePerTick; //这里的changePerTick应该是负数，最多不大于-1
 		    counterCurrent += changePerTick;
 		    geoTextMesh.text = counterCurrent.ToString();
 		    if (subTextMesh != null)
 		    {
 			subTextMesh.text = "- " + (-takeCounter).ToString();
 		    }
-		    if (takeCounter >= 0)
+		    if (takeCounter >= 0) //如果累计减少的takeCounter大于等于0以后，就说明状态执行完毕已完成整个减少吉欧的行为，就回到takeRollerState = 0状态
 		    {
 			geoSpriteFsm.SendEvent("IDLE");
 			takeCounter = 0;
@@ -165,6 +165,8 @@ public class GeoCounter : MonoBehaviour
 	takeRollerState = 0;
 	addRollerState = 0;
     }
+
+    //以下都是在HeroController.cs代码中被调用，顾名思义的都是
 
     public void AddGeo(int geo)
     {
@@ -272,7 +274,4 @@ public class GeoCounter : MonoBehaviour
 	geoSpriteFsm.SendEvent("TO ZERO");
 	toZero = true;
     }
-
-
-
 }

@@ -76,7 +76,7 @@ MonoBehaviour:
       eventInfo: 
       eventInt: 0
       eventFloat: 0
-    fps: 15
+    fps: 12
     loopStart: 0
     wrapMode: 0
   - name: TurnToFly
@@ -123,7 +123,7 @@ MonoBehaviour:
       eventInfo: 
       eventInt: 0
       eventFloat: 0
-    fps: 17.5
+    fps: 12
     loopStart: 3
     wrapMode: 1
   - name: Chase
@@ -152,7 +152,7 @@ MonoBehaviour:
       eventInfo: 
       eventInt: 0
       eventFloat: 0
-    fps: 15
+    fps: 12
     loopStart: 0
     wrapMode: 0
   - name: Startle
@@ -181,10 +181,10 @@ MonoBehaviour:
       eventInfo: 
       eventInt: 0
       eventFloat: 0
-    fps: 15
+    fps: 12
     loopStart: 0
     wrapMode: 2
-  - name: Death
+  - name: Death Air
     frames:
     - spriteCollection: {fileID: 1984604456599985354, guid: fcbd708001aeb814c9d4fb04343fa78c, type: 3}
       spriteId: 0
@@ -204,25 +204,7 @@ MonoBehaviour:
       eventInfo: 
       eventInt: 0
       eventFloat: 0
-    - spriteCollection: {fileID: 1984604456599985354, guid: fcbd708001aeb814c9d4fb04343fa78c, type: 3}
-      spriteId: 3
-      triggerEvent: 0
-      eventInfo: 
-      eventInt: 0
-      eventFloat: 0
-    - spriteCollection: {fileID: 1984604456599985354, guid: fcbd708001aeb814c9d4fb04343fa78c, type: 3}
-      spriteId: 4
-      triggerEvent: 0
-      eventInfo: 
-      eventInt: 0
-      eventFloat: 0
-    - spriteCollection: {fileID: 1984604456599985354, guid: fcbd708001aeb814c9d4fb04343fa78c, type: 3}
-      spriteId: 5
-      triggerEvent: 0
-      eventInfo: 
-      eventInt: 0
-      eventFloat: 0
-    fps: 15
+    fps: 12
     loopStart: 0
     wrapMode: 2
   - name: TurnToIdle
@@ -275,6 +257,58 @@ MonoBehaviour:
       eventInfo: 
       eventInt: 0
       eventFloat: 0
-    fps: 16
+    fps: 12
     loopStart: 3
     wrapMode: 1
+  - name: Death Land
+    frames:
+    - spriteCollection: {fileID: 1984604456599985354, guid: fcbd708001aeb814c9d4fb04343fa78c, type: 3}
+      spriteId: 3
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 1984604456599985354, guid: fcbd708001aeb814c9d4fb04343fa78c, type: 3}
+      spriteId: 4
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 1984604456599985354, guid: fcbd708001aeb814c9d4fb04343fa78c, type: 3}
+      spriteId: 5
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    fps: 12
+    loopStart: 0
+    wrapMode: 2
+  - name: Fly
+    frames:
+    - spriteCollection: {fileID: 1984604456599985354, guid: fcbd708001aeb814c9d4fb04343fa78c, type: 3}
+      spriteId: 6
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 1984604456599985354, guid: fcbd708001aeb814c9d4fb04343fa78c, type: 3}
+      spriteId: 7
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 1984604456599985354, guid: fcbd708001aeb814c9d4fb04343fa78c, type: 3}
+      spriteId: 8
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 1984604456599985354, guid: fcbd708001aeb814c9d4fb04343fa78c, type: 3}
+      spriteId: 9
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    fps: 12
+    loopStart: 0
+    wrapMode: 0

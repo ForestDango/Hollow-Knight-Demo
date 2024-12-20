@@ -1,0 +1,1200 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5904319671739652762
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3891087714578471372}
+  - component: {fileID: 5430953589709075941}
+  m_Layer: 0
+  m_Name: BatDropperClnSpriteCollection
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3891087714578471372
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5904319671739652762}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5430953589709075941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5904319671739652762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d546f34a90531a14eaba82a43b05b86b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 3
+  materialIdsValid: 1
+  needMaterialInstance: 0
+  spriteDefinitions:
+  - name: Bat Dropper Cln_death_skull
+    boundsData:
+    - {x: 0.015625, y: -0.0078125, z: 0}
+    - {x: 0.6875, y: 1.140625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0.0078125, y: -0.0078125, z: 0}
+    - {x: 0.703125, y: 1.140625, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.328125, y: -0.578125, z: 0}
+    - {x: 0.359375, y: -0.578125, z: 0}
+    - {x: -0.328125, y: 0.5625, z: 0}
+    - {x: 0.359375, y: 0.5625, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.88086134, y: 0.18750098}
+    - {x: 0.9667949, y: 0.18750098}
+    - {x: 0.88086134, y: 0.25878808}
+    - {x: 0.9667949, y: 0.25878808}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 485e800e6f8041c41a37e0df4bd166ea, type: 2}
+    materialId: 0
+    sourceTextureGUID: 2751e5664a199d6479e72d4a02d8625e
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Bat Dropper Cln_dive0000
+    boundsData:
+    - {x: 0.09374997, y: -0.015625015, z: 0}
+    - {x: 0.31250003, y: 0.6249999, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 3.25, y: 4.09375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.062500045, y: -0.32812494, z: 0}
+    - {x: 0.24999999, y: -0.32812494, z: 0}
+    - {x: -0.062500045, y: 0.2968749, z: 0}
+    - {x: 0.24999999, y: 0.2968749, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.88086134, y: 0.2626963}
+    - {x: 0.88086134, y: 0.28222558}
+    - {x: 0.9589824, y: 0.2626963}
+    - {x: 0.9589824, y: 0.28222558}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 485e800e6f8041c41a37e0df4bd166ea, type: 2}
+    materialId: 0
+    sourceTextureGUID: 9ec578d69254d794ab3fc8cf79549c5e
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Bat Dropper Cln_dive0001
+    boundsData:
+    - {x: 0.05468747, y: 0.03906244, z: 0}
+    - {x: 1.484375, y: 3.390625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 3.25, y: 4.09375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.6875, y: -1.65625, z: 0}
+    - {x: 0.79687494, y: -1.65625, z: 0}
+    - {x: -0.6875, y: 1.7343749, z: 0}
+    - {x: 0.79687494, y: 1.7343749, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.24023633, y: 0.31054786}
+    - {x: 0.24023633, y: 0.40331933}
+    - {x: 0.66406053, y: 0.31054786}
+    - {x: 0.66406053, y: 0.40331933}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 485e800e6f8041c41a37e0df4bd166ea, type: 2}
+    materialId: 0
+    sourceTextureGUID: cb9b1c0d17d2481448a65db9e73674a7
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Bat Dropper Cln_dive0002
+    boundsData:
+    - {x: 0.0703125, y: 0.02343756, z: 0}
+    - {x: 1.578125, y: 3.640625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 3.25, y: 4.09375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.71875, y: -1.796875, z: 0}
+    - {x: 0.859375, y: -1.796875, z: 0}
+    - {x: -0.71875, y: 1.8437501, z: 0}
+    - {x: 0.859375, y: 1.8437501, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.6757832, y: 0.18750098}
+    - {x: 0.8730449, y: 0.18750098}
+    - {x: 0.6757832, y: 0.41503808}
+    - {x: 0.8730449, y: 0.41503808}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 485e800e6f8041c41a37e0df4bd166ea, type: 2}
+    materialId: 0
+    sourceTextureGUID: b7a5d582aefb654488ab54604b6174bb
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Bat Dropper Cln_dive0003
+    boundsData:
+    - {x: 0.02343747, y: 0.0546875, z: 0}
+    - {x: 1.453125, y: 3.421875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 3.25, y: 4.09375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.703125, y: -1.65625, z: 0}
+    - {x: 0.74999994, y: -1.65625, z: 0}
+    - {x: -0.703125, y: 1.765625, z: 0}
+    - {x: 0.74999994, y: 1.765625, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.24023633, y: 0.40722755}
+    - {x: 0.24023633, y: 0.4980459}
+    - {x: 0.6679668, y: 0.40722755}
+    - {x: 0.6679668, y: 0.4980459}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 485e800e6f8041c41a37e0df4bd166ea, type: 2}
+    materialId: 0
+    sourceTextureGUID: b78b8b10237c9304f85e87dd2a6b6b6d
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Bat Dropper Cln_idle0000
+    boundsData:
+    - {x: 0, y: 0.6015625, z: 0}
+    - {x: 1.71875, y: 1.984375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 3.25, y: 4.09375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.859375, y: -0.39062503, z: 0}
+    - {x: 0.859375, y: -0.39062503, z: 0}
+    - {x: -0.859375, y: 1.59375, z: 0}
+    - {x: 0.859375, y: 1.59375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.48828322, y: 0.5410166}
+    - {x: 0.48828322, y: 0.64843655}
+    - {x: 0.73632616, y: 0.5410166}
+    - {x: 0.73632616, y: 0.64843655}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 485e800e6f8041c41a37e0df4bd166ea, type: 2}
+    materialId: 0
+    sourceTextureGUID: 1cc8b461b12974848a88e4a71875f516
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Bat Dropper Cln_idle0001
+    boundsData:
+    - {x: -0.00781253, y: 0.640625, z: 0}
+    - {x: 1.703125, y: 1.90625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 3.25, y: 4.09375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.859375, y: -0.3125, z: 0}
+    - {x: 0.84374994, y: -0.3125, z: 0}
+    - {x: -0.859375, y: 1.59375, z: 0}
+    - {x: 0.84374994, y: 1.59375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.7128926, y: 0.6523447}
+    - {x: 0.7128926, y: 0.7587881}
+    - {x: 0.9511699, y: 0.6523447}
+    - {x: 0.9511699, y: 0.7587881}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 485e800e6f8041c41a37e0df4bd166ea, type: 2}
+    materialId: 0
+    sourceTextureGUID: bab56f0d0a2a9fc4aa0ad1b302bed1f9
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Bat Dropper Cln_idle0002
+    boundsData:
+    - {x: -0.00781253, y: 0.65625006, z: 0}
+    - {x: 1.703125, y: 1.8437501, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 3.25, y: 4.09375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.859375, y: -0.265625, z: 0}
+    - {x: 0.84374994, y: -0.265625, z: 0}
+    - {x: -0.859375, y: 1.5781251, z: 0}
+    - {x: 0.84374994, y: 1.5781251, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.7128926, y: 0.76269627}
+    - {x: 0.7128926, y: 0.8691397}
+    - {x: 0.9433574, y: 0.76269627}
+    - {x: 0.9433574, y: 0.8691397}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 485e800e6f8041c41a37e0df4bd166ea, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3738b8c24d718c040b1d1204e52cc03c
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Bat Dropper Cln_idle0003
+    boundsData:
+    - {x: -0.00781253, y: 0.6640625, z: 0}
+    - {x: 1.703125, y: 1.8281252, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 3.25, y: 4.09375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.859375, y: -0.25000006, z: 0}
+    - {x: 0.84374994, y: -0.25000006, z: 0}
+    - {x: -0.859375, y: 1.5781251, z: 0}
+    - {x: 0.84374994, y: 1.5781251, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.003908203, y: 0.7246103}
+    - {x: 0.003908203, y: 0.83105373}
+    - {x: 0.23241992, y: 0.7246103}
+    - {x: 0.23241992, y: 0.83105373}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 485e800e6f8041c41a37e0df4bd166ea, type: 2}
+    materialId: 0
+    sourceTextureGUID: 2b96ba6655440ef4abca44af4403e546
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Bat Dropper Cln_idle0004
+    boundsData:
+    - {x: 0, y: 0.6015625, z: 0}
+    - {x: 1.71875, y: 1.984375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 3.25, y: 4.09375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.859375, y: -0.39062503, z: 0}
+    - {x: 0.859375, y: -0.39062503, z: 0}
+    - {x: -0.859375, y: 1.59375, z: 0}
+    - {x: 0.859375, y: 1.59375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.20508008, y: 0.6132822}
+    - {x: 0.20508008, y: 0.7207022}
+    - {x: 0.45312303, y: 0.6132822}
+    - {x: 0.45312303, y: 0.7207022}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 485e800e6f8041c41a37e0df4bd166ea, type: 2}
+    materialId: 0
+    sourceTextureGUID: 21dc97d06d0cd214f972e70a83217e7b
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Bat Dropper Cln_idle0005
+    boundsData:
+    - {x: 0.02343744, y: 0.6171875, z: 0}
+    - {x: 1.7343749, y: 1.953125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 3.25, y: 4.09375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.84375, y: -0.359375, z: 0}
+    - {x: 0.8906249, y: -0.359375, z: 0}
+    - {x: -0.84375, y: 1.59375, z: 0}
+    - {x: 0.8906249, y: 1.59375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.46093947, y: 0.6523447}
+    - {x: 0.46093947, y: 0.76074123}
+    - {x: 0.70507616, y: 0.6523447}
+    - {x: 0.70507616, y: 0.76074123}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 485e800e6f8041c41a37e0df4bd166ea, type: 2}
+    materialId: 0
+    sourceTextureGUID: 136b1a58fe28a6c4b9f520116755ac07
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Bat Dropper Cln_idle0006
+    boundsData:
+    - {x: 0.01562503, y: 0.6015625, z: 0}
+    - {x: 1.71875, y: 1.984375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 3.25, y: 4.09375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.84375, y: -0.39062503, z: 0}
+    - {x: 0.87500006, y: -0.39062503, z: 0}
+    - {x: -0.84375, y: 1.59375, z: 0}
+    - {x: 0.87500006, y: 1.59375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.7441426, y: 0.5410166}
+    - {x: 0.7441426, y: 0.64843655}
+    - {x: 0.99218553, y: 0.5410166}
+    - {x: 0.99218553, y: 0.64843655}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 485e800e6f8041c41a37e0df4bd166ea, type: 2}
+    materialId: 0
+    sourceTextureGUID: 18259e24a4bd7544fbf7762a69d9c7d5
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Bat Dropper Cln_idle_to_dive0000
+    boundsData:
+    - {x: 0.01562503, y: 0.5390624, z: 0}
+    - {x: 1.71875, y: 2.203125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 3.25, y: 4.09375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.84375, y: -0.56250006, z: 0}
+    - {x: 0.87500006, y: -0.56250006, z: 0}
+    - {x: -0.84375, y: 1.6406249, z: 0}
+    - {x: 0.87500006, y: 1.6406249, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.20508008, y: 0.5019541}
+    - {x: 0.20508008, y: 0.60937405}
+    - {x: 0.48046678, y: 0.5019541}
+    - {x: 0.48046678, y: 0.60937405}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 485e800e6f8041c41a37e0df4bd166ea, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3435a7dfc5bb082488312368e25f6d06
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Bat Dropper Cln_idle_to_dive0001
+    boundsData:
+    - {x: 0.000000059604645, y: 0.0859375, z: 0}
+    - {x: 2.375, y: 2.515625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 3.25, y: 4.09375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.1875, y: -1.171875, z: 0}
+    - {x: 1.1875001, y: -1.171875, z: 0}
+    - {x: -1.1875, y: 1.34375, z: 0}
+    - {x: 1.1875001, y: 1.34375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.3535176, y: 0.15820411}
+    - {x: 0.3535176, y: 0.30663964}
+    - {x: 0.6679668, y: 0.15820411}
+    - {x: 0.6679668, y: 0.30663964}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 485e800e6f8041c41a37e0df4bd166ea, type: 2}
+    materialId: 0
+    sourceTextureGUID: d82c1bfa8cc54ad43a98b7f7aca60a31
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Bat Dropper Cln_idle_to_dive0002
+    boundsData:
+    - {x: 0, y: -0.29687503, z: 0}
+    - {x: 2.71875, y: 2.0625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 3.25, y: 4.09375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.359375, y: -1.328125, z: 0}
+    - {x: 1.359375, y: -1.328125, z: 0}
+    - {x: -1.359375, y: 0.73437494, z: 0}
+    - {x: 1.359375, y: 0.73437494, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.003908203, y: 0.16211036}
+    - {x: 0.34374803, y: 0.16211036}
+    - {x: 0.003908203, y: 0.29101464}
+    - {x: 0.34374803, y: 0.29101464}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 485e800e6f8041c41a37e0df4bd166ea, type: 2}
+    materialId: 0
+    sourceTextureGUID: f7fc422f2a3a65a45b4bf19995ec9a26
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Bat Dropper Cln_idle_to_dive0003
+    boundsData:
+    - {x: -0.171875, y: -0.30468747, z: 0}
+    - {x: 2.90625, y: 1.984375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 3.25, y: 4.09375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.625, y: -1.296875, z: 0}
+    - {x: 1.28125, y: -1.296875, z: 0}
+    - {x: -1.625, y: 0.68750006, z: 0}
+    - {x: 1.28125, y: 0.68750006, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.70312697, y: 0.0019541015}
+    - {x: 0.70312697, y: 0.18359277}
+    - {x: 0.9511699, y: 0.0019541015}
+    - {x: 0.9511699, y: 0.18359277}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 485e800e6f8041c41a37e0df4bd166ea, type: 2}
+    materialId: 0
+    sourceTextureGUID: 86ceab251c633d3499edcd8e40ecf8f0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Bat Dropper Cln_idle_to_dive0004
+    boundsData:
+    - {x: 0.0546875, y: -0.0078124404, z: 0}
+    - {x: 1.828125, y: 2.796875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 3.25, y: 4.09375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.859375, y: -1.40625, z: 0}
+    - {x: 0.96875, y: -1.40625, z: 0}
+    - {x: -0.859375, y: 1.3906251, z: 0}
+    - {x: 0.96875, y: 1.3906251, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.003908203, y: 0.29492286}
+    - {x: 0.23241992, y: 0.29492286}
+    - {x: 0.003908203, y: 0.46972558}
+    - {x: 0.23241992, y: 0.46972558}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 485e800e6f8041c41a37e0df4bd166ea, type: 2}
+    materialId: 0
+    sourceTextureGUID: 31194886a86c04d4692bd3ed65801671
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Bat Dropper Cln_idle_to_dive0005
+    boundsData:
+    - {x: -0.0078125, y: 0.03124994, z: 0}
+    - {x: 2.734375, y: 2.5, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 3.25, y: 4.09375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.375, y: -1.21875, z: 0}
+    - {x: 1.359375, y: -1.21875, z: 0}
+    - {x: -1.375, y: 1.2812499, z: 0}
+    - {x: 1.359375, y: 1.2812499, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.003908203, y: 0.0019541015}
+    - {x: 0.34570116, y: 0.0019541015}
+    - {x: 0.003908203, y: 0.15820214}
+    - {x: 0.34570116, y: 0.15820214}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 485e800e6f8041c41a37e0df4bd166ea, type: 2}
+    materialId: 0
+    sourceTextureGUID: 6d2698cde452ce34eb94441cfd4e8e05
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Bat Dropper Cln_idle_to_dive0006
+    boundsData:
+    - {x: -0.0078125, y: -0.21875, z: 0}
+    - {x: 1.546875, y: 3.125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 3.25, y: 4.09375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.78125, y: -1.78125, z: 0}
+    - {x: 0.765625, y: -1.78125, z: 0}
+    - {x: -0.78125, y: 1.34375, z: 0}
+    - {x: 0.765625, y: 1.34375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.003908203, y: 0.4736338}
+    - {x: 0.19726367, y: 0.4736338}
+    - {x: 0.003908203, y: 0.66894436}
+    - {x: 0.19726367, y: 0.66894436}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 485e800e6f8041c41a37e0df4bd166ea, type: 2}
+    materialId: 0
+    sourceTextureGUID: e682c6ffa065efc499b1ff3a28533964
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Bat Dropper Cln_idle_to_dive0007
+    boundsData:
+    - {x: -0.023437537, y: -0.039062515, z: 0}
+    - {x: 0.328125, y: 0.23437509, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 3.25, y: 4.09375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.18750003, y: -0.15625006, z: 0}
+    - {x: 0.14062496, y: -0.15625006, z: 0}
+    - {x: -0.18750003, y: 0.07812503, z: 0}
+    - {x: 0.14062496, y: 0.07812503, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.95898634, y: 0.035157226}
+    - {x: 0.95898634, y: 0.055663086}
+    - {x: 0.9882793, y: 0.035157226}
+    - {x: 0.9882793, y: 0.055663086}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 485e800e6f8041c41a37e0df4bd166ea, type: 2}
+    materialId: 0
+    sourceTextureGUID: b5c2ba4d55cbea549a1600fc0dfd30e9
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Bat Dropper Cln_idle_to_dive0008
+    boundsData:
+    - {x: 0.054687515, y: -0.046875, z: 0}
+    - {x: 0.29687497, y: 0.46874994, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 3.25, y: 4.09375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.09374997, y: -0.28124997, z: 0}
+    - {x: 0.203125, y: -0.28124997, z: 0}
+    - {x: -0.09374997, y: 0.18749997, z: 0}
+    - {x: 0.203125, y: 0.18749997, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.95898634, y: 0.0019541015}
+    - {x: 0.9960918, y: 0.0019541015}
+    - {x: 0.95898634, y: 0.031249024}
+    - {x: 0.9960918, y: 0.031249024}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 485e800e6f8041c41a37e0df4bd166ea, type: 2}
+    materialId: 0
+    sourceTextureGUID: 6430c2a9c1f5df042a1d50b14fcffd70
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Bat Dropper Cln_idle_to_dive0009
+    boundsData:
+    - {x: -0.0078125, y: 0.06249994, z: 0}
+    - {x: 2.734375, y: 2.4375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 3.25, y: 4.09375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -1.375, y: -1.15625, z: 0}
+    - {x: 1.359375, y: -1.15625, z: 0}
+    - {x: -1.375, y: 1.2812499, z: 0}
+    - {x: 1.359375, y: 1.2812499, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.3535176, y: 0.0019541015}
+    - {x: 0.69531053, y: 0.0019541015}
+    - {x: 0.3535176, y: 0.15429589}
+    - {x: 0.69531053, y: 0.15429589}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 485e800e6f8041c41a37e0df4bd166ea, type: 2}
+    materialId: 0
+    sourceTextureGUID: e1d5e64adf179124d8c9430381c6a30b
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Bat Dropper Cln_idle_to_dive0010
+    boundsData:
+    - {x: -0.00781253, y: -0.031250034, z: 0}
+    - {x: 0.17187488, y: 0.31249988, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 3.25, y: 4.09375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.09374997, y: -0.18749997, z: 0}
+    - {x: 0.07812491, y: -0.18749997, z: 0}
+    - {x: -0.09374997, y: 0.1249999, z: 0}
+    - {x: 0.07812491, y: 0.1249999, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.95898634, y: 0.05957129}
+    - {x: 0.9804668, y: 0.05957129}
+    - {x: 0.95898634, y: 0.07910059}
+    - {x: 0.9804668, y: 0.07910059}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 485e800e6f8041c41a37e0df4bd166ea, type: 2}
+    materialId: 0
+    sourceTextureGUID: fa0c339e59ec07245ba17ac962b6a539
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Bat Dropper Cln_idle_to_dive0011
+    boundsData:
+    - {x: 0.19531259, y: 0.17968747, z: 0}
+    - {x: 1.890625, y: 2.3593748, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 3.25, y: 4.09375, z: 0}
+    texelSize: {x: 0.015625, y: 0.015625}
+    positions:
+    - {x: -0.74999994, y: -0.99999994, z: 0}
+    - {x: 1.1406251, y: -0.99999994, z: 0}
+    - {x: -0.74999994, y: 1.3593749, z: 0}
+    - {x: 1.1406251, y: 1.3593749, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: 0.6757832, y: 0.4189463}
+    - {x: 0.6757832, y: 0.5371084}
+    - {x: 0.97070116, y: 0.4189463}
+    - {x: 0.97070116, y: 0.5371084}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 485e800e6f8041c41a37e0df4bd166ea, type: 2}
+    materialId: 0
+    sourceTextureGUID: 4f994faac5b2204448b9f9166ec03261
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  premultipliedAlpha: 0
+  material: {fileID: 0}
+  materials:
+  - {fileID: 2100000, guid: 485e800e6f8041c41a37e0df4bd166ea, type: 2}
+  textures:
+  - {fileID: 2800000, guid: db49851e33c124943832c7f10fdcc93d, type: 3}
+  pngTextures: []
+  materialPngTextureId: 00000000
+  textureFilterMode: 1
+  textureMipMaps: 0
+  allowMultipleAtlases: 0
+  spriteCollectionGUID: 66c9b9f98d60c954db906f774c442a98
+  spriteCollectionName: BatDropperClnSpriteCollection
+  assetName: 
+  loadable: 0
+  invOrthoSize: 2
+  halfTargetHeight: 32
+  buildKey: 577318696
+  dataGuid: d6a1f69bfc2a65b48ab3a406e5ea3e83
+  managedSpriteCollection: 0
+  hasPlatformData: 0
+  spriteCollectionPlatforms: []
+  spriteCollectionPlatformGUIDs: []

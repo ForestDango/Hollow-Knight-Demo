@@ -27,7 +27,7 @@ public class EnemyDeathEffects : MonoBehaviour
     [SerializeField] private bool recycle;
     [SerializeField] private bool rotateCorpse; //尸体需要旋转吗
 
-    [SerializeField] protected GameObject dustPuffMedPrefab;
+    [SerializeField] protected GameObject deathPuffMedPrefab;
     [SerializeField] protected GameObject deathPuffLargePrefab;
 
     protected GameObject corpse;
@@ -44,13 +44,12 @@ public class EnemyDeathEffects : MonoBehaviour
 	if(!corpse && corpsePrefab)
 	{
 	    corpse = Instantiate(corpsePrefab, transform.position + corpseSpawnPoint, Quaternion.identity,transform);
-	    Debug.LogFormat("Corpse Position is " + transform.position);
 	    tk2dSprite[] componentInChildrens = corpse.GetComponentsInChildren<tk2dSprite>(true);
 	    for (int i = 0; i < componentInChildrens.Length; i++)
 	    {
 		componentInChildrens[i].ForceBuild();
 	    }
-	    corpse.SetActive(false);
+	    //corpse.SetActive(false);
 	}
     }
 
@@ -181,7 +180,7 @@ public class EnemyDeathEffects : MonoBehaviour
 		    num2 = 90f;
 		    break;
 	    }
-	    component4.velocity = new Vector2(Mathf.Cos(num2 * 0.017453292f), Mathf.Sin(num2 * 0.017453292f)) * num * d;
+	    component4.velocity = new Vector2(Mathf.Cos(num2 * 0.017453292f) * num * d, Mathf.Sin(num2 * 0.017453292f) * num * d);
 	}
     }
 
@@ -233,12 +232,12 @@ public class EnemyDeathEffects : MonoBehaviour
 	}
 	if (!(deathPuffLargePrefab == null))
 	{
-	    Instantiate(deathPuffLargePrefab, transform.position + effectOrigin, Quaternion.identity);
+	    deathPuffLargePrefab.Spawn(transform.position + effectOrigin);
 	}
 	ShakeCameraIfVisible("AverageShake");
 	if (!(deathWaveInfectedPrefab == null))
 	{
-	    GameObject gameObject = Instantiate(deathWaveInfectedPrefab, transform.position + effectOrigin, Quaternion.identity);
+	    GameObject gameObject = deathWaveInfectedPrefab.Spawn(transform.position + effectOrigin);
 	    gameObject.transform.SetScaleX(2f);
 	    gameObject.transform.SetScaleY(2f);
 	}
@@ -261,7 +260,7 @@ public class EnemyDeathEffects : MonoBehaviour
 	audioEvent.SpawnAndPlayOneShot(audioPlayerPrefab, transform.position);
 	if (deathWaveInfectedSmallPrefab != null)
 	{
-	    GameObject gameObject = Instantiate(deathWaveInfectedSmallPrefab, transform.position + effectOrigin,Quaternion.identity);
+	    GameObject gameObject = deathWaveInfectedSmallPrefab.Spawn(transform.position + effectOrigin);
 	    Vector3 localScale = gameObject.transform.localScale;
 	    localScale.x = 0.5f;
 	    localScale.y = 0.5f;
@@ -281,11 +280,11 @@ public class EnemyDeathEffects : MonoBehaviour
 		component.flashInfected();
 	    }
 	}
-	GameObject gameObject = Instantiate(deathWaveInfectedPrefab, transform.position + effectOrigin, Quaternion.identity);
+	GameObject gameObject = deathWaveInfectedPrefab.Spawn(transform.position + effectOrigin);
 	gameObject.transform.SetScaleX(1.25f);
-	gameObject.transform.SetPositionY(1.25f);
+	gameObject.transform.SetScaleY(1.25f);
 	GlobalPrefabDefaults.Instance.SpawnBlood(transform.position + effectOrigin, 8, 10, 15f, 20f, 0, 360, null);
-	Instantiate(dustPuffMedPrefab, transform.position + effectOrigin, Quaternion.identity);
+	deathPuffMedPrefab.Spawn(transform.position + effectOrigin);
 	ShakeCameraIfVisible("EnemyKillShake");
     }
 

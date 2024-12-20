@@ -11,9 +11,9 @@ namespace HutongGames.PlayMaker.Actions
 		[RequiredField]
 		[Tooltip("The Game Object to parent.")]
 		public FsmOwnerDefault gameObject;
-		
-		[Tooltip("The new parent for the Game Object. Leave empty or None to un-parent the Game Object.")]
-		public FsmGameObject parent;
+
+	[Tooltip("The new parent for the Game Object. Leave empty or None to un-parent the Game Object.")]
+	public FsmGameObject parent;
 
         [Tooltip("If true, the parent-relative position, scale and rotation are modified " + 
                  "such that the object keeps the same world space position, rotation and scale as before. " + 

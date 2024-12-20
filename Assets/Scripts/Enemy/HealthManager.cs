@@ -24,6 +24,8 @@ public class HealthManager : MonoBehaviour, IHitResponder
     [SerializeField] private GameObject corpseSplatPrefab;
     [SerializeField] private AudioEvent regularInvincibleAudio;
     [SerializeField] private GameObject blockHitPrefab;
+    [SerializeField] private GameObject strikeNailPrefab;
+    [SerializeField] private GameObject slashImpactPrefab;
     [SerializeField] private bool hasAlternateInvincibleSound;
     [SerializeField] private AudioClip alternateInvincibleSound;
 
@@ -38,10 +40,10 @@ public class HealthManager : MonoBehaviour, IHitResponder
     [SerializeField] private bool preventInvincibleEffect;
 
     [Header("Geo")]
-    [SerializeField] private int smallGeoDrops;
-    [SerializeField] private int mediumGeoDrops;
-    [SerializeField] private int largeGeoDrops;
-    [SerializeField] private bool megaFlingGeo;
+    [SerializeField] private int smallGeoDrops; //掉落多少小型geo
+    [SerializeField] private int mediumGeoDrops;//掉落多少中型geo
+    [SerializeField] private int largeGeoDrops;//掉落多少大型geo
+    [SerializeField] private bool megaFlingGeo; //让geo掉落飞的范围更大
 
     [SerializeField] private GameObject smallGeoPrefab;
     [SerializeField] private GameObject mediumGeoPrefab;
@@ -124,17 +126,17 @@ public class HealthManager : MonoBehaviour, IHitResponder
 	if (!string.IsNullOrEmpty(sendKilledToName))
 	{
 	    sendKilledTo = GameObject.Find(sendKilledToName);
-	    if (this.sendKilledTo == null)
+	    if (sendKilledTo == null)
 	    {
 		Debug.LogErrorFormat(this, "Failed to find GameObject '{0}' to send KILLED to.", new object[]
 		{
-		    this.sendKilledToName
+		    sendKilledToName
 		});
 	    }
 	}
 	else if(sendKilledToObject != null)
 	{
-	    sendKilledTo = this.sendKilledToObject;
+	    sendKilledTo = sendKilledToObject;
 	}
     }
 
@@ -267,8 +269,30 @@ public class HealthManager : MonoBehaviour, IHitResponder
 		    HeroController.instance.SoulGain();
 		}
 		Vector3 position = (hitInstance.Source.transform.position + transform.position) * 0.5f + effectOrigin;
+		strikeNailPrefab.Spawn(position, Quaternion.identity);
+		GameObject gameObject = slashImpactPrefab.Spawn(position, Quaternion.identity);
+		switch (cardinalDirection)
+		{
+		    case 0:
+			gameObject.transform.SetRotation2D(UnityEngine.Random.Range(340, 380));
+			gameObject.transform.localScale = new Vector3(1.5f, 1.5f, 1f);
+			break;
+		    case 1:
+			gameObject.transform.SetRotation2D(UnityEngine.Random.Range(70, 110));
+			gameObject.transform.localScale = new Vector3(1.5f, 1.5f, 1f);
+			break;
+		    case 2:
+			gameObject.transform.SetRotation2D(UnityEngine.Random.Range(340, 380));
+			gameObject.transform.localScale = new Vector3(-1.5f, 1.5f, 1f);
+			break;
+		    case 3:
+			gameObject.transform.SetRotation2D(UnityEngine.Random.Range(250, 290));
+			gameObject.transform.localScale = new Vector3(1.5f, 1.5f, 1f);
+			break;
+		}
 		break;
 	    case AttackTypes.Generic:
+		strikeNailPrefab.Spawn(transform.position + effectOrigin, Quaternion.identity).transform.SetPositionZ(0.0031f);
 		break;
 	    case AttackTypes.Spell:
 		break;
@@ -370,21 +394,24 @@ public class HealthManager : MonoBehaviour, IHitResponder
 	}
 	if(attackType != AttackTypes.RuinsWater)
 	{
+	    //随机化生成的geo生成的角度和速度范围
 	    float angleMin = megaFlingGeo ? 65 : 80;
 	    float angleMax = megaFlingGeo ? 115 : 100;
 	    float speedMin = megaFlingGeo ? 30 : 15;
 	    float speedMax = megaFlingGeo ? 45 : 30;
+	    //各种面值geo生成的数量
 	    int num = smallGeoDrops;
 	    int num2 = mediumGeoDrops;
 	    int num3 = largeGeoDrops;
 	    bool flag = false;
-	    if(GameManager.instance.playerData.equippedCharm_24 && !GameManager.instance.playerData.brokenCharm_24)
+	    if(GameManager.instance.playerData.equippedCharm_24 && !GameManager.instance.playerData.brokenCharm_24) //如果拥有护符易碎贪婪
 	    {
 		num += Mathf.CeilToInt(num * 0.2f);
 		num2 += Mathf.CeilToInt(num2 * 0.2f);
 		num3 += Mathf.CeilToInt(num3 * 0.2f);
 		flag = true;
 	    }
+	    //生成并让geo全部飞起来
 	    GameObject[] gameObjects = FlingUtils.SpawnAndFling(new FlingUtils.Config
 	    {
 		Prefab = smallGeoPrefab,
@@ -440,6 +467,11 @@ public class HealthManager : MonoBehaviour, IHitResponder
 	Destroy(gameObject); //TODO:
     }
 
+    /// <summary>
+    /// 让geo闪烁起来
+    /// </summary>
+    /// <param name="gameObjects"></param>
+    /// <param name="originalAmount"></param>
     private void SetGeoFlashing(GameObject[] gameObjects, int originalAmount)
     {
 	for (int i = gameObjects.Length - 1; i >= originalAmount; i--)

@@ -18,7 +18,7 @@ public class PromptMarker : MonoBehaviour
 	}
     }
 
-    void Start()
+    private void Start()
     {
 	if (GameManager.instance)
 	{
@@ -35,7 +35,7 @@ public class PromptMarker : MonoBehaviour
 
     private void RecycleOnLevelLoad()
     {
-	if (base.gameObject.activeSelf)
+	if (gameObject.activeSelf)
 	{
 	    gameObject.Recycle();
 	}
@@ -43,7 +43,7 @@ public class PromptMarker : MonoBehaviour
 
     private void OnEnable()
     {
-	anim.Play("Blank");
+	anim.Play("Blank"); //开始时设置动画为Blank空白的
     }
 
     private void Update()
@@ -66,23 +66,34 @@ public class PromptMarker : MonoBehaviour
 	}
     }
 
+    /// <summary>
+    /// 被playmaker的行为调用
+    /// </summary>
     public void Show()
     {
-	anim.Play("Up");
-	base.transform.SetPositionZ(0f);
-	fadeGroup.FadeUp();
-	isVisible = true;
+	anim.Play("Up"); //播放动画Up
+	transform.SetPositionZ(0f); //设置好z轴位置
+	fadeGroup.FadeUp(); //fadegroup脚本设置alpha 0 -> 1
+	isVisible = true; //设置为可视
     }
 
+    /// <summary>
+    /// 被playmaker的行为调用
+    /// </summary>
     public void Hide()
     {
 	anim.Play("Down");
 	fadeGroup.FadeDown();
-	owner = null;
-	StartCoroutine(RecycleDelayed(fadeGroup.fadeOutTime));
+	owner = null; //空引用
+	StartCoroutine(RecycleDelayed(fadeGroup.fadeOutTime)); //延迟销毁
 	isVisible = false;
     }
 
+    /// <summary>
+    /// 延时销毁
+    /// </summary>
+    /// <param name="delay"></param>
+    /// <returns></returns>
     private IEnumerator RecycleDelayed(float delay)
     {
 	yield return new WaitForSeconds(delay);

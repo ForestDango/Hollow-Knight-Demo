@@ -104,6 +104,7 @@ public class Corpse : MonoBehaviour
 	{
 	    if(spriteAnimator == null || !spriteAnimator.Playing)
 	    {
+		Debug.LogFormat("Complete By States.DeathAnimation");
 		Complete(true, true);
 		return;
 	    }
@@ -113,6 +114,7 @@ public class Corpse : MonoBehaviour
 	    bouncedThisFrame = false;
 	    if (transform.position.y < -10f)
 	    {
+		Debug.LogFormat("Complete By States.InAir");
 		Complete(true, true);
 		return;
 	    }
@@ -122,6 +124,7 @@ public class Corpse : MonoBehaviour
 	    landEffectsDelayRemaining -= Time.deltaTime;
 	    if(landEffectsDelayRemaining <= 0f)
 	    {
+		Debug.LogFormat("Complete By States.PendingLandEffects");
 		Complete(false,false);
 	    }
 	}

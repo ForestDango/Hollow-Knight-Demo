@@ -24050,7 +24050,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 583.1172
-        y: 720.15625
+        y: 726.40625
         width: 100
         height: 32
       isBreakpoint: 0
@@ -24111,12 +24111,12 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: {fileID: 0}
-        - useVariable: 0
-          name: 
+        - useVariable: 1
+          name: AreaTitle
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: {fileID: 7437710410708142629, guid: 5418039a298a74145bd4b3035502378f, type: 3}
+          value: {fileID: 0}
         fsmOwnerDefaultParams:
         - ownerOption: 0
           gameObject:
@@ -39079,20 +39079,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   battleScene: {fileID: 0}
+  sendKilledToName: 
+  sendKilledToObject: {fileID: 0}
   audioPlayerPrefab: {fileID: 8424441852534438005, guid: f96af3324a9905c49b4bf507c04a1e4f, type: 3}
   corpseSplatPrefab: {fileID: 0}
+  regularInvincibleAudio:
+    Clip: {fileID: 8300000, guid: 838436ca5cca57f4c8263ef351fcce5d, type: 3}
+    PitchMin: 0.85
+    PitchMax: 1.15
+    Volume: 1
+  blockHitPrefab: {fileID: 8754757665553440753, guid: cb321784eaf2ea44385acdb96474d931, type: 3}
+  strikeNailPrefab: {fileID: 7437710410708142629, guid: eb28e486e83b1e24fac84f6d3f03931b, type: 3}
+  slashImpactPrefab: {fileID: 1290429678873468, guid: b6b62e8744549024cbcce27e5ea86de8, type: 3}
+  hasAlternateInvincibleSound: 0
+  alternateInvincibleSound: {fileID: 0}
   hp: 300
   enemyType: 0
   effectOrigin: {x: 0, y: 0, z: 0}
   invincible: 0
   invincibleFromDirection: 0
+  preventInvincibleEffect: 0
   smallGeoDrops: 0
   mediumGeoDrops: 0
   largeGeoDrops: 0
   megaFlingGeo: 0
   smallGeoPrefab: {fileID: 3041178361285957278, guid: 3ed1932750fc94644a7f5099628d1937, type: 3}
-  mediumGeoPrefab: {fileID: 0}
-  largeGeoPrefab: {fileID: 0}
+  mediumGeoPrefab: {fileID: 3041178361285957278, guid: 7960323f95e61a34cb16e490f5860583, type: 3}
+  largeGeoPrefab: {fileID: 3041178361285957278, guid: 6e612c6e19ce3f44ab4b191e920a5516, type: 3}
   hasAlternateHitAnimation: 0
   alternateHitAnimation: 
   deathAudioSnapshot: {fileID: 24500016, guid: dbaba554f966d5348882614b974db23f, type: 2}
@@ -39127,18 +39140,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 655689999}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9fb3a3bbd987a0a4681b783a18c90789, type: 3}
+  m_Script: {fileID: 11500000, guid: c40910230516e4e41a4472306ebc0653, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  effectOrigin: {x: 0, y: 0, z: 0}
-  audioPlayerPrefab: {fileID: 8424441852534438005, guid: fd9edc3dd6ce96644b26b5e09a804e80, type: 3}
+  effectOrigin: {x: 0.5, y: 0, z: 0}
+  audioPlayerPrefab: {fileID: 8424441852534438005, guid: f96af3324a9905c49b4bf507c04a1e4f, type: 3}
   enemyDamage:
     Clip: {fileID: 8300000, guid: 8553d0528302fe140993fcb90965437c, type: 3}
-    PitchMin: 0.85
+    PitchMin: 0.8
     PitchMax: 1.15
     Volume: 1
-  hitFlashOrange: {fileID: 7658921334995516276, guid: 14d20543255964042bf1c1e24df42ffe, type: 3}
-  hitPuffLarge: {fileID: 1648848660361343018, guid: d274cef1725299441b938ebfd5a7e9f4, type: 3}
+  uninfectedHitPt: {fileID: 1486896613669697907, guid: 53c0a8230c74604499f7c9b95942b2e1, type: 3}
+  slashEffectGhost1: {fileID: 2464577376068724076, guid: 740a1d196a2a72a4192dd5eda5040175, type: 3}
+  slashEffectGhost2: {fileID: 1002530654999694724, guid: 8a9612d494fa3f24aa99823f93c021df, type: 3}
+  sendDamageFlashEvent: 1
 --- !u!114 &655690013
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39158,7 +39173,7 @@ MonoBehaviour:
   deathBroadcastEvent: 
   effectOrigin: {x: 0, y: 0, z: 0}
   lowCorpseArc: 0
-  enemyDeathType: 0
+  enemyDeathType: 1
   audioPlayerPrefab: {fileID: 8424441852534438005, guid: fd9edc3dd6ce96644b26b5e09a804e80, type: 3}
   enemyDeathSwordAudio:
     Clip: {fileID: 8300000, guid: 09d7d1019cb946649b3489e5e1d5be76, type: 3}
@@ -39177,8 +39192,8 @@ MonoBehaviour:
   deathWaveInfectedSmallPrefab: {fileID: 7873219696269874181, guid: 05413523133dfdb499463b307e2aa873, type: 3}
   recycle: 0
   rotateCorpse: 0
-  dustPuffMedPrefab: {fileID: 7437710410708142629, guid: 80502a73fde19fa41adc4217690bd381, type: 3}
-  deathPuffLargePrefab: {fileID: 3082191558358413112, guid: a05d2107e64f08f42a0cc335b36ca792, type: 3}
+  deathPuffMedPrefab: {fileID: 3082191558358413112, guid: 9a81417b854fe51449b98e72bf5477f2, type: 3}
+  deathPuffLargePrefab: {fileID: 3082191558358413112, guid: 7eec61ba0cffb724185f9d985b7c879b, type: 3}
   doKillFreeze: 1
 --- !u!114 &655690014
 MonoBehaviour:

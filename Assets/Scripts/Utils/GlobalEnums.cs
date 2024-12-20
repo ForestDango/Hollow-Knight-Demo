@@ -21,7 +21,15 @@ namespace GlobalEnums
 	upward,
 	downward
     }
-
+    public enum ButtonSkinType
+    {
+	BLANK,
+	SQUARE,
+	WIDE,
+	CIRCLE,
+	OVAL,
+	CONTROLLER
+    }
     public enum CameraFadeType
     {
 	LEVEL_TRANSITION,
@@ -127,6 +135,7 @@ namespace GlobalEnums
 	CROSSROADS,
 	GREEN_PATH,
 	FOG_CANYON,
+	CITY,
 	SHAMAN_TEMPLE,
 	QUEENS_STATION,
 	GODS_GLORY,

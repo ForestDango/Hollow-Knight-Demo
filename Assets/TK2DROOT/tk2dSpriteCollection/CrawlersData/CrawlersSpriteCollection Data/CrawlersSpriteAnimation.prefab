@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clips:
-  - name: Dead
+  - name: Death Air
     frames:
     - spriteCollection: {fileID: 4584297455727314451, guid: 1808ed9d70463754abd54a42cd85f4d6, type: 3}
       spriteId: 0
@@ -60,18 +60,6 @@ MonoBehaviour:
       eventFloat: 0
     - spriteCollection: {fileID: 4584297455727314451, guid: 1808ed9d70463754abd54a42cd85f4d6, type: 3}
       spriteId: 2
-      triggerEvent: 0
-      eventInfo: 
-      eventInt: 0
-      eventFloat: 0
-    - spriteCollection: {fileID: 4584297455727314451, guid: 1808ed9d70463754abd54a42cd85f4d6, type: 3}
-      spriteId: 3
-      triggerEvent: 0
-      eventInfo: 
-      eventInt: 0
-      eventFloat: 0
-    - spriteCollection: {fileID: 4584297455727314451, guid: 1808ed9d70463754abd54a42cd85f4d6, type: 3}
-      spriteId: 4
       triggerEvent: 0
       eventInfo: 
       eventInt: 0
@@ -157,5 +145,22 @@ MonoBehaviour:
       eventInt: 0
       eventFloat: 0
     fps: 10
+    loopStart: 0
+    wrapMode: 2
+  - name: Death Land
+    frames:
+    - spriteCollection: {fileID: 4584297455727314451, guid: 1808ed9d70463754abd54a42cd85f4d6, type: 3}
+      spriteId: 3
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 4584297455727314451, guid: 1808ed9d70463754abd54a42cd85f4d6, type: 3}
+      spriteId: 4
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    fps: 12
     loopStart: 0
     wrapMode: 2

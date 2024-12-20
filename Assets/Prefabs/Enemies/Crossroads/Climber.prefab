@@ -81,8 +81,8 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 159987413
-  m_SortingLayer: 4
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &8571092741274697314
@@ -312,11 +312,13 @@ MonoBehaviour:
   audioPlayerPrefab: {fileID: 8424441852534438005, guid: f96af3324a9905c49b4bf507c04a1e4f, type: 3}
   corpseSplatPrefab: {fileID: 0}
   regularInvincibleAudio:
-    Clip: {fileID: 0}
-    PitchMin: 0
-    PitchMax: 0
-    Volume: 0
-  blockHitPrefab: {fileID: 0}
+    Clip: {fileID: 8300000, guid: 838436ca5cca57f4c8263ef351fcce5d, type: 3}
+    PitchMin: 0.85
+    PitchMax: 1.15
+    Volume: 1
+  blockHitPrefab: {fileID: 8754757665553440753, guid: cb321784eaf2ea44385acdb96474d931, type: 3}
+  strikeNailPrefab: {fileID: 7437710410708142629, guid: eb28e486e83b1e24fac84f6d3f03931b, type: 3}
+  slashImpactPrefab: {fileID: 1290429678873468, guid: b6b62e8744549024cbcce27e5ea86de8, type: 3}
   hasAlternateInvincibleSound: 0
   alternateInvincibleSound: {fileID: 0}
   hp: 9
@@ -418,9 +420,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f669c6290b46b84288063e01213ce12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  corpsePrefab: {fileID: 0}
+  corpsePrefab: {fileID: 7656040956884529094, guid: 722565c2f8182ea4aae62b08607b9939, type: 3}
   corpseFacesRight: 0
-  corpseFlingSpeed: 0
+  corpseFlingSpeed: 14
   corpseSpawnPoint: {x: 0, y: 0, z: 0}
   deathBroadcastEvent: 
   effectOrigin: {x: 0, y: 0, z: 0}
@@ -444,6 +446,6 @@ MonoBehaviour:
   deathWaveInfectedSmallPrefab: {fileID: 7873219696269874181, guid: 05413523133dfdb499463b307e2aa873, type: 3}
   recycle: 0
   rotateCorpse: 1
-  dustPuffMedPrefab: {fileID: 5077558777383121714, guid: 139edf1e331a3f0498f00fd04cd814ce, type: 3}
-  deathPuffLargePrefab: {fileID: 3082191558358413112, guid: 9a81417b854fe51449b98e72bf5477f2, type: 3}
+  deathPuffMedPrefab: {fileID: 3082191558358413112, guid: 9a81417b854fe51449b98e72bf5477f2, type: 3}
+  deathPuffLargePrefab: {fileID: 3082191558358413112, guid: 7eec61ba0cffb724185f9d985b7c879b, type: 3}
   doKillFreeze: 1

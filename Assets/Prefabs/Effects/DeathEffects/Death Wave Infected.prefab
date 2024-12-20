@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7873219696269874176}
   - component: {fileID: 7873219696269874179}
-  - component: {fileID: 7873219696269874178}
+  - component: {fileID: 5896507499919079441}
   m_Layer: 0
   m_Name: Death Wave Infected
   m_TagString: Untagged
@@ -83,7 +83,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &7873219696269874178
+--- !u!114 &5896507499919079441
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -92,7 +92,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 7873219696269874181}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70b707f4b5a325c42a8a498b30fb1abf, type: 3}
+  m_Script: {fileID: 11500000, guid: fe7b710f7f3defc4fabbe05ec37120e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  recycleTimer: 0.5
+  colour: {r: 1, g: 1, b: 1, a: 1}
+  spriteRenderer: {fileID: 7873219696269874179}
+  accel: 0
+  accelStart: 10
+  doNotRecycle: 0
+  doNotPositionZ: 0
+  blackWave: 0
+  otherColour: 0
+  scaleMultiplier: 1.1

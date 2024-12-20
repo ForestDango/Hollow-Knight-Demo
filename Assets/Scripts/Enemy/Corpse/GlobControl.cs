@@ -10,9 +10,9 @@ public class GlobControl : MonoBehaviour
     public float maxScale = 1.6f;
 
     [Space]
-    public string landAnim = "Glob Land";
-    public string wobbleAnim = "Glob Wobble";
-    public string breakAnim = "Glob Break";
+    public string landAnim = "Land";
+    public string wobbleAnim = "Wobble";
+    public string breakAnim = "Break";
 
     [Space]
     public AudioSource audioPlayerPrefab;
@@ -61,6 +61,7 @@ public class GlobControl : MonoBehaviour
 			collision.doCollisionStay = false;
 			if (CheckForGround()) //检测是否碰到地面
 			{
+			    Debug.LogFormat("Check Ground");
 			    anim.Play(landAnim);
 			    return;
 			}

@@ -5242,6 +5242,8 @@ MonoBehaviour:
     PitchMax: 1.15
     Volume: 12
   blockHitPrefab: {fileID: 8754757665553440753, guid: cb321784eaf2ea44385acdb96474d931, type: 3}
+  strikeNailPrefab: {fileID: 7437710410708142629, guid: eb28e486e83b1e24fac84f6d3f03931b, type: 3}
+  slashImpactPrefab: {fileID: 1290429678873468, guid: b6b62e8744549024cbcce27e5ea86de8, type: 3}
   hasAlternateInvincibleSound: 0
   alternateInvincibleSound: {fileID: 0}
   hp: 14
@@ -5315,7 +5317,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f669c6290b46b84288063e01213ce12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  corpsePrefab: {fileID: 0}
+  corpsePrefab: {fileID: 7656040956884529094, guid: af516c0f95ce6834ea801f8365d63635, type: 3}
   corpseFacesRight: 0
   corpseFlingSpeed: 0
   corpseSpawnPoint: {x: 0, y: 0, z: 0}
@@ -5341,8 +5343,8 @@ MonoBehaviour:
   deathWaveInfectedSmallPrefab: {fileID: 7873219696269874181, guid: 05413523133dfdb499463b307e2aa873, type: 3}
   recycle: 0
   rotateCorpse: 1
-  dustPuffMedPrefab: {fileID: 5077558777383121714, guid: 139edf1e331a3f0498f00fd04cd814ce, type: 3}
-  deathPuffLargePrefab: {fileID: 3082191558358413112, guid: 9a81417b854fe51449b98e72bf5477f2, type: 3}
+  deathPuffMedPrefab: {fileID: 3082191558358413112, guid: 9a81417b854fe51449b98e72bf5477f2, type: 3}
+  deathPuffLargePrefab: {fileID: 3082191558358413112, guid: 7eec61ba0cffb724185f9d985b7c879b, type: 3}
   doKillFreeze: 1
 --- !u!114 &3456513177656028335
 MonoBehaviour:
@@ -6639,7 +6641,7 @@ MonoBehaviour:
         - 
         - 
         actionEnabled: 010101010101000100000101
-        actionIsOpen: 010101010101010101010101
+        actionIsOpen: 010101010101000100000101
         actionStartIndex: 00000000070000000a0000001000000014000000180000001e00000029000000340000003f0000004a0000004e000000
         actionHashCodes: afff11057fb0a30468fde3042a6e8a000c8bc100e07f0804d3a7f601d3a7f601d3a7f601d3a7f6012a6e8a001bcdca04
         unityObjectParams: []
@@ -6772,7 +6774,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 9.801349
+          value: 41.8314
         - useVariable: 1
           name: Roll Time
           tooltip: 
@@ -6937,7 +6939,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: {x: 0, y: 9.801349}
+          value: {x: 0, y: 41.8314}
         fsmVector3Params:
         - useVariable: 1
           name: 
@@ -7336,7 +7338,7 @@ MonoBehaviour:
         - 
         - 
         actionEnabled: 010101010101010000000101
-        actionIsOpen: 010101010101010101010101
+        actionIsOpen: 010101010101010000000101
         actionStartIndex: 00000000070000000a0000001000000014000000180000001e00000029000000340000003f0000004a0000004e000000
         actionHashCodes: afff11057fb0a30468fde3042a6e8a000c8bc100e07f0804d3a7f601d3a7f601d3a7f601d3a7f6012a6e8a001bcdca04
         unityObjectParams: []

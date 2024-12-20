@@ -129,6 +129,9 @@ public class GameManager : MonoBehaviour
     public delegate void SavePersistentState();
     public event SavePersistentState SavePersistentObjects;
 
+    public delegate void DestroyPooledObjects();
+    public event DestroyPooledObjects DestroyPersonalPools;
+
     public delegate void RefreshLanguage();
     public event RefreshLanguage RefreshLanguageText;
 
@@ -425,7 +428,7 @@ public class GameManager : MonoBehaviour
 	}
 	if (tk2dTileMap == null)
 	{
-	    Debug.LogErrorFormat("Using fallback 1 to find tilemap. Scene {0} requires manual fixing.", new object[]
+	    Debug.LogWarningFormat("Using fallback 1 to find tilemap. Scene {0} requires manual fixing.", new object[]
 	    {
 		targetScene
 	    });
@@ -652,6 +655,17 @@ public class GameManager : MonoBehaviour
     public void SetCurrentMapZoneAsRespawn()
     {
 	playerData.mapZone = sm.mapZone;
+    }
+
+    public void SetMapZoneToSpecific(string mapZone)
+    {
+	object obj = Enum.Parse(typeof(MapZone), mapZone);
+	if (obj != null)
+	{
+	    playerData.mapZone = (MapZone)obj;
+	    return;
+	}
+	Debug.LogError("Couldn't convert " + mapZone + " to a MapZone");
     }
 
     public void FadeSceneIn()
@@ -1357,6 +1371,16 @@ public class GameManager : MonoBehaviour
     public void StoryRecord_defeatedShade()
     {
 	Debug.LogFormat("StoryRecord_defeatedShade");
+    }
+
+    public void StoryRecord_discoveredArea(string areaName)
+    {
+	Debug.LogFormat("StoryRecord_discoveredArea");
+    }
+
+    public void StoryRecord_travelledToArea(string areaName)
+    {
+	Debug.LogFormat("StoryRecord_travelledToArea");
     }
 
     public void EquipCharm(int charmNum)

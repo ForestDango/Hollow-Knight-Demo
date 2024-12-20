@@ -6,16 +6,16 @@ using UnityEngine;
 public class DialogueBox : MonoBehaviour
 {
     [Header("Conversation Info")]
-    public string currentConversation;
-    public int currentPage;
+    public string currentConversation; //记录使用的是哪一个文件名的文字段
+    public int currentPage; //记录当前在第几页
 
     [Header("Typewriter")]
     [Tooltip("Enables the typewriter effect.")]
-    public bool useTypeWriter;
+    public bool useTypeWriter; //使用打字节的效果
 
     [Range(1f, 100f)]
-    public float revealSpeed = 20f;
-    private float normalRevealSpeed;
+    public float revealSpeed = 20f; //展示速度
+    private float normalRevealSpeed; //常规展现文字速度
 
     private TextMeshPro textMesh;
     private PlayMakerFSM proxyFSM;

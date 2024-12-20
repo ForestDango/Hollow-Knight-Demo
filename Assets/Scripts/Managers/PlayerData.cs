@@ -38,9 +38,9 @@ public class PlayerData
     public bool travelling;
     public string nextScene;
 
-    public int geo;
-    public int geoPool;
-    public bool firstGeo;
+    public int geo; //玩家拥有的吉欧
+    public int geoPool; //玩家死后存储死前拥有的吉欧
+    public bool firstGeo; //是否是得到的第一块钱
 
     public int health;
     public int maxHealth;
@@ -52,6 +52,8 @@ public class PlayerData
     public bool damagedBlue;
 
     public int nailDamage;
+    public int nailSmithUpgrades;
+
 
     public MapZone mapZone;
 
@@ -129,6 +131,8 @@ public class PlayerData
 
     public bool hasLantern;
     public bool hasDreamNail;
+    public bool hasSuperDash;
+    public bool hasDoubleJump;
     public bool hasAcidArmour;
 
     public bool foundTrinket2;
@@ -203,8 +207,26 @@ public class PlayerData
     public bool fragileStrength_unbreakable;
 
     public List<string> scenesVisited;
+    public bool visitedAbyss;
     public bool visitedDirtmouth;
     public bool visitedCrossroads;
+    public bool crossroadsInfected;
+    public bool visitedDeepnest;
+    public bool visitedFogCanyon;
+    public bool visitedFungus;
+    public bool visitedGreenpath;
+    public bool visitedHive;
+    public bool visitedCliffs;
+    public bool visitedMines;
+    public bool visitedRestingGrounds;
+    public bool visitedRoyalGardens;
+    public bool visitedRuins;
+    public bool visitedWaterways;
+    public bool visitedOutskirts;
+    public bool visitedWhitePalace;
+    public bool seenColosseumTitle;
+    public bool visitedAbyssLower;
+    public bool visitedGodhome;
 
     public bool stagConvoTram;
     public bool stagConvoTiso;
@@ -235,6 +257,46 @@ public class PlayerData
 
     public bool falseKnightWallBroken;
     public bool falseKnightWallRepaired;
+
+    public int elderbug;
+    public bool metElderbug;
+    public bool troupeInTown;
+    public bool elderbugConvoGrimm;
+    public bool elderbugRequestedFlower;
+    public bool elderbugGaveFlower;
+    public bool elderbugSpeechFinalBossDoor;
+    public bool elderbugHistory1;
+    public bool elderbugHistory2;
+    public bool elderbugHistory3;
+    public bool elderbugTroupeLeftConvo;
+    public bool elderbugNymmConvo;
+    public bool elderbugSpeechSly;
+    public bool elderbugSpeechBretta;
+    public bool elderbugBrettaLeft;
+    public bool elderbugSpeechStation;
+    public bool elderbugSpeechEggTemple;
+    public bool elderbugSpeechJiji;
+    public bool elderbugSpeechKingsPass;
+
+    public bool nymmInTown;
+
+    public bool jijiDoorUnlocked;
+
+    public bool slyRescued;
+
+    public bool brettaRescued;
+    public bool brettaLeftTown;
+
+    public bool metMiner;
+    public int miner;
+    public int minerEarly;
+
+    public bool tisoEncounteredTown;
+    public bool tisoEncounteredBench;
+    public bool tisoEncounteredLake;
+    public bool tisoEncounteredColosseum;
+    public bool tisoDead;
+    public bool tisoShieldConvo;
 
     public int shaman;
     public bool shamanScreamConvo;
@@ -271,10 +333,15 @@ public class PlayerData
     public bool megaMossChargerEncountered;
     public bool megaMossChargerDefeated;
 
+    public bool metGiraffe;
+
+    public bool encounteredGatekeeper;
     public bool defeatedMantisLords;
     public bool killedMantisLord;
     public bool newDataMantisLord;
     public int killsMantisLord;
+
+    public bool mageLordDefeated;
 
     public bool dreamerScene1;
 
@@ -290,12 +357,26 @@ public class PlayerData
 
     public bool metCloth;
 
+
     public bool kingsStationNonDisplay;
     public bool queensStationNonDisplay;
+
+    public bool eggTempleVisited;
+    public bool openedBlackEggDoor;
+
+    public bool cityLift1;
+
+    public bool hasCityKey;
+    public bool cityBridge1;
+    public bool cityBridge2;
+    public bool openedCityGate;
+    public bool cityGateClosed;
 
     public bool hasXunFlower;
     public bool xunFlowerBroken;
     public int xunFlowerBrokeTimes;
+
+    public bool defeatedNightmareGrimm;
 
     public int CurrentMaxHealth
     {
@@ -354,6 +435,7 @@ public class PlayerData
 	damagedBlue = false;
 
 	nailDamage = 5;
+	nailSmithUpgrades = 0;
 
 	seenFocusTablet = false;
 	promptFocus = false;
@@ -397,6 +479,8 @@ public class PlayerData
 
 	hasLantern = false;
 	hasDreamNail = false;
+	hasSuperDash = false;
+	hasWalljump = false;
 	hasAcidArmour = false;
 
 	foundTrinket2 = false;
@@ -457,8 +541,27 @@ public class PlayerData
 	fragileStrength_unbreakable = false;
 
 	scenesVisited = new List<string>();
+	visitedAbyss = false;
 	visitedDirtmouth = false;
 	visitedCrossroads = false;
+	crossroadsInfected = false;
+	visitedDeepnest = false;
+	visitedFogCanyon = false;
+	visitedFungus = false;
+	visitedGreenpath = false;
+	visitedHive = false;
+	visitedCliffs = false;
+	visitedMines = false;
+	visitedRestingGrounds = false;
+	visitedRoyalGardens = false;
+	visitedRuins = false;
+	visitedWaterways = false;
+	visitedOutskirts = false;
+	visitedWhitePalace = false;
+	seenColosseumTitle = false;
+	visitedAbyssLower = false;
+	visitedGodhome = false;
+
 
 	stagConvoTram = false;
 	stagConvoTiso = false;
@@ -503,12 +606,53 @@ public class PlayerData
 
 	giantFlyDefeated = false;
 
+	elderbug = 0;
+	metElderbug = false;
+	troupeInTown = false;
+	elderbugConvoGrimm = false;
+	elderbugRequestedFlower = false;
+	elderbugGaveFlower = false;
+	elderbugSpeechFinalBossDoor = false;
+	elderbugHistory1 = false;
+	elderbugHistory2 = false;
+	elderbugHistory3 = false;
+	elderbugTroupeLeftConvo = false;
+	elderbugNymmConvo = false;
+	elderbugSpeechSly = false;
+	elderbugSpeechBretta = false;
+	elderbugBrettaLeft = false;
+	elderbugSpeechStation = false;
+	elderbugSpeechEggTemple = false;
+	elderbugSpeechJiji = false;
+	elderbugSpeechKingsPass = false;
+
+	nymmInTown = false;
+
+	jijiDoorUnlocked = false;
+
+	slyRescued = false;
+
+	brettaRescued = false;
+	brettaLeftTown = false;
+
+	metMiner = false;
+	miner = 0;
+	minerEarly = 0;
+
+	tisoEncounteredTown = false;
+	tisoEncounteredBench = false;
+	tisoEncounteredLake = false;
+	tisoEncounteredColosseum = false;
+	tisoDead = false;
+	tisoShieldConvo = false;
+
 	shaman = 0;
 	shamanFireball2Convo = false;
 	shamanQuakeConvo = false;
 	shamanQuake2Convo = false;
 	shamanScreamConvo = false;
 	shamanScream2Convo = false;
+	shamanPillar = false;
 
 	falseKnightFirstPlop = false;
 	falseKnightDefeated = false;
@@ -536,10 +680,15 @@ public class PlayerData
 	hornetCityBridge_completed = false;
 	hornetFung = 0;
 
+	metGiraffe = false;
+
+	encounteredGatekeeper = false;
 	defeatedMantisLords = false;
 	killedMantisLord = false;
 	newDataMantisLord = false;
 	killsMantisLord = 0;
+
+	mageLordDefeated = false; 
 
 	megaMossChargerEncountered = false;
 	megaMossChargerDefeated = false;
@@ -561,10 +710,22 @@ public class PlayerData
 	kingsStationNonDisplay = false;
 	queensStationNonDisplay = false;
 
+	eggTempleVisited = false;
+	openedBlackEggDoor = false;
+
+	cityLift1 = false;
+
+	hasCityKey = false;
+	cityBridge1 = false;
+	cityBridge2 = false;
+	openedCityGate = false;
+	cityGateClosed = false;
+
 	hasXunFlower = false;
 	xunFlowerBroken = false;
 	xunFlowerBrokeTimes = 0;
 
+	defeatedNightmareGrimm = false;
     }
 
     public void CountGameCompletion()

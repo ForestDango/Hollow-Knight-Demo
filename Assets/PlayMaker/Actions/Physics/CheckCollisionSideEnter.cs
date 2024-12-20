@@ -64,7 +64,7 @@ namespace HutongGames.PlayMaker.Actions
 	    {
 		if(LayerMask.LayerToName(collision.gameObject.layer) == "Terrain")
 		{
-		    CheckTouching(LayerMask.NameToLayer("Terrain"));
+		    CheckTouching(8);
 		    return;
 		}
 	    }
@@ -85,7 +85,7 @@ namespace HutongGames.PlayMaker.Actions
 	    rightRays.Add(new Vector2(col2d.bounds.max.x, col2d.bounds.center.y));
 	    rightRays.Add(new Vector2(col2d.bounds.max.x, col2d.bounds.min.y));
 	    bottomRays = new List<Vector2>();
-	    bottomRays.Add(new Vector2(col2d.bounds.min.x, col2d.bounds.min.y));
+	    bottomRays.Add(new Vector2(col2d.bounds.max.x, col2d.bounds.min.y));
 	    bottomRays.Add(new Vector2(col2d.bounds.center.x, col2d.bounds.min.y));
 	    bottomRays.Add(col2d.bounds.min);
 	    leftRays = new List<Vector2>();
@@ -118,7 +118,7 @@ namespace HutongGames.PlayMaker.Actions
 	    }
 	    foreach (Vector2 v3 in bottomRays)
 	    {
-		RaycastHit2D raycastHit2D3 = Physics2D.Raycast(v3, Vector2.down, RAYCAST_LENGTH, 1 << layer);
+		RaycastHit2D raycastHit2D3 = Physics2D.Raycast(v3, -Vector2.up, RAYCAST_LENGTH, 1 << layer);
 		if(raycastHit2D3.collider != null && (!ignoreTriggers.Value || !raycastHit2D3.collider.isTrigger))
 		{
 		    bottomHit.Value = true;

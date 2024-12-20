@@ -120,19 +120,36 @@ public static class FSMUtility
 	    }
 	}
     }
+    public static bool GetBool(PlayMakerFSM fsm, string variableName)
+    {
+	return fsm.FsmVariables.FindFsmBool(variableName).Value;
+    }
+
     public static int GetInt(PlayMakerFSM fsm, string variableName)
     {
 	return fsm.FsmVariables.FindFsmInt(variableName).Value;
+    }
+
+    public static float GetFloat(PlayMakerFSM fsm, string variableName)
+    {
+	return fsm.FsmVariables.FindFsmFloat(variableName).Value;
+    }
+
+    public static string GetString(PlayMakerFSM fsm, string variableName)
+    {
+	return fsm.FsmVariables.FindFsmString(variableName).Value;
     }
 
     public static Vector3 GetVector3(PlayMakerFSM fsm, string variableName)
     {
 	return fsm.FsmVariables.FindFsmVector3(variableName).Value;
     }
+
     public static void SetBool(PlayMakerFSM fsm, string variableName, bool value)
     {
 	fsm.FsmVariables.GetFsmBool(variableName).Value = value;
     }
+
     public static void SetInt(PlayMakerFSM fsm, string variableName, int value)
     {
 	fsm.FsmVariables.GetFsmInt(variableName).Value = value;

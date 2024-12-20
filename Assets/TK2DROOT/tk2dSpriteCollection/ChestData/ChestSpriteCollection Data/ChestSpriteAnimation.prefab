@@ -52,9 +52,9 @@ MonoBehaviour:
       eventInfo: 
       eventInt: 0
       eventFloat: 0
-    fps: 10
+    fps: 30
     loopStart: 0
-    wrapMode: 2
+    wrapMode: 0
   - name: Open
     frames:
     - spriteCollection: {fileID: 3763447453480902665, guid: 8f58a4a632566684fa74411999034b1c, type: 3}
@@ -81,16 +81,10 @@ MonoBehaviour:
       eventInfo: 
       eventInt: 0
       eventFloat: 0
-    - spriteCollection: {fileID: 3763447453480902665, guid: 8f58a4a632566684fa74411999034b1c, type: 3}
-      spriteId: 22
-      triggerEvent: 0
-      eventInfo: 
-      eventInt: 0
-      eventFloat: 0
-    fps: 16.666666
+    fps: 12
     loopStart: 0
     wrapMode: 2
-  - name: Open Effect
+  - name: Burst
     frames:
     - spriteCollection: {fileID: 3763447453480902665, guid: 8f58a4a632566684fa74411999034b1c, type: 3}
       spriteId: 12
@@ -122,6 +116,17 @@ MonoBehaviour:
       eventInfo: 
       eventInt: 0
       eventFloat: 0
-    fps: 16.666666
+    fps: 20
     loopStart: 0
     wrapMode: 2
+  - name: Opened
+    frames:
+    - spriteCollection: {fileID: 3763447453480902665, guid: 8f58a4a632566684fa74411999034b1c, type: 3}
+      spriteId: 22
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    fps: 30
+    loopStart: 0
+    wrapMode: 0

@@ -311,7 +311,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3938578925761810153}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.048, y: 1.121, z: -0.00009999996}
+  m_LocalPosition: {x: 0.048, y: 1.121, z: -0.78}
   m_LocalScale: {x: 0.9827664, y: 0.9827662, z: 0.9827662}
   m_Children: []
   m_Father: {fileID: 3938578925868488708}
@@ -504,24 +504,24 @@ MonoBehaviour:
   - {fileID: 3938578925667006156}
   - {fileID: 3938578925943627461}
   debrisParts: []
-  angleOffset: -60
+  angleOffset: 0
   inertBackgroundThreshold: 1
   inertForegroundThreshold: -1
   effectOffset: {x: 0, y: 0.5, z: 0}
-  audioSourcePrefab: {fileID: 0}
+  audioSourcePrefab: {fileID: 8424441852534438005, guid: f96af3324a9905c49b4bf507c04a1e4f, type: 3}
   breakAudioEvent:
-    Clip: {fileID: 0}
-    PitchMin: 0
-    PitchMax: 0
-    Volume: 0
-  breakAudioClipTable: {fileID: 0}
-  dustHitRegularPrefab: {fileID: 0}
-  dustHitDownPrefab: {fileID: 0}
+    Clip: {fileID: 8300000, guid: d6e39602036b94d49a2ef88a4d165847, type: 3}
+    PitchMin: 0.85
+    PitchMax: 1.15
+    Volume: 1
+  breakAudioClipTable: {fileID: 11400000, guid: baa4d4b90c567cf4c98912e14222e0c3, type: 2}
+  dustHitRegularPrefab: {fileID: 2831160207582696541, guid: 80502a73fde19fa41adc4217690bd381, type: 3}
+  dustHitDownPrefab: {fileID: 2831160207582696541, guid: b2dab52958501854393f6d473619f58d, type: 3}
   flingSpeedMin: 10
   flingSpeedMax: 17
-  strikeEffectPrefab: {fileID: 0}
-  nailHitEffectPrefab: {fileID: 0}
-  spellHitEffectPrefab: {fileID: 0}
+  strikeEffectPrefab: {fileID: 2831160207582696541, guid: eb28e486e83b1e24fac84f6d3f03931b, type: 3}
+  nailHitEffectPrefab: {fileID: 2831160207582696541, guid: eb28e486e83b1e24fac84f6d3f03931b, type: 3}
+  spellHitEffectPrefab: {fileID: 2831160207582696541, guid: add906d822771a34b82617da147a41fe, type: 3}
   hitEventReciever: {fileID: 0}
   forwardBreakEvent: 0
   containingParticles: []

@@ -43,12 +43,12 @@ namespace HutongGames.PlayMaker.Actions
 
 	public override void OnEnter()
 	{
-	    OnEnteriTween(gameObject);
-	    if(loopType != iTween.LoopType.none)
+	    DoiTween();
+	    if (loopType != iTween.LoopType.none)
 	    {
 		IsLoop(true);
 	    }
-	    DoiTween();
+	    OnEnteriTween(gameObject);
 	}
 
 
@@ -60,7 +60,7 @@ namespace HutongGames.PlayMaker.Actions
 	private void DoiTween()
 	{
 	    GameObject ownerDefaultTarget = Fsm.GetOwnerDefaultTarget(gameObject);
-	    if (ownerDefaultTarget)
+	    if (ownerDefaultTarget == null)
 		return;
 	    itweenType = "fade";
 	    iTween.FadeTo(ownerDefaultTarget, iTween.Hash(new object[]
