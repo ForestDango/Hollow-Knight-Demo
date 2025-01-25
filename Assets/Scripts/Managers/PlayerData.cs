@@ -341,7 +341,12 @@ public class PlayerData
     public bool newDataMantisLord;
     public int killsMantisLord;
 
+    public bool mageLordEncountered;
+    public bool mageLordEncountered_2;
     public bool mageLordDefeated;
+
+    public bool mageLordDreamDefeated;
+    public bool mageLordOrbsCollected;
 
     public bool dreamerScene1;
 
@@ -365,6 +370,11 @@ public class PlayerData
     public bool openedBlackEggDoor;
 
     public bool cityLift1;
+    public bool tollBenchCity;
+    public bool brokenMageWindow;
+    public bool hasWhiteKey;
+    public bool usedWhiteKey;
+    public bool openedMageDoor_v2;
 
     public bool hasCityKey;
     public bool cityBridge1;
@@ -688,7 +698,12 @@ public class PlayerData
 	newDataMantisLord = false;
 	killsMantisLord = 0;
 
-	mageLordDefeated = false; 
+	mageLordEncountered = false;
+	mageLordEncountered_2 = false;
+	mageLordDefeated = false;
+
+	mageLordDreamDefeated = false;
+	mageLordOrbsCollected = false;
 
 	megaMossChargerEncountered = false;
 	megaMossChargerDefeated = false;
@@ -714,6 +729,11 @@ public class PlayerData
 	openedBlackEggDoor = false;
 
 	cityLift1 = false;
+	tollBenchCity = false;
+	brokenMageWindow = false;
+	hasWhiteKey = false;
+	usedWhiteKey = false;
+	openedMageDoor_v2 = false;
 
 	hasCityKey = false;
 	cityBridge1 = false;
@@ -966,6 +986,27 @@ public class PlayerData
 	    return;
 	}
 	Debug.Log("PlayerData: Could not find field named " + intName + ", check variable name exists and FSM variable string is correct.");
+    }
+    public void IntAdd(string intName, int amount)
+    {
+	FieldInfo field = GetType().GetField(intName);
+	if (field != null)
+	{
+	    int num = (int)field.GetValue(instance);
+	    field.SetValue(instance, num + amount);
+	    return;
+	}
+	Debug.Log("PlayerData: Could not find field named " + intName + ", check variable name exists and FSM variable string is correct.");
+    }
+
+    public void DecrementInt(string intName)
+    {
+	FieldInfo field = GetType().GetField(intName);
+	if (field != null)
+	{
+	    int num = (int)field.GetValue(instance);
+	    field.SetValue(instance, num - 1);
+	}
     }
 
     public void SetInt(string intName, int value)

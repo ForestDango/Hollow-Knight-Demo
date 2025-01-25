@@ -1156,6 +1156,15 @@ public class GameManager : MonoBehaviour
     {
 	playerData.IncrementInt(intName);
     }
+    public void DecrementPlayerDataInt(string intName)
+    {
+	playerData.DecrementInt(intName);
+    }
+
+    public void IntAdd(string intName, int amount)
+    {
+	playerData.IntAdd(intName, amount);
+    }
 
     public void SetPlayerDataInt(string intName, int value)
     {

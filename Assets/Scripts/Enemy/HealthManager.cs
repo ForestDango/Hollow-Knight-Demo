@@ -140,6 +140,8 @@ public class HealthManager : MonoBehaviour, IHitResponder
 	}
     }
 
+
+
     protected void Update()
     {
 	evasionByHitRemaining -= Time.deltaTime;

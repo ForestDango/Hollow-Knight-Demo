@@ -230,9 +230,17 @@ public class HeroAnimationController : MonoBehaviour
 	}
 	else if (actorStates == ActorStates.airborne)
 	{
+	    if (cState.swimming)
+	    {
+		Play("Swim");
+	    }
 	    if (heroCtrl.wallLocked)
 	    {
 		Play("Walljump");
+	    }
+	    else if (cState.doubleJumping)
+	    {
+		Play("Double Jump");
 	    }
 	    else if (cState.jumping)
 	    {

@@ -1,4 +1,4 @@
-using System;
+    using System;
 using InControl;
 
 public class HeroActions : PlayerActionSet
@@ -13,6 +13,7 @@ public class HeroActions : PlayerActionSet
     public PlayerAction attack;
     public PlayerAction jump;
     public PlayerAction dash;
+    public PlayerAction superDash;
     public PlayerAction cast;
     public PlayerAction focus;
     public PlayerAction quickCast;
@@ -37,6 +38,7 @@ public class HeroActions : PlayerActionSet
 	attack = CreatePlayerAction("Attack");
 	jump = CreatePlayerAction("Jump");
 	dash = CreatePlayerAction("Dash");
+	superDash = CreatePlayerAction("Super Dash");
 	cast = CreatePlayerAction("Cast");
 	focus = CreatePlayerAction("Focus");
 	quickCast = CreatePlayerAction("QuickCast");

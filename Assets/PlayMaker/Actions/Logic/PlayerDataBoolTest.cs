@@ -2,11 +2,10 @@ using UnityEngine;
 
 namespace HutongGames.PlayMaker.Actions
 {
-
     [ActionCategory(ActionCategory.Logic)]
     [Tooltip("Sends Events based on the value of a Boolean Variable.")]
     public class PlayerDataBoolTest : FsmStateAction
-	{
+    {
 	[RequiredField]
 	[Tooltip("GameManager reference, set this to the global variable GameManager.")]
 	public FsmOwnerDefault gameObject;
@@ -53,8 +52,5 @@ namespace HutongGames.PlayMaker.Actions
 	    }
 	    Finish();
 	}
-
-
     }
-
 }

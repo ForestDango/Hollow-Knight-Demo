@@ -185,6 +185,7 @@ public class InputHandler : MonoBehaviour
 	AddKeyBinding(inputActions.attack, "Z");
 	AddKeyBinding(inputActions.jump, "X");
 	AddKeyBinding(inputActions.dash, "D");
+	AddKeyBinding(inputActions.superDash, "W");
 	AddKeyBinding(inputActions.cast, "F");
 	AddKeyBinding(inputActions.quickCast, "Q");
 	AddKeyBinding(inputActions.openInventory, "I");

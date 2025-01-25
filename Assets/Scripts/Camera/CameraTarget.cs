@@ -28,6 +28,7 @@ public class CameraTarget : MonoBehaviour
     public float dashOffset; //冲刺时的相机偏移量
     public float fallOffset; //下落时相机的偏移量
     public float dashLookAhead;//冲刺时相机的提前量
+    public float superDashLookAhead; //超级冲刺时相机的提前量
 
     public bool enteredLeft; //从哪个方向进入锁定区域的
     public bool enteredRight;
@@ -44,6 +45,9 @@ public class CameraTarget : MonoBehaviour
     public bool exitedRight;
     public bool exitedTop;
     public bool exitedBot;
+
+    public bool superDashing;
+    public bool quaking;
 
     [HideInInspector]
     public GameManager gm;
@@ -288,6 +292,32 @@ public class CameraTarget : MonoBehaviour
 			if (x > xLockMax || x < xLockMin)
 			{
 			    dashOffset = 0f;
+			}
+		    }
+		}
+		else if (superDashing)
+		{
+		    if (hero_ctrl.cState.facingRight)
+		    {
+			dashOffset = superDashLookAhead;
+		    }
+		    else
+		    {
+			dashOffset = -superDashLookAhead; 
+		    }
+		    if(mode == TargetMode.LOCK_ZONE)
+		    {
+			if(num + dashOffset > xLockMax)
+			{
+			    dashOffset = 0;
+			}
+			if (num + dashOffset < xLockMin)
+			{
+			    dashOffset = 0;
+			}
+			if(x > xLockMax || x < xLockMin)
+			{
+			    dashOffset = 0;
 			}
 		    }
 		}
@@ -614,7 +644,15 @@ public class CameraTarget : MonoBehaviour
 	    dampTimeY = dampTimeNormal;
 	}
     }
+    public void SetSuperDash(bool active)
+    {
+	superDashing = active;
+    }
 
+    public void SetQuake(bool quake)
+    {
+	quaking = quake;
+    }
     public void FreezeInPlace()
     {
 	mode = TargetMode.FREE;

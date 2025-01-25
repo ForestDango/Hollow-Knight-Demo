@@ -19,11 +19,16 @@ public class CheatManager : MonoBehaviour
 	    playerData.nailDamage = 100;
 	    playerData.hasDash = true;
 	    playerData.hasSpell = true;
+	    playerData.hasWalljump = true;
+	    playerData.hasDoubleJump = true;
+	    playerData.hasSuperDash = true;
 	    Restore();
 	    //playerData.MPCharge = playerData.maxMP;
-	    playerData.fireballLevel = 1;
+	    playerData.fireballLevel = 2;
+	    playerData.quakeLevel = 1;
 	    playerData.AddGeo(500);
 	    playerData.hasCityKey = true;
+	    playerData.hasWhiteKey = true;
 	}
     }
     private void Restore()

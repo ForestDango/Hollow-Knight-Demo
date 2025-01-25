@@ -300,6 +300,36 @@ public class SpriteFlash : MonoBehaviour
 	repeatFlash = true;
 	//SendToChildren(new Action(FlashingFury));
     }
+    public void FlashingGhostWounded()
+    {
+	flashColour = new Color(1f, 1f, 1f);
+	amount = 0.7f;
+	timeUp = 0.5f;
+	stayTime = 0.01f;
+	timeDown = 0.5f;
+	block.Clear();
+	block.SetColor("_FlashColor", flashColour);
+	flashingState = 1;
+	flashTimer = 0f;
+	repeatFlash = true;
+	//SendToChildren(new Action(FlashingGhostWounded));
+    }
+
+    public void FlashingWhiteStay()
+    {
+	flashColour = new Color(1f, 1f, 1f);
+	amount = 0.6f;
+	timeUp = 0.01f;
+	stayTime = 999f;
+	timeDown = 0.01f;
+	block.Clear();
+	block.SetColor("_FlashColor", flashColour);
+	flashingState = 1;
+	flashTimer = 0f;
+	repeatFlash = true;
+	//SendToChildren(new Action(FlashingWhiteStay));
+    }
+
     public void CancelFlash()
     {
 	cancelFlash = true;

@@ -168,6 +168,7 @@ public class SceneManager : MonoBehaviour
 		    if (heroCtrl != null)
 		    {
 			//TODO:Lantern
+
 		    }
 		}
 	    }
