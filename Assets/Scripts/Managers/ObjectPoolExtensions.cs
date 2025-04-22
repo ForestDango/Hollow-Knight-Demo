@@ -28,6 +28,11 @@ public static class ObjectPoolExtensions
 	return ObjectPool.Spawn<T>(prefab, null, Vector3.zero, Quaternion.identity);
     }
 
+    public static T Spawn<T>(this T prefab, Vector3 position) where T : Component
+    {
+	return ObjectPool.Spawn<T>(prefab, null, position, Quaternion.identity);
+    }
+
     public static void Recycle(this GameObject obj)
     {
 	ObjectPool.Recycle(obj);

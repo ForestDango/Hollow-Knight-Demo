@@ -97,10 +97,10 @@ public class GameManager : MonoBehaviour
 	}
     }
     [Space]
-    public string sceneName;
-    public string nextSceneName;
-    public string entryGateName;
-    private string targetScene;
+    public string sceneName; //当前场景名
+    public string nextSceneName; //下一个准备进入的场景名
+    public string entryGateName; //进入场景的门的名字
+    private string targetScene; //目标场景
     private float entryDelay;
     private bool hasFinishedEnteringScene;
     public bool HasFinishedEnteringScene

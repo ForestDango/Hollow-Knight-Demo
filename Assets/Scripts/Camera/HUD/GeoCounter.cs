@@ -56,7 +56,7 @@ public class GeoCounter : MonoBehaviour
 	    if(counterCurrent > 0)
 	    {
 		counterCurrent += changePerTick;
-		if (counterCurrent <= 0)
+		if (counterCurrent <= 0) //如果当前吉欧已经归零了就不用再减了
 		{
 		    counterCurrent = 0;
 		    geoSpriteFsm.SendEvent("SHATTER");

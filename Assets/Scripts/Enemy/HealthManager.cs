@@ -15,8 +15,8 @@ public class HealthManager : MonoBehaviour, IHitResponder
     private DamageHero damageHero;
 
     [Header("Scene")]
-    [SerializeField] private GameObject battleScene;
-    [SerializeField] private string sendKilledToName;
+    [SerializeField] private GameObject battleScene; //仅限制在战斗场景中添加
+    [SerializeField] private string sendKilledToName; 
     [SerializeField] private GameObject sendKilledToObject;
 
     [Header("Asset")]
@@ -50,13 +50,13 @@ public class HealthManager : MonoBehaviour, IHitResponder
     [SerializeField] private GameObject largeGeoPrefab;
 
     [Header("Hit")]
-    [SerializeField] private bool hasAlternateHitAnimation;
+    [SerializeField] private bool hasAlternateHitAnimation; //是否有额外的受击动画
     [SerializeField] private string alternateHitAnimation;
 
     [Header("Death")]
     [SerializeField] private AudioMixerSnapshot deathAudioSnapshot;
     [SerializeField] public bool deathReset;
-    [SerializeField] public bool hasSpecialDeath;
+    [SerializeField] public bool hasSpecialDeath; //是否是特殊死亡方式
 
     private PlayMakerFSM stunControlFSM;
 
@@ -140,8 +140,6 @@ public class HealthManager : MonoBehaviour, IHitResponder
 	}
     }
 
-
-
     protected void Update()
     {
 	evasionByHitRemaining -= Time.deltaTime;
@@ -153,36 +151,36 @@ public class HealthManager : MonoBehaviour, IHitResponder
 	{
 	    return;
 	}
-	if(evasionByHitRemaining > 0f) 
+	if(evasionByHitRemaining > 0f) //是否正处于无敌时间
 	{ 
 	    return;
 	}
-	if(hitInstance.DamageDealt < 0f)
+	if(hitInstance.DamageDealt < 0f) //伤害值是否小于0
 	{
 	    return;
 	}
 	FSMUtility.SendEventToGameObject(hitInstance.Source, "DEALT DAMAGE", false);
-	int cardinalDirection = DirectionUtils.GetCardinalDirection(hitInstance.GetActualDirection(transform));
-	if (IsBlockingByDirection(cardinalDirection, hitInstance.AttackType))
+	int cardinalDirection = DirectionUtils.GetCardinalDirection(hitInstance.GetActualDirection(transform)); //检查受到伤害的方向
+	if (IsBlockingByDirection(cardinalDirection, hitInstance.AttackType)) //如果在该方向上会阻挡伤害
 	{
-	    Invincible(hitInstance);
+	    Invincible(hitInstance); //进入无敌状态
 	    return;
 	}
-	TakeDamage(hitInstance);
+	TakeDamage(hitInstance); //否则受到伤害
     }
 
     public void Invincible(HitInstance hitInstance)
     {
 	int cardinalDirection = DirectionUtils.GetCardinalDirection(hitInstance.GetActualDirection(transform));
 	directionOfLastAttack = cardinalDirection;
-	FSMUtility.SendEventToGameObject(gameObject, "BLOCKED HIT", false);
+	FSMUtility.SendEventToGameObject(gameObject, "BLOCKED HIT", false); //发送事件BLOCKED HIT和HIT LANDED给自身的FSM上
 	FSMUtility.SendEventToGameObject(hitInstance.Source, "HIT LANDED", false);
 	if (!(GetComponent<DontClinkGates>() != null))
 	{
-	    FSMUtility.SendEventToGameObject(base.gameObject, "HIT", false);
+	    FSMUtility.SendEventToGameObject(gameObject, "HIT", false);
 	    if (!preventInvincibleEffect)
 	    {
-		if (hitInstance.AttackType == AttackTypes.Nail)
+		if (hitInstance.AttackType == AttackTypes.Nail) //如果攻击类型为骨钉，则小骑士会受到后坐力
 		{
 		    if (cardinalDirection == 0)
 		    {
@@ -199,6 +197,7 @@ public class HealthManager : MonoBehaviour, IHitResponder
 		Vector3 eulerAngles;
 		if (boxCollider != null)
 		{
+		    //针对特定方向的攻击给自身FSM发送特定事件
 		    switch (cardinalDirection)
 		    {
 			case 0:
@@ -235,7 +234,7 @@ public class HealthManager : MonoBehaviour, IHitResponder
 		GameObject gameObject = blockHitPrefab.Spawn();
 		gameObject.transform.position = v;
 		gameObject.transform.eulerAngles = eulerAngles;
-		if (hasAlternateInvincibleSound)
+		if (hasAlternateInvincibleSound) //如果有额外的无敌声效
 		{
 		    AudioSource component = GetComponent<AudioSource>();
 		    if (alternateInvincibleSound != null && component != null)
@@ -245,7 +244,7 @@ public class HealthManager : MonoBehaviour, IHitResponder
 		}
 		else
 		{
-		    regularInvincibleAudio.SpawnAndPlayOneShot(audioPlayerPrefab, transform.position);
+		    regularInvincibleAudio.SpawnAndPlayOneShot(audioPlayerPrefab, transform.position); //不然就播放常规的无敌声效
 		}
 	    }
 	}
@@ -256,22 +255,22 @@ public class HealthManager : MonoBehaviour, IHitResponder
     {
 	int cardinalDirection = DirectionUtils.GetCardinalDirection(hitInstance.GetActualDirection(transform));
 	directionOfLastAttack = cardinalDirection;
-	FSMUtility.SendEventToGameObject(gameObject, "HIT", false);
+	FSMUtility.SendEventToGameObject(gameObject, "HIT", false); //给自身FSM发送事件HIT,HIT LANDED,TOOK DAMAGE
 	FSMUtility.SendEventToGameObject(hitInstance.Source, "HIT LANDED", false);
 	FSMUtility.SendEventToGameObject(gameObject, "TOOK DAMAGE", false);
 	if(recoil != null)
 	{
-	    recoil.RecoilByDirection(cardinalDirection,hitInstance.MagnitudeMultiplier);
+	    recoil.RecoilByDirection(cardinalDirection,hitInstance.MagnitudeMultiplier); //自身根据方向受到后坐力
 	}
 	switch (hitInstance.AttackType)
 	{
 	    case AttackTypes.Nail:
 		if(hitInstance.AttackType == AttackTypes.Nail && enemyType !=3 && enemyType != 6)
 		{
-		    HeroController.instance.SoulGain();
+		    HeroController.instance.SoulGain(); //如果是骨钉攻击,则小骑士还会获得灵魂
 		}
 		Vector3 position = (hitInstance.Source.transform.position + transform.position) * 0.5f + effectOrigin;
-		strikeNailPrefab.Spawn(position, Quaternion.identity);
+		strikeNailPrefab.Spawn(position, Quaternion.identity); //生成骨钉攻击特效预制体
 		GameObject gameObject = slashImpactPrefab.Spawn(position, Quaternion.identity);
 		switch (cardinalDirection)
 		{
@@ -311,7 +310,7 @@ public class HealthManager : MonoBehaviour, IHitResponder
 	    NonFatalHit(hitInstance.IgnoreInvulnerable);
 	    if (stunControlFSM)
 	    {
-		stunControlFSM.SendEvent("STUN DAMAGE");
+		stunControlFSM.SendEvent("STUN DAMAGE"); //给自身的FSM "Stun Control"发送事件"STUN DAMAGE"
 		return;
 	    }
 	}
@@ -321,6 +320,11 @@ public class HealthManager : MonoBehaviour, IHitResponder
 	}
     }
 
+    /// <summary>
+    /// 非致命攻击下的行为
+    /// 主要是播放额外动画用和设置无敌时间
+    /// </summary>
+    /// <param name="ignoreEvasion"></param>
     private void NonFatalHit(bool ignoreEvasion)
     {
 	if (!ignoreEvasion)
@@ -350,8 +354,8 @@ public class HealthManager : MonoBehaviour, IHitResponder
 	{
 	    sprite.color = Color.white;
 	}
-	FSMUtility.SendEventToGameObject(gameObject, "ZERO HP", false);
-	if (hasSpecialDeath)
+	FSMUtility.SendEventToGameObject(gameObject, "ZERO HP", false); //向自身FSM发送事件ZERO HP
+	if (hasSpecialDeath) //如果有特殊死亡方式，就跳转到非致命死亡
 	{
 	    NonFatalHit(ignoreEvasion);
 	    return;
@@ -359,9 +363,9 @@ public class HealthManager : MonoBehaviour, IHitResponder
 	isDead = true;
 	if(damageHero != null)
 	{
-	    damageHero.damageDealt = 0;
+	    damageHero.damageDealt = 0; //敌人不再对玩家造成伤害
 	}
-	if(battleScene != null && !notifiedBattleScene)
+	if(battleScene != null && !notifiedBattleScene) //如果是战斗场景，则向battleScene的FSM"Battle Control"的FsmInt类型变量Battle Enemies的值减一
 	{
 	    PlayMakerFSM playMakerFSM = FSMUtility.LocateFSM(battleScene, "Battle Control");
 	    if(playMakerFSM != null)
@@ -382,7 +386,7 @@ public class HealthManager : MonoBehaviour, IHitResponder
 	{
 	    FSMUtility.SendEventToGameObject(sendKilledTo, "KILLED", false);
 	}
-	if(attackType == AttackTypes.Splatter)
+	if(attackType == AttackTypes.Splatter) //如果敌人是碰到陷阱刺死亡
 	{
 	    GameCameras.instance.cameraShakeFSM.SendEvent("AverageShake");
 	    Debug.LogWarningFormat(this, "Instantiate!", Array.Empty<object>());
@@ -499,6 +503,12 @@ public class HealthManager : MonoBehaviour, IHitResponder
 	}
     }
 
+    /// <summary>
+    /// 判断一个方向是否处于无敌状态
+    /// </summary>
+    /// <param name="cardinalDirection"></param>
+    /// <param name="attackType"></param>
+    /// <returns></returns>
     public bool IsBlockingByDirection(int cardinalDirection,AttackTypes attackType)
     {
 	if(attackType == AttackTypes.Spell && gameObject.CompareTag("Spell Vulnerable"))
@@ -517,7 +527,7 @@ public class HealthManager : MonoBehaviour, IHitResponder
 	{
 	    case 0:
 	    {
-		    Debug.LogFormat("Invincible from card0");
+		Debug.LogFormat("Invincible from card0");
 		int num = invincibleFromDirection;
 		if (num <= 5)
 		{
@@ -534,37 +544,36 @@ public class HealthManager : MonoBehaviour, IHitResponder
 	    }   
 	    case 1:
 	    {
-		    Debug.LogFormat("Invincible from card1");
-		    int num = invincibleFromDirection;
+		Debug.LogFormat("Invincible from card1");
+		int num = invincibleFromDirection;
 		return num == 2 || num - 5 <= 4;
 	    }
 	    case 2:
+	    {
+		Debug.LogFormat("Invincible from card2");
+		int num = invincibleFromDirection;
+		if (num <= 6)
 		{
-		    Debug.LogFormat("Invincible from card2");
-		    int num = invincibleFromDirection;
-		    if (num <= 6)
-		    {
-			if (num != 3 && num != 6)
-			{
-			    return false;
-			}
-		    }
-		    else if (num != 9 && num != 11)
-		    {
-			return false;
-		    }
-		    return true;
+		if (num != 3 && num != 6)
+		{
+		    return false;
 		}
+		}
+		else if (num != 9 && num != 11)
+		{
+		    return false;
+		}
+		return true;
+	    }
 	    case 3:
-		{
-		    Debug.LogFormat("Invincible from card3");
-		    int num = invincibleFromDirection;
-		    return num == 4 || num - 7 <= 4;
-		}
+	    {
+		Debug.LogFormat("Invincible from card3");
+		int num = invincibleFromDirection;
+		return num == 4 || num - 7 <= 4;
+	    }
 	    default:
 		return false;
 	}
-
     }
 
     protected IEnumerator CheckPersistence()

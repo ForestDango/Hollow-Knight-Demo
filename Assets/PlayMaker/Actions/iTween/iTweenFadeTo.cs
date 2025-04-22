@@ -61,7 +61,10 @@ namespace HutongGames.PlayMaker.Actions
 	{
 	    GameObject ownerDefaultTarget = Fsm.GetOwnerDefaultTarget(gameObject);
 	    if (ownerDefaultTarget == null)
+	    {
+		Debug.LogFormat("no itween");
 		return;
+	    }
 	    itweenType = "fade";
 	    iTween.FadeTo(ownerDefaultTarget, iTween.Hash(new object[]
 		{

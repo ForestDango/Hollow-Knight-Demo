@@ -52,7 +52,7 @@ public class Walker : MonoBehaviour
     private bool didFulfilHeroXCondition; //暂时没有用到
     private int currentFacing;//Debug的时候可以在前面加个[SerializeField]
     private int turningFacing;
-    //三个计时器且顾名思义
+    //三个计时器且顾名思义 走路时间，停下时间，转身冷却时间
     private float walkTimeRemaining;
     private float pauseTimeRemaining;
     private float turnCooldownRemaining;

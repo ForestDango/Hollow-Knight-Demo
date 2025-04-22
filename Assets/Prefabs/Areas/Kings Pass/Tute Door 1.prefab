@@ -10030,7 +10030,7 @@ GameObject:
   - component: {fileID: 2262193620588457060}
   - component: {fileID: 2262193620588457061}
   - component: {fileID: 2262193620588457063}
-  m_Layer: 8
+  m_Layer: 19
   m_Name: Tute Door 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10151,21 +10151,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wholeRenderer: {fileID: 2262193620588457060}
   wholeParts:
-  - {fileID: 2262193620444932119}
-  - {fileID: 2262193620701717053}
   - {fileID: 2262193621243140207}
   - {fileID: 2262193619590012999}
+  remnantParts:
+  - {fileID: 2262193620444932119}
+  - {fileID: 2262193620701717053}
   - {fileID: 2262193620529581603}
   - {fileID: 2262193620810540708}
   - {fileID: 2262193619645606602}
   - {fileID: 2262193621560702434}
   - {fileID: 2262193620503700558}
-  remnantParts: []
-  debrisParts:
-  - {fileID: 2262193620529581603}
-  - {fileID: 2262193620810540708}
-  - {fileID: 2262193619645606602}
-  - {fileID: 2262193621560702434}
+  debrisParts: []
   angleOffset: 0
   inertBackgroundThreshold: -1
   inertForegroundThreshold: 1
@@ -10181,8 +10177,8 @@ MonoBehaviour:
   dustHitDownPrefab: {fileID: 2831160207582696541, guid: b2dab52958501854393f6d473619f58d, type: 3}
   flingSpeedMin: 7
   flingSpeedMax: 10
-  strikeEffectPrefab: {fileID: 2831160207582696541, guid: 95ad45d2640ff0341b1251c866a89ae4, type: 3}
-  nailHitEffectPrefab: {fileID: 2831160207582696541, guid: 3bf14c20cec7fb54ab0a9df25fdc2371, type: 3}
+  strikeEffectPrefab: {fileID: 2831160207582696541, guid: eb28e486e83b1e24fac84f6d3f03931b, type: 3}
+  nailHitEffectPrefab: {fileID: 2831160207582696541, guid: eb28e486e83b1e24fac84f6d3f03931b, type: 3}
   spellHitEffectPrefab: {fileID: 2831160207582696541, guid: add906d822771a34b82617da147a41fe, type: 3}
   hitEventReciever: {fileID: 2262193621644560494}
   forwardBreakEvent: 0

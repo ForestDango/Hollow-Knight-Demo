@@ -29,6 +29,7 @@ public class CheatManager : MonoBehaviour
 	    playerData.AddGeo(500);
 	    playerData.hasCityKey = true;
 	    playerData.hasWhiteKey = true;
+	    playerData.hasLoveKey = true;
 	}
     }
     private void Restore()

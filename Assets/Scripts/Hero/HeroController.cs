@@ -235,14 +235,14 @@ public class HeroController : MonoBehaviour
     private float floatingBufferTimer;
     private float FLOATING_CHECK_TIME = 0.18f;
 
-    private bool startWithWallslide;
-    private bool startWithJump;
-    private bool startWithFullJump;
-    private bool startWithDash;
-    private bool startWithAttack;
+    private bool startWithWallslide; //开始动作是墙壁滑行
+    private bool startWithJump; //开始动作是跳跃
+    private bool startWithFullJump; //开始动作是跳跃
+    private bool startWithDash; //开始动作是冲刺
+    private bool startWithAttack; //开始动作是攻击
 
-    public bool exitedQuake;
-    public bool exitedSuperDashing;
+    public bool exitedQuake; //切换场景时处于下砸状态
+    public bool exitedSuperDashing; //切换场景时处于超级冲刺状态
 
     public GameObject softLandingEffectPrefab;
 
@@ -1195,7 +1195,6 @@ public class HeroController : MonoBehaviour
 
     public bool CanInput()
     {
-        Debug.LogFormat("acceptingInput = " + acceptingInput);
         return acceptingInput;
     }
 

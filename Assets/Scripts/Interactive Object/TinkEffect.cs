@@ -35,6 +35,7 @@ public class TinkEffect : MonoBehaviour
     {
 	if(collision.tag == "Nail Attack")
 	{
+	    Debug.LogFormat("Nail Attack");
 	    if (Time.time < nextTinkTime)
 		return;
 	    nextTinkTime = Time.time + repeatDelay;

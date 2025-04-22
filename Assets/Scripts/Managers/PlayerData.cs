@@ -28,12 +28,12 @@ public class PlayerData
 
     public string version;
     public int profileID;
-    public bool isFirstGame;
+    public bool isFirstGame; //第一次运行游戏
     public bool backerCredits;
-    public bool bossRushMode;
-    public int permadeathMode;
-    public bool enteredTutorialFirstTime;
-    public bool unlockedCompletionRate;
+    public bool bossRushMode; //寻神者模式
+    public int permadeathMode; //钢魂模式
+    public bool enteredTutorialFirstTime; //第一次进入教学关卡
+    public bool unlockedCompletionRate; //解锁完成比例
 
     public bool travelling;
     public string nextScene;
@@ -81,26 +81,26 @@ public class PlayerData
     public bool atBench;
     public bool charmBenchMsg;
 
-    public string respawnMarkerName;
-    public string respawnScene;
-    public int respawnType;
-    public bool respawnFacingRight;
+    public string respawnMarkerName; //复活标记点的名字
+    public string respawnScene; //复活的场景
+    public int respawnType; //复活类型
+    public bool respawnFacingRight; //复活时方向朝右吗
 
     [NonSerialized]
-    public Vector3 hazardRespawnLocation;
-    public bool hazardRespawnFacingRight;
-    public bool isInvincible;
+    public Vector3 hazardRespawnLocation; //陷阱复活的位置
+    public bool hazardRespawnFacingRight; //陷阱复活时方向朝右吗
+    public bool isInvincible; //是否无敌状态
 
-    public string shadeScene;
-    public string shadeMapZone;
-    public float shadePositionX;
-    public float shadePositionY;
-    public int shadeHealth;
-    public int shadeMP;
-    public int shadeFireballLevel;
-    public int shadeQuakeLevel;
-    public int shadeScreamLevel;
-    public int shadeSpecialType;
+    public string shadeScene; //阴影在的场景名
+    public string shadeMapZone; //阴影在的区域
+    public float shadePositionX; //阴影的位置X
+    public float shadePositionY; //阴影的位置Y
+    public int shadeHealth; //阴影的血量
+    public int shadeMP; //阴影的法力值
+    public int shadeFireballLevel; //阴影的火球术等级
+    public int shadeQuakeLevel; //阴影的下砸等级
+    public int shadeScreamLevel; //阴影的咆哮等级
+    public int shadeSpecialType; //阴影特别类型
 
     public int currentArea;
     public int environmentType;
@@ -115,10 +115,10 @@ public class PlayerData
     public bool soulLimited; //是否灵魂容量被限制了(意思是玩家死了后容量会变少一个)
     public int focusMP_amount; //聚集法术所需要的MP
 
-    public bool hasDash;
-    public bool canDash;
-    public bool hasBackDash;
-    public bool canBackDash;
+    public bool hasDash; //是否有冲刺
+    public bool canDash; //是否能冲刺
+    public bool hasBackDash; //是否有反向冲刺
+    public bool canBackDash; //是否能反向冲刺
 
     public bool hasSpell; //是否有法术
     public int fireballLevel;//火球法术等级，0表示没有
@@ -129,11 +129,11 @@ public class PlayerData
     public bool canWallJump;
     public bool corn_fungalWastesLeft;
 
-    public bool hasLantern;
-    public bool hasDreamNail;
-    public bool hasSuperDash;
-    public bool hasDoubleJump;
-    public bool hasAcidArmour;
+    public bool hasLantern; //是否有灯笼
+    public bool hasDreamNail; //是否有梦之钉
+    public bool hasSuperDash; //是否有超级冲刺
+    public bool hasDoubleJump; //是否有二段跳
+    public bool hasAcidArmour; //是否有保护酸水
 
     public bool foundTrinket2;
     public int trinket2;
@@ -206,7 +206,7 @@ public class PlayerData
     public bool fragileGreed_unbreakable;
     public bool fragileStrength_unbreakable;
 
-    public List<string> scenesVisited;
+    public List<string> scenesVisited; //拜访过的场景名
     public bool visitedAbyss;
     public bool visitedDirtmouth;
     public bool visitedCrossroads;
@@ -228,7 +228,7 @@ public class PlayerData
     public bool visitedAbyssLower;
     public bool visitedGodhome;
 
-    public bool stagConvoTram;
+    public bool stagConvoTram; //鹿角虫谈话内容
     public bool stagConvoTiso;
     public bool stagRemember1;
     public bool stagRemember2;
@@ -236,7 +236,7 @@ public class PlayerData
     public bool stagEggInspected;
     public bool stagHopeConvo;
     public int stagPosition;
-    public int stationsOpened;
+    public int stationsOpened; //开通的鹿角站
     public bool openedTown;
     public bool openedTownBuilding;
     public bool openedCrossroads;
@@ -255,10 +255,10 @@ public class PlayerData
 
     public bool giantFlyDefeated;
 
-    public bool falseKnightWallBroken;
+    public bool falseKnightWallBroken; //假骑士的墙是否被摧毁
     public bool falseKnightWallRepaired;
 
-    public int elderbug;
+    public int elderbug; //年老的长者虫·
     public bool metElderbug;
     public bool troupeInTown;
     public bool elderbugConvoGrimm;
@@ -347,6 +347,21 @@ public class PlayerData
 
     public bool mageLordDreamDefeated;
     public bool mageLordOrbsCollected;
+
+    public bool killedBlackKnight;
+    public int killsBlackKnight;
+    public bool newDataBlackKnight;
+
+    public bool watcherChandelier;
+    public bool restingGroundsCryptWall;
+
+    public bool hasLoveKey;
+    public bool openedLoveDoor;
+
+    public bool collectorDefeated;
+    public bool killedJarCollector;
+    public bool newDataJarCollector;
+    public int killsJarCollector;
 
     public bool dreamerScene1;
 
@@ -707,6 +722,21 @@ public class PlayerData
 
 	megaMossChargerEncountered = false;
 	megaMossChargerDefeated = false;
+
+	killedBlackKnight = false;
+	killsBlackKnight = 10;
+	newDataBlackKnight = false;
+
+	watcherChandelier = false;
+	restingGroundsCryptWall = false;
+
+	hasLoveKey = false;
+	openedLoveDoor = false;
+
+	collectorDefeated = false;
+	killedJarCollector = false;
+	newDataJarCollector = false;
+	killsJarCollector = 0;
 
 	dreamerScene1 = false;
 
